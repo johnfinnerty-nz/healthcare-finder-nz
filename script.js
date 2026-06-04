@@ -1095,7 +1095,7 @@ function renderProviders() {
       const providerFirstStep = escapeHtml(provider.firstStep);
       const providerCost = escapeHtml(provider.cost);
       const providerSpecialty = escapeHtml(specialty);
-      const providerSpecialtyLabel = escapeHtml(specialtyLabel);
+      const escapedSpecialtyLabel = escapeHtml(specialtyLabel);
       const providerBaselineNote = escapeHtml(baselineNote);
       const providerPatientGroup = escapeHtml(patientGroups);
       const providerDistance = escapeHtml(distanceLabel);
@@ -1160,7 +1160,7 @@ function renderProviders() {
           </div>
           <div class="provider-card__body">
             <p>${providerFit}</p>
-            ${specialty ? `<p class="provider-detail"><strong>${providerSpecialtyLabel}:</strong> ${providerSpecialty}</p>` : ""}
+            ${specialty ? `<p class="provider-detail"><strong>${escapedSpecialtyLabel}:</strong> ${providerSpecialty}</p>` : ""}
             ${providerBaselineNote ? `<p class="provider-detail"><strong>Psychiatrist scope:</strong> ${providerBaselineNote}</p>` : ""}
             ${patientGroups ? `<p class="provider-detail"><strong>Patient groups:</strong> ${providerPatientGroup}</p>` : ""}
             <p class="provider-detail"><strong>First step:</strong> ${providerFirstStep}</p>

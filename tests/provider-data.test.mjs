@@ -951,16 +951,11 @@ test("privacy, disclaimer, correction, and crisis links are visible from the hom
   assert.match(indexHtml, /Provider database last updated/i);
 });
 
-test("public pages include a local Shielded Site link without third-party page script", () => {
-  const shieldedScript = fs.readFileSync("assets/shielded-site.js", "utf8");
-  assert.doesNotMatch(shieldedScript, /staticcdn\.co\.nz|createElement\("script"\)|append\(script\)/, "Shielded Site helper must not execute a third-party script on the intake page");
-  assert.match(shieldedScript, /https:\/\/shielded\.co\.nz\//, "Shielded Site helper should open the external support site only when clicked");
-  assert.match(shieldedScript, /noopener noreferrer/, "External Shielded Site link should not expose the opener");
-
+test("public pages do not load the removed Shielded Site button assets", () => {
   for (const pagePath of publicHtmlPages) {
     const html = fs.readFileSync(pagePath, "utf8");
-    assert.match(html, /href="assets\/shielded-site\.css"/, `${pagePath} should load Shielded Site styles`);
-    assert.match(html, /src="assets\/shielded-site\.js"/, `${pagePath} should initialise the Shielded Site button`);
+    assert.doesNotMatch(html, /shielded-site/i, `${pagePath} should not load Shielded Site button assets`);
+    assert.doesNotMatch(html, /shielded\.co\.nz/i, `${pagePath} should not link the Shielded Site button`);
   }
 });
 
