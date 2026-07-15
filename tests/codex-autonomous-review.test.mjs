@@ -493,6 +493,43 @@ test("Codex evidence verification accepts an exact approximate first-appointment
   assert.deepEqual(result.errors, []);
 });
 
+test("Codex evidence verification accepts an explicit first-appointment wait range", async () => {
+  const excerpt = "Approximate wait time for a first appointment: 1-3 months";
+  const sourceUrl = "https://directory.test/prof-collings";
+  const waitProvider = provider({
+    id: "prof-collings",
+    name: "Prof Sunny Collings",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    availabilityStatus: "waitlist"
+  });
+  const decision = codexDecision({
+    providerId: waitProvider.id,
+    correctedFields: {
+      availabilityStatus: "waitlist",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: true
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "waitlist", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const result = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [waitProvider],
+    fetcher: sourceFetcher(`<h1>Prof Sunny Collings</h1><p>Psychiatrist</p><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(result.errors, []);
+});
+
 test("Codex can move an explicitly referral-paused provider to the watchlist", async () => {
   const excerpt = "Please note that due to high demand currently no new psychiatry referrals are taken";
   const pausedProvider = provider({

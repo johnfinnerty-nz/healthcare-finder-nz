@@ -672,6 +672,118 @@
       "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
       "lastNotes": "The current RANZCP page and a separate public local directory corroborate the clinician, practice name, address, and phone. The RANZCP page explicitly says telepsychiatry is offered and requires a GP referral. The wording is framed as a directory claim because the profile says it was last updated in July 2018.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-3358": {
+      "reviewId": "provider:ranzcp-3358",
+      "providerId": "ranzcp-3358",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/practice-92-limited/",
+      "lastNotes": "The RANZCP profile's 1-3 month estimate dates from July 2018 and was not treated as current. Practice 92's practice-supplied Healthpoint page was updated in June 2026, lists Dr Sara Weeks, confirms the direct contact and corrected street address, requires a GP or practitioner referral for new psychiatry patients, and states that the practice has a waiting list. The practice-wide waitlist is retained with manual review rather than treated as clinician-specific acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-sara-weeks:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-sara-weeks:yourhealthinmind.org",
+      "providerId": "ranzcp-3358",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/practice-92-limited/",
+      "lastNotes": "The RANZCP profile's 1-3 month estimate dates from July 2018 and was not treated as current. Practice 92's practice-supplied Healthpoint page was updated in June 2026, lists Dr Sara Weeks, confirms the direct contact and corrected street address, requires a GP or practitioner referral for new psychiatry patients, and states that the practice has a waiting list. The practice-wide waitlist is retained with manual review rather than treated as clinician-specific acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "places:google-place-chijhyabc8vhdw0rd-kv7ncfmeo": {
+      "reviewId": "places:google-place-chijhyabc8vhdw0rd-kv7ncfmeo",
+      "providerId": "ranzcp-3358",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/practice-92-limited/",
+      "lastNotes": "The RANZCP profile's 1-3 month estimate dates from July 2018 and was not treated as current. Practice 92's practice-supplied Healthpoint page was updated in June 2026, lists Dr Sara Weeks, confirms the direct contact and corrected street address, requires a GP or practitioner referral for new psychiatry patients, and states that the practice has a waiting list. The practice-wide waitlist is retained with manual review rather than treated as clinician-specific acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:phone:09 638 9804": {
+      "reviewId": "discovery:suggestion:phone:09 638 9804",
+      "providerId": "ranzcp-3358",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/practice-92-limited/",
+      "lastNotes": "The RANZCP profile's 1-3 month estimate dates from July 2018 and was not treated as current. Practice 92's practice-supplied Healthpoint page was updated in June 2026, lists Dr Sara Weeks, confirms the direct contact and corrected street address, requires a GP or practitioner referral for new psychiatry patients, and states that the practice has a waiting list. The practice-wide waitlist is retained with manual review rather than treated as clinician-specific acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-4171": {
+      "reviewId": "provider:ranzcp-4171",
+      "providerId": "ranzcp-4171",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4171/prof-sunny-collings",
+      "lastNotes": "The RANZCP profile explicitly identifies Prof Sunny Collings and Thrive Mental Health and Wellbeing, says she only works remotely across Aotearoa NZ, publishes a 1-3 month wait, and requires referral rather than self-referral. The profile says it was last updated in January 2026, so the restrictive wait is refreshed without clearing manual review. Thrive's own pages returned 503 in both checks; no blocked source was bypassed and no additional claims were inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:prof-sunny-collings:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:prof-sunny-collings:yourhealthinmind.org",
+      "providerId": "ranzcp-4171",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4171/prof-sunny-collings",
+      "lastNotes": "The RANZCP profile explicitly identifies Prof Sunny Collings and Thrive Mental Health and Wellbeing, says she only works remotely across Aotearoa NZ, publishes a 1-3 month wait, and requires referral rather than self-referral. The profile says it was last updated in January 2026, so the restrictive wait is refreshed without clearing manual review. Thrive's own pages returned 503 in both checks; no blocked source was bypassed and no additional claims were inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-4371": {
+      "reviewId": "provider:ranzcp-4371",
+      "providerId": "ranzcp-4371",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4371/dr-thomas-levien",
+      "lastNotes": "The RANZCP 1-3 month estimate was last updated in May 2019. Nelson Clinic currently publishes availability for specific neurodiversity assessments and treatment, but not a current general psychiatry wait for Dr Tom Levien. The old wait is not refreshed and no accepting status is inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-thomas-levien:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-thomas-levien:yourhealthinmind.org",
+      "providerId": "ranzcp-4371",
+      "status": "deferred",
+      "batchId": "codex-20260715072941-fb6b5712",
+      "startedAt": "2026-07-15T07:29:41.560Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T07:41:41.634Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://nelsonclinic.nz/our-team",
+      "lastNotes": "The Nelson Clinic's live team page confirms Dr Tom Levien as Director of Clinical Psychiatry and gives the corrected 42 Waimea Road address. The RANZCP page links the clinic website, explicitly says telepsychiatry is offered, and keeps GP-referral guidance. The provider-owned online wording is scoped to neurodiversity services and is not promoted to a general accepting or broad telehealth claim.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -737,9 +849,18 @@
         "ranzcp-2745",
         "ranzcp-3038"
       ]
+    },
+    {
+      "batchId": "codex-20260715072941-fb6b5712",
+      "generatedAt": "2026-07-15T07:29:41.560Z",
+      "providerIds": [
+        "ranzcp-3358",
+        "ranzcp-4171",
+        "ranzcp-4371"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T06:38:45.594Z",
+  "updatedAt": "2026-07-15T07:41:41.634Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -1123,6 +1244,70 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-3358",
+      "providerId": "ranzcp-3358",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-sara-weeks:yourhealthinmind.org",
+      "providerId": "ranzcp-3358",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "places:google-place-chijhyabc8vhdw0rd-kv7ncfmeo",
+      "providerId": "ranzcp-3358",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:phone:09 638 9804",
+      "providerId": "ranzcp-3358",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-4171",
+      "providerId": "ranzcp-4171",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:prof-sunny-collings:yourhealthinmind.org",
+      "providerId": "ranzcp-4171",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-thomas-levien:yourhealthinmind.org",
+      "providerId": "ranzcp-4371",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-4371",
+      "providerId": "ranzcp-4371",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T07:41:41.634Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]
