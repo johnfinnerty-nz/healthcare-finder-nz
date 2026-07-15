@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715052805-fd0ad3ee",
-  "generatedAt": "2026-07-15T05:28:05.813Z",
+  "batchId": "codex-20260715062815-819a2096",
+  "generatedAt": "2026-07-15T06:28:15.300Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,158 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "northland-heartwood-psychiatry",
+      "providerId": "ranzcp-2665",
       "reviewIds": [
-        "discovery:suggestion:email:heartwood.psychiatry@gmail.com",
-        "provider:northland-heartwood-psychiatry"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "seed source login-or-captcha-required"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "seed source login-or-captcha-required",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.heartwoodpsychiatry.co.nz/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 022 590 2079\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Sarah Reed. Originally\", practice \"Heartwood Psychiatry\". | Trauma or sexual harm: s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, | Work, study, money, or housing stress: ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr  | Signal: es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews",
-      "currentRecord": {
-        "name": "Heartwood Psychiatry",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Northland",
-        "city": "Northland and telehealth",
-        "address": "",
-        "phone": "022 590 2079",
-        "text": "",
-        "email": "heartwood.psychiatry@gmail.com",
-        "website": "https://www.heartwoodpsychiatry.co.nz/",
-        "bookingUrl": "",
-        "source": "https://www.heartwoodpsychiatry.co.nz/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": false,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "psychiatry-nz-staverton-kautoke",
-      "reviewIds": [
-        "provider:psychiatry-nz-staverton-kautoke",
-        "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Availability review"
-      ],
-      "auditRules": [
-        "stale-availability",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "auditIssues": [
-        "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
-        "existing provider update requires human approval before patching"
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown",
-        "availability status is waitlist",
-        "address missing coordinates",
-        "provider discovery suggestion",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
-        "existing provider update requires human approval before patching"
-      ],
-      "sourceUrls": [
-        "https://psychiatry.nz/"
-      ],
-      "sourceEvidenceSummary": "Availability: waitlist | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Dr Staverton (Tony) Kautoke\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: provider-owned page | Evidence: Seed value from providers.json: refer@psychiatry.nz",
-      "currentRecord": {
-        "name": "Dr Staverton (Tony) Kautoke",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "Online telepsychiatry service",
-        "phone": "",
-        "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "https://psychiatry.nz/",
-        "bookingUrl": "",
-        "source": "https://psychiatry.nz/",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "waitlist",
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "adhd",
-          "fit",
-          "direct-contact"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "ranzcp-13276",
-      "reviewIds": [
-        "provider:ranzcp-13276",
-        "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org"
+        "provider:ranzcp-2665",
+        "discovery:suggestion:clinician-domain:dr-ian-goodwin:yourhealthinmind.org"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -204,23 +56,142 @@
         "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Evan Wilson\", practice \"(none)\". | Depression or low mood: your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis  | Anxiety, panic, or overwhelm: ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Au | Trauma or sexual harm: ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 021848274",
+      "sourceEvidenceSummary": "Availability: appointment wait: 3-6 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Ian Goodwin\", practice \"(none)\". | Depression or low mood: ss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Aut | Trauma or sexual harm: s when you see your GP. Expertise Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +6493600360",
       "currentRecord": {
-        "name": "Dr Evan Wilson",
+        "name": "Dr Ian Goodwin",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
-        "region": "Canterbury",
-        "city": "Bromley",
-        "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
-        "phone": "021848274",
+        "region": "Auckland",
+        "city": "Auckland",
+        "address": "25 Vermont street, Ponsonby, Auckland, Auckland, 1021",
+        "phone": "+6493600360",
         "text": "",
-        "email": "info@elimbiashealth.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "email": "admin@vermontstreetspecialists.co.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: 3-6",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "rainbow",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Brain injury",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Transcranial Magnetic Stimulation (TMS)"
+        ],
+        "specialties": [
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Brain injury",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Transcranial Magnetic Stimulation (TMS)"
+        ],
+        "services": [
+          "Civil medicolegal",
+          "Criminal medicolegal",
+          "Insurance opinions / reports",
+          "Shared care"
+        ],
+        "patientGroups": [
+          "Asylum seekers and refugees",
+          "Doctors, psychiatrists or medical students",
+          "Gender diverse",
+          "Gay and lesbian",
+          "Intellectual disability",
+          "Physical disability"
+        ],
+        "ageGroups": [
+          "Ages 18-60",
+          "Ages 60+"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-2745",
+      "reviewIds": [
+        "provider:ranzcp-2745",
+        "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Jane Casey\", practice \"(none)\". | Depression or low mood: t, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Bipolar disorder Depression Dementia  | Maori: he RANZCP Accredited Member - Faculty of Old Age Psychiatry Languages spoken English Experience with Doctors, psychiatrists or medical students Gay and lesbian Maori Military and v | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +6493600360",
+      "currentRecord": {
+        "name": "Dr Jane Casey",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Ponsonby",
+        "address": "25 Vermont Street, Ponsonby, Auckland, 1011",
+        "phone": "+6493600360",
+        "text": "",
+        "email": "admin@vermontstreetspecialists.co.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "appointment wait: Less than",
         "requiresReferral": true,
@@ -230,43 +201,131 @@
           "psychiatrist",
           "medical-specialist",
           "fit",
-          "telehealth",
+          "maori",
+          "rainbow",
+          "cost",
           "depression",
-          "anxiety",
-          "trauma",
-          "addiction",
           "direct-contact"
         ],
         "needScope": [],
         "advertisedSpecialties": [
-          "Addiction",
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
           "Bipolar disorder",
-          "Depression",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
+          "Dementia related disorders",
+          "Depression"
         ],
         "specialties": [
-          "Addiction",
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
           "Bipolar disorder",
-          "Depression",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
+          "Dementia related disorders",
+          "Depression"
         ],
-        "services": [],
+        "services": [
+          "Civil medicolegal",
+          "Family court medicolegal",
+          "Insurance opinions / reports",
+          "Professional supervision",
+          "Shared care",
+          "Urgent assessments"
+        ],
         "patientGroups": [
-          "Families"
+          "Doctors, psychiatrists or medical students",
+          "Gay and lesbian",
+          "Maori",
+          "Military and veterans",
+          "Non-English speaking",
+          "Physical disability"
         ],
         "ageGroups": [
-          "Ages 1-17",
-          "Ages 16-24"
+          "Ages 18-60",
+          "Ages 60+"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-3038",
+      "reviewIds": [
+        "provider:ranzcp-3038",
+        "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "weak-telehealth-evidence",
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "Telehealth or online availability is set but source fields do not clearly support remote care.",
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: weak-telehealth-evidence",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Justin Barry-Walsh\", practice \"(none)\". | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | Signal: hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebat | Signal: Link/button text: How to get an appointment | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +64210489564",
+      "currentRecord": {
+        "name": "Dr Justin Barry-Walsh",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Wellington",
+        "city": "Khandallah",
+        "address": "10 A Ganges Rd, Khandallah, Wellington, 6035",
+        "phone": "+64210489564",
+        "text": "",
+        "email": "bwfp01@gmail.com",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: 1-3",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "cost",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [
+          "Civil medicolegal",
+          "Criminal medicolegal",
+          "Family court medicolegal"
+        ],
+        "patientGroups": [],
+        "ageGroups": [
+          "Ages 18-60",
+          "Ages 60+"
         ],
         "cost": ""
       },

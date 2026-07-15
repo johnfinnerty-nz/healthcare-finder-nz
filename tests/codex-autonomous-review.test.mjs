@@ -412,6 +412,50 @@ test("an approximate first-appointment wait is treated as a waitlist", () => {
   assert.match(result.evidence, /less than 1 month/i);
 });
 
+test("clinician-specific books-closed wording is treated as not accepting", () => {
+  const result = detectAvailabilityFromText("Dr Ian Goodwin has closed his books to new patients.");
+  assert.equal(result.status, "not_accepting");
+  assert.match(result.evidence, /closed his books/i);
+});
+
+test("Codex evidence verification accepts explicit clinician books-closed wording", async () => {
+  const excerpt = "Dr Ian Goodwin has closed his books to new patients.";
+  const sourceUrl = "https://vermont.test/psychiatry";
+  const closedProvider = provider({
+    id: "dr-goodwin",
+    name: "Dr Ian Goodwin",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    availabilityStatus: "waitlist"
+  });
+  const decision = codexDecision({
+    providerId: closedProvider.id,
+    action: "move_to_watchlist",
+    correctedFields: {
+      availabilityStatus: "not_accepting",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "not_accepting", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const result = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [closedProvider],
+    fetcher: sourceFetcher(`<h1>Dr Ian Goodwin</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(result.errors, []);
+});
+
 test("Codex evidence verification accepts an exact approximate first-appointment wait", async () => {
   const excerpt = "Approximate wait time for a first appointment: Less than 1 month";
   const sourceUrl = "https://directory.test/dr-wilson";

@@ -1,35 +1,32 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T05:38:13.390Z
-Verified decisions: 6/6
-Errors: 0
+Generated: 2026-07-15T06:36:42.062Z
+Verified decisions: 3/5
+Errors: 2
 
-## northland-heartwood-psychiatry
+## ranzcp-2665
 
-- Action: adjust
-- Evidence gate: passed
+- Action: move_to_watchlist
+- Evidence gate: blocked
+- Blocked: restrictive availability needs an explicit field-matched excerpt
 
-## northland-heartwood-psychiatry
-
-- Action: needs_more_info
-- Evidence gate: passed
-
-## psychiatry-nz-staverton-kautoke
+## ranzcp-2745
 
 - Action: adjust
 - Evidence gate: passed
 
-## psychiatry-nz-staverton-kautoke
+## ranzcp-2745
 
 - Action: needs_more_info
 - Evidence gate: passed
 
-## ranzcp-13276
+## ranzcp-3038
 
 - Action: adjust
 - Evidence gate: passed
 
-## ranzcp-13276
+## ranzcp-3038
 
 - Action: needs_more_info
-- Evidence gate: passed
+- Evidence gate: blocked
+- Blocked: https://khandallahvillage.nz/directory-village/listing/barry-walsh-forensic-psychiatry/: source identity does not match the provider or known practice

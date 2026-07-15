@@ -588,6 +588,90 @@
       "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
       "lastNotes": "The current page still publishes a wait under one month, but it also states that the psychiatrist last updated the listing in July 2025. No accepting claim is made, and the current real-world wait remains uncertain despite the successful re-fetch.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-2665": {
+      "reviewId": "provider:ranzcp-2665",
+      "providerId": "ranzcp-2665",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+      "lastNotes": "The RANZCP profile still shows a 3-6 month wait and says it was last updated in April 2023. A newer practice-supplied Healthpoint page, updated in February 2026, explicitly says Dr Ian Goodwin has closed his books. The restrictive current statement takes precedence, so this provider is moved to the monitored watchlist rather than offered as a first recommendation.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-ian-goodwin:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-ian-goodwin:yourhealthinmind.org",
+      "providerId": "ranzcp-2665",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+      "lastNotes": "The RANZCP profile still shows a 3-6 month wait and says it was last updated in April 2023. A newer practice-supplied Healthpoint page, updated in February 2026, explicitly says Dr Ian Goodwin has closed his books. The restrictive current statement takes precedence, so this provider is moved to the monitored watchlist rather than offered as a first recommendation.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-2745": {
+      "reviewId": "provider:ranzcp-2745",
+      "providerId": "ranzcp-2745",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
+      "lastNotes": "The RANZCP page publishes a wait under one month but says Jane last updated it in June 2018. Her current provider-owned page confirms a Friday consulting schedule, not whether she is taking new patients or the current wait. Availability therefore remains unresolved and no accepting inference is made.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org",
+      "providerId": "ranzcp-2745",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.mentalcapacityassessment.co.nz/contact-psychiatrist",
+      "lastNotes": "Jane Casey's provider-owned site confirms her identity and that she works at Vermont Street Specialists. The RANZCP page explicitly retains GP-referral guidance. No availability conclusion is drawn from her Friday consulting schedule.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-3038": {
+      "reviewId": "provider:ranzcp-3038",
+      "providerId": "ranzcp-3038",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+      "lastNotes": "The RANZCP page still publishes a 1-3 month wait, but it says Justin last updated the listing in July 2018. A current local directory corroborates the practice contact only and gives no current availability. The wait cannot be treated as current, so availability remains unresolved.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org",
+      "providerId": "ranzcp-3038",
+      "status": "deferred",
+      "batchId": "codex-20260715062815-819a2096",
+      "startedAt": "2026-07-15T06:28:15.300Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T06:38:45.594Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+      "lastNotes": "The current RANZCP page and a separate public local directory corroborate the clinician, practice name, address, and phone. The RANZCP page explicitly says telepsychiatry is offered and requires a GP referral. The wording is framed as a directory claim because the profile says it was last updated in July 2018.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -644,9 +728,18 @@
         "psychiatry-nz-staverton-kautoke",
         "ranzcp-13276"
       ]
+    },
+    {
+      "batchId": "codex-20260715062815-819a2096",
+      "generatedAt": "2026-07-15T06:28:15.300Z",
+      "providerIds": [
+        "ranzcp-2665",
+        "ranzcp-2745",
+        "ranzcp-3038"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T05:38:52.188Z",
+  "updatedAt": "2026-07-15T06:38:45.594Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -982,6 +1075,54 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-2665",
+      "providerId": "ranzcp-2665",
+      "action": "move_to_watchlist",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-ian-goodwin:yourhealthinmind.org",
+      "providerId": "ranzcp-2665",
+      "action": "move_to_watchlist",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org",
+      "providerId": "ranzcp-2745",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-2745",
+      "providerId": "ranzcp-2745",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org",
+      "providerId": "ranzcp-3038",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-3038",
+      "providerId": "ranzcp-3038",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T06:38:45.594Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

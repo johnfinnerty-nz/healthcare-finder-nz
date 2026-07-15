@@ -1,387 +1,312 @@
 {
   "version": 1,
-  "batchId": "codex-20260715052805-fd0ad3ee",
-  "generatedAt": "2026-07-15T05:37:00.000Z",
+  "generatedAt": "2026-07-15T06:37:00.000Z",
+  "batchId": "codex-20260715062815-819a2096",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:email:heartwood.psychiatry@gmail.com",
+      "reviewId": "provider:ranzcp-2665",
       "reviewIds": [
-        "discovery:suggestion:email:heartwood.psychiatry@gmail.com"
+        "provider:ranzcp-2665",
+        "discovery:suggestion:clinician-domain:dr-ian-goodwin:yourhealthinmind.org"
       ],
-      "providerId": "northland-heartwood-psychiatry",
-      "providerName": "Heartwood Psychiatry",
-      "action": "adjust",
+      "providerId": "ranzcp-2665",
+      "providerName": "Dr Ian Goodwin",
+      "action": "move_to_watchlist",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Sarah Reed",
-        "practiceName": "Heartwood Psychiatry",
-        "city": "Whangārei",
-        "email": "info@heartwoodpsychiatry.co.nz",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "medication",
-          "diagnosis",
-          "assessment",
-          "fit",
-          "direct-contact"
-        ],
-        "firstStep": "Email info@heartwoodpsychiatry.co.nz or use the website form to ask about referral requirements, availability, and fees."
+        "clinicianName": "Dr Ian Goodwin",
+        "practiceName": "Vermont Street Specialists",
+        "availabilityStatus": "not_accepting",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "Dr Ian Goodwin has closed his books to new patients.",
+        "availabilitySource": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+        "availabilityNeedsManualReview": false
       },
-      "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-      "sourceExcerpt": "Heartwood Psychiatry is the practice of Dr Sarah Reed.",
+      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+      "sourceExcerpt": "Dr Ian Goodwin has closed his books to new patients.",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Sarah Reed",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Heartwood Psychiatry is the practice of Dr Sarah Reed."
+          "value": "Dr Ian Goodwin",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceType": "healthpoint",
+          "excerpt": "Dr Ian Goodwin"
         },
         {
           "field": "practiceName",
-          "value": "Heartwood Psychiatry",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Heartwood Psychiatry is the practice of Dr Sarah Reed."
+          "value": "Vermont Street Specialists",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceType": "healthpoint",
+          "excerpt": "Vermont Street Specialists"
         },
-        {
-          "field": "city",
-          "value": "Whangārei",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Reed now lives in Whangārei, New Zealand."
-        },
-        {
-          "field": "email",
-          "value": "info@heartwoodpsychiatry.co.nz",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "href=\"mailto:info@heartwoodpsychiatry.co.nz\""
-        },
-        {
-          "field": "tags",
-          "value": [
-            "psychiatrist",
-            "medical-specialist",
-            "medication",
-            "diagnosis",
-            "assessment",
-            "fit",
-            "direct-contact"
-          ],
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Heartwood Psychiatry is the practice of Dr Sarah Reed."
-        },
-        {
-          "field": "firstStep",
-          "value": "Email info@heartwoodpsychiatry.co.nz or use the website form to ask about referral requirements, availability, and fees.",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Contact us at info@heartwoodpsychiatry.co.nz or via the form below."
-        }
-      ],
-      "auditRulesResolved": [
-        "discovery-suggestion",
-        "unsupported-telehealth-tag",
-        "unsupported-condition-tags"
-      ],
-      "reviewNotes": "Two provider-owned fetches identify Heartwood as Dr Sarah Reed's practice in Whangārei and publish info@heartwoodpsychiatry.co.nz as the contact email. The current site does not publish the stored Gmail address or support telehealth, ADHD, or bipolar as advertised Heartwood specialties, so those ranking tags are removed. The stored mobile number is left unchanged because silence is not proof that it is invalid.",
-      "codexReview": {
-        "researchPassId": "research-20260715-heartwood-identity-contact-1",
-        "verificationPassId": "verify-20260715-heartwood-identity-contact-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "provider:northland-heartwood-psychiatry",
-      "reviewIds": [
-        "provider:northland-heartwood-psychiatry"
-      ],
-      "providerId": "northland-heartwood-psychiatry",
-      "providerName": "Heartwood Psychiatry",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-      "sourceExcerpt": "",
-      "sourceEvidence": [],
-      "auditRulesResolved": [],
-      "reviewNotes": "The provider-owned pages do not publish current availability or a psychiatry referral pathway. Neither is inferred from the contact form, and both remain not_published or unknown for later recheck.",
-      "codexReview": {
-        "researchPassId": "research-20260715-heartwood-access-1",
-        "verificationPassId": "verify-20260715-heartwood-access-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "provider:psychiatry-nz-staverton-kautoke",
-      "reviewIds": [
-        "provider:psychiatry-nz-staverton-kautoke"
-      ],
-      "providerId": "psychiatry-nz-staverton-kautoke",
-      "providerName": "Dr Staverton (Tony) Kautoke",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "When you are on our waitlist, we will notify you when we release appointment slots.",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": true,
-        "referralSourceUrl": "https://psychiatry.nz/",
-        "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
-        "referralConfidence": "medium",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": true
-      },
-      "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "When you are on our waitlist, we will notify you when we release appointment slots.",
-      "sourceEvidence": [
         {
           "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "When you are on our waitlist, we will notify you when we release appointment slots."
+          "value": "not_accepting",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceType": "healthpoint",
+          "excerpt": "Dr Ian Goodwin has closed his books to new patients."
         },
         {
           "field": "availabilityEvidence",
-          "value": "When you are on our waitlist, we will notify you when we release appointment slots.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "When you are on our waitlist, we will notify you when we release appointment slots."
+          "value": "Dr Ian Goodwin has closed his books to new patients.",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceType": "healthpoint",
+          "excerpt": "Dr Ian Goodwin has closed his books to new patients."
         },
         {
           "field": "availabilitySource",
-          "value": "https://psychiatry.nz/",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "When you are on our waitlist, we will notify you when we release appointment slots."
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://psychiatry.nz/",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals."
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "We accept direct referrals from clients and healthcare professionals.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals."
-        },
-        {
-          "field": "referralConfidence",
-          "value": "medium",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We do prefer GP referrals or at least the GP being aware of the referral."
+          "value": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/vermont-street-specialists/",
+          "sourceType": "healthpoint",
+          "excerpt": "Dr Ian Goodwin has closed his books to new patients."
         }
       ],
       "auditRulesResolved": [
-        "stale-availability"
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
       ],
-      "reviewNotes": "Two provider-owned fetches reproduce Psychiatry.nz's shared waitlist process and direct-referral wording. The waitlist is practice-wide rather than clinician-specific, so manual review remains true. The safe lane does not convert direct client referrals into psychiatry self-referral metadata.",
+      "reviewNotes": "The RANZCP profile still shows a 3-6 month wait and says it was last updated in April 2023. A newer practice-supplied Healthpoint page, updated in February 2026, explicitly says Dr Ian Goodwin has closed his books. The restrictive current statement takes precedence, so this provider is moved to the monitored watchlist rather than offered as a first recommendation.",
       "codexReview": {
-        "researchPassId": "research-20260715-kautoke-practice-access-1",
-        "verificationPassId": "verify-20260715-kautoke-practice-access-2",
+        "researchPassId": "research-20260715-ian-goodwin-availability-1",
+        "verificationPassId": "verify-20260715-ian-goodwin-availability-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz"
+        "discovery:suggestion:clinician-domain:dr-jane-casey:yourhealthinmind.org"
       ],
-      "providerId": "psychiatry-nz-staverton-kautoke",
-      "providerName": "Dr Staverton (Tony) Kautoke",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "Dr Staverton (Tony) Kautoke is a medical officer of psychiatry who currently works under the supervision of Dr Lim.",
-      "sourceEvidence": [
-        {
-          "field": "professionalStatus",
-          "value": "medical officer of psychiatry under supervision",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Staverton (Tony) Kautoke is a medical officer of psychiatry who currently works under the supervision of Dr Lim."
-        },
-        {
-          "field": "referralType",
-          "value": "unknown",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals."
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The provider-owned profile identifies Dr Kautoke as a supervised medical officer working toward fellowship, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, and it cannot set psychiatry self-referral, so those classification questions remain deferred.",
-      "codexReview": {
-        "researchPassId": "research-20260715-kautoke-role-1",
-        "verificationPassId": "verify-20260715-kautoke-role-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "provider:ranzcp-13276",
-      "reviewIds": [
-        "provider:ranzcp-13276"
-      ],
-      "providerId": "ranzcp-13276",
-      "providerName": "Dr Evan Wilson",
+      "providerId": "ranzcp-2745",
+      "providerName": "Dr Jane Casey",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Evan Wilson",
-        "practiceName": "Elimbias Health",
-        "website": "https://www.elimbiashealth.com/",
-        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, and Schizophrenia. The listing says telepsychiatry is offered.",
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "Approximate wait time for a first appointment: Less than 1 month",
-        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "availabilityNeedsManualReview": true,
-        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "clinicianName": "Dr Jane Casey",
+        "practiceName": "Vermont Street Specialists",
+        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
         "referralSourceExcerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
         "referralConfidence": "high",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
+        "referralLastChecked": "2026-07-15"
       },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "sourceExcerpt": "Dr Evan Wilson",
+      "sourceUrl": "https://www.mentalcapacityassessment.co.nz/contact-psychiatrist",
+      "sourceExcerpt": "Contact Dr Jane Casey",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Evan Wilson",
-          "sourceUrl": "https://www.elimbiashealth.com/about",
+          "value": "Dr Jane Casey",
+          "sourceUrl": "https://www.mentalcapacityassessment.co.nz/contact-psychiatrist",
           "sourceType": "provider_owned",
-          "excerpt": "\"name\": \"Dr Evan Wilson\""
+          "excerpt": "Contact Dr Jane Casey"
         },
         {
           "field": "practiceName",
-          "value": "Elimbias Health",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "Elimbias Health"
-        },
-        {
-          "field": "website",
-          "value": "https://www.elimbiashealth.com/",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "www.elimbiashealth.com"
-        },
-        {
-          "field": "fit",
-          "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, and Schizophrenia. The listing says telepsychiatry is offered.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes"
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "Approximate wait time for a first appointment: Less than 1 month",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
+          "value": "Vermont Street Specialists",
+          "sourceUrl": "https://www.mentalcapacityassessment.co.nz/contact-psychiatrist",
+          "sourceType": "provider_owned",
+          "excerpt": "Jane is based in Auckland and works at the Vermont Street Specialists on Friday mornings."
         },
         {
           "field": "referralSourceUrl",
-          "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+          "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
         },
         {
           "field": "referralSourceExcerpt",
           "value": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
         },
         {
           "field": "referralConfidence",
           "value": "high",
-          "sourceUrl": "https://www.elimbiashealth.com/about",
-          "sourceType": "provider_owned",
-          "excerpt": "We do require a GP referral before proceeding with bookings."
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
         }
       ],
       "auditRulesResolved": [
-        "weak-telehealth-evidence",
-        "stale-availability"
+        "discovery-suggestion",
+        "update_existing_provider"
       ],
-      "reviewNotes": "The RANZCP profile and current Elimbias team data both identify Dr Evan Wilson at Elimbias Health. RANZCP explicitly says telepsychiatry is offered and requires a GP referral. Its approximate wait remains published, but the profile says it was last updated in July 2025, so the waitlist is refreshed without clearing manual review or inferring acceptance.",
+      "reviewNotes": "Jane Casey's provider-owned site confirms her identity and that she works at Vermont Street Specialists. The RANZCP page explicitly retains GP-referral guidance. No availability conclusion is drawn from her Friday consulting schedule.",
       "codexReview": {
-        "researchPassId": "research-20260715-evan-wilson-profile-1",
-        "verificationPassId": "verify-20260715-evan-wilson-profile-2",
+        "researchPassId": "research-20260715-jane-casey-identity-referral-1",
+        "verificationPassId": "verify-20260715-jane-casey-identity-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org",
+      "reviewId": "provider:ranzcp-2745",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org"
+        "provider:ranzcp-2745"
       ],
-      "providerId": "ranzcp-13276",
-      "providerName": "Dr Evan Wilson",
+      "providerId": "ranzcp-2745",
+      "providerName": "Dr Jane Casey",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jul 2025",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jun 2018",
       "sourceEvidence": [
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Jul 2025",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+          "value": "profile last updated Jun 2018",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2745/dr-jane-casey",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Jul 2025"
+          "excerpt": "This listing was last updated by this psychiatrist in Jun 2018"
+        },
+        {
+          "field": "practiceHours",
+          "value": "Friday mornings",
+          "sourceUrl": "https://www.mentalcapacityassessment.co.nz/contact-psychiatrist",
+          "sourceType": "provider_owned",
+          "excerpt": "Jane is based in Auckland and works at the Vermont Street Specialists on Friday mornings."
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The current page still publishes a wait under one month, but it also states that the psychiatrist last updated the listing in July 2025. No accepting claim is made, and the current real-world wait remains uncertain despite the successful re-fetch.",
+      "reviewNotes": "The RANZCP page publishes a wait under one month but says Jane last updated it in June 2018. Her current provider-owned page confirms a Friday consulting schedule, not whether she is taking new patients or the current wait. Availability therefore remains unresolved and no accepting inference is made.",
       "codexReview": {
-        "researchPassId": "research-20260715-evan-wilson-freshness-1",
-        "verificationPassId": "verify-20260715-evan-wilson-freshness-2",
+        "researchPassId": "research-20260715-jane-casey-availability-1",
+        "verificationPassId": "verify-20260715-jane-casey-availability-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-justin-barry-walsh:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-3038",
+      "providerName": "Dr Justin Barry-Walsh",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Dr Justin Barry-Walsh",
+        "practiceName": "Barry-Walsh Forensic Psychiatry",
+        "fit": "RANZCP Your Health in Mind psychiatrist listing. Services include Civil medicolegal, Criminal medicolegal, and Family court medicolegal. The listing says telepsychiatry is offered.",
+        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+        "referralSourceExcerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15"
+      },
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+      "sourceExcerpt": "Dr Justin Barry-Walsh",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Dr Justin Barry-Walsh",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "Dr Justin Barry-Walsh"
+        },
+        {
+          "field": "practiceName",
+          "value": "Barry-Walsh Forensic Psychiatry",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "Barry-Walsh Forensic Psychiatry"
+        },
+        {
+          "field": "fit",
+          "value": "RANZCP Your Health in Mind psychiatrist listing. Services include Civil medicolegal, Criminal medicolegal, and Family court medicolegal. The listing says telepsychiatry is offered.",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nYes"
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
+        }
+      ],
+      "auditRulesResolved": [
+        "weak-telehealth-evidence",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "reviewNotes": "The current RANZCP page and a separate public local directory corroborate the clinician, practice name, address, and phone. The RANZCP page explicitly says telepsychiatry is offered and requires a GP referral. The wording is framed as a directory claim because the profile says it was last updated in July 2018.",
+      "codexReview": {
+        "researchPassId": "research-20260715-justin-barry-walsh-identity-referral-1",
+        "verificationPassId": "verify-20260715-justin-barry-walsh-identity-referral-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:ranzcp-3038",
+      "reviewIds": [
+        "provider:ranzcp-3038"
+      ],
+      "providerId": "ranzcp-3038",
+      "providerName": "Dr Justin Barry-Walsh",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jul 2018",
+      "sourceEvidence": [
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Jul 2018",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Jul 2018"
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: 1-3 months"
+        },
+        {
+          "field": "contactCorroboration",
+          "value": "public directory contact",
+          "sourceUrl": "https://khandallahvillage.nz/directory-village/listing/barry-walsh-forensic-psychiatry/",
+          "sourceType": "third_party_directory",
+          "excerpt": "Barry-Walsh Forensic Psychiatry"
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The RANZCP page still publishes a 1-3 month wait, but it says Justin last updated the listing in July 2018. A current local directory corroborates the practice contact only and gives no current availability. The wait cannot be treated as current, so availability remains unresolved.",
+      "codexReview": {
+        "researchPassId": "research-20260715-justin-barry-walsh-availability-1",
+        "verificationPassId": "verify-20260715-justin-barry-walsh-availability-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
