@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T04:42:24.607Z",
+  "generatedAt": "2026-07-15T05:41:27.802Z",
   "providersScanned": 1213,
   "findings": [
     {
@@ -3439,31 +3439,6 @@
       "severity": "medium",
       "issue": "maori support tag is present but source fields do not clearly support it.",
       "suggestedFix": "Remove the tag or add a stronger public source/structured patientGroups/languages evidence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "ranzcp-13276",
-      "providerName": "Dr Evan Wilson",
-      "region": "Canterbury",
-      "city": "Bromley",
-      "type": "psychiatrist",
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "telehealth",
-        "depression",
-        "anxiety",
-        "trauma",
-        "addiction",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "rule": "weak-telehealth-evidence",
-      "severity": "medium",
-      "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-      "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
       "allowlisted": false
     },
     {
@@ -9482,9 +9457,9 @@
     }
   ],
   "summary": {
-    "total": 358,
+    "total": 357,
     "high": 0,
-    "medium": 232,
+    "medium": 231,
     "low": 126,
     "highUnallowlisted": 0,
     "allowlisted": 0

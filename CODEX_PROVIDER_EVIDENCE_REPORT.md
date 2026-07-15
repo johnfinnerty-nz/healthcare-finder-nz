@@ -1,30 +1,35 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T04:41:02.354Z
-Verified decisions: 5/5
+Generated: 2026-07-15T05:38:13.390Z
+Verified decisions: 6/6
 Errors: 0
 
-## dunedin-blue-harbour-mental-health
+## northland-heartwood-psychiatry
 
 - Action: adjust
 - Evidence gate: passed
 
-## dunedin-blue-harbour-mental-health
+## northland-heartwood-psychiatry
 
 - Action: needs_more_info
 - Evidence gate: passed
 
-## hawkes-bay-nova-mentem-mind-health-specialists
+## psychiatry-nz-staverton-kautoke
 
 - Action: adjust
 - Evidence gate: passed
 
-## hawkes-bay-nova-mentem-mind-health-specialists
+## psychiatry-nz-staverton-kautoke
 
 - Action: needs_more_info
 - Evidence gate: passed
 
-## national-mindcraft-psychiatry
+## ranzcp-13276
+
+- Action: adjust
+- Evidence gate: passed
+
+## ranzcp-13276
 
 - Action: needs_more_info
 - Evidence gate: passed

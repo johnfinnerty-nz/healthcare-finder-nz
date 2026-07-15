@@ -1,10 +1,10 @@
 # Provider Source-Fit Audit
 
-Generated: 2026-07-15T04:42:24.607Z
+Generated: 2026-07-15T05:41:27.802Z
 
 Providers scanned: 1213
 
-Findings: 358 total, 0 high (0 unallowlisted), 232 medium, 126 low.
+Findings: 357 total, 0 high (0 unallowlisted), 231 medium, 126 low.
 
 High severity findings block CI unless allowlisted in `data/provider-source-fit-allowlist.json`.
 
@@ -137,7 +137,6 @@ High severity findings block CI unless allowlisted in `data/provider-source-fit-
 | medium | otago-te-kaika-toku-oranga - Te Kaika Toku Oranga | Otago / Dunedin / Oamaru | public-service | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.tekaika.nz/services/toku-oranga | no |
 | medium | otago-wellsouth-toku-oranga - WellSouth Toku Oranga Access and Choice | Otago / Otago | public-service | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://wellsouth.nz/your-health/mental-health-and-wellbeing/toku-oranga-access-and-choice | no |
 | medium | psychiatry-nz-jimi-macmillan - Dr Jimi MacMillan | National / Telehealth across New Zealand | psychiatrist | maori support tag is present but source fields do not clearly support it. | Remove the tag or add a stronger public source/structured patientGroups/languages evidence. | https://psychiatry.nz/ | no |
-| medium | ranzcp-13276 - Dr Evan Wilson | Canterbury / Bromley | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson | no |
 | medium | ranzcp-2665 - Dr Ian Goodwin | Auckland / Auckland | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin | no |
 | medium | ranzcp-3038 - Dr Justin Barry-Walsh | Wellington / Khandallah | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3038/dr-justin-barry-walsh | no |
 | medium | ranzcp-4171 - Prof Sunny Collings | Wellington / Kumutoto | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4171/prof-sunny-collings | no |

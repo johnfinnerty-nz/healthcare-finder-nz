@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T04:43:05.489Z",
+  "generatedAt": "2026-07-15T05:41:47.584Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -28,8 +28,8 @@
   ],
   "inputs": {
     "providers": 1213,
-    "sourceFitFindings": 358,
-    "availabilityFindings": 57,
+    "sourceFitFindings": 357,
+    "availabilityFindings": 55,
     "referralFindings": 0,
     "watchlistItems": 21,
     "identityScanRecords": 1156,
@@ -47,15 +47,15 @@
     },
     "bySeverity": {
       "high": 12,
-      "medium": 362,
+      "medium": 361,
       "low": 298,
-      "none": 128
+      "none": 129
     },
     "byCategory": {
       "Referral pathway review": 73,
       "Sensitive tag or scope evidence": 125,
-      "Availability review": 81,
       "Directory/direct-contact confusion": 33,
+      "Availability review": 81,
       "Location and distance evidence": 129,
       "Google Places discovery": 47,
       "GP source corroboration": 251,
@@ -7042,536 +7042,6 @@
       "reviewNotes": ""
     },
     {
-      "reviewId": "provider:psychiatry-nz-staverton-kautoke",
-      "reviewCategory": "Availability review",
-      "providerId": "psychiatry-nz-staverton-kautoke",
-      "name": "Dr Staverton (Tony) Kautoke",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "address": "Online telepsychiatry service",
-      "lat": "",
-      "lon": "",
-      "phone": "",
-      "text": "",
-      "email": "refer@psychiatry.nz",
-      "website": "https://psychiatry.nz/",
-      "bookingUrl": "",
-      "source": "https://psychiatry.nz/",
-      "sourceQuality": "provider-owned or NGO public page",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "waitlist",
-      "availabilitySource": "https://psychiatry.nz/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://psychiatry.nz/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "adhd",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [],
-      "advertisedSpecialtyEvidence": [],
-      "specialtyTagsSource": "no advertised specialties recorded",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "waitlist availability is 75 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 5190,
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown",
-        "availability status is waitlist",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://psychiatry.nz/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "email",
-            "value": "refer@psychiatry.nz",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://psychiatry.nz/",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Online telepsychiatry service",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "waitlist",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: waitlist | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Dr Staverton (Tony) Kautoke\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Staverton (Tony) Kautoke National / Telehealth across New Zealand Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: waitlist",
-      "currentProvider": {
-        "id": "psychiatry-nz-staverton-kautoke",
-        "name": "Dr Staverton (Tony) Kautoke",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "Online telepsychiatry service",
-        "phone": "",
-        "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "https://psychiatry.nz/",
-        "hours": "Online assessments. Ask about current waitlist and appointment times.",
-        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "adhd",
-          "fit",
-          "direct-contact"
-        ],
-        "fit": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
-        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
-        "source": "https://psychiatry.nz/",
-        "verified": "2026-05",
-        "sourceQuality": "provider-owned or NGO public page",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "waitlist",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://psychiatry.nz/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [],
-        "advertisedSpecialtyEvidence": [],
-        "specialtyTagsSource": "no advertised specialties recorded"
-      },
-      "auditFindings": [
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "psychiatry-nz-staverton-kautoke",
-            "providerName": "Dr Staverton (Tony) Kautoke",
-            "region": "National",
-            "city": "Telehealth across New Zealand",
-            "type": "psychiatrist",
-            "source": "https://psychiatry.nz/",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-05",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "psychiatry-nz-staverton-kautoke",
-        "providerName": "Dr Staverton (Tony) Kautoke",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "sourceUrl": "https://psychiatry.nz/",
-        "pagesChecked": [
-          {
-            "url": "https://psychiatry.nz/",
-            "finalUrl": "https://psychiatry.nz/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr Staverton (Tony) Kautoke",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "PTSD"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "funded"
-        },
-        "availabilitySignal": {
-          "status": "long_wait_or_waitlist",
-          "value": "found",
-          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "waitlist"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: Make a referral",
-          "sourceUrl": "https://psychiatry.nz/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Han Chung Lim Dr",
-            "evidence": "Dr Han Chung Lim\nDr",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Lim. He",
-            "evidence": "Dr Lim. He",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Christmas Seu Christmas",
-            "evidence": "Dr Christmas Seu\nDr Christmas",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Jimi MacMillan Jimi",
-            "evidence": "Dr Jimi MacMillan\nDr Jimi",
-            "sourceUrl": "https://psychiatry.nz/"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
       "reviewId": "provider:nzccp-alana-malloy",
       "reviewCategory": "Directory/direct-contact confusion",
       "providerId": "nzccp-alana-malloy",
@@ -10609,6 +10079,510 @@
         "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2586/dr-john-collier",
         "availabilityNeedsManualReview": true
       }
+    },
+    {
+      "reviewId": "provider:northland-heartwood-psychiatry",
+      "reviewCategory": "Referral pathway review",
+      "providerId": "northland-heartwood-psychiatry",
+      "name": "Heartwood Psychiatry",
+      "clinicianName": "Dr Sarah Reed",
+      "practiceName": "Heartwood Psychiatry",
+      "type": "psychiatrist",
+      "region": "Northland",
+      "city": "Whangārei",
+      "address": "",
+      "lat": "",
+      "lon": "",
+      "phone": "022 590 2079",
+      "text": "",
+      "email": "info@heartwoodpsychiatry.co.nz",
+      "website": "https://www.heartwoodpsychiatry.co.nz/",
+      "bookingUrl": "",
+      "source": "https://www.heartwoodpsychiatry.co.nz/",
+      "sourceQuality": "provider-owned or NGO public page",
+      "confidence": "high",
+      "needsManualVerification": false,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-05",
+      "availabilityEvidence": "",
+      "availabilitySource": "https://www.heartwoodpsychiatry.co.nz/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": false,
+      "referralType": "unknown",
+      "referralSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
+      "referralConfidence": "low",
+      "referralLastChecked": "2026-05",
+      "referralNeedsManualReview": true,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "medication",
+        "diagnosis",
+        "assessment",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [],
+      "advertisedSpecialtyEvidence": [],
+      "specialtyTagsSource": "no advertised specialties recorded",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "medium",
+      "auditRules": [
+        "missing-address"
+      ],
+      "auditIssues": [
+        "Distance-weighted direct provider is missing an address and is not clearly remote."
+      ],
+      "suggestedFixes": [
+        "Verify an address or mark the provider as telehealth/phone-only with evidence."
+      ],
+      "reviewPriority": "high",
+      "priorityScore": 4910,
+      "reviewReasons": [
+        "medium: missing-address",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown"
+      ],
+      "sourceUrls": [
+        "https://www.heartwoodpsychiatry.co.nz/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "022 590 2079",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "email",
+            "value": "info@heartwoodpsychiatry.co.nz",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "website",
+            "value": "https://www.heartwoodpsychiatry.co.nz/",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          }
+        ],
+        "address": [],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "2026-05",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "unknown",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
+            "capturedAt": "2026-05",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed.",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "firstStep",
+            "value": "Email info@heartwoodpsychiatry.co.nz or use the website form to ask about referral requirements, availability, and fees.",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for p",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "workStudyMoneyHousing",
+            "value": "Work, study, money, or housing stress",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for professionals looking to improve wellness, resiliency, and balance within busy lives. Pain Psychiatry D",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "medication": [
+            {
+              "field": "tags",
+              "value": "medication",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "diagnosis": [
+            {
+              "field": "tags",
+              "value": "diagnosis",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "assessment": [
+            {
+              "field": "tags",
+              "value": "assessment",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ]
+        },
+        "telehealth": [],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private fees apply; ask about referral requirements, fees, and whether any funding applies.",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "excerpt": "es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews Dr Reed provides ACC evaluations for people with mental injury arising from: &bull; Sexual abuse (sensitive claims) &bull; A covered",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Sarah Reed. Originally\", practice \"Heartwood Psychiatry\". | Trauma or sexual harm: s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, | Work, study, money, or housing stress: ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr  | Signal: es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews | address audit: Distance-weighted direct provider is missing an address and is not clearly remote.",
+      "publicCardPreviewText": "Dr Sarah Reed, Heartwood Psychiatry Northland / Whangārei Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed. Email info@heartwoodpsychiatry.co.nz or use the website form to ask about referral requirements, availability, and fees. Private fees apply; ask about referral requirements, fees, and whether any funding applies. Availability: not_published",
+      "currentProvider": {
+        "id": "northland-heartwood-psychiatry",
+        "name": "Heartwood Psychiatry",
+        "type": "psychiatrist",
+        "region": "Northland",
+        "city": "Whangārei",
+        "address": "",
+        "phone": "022 590 2079",
+        "text": "",
+        "email": "info@heartwoodpsychiatry.co.nz",
+        "website": "https://www.heartwoodpsychiatry.co.nz/",
+        "hours": "Use the website contact form, phone, or email to ask about appointments.",
+        "cost": "Private fees apply; ask about referral requirements, fees, and whether any funding applies.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "medication",
+          "diagnosis",
+          "assessment",
+          "fit",
+          "direct-contact"
+        ],
+        "fit": "Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed.",
+        "firstStep": "Email info@heartwoodpsychiatry.co.nz or use the website form to ask about referral requirements, availability, and fees.",
+        "source": "https://www.heartwoodpsychiatry.co.nz/",
+        "verified": "2026-05",
+        "confidence": "high",
+        "sourceQuality": "provider-owned or NGO public page",
+        "lastVerified": "2026-05",
+        "needsManualVerification": false,
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-05",
+        "availabilityEvidence": "",
+        "availabilitySource": "https://www.heartwoodpsychiatry.co.nz/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": false,
+        "referralType": "unknown",
+        "referralSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
+        "referralConfidence": "low",
+        "referralLastChecked": "2026-05",
+        "referralNeedsManualReview": true,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [],
+        "advertisedSpecialtyEvidence": [],
+        "specialtyTagsSource": "no advertised specialties recorded",
+        "clinicianName": "Dr Sarah Reed",
+        "practiceName": "Heartwood Psychiatry"
+      },
+      "auditFindings": [
+        {
+          "source": "address",
+          "severity": "medium",
+          "rule": "missing-address",
+          "issue": "Distance-weighted direct provider is missing an address and is not clearly remote.",
+          "suggestedFix": "Verify an address or mark the provider as telehealth/phone-only with evidence.",
+          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+          "allowlisted": false,
+          "raw": {
+            "providerId": "northland-heartwood-psychiatry",
+            "providerName": "Heartwood Psychiatry",
+            "region": "Northland",
+            "city": "Whangārei",
+            "type": "psychiatrist",
+            "source": "https://www.heartwoodpsychiatry.co.nz/",
+            "rule": "missing-address",
+            "severity": "medium",
+            "issue": "Distance-weighted direct provider is missing an address and is not clearly remote.",
+            "suggestedAction": "Verify an address or mark the provider as telehealth/phone-only with evidence."
+          }
+        }
+      ],
+      "identityScan": {
+        "providerId": "northland-heartwood-psychiatry",
+        "providerName": "Heartwood Psychiatry",
+        "providerType": "psychiatrist",
+        "region": "Northland",
+        "city": "Northland and telehealth",
+        "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+        "pagesChecked": [
+          {
+            "url": "https://www.heartwoodpsychiatry.co.nz/",
+            "finalUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Sarah Reed. Originally",
+        "autoPracticeName": "Heartwood Psychiatry",
+        "autoConfidence": "medium",
+        "autoEvidence": "Dr Sarah Reed. Originally",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for p",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "matched": "trauma"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "found",
+            "evidence": "ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for professionals looking to improve wellness, resiliency, and balance within busy lives. Pain Psychiatry D",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+            "matched": "Burnout"
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews Dr Reed provides ACC evaluations for people with mental injury arising from: &bull; Sexual abuse (sensitive claims) &bull; A covered",
+          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+          "matched": "ACC"
+        },
+        "availabilitySignal": {
+          "status": "unclear",
+          "value": "unclear",
+          "evidence": "",
+          "sourceUrl": "",
+          "matched": ""
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Page contains a contact, booking, enquiry, or referral form.",
+          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Sarah Reed. Originally",
+            "evidence": "Dr Sarah Reed. Originally",
+            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
     },
     {
       "reviewId": "provider:ranzcp-4499",
@@ -16327,752 +16301,6 @@
             "name": "Caleb Armstrong",
             "evidence": "Dr Caleb Armstrong\nFRANZCP MBChB",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:ranzcp-13276",
-      "reviewCategory": "Availability review",
-      "providerId": "ranzcp-13276",
-      "name": "Dr Evan Wilson",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Canterbury",
-      "city": "Bromley",
-      "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
-      "lat": -43.537037,
-      "lon": 172.6795293,
-      "phone": "021848274",
-      "text": "",
-      "email": "info@elimbiashealth.com",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "bookingUrl": "",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "sourceQuality": "professional register or directory",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "appointment wait: Less than",
-      "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": true,
-      "referralType": "gp",
-      "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-      "referralConfidence": "high",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": false,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "telehealth",
-        "depression",
-        "anxiety",
-        "trauma",
-        "addiction",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment",
-        "substance/addiction comorbidity"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "Addiction",
-        "ADHD",
-        "Anxiety disorders",
-        "Autism spectrum disorders",
-        "Bipolar disorder",
-        "Depression",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "excerpt": "Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis.",
-          "capturedAt": "2026-05",
-          "confidence": "medium",
-          "needsManualReview": true
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "Addiction",
-        "ADHD",
-        "Anxiety disorders",
-        "Autism spectrum disorders",
-        "Bipolar disorder",
-        "Depression",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia"
-      ],
-      "services": [],
-      "patientGroups": [
-        "Families"
-      ],
-      "ageGroups": [
-        "Ages 1-17",
-        "Ages 16-24"
-      ],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "weak-telehealth-evidence",
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
-        "waitlist availability is 75 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 4900,
-      "reviewReasons": [
-        "medium: weak-telehealth-evidence",
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "021848274",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "email",
-            "value": "info@elimbiashealth.com",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "371 Linwood Ave, Bromley, Christchurch, 8062",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "appointment wait: Less than",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "gp",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis. Patient groups listed include Families. Works with Ages 1-17, Ages 16-24.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "specialties",
-            "value": "Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, Schizophrenia",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "patientGroups",
-            "value": "Families",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "ageGroups",
-            "value": "Ages 1-17, Ages 16-24",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow o",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Language",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "addictionGambling",
-            "value": "Alcohol, drug, or gambling harm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age g",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "addiction": [
-            {
-              "field": "tags",
-              "value": "addiction",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Evan Wilson\", practice \"(none)\". | Depression or low mood: your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis  | Anxiety, panic, or overwhelm: ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Au | Trauma or sexual harm: ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Evan Wilson Canterbury / Bromley RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis. Patient groups listed include Families. Works with Ages 1-17, Ages 16-24. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
-      "currentProvider": {
-        "id": "ranzcp-13276",
-        "name": "Dr Evan Wilson",
-        "type": "psychiatrist",
-        "region": "Canterbury",
-        "city": "Bromley",
-        "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
-        "phone": "021848274",
-        "text": "",
-        "email": "info@elimbiashealth.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "hours": "Appointment wait: Less than 1 month.",
-        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "telehealth",
-          "depression",
-          "anxiety",
-          "trauma",
-          "addiction",
-          "direct-contact"
-        ],
-        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis. Patient groups listed include Families. Works with Ages 1-17, Ages 16-24.",
-        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "verified": "2026-05",
-        "sourceUpdated": "2025-07-30",
-        "lat": -43.537037,
-        "lon": 172.6795293,
-        "sourceQuality": "professional register or directory",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "specialties": [
-          "Addiction",
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
-          "Bipolar disorder",
-          "Depression",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
-        ],
-        "ageGroups": [
-          "Ages 1-17",
-          "Ages 16-24"
-        ],
-        "patientGroups": [
-          "Families"
-        ],
-        "languages": [
-          "English"
-        ],
-        "appointmentWait": "Less than 1 month",
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "appointment wait: Less than",
-        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": false,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment",
-          "substance/addiction comorbidity"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "Addiction",
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
-          "Bipolar disorder",
-          "Depression",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "excerpt": "Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
-        "coordinatePrecision": "professional directory listing",
-        "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
-      },
-      "auditFindings": [
-        {
-          "source": "source-fit",
-          "severity": "medium",
-          "rule": "weak-telehealth-evidence",
-          "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-          "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "ranzcp-13276",
-            "providerName": "Dr Evan Wilson",
-            "region": "Canterbury",
-            "city": "Bromley",
-            "type": "psychiatrist",
-            "tags": [
-              "psychiatrist",
-              "medical-specialist",
-              "fit",
-              "telehealth",
-              "depression",
-              "anxiety",
-              "trauma",
-              "addiction",
-              "direct-contact"
-            ],
-            "needScope": [],
-            "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "rule": "weak-telehealth-evidence",
-            "severity": "medium",
-            "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-            "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-            "allowlisted": false
-          }
-        },
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "ranzcp-13276",
-            "providerName": "Dr Evan Wilson",
-            "region": "Canterbury",
-            "city": "Bromley",
-            "type": "psychiatrist",
-            "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-05",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "ranzcp-13276",
-        "providerName": "Dr Evan Wilson",
-        "providerType": "psychiatrist",
-        "region": "Canterbury",
-        "city": "Bromley",
-        "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-        "pagesChecked": [
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr Evan Wilson",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "Dr Evan Wilson FRANZCP MHSM",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow o",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Language",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "matched": "Post-traumatic"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "found",
-            "evidence": "this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age g",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "matched": "Addiction"
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-            "matched": "telehealth"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-          "matched": "fees"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: How to get an appointment",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Evan Wilson",
-            "evidence": "Dr Evan Wilson\nFRANZCP MHSM",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
           }
         ],
         "notes": "",
@@ -154804,6 +154032,504 @@
         "coordinateConfidence": "medium",
         "geocodeNeedsManualReview": true
       },
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-staverton-kautoke",
+      "reviewCategory": "Availability review",
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "name": "Dr Staverton (Tony) Kautoke",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "National",
+      "city": "Telehealth across New Zealand",
+      "address": "Online telepsychiatry service",
+      "lat": "",
+      "lon": "",
+      "phone": "",
+      "text": "",
+      "email": "refer@psychiatry.nz",
+      "website": "https://psychiatry.nz/",
+      "bookingUrl": "",
+      "source": "https://psychiatry.nz/",
+      "sourceQuality": "provider-owned or NGO public page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "waitlist",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "When you are on our waitlist, we will notify you when we release appointment slots.",
+      "availabilitySource": "https://psychiatry.nz/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": false,
+      "referralType": "unknown",
+      "referralSourceUrl": "https://psychiatry.nz/",
+      "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+      "referralConfidence": "medium",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": true,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "telehealth",
+        "adhd",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [],
+      "advertisedSpecialtyEvidence": [],
+      "specialtyTagsSource": "no advertised specialties recorded",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "high",
+      "priorityScore": 3170,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown",
+        "availability status is waitlist",
+        "address missing coordinates"
+      ],
+      "sourceUrls": [
+        "https://psychiatry.nz/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "email",
+            "value": "refer@psychiatry.nz",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://psychiatry.nz/",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Online telepsychiatry service",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "waitlist",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "When you are on our waitlist, we will notify you when we release appointment slots.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "unknown",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "We accept direct referrals from clients and healthcare professionals.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: When you are on our waitlist, we will notify you when we release appointment slots. | Referral: We accept direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Staverton (Tony) Kautoke\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+      "publicCardPreviewText": "Dr Staverton (Tony) Kautoke National / Telehealth across New Zealand Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: waitlist",
+      "currentProvider": {
+        "id": "psychiatry-nz-staverton-kautoke",
+        "name": "Dr Staverton (Tony) Kautoke",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "address": "Online telepsychiatry service",
+        "phone": "",
+        "text": "",
+        "email": "refer@psychiatry.nz",
+        "website": "https://psychiatry.nz/",
+        "hours": "Online assessments. Ask about current waitlist and appointment times.",
+        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "adhd",
+          "fit",
+          "direct-contact"
+        ],
+        "fit": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Kautoke as a medical officer of psychiatry working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
+        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
+        "source": "https://psychiatry.nz/",
+        "verified": "2026-05",
+        "sourceQuality": "provider-owned or NGO public page",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "needScope": [],
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "When you are on our waitlist, we will notify you when we release appointment slots.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": false,
+        "referralType": "unknown",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "medium",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": true,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [],
+        "advertisedSpecialtyEvidence": [],
+        "specialtyTagsSource": "no advertised specialties recorded"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "psychiatry-nz-staverton-kautoke",
+        "providerName": "Dr Staverton (Tony) Kautoke",
+        "providerType": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "sourceUrl": "https://psychiatry.nz/",
+        "pagesChecked": [
+          {
+            "url": "https://psychiatry.nz/",
+            "finalUrl": "https://psychiatry.nz/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Dr Staverton (Tony) Kautoke",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "PTSD"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "funded"
+        },
+        "availabilitySignal": {
+          "status": "long_wait_or_waitlist",
+          "value": "found",
+          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "waitlist"
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: Make a referral",
+          "sourceUrl": "https://psychiatry.nz/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Han Chung Lim Dr",
+            "evidence": "Dr Han Chung Lim\nDr",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Lim. He",
+            "evidence": "Dr Lim. He",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Christmas Seu Christmas",
+            "evidence": "Dr Christmas Seu\nDr Christmas",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Jimi MacMillan Jimi",
+            "evidence": "Dr Jimi MacMillan\nDr Jimi",
+            "sourceUrl": "https://psychiatry.nz/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
       "reviewer": "",
       "reviewedDate": "",
       "reviewNotes": ""
@@ -318130,528 +317856,6 @@
       "reviewNotes": ""
     },
     {
-      "reviewId": "provider:northland-heartwood-psychiatry",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "northland-heartwood-psychiatry",
-      "name": "Heartwood Psychiatry",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Northland",
-      "city": "Northland and telehealth",
-      "address": "",
-      "lat": "",
-      "lon": "",
-      "phone": "022 590 2079",
-      "text": "",
-      "email": "heartwood.psychiatry@gmail.com",
-      "website": "https://www.heartwoodpsychiatry.co.nz/",
-      "bookingUrl": "",
-      "source": "https://www.heartwoodpsychiatry.co.nz/",
-      "sourceQuality": "provider-owned or NGO public page",
-      "confidence": "high",
-      "needsManualVerification": false,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "",
-      "availabilitySource": "https://www.heartwoodpsychiatry.co.nz/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "bipolar",
-        "adhd",
-        "medication",
-        "diagnosis",
-        "assessment",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [],
-      "advertisedSpecialtyEvidence": [],
-      "specialtyTagsSource": "no advertised specialties recorded",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2310,
-      "reviewReasons": [
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.heartwoodpsychiatry.co.nz/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "022 590 2079",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "email",
-            "value": "heartwood.psychiatry@gmail.com",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "website",
-            "value": "https://www.heartwoodpsychiatry.co.nz/",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "address": [],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed.",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "firstStep",
-            "value": "Phone or email and ask whether they are taking new referrals, what referral information is needed, and what the first appointment would cost.",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for p",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "workStudyMoneyHousing",
-            "value": "Work, study, money, or housing stress",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for professionals looking to improve wellness, resiliency, and balance within busy lives. Pain Psychiatry D",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "bipolar": [
-            {
-              "field": "tags",
-              "value": "bipolar",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medication": [
-            {
-              "field": "tags",
-              "value": "medication",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "diagnosis": [
-            {
-              "field": "tags",
-              "value": "diagnosis",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "assessment": [
-            {
-              "field": "tags",
-              "value": "assessment",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private fees apply; ask about referral requirements, fees, and whether any funding applies.",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "excerpt": "es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews Dr Reed provides ACC evaluations for people with mental injury arising from: &bull; Sexual abuse (sensitive claims) &bull; A covered",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Sarah Reed. Originally\", practice \"Heartwood Psychiatry\". | Trauma or sexual harm: s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, | Work, study, money, or housing stress: ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr  | Signal: es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews",
-      "publicCardPreviewText": "Heartwood Psychiatry Northland / Northland and telehealth Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed. Phone or email and ask whether they are taking new referrals, what referral information is needed, and what the first appointment would cost. Private fees apply; ask about referral requirements, fees, and whether any funding applies. Availability: not_published",
-      "currentProvider": {
-        "id": "northland-heartwood-psychiatry",
-        "name": "Heartwood Psychiatry",
-        "type": "psychiatrist",
-        "region": "Northland",
-        "city": "Northland and telehealth",
-        "address": "",
-        "phone": "022 590 2079",
-        "text": "",
-        "email": "heartwood.psychiatry@gmail.com",
-        "website": "https://www.heartwoodpsychiatry.co.nz/",
-        "hours": "Use the website contact form, phone, or email to ask about appointments.",
-        "cost": "Private fees apply; ask about referral requirements, fees, and whether any funding applies.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "bipolar",
-          "adhd",
-          "medication",
-          "diagnosis",
-          "assessment",
-          "fit",
-          "direct-contact"
-        ],
-        "fit": "Northland psychiatry contact offering psychiatric assessment and treatment planning. Useful when medication, diagnosis, or specialist medical review may be needed.",
-        "firstStep": "Phone or email and ask whether they are taking new referrals, what referral information is needed, and what the first appointment would cost.",
-        "source": "https://www.heartwoodpsychiatry.co.nz/",
-        "verified": "2026-05",
-        "confidence": "high",
-        "sourceQuality": "provider-owned or NGO public page",
-        "lastVerified": "2026-05",
-        "needsManualVerification": false,
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "",
-        "availabilitySource": "https://www.heartwoodpsychiatry.co.nz/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [],
-        "advertisedSpecialtyEvidence": [],
-        "specialtyTagsSource": "no advertised specialties recorded"
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "northland-heartwood-psychiatry",
-        "providerName": "Heartwood Psychiatry",
-        "providerType": "psychiatrist",
-        "region": "Northland",
-        "city": "Northland and telehealth",
-        "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-        "pagesChecked": [
-          {
-            "url": "https://www.heartwoodpsychiatry.co.nz/",
-            "finalUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Sarah Reed. Originally",
-        "autoPracticeName": "Heartwood Psychiatry",
-        "autoConfidence": "medium",
-        "autoEvidence": "Dr Sarah Reed. Originally",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for p",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "matched": "trauma"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "found",
-            "evidence": "ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr Reed provides 1:1 sessions for professionals looking to improve wellness, resiliency, and balance within busy lives. Pain Psychiatry D",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-            "matched": "Burnout"
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews Dr Reed provides ACC evaluations for people with mental injury arising from: &bull; Sexual abuse (sensitive claims) &bull; A covered",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
-          "matched": "ACC"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Page contains a contact, booking, enquiry, or referral form.",
-          "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Sarah Reed. Originally",
-            "evidence": "Dr Sarah Reed. Originally",
-            "sourceUrl": "https://www.heartwoodpsychiatry.co.nz/"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
       "reviewId": "provider:waikato-be-well-psychiatry",
       "reviewCategory": "Referral pathway review",
       "providerId": "waikato-be-well-psychiatry",
@@ -322268,6 +321472,685 @@
           }
         }
       },
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:ranzcp-13276",
+      "reviewCategory": "Availability review",
+      "providerId": "ranzcp-13276",
+      "name": "Dr Evan Wilson",
+      "clinicianName": "Dr Evan Wilson",
+      "practiceName": "Elimbias Health",
+      "type": "psychiatrist",
+      "region": "Canterbury",
+      "city": "Bromley",
+      "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
+      "lat": -43.537037,
+      "lon": 172.6795293,
+      "phone": "021848274",
+      "text": "",
+      "email": "info@elimbiashealth.com",
+      "website": "https://www.elimbiashealth.com/",
+      "bookingUrl": "",
+      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+      "sourceQuality": "professional register or directory",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "waitlist",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "Approximate wait time for a first appointment: Less than 1 month",
+      "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": true,
+      "referralType": "gp",
+      "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+      "referralSourceExcerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "fit",
+        "telehealth",
+        "depression",
+        "anxiety",
+        "trauma",
+        "addiction",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment",
+        "substance/addiction comorbidity"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "Addiction",
+        "ADHD",
+        "Anxiety disorders",
+        "Autism spectrum disorders",
+        "Bipolar disorder",
+        "Depression",
+        "Post-traumatic stress disorder",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+          "excerpt": "Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis.",
+          "capturedAt": "2026-05",
+          "confidence": "medium",
+          "needsManualReview": true
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [
+        "Addiction",
+        "ADHD",
+        "Anxiety disorders",
+        "Autism spectrum disorders",
+        "Bipolar disorder",
+        "Depression",
+        "Post-traumatic stress disorder",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "services": [],
+      "patientGroups": [
+        "Families"
+      ],
+      "ageGroups": [
+        "Ages 1-17",
+        "Ages 16-24"
+      ],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 2210,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist"
+      ],
+      "sourceUrls": [
+        "https://www.elimbiashealth.com/",
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "021848274",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "email",
+            "value": "info@elimbiashealth.com",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://www.elimbiashealth.com/",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "371 Linwood Ave, Bromley, Christchurch, 8062",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "waitlist",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "gp",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+            "capturedAt": "2026-07-15",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, and Schizophrenia. The listing says telepsychiatry is offered.",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "specialties",
+            "value": "Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, Schizophrenia",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "patientGroups",
+            "value": "Families",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "ageGroups",
+            "value": "Ages 1-17, Ages 16-24",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow o",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Language",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "addictionGambling",
+            "value": "Alcohol, drug, or gambling harm",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age g",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "depression": [
+            {
+              "field": "tags",
+              "value": "depression",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "addiction": [
+            {
+              "field": "tags",
+              "value": "addiction",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "telehealth",
+            "value": "Telehealth / phone or video appointments",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: Approximate wait time for a first appointment: Less than 1 month | Referral: If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. | Source scan: clinician \"Dr Evan Wilson\", practice \"(none)\". | Depression or low mood: your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis  | Anxiety, panic, or overwhelm: ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Au | Trauma or sexual harm: ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stres",
+      "publicCardPreviewText": "Dr Evan Wilson, Elimbias Health Canterbury / Bromley RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, and Schizophrenia. The listing says telepsychiatry is offered. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "currentProvider": {
+        "id": "ranzcp-13276",
+        "name": "Dr Evan Wilson",
+        "type": "psychiatrist",
+        "region": "Canterbury",
+        "city": "Bromley",
+        "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
+        "phone": "021848274",
+        "text": "",
+        "email": "info@elimbiashealth.com",
+        "website": "https://www.elimbiashealth.com/",
+        "hours": "Appointment wait: Less than 1 month.",
+        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "depression",
+          "anxiety",
+          "trauma",
+          "addiction",
+          "direct-contact"
+        ],
+        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis, and Schizophrenia. The listing says telepsychiatry is offered.",
+        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "verified": "2026-05",
+        "sourceUpdated": "2025-07-30",
+        "lat": -43.537037,
+        "lon": 172.6795293,
+        "sourceQuality": "professional register or directory",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "specialties": [
+          "Addiction",
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "ageGroups": [
+          "Ages 1-17",
+          "Ages 16-24"
+        ],
+        "patientGroups": [
+          "Families"
+        ],
+        "languages": [
+          "English"
+        ],
+        "appointmentWait": "Less than 1 month",
+        "needScope": [],
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "Approximate wait time for a first appointment: Less than 1 month",
+        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "referralSourceExcerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment",
+          "substance/addiction comorbidity"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "Addiction",
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "excerpt": "Special interests include Addiction, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Post-traumatic stress disorder, Psychosis.",
+            "capturedAt": "2026-05",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests",
+        "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
+        "coordinatePrecision": "professional directory listing",
+        "coordinateConfidence": "medium",
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Evan Wilson",
+        "practiceName": "Elimbias Health"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "ranzcp-13276",
+        "providerName": "Dr Evan Wilson",
+        "providerType": "psychiatrist",
+        "region": "Canterbury",
+        "city": "Bromley",
+        "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "pagesChecked": [
+          {
+            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Dr Evan Wilson",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "Dr Evan Wilson FRANZCP MHSM",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow o",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "matched": "Depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "matched": "Anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age groups Ages 1-17 Ages 16-24 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Language",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "matched": "Post-traumatic"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "found",
+            "evidence": "this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stress disorder Schizophrenia Treats these age g",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "matched": "Addiction"
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "found",
+            "evidence": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+            "matched": "telehealth"
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+          "matched": "fees"
+        },
+        "availabilitySignal": {
+          "status": "unclear",
+          "value": "unclear",
+          "evidence": "",
+          "sourceUrl": "",
+          "matched": ""
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: How to get an appointment",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Evan Wilson",
+            "evidence": "Dr Evan Wilson\nFRANZCP MHSM",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
       "reviewer": "",
       "reviewedDate": "",
       "reviewNotes": ""

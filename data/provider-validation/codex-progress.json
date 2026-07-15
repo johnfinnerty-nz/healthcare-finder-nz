@@ -504,6 +504,90 @@
       "lastSourceUrl": "https://mindcraftpsychiatry.nz/",
       "lastNotes": "Independent normal public fetches of the provider home and referral pages each returned HTTP 403. Search snippets are discovery-only and cannot verify availability, referral, telehealth, in-person, age, or specialty claims. No source restriction was bypassed and the record is unchanged.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:heartwood.psychiatry@gmail.com": {
+      "reviewId": "discovery:suggestion:email:heartwood.psychiatry@gmail.com",
+      "providerId": "northland-heartwood-psychiatry",
+      "status": "completed",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T05:38:52.188Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+      "lastNotes": "Two provider-owned fetches identify Heartwood as Dr Sarah Reed's practice in Whangārei and publish info@heartwoodpsychiatry.co.nz as the contact email. The current site does not publish the stored Gmail address or support telehealth, ADHD, or bipolar as advertised Heartwood specialties, so those ranking tags are removed. The stored mobile number is left unchanged because silence is not proof that it is invalid.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:northland-heartwood-psychiatry": {
+      "reviewId": "provider:northland-heartwood-psychiatry",
+      "providerId": "northland-heartwood-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T05:38:52.188Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.heartwoodpsychiatry.co.nz/",
+      "lastNotes": "The provider-owned pages do not publish current availability or a psychiatry referral pathway. Neither is inferred from the contact form, and both remain not_published or unknown for later recheck.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:psychiatry-nz-staverton-kautoke": {
+      "reviewId": "provider:psychiatry-nz-staverton-kautoke",
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "status": "completed",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T05:38:52.188Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "Two provider-owned fetches reproduce Psychiatry.nz's shared waitlist process and direct-referral wording. The waitlist is practice-wide rather than clinician-specific, so manual review remains true. The safe lane does not convert direct client referrals into psychiatry self-referral metadata.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz",
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "status": "deferred",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T05:38:52.188Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The provider-owned profile identifies Dr Kautoke as a supervised medical officer working toward fellowship, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, and it cannot set psychiatry self-referral, so those classification questions remain deferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-13276": {
+      "reviewId": "provider:ranzcp-13276",
+      "providerId": "ranzcp-13276",
+      "status": "completed",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T05:38:52.188Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+      "lastNotes": "The RANZCP profile and current Elimbias team data both identify Dr Evan Wilson at Elimbias Health. RANZCP explicitly says telepsychiatry is offered and requires a GP referral. Its approximate wait remains published, but the profile says it was last updated in July 2025, so the waitlist is refreshed without clearing manual review or inferring acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org",
+      "providerId": "ranzcp-13276",
+      "status": "deferred",
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "startedAt": "2026-07-15T05:28:05.813Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T05:38:52.188Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+      "lastNotes": "The current page still publishes a wait under one month, but it also states that the psychiatrist last updated the listing in July 2025. No accepting claim is made, and the current real-world wait remains uncertain despite the successful re-fetch.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -551,9 +635,18 @@
         "hawkes-bay-nova-mentem-mind-health-specialists",
         "national-mindcraft-psychiatry"
       ]
+    },
+    {
+      "batchId": "codex-20260715052805-fd0ad3ee",
+      "generatedAt": "2026-07-15T05:28:05.813Z",
+      "providerIds": [
+        "northland-heartwood-psychiatry",
+        "psychiatry-nz-staverton-kautoke",
+        "ranzcp-13276"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T04:41:43.461Z",
+  "updatedAt": "2026-07-15T05:38:52.188Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -841,6 +934,54 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:heartwood.psychiatry@gmail.com",
+      "providerId": "northland-heartwood-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:northland-heartwood-psychiatry",
+      "providerId": "northland-heartwood-psychiatry",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-staverton-kautoke",
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz",
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-13276",
+      "providerId": "ranzcp-13276",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T05:38:52.188Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org",
+      "providerId": "ranzcp-13276",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T05:38:52.188Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

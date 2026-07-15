@@ -1,6 +1,6 @@
 # Availability Recheck Report
 
-Generated: 2026-07-15T04:42:25.167Z
+Generated: 2026-07-15T05:41:28.463Z
 
 ## Current Behaviour Before This Change
 
@@ -48,7 +48,7 @@ Regions most affected by unavailable/watchlist records:
 - Waikato: 2
 - West Coast: 1
 
-Findings: 57 total, 0 high (0 unallowlisted), 57 medium, 0 low.
+Findings: 55 total, 0 high (0 unallowlisted), 55 medium, 0 low.
 
 | Severity | Provider | Region / city | Status | Checked | Issue | Suggested action | Source | Allowlisted |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -71,8 +71,6 @@ Findings: 57 total, 0 high (0 unallowlisted), 57 medium, 0 low.
 | medium | northland-wayfinder-psychology - Wayfinder Psychology | Northland / Whangarei | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://wayfinderpsychology.co.nz/ | no |
 | medium | northland-whangarei-care-centre-counselling - Whangarei Care Centre Counselling | Northland / Whangarei | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://whgcare.org.nz/counselling-whangarei/ | no |
 | medium | psychiatry-nz-jimi-macmillan - Dr Jimi MacMillan | National / Telehealth across New Zealand | waitlist | 2026-06-12 | waitlist availability is 33 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
-| medium | psychiatry-nz-staverton-kautoke - Dr Staverton (Tony) Kautoke | National / Telehealth across New Zealand | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
-| medium | ranzcp-13276 - Dr Evan Wilson | Canterbury / Bromley | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson | no |
 | medium | ranzcp-1363 - Dr Roger Elliott | Taranaki / Oakura | referrals_paused | 2026-05-24 | Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/1363/dr-roger-elliott | no |
 | medium | ranzcp-2586 - Dr John Collier | Waikato / HAMILTON CBD | referrals_paused | 2026-05-24 | Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2586/dr-john-collier | no |
 | medium | ranzcp-2665 - Dr Ian Goodwin | Auckland / Auckland | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin | no |

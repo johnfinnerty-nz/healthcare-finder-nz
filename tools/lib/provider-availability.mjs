@@ -41,7 +41,7 @@ const restrictivePatterns = [
 ];
 
 const waitlistPatterns = [
-  /\b(?:wait\s*list|waitlist|waiting\s+list|limited\s+availability|very\s+limited|appointment\s+wait\s*:?\s*(?:less\s+than|1\s*-\s*3|3\s*-\s*6|6\+|within\s+\d+)|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+(?:\d+|a\s+few|few|several|a\s+couple\s+of)\s*(?:days?|weeks?|months?)|next\s+available\s+appointment)\b/i
+  /\b(?:wait\s*list|waitlist|waiting\s+list|limited\s+availability|very\s+limited|appointment\s+wait\s*:?\s*(?:less\s+than|1\s*-\s*3|3\s*-\s*6|6\+|within\s+\d+)|(?:approximate\s+)?wait\s*time\s+for\s+(?:a\s+)?first\s+appointment\s*:\s*(?:less\s+than\s+)?\d+\s*(?:days?|weeks?|months?)|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+(?:\d+|a\s+few|few|several|a\s+couple\s+of)\s*(?:days?|weeks?|months?)|next\s+available\s+appointment)\b/i
 ];
 
 const acceptingPatterns = [

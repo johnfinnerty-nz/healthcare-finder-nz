@@ -406,6 +406,49 @@ test("an explicit non-numeric appointment wait is treated as a waitlist", () => 
   assert.match(result.evidence, /wait time of a few weeks/i);
 });
 
+test("an approximate first-appointment wait is treated as a waitlist", () => {
+  const result = detectAvailabilityFromText("Approximate wait time for a first appointment: Less than 1 month");
+  assert.equal(result.status, "waitlist");
+  assert.match(result.evidence, /less than 1 month/i);
+});
+
+test("Codex evidence verification accepts an exact approximate first-appointment wait", async () => {
+  const excerpt = "Approximate wait time for a first appointment: Less than 1 month";
+  const sourceUrl = "https://directory.test/dr-wilson";
+  const waitProvider = provider({
+    id: "dr-wilson",
+    name: "Dr Evan Wilson",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    availabilityStatus: "waitlist"
+  });
+  const decision = codexDecision({
+    providerId: waitProvider.id,
+    correctedFields: {
+      availabilityStatus: "waitlist",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: true
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "waitlist", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const result = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [waitProvider],
+    fetcher: sourceFetcher(`<h1>Dr Evan Wilson</h1><p>Psychiatrist</p><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(result.errors, []);
+});
+
 test("Codex can move an explicitly referral-paused provider to the watchlist", async () => {
   const excerpt = "Please note that due to high demand currently no new psychiatry referrals are taken";
   const pausedProvider = provider({

@@ -24,7 +24,7 @@ const supportEvidence = {
   rainbow: /\b(rainbow|lgbt|lgbtq|lgbtqia|takatapui|takatapui|sexuality|gender diverse|transgender|gay|lesbian|bisexual|intersex)\b/i
 };
 
-const telehealthEvidence = /\b(telehealth|online|video|zoom|remote|phone appointment|phone counselling|virtual)\b/i;
+const telehealthEvidence = /\b(telehealth|telepsychiatr(?:y|ic)|online|video|zoom|remote|phone appointment|phone counselling|virtual)\b/i;
 const rehabEvidence = /\b(acc|rehab|rehabilitation|concussion|pain|injury|injuries|workplace|eap|return to work|vocational)\b/i;
 const sexualHarmEvidence = /\b(sexual harm|sexual abuse|rape|sensitive claims|survivors of sexual)\b/i;
 const addictionOnlyEvidence = /\b(addiction|alcohol|drug|gambling|aod|substance)\b/i;

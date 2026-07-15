@@ -1,34 +1,34 @@
 # Codex Provider Validation Batch
 
-Generated: 2026-07-15T04:27:05.926Z
-Batch: codex-20260715042705-2552f1dc
+Generated: 2026-07-15T05:28:05.813Z
+Batch: codex-20260715052805-fd0ad3ee
 Providers: 3
 
 This is a local, no-API-key safe-remediation batch. Positive high-risk claims are prohibited.
 
-## 1. Blue Harbour Mental Health
+## 1. Heartwood Psychiatry
 
-- Provider ID: `dunedin-blue-harbour-mental-health`
-- Type/location: psychiatrist | Dunedin | Otago
+- Provider ID: `northland-heartwood-psychiatry`
+- Type/location: psychiatrist | Northland and telehealth | Northland
 - Priority: high / medium
 - Modes: evidence_only
 - Rules: discovery-suggestion, needs_manual_research
-- Sources: https://www.blueharbour.co.nz/
+- Sources: https://www.heartwoodpsychiatry.co.nz/
 
-## 2. Nova Mentem Mind Health Specialists
+## 2. Dr Staverton (Tony) Kautoke
 
-- Provider ID: `hawkes-bay-nova-mentem-mind-health-specialists`
-- Type/location: psychiatrist | Napier | Hawke's Bay
+- Provider ID: `psychiatry-nz-staverton-kautoke`
+- Type/location: psychiatrist | Telehealth across New Zealand | National
 - Priority: high / medium
-- Modes: evidence_only
-- Rules: discovery-suggestion, needs_manual_research
-- Sources: https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/
+- Modes: restrictive_availability_or_evidence_only
+- Rules: stale-availability, discovery-suggestion, update_existing_provider
+- Sources: https://psychiatry.nz/
 
-## 3. MindCraft Psychiatry
+## 3. Dr Evan Wilson
 
-- Provider ID: `national-mindcraft-psychiatry`
-- Type/location: psychiatrist | Telehealth | National
+- Provider ID: `ranzcp-13276`
+- Type/location: psychiatrist | Bromley | Canterbury
 - Priority: high / medium
-- Modes: evidence_only
-- Rules: discovery-suggestion, needs_manual_research
-- Sources: https://mindcraftpsychiatry.nz/ | https://mindcraftpsychiatry.nz/referral.php
+- Modes: restrictive_availability_or_evidence_only, evidence_only
+- Rules: weak-telehealth-evidence, stale-availability, discovery-suggestion, update_existing_provider
+- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson

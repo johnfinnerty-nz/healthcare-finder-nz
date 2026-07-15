@@ -554,6 +554,14 @@ test("source-fit audit catches known unsafe provider patterns", () => {
       phone: "09 111 1111",
       email: "hello@example.org",
       needScope: []
+    },
+    {
+      ...baseProvider,
+      id: "supported-telepsychiatry",
+      type: "psychiatrist",
+      tags: ["psychiatrist", "telehealth", "direct-contact"],
+      fit: "The professional profile says this clinician offers telepsychiatry.",
+      needScope: []
     }
   ], [], { generatedAt: "2026-05-25T00:00:00.000Z" });
 
@@ -562,6 +570,7 @@ test("source-fit audit catches known unsafe provider patterns", () => {
   assert.ok(rules.includes("bad-rehab:narrow-rehab-overbroad-tags:high"));
   assert.ok(rules.includes("bad-national-clinician:national-clinician-no-telehealth:high"));
   assert.ok(rules.includes("bad-directory:directory-treated-direct:high"));
+  assert.equal(rules.some((rule) => rule.startsWith("supported-telepsychiatry:weak-telehealth-evidence:")), false);
   assert.equal(report.summary.highUnallowlisted, 4);
 });
 

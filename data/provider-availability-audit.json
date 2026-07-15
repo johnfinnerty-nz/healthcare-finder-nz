@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T04:42:25.167Z",
+  "generatedAt": "2026-07-15T05:41:28.463Z",
   "currentBehaviour": {
     "scheduledRecheckPreviouslyExisted": true,
     "notes": [
@@ -335,36 +335,6 @@
       "rule": "stale-availability",
       "severity": "medium",
       "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "psychiatry-nz-staverton-kautoke",
-      "providerName": "Dr Staverton (Tony) Kautoke",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "type": "psychiatrist",
-      "source": "https://psychiatry.nz/",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "ranzcp-13276",
-      "providerName": "Dr Evan Wilson",
-      "region": "Canterbury",
-      "city": "Bromley",
-      "type": "psychiatrist",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -910,9 +880,9 @@
     }
   ],
   "summary": {
-    "total": 57,
+    "total": 55,
     "high": 0,
-    "medium": 57,
+    "medium": 55,
     "low": 0,
     "highUnallowlisted": 0,
     "allowlisted": 0

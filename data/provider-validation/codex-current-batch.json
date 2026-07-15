@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715042705-2552f1dc",
-  "generatedAt": "2026-07-15T04:27:05.926Z",
+  "batchId": "codex-20260715052805-fd0ad3ee",
+  "generatedAt": "2026-07-15T05:28:05.813Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,146 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "dunedin-blue-harbour-mental-health",
+      "providerId": "northland-heartwood-psychiatry",
       "reviewIds": [
-        "discovery:suggestion:email:office@blueharbour.co.nz",
-        "provider:dunedin-blue-harbour-mental-health"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "seed source login-or-captcha-required"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "seed source login-or-captcha-required",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.blueharbour.co.nz/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: office@blueharbour.co.nz\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Tiago Gandra\", practice \"Blue Harbour Mental Health\". | Trauma or sexual harm: sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Ser | Signal: l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide asses | Signal: Link/button text: Referrals",
-      "currentRecord": {
-        "name": "Blue Harbour Mental Health",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Otago",
-        "city": "Dunedin",
-        "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
-        "phone": "",
-        "text": "",
-        "email": "office@blueharbour.co.nz",
-        "website": "https://www.blueharbour.co.nz/",
-        "bookingUrl": "",
-        "source": "https://www.blueharbour.co.nz/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
-      "reviewIds": [
-        "discovery:suggestion:email:info@novamentem.com",
-        "provider:hawkes-bay-nova-mentem-mind-health-specialists"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "seed source login-or-captcha-required"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "seed source login-or-captcha-required",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 021 108 7539\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Nova Mentem Mind Health Specialists\". | Depression or low mood: Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Current | Anxiety, panic, or overwhelm: clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, in | Trauma or sexual harm: xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditi",
-      "currentRecord": {
-        "name": "Nova Mentem Mind Health Specialists",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Hawke's Bay",
-        "city": "Napier",
-        "address": "353 Gloucester Street, Taradale, Napier 4112",
-        "phone": "021 108 7539",
-        "text": "",
-        "email": "info@novamentem.com",
-        "website": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "bookingUrl": "",
-        "source": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "national-mindcraft-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz",
-        "provider:national-mindcraft-psychiatry"
+        "discovery:suggestion:email:heartwood.psychiatry@gmail.com",
+        "provider:northland-heartwood-psychiatry"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -180,24 +44,23 @@
         "psychiatrist referral pathway unknown"
       ],
       "sourceUrls": [
-        "https://mindcraftpsychiatry.nz/",
-        "https://mindcraftpsychiatry.nz/referral.php"
+        "https://www.heartwoodpsychiatry.co.nz/"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: https://mindcraftpsychiatry.nz/\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Our Consultant\", practice \"MindCraft Psychiatry\". | Depression or low mood: a telehealth for those aged 5 years and up. These include: Anxiety and Phobias Attention Deficit Hyperactivity Disorder (ADHD) Autistic Spectrum Disorder (ASD) Depression Gender Dy | Anxiety, panic, or overwhelm: red We provide assessments, treatment and advice for psychiatric and neurodevelopmental conditions via telehealth for those aged 5 years and up. These include: Anxiety and Phobias  | Telehealth / phone or video appointments: nagers, children, and families. About Us MindCraft Psychiatry provide psychiatric assessments and support to adults, teenagers, children and their families via telehealth. We take ",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 022 590 2079\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Sarah Reed. Originally\", practice \"Heartwood Psychiatry\". | Trauma or sexual harm: s, and is on the Faculty of Royal College of Consult-Liaison Psychiatrists. ​ Dr Reed's area of expertise include wellness, mind-body medicine, chronic pain, trauma and resiliency, | Work, study, money, or housing stress: ise include wellness, mind-body medicine, chronic pain, trauma and resiliency, Consult-Liaison and general adult psychiatry. Read More SERVICES Wellness and Burnout Supervision Dr  | Signal: es. Pain Psychiatry Dr Reed works with the Northern Area Pain Service (NAPS), in individual and group settings, treating people who experience chronic pain. ACC Psychiatric Reviews",
       "currentRecord": {
-        "name": "MindCraft Psychiatry",
+        "name": "Heartwood Psychiatry",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth",
+        "region": "Northland",
+        "city": "Northland and telehealth",
         "address": "",
-        "phone": "",
+        "phone": "022 590 2079",
         "text": "",
-        "email": "",
-        "website": "https://mindcraftpsychiatry.nz/",
+        "email": "heartwood.psychiatry@gmail.com",
+        "website": "https://www.heartwoodpsychiatry.co.nz/",
         "bookingUrl": "",
-        "source": "https://mindcraftpsychiatry.nz/",
+        "source": "https://www.heartwoodpsychiatry.co.nz/",
         "availabilityStatus": "not_published",
         "availabilityEvidence": "",
         "referralType": "",
@@ -212,6 +75,199 @@
         "onlineAvailable": false,
         "phoneSupport": false,
         "inPerson": false,
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "psychiatry-nz-staverton-kautoke",
+      "reviewIds": [
+        "provider:psychiatry-nz-staverton-kautoke",
+        "discovery:suggestion:clinician-domain:dr-staverton-tony-kautoke:psychiatry.nz"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown",
+        "availability status is waitlist",
+        "address missing coordinates",
+        "provider discovery suggestion",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://psychiatry.nz/"
+      ],
+      "sourceEvidenceSummary": "Availability: waitlist | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Dr Staverton (Tony) Kautoke\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: provider-owned page | Evidence: Seed value from providers.json: refer@psychiatry.nz",
+      "currentRecord": {
+        "name": "Dr Staverton (Tony) Kautoke",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "address": "Online telepsychiatry service",
+        "phone": "",
+        "text": "",
+        "email": "refer@psychiatry.nz",
+        "website": "https://psychiatry.nz/",
+        "bookingUrl": "",
+        "source": "https://psychiatry.nz/",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "waitlist",
+        "requiresReferral": false,
+        "referralType": "unknown",
+        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "adhd",
+          "fit",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-13276",
+      "reviewIds": [
+        "provider:ranzcp-13276",
+        "discovery:suggestion:clinician-domain:dr-evan-wilson:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only",
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review",
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "weak-telehealth-evidence",
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "Telehealth or online availability is set but source fields do not clearly support remote care.",
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: weak-telehealth-evidence",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Evan Wilson\", practice \"(none)\". | Depression or low mood: your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis  | Anxiety, panic, or overwhelm: ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Au | Trauma or sexual harm: ns. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 021848274",
+      "currentRecord": {
+        "name": "Dr Evan Wilson",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Canterbury",
+        "city": "Bromley",
+        "address": "371 Linwood Ave, Bromley, Christchurch, 8062",
+        "phone": "021848274",
+        "text": "",
+        "email": "info@elimbiashealth.com",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: Less than",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "depression",
+          "anxiety",
+          "trauma",
+          "addiction",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "Addiction",
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "specialties": [
+          "Addiction",
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "services": [],
+        "patientGroups": [
+          "Families"
+        ],
+        "ageGroups": [
+          "Ages 1-17",
+          "Ages 16-24"
+        ],
         "cost": ""
       },
       "score": 410
