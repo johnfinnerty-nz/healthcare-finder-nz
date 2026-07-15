@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715003459-3963760d",
-  "generatedAt": "2026-07-15T00:34:59.344Z",
+  "batchId": "codex-20260715022541-98dbf9ae",
+  "generatedAt": "2026-07-15T02:25:41.003Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,67 +13,142 @@
   ],
   "items": [
     {
-      "providerId": "national-msq-health-psychiatry",
+      "providerId": "otago-psychiatry-down-south",
       "reviewIds": [
-        "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
-        "discovery:suggestion:email:enquire@msq.health",
-        "provider:national-msq-health-psychiatry"
+        "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
+        "provider:otago-psychiatry-down-south"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
       "reviewModes": [
-        "safe_removal_or_evidence_only",
-        "restrictive_availability_or_evidence_only",
+        "contact_or_location_corroboration",
         "evidence_only"
       ],
       "reviewCategories": [
-        "Referral pathway review"
+        "Referral pathway review",
+        "Needs quick human check"
       ],
       "auditRules": [
         "discovery-suggestion",
         "needs_manual_research",
-        "conflict-tags",
-        "conflict-advertisedSpecialties"
+        "conflict-address",
+        "conflict-phone"
       ],
       "auditIssues": [
-        "conflicting tags, advertisedSpecialties values",
+        "conflicting address, phone values",
         "extracted from seed source provider_owned",
-        "conflicting fields: tags, advertisedSpecialties",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown"
+        "conflicting fields: address, phone"
       ],
       "suggestedFixes": [
         "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
         "provider discovery suggestion",
-        "conflicting tags, advertisedSpecialties values",
+        "conflicting address, phone values",
         "extracted from seed source provider_owned",
-        "conflicting fields: tags, advertisedSpecialties",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
+        "conflicting fields: address, phone",
+        "availability needs manual review"
       ],
       "sourceUrls": [
-        "https://msq.health/",
-        "https://msq.health/book/",
-        "https://msq.health/contact"
+        "https://www.psychiatrydownsouth.co.nz/referrals",
+        "https://www.psychiatrydownsouth.co.nz/contact"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Booking or appointment link found on source page.\nSources: provider-owned page | Evidence: Seed value from providers.json: 04 499 2624\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Affordable Healthcare New Zealand\". | Depression or low mood: → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including p | Anxiety, panic, or overwhelm: 🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic dis | Trauma or sexual harm: ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based ",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 03 477 9053\nReferral: Referrals page says referrals are accepted from GPs and other health-care professionals, and self-referrals usually need clinician support. | Source scan: clinician \"(none)\", practice \"Psychiatry Down South\". | Signal: Link/button text: Referrals",
       "currentRecord": {
-        "name": "Expert Health Services - When You Need It Most",
+        "name": "Psychiatry Down South",
         "clinicianName": "",
-        "practiceName": "Expert Health Services - When You Need It Most",
+        "practiceName": "Psychiatry Down South",
+        "type": "psychiatrist",
+        "region": "Otago",
+        "city": "Dunedin",
+        "address": "342 High Street, Dunedin",
+        "phone": "03 477 9053",
+        "text": "",
+        "email": "admin@psychiatrydownsouth.co.nz",
+        "website": "https://www.psychiatrydownsouth.co.nz/contact",
+        "bookingUrl": "",
+        "source": "https://www.psychiatrydownsouth.co.nz/referrals",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "cost": ""
+      },
+      "score": 520
+    },
+    {
+      "providerId": "psychiatry-nz-christmas-seu",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+        "provider:psychiatry-nz-christmas-seu"
+      ],
+      "reviewPriority": "critical",
+      "auditSeverity": "high",
+      "reviewModes": [
+        "safe_removal_or_evidence_only",
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review",
+        "Availability review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research",
+        "conflict-name",
+        "conflict-email",
+        "conflict-tags",
+        "conflict-advertisedSpecialties",
+        "stale-availability"
+      ],
+      "auditIssues": [
+        "conflicting name, email, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: name, email, tags, advertisedSpecialties",
+        "waitlist availability is 33 days old; target cadence is 30 days."
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "conflicting name, email, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: name, email, tags, advertisedSpecialties",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability status is waitlist",
+        "address missing coordinates"
+      ],
+      "sourceUrls": [
+        "https://psychiatry.nz/"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Seed value from providers.json: refer@psychiatry.nz\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Christmas Seu\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
+      "currentRecord": {
+        "name": "Dr Christmas Seu",
+        "clinicianName": "Dr Christmas Seu",
+        "practiceName": "Psychiatry.nz",
         "type": "psychiatrist",
         "region": "National",
-        "city": "Telehealth and NZ clinics",
-        "address": "",
+        "city": "Telehealth across New Zealand",
+        "address": "Online telepsychiatry service",
         "phone": "",
         "text": "",
-        "email": "",
-        "website": "",
-        "bookingUrl": "https://msq.health/book/",
-        "source": "https://msq.health/",
+        "email": "refer@psychiatry.nz",
+        "website": "https://psychiatry.nz/",
+        "bookingUrl": "",
+        "source": "https://psychiatry.nz/",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "waitlist",
         "referralType": "",
@@ -81,8 +156,7 @@
         "tags": [
           "depression",
           "anxiety",
-          "trauma",
-          "telehealth"
+          "trauma"
         ],
         "needScope": [],
         "advertisedSpecialties": [
@@ -97,188 +171,90 @@
         ],
         "services": [],
         "patientGroups": [],
-        "ageGroups": [
-          [
-            "Children",
-            "Adolescents",
-            "Adults"
-          ]
-        ],
-        "onlineAvailable": true,
+        "ageGroups": [],
+        "onlineAvailable": false,
         "phoneSupport": false,
-        "inPerson": false,
+        "inPerson": true,
         "cost": ""
       },
       "score": 520
     },
     {
-      "providerId": "national-positive-mind-works-psychiatry",
+      "providerId": "psychiatry-nz-han-chung-lim",
       "reviewIds": [
-        "discovery:suggestion:email:info@positivemindworks.co",
-        "provider:national-positive-mind-works-psychiatry"
+        "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
+        "provider:psychiatry-nz-han-chung-lim",
+        "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
       "reviewModes": [
         "safe_removal_or_evidence_only",
-        "evidence_only"
+        "restrictive_availability_or_evidence_only"
       ],
       "reviewCategories": [
-        "Referral pathway review"
+        "Referral pathway review",
+        "Availability review"
       ],
       "auditRules": [
         "discovery-suggestion",
         "needs_manual_research",
-        "conflict-name",
-        "conflict-phone",
-        "conflict-tags",
-        "conflict-advertisedSpecialties"
-      ],
-      "auditIssues": [
-        "conflicting name, phone, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: name, phone, tags, advertisedSpecialties"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "conflicting name, phone, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: name, phone, tags, advertisedSpecialties",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.positivemindworks.co/",
-        "https://www.facebook.com/PositiveMindWorks.Online/",
-        "https://www.positivemindworks.co/book-now/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 0800 327 477\nAvailability: Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase. | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Online Psychologist Psychiatrists: Therapy at Home\". | Depression or low mood: e DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post N | Anxiety, panic, or overwhelm: dicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social A | Trauma or sexual harm: fees Psychology fees NDIS Medicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD An",
-      "currentRecord": {
-        "name": "Positive Mind Works Psychiatry",
-        "clinicianName": "Dr Paula Porter",
-        "practiceName": "Professional Care. Flexible Access.",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Nationwide virtual service",
-        "address": "",
-        "phone": "0800 327 477",
-        "text": "",
-        "email": "info@positivemindworks.co",
-        "website": "https://www.positivemindworks.co/",
-        "bookingUrl": "https://www.facebook.com/PositiveMindWorks.Online/",
-        "source": "https://www.positivemindworks.co/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [
-          "depression",
-          "anxiety",
-          "trauma",
-          "telehealth"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "specialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [
-          [
-            "Children",
-            "Adults",
-            "Older adults"
-          ]
-        ],
-        "onlineAvailable": true,
-        "phoneSupport": false,
-        "inPerson": false,
-        "cost": ""
-      },
-      "score": 520
-    },
-    {
-      "providerId": "national-tom-oflynn-psychiatrist",
-      "reviewIds": [
-        "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
-        "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
-        "provider:national-tom-oflynn-psychiatrist"
-      ],
-      "reviewPriority": "critical",
-      "auditSeverity": "high",
-      "reviewModes": [
-        "safe_removal_or_evidence_only",
-        "restrictive_availability_or_evidence_only",
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research",
+        "conflict-email",
         "conflict-tags",
         "conflict-advertisedSpecialties",
+        "stale-availability",
         "update_existing_provider"
       ],
       "auditIssues": [
-        "conflicting tags, advertisedSpecialties values",
-        "extracted from seed source healthpoint",
-        "conflicting fields: tags, advertisedSpecialties",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review",
+        "conflicting email, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: email, tags, advertisedSpecialties",
+        "waitlist availability is 33 days old; target cadence is 30 days.",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
         "existing provider update requires human approval before patching"
       ],
       "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
       ],
       "reviewReasons": [
         "provider discovery suggestion",
-        "conflicting tags, advertisedSpecialties values",
-        "extracted from seed source healthpoint",
-        "conflicting fields: tags, advertisedSpecialties",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review",
-        "existing provider update requires human approval before patching",
-        "availability needs manual review",
-        "referral pathway needs manual review"
+        "conflicting email, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: email, tags, advertisedSpecialties",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability status is waitlist",
+        "address missing coordinates",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
+        "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+        "https://psychiatry.nz/"
       ],
-      "sourceEvidenceSummary": "Sources: Healthpoint | Evidence: nitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 021548914 --> Email [email protected] Ph\nSources: Healthpoint | Evidence: Seed value from providers.json: 022 129 6524\nReferral: Public information suggests self-referral, online booking, or direct patient enquiry is available. | Source scan: clinician \"Tom O'Flynn Psychiatrist\", practice \"(none)\". | Depression or low mood: ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a  | Anxiety, panic, or overwhelm: O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psy | Trauma or sexual harm: omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disor",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Pathway The ADHD pathway aims to streamline the diagnosis and treatment for those suffering from ADHD. Step 1 - Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you informa\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Han Chung Lim\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.\nSources: provider-owned page | Evidence: Seed value from providers.json: refer@psychiatry.nz",
       "currentRecord": {
-        "name": "Tom O'Flynn Psychiatrist",
-        "clinicianName": "Dr Tom O'Flynn",
-        "practiceName": "Tom O'Flynn Psychiatrist",
+        "name": "Psychiatry.nz",
+        "clinicianName": "Dr Han Chung",
+        "practiceName": "Psychiatry.nz",
         "type": "psychiatrist",
         "region": "National",
-        "city": "Telehealth",
+        "city": "Telehealth across New Zealand",
         "address": "",
-        "phone": "021548914 02",
+        "phone": "",
         "text": "",
-        "email": "",
+        "email": "refer@psychiatry.nz",
         "website": "",
         "bookingUrl": "",
-        "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
+        "source": "https://psychiatry.nz/",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "waitlist",
         "referralType": "",
         "referralSourceExcerpt": "",
         "tags": [
           "depression",
           "anxiety",
-          "trauma",
-          "rainbow",
-          "telehealth"
+          "trauma"
         ],
         "needScope": [],
         "advertisedSpecialties": [
@@ -293,13 +269,8 @@
         ],
         "services": [],
         "patientGroups": [],
-        "ageGroups": [
-          [
-            "Adults",
-            "Older adults"
-          ]
-        ],
-        "onlineAvailable": true,
+        "ageGroups": [],
+        "onlineAvailable": false,
         "phoneSupport": false,
         "inPerson": false,
         "cost": ""

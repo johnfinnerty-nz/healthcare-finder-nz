@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T01:32:15.965Z",
+  "generatedAt": "2026-07-15T02:34:33.422Z",
   "currentBehaviour": {
     "scheduledRecheckPreviouslyExisted": true,
     "notes": [
@@ -30,8 +30,8 @@
   },
   "statusCounts": {
     "liveProviders": {
-      "not_published": 1176,
-      "waitlist": 31,
+      "not_published": 1178,
+      "waitlist": 29,
       "accepting": 6
     },
     "watchlist": {
@@ -321,36 +321,6 @@
       "severity": "medium",
       "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "psychiatry-nz-christmas-seu",
-      "providerName": "Dr Christmas Seu",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "type": "psychiatrist",
-      "source": "https://psychiatry.nz/",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-06-12",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "psychiatry-nz-han-chung-lim",
-      "providerName": "Dr Han Chung Lim",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "type": "psychiatrist",
-      "source": "https://psychiatry.nz/",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-06-12",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
     {
@@ -940,9 +910,9 @@
     }
   ],
   "summary": {
-    "total": 59,
+    "total": 57,
     "high": 0,
-    "medium": 59,
+    "medium": 57,
     "low": 0,
     "highUnallowlisted": 0,
     "allowlisted": 0

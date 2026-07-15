@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T00:34:50.673Z",
+  "generatedAt": "2026-07-15T02:25:34.839Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -38,31 +38,31 @@
     "googlePlacesCandidates": 204
   },
   "summary": {
-    "total": 801,
+    "total": 800,
     "byPriority": {
       "critical": 12,
       "high": 483,
-      "medium": 158,
+      "medium": 157,
       "low": 148
     },
     "bySeverity": {
       "high": 12,
       "medium": 364,
       "low": 298,
-      "none": 127
+      "none": 126
     },
     "byCategory": {
-      "Referral pathway review": 78,
+      "Referral pathway review": 75,
       "Sensitive tag or scope evidence": 124,
       "Availability review": 82,
       "Directory/direct-contact confusion": 33,
       "Location and distance evidence": 127,
       "Google Places discovery": 47,
       "GP source corroboration": 251,
-      "Needs quick human check": 59
+      "Needs quick human check": 61
     },
     "byType": {
-      "psychiatrist": 147,
+      "psychiatrist": 146,
       "counsellor": 58,
       "psychologist": 83,
       "public-service": 107,
@@ -76,7 +76,7 @@
     "byRegion": {
       "Bay of Plenty": 38,
       "Manawatu-Whanganui": 48,
-      "National": 38,
+      "National": 37,
       "Otago": 38,
       "Southland": 37,
       "Auckland": 182,
@@ -319775,721 +319775,6 @@
       "reviewNotes": ""
     },
     {
-      "reviewId": "provider:national-msq-health-psychiatry",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "national-msq-health-psychiatry",
-      "name": "MSQ Health - Psychiatry",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Telehealth and NZ clinics",
-      "address": "",
-      "lat": "",
-      "lon": "",
-      "phone": "04 499 2624",
-      "text": "",
-      "email": "enquire@msq.health",
-      "website": "https://msq.health/",
-      "bookingUrl": "https://msq.health/contact",
-      "source": "https://msq.health/",
-      "sourceQuality": "provider-owned page",
-      "confidence": "high",
-      "needsManualVerification": false,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-05-24",
-      "availabilityEvidence": "",
-      "availabilitySource": "https://msq.health/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://msq.health/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "adhd",
-        "anxiety",
-        "bipolar",
-        "schizophrenia",
-        "child",
-        "adolescent",
-        "assessment",
-        "medication",
-        "insurance",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "ADHD assessments and treatment",
-        "Mood and anxiety disorders",
-        "General psychiatry",
-        "Bipolar disorder",
-        "Schizophrenia",
-        "Child and adolescent psychiatry",
-        "Telehealth nationwide"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://msq.health/",
-          "excerpt": "Advertised specialties/interests recorded as: ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide.",
-          "capturedAt": "2026-05",
-          "confidence": "high",
-          "needsManualReview": false
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "ADHD assessments and treatment",
-        "Mood and anxiety disorders",
-        "General psychiatry",
-        "Bipolar disorder",
-        "Schizophrenia",
-        "Child and adolescent psychiatry",
-        "Telehealth nationwide"
-      ],
-      "services": [],
-      "patientGroups": [
-        "Adults",
-        "Children",
-        "Adolescents",
-        "People wanting telehealth psychiatry"
-      ],
-      "ageGroups": [
-        "Children",
-        "Adolescents",
-        "Adults"
-      ],
-      "onlineAvailable": true,
-      "phoneSupport": true,
-      "inPerson": true,
-      "crisisOnly": false,
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2310,
-      "reviewReasons": [
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://msq.health/",
-        "https://msq.health/contact"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "04 499 2624",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "email",
-            "value": "enquire@msq.health",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "website",
-            "value": "https://msq.health/",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "bookingUrl",
-            "value": "https://msq.health/contact",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "address": [],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "2026-05-24",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin.",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "firstStep",
-            "value": "Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation.",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "specialties",
-            "value": "ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "patientGroups",
-            "value": "Adults, Children, Adolescents, People wanting telehealth psychiatry",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "ageGroups",
-            "value": "Children, Adolescents, Adults",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "→ 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, and bipolar depression. rTMS available for complex cases. Learn more → 🔧 Hernia Rep",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depres",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, a",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "bipolar": [
-            {
-              "field": "tags",
-              "value": "bipolar",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "schizophrenia": [
-            {
-              "field": "tags",
-              "value": "schizophrenia",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "child": [
-            {
-              "field": "tags",
-              "value": "child",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "adolescent": [
-            {
-              "field": "tags",
-              "value": "adolescent",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "assessment": [
-            {
-              "field": "tags",
-              "value": "assessment",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medication": [
-            {
-              "field": "tags",
-              "value": "medication",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "insurance": [
-            {
-              "field": "tags",
-              "value": "insurance",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://msq.health/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "Affordable Healthcare New Zealand | MSQ Health GP / Referrers Suppliers Services TeleHealth GP Service ADHD & Mental Health Services Hernia & Same Day Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hern",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking.",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "r one roof — giving you faster access, transparent pricing, and expert clinicians who actually know your condition. Private, confidential care with transparent fees upfront Southern Cross Easy-Claim approved — processed on the spot In-clinic across four centres and telehealth nationwide Mental health, surgery, and r",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Affordable Healthcare New Zealand\". | Depression or low mood: → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including p | Anxiety, panic, or overwhelm: 🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic dis | Trauma or sexual harm: ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based ",
-      "publicCardPreviewText": "MSQ Health - Psychiatry National / Telehealth and NZ clinics Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin. Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation. Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking. Availability: not_published",
-      "currentProvider": {
-        "address": "",
-        "phone": "04 499 2624",
-        "text": "",
-        "email": "enquire@msq.health",
-        "hours": "Contact the service to confirm current availability and opening hours.",
-        "cost": "Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking.",
-        "verified": "2026-05",
-        "lastVerified": "2026-05",
-        "confidence": "high",
-        "sourceQuality": "provider-owned page",
-        "needsManualVerification": false,
-        "crisisOnly": false,
-        "onlineAvailable": true,
-        "phoneSupport": true,
-        "inPerson": true,
-        "id": "national-msq-health-psychiatry",
-        "name": "MSQ Health - Psychiatry",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth and NZ clinics",
-        "website": "https://msq.health/",
-        "bookingUrl": "https://msq.health/contact",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "adhd",
-          "anxiety",
-          "bipolar",
-          "schizophrenia",
-          "child",
-          "adolescent",
-          "assessment",
-          "medication",
-          "insurance",
-          "fit",
-          "direct-contact"
-        ],
-        "specialties": [
-          "ADHD assessments and treatment",
-          "Mood and anxiety disorders",
-          "General psychiatry",
-          "Bipolar disorder",
-          "Schizophrenia",
-          "Child and adolescent psychiatry",
-          "Telehealth nationwide"
-        ],
-        "patientGroups": [
-          "Adults",
-          "Children",
-          "Adolescents",
-          "People wanting telehealth psychiatry"
-        ],
-        "ageGroups": [
-          "Children",
-          "Adolescents",
-          "Adults"
-        ],
-        "fit": "Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin.",
-        "firstStep": "Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation.",
-        "source": "https://msq.health/",
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-05-24",
-        "availabilityEvidence": "",
-        "availabilitySource": "https://msq.health/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://msq.health/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "ADHD assessments and treatment",
-          "Mood and anxiety disorders",
-          "General psychiatry",
-          "Bipolar disorder",
-          "Schizophrenia",
-          "Child and adolescent psychiatry",
-          "Telehealth nationwide"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://msq.health/",
-            "excerpt": "Advertised specialties/interests recorded as: ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests"
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "national-msq-health-psychiatry",
-        "providerName": "MSQ Health - Psychiatry",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth and NZ clinics",
-        "sourceUrl": "https://msq.health/",
-        "pagesChecked": [
-          {
-            "url": "https://msq.health/",
-            "finalUrl": "https://msq.health/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://msq.health/about-us/",
-            "finalUrl": "https://msq.health/about-us/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://msq.health/contact/",
-            "finalUrl": "https://msq.health/contact/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "",
-        "autoPracticeName": "Affordable Healthcare New Zealand",
-        "autoConfidence": "medium",
-        "autoEvidence": "Affordable Healthcare New Zealand | MSQ Health",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "→ 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, and bipolar depression. rTMS available for complex cases. Learn more → 🔧 Hernia Rep",
-            "sourceUrl": "https://msq.health/",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depres",
-            "sourceUrl": "https://msq.health/",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, a",
-            "sourceUrl": "https://msq.health/",
-            "matched": "PTSD"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "Affordable Healthcare New Zealand | MSQ Health GP / Referrers Suppliers Services TeleHealth GP Service ADHD & Mental Health Services Hernia & Same Day Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hern",
-            "sourceUrl": "https://msq.health/",
-            "matched": "TeleHealth"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "r one roof — giving you faster access, transparent pricing, and expert clinicians who actually know your condition. Private, confidential care with transparent fees upfront Southern Cross Easy-Claim approved — processed on the spot In-clinic across four centres and telehealth nationwide Mental health, surgery, and r",
-          "sourceUrl": "https://msq.health/",
-          "matched": "fees"
-        },
-        "availabilitySignal": {
-          "status": "long_wait_or_waitlist",
-          "value": "found",
-          "evidence": "could change their lives. MSQ Health exists to change that.\" MSQ Health · Part of the SEQURE Group Weeks Typical time to a specialist — not months on a public waitlist 10+ Years the SEQURE Group has provided trusted healthcare in NZ 4 Cities — Auckland, Wellington, & Napier/Hastings, plus telehealth About MSQ Health P",
-          "sourceUrl": "https://msq.health/",
-          "matched": "waitlist"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "y Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hernia Repair Long COVID TeleGP Conditions Why MSQ About us Contact Book Now Enquire Now 💬 Enquire Now 📅 Book Now TeleGP · Mental Health · Surgery · Recovery — New Zealand Expert Health Services - When You Need It Most MSQ",
-          "sourceUrl": "https://msq.health/"
-        },
-        "candidateClinicians": [],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
       "reviewId": "provider:northland-heartwood-psychiatry",
       "reviewCategory": "Referral pathway review",
       "providerId": "northland-heartwood-psychiatry",
@@ -321713,1738 +320998,6 @@
             "name": "Tanya Saul Tanya",
             "evidence": "Dr. Tanya Saul\nDr. Tanya",
             "sourceUrl": "https://www.bewellpsychiatry0.co.nz/"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:national-positive-mind-works-psychiatry",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "national-positive-mind-works-psychiatry",
-      "name": "Positive Mind Works Psychiatry",
-      "clinicianName": "",
-      "practiceName": "Positive Mind Works",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Nationwide virtual service",
-      "address": "",
-      "lat": "",
-      "lon": "",
-      "phone": "0800 327 477",
-      "text": "",
-      "email": "info@positivemindworks.co",
-      "website": "https://www.positivemindworks.co/",
-      "bookingUrl": "https://www.positivemindworks.co/book-now/",
-      "source": "https://www.positivemindworks.co/",
-      "sourceQuality": "provider-owned page",
-      "confidence": "high",
-      "needsManualVerification": false,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-06-12",
-      "availabilityEvidence": "Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase.",
-      "availabilitySource": "https://www.positivemindworks.co/",
-      "availabilityNeedsManualReview": false,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://www.positivemindworks.co/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "psychologist",
-        "medical-specialist",
-        "telehealth",
-        "online",
-        "adhd",
-        "depression",
-        "anxiety",
-        "ocd",
-        "panic",
-        "trauma",
-        "ptsd",
-        "alcohol",
-        "drug",
-        "addiction",
-        "perinatal",
-        "rainbow",
-        "lgbtqia",
-        "child",
-        "adolescent",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment",
-        "substance/addiction comorbidity"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "Online psychiatry",
-        "Online psychology",
-        "ADHD",
-        "Anxiety",
-        "Depression",
-        "OCD",
-        "Panic",
-        "Trauma and PTSD",
-        "Alcohol and substance use",
-        "Pregnancy and postnatal issues"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.positivemindworks.co/",
-          "excerpt": "Advertised specialties/interests recorded as: Online psychiatry, Online psychology, ADHD, Anxiety, Depression, OCD, Panic, Trauma and PTSD, Alcohol and substance use, Pregnancy and postnatal issues.",
-          "capturedAt": "2026-05",
-          "confidence": "high",
-          "needsManualReview": false
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "Online psychiatry",
-        "Online psychology",
-        "ADHD",
-        "Anxiety",
-        "Depression",
-        "OCD",
-        "Panic",
-        "Trauma and PTSD",
-        "Alcohol and substance use",
-        "Pregnancy and postnatal issues"
-      ],
-      "services": [],
-      "patientGroups": [
-        "Children",
-        "Adolescents",
-        "Adults",
-        "Couples",
-        "Rainbow communities"
-      ],
-      "ageGroups": [
-        "Children",
-        "Adolescents",
-        "Adults"
-      ],
-      "onlineAvailable": true,
-      "phoneSupport": true,
-      "inPerson": true,
-      "crisisOnly": false,
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2290,
-      "reviewReasons": [
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.positivemindworks.co/",
-        "https://www.positivemindworks.co/book-now/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "0800 327 477",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "email",
-            "value": "info@positivemindworks.co",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "website",
-            "value": "https://www.positivemindworks.co/",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "bookingUrl",
-            "value": "https://www.positivemindworks.co/book-now/",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "address": [],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase.",
-            "capturedAt": "2026-06-12",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Nationwide online psychiatry and psychology service with direct phone, email, and booking links. A practical option where local in-person psychiatry is not available.",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "firstStep",
-            "value": "Call 0800 327 477 or email and ask whether a GP referral is needed, what the current wait time is, and whether psychiatry or psychology is the right first booking.",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "specialties",
-            "value": "Online psychiatry, Online psychology, ADHD, Anxiety, Depression, OCD, Panic, Trauma and PTSD, Alcohol and substance use, Pregnancy and postnatal issues",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "patientGroups",
-            "value": "Children, Adolescents, Adults, Couples, Rainbow communities",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "ageGroups",
-            "value": "Children, Adolescents, Adults",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": false
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "e DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Management Strategies for a Balanced Life Weight Loss Counselling Services A",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "dicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Management Strategies for a Balanced Li",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "fees Psychology fees NDIS Medicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Managemen",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "psychologist": [
-            {
-              "field": "tags",
-              "value": "psychologist",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "online": [
-            {
-              "field": "tags",
-              "value": "online",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "ocd": [
-            {
-              "field": "tags",
-              "value": "ocd",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "panic": [
-            {
-              "field": "tags",
-              "value": "panic",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "ptsd": [
-            {
-              "field": "tags",
-              "value": "ptsd",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "alcohol": [
-            {
-              "field": "tags",
-              "value": "alcohol",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "drug": [
-            {
-              "field": "tags",
-              "value": "drug",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "addiction": [
-            {
-              "field": "tags",
-              "value": "addiction",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "perinatal": [
-            {
-              "field": "tags",
-              "value": "perinatal",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "rainbow": [
-            {
-              "field": "tags",
-              "value": "rainbow",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "lgbtqia": [
-            {
-              "field": "tags",
-              "value": "lgbtqia",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "child": [
-            {
-              "field": "tags",
-              "value": "child",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "adolescent": [
-            {
-              "field": "tags",
-              "value": "adolescent",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.positivemindworks.co/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "tags",
-            "value": "online",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "sitive Psychology Technotherapy Psychiatric Assessments Medication Reviews We Work With NDIS Participants Children & Adolescents Couples Families GPs Telehealth Psychiatrists Telehealth Psychologists Groups Individual EAP EAP New Enquiry EAP Portal For Employees Learning Lunches Resources Blog Self",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [
-          {
-            "field": "tags",
-            "value": "rainbow",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private fees apply. The provider lists ACC and other funding sources for some psychiatry appointments; ask for current fees and referral requirements.",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "sychologists Groups Individual EAP EAP New Enquiry EAP Portal For Employees Learning Lunches Resources Blog Self Assessments Self Isolation Program Free Resources Referrals Form Frequently Asked Questions Prescriptions Book Now Professional Care. Flexible Access. Secure telehealth appointments, tailore",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase. | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Online Psychologist Psychiatrists: Therapy at Home\". | Depression or low mood: e DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post N | Anxiety, panic, or overwhelm: dicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social A | Trauma or sexual harm: fees Psychology fees NDIS Medicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD An",
-      "publicCardPreviewText": "Positive Mind Works Psychiatry National / Nationwide virtual service Nationwide online psychiatry and psychology service with direct phone, email, and booking links. A practical option where local in-person psychiatry is not available. Call 0800 327 477 or email and ask whether a GP referral is needed, what the current wait time is, and whether psychiatry or psychology is the right first booking. Private fees apply. The provider lists ACC and other funding sources for some psychiatry appointments; ask for current fees and referral requirements. Availability: not_published",
-      "currentProvider": {
-        "address": "",
-        "phone": "0800 327 477",
-        "text": "",
-        "email": "info@positivemindworks.co",
-        "hours": "Contact the service to confirm current availability and opening hours.",
-        "cost": "Private fees apply. The provider lists ACC and other funding sources for some psychiatry appointments; ask for current fees and referral requirements.",
-        "verified": "2026-05",
-        "lastVerified": "2026-05",
-        "confidence": "high",
-        "sourceQuality": "provider-owned page",
-        "needsManualVerification": false,
-        "crisisOnly": false,
-        "onlineAvailable": true,
-        "phoneSupport": true,
-        "inPerson": true,
-        "id": "national-positive-mind-works-psychiatry",
-        "name": "Positive Mind Works Psychiatry",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Nationwide virtual service",
-        "website": "https://www.positivemindworks.co/",
-        "bookingUrl": "https://www.positivemindworks.co/book-now/",
-        "tags": [
-          "psychiatrist",
-          "psychologist",
-          "medical-specialist",
-          "telehealth",
-          "online",
-          "adhd",
-          "depression",
-          "anxiety",
-          "ocd",
-          "panic",
-          "trauma",
-          "ptsd",
-          "alcohol",
-          "drug",
-          "addiction",
-          "perinatal",
-          "rainbow",
-          "lgbtqia",
-          "child",
-          "adolescent",
-          "fit",
-          "direct-contact"
-        ],
-        "specialties": [
-          "Online psychiatry",
-          "Online psychology",
-          "ADHD",
-          "Anxiety",
-          "Depression",
-          "OCD",
-          "Panic",
-          "Trauma and PTSD",
-          "Alcohol and substance use",
-          "Pregnancy and postnatal issues"
-        ],
-        "patientGroups": [
-          "Children",
-          "Adolescents",
-          "Adults",
-          "Couples",
-          "Rainbow communities"
-        ],
-        "ageGroups": [
-          "Children",
-          "Adolescents",
-          "Adults"
-        ],
-        "fit": "Nationwide online psychiatry and psychology service with direct phone, email, and booking links. A practical option where local in-person psychiatry is not available.",
-        "firstStep": "Call 0800 327 477 or email and ask whether a GP referral is needed, what the current wait time is, and whether psychiatry or psychology is the right first booking.",
-        "source": "https://www.positivemindworks.co/",
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-06-12",
-        "availabilityEvidence": "Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase.",
-        "availabilitySource": "https://www.positivemindworks.co/",
-        "availabilityNeedsManualReview": false,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://www.positivemindworks.co/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment",
-          "substance/addiction comorbidity"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "Online psychiatry",
-          "Online psychology",
-          "ADHD",
-          "Anxiety",
-          "Depression",
-          "OCD",
-          "Panic",
-          "Trauma and PTSD",
-          "Alcohol and substance use",
-          "Pregnancy and postnatal issues"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "excerpt": "Advertised specialties/interests recorded as: Online psychiatry, Online psychology, ADHD, Anxiety, Depression, OCD, Panic, Trauma and PTSD, Alcohol and substance use, Pregnancy and postnatal issues.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "practiceName": "Positive Mind Works"
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "national-positive-mind-works-psychiatry",
-        "providerName": "Positive Mind Works Psychiatry",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Nationwide virtual service",
-        "sourceUrl": "https://www.positivemindworks.co/",
-        "pagesChecked": [
-          {
-            "url": "https://www.positivemindworks.co/",
-            "finalUrl": "https://www.positivemindworks.co/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.positivemindworks.co/about/",
-            "finalUrl": "https://www.positivemindworks.co/about/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.positivemindworks.co/team/",
-            "finalUrl": "https://www.positivemindworks.co/team/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.positivemindworks.co/contact/",
-            "finalUrl": "https://www.positivemindworks.co/contact/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "",
-        "autoPracticeName": "Online Psychologist Psychiatrists: Therapy at Home",
-        "autoConfidence": "medium",
-        "autoEvidence": "Online Psychologist Psychiatrists: Therapy at Home",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "e DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Management Strategies for a Balanced Life Weight Loss Counselling Services A",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "dicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Management Strategies for a Balanced Li",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "fees Psychology fees NDIS Medicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post Natal Depression Relationship Sleep Stress Managemen",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "matched": "Trauma"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "sitive Psychology Technotherapy Psychiatric Assessments Medication Reviews We Work With NDIS Participants Children & Adolescents Couples Families GPs Telehealth Psychiatrists Telehealth Psychologists Groups Individual EAP EAP New Enquiry EAP Portal For Employees Learning Lunches Resources Blog Self",
-            "sourceUrl": "https://www.positivemindworks.co/",
-            "matched": "Telehealth"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "sychologists Groups Individual EAP EAP New Enquiry EAP Portal For Employees Learning Lunches Resources Blog Self Assessments Self Isolation Program Free Resources Referrals Form Frequently Asked Questions Prescriptions Book Now Professional Care. Flexible Access. Secure telehealth appointments, tailore",
-          "sourceUrl": "https://www.positivemindworks.co/",
-          "matched": "Free"
-        },
-        "availabilitySignal": {
-          "status": "accepting_or_booking_available",
-          "value": "found",
-          "evidence": "ess, low mood or broader wellbeing concerns, our clinicians offer thoughtful, compassionate and professionally informed care tailored to your individual needs. Book Appointment Our Story Positive Mind Works was founded by Samantha Spafford, who grew up in Alice Springs NT, she witnessed first-hand the barriers many p",
-          "sourceUrl": "https://www.positivemindworks.co/about/",
-          "matched": "Book Appointment"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "loyees Learning Lunches Resources Blog Self Assessments Self Isolation Program Free Resources Referrals Form Frequently Asked Questions Prescriptions Book Now Professional Care. Flexible Access. Secure telehealth appointments, tailored to individuals, couples, employers, times that work for you. Book your S",
-          "sourceUrl": "https://www.positivemindworks.co/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Paula Porter Griffith",
-            "evidence": "Psychologist NZ Registered Clinical Psychologist Dr Paula Porter Griffith Psychiatrist NZ Registered Psychiatrist Dr Katie Sickorez",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Katie Sickorez Psychiatrist NZ",
-            "evidence": "Dr Katie Sickorez\nPsychiatrist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Narelle Duncan Psychologist Australian",
-            "evidence": "Dr Narelle Duncan\nPsychologist\nAustralian",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Anita Must Psychiatrist NZ",
-            "evidence": "Dr Anita Must\nPsychiatrist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Sam Russell Psychologist NZ",
-            "evidence": "Dr Sam Russell\nPsychologist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Naya Williams Psychologist NZ",
-            "evidence": "Dr Naya Williams\nPsychologist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Leanne Parasram Psychiatrist NZ",
-            "evidence": "Dr Leanne Parasram\nPsychiatrist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Shishir Regmi Psychiatrist NZ",
-            "evidence": "Dr Shishir Regmi\nPsychiatrist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Mohammad Amir Faizal",
-            "evidence": "Psychologist Australian and NZ Clinical Psychologist Dr Mohammad Amir Faizal Psychiatrist Australian Registered Psychiatrist Dr Chandni Prakash",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Chandni Prakash Psychiatrist NZ",
-            "evidence": "Dr Chandni Prakash\nPsychiatrist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Andrew Nielsen Psychiatrist Consultant",
-            "evidence": "Dr Andrew Nielsen\nPsychiatrist\nConsultant",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Samantha Spafford Psychologist NZ",
-            "evidence": "Ms Samantha Spafford\nPsychologist\nNZ",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Vijini Jayawardena Psychiatrist Consultant",
-            "evidence": "Dr Vijini Jayawardena\nPsychiatrist\nConsultant",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Oladipo Sorungbe Psychiatrist Consultant",
-            "evidence": "Dr Oladipo Sorungbe\nPsychiatrist\nConsultant",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Matthew Jenkins Psychiatrist New",
-            "evidence": "Dr Matthew Jenkins\nPsychiatrist\nNew",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Krishna Manepalli Psychiatrist Consultant",
-            "evidence": "Dr Krishna Manepalli\nPsychiatrist\nConsultant",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Hazlin Lockman Psychiatrist Consultant",
-            "evidence": "Dr Hazlin Lockman\nPsychiatrist\nConsultant",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Katie Sickorez",
-            "evidence": "Psychiatrist NZ Registered Psychiatrist Dr Katie Sickorez Psychiatrist NZ Registered Psychiatrist Dr Narelle Duncan",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Narelle Duncan",
-            "evidence": "Psychiatrist NZ Registered Psychiatrist Dr Narelle Duncan Psychologist Australian Registered Psychologist Dr Anita Must",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Anita Must",
-            "evidence": "Psychologist Australian Registered Psychologist Dr Anita Must Psychiatrist NZ Registered Psychiatrist Dr Sam Russell",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Sam Russell",
-            "evidence": "Psychiatrist NZ Registered Psychiatrist Dr Sam Russell Psychologist NZ and UK registered Counselling Psychologist Masha Broadbent",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Melissa De Beer",
-            "evidence": "Counsellor\nMelissa de Beer\nPsychologist",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Naya Williams",
-            "evidence": "Psychologist New Zealand Registered Psychologist Dr Naya Williams Psychologist NZ Registered Clinical Psychologist Tanya Thomson",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Financial Coach Ale Held",
-            "evidence": "Financial Coach\nAle Held\nPsychologist",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Deb Kaita Kakiiza",
-            "evidence": "Psychologist Australian and NZ Registered Psychologist Deb Kaita Kakiiza Psychologist Australian Registered Psychologist Taylor Richards",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Taylor Richards",
-            "evidence": "Psychologist Australian Registered Psychologist Taylor Richards Psychologist Australian Registered Psychologist Natasha De Bellis",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Natasha De Bellis",
-            "evidence": "Psychologist Australian Registered Psychologist Natasha De Bellis Psychologist Clinical Team Lead/ Psychologist Valentina Markovska",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Harpreet Deol",
-            "evidence": "Psychologist Australian Registered Psychologist Harpreet Deol Psychologist Australian Registered Psychologist Matthew Perrin",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Matthew Perrin Psychologist Australian",
-            "evidence": "Psychologist\nMatthew Perrin\nPsychologist\nAustralian",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          },
-          {
-            "name": "Denise Hostin Psychologist Senior",
-            "evidence": "Psychologist\nDenise Hostin\nPsychologist\nSenior",
-            "sourceUrl": "https://www.positivemindworks.co/team/"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:national-tom-oflynn-psychiatrist",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "national-tom-oflynn-psychiatrist",
-      "name": "Tom O'Flynn Psychiatrist",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Telehealth",
-      "address": "",
-      "lat": "",
-      "lon": "",
-      "phone": "022 129 6524",
-      "text": "",
-      "email": "info@tomoflynn.com",
-      "website": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-      "bookingUrl": "",
-      "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-      "sourceQuality": "trusted health directory",
-      "confidence": "high",
-      "needsManualVerification": false,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "",
-      "availabilitySource": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "self",
-      "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-      "referralSourceExcerpt": "Public information suggests self-referral, online booking, or direct patient enquiry is available.",
-      "referralConfidence": "medium",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "self-referral",
-        "depression",
-        "anxiety",
-        "adhd",
-        "addiction",
-        "alcohol",
-        "drug",
-        "trauma",
-        "medication",
-        "diagnosis",
-        "assessment",
-        "transport",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment",
-        "substance/addiction comorbidity"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "ADHD",
-        "addiction",
-        "anxiety",
-        "depression",
-        "trauma",
-        "medication or diagnosis questions"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "excerpt": "Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
-          "capturedAt": "2026-05",
-          "confidence": "high",
-          "needsManualReview": false
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2290,
-      "reviewReasons": [
-        "availability needs manual review",
-        "referral pathway needs manual review"
-      ],
-      "sourceUrls": [
-        "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "022 129 6524",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": false
-          },
-          {
-            "field": "email",
-            "value": "info@tomoflynn.com",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": false
-          },
-          {
-            "field": "website",
-            "value": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": false
-          }
-        ],
-        "address": [],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "self",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "Public information suggests self-referral, online booking, or direct patient enquiry is available.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": false
-          },
-          {
-            "field": "firstStep",
-            "value": "Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first.",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": false
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a mood disorder in which both depressive (persistent low mood) and manic (elevated or high mood) episodes are experienced. It is usually a re",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (t",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disorder and obsessive compulsive disorder. Anxiety can often be associated with a depressive episode. Anxiety disorders are very common and if u",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "workStudyMoneyHousing",
-            "value": "Work, study, money, or housing stress",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "cation Psychosocial education programs e.g. education, support, counselling and assistance to return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Schizophrenia is a serious mental disorder that affects about 1% of the general population. It is a complex il",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "self-referral": [
-            {
-              "field": "tags",
-              "value": "self-referral",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "addiction": [
-            {
-              "field": "tags",
-              "value": "addiction",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "alcohol": [
-            {
-              "field": "tags",
-              "value": "alcohol",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "drug": [
-            {
-              "field": "tags",
-              "value": "drug",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medication": [
-            {
-              "field": "tags",
-              "value": "medication",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "diagnosis": [
-            {
-              "field": "tags",
-              "value": "diagnosis",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "assessment": [
-            {
-              "field": "tags",
-              "value": "assessment",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "transport": [
-            {
-              "field": "tags",
-              "value": "transport",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": false
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "e consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (to do with the mind) disorder that is associated with dis",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [
-          {
-            "field": "rainbow",
-            "value": "Rainbow / LGBTQIA+",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 Email [email protected] Phone is not answered when I am with",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private fees apply; ACC, EAP and insurance may be available for eligible people.",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "as referrals from GPs and other health professionals. Please provide details and context of your condition and needs. Short notice appointments are available. Fees and Charges Categorisation Fees apply Fees and Charges Description Please contact me for details on costs Languages Spoken English Common Conditions ADHD (",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Referral: Public information suggests self-referral, online booking, or direct patient enquiry is available. | Source scan: clinician \"Tom O'Flynn Psychiatrist\", practice \"(none)\". | Depression or low mood: ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a  | Anxiety, panic, or overwhelm: O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psy | Trauma or sexual harm: omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disor",
-      "publicCardPreviewText": "Tom O'Flynn Psychiatrist National / Telehealth Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions. Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first. Private fees apply; ACC, EAP and insurance may be available for eligible people. Availability: not_published",
-      "currentProvider": {
-        "id": "national-tom-oflynn-psychiatrist",
-        "name": "Tom O'Flynn Psychiatrist",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth",
-        "address": "",
-        "phone": "022 129 6524",
-        "text": "",
-        "email": "info@tomoflynn.com",
-        "website": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "hours": "Online appointments. Healthpoint lists short-notice availability and self-referral.",
-        "cost": "Private fees apply; ACC, EAP and insurance may be available for eligible people.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "self-referral",
-          "depression",
-          "anxiety",
-          "adhd",
-          "addiction",
-          "alcohol",
-          "drug",
-          "trauma",
-          "medication",
-          "diagnosis",
-          "assessment",
-          "transport",
-          "fit",
-          "direct-contact"
-        ],
-        "fit": "Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
-        "firstStep": "Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first.",
-        "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "verified": "2026-05",
-        "confidence": "high",
-        "sourceQuality": "trusted health directory",
-        "lastVerified": "2026-05",
-        "needsManualVerification": false,
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "",
-        "availabilitySource": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "self",
-        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "referralSourceExcerpt": "Public information suggests self-referral, online booking, or direct patient enquiry is available.",
-        "referralConfidence": "medium",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment",
-          "substance/addiction comorbidity"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "ADHD",
-          "addiction",
-          "anxiety",
-          "depression",
-          "trauma",
-          "medication or diagnosis questions"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "excerpt": "Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests"
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "national-tom-oflynn-psychiatrist",
-        "providerName": "Tom O'Flynn Psychiatrist",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth",
-        "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "pagesChecked": [
-          {
-            "url": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/print/?",
-            "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/print/?",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/",
-            "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Tom O'Flynn Psychiatrist",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "Dr Tom O'Flynn",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a mood disorder in which both depressive (persistent low mood) and manic (elevated or high mood) episodes are experienced. It is usually a re",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (t",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disorder and obsessive compulsive disorder. Anxiety can often be associated with a depressive episode. Anxiety disorders are very common and if u",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "post-traumatic"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "found",
-            "evidence": "cation Psychosocial education programs e.g. education, support, counselling and assistance to return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Schizophrenia is a serious mental disorder that affects about 1% of the general population. It is a complex il",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "housing"
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "found",
-            "evidence": "return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 Email [email protected] Phone is not answered when I am with",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "LGBTQIA"
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "e consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (to do with the mind) disorder that is associated with dis",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-            "matched": "Zoom"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "as referrals from GPs and other health professionals. Please provide details and context of your condition and needs. Short notice appointments are available. Fees and Charges Categorisation Fees apply Fees and Charges Description Please contact me for details on costs Languages Spoken English Common Conditions ADHD (",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "matched": "Fees"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "need specialist help. Consultants Dr Tom O'Flynn Psychiatrist Ages Adult / Pakeke, Older adult / Kaumātua How do I access this service? Referral, Contact us, Make an appointment Referral Expectations I welcome self-referrals as well as referrals from GPs and other health professionals. Please provide details and con",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Tom O'Flynn",
-            "evidence": "Dr Tom O'Flynn",
-            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
-          },
-          {
-            "name": "Tom O'Flynn Psychiatrist Ages",
-            "evidence": "Dr Tom O'Flynn \nPsychiatrist\nAges",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
-          },
-          {
-            "name": "Consultants Tom O'Flynn",
-            "evidence": "Consultants\nDr Tom O'Flynn \nPsychiatrist",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
-          },
-          {
-            "name": "Ages Adult",
-            "evidence": "Psychiatrist\nAges\nAdult",
-            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
-          },
-          {
-            "name": "Tom O'Flynn Specialist",
-            "evidence": "Dr Tom O'Flynn\nSpecialist \nQualifications",
-            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
-          },
-          {
-            "name": "Gender Male",
-            "evidence": "Psychiatrist\nGender\nMale",
-            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
           }
         ],
         "notes": "",
@@ -330200,6 +327753,1439 @@
             "name": "CAPTCHA Agata Moody",
             "evidence": "CAPTCHA \nDr Agata Moody \nPsychiatrist",
             "sourceUrl": "https://www.coliber.nz/contact/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:national-msq-health-psychiatry",
+      "reviewCategory": "Needs quick human check",
+      "providerId": "national-msq-health-psychiatry",
+      "name": "MSQ Health - Psychiatry",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "National",
+      "city": "Telehealth and NZ clinics",
+      "address": "",
+      "lat": "",
+      "lon": "",
+      "phone": "04 499 2624",
+      "text": "",
+      "email": "enquire@msq.health",
+      "website": "https://msq.health/",
+      "bookingUrl": "https://msq.health/contact",
+      "source": "https://msq.health/",
+      "sourceQuality": "provider-owned page",
+      "confidence": "high",
+      "needsManualVerification": false,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-05-24",
+      "availabilityEvidence": "",
+      "availabilitySource": "https://msq.health/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": true,
+      "referralType": "gp",
+      "referralSourceUrl": "https://msq.health/services/mental-health-services/",
+      "referralSourceExcerpt": "Yes — a GP referral is required before your first appointment.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "telehealth",
+        "adhd",
+        "anxiety",
+        "bipolar",
+        "schizophrenia",
+        "child",
+        "adolescent",
+        "assessment",
+        "medication",
+        "insurance",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "ADHD assessments and treatment",
+        "Mood and anxiety disorders",
+        "General psychiatry",
+        "Bipolar disorder",
+        "Schizophrenia",
+        "Child and adolescent psychiatry",
+        "Telehealth nationwide"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://msq.health/",
+          "excerpt": "Advertised specialties/interests recorded as: ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide.",
+          "capturedAt": "2026-05",
+          "confidence": "high",
+          "needsManualReview": false
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [
+        "ADHD assessments and treatment",
+        "Mood and anxiety disorders",
+        "General psychiatry",
+        "Bipolar disorder",
+        "Schizophrenia",
+        "Child and adolescent psychiatry",
+        "Telehealth nationwide"
+      ],
+      "services": [],
+      "patientGroups": [
+        "Adults",
+        "Children",
+        "Adolescents",
+        "People wanting telehealth psychiatry"
+      ],
+      "ageGroups": [
+        "Children",
+        "Adolescents",
+        "Adults"
+      ],
+      "onlineAvailable": true,
+      "phoneSupport": true,
+      "inPerson": true,
+      "crisisOnly": false,
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 1370,
+      "reviewReasons": [
+        "availability needs manual review"
+      ],
+      "sourceUrls": [
+        "https://msq.health/",
+        "https://msq.health/contact",
+        "https://msq.health/services/mental-health-services/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "04 499 2624",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "email",
+            "value": "enquire@msq.health",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "website",
+            "value": "https://msq.health/",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "bookingUrl",
+            "value": "https://msq.health/contact",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          }
+        ],
+        "address": [],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "2026-05-24",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "gp",
+            "sourceUrl": "https://msq.health/services/mental-health-services/",
+            "excerpt": "Yes — a GP referral is required before your first appointment.",
+            "capturedAt": "2026-07-15",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin.",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "firstStep",
+            "value": "Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation.",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "specialties",
+            "value": "ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "patientGroups",
+            "value": "Adults, Children, Adolescents, People wanting telehealth psychiatry",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "ageGroups",
+            "value": "Children, Adolescents, Adults",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": false
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "→ 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, and bipolar depression. rTMS available for complex cases. Learn more → 🔧 Hernia Rep",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depres",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, a",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "bipolar": [
+            {
+              "field": "tags",
+              "value": "bipolar",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "schizophrenia": [
+            {
+              "field": "tags",
+              "value": "schizophrenia",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "child": [
+            {
+              "field": "tags",
+              "value": "child",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "adolescent": [
+            {
+              "field": "tags",
+              "value": "adolescent",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "assessment": [
+            {
+              "field": "tags",
+              "value": "assessment",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "medication": [
+            {
+              "field": "tags",
+              "value": "medication",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "insurance": [
+            {
+              "field": "tags",
+              "value": "insurance",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://msq.health/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "telehealth",
+            "value": "Telehealth / phone or video appointments",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "Affordable Healthcare New Zealand | MSQ Health GP / Referrers Suppliers Services TeleHealth GP Service ADHD & Mental Health Services Hernia & Same Day Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hern",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking.",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "r one roof — giving you faster access, transparent pricing, and expert clinicians who actually know your condition. Private, confidential care with transparent fees upfront Southern Cross Easy-Claim approved — processed on the spot In-clinic across four centres and telehealth nationwide Mental health, surgery, and r",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Referral: Yes — a GP referral is required before your first appointment. | Source scan: clinician \"(none)\", practice \"Affordable Healthcare New Zealand\". | Depression or low mood: → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including p | Anxiety, panic, or overwhelm: 🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic dis | Trauma or sexual harm: ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based ",
+      "publicCardPreviewText": "MSQ Health - Psychiatry National / Telehealth and NZ clinics Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin. Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation. Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking. Availability: not_published",
+      "currentProvider": {
+        "address": "",
+        "phone": "04 499 2624",
+        "text": "",
+        "email": "enquire@msq.health",
+        "hours": "Contact the service to confirm current availability and opening hours.",
+        "cost": "Private psychiatry fees apply. MSQ Health says Southern Cross Easy-Claim may be available; confirm fees and referral needs before booking.",
+        "verified": "2026-05",
+        "lastVerified": "2026-05",
+        "confidence": "high",
+        "sourceQuality": "provider-owned page",
+        "needsManualVerification": false,
+        "crisisOnly": false,
+        "onlineAvailable": true,
+        "phoneSupport": true,
+        "inPerson": true,
+        "id": "national-msq-health-psychiatry",
+        "name": "MSQ Health - Psychiatry",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth and NZ clinics",
+        "website": "https://msq.health/",
+        "bookingUrl": "https://msq.health/contact",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "adhd",
+          "anxiety",
+          "bipolar",
+          "schizophrenia",
+          "child",
+          "adolescent",
+          "assessment",
+          "medication",
+          "insurance",
+          "fit",
+          "direct-contact"
+        ],
+        "specialties": [
+          "ADHD assessments and treatment",
+          "Mood and anxiety disorders",
+          "General psychiatry",
+          "Bipolar disorder",
+          "Schizophrenia",
+          "Child and adolescent psychiatry",
+          "Telehealth nationwide"
+        ],
+        "patientGroups": [
+          "Adults",
+          "Children",
+          "Adolescents",
+          "People wanting telehealth psychiatry"
+        ],
+        "ageGroups": [
+          "Children",
+          "Adolescents",
+          "Adults"
+        ],
+        "fit": "Nationwide private psychiatry and ADHD assessment service with telehealth, NZ clinics, and direct contact options. Useful where local psychiatrist coverage is thin.",
+        "firstStep": "Call, email, or use the enquiry form and ask about referral needs, current wait time, fees, and whether telehealth fits your situation.",
+        "source": "https://msq.health/",
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-05-24",
+        "availabilityEvidence": "",
+        "availabilitySource": "https://msq.health/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://msq.health/services/mental-health-services/",
+        "referralSourceExcerpt": "Yes — a GP referral is required before your first appointment.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "ADHD assessments and treatment",
+          "Mood and anxiety disorders",
+          "General psychiatry",
+          "Bipolar disorder",
+          "Schizophrenia",
+          "Child and adolescent psychiatry",
+          "Telehealth nationwide"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://msq.health/",
+            "excerpt": "Advertised specialties/interests recorded as: ADHD assessments and treatment, Mood and anxiety disorders, General psychiatry, Bipolar disorder, Schizophrenia, Child and adolescent psychiatry, Telehealth nationwide.",
+            "capturedAt": "2026-05",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "national-msq-health-psychiatry",
+        "providerName": "MSQ Health - Psychiatry",
+        "providerType": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth and NZ clinics",
+        "sourceUrl": "https://msq.health/",
+        "pagesChecked": [
+          {
+            "url": "https://msq.health/",
+            "finalUrl": "https://msq.health/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://msq.health/about-us/",
+            "finalUrl": "https://msq.health/about-us/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://msq.health/contact/",
+            "finalUrl": "https://msq.health/contact/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "",
+        "autoPracticeName": "Affordable Healthcare New Zealand",
+        "autoConfidence": "medium",
+        "autoEvidence": "Affordable Healthcare New Zealand | MSQ Health",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "→ 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, and bipolar depression. rTMS available for complex cases. Learn more → 🔧 Hernia Rep",
+            "sourceUrl": "https://msq.health/",
+            "matched": "Depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depres",
+            "sourceUrl": "https://msq.health/",
+            "matched": "Anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including postnatal depression, treatment-resistant depression, a",
+            "sourceUrl": "https://msq.health/",
+            "matched": "PTSD"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "found",
+            "evidence": "Affordable Healthcare New Zealand | MSQ Health GP / Referrers Suppliers Services TeleHealth GP Service ADHD & Mental Health Services Hernia & Same Day Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hern",
+            "sourceUrl": "https://msq.health/",
+            "matched": "TeleHealth"
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "r one roof — giving you faster access, transparent pricing, and expert clinicians who actually know your condition. Private, confidential care with transparent fees upfront Southern Cross Easy-Claim approved — processed on the spot In-clinic across four centres and telehealth nationwide Mental health, surgery, and r",
+          "sourceUrl": "https://msq.health/",
+          "matched": "fees"
+        },
+        "availabilitySignal": {
+          "status": "long_wait_or_waitlist",
+          "value": "found",
+          "evidence": "could change their lives. MSQ Health exists to change that.\" MSQ Health · Part of the SEQURE Group Weeks Typical time to a specialist — not months on a public waitlist 10+ Years the SEQURE Group has provided trusted healthcare in NZ 4 Cities — Auckland, Wellington, & Napier/Hastings, plus telehealth About MSQ Health P",
+          "sourceUrl": "https://msq.health/",
+          "matched": "waitlist"
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "y Surgery Wellness & Recovery Service HBOT Therapy rTMS Therapy Conditions ADHD Hernia Repair Long COVID TeleGP Conditions Why MSQ About us Contact Book Now Enquire Now 💬 Enquire Now 📅 Book Now TeleGP · Mental Health · Surgery · Recovery — New Zealand Expert Health Services - When You Need It Most MSQ",
+          "sourceUrl": "https://msq.health/"
+        },
+        "candidateClinicians": [],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:national-tom-oflynn-psychiatrist",
+      "reviewCategory": "Needs quick human check",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "name": "Tom O'Flynn Psychiatrist",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "National",
+      "city": "Telehealth",
+      "address": "",
+      "lat": "",
+      "lon": "",
+      "phone": "021 548 914",
+      "text": "",
+      "email": "info@tomoflynn.com",
+      "website": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "bookingUrl": "",
+      "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "sourceQuality": "trusted health directory",
+      "confidence": "high",
+      "needsManualVerification": false,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-05",
+      "availabilityEvidence": "",
+      "availabilitySource": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": false,
+      "referralType": "self",
+      "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "referralSourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "telehealth",
+        "self-referral",
+        "depression",
+        "anxiety",
+        "adhd",
+        "addiction",
+        "alcohol",
+        "drug",
+        "trauma",
+        "medication",
+        "diagnosis",
+        "assessment",
+        "transport",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment",
+        "substance/addiction comorbidity"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "ADHD",
+        "addiction",
+        "anxiety",
+        "depression",
+        "trauma",
+        "medication or diagnosis questions"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "excerpt": "Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
+          "capturedAt": "2026-05",
+          "confidence": "high",
+          "needsManualReview": false
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 1370,
+      "reviewReasons": [
+        "availability needs manual review"
+      ],
+      "sourceUrls": [
+        "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "021 548 914",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": false
+          },
+          {
+            "field": "email",
+            "value": "info@tomoflynn.com",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": false
+          },
+          {
+            "field": "website",
+            "value": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": false
+          }
+        ],
+        "address": [],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "2026-05",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "self",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+            "capturedAt": "2026-07-15",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": false
+          },
+          {
+            "field": "firstStep",
+            "value": "Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first.",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": false
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a mood disorder in which both depressive (persistent low mood) and manic (elevated or high mood) episodes are experienced. It is usually a re",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (t",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disorder and obsessive compulsive disorder. Anxiety can often be associated with a depressive episode. Anxiety disorders are very common and if u",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "workStudyMoneyHousing",
+            "value": "Work, study, money, or housing stress",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "cation Psychosocial education programs e.g. education, support, counselling and assistance to return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Schizophrenia is a serious mental disorder that affects about 1% of the general population. It is a complex il",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "self-referral": [
+            {
+              "field": "tags",
+              "value": "self-referral",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "depression": [
+            {
+              "field": "tags",
+              "value": "depression",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "addiction": [
+            {
+              "field": "tags",
+              "value": "addiction",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "alcohol": [
+            {
+              "field": "tags",
+              "value": "alcohol",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "drug": [
+            {
+              "field": "tags",
+              "value": "drug",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medication": [
+            {
+              "field": "tags",
+              "value": "medication",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "diagnosis": [
+            {
+              "field": "tags",
+              "value": "diagnosis",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "assessment": [
+            {
+              "field": "tags",
+              "value": "assessment",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "transport": [
+            {
+              "field": "tags",
+              "value": "transport",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": false
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "telehealth",
+            "value": "Telehealth / phone or video appointments",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "e consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (to do with the mind) disorder that is associated with dis",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [
+          {
+            "field": "rainbow",
+            "value": "Rainbow / LGBTQIA+",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 Email [email protected] Phone is not answered when I am with",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private fees apply; ACC, EAP and insurance may be available for eligible people.",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "as referrals from GPs and other health professionals. Please provide details and context of your condition and needs. Short notice appointments are available. Fees and Charges Categorisation Fees apply Fees and Charges Description Please contact me for details on costs Languages Spoken English Common Conditions ADHD (",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Referral: I welcome self-referrals as well as referrals from GPs and other health professionals. | Source scan: clinician \"Tom O'Flynn Psychiatrist\", practice \"(none)\". | Depression or low mood: ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a  | Anxiety, panic, or overwhelm: O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psy | Trauma or sexual harm: omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disor",
+      "publicCardPreviewText": "Tom O'Flynn Psychiatrist National / Telehealth Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions. Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first. Private fees apply; ACC, EAP and insurance may be available for eligible people. Availability: not_published",
+      "currentProvider": {
+        "id": "national-tom-oflynn-psychiatrist",
+        "name": "Tom O'Flynn Psychiatrist",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth",
+        "address": "",
+        "phone": "021 548 914",
+        "text": "",
+        "email": "info@tomoflynn.com",
+        "website": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "hours": "Online appointments. Healthpoint lists short-notice availability and self-referral.",
+        "cost": "Private fees apply; ACC, EAP and insurance may be available for eligible people.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "self-referral",
+          "depression",
+          "anxiety",
+          "adhd",
+          "addiction",
+          "alcohol",
+          "drug",
+          "trauma",
+          "medication",
+          "diagnosis",
+          "assessment",
+          "transport",
+          "fit",
+          "direct-contact"
+        ],
+        "fit": "Private online psychiatrist for people across New Zealand. Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
+        "firstStep": "Use the contact form, phone, or email and ask whether self-referral is suitable, what the appointment costs, and what information to send first.",
+        "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "verified": "2026-05",
+        "confidence": "high",
+        "sourceQuality": "trusted health directory",
+        "lastVerified": "2026-05",
+        "needsManualVerification": false,
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-05",
+        "availabilityEvidence": "",
+        "availabilitySource": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "referralSourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment",
+          "substance/addiction comorbidity"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "ADHD",
+          "addiction",
+          "anxiety",
+          "depression",
+          "trauma",
+          "medication or diagnosis questions"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "excerpt": "Listed interests include ADHD, addiction, anxiety, depression, trauma, and medication or diagnosis questions.",
+            "capturedAt": "2026-05",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "national-tom-oflynn-psychiatrist",
+        "providerName": "Tom O'Flynn Psychiatrist",
+        "providerType": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth",
+        "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "pagesChecked": [
+          {
+            "url": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/print/?",
+            "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/print/?",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/",
+            "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Tom O'Flynn Psychiatrist",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "Dr Tom O'Flynn",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a mood disorder in which both depressive (persistent low mood) and manic (elevated or high mood) episodes are experienced. It is usually a re",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "Depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (t",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disorder and obsessive compulsive disorder. Anxiety can often be associated with a depressive episode. Anxiety disorders are very common and if u",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "post-traumatic"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "found",
+            "evidence": "cation Psychosocial education programs e.g. education, support, counselling and assistance to return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Schizophrenia is a serious mental disorder that affects about 1% of the general population. It is a complex il",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "housing"
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "found",
+            "evidence": "return to job/studies/performing daily tasks Ongoing support e.g. housing, monitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 Email [email protected] Phone is not answered when I am with",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "LGBTQIA"
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "found",
+            "evidence": "e consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psychosis. All consultations are via Zoom. What is Mental Illness? Mental illness is a clinically significant behaviour or psychological (to do with the mind) disorder that is associated with dis",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+            "matched": "Zoom"
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "as referrals from GPs and other health professionals. Please provide details and context of your condition and needs. Short notice appointments are available. Fees and Charges Categorisation Fees apply Fees and Charges Description Please contact me for details on costs Languages Spoken English Common Conditions ADHD (",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "matched": "Fees"
+        },
+        "availabilitySignal": {
+          "status": "unclear",
+          "value": "unclear",
+          "evidence": "",
+          "sourceUrl": "",
+          "matched": ""
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "need specialist help. Consultants Dr Tom O'Flynn Psychiatrist Ages Adult / Pakeke, Older adult / Kaumātua How do I access this service? Referral, Contact us, Make an appointment Referral Expectations I welcome self-referrals as well as referrals from GPs and other health professionals. Please provide details and con",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Tom O'Flynn",
+            "evidence": "Dr Tom O'Flynn",
+            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
+          },
+          {
+            "name": "Tom O'Flynn Psychiatrist Ages",
+            "evidence": "Dr Tom O'Flynn \nPsychiatrist\nAges",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+          },
+          {
+            "name": "Consultants Tom O'Flynn",
+            "evidence": "Consultants\nDr Tom O'Flynn \nPsychiatrist",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+          },
+          {
+            "name": "Ages Adult",
+            "evidence": "Psychiatrist\nAges\nAdult",
+            "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
+          },
+          {
+            "name": "Tom O'Flynn Specialist",
+            "evidence": "Dr Tom O'Flynn\nSpecialist \nQualifications",
+            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
+          },
+          {
+            "name": "Gender Male",
+            "evidence": "Psychiatrist\nGender\nMale",
+            "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/specialist/dr-tom-oflynn/at/tom-oflynn-psychiatrist/"
           }
         ],
         "notes": "",

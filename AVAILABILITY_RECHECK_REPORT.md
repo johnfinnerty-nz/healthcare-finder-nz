@@ -1,6 +1,6 @@
 # Availability Recheck Report
 
-Generated: 2026-07-15T01:32:15.965Z
+Generated: 2026-07-15T02:34:33.422Z
 
 ## Current Behaviour Before This Change
 
@@ -26,8 +26,8 @@ Accepting is never inferred from silence. Blocked or unreachable pages create ma
 Live providers:
 
 - accepting: 6
-- not_published: 1176
-- waitlist: 31
+- not_published: 1178
+- waitlist: 29
 
 Unavailable watchlist:
 
@@ -48,7 +48,7 @@ Regions most affected by unavailable/watchlist records:
 - Waikato: 2
 - West Coast: 1
 
-Findings: 59 total, 0 high (0 unallowlisted), 59 medium, 0 low.
+Findings: 57 total, 0 high (0 unallowlisted), 57 medium, 0 low.
 
 | Severity | Provider | Region / city | Status | Checked | Issue | Suggested action | Source | Allowlisted |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -70,8 +70,6 @@ Findings: 59 total, 0 high (0 unallowlisted), 59 medium, 0 low.
 | medium | northland-steven-smithson-counselling - Steven Smithson Counselling | Northland / Whangarei | accepting | 2026-05-24 | accepting availability is 52 days old; target cadence is 1 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://findatherapist.nz/listing/mr-steven-smithson-mnzac | no |
 | medium | northland-wayfinder-psychology - Wayfinder Psychology | Northland / Whangarei | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://wayfinderpsychology.co.nz/ | no |
 | medium | northland-whangarei-care-centre-counselling - Whangarei Care Centre Counselling | Northland / Whangarei | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://whgcare.org.nz/counselling-whangarei/ | no |
-| medium | psychiatry-nz-christmas-seu - Dr Christmas Seu | National / Telehealth across New Zealand | waitlist | 2026-06-12 | waitlist availability is 33 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
-| medium | psychiatry-nz-han-chung-lim - Dr Han Chung Lim | National / Telehealth across New Zealand | waitlist | 2026-06-12 | waitlist availability is 33 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
 | medium | psychiatry-nz-jimi-macmillan - Dr Jimi MacMillan | National / Telehealth across New Zealand | waitlist | 2026-06-12 | waitlist availability is 33 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
 | medium | psychiatry-nz-staverton-kautoke - Dr Staverton (Tony) Kautoke | National / Telehealth across New Zealand | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://psychiatry.nz/ | no |
 | medium | ranzcp-13276 - Dr Evan Wilson | Canterbury / Bromley | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson | no |

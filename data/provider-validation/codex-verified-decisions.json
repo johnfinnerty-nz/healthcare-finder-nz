@@ -1,303 +1,364 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T01:31:05.827Z",
+  "generatedAt": "2026-07-15T02:33:39.234Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:national-msq-health-psychiatry",
+      "reviewId": "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
       "reviewIds": [
-        "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
-        "discovery:suggestion:email:enquire@msq.health",
-        "provider:national-msq-health-psychiatry"
+        "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz"
       ],
-      "providerId": "national-msq-health-psychiatry",
-      "providerName": "MSQ Health - Psychiatry",
+      "providerId": "otago-psychiatry-down-south",
+      "providerName": "Psychiatry Down South",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://msq.health/services/mental-health-services/",
-        "referralSourceExcerpt": "Yes — a GP referral is required before your first appointment.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
+        "address": "342 High Street, Dunedin",
+        "phone": "03 477 9053"
       },
-      "sourceUrl": "https://msq.health/services/mental-health-services/",
-      "sourceExcerpt": "Yes — a GP referral is required before your first appointment.",
+      "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
+      "sourceExcerpt": "342 High Street, Dunedin",
       "sourceEvidence": [
         {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://msq.health/services/mental-health-services/",
+          "field": "address",
+          "value": "342 High Street, Dunedin",
+          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
           "sourceType": "provider_owned",
-          "excerpt": "Yes — a GP referral is required before your first appointment.",
-          "finalUrl": "https://msq.health/services/mental-health-services/",
-          "capturedAt": "2026-07-15T01:31:05.829Z",
-          "pageHash": "98e8fd3824f6b606baf921d678975a65152499b82321b2be62e4eaecf0f26480",
+          "excerpt": "342 High Street, Dunedin",
+          "finalUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
+          "capturedAt": "2026-07-15T02:33:39.235Z",
+          "pageHash": "c7053c8b43bb96cd1424b7ef0ee7fc104f71c501de682afdd5fd431e7c9466e1",
           "verified": true,
           "verificationErrors": []
         },
-        {
-          "field": "requiresReferral",
-          "value": true,
-          "sourceUrl": "https://msq.health/services/mental-health-services/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes — a GP referral is required before your first appointment.",
-          "finalUrl": "https://msq.health/services/mental-health-services/",
-          "capturedAt": "2026-07-15T01:31:05.829Z",
-          "pageHash": "98e8fd3824f6b606baf921d678975a65152499b82321b2be62e4eaecf0f26480",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://msq.health/services/mental-health-services/",
-          "sourceUrl": "https://msq.health/services/mental-health-services/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes — a GP referral is required before your first appointment.",
-          "finalUrl": "https://msq.health/services/mental-health-services/",
-          "capturedAt": "2026-07-15T01:31:05.829Z",
-          "pageHash": "98e8fd3824f6b606baf921d678975a65152499b82321b2be62e4eaecf0f26480",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "Yes — a GP referral is required before your first appointment.",
-          "sourceUrl": "https://msq.health/services/mental-health-services/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes — a GP referral is required before your first appointment.",
-          "finalUrl": "https://msq.health/services/mental-health-services/",
-          "capturedAt": "2026-07-15T01:31:05.829Z",
-          "pageHash": "98e8fd3824f6b606baf921d678975a65152499b82321b2be62e4eaecf0f26480",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralConfidence",
-          "value": "high",
-          "sourceUrl": "https://msq.health/services/mental-health-services/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes — a GP referral is required before your first appointment.",
-          "finalUrl": "https://msq.health/services/mental-health-services/",
-          "capturedAt": "2026-07-15T01:31:05.829Z",
-          "pageHash": "98e8fd3824f6b606baf921d678975a65152499b82321b2be62e4eaecf0f26480",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "unknown-referral-pathway"
-      ],
-      "reviewNotes": "The provider-owned mental-health page states that a GP referral is required before the first appointment. A separate skeptical fetch reproduced the statement and found no self-referral contradiction for psychiatry.",
-      "codexReview": {
-        "researchPassId": "research-20260715-msq-1",
-        "verificationPassId": "verify-20260715-msq-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T01:31:05.827Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:national-positive-mind-works-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:email:info@positivemindworks.co",
-        "provider:national-positive-mind-works-psychiatry"
-      ],
-      "providerId": "national-positive-mind-works-psychiatry",
-      "providerName": "Positive Mind Works Psychiatry",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-        "referralSourceExcerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-      "sourceExcerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-      "sourceEvidence": [
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceType": "provider_owned",
-          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-          "finalUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "capturedAt": "2026-07-15T01:31:07.455Z",
-          "pageHash": "22d4c2fe4ef2db46c4093869ac247116e9e3611afa1bc9054d74ba14ede99977",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "requiresReferral",
-          "value": true,
-          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceType": "provider_owned",
-          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-          "finalUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "capturedAt": "2026-07-15T01:31:07.455Z",
-          "pageHash": "22d4c2fe4ef2db46c4093869ac247116e9e3611afa1bc9054d74ba14ede99977",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceType": "provider_owned",
-          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-          "finalUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "capturedAt": "2026-07-15T01:31:07.455Z",
-          "pageHash": "22d4c2fe4ef2db46c4093869ac247116e9e3611afa1bc9054d74ba14ede99977",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "To access psychiatry services, all new clients will need a referral from their GP",
-          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceType": "provider_owned",
-          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-          "finalUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "capturedAt": "2026-07-15T01:31:07.455Z",
-          "pageHash": "22d4c2fe4ef2db46c4093869ac247116e9e3611afa1bc9054d74ba14ede99977",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralConfidence",
-          "value": "high",
-          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "sourceType": "provider_owned",
-          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP",
-          "finalUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
-          "capturedAt": "2026-07-15T01:31:07.455Z",
-          "pageHash": "22d4c2fe4ef2db46c4093869ac247116e9e3611afa1bc9054d74ba14ede99977",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "unknown-referral-pathway"
-      ],
-      "reviewNotes": "The provider-owned psychiatry funding page explicitly requires all new clients to have a GP referral. A separate skeptical fetch reproduced the statement and found no self-referral contradiction.",
-      "codexReview": {
-        "researchPassId": "research-20260715-positive-mind-1",
-        "verificationPassId": "verify-20260715-positive-mind-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T01:31:05.827Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:national-tom-oflynn-psychiatrist",
-      "reviewIds": [
-        "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
-        "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
-        "provider:national-tom-oflynn-psychiatrist"
-      ],
-      "providerId": "national-tom-oflynn-psychiatrist",
-      "providerName": "Tom O'Flynn Psychiatrist",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "phone": "021 548 914",
-        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-        "referralSourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-      "sourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-      "sourceEvidence": [
         {
           "field": "phone",
-          "value": "021 548 914",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "sourceType": "healthpoint",
-          "excerpt": "href=\"tel:021548914\"",
-          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "capturedAt": "2026-07-15T01:31:10.712Z",
-          "pageHash": "8bb9a1bf33062773c70d971485565fe0852aa6949f14d626c497115de76c3cb3",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "sourceType": "healthpoint",
-          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "capturedAt": "2026-07-15T01:31:10.712Z",
-          "pageHash": "8bb9a1bf33062773c70d971485565fe0852aa6949f14d626c497115de76c3cb3",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "sourceType": "healthpoint",
-          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "capturedAt": "2026-07-15T01:31:10.712Z",
-          "pageHash": "8bb9a1bf33062773c70d971485565fe0852aa6949f14d626c497115de76c3cb3",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralConfidence",
-          "value": "high",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "sourceType": "healthpoint",
-          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
-          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
-          "capturedAt": "2026-07-15T01:31:10.712Z",
-          "pageHash": "8bb9a1bf33062773c70d971485565fe0852aa6949f14d626c497115de76c3cb3",
+          "value": "03 477 9053",
+          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "03 477-9053",
+          "finalUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
+          "capturedAt": "2026-07-15T02:33:39.235Z",
+          "pageHash": "c7053c8b43bb96cd1424b7ef0ee7fc104f71c501de682afdd5fd431e7c9466e1",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [
-        "conflict-phone",
-        "referral-needs-manual-review"
+        "conflict-address",
+        "conflict-phone"
       ],
-      "reviewNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
+      "reviewNotes": "Two independent fetches of the provider-owned referrals page reproduced the stored Dunedin address and phone. The discovery conflict is not supported by the live source, so the current values are retained.",
       "codexReview": {
-        "researchPassId": "research-20260715-tom-oflynn-1",
-        "verificationPassId": "verify-20260715-tom-oflynn-2",
+        "researchPassId": "research-20260715-down-south-contact-1",
+        "verificationPassId": "verify-20260715-down-south-contact-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T01:31:05.827Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:otago-psychiatry-down-south",
+      "reviewIds": [
+        "provider:otago-psychiatry-down-south"
+      ],
+      "providerId": "otago-psychiatry-down-south",
+      "providerName": "Psychiatry Down South",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.psychiatrydownsouth.co.nz/contact",
+      "sourceExcerpt": "Contact by email is preferred, but you may leave a voice message, which will be checked daily during normal working hours.",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "not_published",
+          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/contact",
+          "sourceType": "provider_owned",
+          "excerpt": "Contact by email is preferred, but you may leave a voice message, which will be checked daily during normal working hours.",
+          "finalUrl": "https://www.psychiatrydownsouth.co.nz/contact",
+          "capturedAt": "2026-07-15T02:33:40.618Z",
+          "pageHash": "5f70c4ec2d91c6520b016a0d6c977e1b97bb6738c4fe60279e7eb4ac21957547",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The contact and referral pages publish contact and referral instructions but no explicit current accepting, waitlist, paused, or closed status. Availability therefore remains not_published and needs more information.",
+      "codexReview": {
+        "researchPassId": "research-20260715-down-south-availability-1",
+        "verificationPassId": "verify-20260715-down-south-availability-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-christmas-seu",
+      "reviewIds": [
+        "provider:psychiatry-nz-christmas-seu"
+      ],
+      "providerId": "psychiatry-nz-christmas-seu",
+      "providerName": "Dr Christmas Seu",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": true
+      },
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "not_published",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:41.857Z",
+          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:41.857Z",
+          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://psychiatry.nz/",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:41.857Z",
+          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "stale-availability"
+      ],
+      "reviewNotes": "The provider-owned page describes booking and joining a waitlist as alternatives. It does not establish that every current referral is waitlisted, so the blanket waitlist status is removed and current availability remains explicitly unresolved.",
+      "codexReview": {
+        "researchPassId": "research-20260715-christmas-availability-1",
+        "verificationPassId": "verify-20260715-christmas-availability-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz"
+      ],
+      "providerId": "psychiatry-nz-christmas-seu",
+      "providerName": "Dr Christmas Seu",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "Dr Christmas Seu is a psychiatry registrar who currently works under the supervision of Dr Lim.",
+      "sourceEvidence": [
+        {
+          "field": "type",
+          "value": "psychiatry registrar",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Christmas Seu is a psychiatry registrar who currently works under the supervision of Dr Lim.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:43.359Z",
+          "pageHash": "c0f7d2af4242936db652cb07d722830c448669af2084d73ac4e0cdebcb594354",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "professionalStatus",
+          "value": "working towards fellowship",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "He has extensive experience in psychiatry and is currently working towards gaining his fellowship.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:43.359Z",
+          "pageHash": "c0f7d2af4242936db652cb07d722830c448669af2084d73ac4e0cdebcb594354",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The source explicitly identifies Dr Seu as a supervised psychiatry registrar working toward fellowship, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred rather than guessed.",
+      "codexReview": {
+        "researchPassId": "research-20260715-christmas-role-1",
+        "verificationPassId": "verify-20260715-christmas-role-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-han-chung-lim",
+      "reviewIds": [
+        "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
+        "provider:psychiatry-nz-han-chung-lim",
+        "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz"
+      ],
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "providerName": "Dr Han Chung Lim",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": true,
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false
+      },
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "not_published",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://psychiatry.nz/",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://psychiatry.nz/",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "We accept direct referrals from clients and healthcare professionals.",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T02:33:44.644Z",
+          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "stale-availability",
+        "conflict-email",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
+      "codexReview": {
+        "researchPassId": "research-20260715-han-lim-1",
+        "verificationPassId": "verify-20260715-han-lim-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []

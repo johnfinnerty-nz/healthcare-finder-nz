@@ -238,6 +238,104 @@
       "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
       "lastNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz": {
+      "reviewId": "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
+      "providerId": "otago-psychiatry-down-south",
+      "status": "completed",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T02:34:09.832Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
+      "lastNotes": "Two independent fetches of the provider-owned referrals page reproduced the stored Dunedin address and phone. The discovery conflict is not supported by the live source, so the current values are retained.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:otago-psychiatry-down-south": {
+      "reviewId": "provider:otago-psychiatry-down-south",
+      "providerId": "otago-psychiatry-down-south",
+      "status": "deferred",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T02:34:09.832Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.psychiatrydownsouth.co.nz/contact",
+      "lastNotes": "The contact and referral pages publish contact and referral instructions but no explicit current accepting, waitlist, paused, or closed status. Availability therefore remains not_published and needs more information.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+      "providerId": "psychiatry-nz-christmas-seu",
+      "status": "deferred",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T02:34:09.832Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The source explicitly identifies Dr Seu as a supervised psychiatry registrar working toward fellowship, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred rather than guessed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:psychiatry-nz-christmas-seu": {
+      "reviewId": "provider:psychiatry-nz-christmas-seu",
+      "providerId": "psychiatry-nz-christmas-seu",
+      "status": "completed",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T02:34:09.832Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The provider-owned page describes booking and joining a waitlist as alternatives. It does not establish that every current referral is waitlisted, so the blanket waitlist status is removed and current availability remains explicitly unresolved.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz": {
+      "reviewId": "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "status": "completed",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T02:34:09.832Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:psychiatry-nz-han-chung-lim": {
+      "reviewId": "provider:psychiatry-nz-han-chung-lim",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "status": "completed",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T02:34:09.832Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "status": "completed",
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "startedAt": "2026-07-15T02:25:41.003Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T02:34:09.832Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -258,9 +356,18 @@
         "national-positive-mind-works-psychiatry",
         "national-tom-oflynn-psychiatrist"
       ]
+    },
+    {
+      "batchId": "codex-20260715022541-98dbf9ae",
+      "generatedAt": "2026-07-15T02:25:41.003Z",
+      "providerIds": [
+        "otago-psychiatry-down-south",
+        "psychiatry-nz-christmas-seu",
+        "psychiatry-nz-han-chung-lim"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T01:31:36.966Z",
+  "updatedAt": "2026-07-15T02:34:09.832Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -396,6 +503,62 @@
       "action": "adjust",
       "status": "completed",
       "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
+      "providerId": "otago-psychiatry-down-south",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:otago-psychiatry-down-south",
+      "providerId": "otago-psychiatry-down-south",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-christmas-seu",
+      "providerId": "psychiatry-nz-christmas-seu",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+      "providerId": "psychiatry-nz-christmas-seu",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-han-chung-lim",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T02:34:09.832Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]
