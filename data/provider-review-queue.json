@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T10:31:29.432Z",
+  "generatedAt": "2026-07-15T11:32:21.682Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -16320,8 +16320,8 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-5226",
       "name": "Prof Cameron Lacey",
-      "clinicianName": "",
-      "practiceName": "",
+      "clinicianName": "Prof Cameron Lacey",
+      "practiceName": "Elimbias Health",
       "type": "psychiatrist",
       "region": "Canterbury",
       "city": "Bromley",
@@ -16331,7 +16331,7 @@
       "phone": "03 662 9200",
       "text": "",
       "email": "info@elimbiashealth.com",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+      "website": "https://www.elimbiashealth.com/",
       "bookingUrl": "",
       "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
       "sourceQuality": "professional register or directory",
@@ -16435,6 +16435,7 @@
         "availability status is waitlist"
       ],
       "sourceUrls": [
+        "https://www.elimbiashealth.com/",
         "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey"
       ],
       "sourceEvidence": {
@@ -16459,7 +16460,7 @@
           },
           {
             "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+            "value": "https://www.elimbiashealth.com/",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
             "excerpt": "",
             "capturedAt": "",
@@ -16706,7 +16707,7 @@
         ]
       },
       "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Prof Cameron Lacey\", practice \"(none)\". | Depression or low mood: u must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Bipolar disorder Depression Epilepsy  | Maori: s these age groups Ages 18-60 Ages 60+ Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Experience with Doctors, psychiatrists or medical students Maori Summary Psyche | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Prof Cameron Lacey Canterbury / Bromley RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Bipolar disorder, Depression, Epilepsy, Functional neurological disorder, Neuropsychiatry. Services include Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Psychedelic-Assisted Therapy. Patient groups listed include Doctors, psychiatrists or medical students, Maori. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "publicCardPreviewText": "Prof Cameron Lacey, Elimbias Health Canterbury / Bromley RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Bipolar disorder, Depression, Epilepsy, Functional neurological disorder, Neuropsychiatry. Services include Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Psychedelic-Assisted Therapy. Patient groups listed include Doctors, psychiatrists or medical students, Maori. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
       "currentProvider": {
         "id": "ranzcp-5226",
         "name": "Prof Cameron Lacey",
@@ -16717,7 +16718,7 @@
         "phone": "03 662 9200",
         "text": "",
         "email": "info@elimbiashealth.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+        "website": "https://www.elimbiashealth.com/",
         "hours": "Appointment wait: Less than 1 month.",
         "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
         "tags": [
@@ -16808,7 +16809,9 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Prof Cameron Lacey",
+        "practiceName": "Elimbias Health"
       },
       "auditFindings": [
         {
@@ -19023,8 +19026,8 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-5481",
       "name": "Dr Sally Rimkeit",
-      "clinicianName": "",
-      "practiceName": "",
+      "clinicianName": "Dr Sally Rimkeit",
+      "practiceName": "The Dunes Practice",
       "type": "psychiatrist",
       "region": "Wellington",
       "city": "Hataitai",
@@ -19034,7 +19037,7 @@
       "phone": "021518783",
       "text": "",
       "email": "admin@thedunespractice.co.nz",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+      "website": "https://www.thedunespractice.co.nz/",
       "bookingUrl": "",
       "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
       "sourceQuality": "professional register or directory",
@@ -19159,6 +19162,7 @@
         "availability status is waitlist"
       ],
       "sourceUrls": [
+        "https://www.thedunespractice.co.nz/",
         "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit"
       ],
       "sourceEvidence": {
@@ -19183,7 +19187,7 @@
           },
           {
             "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+            "value": "https://www.thedunespractice.co.nz/",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
             "excerpt": "",
             "capturedAt": "",
@@ -19510,7 +19514,7 @@
         ]
       },
       "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Sally Rimkeit\", practice \"(none)\". | Depression or low mood: ontact details when you see your GP. Expertise Acceptance and commitment therapy ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Dementia  | Anxiety, panic, or overwhelm: your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Acceptance and commitment therapy ADHD Anxiety disorders Au | Trauma or sexual harm: ain injury Bipolar disorder Depression Dementia related disorders Obsessive-compulsive disorders Psychosis Post-traumatic stress disorder Schizophrenia Complex trauma Services offe | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Sally Rimkeit Wellington / Hataitai RANZCP Your Health in Mind psychiatrist listing. Special interests include Acceptance and commitment therapy, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Complex trauma, Dementia related disorders. Services include ACC Treatment provider, Shared care, Home visits. Patient groups listed include Asylum seekers and refugees, Doctors, psychiatrists or medical students, Gender diverse, Maori, Non-English speaking, Physical disability. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "publicCardPreviewText": "Dr Sally Rimkeit, The Dunes Practice Wellington / Hataitai RANZCP Your Health in Mind psychiatrist listing. Special interests include Acceptance and commitment therapy, ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Complex trauma, Dementia related disorders. Services include ACC Treatment provider, Shared care, Home visits. Patient groups listed include Asylum seekers and refugees, Doctors, psychiatrists or medical students, Gender diverse, Maori, Non-English speaking, Physical disability. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
       "currentProvider": {
         "id": "ranzcp-5481",
         "name": "Dr Sally Rimkeit",
@@ -19521,7 +19525,7 @@
         "phone": "021518783",
         "text": "",
         "email": "admin@thedunespractice.co.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+        "website": "https://www.thedunespractice.co.nz/",
         "hours": "Appointment wait: 1-3 months.",
         "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
         "tags": [
@@ -19636,7 +19640,9 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Sally Rimkeit",
+        "practiceName": "The Dunes Practice"
       },
       "auditFindings": [
         {
@@ -40428,18 +40434,18 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-5542",
       "name": "Dr Vernon Reynolds",
-      "clinicianName": "",
-      "practiceName": "",
+      "clinicianName": "Dr Vernon Reynolds",
+      "practiceName": "Chuckle Factory",
       "type": "psychiatrist",
       "region": "Northland",
       "city": "Whangarei",
-      "address": "PO Box 93, Whangarei 0140",
+      "address": "58 Kamo Road, Whangarei",
       "lat": -35.7274938,
       "lon": 174.3165604,
-      "phone": "+64 21 741 329",
+      "phone": "021 741 329",
       "text": "",
       "email": "admin@chucklefactory.com",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+      "website": "https://www.chucklefactory.com/",
       "bookingUrl": "",
       "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
       "sourceQuality": "professional register or directory",
@@ -40567,13 +40573,14 @@
         "availability status is waitlist"
       ],
       "sourceUrls": [
+        "https://www.chucklefactory.com/",
         "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds"
       ],
       "sourceEvidence": {
         "contact": [
           {
             "field": "phone",
-            "value": "+64 21 741 329",
+            "value": "021 741 329",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
             "excerpt": "",
             "capturedAt": "",
@@ -40591,7 +40598,7 @@
           },
           {
             "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+            "value": "https://www.chucklefactory.com/",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
             "excerpt": "",
             "capturedAt": "",
@@ -40602,7 +40609,7 @@
         "address": [
           {
             "field": "address",
-            "value": "PO Box 93, Whangarei 0140",
+            "value": "58 Kamo Road, Whangarei",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
             "excerpt": "",
             "capturedAt": "",
@@ -40966,18 +40973,18 @@
         ]
       },
       "sourceEvidenceSummary": "Availability: RANZCP Your Health in Mind profile lists waitlist status. | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Vernon Reynolds\", practice \"(none)\". | Depression or low mood: en you see your GP. Expertise Acceptance and commitment therapy ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Cognitive behavioural therapy Depression Developme | Anxiety, panic, or overwhelm: your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Acceptance and commitment therapy ADHD Anxiety disorders Au | Trauma or sexual harm: herapy Interpersonal therapy Mindfulness Motivational interviewing Obsessive-compulsive disorders Oppositional Defiant Disorder Personality disorders Psychosis Post-traumatic stres | availability audit: waitlist availability is 52 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Vernon Reynolds Northland / Whangarei Whangarei psychiatrist profile with broad mental health interests including depression, anxiety, ADHD, autism, bipolar disorder, OCD, PTSD, psychosis, and eating disorders. The listing indicates a GP referral pathway and waitlist. Book with your GP or nurse and ask for a psychiatry referral. If you already have a referral, call or email the listed contact and ask about wait time, fees, and telehealth. Private psychiatry fees may apply. Ask your GP about referral, costs, WINZ, insurance, or other support before booking. Availability: waitlist",
+      "publicCardPreviewText": "Dr Vernon Reynolds, Chuckle Factory Northland / Whangarei Whangarei psychiatrist profile with broad mental health interests including depression, anxiety, ADHD, autism, bipolar disorder, OCD, PTSD, psychosis, and eating disorders. The listing indicates a GP referral pathway and waitlist. Book with your GP or nurse and ask for a psychiatry referral. If you already have a referral, call or email the listed contact and ask about wait time, fees, and telehealth. Private psychiatry fees may apply. Ask your GP about referral, costs, WINZ, insurance, or other support before booking. Availability: waitlist",
       "currentProvider": {
         "id": "ranzcp-5542",
         "name": "Dr Vernon Reynolds",
         "type": "psychiatrist",
         "region": "Northland",
         "city": "Whangarei",
-        "address": "PO Box 93, Whangarei 0140",
-        "phone": "+64 21 741 329",
+        "address": "58 Kamo Road, Whangarei",
+        "phone": "021 741 329",
         "text": "",
         "email": "admin@chucklefactory.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+        "website": "https://www.chucklefactory.com/",
         "hours": "RANZCP Your Health in Mind profile lists telehealth and after-hours appointment options, with waitlist status.",
         "cost": "Private psychiatry fees may apply. Ask your GP about referral, costs, WINZ, insurance, or other support before booking.",
         "tags": [
@@ -41099,7 +41106,9 @@
         "specialtyTagsSource": "source-backed advertised specialties/interests",
         "coordinatePrecision": "address geocode",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Vernon Reynolds",
+        "practiceName": "Chuckle Factory"
       },
       "auditFindings": [
         {

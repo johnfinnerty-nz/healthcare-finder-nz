@@ -3684,7 +3684,8 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Murray Patton"
   },
   {
     "id": "ranzcp-7045",
@@ -36798,7 +36799,8 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Helen Austin"
   },
   {
     "id": "marlborough-rachael-sim-clinical-psychology",
@@ -59321,7 +59323,9 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Struan Robertson",
+    "practiceName": "Psych Services"
   },
   {
     "id": "gp-eastern-bays-health-centre-41-3196-174-7974",

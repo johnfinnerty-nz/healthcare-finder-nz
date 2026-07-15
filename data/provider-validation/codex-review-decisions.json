@@ -1,339 +1,304 @@
 {
   "version": 1,
-  "batchId": "codex-20260715103138-eaac8ae2",
-  "generatedAt": "2026-07-15T10:42:35.000Z",
+  "batchId": "codex-20260715113229-49e3a3ae",
+  "generatedAt": "2026-07-15T11:39:16.000Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-helen-austin:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:dr-helen-austin:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-5226",
-      "providerName": "Prof Cameron Lacey",
+      "providerId": "ranzcp-5617",
+      "providerName": "Dr Helen Austin",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Prof Cameron Lacey",
-        "practiceName": "Elimbias Health",
-        "website": "https://www.elimbiashealth.com/"
+        "clinicianName": "Dr Helen Austin"
       },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
-      "sourceExcerpt": "Prof Cameron Lacey",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+      "sourceExcerpt": "Dr Helen Austin",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Prof Cameron Lacey",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "value": "Dr Helen Austin",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
           "sourceType": "professional_directory",
-          "excerpt": "Prof Cameron Lacey"
-        },
-        {
-          "field": "practiceName",
-          "value": "Elimbias Health",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
-          "sourceType": "professional_directory",
-          "excerpt": "Elimbias Health"
-        },
-        {
-          "field": "website",
-          "value": "https://www.elimbiashealth.com/",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
-          "sourceType": "professional_directory",
-          "excerpt": "www.elimbiashealth.com"
+          "excerpt": "Dr Helen Austin"
         }
       ],
       "auditRulesResolved": [
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The live RANZCP profile identifies Prof Cameron Lacey at Elimbias Health and links to the reachable clinic-owned website. The clinic team page independently identifies Professor Cameron Lacey, and its location page repeats the stored phone, email, address, and GP-referral requirement. No availability or telehealth claim is refreshed.",
+      "reviewNotes": "The live RANZCP profile identifies Dr Helen Austin, so the clinician field can be populated safely. No practice, contact, location, availability, or telehealth field is changed: the directory profile was last updated in April 2020 and conflicts with the current provider-owned MindFix site's Christchurch location and professional-supervision scope.",
       "codexReview": {
-        "researchPassId": "research-20260715-cameron-lacey-identity-practice-1",
-        "verificationPassId": "verify-20260715-cameron-lacey-identity-practice-2",
+        "researchPassId": "research-20260715-helen-austin-identity-scope-1",
+        "verificationPassId": "verify-20260715-helen-austin-identity-scope-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:ranzcp-5226",
+      "reviewId": "provider:ranzcp-5617",
       "reviewIds": [
-        "provider:ranzcp-5226"
+        "provider:ranzcp-5617"
       ],
-      "providerId": "ranzcp-5226",
-      "providerName": "Prof Cameron Lacey",
+      "providerId": "ranzcp-5617",
+      "providerName": "Dr Helen Austin",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2025",
+      "sourceUrl": "https://mindfix.nz/",
+      "sourceExcerpt": "Whilst I am based in Christchurch, I also offer professional supervision via Zoom.",
       "sourceEvidence": [
+        {
+          "field": "locationConflict",
+          "value": "Christchurch",
+          "sourceUrl": "https://mindfix.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Whilst I am based in Christchurch, I also offer professional supervision via Zoom."
+        },
+        {
+          "field": "serviceScope",
+          "value": "professional supervision for helping professionals",
+          "sourceUrl": "https://mindfix.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "MindFix offers support to doctors, lawyers and other helping professionals through one to one confidential reflective supervision with Dr Helen Austin"
+        },
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
           "sourceType": "professional_directory",
           "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Aug 2025",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "value": "profile last updated Apr 2020",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Aug 2025"
+          "excerpt": "This listing was last updated by this psychiatrist in Apr 2020"
         },
         {
           "field": "onlineAvailable",
           "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
           "sourceType": "professional_directory",
           "excerpt": "Offers telepsychiatry\nYes"
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still displays a less-than-one-month wait and telepsychiatry, but says it was last updated in August 2025. Elimbias Health's current public pages confirm the clinician, practice, contact details, and GP-referral requirement but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
+      "reviewNotes": "The RANZCP profile still presents a Blenheim psychiatry contact, a less-than-one-month wait, and telepsychiatry, but it says it was last updated in April 2020. MindFix is reachable and identifies Dr Helen Austin, yet its current public wording places her in Christchurch and describes reflective supervision and Psychological First Aid for helping professionals rather than a general private psychiatry intake pathway. The location also conflicts with the stored Blenheim coordinates, which this lane cannot alter. No public recommendation field is refreshed or guessed.",
       "codexReview": {
-        "researchPassId": "research-20260715-cameron-lacey-availability-1",
-        "verificationPassId": "verify-20260715-cameron-lacey-availability-2",
+        "researchPassId": "research-20260715-helen-austin-location-availability-1",
+        "verificationPassId": "verify-20260715-helen-austin-location-availability-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-murray-patton:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:dr-murray-patton:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-5481",
-      "providerName": "Dr Sally Rimkeit",
+      "providerId": "ranzcp-576",
+      "providerName": "Dr Murray Patton",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Sally Rimkeit",
-        "practiceName": "The Dunes Practice",
-        "website": "https://www.thedunespractice.co.nz/"
+        "clinicianName": "Dr Murray Patton"
       },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
-      "sourceExcerpt": "Dr Sally Rimkeit",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
+      "sourceExcerpt": "Dr Murray Patton",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Sally Rimkeit",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "value": "Dr Murray Patton",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
           "sourceType": "professional_directory",
-          "excerpt": "Dr Sally Rimkeit"
+          "excerpt": "Dr Murray Patton"
         },
         {
-          "field": "practiceName",
-          "value": "The Dunes Practice",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "field": "professionalStatus",
+          "value": "RANZCP Fellow member",
+          "sourceUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
           "sourceType": "professional_directory",
-          "excerpt": "The Dunes Practice"
-        },
-        {
-          "field": "website",
-          "value": "https://www.thedunespractice.co.nz/",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
-          "sourceType": "professional_directory",
-          "excerpt": "www.thedunespractice.co.nz"
+          "excerpt": "Dr Murray Patton – Fellow member"
         }
       ],
       "auditRulesResolved": [
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The live RANZCP profile identifies Dr Sally Rimkeit at The Dunes Practice and links to the reachable clinic-owned website. The clinic's practitioner page independently identifies Dr B. Sally Rimkeit. No availability or telehealth field is changed in this decision.",
+      "reviewNotes": "The live RANZCP profile identifies Dr Murray Patton, and a current RANZCP committee page independently lists him as a Fellow member. Only the structural clinician field is populated; no private-practice, contact, availability, or scope claim is refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-sally-rimkeit-identity-practice-1",
-        "verificationPassId": "verify-20260715-sally-rimkeit-identity-practice-2",
+        "researchPassId": "research-20260715-murray-patton-identity-1",
+        "verificationPassId": "verify-20260715-murray-patton-identity-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:ranzcp-5481",
+      "reviewId": "provider:ranzcp-576",
       "reviewIds": [
-        "provider:ranzcp-5481"
+        "provider:ranzcp-576"
       ],
-      "providerId": "ranzcp-5481",
-      "providerName": "Dr Sally Rimkeit",
+      "providerId": "ranzcp-576",
+      "providerName": "Dr Murray Patton",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2025",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Oct 2024",
       "sourceEvidence": [
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
           "sourceType": "professional_directory",
           "excerpt": "Approximate wait time for a first appointment: 1-3 months"
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Aug 2025",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "value": "profile last updated Oct 2024",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Aug 2025"
-        },
-        {
-          "field": "onlineAvailable",
-          "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes"
+          "excerpt": "This listing was last updated by this psychiatrist in Oct 2024"
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
+        },
+        {
+          "field": "professionalStatus",
+          "value": "RANZCP Fellow member",
+          "sourceUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
+          "sourceType": "professional_directory",
+          "excerpt": "Dr Murray Patton – Fellow member"
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still displays a 1-3 month wait and telepsychiatry, but says it was last updated in August 2025. Search-visible and rendered clinic content currently reports that the practice is not accepting referrals and that its waiting lists are closed until August 2026, but the controlled non-rendered evidence fetch could not reproduce that dynamic notice. The system therefore does not apply a suppression or refresh from it automatically; the record remains a lowered waitlist result and is deferred for another evidence pass.",
+      "reviewNotes": "The current RANZCP committee page corroborates Dr Murray Patton's professional identity, but it does not establish a current private patient pathway. His finder profile still displays a 1-3 month wait and GP-referral guidance but says it was last updated in October 2024. No reachable provider-owned practice source was found to corroborate current private contact or availability, so those fields are not refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-sally-rimkeit-availability-1",
-        "verificationPassId": "verify-20260715-sally-rimkeit-availability-2",
+        "researchPassId": "research-20260715-murray-patton-availability-practice-1",
+        "verificationPassId": "verify-20260715-murray-patton-availability-practice-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-struan-robertson:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:dr-struan-robertson:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-5542",
-      "providerName": "Dr Vernon Reynolds",
+      "providerId": "ranzcp-5889",
+      "providerName": "Dr Struan Robertson",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Vernon Reynolds",
-        "practiceName": "Chuckle Factory",
-        "address": "58 Kamo Road, Whangarei",
-        "phone": "021 741 329",
-        "website": "https://www.chucklefactory.com/"
+        "clinicianName": "Dr Struan Robertson",
+        "practiceName": "Psych Services"
       },
-      "sourceUrl": "https://www.chucklefactory.com/aboutus",
-      "sourceExcerpt": "Dr Vernon Reynolds",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+      "sourceExcerpt": "Dr Struan Robertson",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Vernon Reynolds",
-          "sourceUrl": "https://www.chucklefactory.com/aboutus",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Vernon Reynolds"
+          "value": "Dr Struan Robertson",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+          "sourceType": "professional_directory",
+          "excerpt": "Dr Struan Robertson"
         },
         {
           "field": "practiceName",
-          "value": "Chuckle Factory",
-          "sourceUrl": "https://www.chucklefactory.com/aboutus",
-          "sourceType": "provider_owned",
-          "excerpt": "Chuckle Factory"
-        },
-        {
-          "field": "address",
-          "value": "58 Kamo Road, Whangarei",
-          "sourceUrl": "https://www.chucklefactory.com/aboutus",
-          "sourceType": "provider_owned",
-          "excerpt": "58 Kamo Road\nWhangarei"
-        },
-        {
-          "field": "phone",
-          "value": "021 741 329",
-          "sourceUrl": "https://www.chucklefactory.com/aboutus",
-          "sourceType": "provider_owned",
-          "excerpt": "021 741 329"
-        },
-        {
-          "field": "website",
-          "value": "https://www.chucklefactory.com/",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "value": "Psych Services",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
           "sourceType": "professional_directory",
-          "excerpt": "www.chucklefactory.com"
+          "excerpt": "Psych Services"
         }
       ],
       "auditRulesResolved": [
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The provider-owned Chuckle Factory site identifies Dr Vernon Reynolds and publishes the physical 58 Kamo Road address and local-format phone. The live RANZCP page links to the same practice website and repeats the phone and email. The previous PO Box 93 value is replaced with the clinic's published physical address; coordinates are not changed through this lane. No intake or availability status is inferred from the contact flow.",
+      "reviewNotes": "The live RANZCP profile identifies Dr Struan Robertson and names his practice as Psych Services. These structural identity fields are populated without changing contact details, availability, telehealth, referral, patient-group, or specialty claims.",
       "codexReview": {
-        "researchPassId": "research-20260715-vernon-reynolds-contact-location-1",
-        "verificationPassId": "verify-20260715-vernon-reynolds-contact-location-2",
+        "researchPassId": "research-20260715-struan-robertson-identity-practice-1",
+        "verificationPassId": "verify-20260715-struan-robertson-identity-practice-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:ranzcp-5542",
+      "reviewId": "provider:ranzcp-5889",
       "reviewIds": [
-        "provider:ranzcp-5542"
+        "provider:ranzcp-5889"
       ],
-      "providerId": "ranzcp-5542",
-      "providerName": "Dr Vernon Reynolds",
+      "providerId": "ranzcp-5889",
+      "providerName": "Dr Struan Robertson",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Oct 2022",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Mar 2026",
       "sourceEvidence": [
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
           "sourceType": "professional_directory",
           "excerpt": "Approximate wait time for a first appointment: 1-3 months"
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Oct 2022",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "value": "profile last updated Mar 2026",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Oct 2022"
+          "excerpt": "This listing was last updated by this psychiatrist in Mar 2026"
         },
         {
           "field": "onlineAvailable",
           "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
           "sourceType": "professional_directory",
           "excerpt": "Offers telepsychiatry\nYes"
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options."
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still displays a 1-3 month wait, telepsychiatry, and a GP-referral pathway, but says it was last updated in October 2022. Chuckle Factory's reachable public site confirms the clinician, contact details, physical address, and telehealth option. Its generic statement that appointment options will be provided is not explicit evidence of current acceptance or wait time, and its contact flow is not treated as self-referral evidence. Availability is not refreshed.",
+      "reviewNotes": "The RANZCP profile was updated in March 2026 and supports the stored GP-referral, telepsychiatry, specialty, patient-group, and age-group wording. Its 1-3 month wait claim is nevertheless older than this project's 30-day availability cadence, and no provider-owned Psych Services page was found to corroborate current intake or wait time. The existing waitlist remains lowered and is not refreshed or treated as acceptance.",
       "codexReview": {
-        "researchPassId": "research-20260715-vernon-reynolds-availability-referral-1",
-        "verificationPassId": "verify-20260715-vernon-reynolds-availability-referral-2",
+        "researchPassId": "research-20260715-struan-robertson-availability-telehealth-1",
+        "verificationPassId": "verify-20260715-struan-robertson-availability-telehealth-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
