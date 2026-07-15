@@ -868,6 +868,90 @@
       "lastSourceUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
       "lastNotes": "The Seneca Clinic's provider-owned site identifies Dr Campbell Emmerton and the clinic, while the current RANZCP profile explicitly says he offers telepsychiatry. The clinic says a GP or clinical referral is required. The direct site and RANZCP agree on 160 Jervois Road but label the suburb differently, so no address, city, or coordinate change is made.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-4807": {
+      "reviewId": "provider:ranzcp-4807",
+      "providerId": "ranzcp-4807",
+      "status": "deferred",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T09:44:47.802Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+      "lastNotes": "The live RANZCP profile still displays a less-than-one-month wait, telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in July 2018. Two research passes did not locate a current provider-owned New Zealand treating-practice page that could refresh these claims. No availability, telehealth, referral, contact, or identity field is changed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org",
+      "providerId": "ranzcp-4807",
+      "status": "deferred",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T09:44:47.802Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+      "lastNotes": "The live RANZCP profile still displays a less-than-one-month wait, telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in July 2018. Two research passes did not locate a current provider-owned New Zealand treating-practice page that could refresh these claims. No availability, telehealth, referral, contact, or identity field is changed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-4859": {
+      "reviewId": "provider:ranzcp-4859",
+      "providerId": "ranzcp-4859",
+      "status": "deferred",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T09:44:47.802Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+      "lastNotes": "The RANZCP profile still displays a 3-6 month wait and telepsychiatry, but says it was last updated in September 2021. Current Bexley Clinic and Healthpoint pages confirm the clinician and practice but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org",
+      "providerId": "ranzcp-4859",
+      "status": "completed",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T09:44:47.802Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+      "lastNotes": "The current Healthpoint specialist page identifies Dr Katie Ritchie at Bexley Clinic and links to the clinic website. The clinic's current contact page independently confirms the practice, while its team page misspells the surname as Richie, so the exact clinician identity is taken from Healthpoint and RANZCP rather than that team-page heading. No availability or telehealth claim is refreshed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-4946": {
+      "reviewId": "provider:ranzcp-4946",
+      "providerId": "ranzcp-4946",
+      "status": "deferred",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T09:44:47.802Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+      "lastNotes": "The live RANZCP profile still displays a 1-3 month wait, no telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in June 2018. The listed direct Google Sites page now redirects to a login page and mymind.cc was unreachable in both passes. Access controls were not bypassed. No stored claim is changed from this stale directory evidence.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org",
+      "providerId": "ranzcp-4946",
+      "status": "deferred",
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "startedAt": "2026-07-15T09:31:23.989Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T09:44:47.802Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+      "lastNotes": "The live RANZCP profile still displays a 1-3 month wait, no telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in June 2018. The listed direct Google Sites page now redirects to a login page and mymind.cc was unreachable in both passes. Access controls were not bypassed. No stored claim is changed from this stale directory evidence.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -951,9 +1035,18 @@
         "ranzcp-448",
         "ranzcp-4499"
       ]
+    },
+    {
+      "batchId": "codex-20260715093123-16d2a5bc",
+      "generatedAt": "2026-07-15T09:31:23.989Z",
+      "providerIds": [
+        "ranzcp-4807",
+        "ranzcp-4859",
+        "ranzcp-4946"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T08:45:21.870Z",
+  "updatedAt": "2026-07-15T09:44:47.802Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -1449,6 +1542,54 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T08:45:21.870Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-4807",
+      "providerId": "ranzcp-4807",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org",
+      "providerId": "ranzcp-4807",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org",
+      "providerId": "ranzcp-4859",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-4859",
+      "providerId": "ranzcp-4859",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-4946",
+      "providerId": "ranzcp-4946",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org",
+      "providerId": "ranzcp-4946",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T09:44:47.802Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

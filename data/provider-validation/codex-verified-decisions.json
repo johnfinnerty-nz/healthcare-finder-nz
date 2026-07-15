@@ -1,60 +1,141 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T08:44:26.052Z",
+  "generatedAt": "2026-07-15T09:44:22.899Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-patrick-daniels:yourhealthinmind.org",
+      "reviewId": "provider:ranzcp-4807",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-patrick-daniels:yourhealthinmind.org"
+        "provider:ranzcp-4807",
+        "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-4472",
-      "providerName": "Dr Patrick Daniels",
+      "providerId": "ranzcp-4807",
+      "providerName": "Dr Scott Chambers",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jul 2018",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "capturedAt": "2026-07-15T09:44:22.900Z",
+          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Jul 2018",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Jul 2018",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "capturedAt": "2026-07-15T09:44:22.900Z",
+          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "onlineAvailable",
+          "value": true,
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nYes",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "capturedAt": "2026-07-15T09:44:22.900Z",
+          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
+          "capturedAt": "2026-07-15T09:44:22.900Z",
+          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The live RANZCP profile still displays a less-than-one-month wait, telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in July 2018. Two research passes did not locate a current provider-owned New Zealand treating-practice page that could refresh these claims. No availability, telehealth, referral, contact, or identity field is changed.",
+      "codexReview": {
+        "researchPassId": "research-20260715-scott-chambers-current-practice-1",
+        "verificationPassId": "verify-20260715-scott-chambers-current-practice-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-4859",
+      "providerName": "Dr Katie Ritchie",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Patrick Daniels",
+        "clinicianName": "Dr Katie Ritchie",
         "practiceName": "Bexley Clinic",
         "website": "https://www.bexleyclinic.co.nz/"
       },
-      "sourceUrl": "https://www.bexleyclinic.co.nz/our-people",
-      "sourceExcerpt": "Dr Patrick Daniels",
+      "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+      "sourceExcerpt": "Dr Katie Ritchie",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Patrick Daniels",
-          "sourceUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Patrick Daniels",
-          "finalUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "capturedAt": "2026-07-15T08:44:26.052Z",
-          "pageHash": "8e1efa4e13243d3478e2dd4c8ef7dd10a5caaa4471400d3efffa01aaae80043b",
+          "value": "Dr Katie Ritchie",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "sourceType": "healthpoint",
+          "excerpt": "Dr Katie Ritchie",
+          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "capturedAt": "2026-07-15T09:44:24.874Z",
+          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "practiceName",
           "value": "Bexley Clinic",
-          "sourceUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "sourceType": "provider_owned",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "sourceType": "healthpoint",
           "excerpt": "Bexley Clinic",
-          "finalUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "capturedAt": "2026-07-15T08:44:26.052Z",
-          "pageHash": "8e1efa4e13243d3478e2dd4c8ef7dd10a5caaa4471400d3efffa01aaae80043b",
+          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "capturedAt": "2026-07-15T09:44:24.874Z",
+          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "website",
           "value": "https://www.bexleyclinic.co.nz/",
-          "sourceUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "sourceType": "provider_owned",
-          "excerpt": "{\"url\":\"https://www.bexleyclinic.co.nz\",\"name\":\"Bexley Clinic\",\"@context\":\"http://schema.org\",\"@type\":\"WebSite\"}",
-          "finalUrl": "https://www.bexleyclinic.co.nz/our-people",
-          "capturedAt": "2026-07-15T08:44:26.052Z",
-          "pageHash": "8e1efa4e13243d3478e2dd4c8ef7dd10a5caaa4471400d3efffa01aaae80043b",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "sourceType": "healthpoint",
+          "excerpt": "www.bexleyclinic.co.nz/",
+          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
+          "capturedAt": "2026-07-15T09:44:24.874Z",
+          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
           "verified": true,
           "verificationErrors": []
         }
@@ -63,419 +144,170 @@
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "Bexley Clinic's live provider-owned team page identifies Dr Patrick Daniels, names the practice, and publishes the clinic website. The clinic contact page independently matches the stored address, phone, and email. No availability claim was inferred from the provider-owned site.",
+      "reviewNotes": "The current Healthpoint specialist page identifies Dr Katie Ritchie at Bexley Clinic and links to the clinic website. The clinic's current contact page independently confirms the practice, while its team page misspells the surname as Richie, so the exact clinician identity is taken from Healthpoint and RANZCP rather than that team-page heading. No availability or telehealth claim is refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-patrick-daniels-clinic-identity-1",
-        "verificationPassId": "verify-20260715-patrick-daniels-clinic-identity-2",
+        "researchPassId": "research-20260715-katie-ritchie-healthpoint-identity-1",
+        "verificationPassId": "verify-20260715-katie-ritchie-healthpoint-identity-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T08:44:26.052Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     },
     {
-      "reviewId": "provider:ranzcp-4472",
+      "reviewId": "provider:ranzcp-4859",
       "reviewIds": [
-        "provider:ranzcp-4472"
+        "provider:ranzcp-4859"
       ],
-      "providerId": "ranzcp-4472",
-      "providerName": "Dr Patrick Daniels",
+      "providerId": "ranzcp-4859",
+      "providerName": "Dr Katie Ritchie",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Sep 2021",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: 3-6 months",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "capturedAt": "2026-07-15T09:44:26.273Z",
+          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Sep 2021",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Sep 2021",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "capturedAt": "2026-07-15T09:44:26.273Z",
+          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "onlineAvailable",
+          "value": true,
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nYes",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "capturedAt": "2026-07-15T09:44:26.273Z",
+          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The RANZCP profile still displays a 3-6 month wait and telepsychiatry, but says it was last updated in September 2021. Current Bexley Clinic and Healthpoint pages confirm the clinician and practice but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
+      "codexReview": {
+        "researchPassId": "research-20260715-katie-ritchie-availability-1",
+        "verificationPassId": "verify-20260715-katie-ritchie-availability-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:ranzcp-4946",
+      "reviewIds": [
+        "provider:ranzcp-4946",
+        "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-4946",
+      "providerName": "Dr Paul Edgar",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
       "sourceExcerpt": "This listing was last updated by this psychiatrist in Jun 2018",
       "sourceEvidence": [
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
           "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
-          "capturedAt": "2026-07-15T08:44:28.312Z",
-          "pageHash": "3b43cf88f8ac7287c4e9f6498fc23ac25eb4c3cc77806d4ec80df76b33698fb6",
+          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "capturedAt": "2026-07-15T09:44:27.788Z",
+          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityFreshness",
           "value": "profile last updated Jun 2018",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
           "sourceType": "professional_directory",
           "excerpt": "This listing was last updated by this psychiatrist in Jun 2018",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
-          "capturedAt": "2026-07-15T08:44:28.312Z",
-          "pageHash": "3b43cf88f8ac7287c4e9f6498fc23ac25eb4c3cc77806d4ec80df76b33698fb6",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "capturedAt": "2026-07-15T09:44:27.788Z",
+          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "onlineAvailable",
+          "value": false,
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nNo",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "capturedAt": "2026-07-15T09:44:27.788Z",
+          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "capturedAt": "2026-07-15T09:44:27.788Z",
+          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The live RANZCP profile still displays a less-than-one-month first-appointment estimate, but it says the provider last updated the listing in June 2018. Bexley Clinic's current public pages do not publish current intake or wait information. The stale wait status is not refreshed, relaxed, or used to infer acceptance.",
+      "reviewNotes": "The live RANZCP profile still displays a 1-3 month wait, no telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in June 2018. The listed direct Google Sites page now redirects to a login page and mymind.cc was unreachable in both passes. Access controls were not bypassed. No stored claim is changed from this stale directory evidence.",
       "codexReview": {
-        "researchPassId": "research-20260715-patrick-daniels-availability-1",
-        "verificationPassId": "verify-20260715-patrick-daniels-availability-2",
+        "researchPassId": "research-20260715-paul-edgar-current-practice-1",
+        "verificationPassId": "verify-20260715-paul-edgar-current-practice-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T08:44:26.052Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:ranzcp-448",
-      "reviewIds": [
-        "provider:ranzcp-448",
-        "discovery:suggestion:clinician-domain:prof-sarah-romans:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-448",
-      "providerName": "Prof Sarah Romans",
-      "action": "move_to_watchlist",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Prof Sarah Romans",
-        "practiceName": "Sarah Romans Private Psychiatry",
-        "availabilityStatus": "not_accepting",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "As noted, Dr Romans is no longer seeing new patients.",
-        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-        "availabilityNeedsManualReview": true
-      },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-      "sourceExcerpt": "As noted, Dr Romans is no longer seeing new patients.",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Prof Sarah Romans",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "Prof Sarah Romans",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "practiceName",
-          "value": "Sarah Romans Private Psychiatry",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "Sarah Romans Private Psychiatry",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "not_accepting",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "As noted, Dr Romans is no longer seeing new patients.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "As noted, Dr Romans is no longer seeing new patients.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "As noted, Dr Romans is no longer seeing new patients.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "As noted, Dr Romans is no longer seeing new patients.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "sourceFreshness",
-          "value": "profile last updated Mar 2022",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Mar 2022",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-          "capturedAt": "2026-07-15T08:44:30.795Z",
-          "pageHash": "46331f19b9c0a68acc0f6a936bf540f0ee0d87b65c8105020cbe9feb7a8e919b",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "weak-telehealth-evidence",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "reviewNotes": "The live RANZCP profile explicitly says Prof Sarah Romans is no longer seeing new patients. Her listed practice website now returns 404, and the skeptical pass found no current professional source contradicting the restrictive statement. The record is removed from first recommendations and monitored for a future change; manual-review remains true because the profile says it was last updated in March 2022.",
-      "codexReview": {
-        "researchPassId": "research-20260715-sarah-romans-availability-1",
-        "verificationPassId": "verify-20260715-sarah-romans-availability-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T08:44:26.052Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-campbell-emmerton:yourhealthinmind.org",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-campbell-emmerton:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-4499",
-      "providerName": "Dr Campbell Emmerton",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Campbell Emmerton",
-        "practiceName": "The Seneca Clinic",
-        "website": "https://psychpartners.nz/",
-        "fit": "RANZCP Your Health in Mind psychiatrist listing. Listed interests include addiction, ADHD, anxiety disorders, bipolar disorder, depression, complex trauma, post-traumatic stress disorder, and neuropsychiatry. The profile says telepsychiatry is offered. The Seneca Clinic requires a GP or clinical referral before an appointment.",
-        "referralSourceUrl": "https://psychpartners.nz/contact",
-        "referralSourceExcerpt": "A GP or clinical referral is required to secure an appointment with one of our specialists.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
-      },
-      "sourceUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-      "sourceExcerpt": "Dr. Campbell Emmerton",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Campbell Emmerton",
-          "sourceUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr. Campbell Emmerton",
-          "finalUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:32.421Z",
-          "pageHash": "ff49f71f933ae2d53f4f368de644668b857bc4c23e7cd99cad962137e650ca28",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "practiceName",
-          "value": "The Seneca Clinic",
-          "sourceUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "sourceType": "provider_owned",
-          "excerpt": "The Seneca Clinic",
-          "finalUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:32.421Z",
-          "pageHash": "ff49f71f933ae2d53f4f368de644668b857bc4c23e7cd99cad962137e650ca28",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "website",
-          "value": "https://psychpartners.nz/",
-          "sourceUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "sourceType": "provider_owned",
-          "excerpt": "\"url\":\"https:\\/\\/psychpartners.nz\",\"name\":\"Psych Partners\"",
-          "finalUrl": "https://psychpartners.nz/meet-us/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:32.421Z",
-          "pageHash": "ff49f71f933ae2d53f4f368de644668b857bc4c23e7cd99cad962137e650ca28",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "fit",
-          "value": "RANZCP Your Health in Mind psychiatrist listing. Listed interests include addiction, ADHD, anxiety disorders, bipolar disorder, depression, complex trauma, post-traumatic stress disorder, and neuropsychiatry. The profile says telepsychiatry is offered. The Seneca Clinic requires a GP or clinical referral before an appointment.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:40.488Z",
-          "pageHash": "9c88619ffece722fb9706b7c06f2aff4ca4dfdeb2899934ec0cd106f72b48a45",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "fit",
-          "value": "RANZCP Your Health in Mind psychiatrist listing. Listed interests include addiction, ADHD, anxiety disorders, bipolar disorder, depression, complex trauma, post-traumatic stress disorder, and neuropsychiatry. The profile says telepsychiatry is offered. The Seneca Clinic requires a GP or clinical referral before an appointment.",
-          "sourceUrl": "https://psychpartners.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "A GP or clinical referral is required to secure an appointment with one of our specialists.",
-          "finalUrl": "https://psychpartners.nz/contact",
-          "capturedAt": "2026-07-15T08:44:42.201Z",
-          "pageHash": "95d651b60aadd3f99b5926f9078e80ae445dd77400405dc43d9243c6297f8d4a",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://psychpartners.nz/contact",
-          "sourceUrl": "https://psychpartners.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "A GP or clinical referral is required to secure an appointment with one of our specialists.",
-          "finalUrl": "https://psychpartners.nz/contact",
-          "capturedAt": "2026-07-15T08:44:42.201Z",
-          "pageHash": "95d651b60aadd3f99b5926f9078e80ae445dd77400405dc43d9243c6297f8d4a",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "A GP or clinical referral is required to secure an appointment with one of our specialists.",
-          "sourceUrl": "https://psychpartners.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "A GP or clinical referral is required to secure an appointment with one of our specialists.",
-          "finalUrl": "https://psychpartners.nz/contact",
-          "capturedAt": "2026-07-15T08:44:42.201Z",
-          "pageHash": "95d651b60aadd3f99b5926f9078e80ae445dd77400405dc43d9243c6297f8d4a",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralConfidence",
-          "value": "high",
-          "sourceUrl": "https://psychpartners.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "Each specialist requires a referral letter before seeing a patient.",
-          "finalUrl": "https://psychpartners.nz/contact",
-          "capturedAt": "2026-07-15T08:44:42.201Z",
-          "pageHash": "95d651b60aadd3f99b5926f9078e80ae445dd77400405dc43d9243c6297f8d4a",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "weak-telehealth-evidence",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "reviewNotes": "The Seneca Clinic's provider-owned site identifies Dr Campbell Emmerton and the clinic, while the current RANZCP profile explicitly says he offers telepsychiatry. The clinic says a GP or clinical referral is required. The direct site and RANZCP agree on 160 Jervois Road but label the suburb differently, so no address, city, or coordinate change is made.",
-      "codexReview": {
-        "researchPassId": "research-20260715-campbell-emmerton-identity-telehealth-1",
-        "verificationPassId": "verify-20260715-campbell-emmerton-identity-telehealth-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": false,
-      "codexEvidenceVerifiedAt": "2026-07-15T08:44:26.052Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "failed",
-      "codexEvidenceErrors": [
-        "https://psychpartners.nz/meet-us/dr-campbell-emmerton: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "reviewId": "provider:ranzcp-4499",
-      "reviewIds": [
-        "provider:ranzcp-4499"
-      ],
-      "providerId": "ranzcp-4499",
-      "providerName": "Dr Campbell Emmerton",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2025",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:44.940Z",
-          "pageHash": "63530ac9606cf4240be3a60d12b3d58d5c3d4d3656f92266f2d1340c2410ba29",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Aug 2025",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Aug 2025",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-          "capturedAt": "2026-07-15T08:44:44.940Z",
-          "pageHash": "63530ac9606cf4240be3a60d12b3d58d5c3d4d3656f92266f2d1340c2410ba29",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "currentClinicAvailability",
-          "value": "contact clinic",
-          "sourceUrl": "https://psychpartners.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "For inquiries around specialist fees, their services or waiting list availability, please use our Contact Form",
-          "finalUrl": "https://psychpartners.nz/contact",
-          "capturedAt": "2026-07-15T08:44:46.420Z",
-          "pageHash": "fa19b5024ccc8d7dccb57c014943be07b4c79ac3d6b1b12386d306d401457504",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still displays a 1-3 month wait but says it was last updated in August 2025. The current clinic page tells people to ask about waiting-list availability and does not publish a clinician-specific current wait. The old wait is not refreshed and acceptance is not inferred.",
-      "codexReview": {
-        "researchPassId": "research-20260715-campbell-emmerton-availability-1",
-        "verificationPassId": "verify-20260715-campbell-emmerton-availability-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T08:44:26.052Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     }
   ],
-  "errors": [
-    {
-      "providerId": "ranzcp-4499",
-      "errors": [
-        "https://psychpartners.nz/meet-us/dr-campbell-emmerton: source identity does not match the provider or known practice"
-      ]
-    }
-  ]
+  "errors": []
 }

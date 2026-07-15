@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715083009-5abe45e0",
-  "generatedAt": "2026-07-15T08:30:09.722Z",
+  "batchId": "codex-20260715093123-16d2a5bc",
+  "generatedAt": "2026-07-15T09:31:23.989Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,10 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "ranzcp-4472",
+      "providerId": "ranzcp-4807",
       "reviewIds": [
-        "provider:ranzcp-4472",
-        "discovery:suggestion:clinician-domain:dr-patrick-daniels:yourhealthinmind.org"
+        "provider:ranzcp-4807",
+        "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -27,252 +27,52 @@
         "Availability review"
       ],
       "auditRules": [
+        "weak-telehealth-evidence",
         "stale-availability",
         "discovery-suggestion",
         "update_existing_provider"
       ],
       "auditIssues": [
+        "Telehealth or online availability is set but source fields do not clearly support remote care.",
         "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "suggestedFixes": [
+        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
         "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
         "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
+        "medium: weak-telehealth-evidence",
         "medium: stale-availability",
         "provider details need manual verification",
         "availability needs manual review",
         "availability status is waitlist",
         "provider discovery suggestion",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Patrick Daniels\", practice \"(none)\". | Depression or low mood: t options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Cognitive behavioural therapy Conversion disorder Depression Interpers | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bip | Rainbow / LGBTQIA+: s 18-60 Offers telepsychiatry No Qualifications Fellow of the RANZCP RANZCP Languages spoken English Experience with Doctors, psychiatrists or medical students Gender diverse Gay a | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 09 5205280",
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Scott Chambers\", practice \"(none)\". | Depression or low mood: to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bipolar disorder Cognitive behavioural therapy Depression Interperso | Anxiety, panic, or overwhelm: this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bip | Trauma or sexual harm: se Anxiety disorders Bipolar disorder Cognitive behavioural therapy Depression Interpersonal therapy Obsessive-compulsive disorders Psychodynamic psychotherapy Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 0800 007 615",
       "currentRecord": {
-        "name": "Dr Patrick Daniels",
+        "name": "Dr Scott Chambers",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
         "region": "Auckland",
         "city": "Remuera",
-        "address": "9 Green Lane East, Remuera, Auckland, 1050",
-        "phone": "09 5205280",
+        "address": "Suite 2, 110 Remuera Rd, Remuera, Auckland, 1050",
+        "phone": "0800 007 615",
         "text": "",
-        "email": "Bexleyclinicnz@gmail.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
+        "email": "",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "appointment wait: Less than",
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "rainbow",
-          "cost",
-          "depression",
-          "anxiety",
-          "direct-contact"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Bipolar disorder",
-          "Cognitive behavioural therapy",
-          "Conversion disorder",
-          "Depression",
-          "Interpersonal therapy",
-          "Obsessive-compulsive disorders",
-          "Personality disorders",
-          "Psychodynamic psychotherapy",
-          "Psychosis",
-          "Schizophrenia",
-          "Supportive psychotherapy"
-        ],
-        "specialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Bipolar disorder",
-          "Cognitive behavioural therapy",
-          "Conversion disorder",
-          "Depression",
-          "Interpersonal therapy",
-          "Obsessive-compulsive disorders",
-          "Personality disorders",
-          "Psychodynamic psychotherapy",
-          "Psychosis",
-          "Schizophrenia",
-          "Supportive psychotherapy"
-        ],
-        "services": [
-          "ACC Assessment",
-          "ACC Treatment provider",
-          "Civil medicolegal",
-          "Insurance opinions / reports",
-          "Professional supervision",
-          "Urgent assessments",
-          "Weekly psychotherapy"
-        ],
-        "patientGroups": [
-          "Doctors, psychiatrists or medical students",
-          "Gender diverse",
-          "Gay and lesbian",
-          "Military and veterans"
-        ],
-        "ageGroups": [
-          "Ages 18-60"
-        ],
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "ranzcp-448",
-      "reviewIds": [
-        "provider:ranzcp-448",
-        "discovery:suggestion:clinician-domain:prof-sarah-romans:yourhealthinmind.org"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Sensitive tag or scope evidence",
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "weak-telehealth-evidence",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; review queue high: medium: weak-telehealth-evidence; provider details need manual verification; availability needs manual review",
-        "existing provider update requires human approval before patching"
-      ],
-      "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "medium: weak-telehealth-evidence",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "provider discovery suggestion",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; review queue high: medium: weak-telehealth-evidence; provider details need manual verification; availability needs manual review",
-        "existing provider update requires human approval before patching"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans"
-      ],
-      "sourceEvidenceSummary": "Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Prof Sarah Romans\", practice \"(none)\". | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | Signal: hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebat | Signal: Link/button text: How to get an appointment | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care.\nSources: official register | Evidence: Seed value from providers.json: +64 4 473 4722",
-      "currentRecord": {
-        "name": "Prof Sarah Romans",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Wellington",
-        "city": "Te Aro",
-        "address": "Pencarrow House, Level 5, 1 Willeston St, Te Aro, Wellington, 6011",
-        "phone": "+64 4 473 4722",
-        "text": "",
-        "email": "drsarahromans@gmail.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-        "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "telehealth",
-          "direct-contact"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "ranzcp-4499",
-      "reviewIds": [
-        "provider:ranzcp-4499",
-        "discovery:suggestion:clinician-domain:dr-campbell-emmerton:yourhealthinmind.org"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Availability review"
-      ],
-      "auditRules": [
-        "weak-telehealth-evidence",
-        "stale-availability",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
-        "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "medium: weak-telehealth-evidence",
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist",
-        "provider discovery suggestion",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton"
-      ],
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Campbell Emmerton\", practice \"(none)\". | Depression or low mood: t options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Brain injury Bipolar disorder Cognitive analytic therapy Depression Dementia  | Anxiety, panic, or overwhelm: ist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Anxiety disorders Br | Trauma or sexual harm: ment Personality disorders Psychosis Psychodynamic psychotherapy Post-traumatic stress disorder Schizophrenia Sexual disorders Supportive psychotherapy Complex trauma Epilepsy Prol | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +64 9 2422100",
-      "currentRecord": {
-        "name": "Dr Campbell Emmerton",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Auckland",
-        "city": "Herne Bay",
-        "address": "The Seneca Clinic, 1c / 160 Jervois Rd, Herne Bay, Auckland, 1011",
-        "phone": "+64 9 2422100",
-        "text": "",
-        "email": "Seneca@psychpartners.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-        "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "appointment wait: 1-3",
         "requiresReferral": true,
         "referralType": "gp",
         "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
@@ -287,100 +87,280 @@
           "depression",
           "anxiety",
           "trauma",
-          "addiction",
           "direct-contact"
         ],
         "needScope": [],
         "advertisedSpecialties": [
-          "Addiction",
-          "ADHD",
           "Anxiety disorders",
           "Bipolar disorder",
-          "Brain injury",
-          "Cognitive analytic therapy",
-          "Complex trauma",
-          "Dementia related disorders",
+          "Cognitive behavioural therapy",
           "Depression",
-          "Electroconvulsive therapy (ECT)",
-          "Epilepsy",
-          "Functional neurological disorder",
           "Interpersonal therapy",
-          "Mentalisation-based therapy",
-          "Mindfulness",
-          "Motivational interviewing",
-          "Neuropsychiatry",
           "Obsessive-compulsive disorders",
-          "Pain management",
-          "Personality disorders",
           "Post-traumatic stress disorder",
-          "Prolonged grief",
           "Psychodynamic psychotherapy",
-          "Psychosis",
-          "Psychotherapy",
-          "Schizophrenia",
-          "Sexual disorders",
           "Supportive psychotherapy"
         ],
         "specialties": [
-          "Addiction",
-          "ADHD",
           "Anxiety disorders",
           "Bipolar disorder",
-          "Brain injury",
-          "Cognitive analytic therapy",
-          "Complex trauma",
-          "Dementia related disorders",
+          "Cognitive behavioural therapy",
           "Depression",
-          "Electroconvulsive therapy (ECT)",
-          "Epilepsy",
-          "Functional neurological disorder",
           "Interpersonal therapy",
-          "Mentalisation-based therapy",
-          "Mindfulness",
-          "Motivational interviewing",
-          "Neuropsychiatry",
           "Obsessive-compulsive disorders",
-          "Pain management",
-          "Personality disorders",
           "Post-traumatic stress disorder",
-          "Prolonged grief",
           "Psychodynamic psychotherapy",
-          "Psychosis",
-          "Psychotherapy",
-          "Schizophrenia",
-          "Sexual disorders",
           "Supportive psychotherapy"
         ],
         "services": [
           "ACC Assessment",
+          "ACC Treatment provider",
           "Civil medicolegal",
-          "Family court medicolegal",
           "Insurance opinions / reports",
-          "Professional supervision",
-          "Shared care",
-          "Urgent assessments",
-          "Weekly psychotherapy",
-          "After-hours appointments"
+          "Shared care"
         ],
         "patientGroups": [
-          "Asylum seekers and refugees",
-          "Aboriginal and Torres Strait Islander",
           "Doctors, psychiatrists or medical students",
           "Gender diverse",
           "Gay and lesbian",
-          "Intellectual disability",
-          "Intersex",
           "Maori",
-          "Military and veterans",
-          "Non-English speaking",
-          "Physical disability",
-          "Families",
-          "Emergency services personnel"
+          "Military and veterans"
         ],
         "ageGroups": [
           "Ages 18-60",
-          "Ages 60+",
-          "Ages 16-24"
+          "Ages 60+"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-4859",
+      "reviewIds": [
+        "provider:ranzcp-4859",
+        "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "weak-telehealth-evidence",
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "Telehealth or online availability is set but source fields do not clearly support remote care.",
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: weak-telehealth-evidence",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: 3-6 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Katie Ritchie\", practice \"(none)\". | Depression or low mood: to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Aut | Trauma or sexual harm: t details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Obsessive-compulsive disorders Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 09 5205280",
+      "currentRecord": {
+        "name": "Dr Katie Ritchie",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Remuera",
+        "address": "9 Green Lane East, Remuera, Auckland, 1050",
+        "phone": "09 5205280",
+        "text": "",
+        "email": "bexleyclinicnz@gmail.com",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: 3-6",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "rainbow",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "specialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Autism spectrum disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "services": [
+          "ACC Treatment provider",
+          "Insurance opinions / reports",
+          "Shared care"
+        ],
+        "patientGroups": [
+          "Asylum seekers and refugees",
+          "Doctors, psychiatrists or medical students",
+          "Gender diverse",
+          "Gay and lesbian",
+          "Military and veterans",
+          "Non-English speaking",
+          "Physical disability"
+        ],
+        "ageGroups": [
+          "Ages 18-60"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-4946",
+      "reviewIds": [
+        "provider:ranzcp-4946",
+        "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Paul Edgar\", practice \"(none)\". | Depression or low mood: to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bipolar disorder Cognitive behavioural therapy Depression Electrocon | Anxiety, panic, or overwhelm: this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bip | Trauma or sexual harm: Expertise Anxiety disorders Bipolar disorder Cognitive behavioural therapy Depression Electroconvulsive therapy (ECT) Obsessive-compulsive disorders Psychosis Post-traumatic stress | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 03 366 6126",
+      "currentRecord": {
+        "name": "Dr Paul Edgar",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Canterbury",
+        "city": "Ilam",
+        "address": "The Maidstone Ctr, 78 Maidstone Rd, Ilam, Christchurch, 8041",
+        "phone": "03 366 6126",
+        "text": "",
+        "email": "poa@mymind.cc",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: 1-3",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Cognitive behavioural therapy",
+          "Depression",
+          "Electroconvulsive therapy (ECT)",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "specialties": [
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Cognitive behavioural therapy",
+          "Depression",
+          "Electroconvulsive therapy (ECT)",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "services": [
+          "ACC Assessment",
+          "ACC Treatment provider",
+          "Civil medicolegal",
+          "Criminal medicolegal",
+          "Family court medicolegal",
+          "Insurance opinions / reports",
+          "Shared care"
+        ],
+        "patientGroups": [
+          "Military and veterans"
+        ],
+        "ageGroups": [
+          "Ages 18-60"
         ],
         "cost": ""
       },

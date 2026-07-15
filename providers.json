@@ -3386,7 +3386,7 @@
     "phone": "09 5205280",
     "text": "",
     "email": "bexleyclinicnz@gmail.com",
-    "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+    "website": "https://www.bexleyclinic.co.nz/",
     "hours": "Appointment wait: 3-6 months.",
     "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
     "tags": [
@@ -3492,7 +3492,9 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Katie Ritchie",
+    "practiceName": "Bexley Clinic"
   },
   {
     "id": "ranzcp-7734",

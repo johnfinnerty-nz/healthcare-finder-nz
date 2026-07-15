@@ -1,31 +1,25 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T08:44:26.052Z
-Verified decisions: 4/5
-Errors: 1
+Generated: 2026-07-15T09:44:22.899Z
+Verified decisions: 4/4
+Errors: 0
 
-## ranzcp-4472
-
-- Action: adjust
-- Evidence gate: passed
-
-## ranzcp-4472
+## ranzcp-4807
 
 - Action: needs_more_info
 - Evidence gate: passed
 
-## ranzcp-448
-
-- Action: move_to_watchlist
-- Evidence gate: passed
-
-## ranzcp-4499
+## ranzcp-4859
 
 - Action: adjust
-- Evidence gate: blocked
-- Blocked: https://psychpartners.nz/meet-us/dr-campbell-emmerton: source identity does not match the provider or known practice
+- Evidence gate: passed
 
-## ranzcp-4499
+## ranzcp-4859
+
+- Action: needs_more_info
+- Evidence gate: passed
+
+## ranzcp-4946
 
 - Action: needs_more_info
 - Evidence gate: passed
