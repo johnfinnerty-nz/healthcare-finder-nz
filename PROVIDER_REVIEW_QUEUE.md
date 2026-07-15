@@ -1,6 +1,6 @@
 # Provider Review Queue
 
-Generated: 2026-07-15T02:25:34.839Z
+Generated: 2026-07-15T03:26:17.670Z
 
 Focused queue: yes.
 
@@ -8,8 +8,8 @@ Focused queue: yes.
 
 - Review items: 800
 - Critical: 12
-- High: 483
-- Medium: 157
+- High: 481
+- Medium: 159
 - Low: 148
 
 ## By Review Category
@@ -17,9 +17,9 @@ Focused queue: yes.
 | Category | Items |
 | --- | --- |
 | GP source corroboration | 251 |
-| Location and distance evidence | 127 |
+| Location and distance evidence | 129 |
 | Sensitive tag or scope evidence | 124 |
-| Availability review | 82 |
+| Availability review | 80 |
 | Referral pathway review | 75 |
 | Needs quick human check | 61 |
 | Google Places discovery | 47 |
@@ -95,8 +95,6 @@ Focused queue: yes.
 | high | medium | Availability review | ranzcp-4472 - Dr Patrick Daniels | psychiatrist | Auckland / Remuera | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-3358 - Dr Sara Weeks | psychiatrist | Auckland / Mt Eden | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-4946 - Dr Paul Edgar | psychiatrist | Canterbury / Ilam | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
-| high | medium | Availability review | psychiatry-nz-christmas-seu - Dr Christmas Seu | psychiatrist | National / Telehealth across New Zealand | stale-availability | medium: stale-availability; provider details need manual verification; availability status is waitlist; address missing coordinates |
-| high | medium | Availability review | psychiatry-nz-han-chung-lim - Dr Han Chung Lim | psychiatrist | National / Telehealth across New Zealand | stale-availability | medium: stale-availability; provider details need manual verification; availability status is waitlist; address missing coordinates |
 | high | medium | Availability review | ranzcp-5542 - Dr Vernon Reynolds | psychiatrist | Northland / Whangarei | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-7544 - Dr Kang Tan | psychiatrist | Wellington / Wellington | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-6009 - Dr Rachel Kan | psychiatrist | Wellington / Wellington Central | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
@@ -109,5 +107,7 @@ Focused queue: yes.
 | high | medium | Availability review | christchurch-psychmed-michelle-mccarthy - Dr Michelle McCarthy | psychologist | Canterbury / Christchurch | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | marlborough-durkin-zintl-psychology - Durkin Zintl Psychology | psychologist | Nelson Marlborough Tasman / Blenheim and telehealth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | northland-mindme-clinical-psychology - MindMe Clinical Psychology | psychologist | Northland / Mid-North and Whangarei | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
+| high | medium | Availability review | northland-wayfinder-psychology - Wayfinder Psychology | psychologist | Northland / Whangarei | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
+| high | medium | Availability review | tairawhiti-mauri-psychology - Mauri Psychology | psychologist | Tairawhiti / Gisborne | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 
 Review decisions must be applied with `npm run apply:review`; the public app does not write provider data from the browser.

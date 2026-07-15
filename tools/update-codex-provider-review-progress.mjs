@@ -43,7 +43,7 @@ export function updateCodexProgress(progress = {}, decisions = [], options = {})
     }
     for (const reviewId of reviewIds) {
       const previous = next.items[reviewId] || { reviewId, providerId: decision.providerId || "" };
-      const failed = decision.processingStatus === "failed";
+      const failed = options.batchFailed === true || decision.processingStatus === "failed";
       const completed = COMPLETED_ACTIONS.has(action) && !failed;
       next.items[reviewId] = {
         ...previous,
@@ -90,9 +90,10 @@ export function runCli(argv = process.argv.slice(2)) {
   const config = parseArgs(argv);
   const progress = readJson(config.progress, { version: 1, items: {}, batches: [], events: [] });
   const decisions = readJson(config.decisions, { decisions: [] });
-  const next = updateCodexProgress(progress, decisions, { ...config, decisionsPath: config.decisions });
+  const batchFailed = Array.isArray(decisions.errors) && decisions.errors.length > 0;
+  const next = updateCodexProgress(progress, decisions, { ...config, decisionsPath: config.decisions, batchFailed });
   writeJson(config.progress, next);
-  console.log(`Updated Codex progress from ${decisionsList(decisions).length} decision(s).`);
+  console.log(`Updated Codex progress from ${decisionsList(decisions).length} decision(s).${batchFailed ? " Evidence batch failed; all decisions were deferred." : ""}`);
   return next;
 }
 

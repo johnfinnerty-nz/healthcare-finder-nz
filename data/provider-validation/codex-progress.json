@@ -336,6 +336,90 @@
       "lastSourceUrl": "https://psychiatry.nz/",
       "lastNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The provider-owned source identifies Dr MacMillan as a supervised psychiatry registrar completing specialist training, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:psychiatry-nz-jimi-macmillan": {
+      "reviewId": "provider:psychiatry-nz-jimi-macmillan",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://psychiatry.nz/",
+      "lastNotes": "The clinician profile identifies Ngāpuhi whakapapa but does not advertise a Māori-specific or kaupapa Māori service, so the Māori routing tag is removed. ADHD is described by the practice rather than in Dr MacMillan's profile, so the clinician-level ADHD tag is also removed. Booking and waitlist are presented as alternatives, so current availability remains not_published.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:info@anteris.nz": {
+      "reviewId": "discovery:suggestion:email:info@anteris.nz",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+      "lastNotes": "Two independent Healthpoint fetches reproduced Anteris's general referral expectation that the first step is a GP referral. This strengthens the existing GP-first pathway without adding self-referral or availability claims.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:bay-of-plenty-anteris-private-psychiatry": {
+      "reviewId": "provider:bay-of-plenty-anteris-private-psychiatry",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+      "lastNotes": "A March 2026 provider-edited Healthpoint listing gives Suite 7, 89 Grey Street, while Anteris appointment pages still display the database's 1017 Cameron Road address. The sources conflict and no current availability statement is published, so neither address nor availability is changed automatically.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:ashburn@ashburn.co.nz": {
+      "reviewId": "discovery:suggestion:email:ashburn@ashburn.co.nz",
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+      "lastNotes": "Healthpoint's provider-edited Ashburn listing reproduces the public phone and an outpatient referral statement. The phone is normalized for display, while referralType remains unknown because provider-owned guidance and Healthpoint do not align cleanly enough for an autonomous self-referral or mandatory-referral claim.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:dunedin-ashburn-clinic-psychiatry": {
+      "reviewId": "provider:dunedin-ashburn-clinic-psychiatry",
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715032623-2d62698e",
+      "startedAt": "2026-07-15T03:26:23.561Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-07-22T03:35:28.755Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+      "lastNotes": "Healthpoint says outpatient self-referrals may be considered, while Ashburn's current provider-owned outpatient page says referrals should be made by a health professional. No explicit current availability statement was found. The referral pathway and availability therefore remain unresolved rather than inferring self-referral or acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -365,9 +449,18 @@
         "psychiatry-nz-christmas-seu",
         "psychiatry-nz-han-chung-lim"
       ]
+    },
+    {
+      "batchId": "codex-20260715032623-2d62698e",
+      "generatedAt": "2026-07-15T03:26:23.561Z",
+      "providerIds": [
+        "psychiatry-nz-jimi-macmillan",
+        "bay-of-plenty-anteris-private-psychiatry",
+        "dunedin-ashburn-clinic-psychiatry"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T02:34:09.832Z",
+  "updatedAt": "2026-07-15T03:35:28.755Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -559,6 +652,54 @@
       "action": "adjust",
       "status": "completed",
       "at": "2026-07-15T02:34:09.832Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-jimi-macmillan",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:info@anteris.nz",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:bay-of-plenty-anteris-private-psychiatry",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:ashburn@ashburn.co.nz",
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "action": "adjust",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:dunedin-ashburn-clinic-psychiatry",
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T03:35:28.755Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

@@ -1,126 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T02:33:39.234Z",
+  "generatedAt": "2026-07-15T03:33:27.922Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
+      "reviewId": "provider:psychiatry-nz-jimi-macmillan",
       "reviewIds": [
-        "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz"
+        "provider:psychiatry-nz-jimi-macmillan"
       ],
-      "providerId": "otago-psychiatry-down-south",
-      "providerName": "Psychiatry Down South",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "providerName": "Dr Jimi MacMillan",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "address": "342 High Street, Dunedin",
-        "phone": "03 477 9053"
-      },
-      "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
-      "sourceExcerpt": "342 High Street, Dunedin",
-      "sourceEvidence": [
-        {
-          "field": "address",
-          "value": "342 High Street, Dunedin",
-          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "342 High Street, Dunedin",
-          "finalUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
-          "capturedAt": "2026-07-15T02:33:39.235Z",
-          "pageHash": "c7053c8b43bb96cd1424b7ef0ee7fc104f71c501de682afdd5fd431e7c9466e1",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "phone",
-          "value": "03 477 9053",
-          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "03 477-9053",
-          "finalUrl": "https://www.psychiatrydownsouth.co.nz/referrals",
-          "capturedAt": "2026-07-15T02:33:39.235Z",
-          "pageHash": "c7053c8b43bb96cd1424b7ef0ee7fc104f71c501de682afdd5fd431e7c9466e1",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "conflict-address",
-        "conflict-phone"
-      ],
-      "reviewNotes": "Two independent fetches of the provider-owned referrals page reproduced the stored Dunedin address and phone. The discovery conflict is not supported by the live source, so the current values are retained.",
-      "codexReview": {
-        "researchPassId": "research-20260715-down-south-contact-1",
-        "verificationPassId": "verify-20260715-down-south-contact-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:otago-psychiatry-down-south",
-      "reviewIds": [
-        "provider:otago-psychiatry-down-south"
-      ],
-      "providerId": "otago-psychiatry-down-south",
-      "providerName": "Psychiatry Down South",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.psychiatrydownsouth.co.nz/contact",
-      "sourceExcerpt": "Contact by email is preferred, but you may leave a voice message, which will be checked daily during normal working hours.",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "not_published",
-          "sourceUrl": "https://www.psychiatrydownsouth.co.nz/contact",
-          "sourceType": "provider_owned",
-          "excerpt": "Contact by email is preferred, but you may leave a voice message, which will be checked daily during normal working hours.",
-          "finalUrl": "https://www.psychiatrydownsouth.co.nz/contact",
-          "capturedAt": "2026-07-15T02:33:40.618Z",
-          "pageHash": "5f70c4ec2d91c6520b016a0d6c977e1b97bb6738c4fe60279e7eb4ac21957547",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The contact and referral pages publish contact and referral instructions but no explicit current accepting, waitlist, paused, or closed status. Availability therefore remains not_published and needs more information.",
-      "codexReview": {
-        "researchPassId": "research-20260715-down-south-availability-1",
-        "verificationPassId": "verify-20260715-down-south-availability-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:psychiatry-nz-christmas-seu",
-      "reviewIds": [
-        "provider:psychiatry-nz-christmas-seu"
-      ],
-      "providerId": "psychiatry-nz-christmas-seu",
-      "providerName": "Dr Christmas Seu",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "fit",
+          "direct-contact"
+        ],
         "availabilityStatus": "not_published",
         "availabilityCheckedAt": "2026-07-15",
         "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
@@ -128,8 +29,44 @@
         "availabilityNeedsManualReview": true
       },
       "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+      "sourceExcerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
       "sourceEvidence": [
+        {
+          "field": "tags",
+          "value": [
+            "psychiatrist",
+            "medical-specialist",
+            "telehealth",
+            "fit",
+            "direct-contact"
+          ],
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T03:33:27.924Z",
+          "pageHash": "e0d5a15c4d689cc9a94421e3f32728fa6d4147f829bd31e71ea9f571afb1d33d",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "tags",
+          "value": [
+            "psychiatrist",
+            "medical-specialist",
+            "telehealth",
+            "fit",
+            "direct-contact"
+          ],
+          "sourceUrl": "https://psychiatry.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "He has experience across a range of mental health services in New Zealand and Australia, with a particular interest in regional and rural mental health care.",
+          "finalUrl": "https://psychiatry.nz/",
+          "capturedAt": "2026-07-15T03:33:27.924Z",
+          "pageHash": "e0d5a15c4d689cc9a94421e3f32728fa6d4147f829bd31e71ea9f571afb1d33d",
+          "verified": true,
+          "verificationErrors": []
+        },
         {
           "field": "availabilityStatus",
           "value": "not_published",
@@ -137,8 +74,8 @@
           "sourceType": "provider_owned",
           "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
           "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:41.857Z",
-          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "capturedAt": "2026-07-15T03:33:27.924Z",
+          "pageHash": "e0d5a15c4d689cc9a94421e3f32728fa6d4147f829bd31e71ea9f571afb1d33d",
           "verified": true,
           "verificationErrors": []
         },
@@ -149,8 +86,8 @@
           "sourceType": "provider_owned",
           "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
           "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:41.857Z",
-          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "capturedAt": "2026-07-15T03:33:27.924Z",
+          "pageHash": "e0d5a15c4d689cc9a94421e3f32728fa6d4147f829bd31e71ea9f571afb1d33d",
           "verified": true,
           "verificationErrors": []
         },
@@ -161,208 +98,393 @@
           "sourceType": "provider_owned",
           "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
           "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:41.857Z",
-          "pageHash": "33afe9d4e87f66709c13c7687868dd8f49543fb209b8fd5041883cacc11a9441",
+          "capturedAt": "2026-07-15T03:33:27.924Z",
+          "pageHash": "e0d5a15c4d689cc9a94421e3f32728fa6d4147f829bd31e71ea9f571afb1d33d",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [
+        "weak-maori-evidence",
         "stale-availability"
       ],
-      "reviewNotes": "The provider-owned page describes booking and joining a waitlist as alternatives. It does not establish that every current referral is waitlisted, so the blanket waitlist status is removed and current availability remains explicitly unresolved.",
+      "reviewNotes": "The clinician profile identifies Ngāpuhi whakapapa but does not advertise a Māori-specific or kaupapa Māori service, so the Māori routing tag is removed. ADHD is described by the practice rather than in Dr MacMillan's profile, so the clinician-level ADHD tag is also removed. Booking and waitlist are presented as alternatives, so current availability remains not_published.",
       "codexReview": {
-        "researchPassId": "research-20260715-christmas-availability-1",
-        "verificationPassId": "verify-20260715-christmas-availability-2",
+        "researchPassId": "research-20260715-jimi-scope-1",
+        "verificationPassId": "verify-20260715-jimi-scope-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz"
+        "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz"
       ],
-      "providerId": "psychiatry-nz-christmas-seu",
-      "providerName": "Dr Christmas Seu",
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "providerName": "Dr Jimi MacMillan",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
       "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "Dr Christmas Seu is a psychiatry registrar who currently works under the supervision of Dr Lim.",
+      "sourceExcerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
       "sourceEvidence": [
         {
           "field": "type",
           "value": "psychiatry registrar",
           "sourceUrl": "https://psychiatry.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "Dr Christmas Seu is a psychiatry registrar who currently works under the supervision of Dr Lim.",
+          "excerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
           "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:43.359Z",
-          "pageHash": "c0f7d2af4242936db652cb07d722830c448669af2084d73ac4e0cdebcb594354",
+          "capturedAt": "2026-07-15T03:33:29.542Z",
+          "pageHash": "ca76766be4fa6107924adf6319d5f1315c13723bff8a08990a479d7883282d42",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "professionalStatus",
-          "value": "working towards fellowship",
+          "value": "specialist training in progress",
           "sourceUrl": "https://psychiatry.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "He has extensive experience in psychiatry and is currently working towards gaining his fellowship.",
+          "excerpt": "He is currently completing his specialist training with the Royal Australian and New Zealand College of Psychiatrists.",
           "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:43.359Z",
-          "pageHash": "c0f7d2af4242936db652cb07d722830c448669af2084d73ac4e0cdebcb594354",
+          "capturedAt": "2026-07-15T03:33:29.542Z",
+          "pageHash": "ca76766be4fa6107924adf6319d5f1315c13723bff8a08990a479d7883282d42",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The source explicitly identifies Dr Seu as a supervised psychiatry registrar working toward fellowship, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred rather than guessed.",
+      "reviewNotes": "The provider-owned source identifies Dr MacMillan as a supervised psychiatry registrar completing specialist training, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred.",
       "codexReview": {
-        "researchPassId": "research-20260715-christmas-role-1",
-        "verificationPassId": "verify-20260715-christmas-role-2",
+        "researchPassId": "research-20260715-jimi-role-1",
+        "verificationPassId": "verify-20260715-jimi-role-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     },
     {
-      "reviewId": "provider:psychiatry-nz-han-chung-lim",
+      "reviewId": "discovery:suggestion:email:info@anteris.nz",
       "reviewIds": [
-        "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
-        "provider:psychiatry-nz-han-chung-lim",
-        "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz"
+        "discovery:suggestion:email:info@anteris.nz"
       ],
-      "providerId": "psychiatry-nz-han-chung-lim",
-      "providerName": "Dr Han Chung Lim",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "providerName": "Anteris Private Psychiatry",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": true,
-        "referralSourceUrl": "https://psychiatry.nz/",
-        "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+        "referralSourceExcerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
         "referralConfidence": "high",
         "referralLastChecked": "2026-07-15",
         "referralNeedsManualReview": false
       },
-      "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+      "sourceExcerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
       "sourceEvidence": [
         {
-          "field": "availabilityStatus",
-          "value": "not_published",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "field": "requiresReferral",
+          "value": true,
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:30.863Z",
+          "pageHash": "85878be8e0a5630f821f2d9b539ca98b0949aedd7fb29c7eaeb2e39410c13e02",
           "verified": true,
           "verificationErrors": []
         },
         {
-          "field": "availabilityEvidence",
-          "value": "We then will send you information on how to make a booking and/or being on our waitlist.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://psychiatry.nz/",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:30.863Z",
+          "pageHash": "85878be8e0a5630f821f2d9b539ca98b0949aedd7fb29c7eaeb2e39410c13e02",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "referralSourceUrl",
-          "value": "https://psychiatry.nz/",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "value": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:30.863Z",
+          "pageHash": "85878be8e0a5630f821f2d9b539ca98b0949aedd7fb29c7eaeb2e39410c13e02",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "referralSourceExcerpt",
-          "value": "We accept direct referrals from clients and healthcare professionals.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "value": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:30.863Z",
+          "pageHash": "85878be8e0a5630f821f2d9b539ca98b0949aedd7fb29c7eaeb2e39410c13e02",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "referralConfidence",
           "value": "high",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We accept direct referrals from clients and healthcare professionals.",
-          "finalUrl": "https://psychiatry.nz/",
-          "capturedAt": "2026-07-15T02:33:44.644Z",
-          "pageHash": "cf95b0f6ba503d51bb564c543c0421aeec567463ed37666acc528255a4d14fa1",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:30.863Z",
+          "pageHash": "85878be8e0a5630f821f2d9b539ca98b0949aedd7fb29c7eaeb2e39410c13e02",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [
-        "stale-availability",
-        "conflict-email",
-        "conflict-tags",
-        "conflict-advertisedSpecialties"
+        "needs_manual_research"
       ],
-      "reviewNotes": "The live page confirms Dr Lim's identity, shared Psychiatry.nz referral address, and listed interests. The generated discovery conflicts came from a partial candidate record, not contradictory public evidence. Booking and waitlist are presented as alternatives, so current availability is changed from blanket waitlist to not_published while direct-referral evidence is refreshed without changing the existing referral policy.",
+      "reviewNotes": "Two independent Healthpoint fetches reproduced Anteris's general referral expectation that the first step is a GP referral. This strengthens the existing GP-first pathway without adding self-referral or availability claims.",
       "codexReview": {
-        "researchPassId": "research-20260715-han-lim-1",
-        "verificationPassId": "verify-20260715-han-lim-2",
+        "researchPassId": "research-20260715-anteris-referral-1",
+        "verificationPassId": "verify-20260715-anteris-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T02:33:39.234Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:bay-of-plenty-anteris-private-psychiatry",
+      "reviewIds": [
+        "provider:bay-of-plenty-anteris-private-psychiatry"
+      ],
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
+      "providerName": "Anteris Private Psychiatry",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+      "sourceExcerpt": "Suite 7, 89 Grey Street",
+      "sourceEvidence": [
+        {
+          "field": "address",
+          "value": "Suite 7, 89 Grey Street, Tauranga Central, Tauranga 3110",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "sourceType": "healthpoint",
+          "excerpt": "Suite 7, 89 Grey Street",
+          "finalUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
+          "capturedAt": "2026-07-15T03:33:32.392Z",
+          "pageHash": "b7240b3eab502c5089cf76a75ba95a9753abd105665be04f91897f66c8bbb31f",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "A March 2026 provider-edited Healthpoint listing gives Suite 7, 89 Grey Street, while Anteris appointment pages still display the database's 1017 Cameron Road address. The sources conflict and no current availability statement is published, so neither address nor availability is changed automatically.",
+      "codexReview": {
+        "researchPassId": "research-20260715-anteris-location-1",
+        "verificationPassId": "verify-20260715-anteris-location-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "discovery:suggestion:email:ashburn@ashburn.co.nz",
+      "reviewIds": [
+        "discovery:suggestion:email:ashburn@ashburn.co.nz"
+      ],
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "providerName": "Ashburn Clinic Psychiatry",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "phone": "03 476 2092",
+        "referralSourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+        "referralSourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+        "referralConfidence": "medium",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": true
+      },
+      "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+      "sourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+      "sourceEvidence": [
+        {
+          "field": "phone",
+          "value": "03 476 2092",
+          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceType": "healthpoint",
+          "excerpt": "href=\"tel:(03) 476 2092\"",
+          "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "capturedAt": "2026-07-15T03:33:33.779Z",
+          "pageHash": "748faeef27c24b867dccb55fe787905cbeac2812bc127f5695604a9057a43772",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceType": "healthpoint",
+          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+          "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "capturedAt": "2026-07-15T03:33:33.779Z",
+          "pageHash": "748faeef27c24b867dccb55fe787905cbeac2812bc127f5695604a9057a43772",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceType": "healthpoint",
+          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+          "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "capturedAt": "2026-07-15T03:33:33.779Z",
+          "pageHash": "748faeef27c24b867dccb55fe787905cbeac2812bc127f5695604a9057a43772",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralConfidence",
+          "value": "medium",
+          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceType": "healthpoint",
+          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+          "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "capturedAt": "2026-07-15T03:33:33.779Z",
+          "pageHash": "748faeef27c24b867dccb55fe787905cbeac2812bc127f5695604a9057a43772",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        }
+      ],
+      "auditRulesResolved": [
+        "needs_manual_research"
+      ],
+      "reviewNotes": "Healthpoint's provider-edited Ashburn listing reproduces the public phone and an outpatient referral statement. The phone is normalized for display, while referralType remains unknown because provider-owned guidance and Healthpoint do not align cleanly enough for an autonomous self-referral or mandatory-referral claim.",
+      "codexReview": {
+        "researchPassId": "research-20260715-ashburn-contact-1",
+        "verificationPassId": "verify-20260715-ashburn-contact-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/: source identity does not match the provider or known practice"
+      ]
+    },
+    {
+      "reviewId": "provider:dunedin-ashburn-clinic-psychiatry",
+      "reviewIds": [
+        "provider:dunedin-ashburn-clinic-psychiatry"
+      ],
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "providerName": "Ashburn Clinic Psychiatry",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+      "sourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+      "sourceEvidence": [
+        {
+          "field": "referralType",
+          "value": "unknown",
+          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "sourceType": "healthpoint",
+          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+          "finalUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
+          "capturedAt": "2026-07-15T03:33:35.171Z",
+          "pageHash": "bc87ff66c4b5dc142d5291029f10b4ebe53c5a9b6403eb210c27fdf4e6828746",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "Healthpoint says outpatient self-referrals may be considered, while Ashburn's current provider-owned outpatient page says referrals should be made by a health professional. No explicit current availability statement was found. The referral pathway and availability therefore remain unresolved rather than inferring self-referral or acceptance.",
+      "codexReview": {
+        "researchPassId": "research-20260715-ashburn-pathway-1",
+        "verificationPassId": "verify-20260715-ashburn-pathway-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T03:33:27.922Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/: source identity does not match the provider or known practice"
+      ]
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "errors": [
+        "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/: source identity does not match the provider or known practice"
+      ]
+    },
+    {
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "errors": [
+        "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/: source identity does not match the provider or known practice"
+      ]
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T02:25:34.839Z",
+  "generatedAt": "2026-07-15T03:26:17.670Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -29,7 +29,7 @@
   "inputs": {
     "providers": 1213,
     "sourceFitFindings": 358,
-    "availabilityFindings": 59,
+    "availabilityFindings": 57,
     "referralFindings": 0,
     "watchlistItems": 21,
     "identityScanRecords": 1156,
@@ -41,22 +41,22 @@
     "total": 800,
     "byPriority": {
       "critical": 12,
-      "high": 483,
-      "medium": 157,
+      "high": 481,
+      "medium": 159,
       "low": 148
     },
     "bySeverity": {
       "high": 12,
-      "medium": 364,
+      "medium": 362,
       "low": 298,
-      "none": 126
+      "none": 128
     },
     "byCategory": {
       "Referral pathway review": 75,
       "Sensitive tag or scope evidence": 124,
-      "Availability review": 82,
+      "Availability review": 80,
       "Directory/direct-contact confusion": 33,
-      "Location and distance evidence": 127,
+      "Location and distance evidence": 129,
       "Google Places discovery": 47,
       "GP source corroboration": 251,
       "Needs quick human check": 61
@@ -41181,1135 +41181,6 @@
             "name": "Paul Edgar",
             "evidence": "Dr Paul Edgar\nFRANZCP BSc",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:psychiatry-nz-christmas-seu",
-      "reviewCategory": "Availability review",
-      "providerId": "psychiatry-nz-christmas-seu",
-      "name": "Dr Christmas Seu",
-      "clinicianName": "Dr Christmas Seu",
-      "practiceName": "Psychiatry.nz",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "address": "Online telepsychiatry service",
-      "lat": "",
-      "lon": "",
-      "phone": "",
-      "text": "",
-      "email": "refer@psychiatry.nz",
-      "website": "https://psychiatry.nz/",
-      "bookingUrl": "",
-      "source": "https://psychiatry.nz/",
-      "sourceQuality": "provider-owned or NGO public page",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-06-12",
-      "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-      "availabilitySource": "https://psychiatry.nz/",
-      "availabilityNeedsManualReview": false,
-      "requiresReferral": false,
-      "referralType": "self",
-      "referralSourceUrl": "https://psychiatry.nz/",
-      "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-      "referralConfidence": "high",
-      "referralLastChecked": "2026-06-12",
-      "referralNeedsManualReview": false,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "adhd",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [],
-      "advertisedSpecialtyEvidence": [],
-      "specialtyTagsSource": "no advertised specialties recorded",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "waitlist availability is 33 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 4230,
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability status is waitlist",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://psychiatry.nz/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "email",
-            "value": "refer@psychiatry.nz",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://psychiatry.nz/",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Online telepsychiatry service",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-            "capturedAt": "2026-06-12",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "self",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-            "capturedAt": "2026-06-12",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Christmas Seu\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Christmas Seu, Psychiatry.nz National / Telehealth across New Zealand Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: waitlist",
-      "currentProvider": {
-        "id": "psychiatry-nz-christmas-seu",
-        "name": "Dr Christmas Seu",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "Online telepsychiatry service",
-        "phone": "",
-        "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "https://psychiatry.nz/",
-        "hours": "Online assessments. Ask about current waitlist and appointment times.",
-        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "adhd",
-          "fit",
-          "direct-contact"
-        ],
-        "fit": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
-        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
-        "source": "https://psychiatry.nz/",
-        "verified": "2026-05",
-        "sourceQuality": "provider-owned or NGO public page",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-06-12",
-        "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": false,
-        "requiresReferral": false,
-        "referralType": "self",
-        "referralSourceUrl": "https://psychiatry.nz/",
-        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-06-12",
-        "referralNeedsManualReview": false,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [],
-        "advertisedSpecialtyEvidence": [],
-        "specialtyTagsSource": "no advertised specialties recorded",
-        "clinicianName": "Dr Christmas Seu",
-        "practiceName": "Psychiatry.nz"
-      },
-      "auditFindings": [
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "psychiatry-nz-christmas-seu",
-            "providerName": "Dr Christmas Seu",
-            "region": "National",
-            "city": "Telehealth across New Zealand",
-            "type": "psychiatrist",
-            "source": "https://psychiatry.nz/",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-06-12",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "psychiatry-nz-christmas-seu",
-        "providerName": "Dr Christmas Seu",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "sourceUrl": "https://psychiatry.nz/",
-        "pagesChecked": [
-          {
-            "url": "https://psychiatry.nz/",
-            "finalUrl": "https://psychiatry.nz/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr Christmas Seu",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "PTSD"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "funded"
-        },
-        "availabilitySignal": {
-          "status": "long_wait_or_waitlist",
-          "value": "found",
-          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "waitlist"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: Make a referral",
-          "sourceUrl": "https://psychiatry.nz/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Han Chung Lim Dr",
-            "evidence": "Dr Han Chung Lim\nDr",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Lim. He",
-            "evidence": "Dr Lim. He",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Christmas Seu Christmas",
-            "evidence": "Dr Christmas Seu\nDr Christmas",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Jimi MacMillan Jimi",
-            "evidence": "Dr Jimi MacMillan\nDr Jimi",
-            "sourceUrl": "https://psychiatry.nz/"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:psychiatry-nz-han-chung-lim",
-      "reviewCategory": "Availability review",
-      "providerId": "psychiatry-nz-han-chung-lim",
-      "name": "Dr Han Chung Lim",
-      "clinicianName": "Dr Han Chung Lim",
-      "practiceName": "Psychiatry.nz",
-      "type": "psychiatrist",
-      "region": "National",
-      "city": "Telehealth across New Zealand",
-      "address": "Online telepsychiatry service",
-      "lat": "",
-      "lon": "",
-      "phone": "",
-      "text": "",
-      "email": "refer@psychiatry.nz",
-      "website": "https://psychiatry.nz/",
-      "bookingUrl": "",
-      "source": "https://psychiatry.nz/",
-      "sourceQuality": "provider-owned or NGO public page",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-06-12",
-      "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-      "availabilitySource": "https://psychiatry.nz/",
-      "availabilityNeedsManualReview": false,
-      "requiresReferral": false,
-      "referralType": "self",
-      "referralSourceUrl": "https://psychiatry.nz/",
-      "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-      "referralConfidence": "high",
-      "referralLastChecked": "2026-06-12",
-      "referralNeedsManualReview": false,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "telehealth",
-        "adhd",
-        "depression",
-        "anxiety",
-        "trauma",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "ADHD",
-        "depression",
-        "bipolar disorder",
-        "anxiety",
-        "OCD",
-        "PTSD",
-        "psychosis"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://psychiatry.nz/",
-          "excerpt": "specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
-          "capturedAt": "2026-05",
-          "confidence": "medium",
-          "needsManualReview": true
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "waitlist availability is 33 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 4230,
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability status is waitlist",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://psychiatry.nz/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "email",
-            "value": "refer@psychiatry.nz",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://psychiatry.nz/",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Online telepsychiatry service",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-            "capturedAt": "2026-06-12",
-            "confidence": "medium",
-            "needsManualReview": false
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "self",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-            "capturedAt": "2026-06-12",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://psychiatry.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Han Chung Lim\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Han Chung Lim, Psychiatry.nz National / Telehealth across New Zealand Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: waitlist",
-      "currentProvider": {
-        "id": "psychiatry-nz-han-chung-lim",
-        "name": "Dr Han Chung Lim",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "Online telepsychiatry service",
-        "phone": "",
-        "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "https://psychiatry.nz/",
-        "hours": "Online assessments. Ask about current waitlist and appointment times.",
-        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "adhd",
-          "depression",
-          "anxiety",
-          "trauma",
-          "fit",
-          "direct-contact"
-        ],
-        "fit": "Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
-        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit.",
-        "source": "https://psychiatry.nz/",
-        "verified": "2026-05",
-        "sourceQuality": "provider-owned or NGO public page",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-06-12",
-        "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": false,
-        "requiresReferral": false,
-        "referralType": "self",
-        "referralSourceUrl": "https://psychiatry.nz/",
-        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-06-12",
-        "referralNeedsManualReview": false,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "ADHD",
-          "depression",
-          "bipolar disorder",
-          "anxiety",
-          "OCD",
-          "PTSD",
-          "psychosis"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://psychiatry.nz/",
-            "excerpt": "specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "clinicianName": "Dr Han Chung Lim",
-        "practiceName": "Psychiatry.nz"
-      },
-      "auditFindings": [
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "psychiatry-nz-han-chung-lim",
-            "providerName": "Dr Han Chung Lim",
-            "region": "National",
-            "city": "Telehealth across New Zealand",
-            "type": "psychiatrist",
-            "source": "https://psychiatry.nz/",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-06-12",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "psychiatry-nz-han-chung-lim",
-        "providerName": "Dr Han Chung Lim",
-        "providerType": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "sourceUrl": "https://psychiatry.nz/",
-        "pagesChecked": [
-          {
-            "url": "https://psychiatry.nz/",
-            "finalUrl": "https://psychiatry.nz/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr Han Chung Lim",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
-            "sourceUrl": "https://psychiatry.nz/",
-            "matched": "PTSD"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "funded"
-        },
-        "availabilitySignal": {
-          "status": "long_wait_or_waitlist",
-          "value": "found",
-          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
-          "sourceUrl": "https://psychiatry.nz/",
-          "matched": "waitlist"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: Make a referral",
-          "sourceUrl": "https://psychiatry.nz/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Han Chung Lim Dr",
-            "evidence": "Dr Han Chung Lim\nDr",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Lim. He",
-            "evidence": "Dr Lim. He",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Christmas Seu Christmas",
-            "evidence": "Dr Christmas Seu\nDr Christmas",
-            "sourceUrl": "https://psychiatry.nz/"
-          },
-          {
-            "name": "Jimi MacMillan Jimi",
-            "evidence": "Dr Jimi MacMillan\nDr Jimi",
-            "sourceUrl": "https://psychiatry.nz/"
           }
         ],
         "notes": "",
@@ -323913,6 +322784,1071 @@
           }
         }
       },
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-christmas-seu",
+      "reviewCategory": "Location and distance evidence",
+      "providerId": "psychiatry-nz-christmas-seu",
+      "name": "Dr Christmas Seu",
+      "clinicianName": "Dr Christmas Seu",
+      "practiceName": "Psychiatry.nz",
+      "type": "psychiatrist",
+      "region": "National",
+      "city": "Telehealth across New Zealand",
+      "address": "Online telepsychiatry service",
+      "lat": "",
+      "lon": "",
+      "phone": "",
+      "text": "",
+      "email": "refer@psychiatry.nz",
+      "website": "https://psychiatry.nz/",
+      "bookingUrl": "",
+      "source": "https://psychiatry.nz/",
+      "sourceQuality": "provider-owned or NGO public page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+      "availabilitySource": "https://psychiatry.nz/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": false,
+      "referralType": "self",
+      "referralSourceUrl": "https://psychiatry.nz/",
+      "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-06-12",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "telehealth",
+        "adhd",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [],
+      "advertisedSpecialtyEvidence": [],
+      "specialtyTagsSource": "no advertised specialties recorded",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 1410,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability needs manual review",
+        "address missing coordinates"
+      ],
+      "sourceUrls": [
+        "https://psychiatry.nz/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "email",
+            "value": "refer@psychiatry.nz",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://psychiatry.nz/",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Online telepsychiatry service",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "self",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+            "capturedAt": "2026-06-12",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: We then will send you information on how to make a booking and/or being on our waitlist. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Christmas Seu\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+      "publicCardPreviewText": "Dr Christmas Seu, Psychiatry.nz National / Telehealth across New Zealand Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: not_published",
+      "currentProvider": {
+        "id": "psychiatry-nz-christmas-seu",
+        "name": "Dr Christmas Seu",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "address": "Online telepsychiatry service",
+        "phone": "",
+        "text": "",
+        "email": "refer@psychiatry.nz",
+        "website": "https://psychiatry.nz/",
+        "hours": "Online assessments. Ask about current waitlist and appointment times.",
+        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "adhd",
+          "fit",
+          "direct-contact"
+        ],
+        "fit": "Psychiatry.nz telepsychiatry doctor. The site lists Dr Seu as a psychiatry registrar working under Dr Lim's supervision, with extensive psychiatry experience while working toward fellowship.",
+        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, supervision arrangements, and whether an online assessment is a good fit.",
+        "source": "https://psychiatry.nz/",
+        "verified": "2026-05",
+        "sourceQuality": "provider-owned or NGO public page",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-06-12",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [],
+        "advertisedSpecialtyEvidence": [],
+        "specialtyTagsSource": "no advertised specialties recorded",
+        "clinicianName": "Dr Christmas Seu",
+        "practiceName": "Psychiatry.nz"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "psychiatry-nz-christmas-seu",
+        "providerName": "Dr Christmas Seu",
+        "providerType": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "sourceUrl": "https://psychiatry.nz/",
+        "pagesChecked": [
+          {
+            "url": "https://psychiatry.nz/",
+            "finalUrl": "https://psychiatry.nz/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Dr Christmas Seu",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "PTSD"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "funded"
+        },
+        "availabilitySignal": {
+          "status": "long_wait_or_waitlist",
+          "value": "found",
+          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "waitlist"
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: Make a referral",
+          "sourceUrl": "https://psychiatry.nz/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Han Chung Lim Dr",
+            "evidence": "Dr Han Chung Lim\nDr",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Lim. He",
+            "evidence": "Dr Lim. He",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Christmas Seu Christmas",
+            "evidence": "Dr Christmas Seu\nDr Christmas",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Jimi MacMillan Jimi",
+            "evidence": "Dr Jimi MacMillan\nDr Jimi",
+            "sourceUrl": "https://psychiatry.nz/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:psychiatry-nz-han-chung-lim",
+      "reviewCategory": "Location and distance evidence",
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "name": "Dr Han Chung Lim",
+      "clinicianName": "Dr Han Chung Lim",
+      "practiceName": "Psychiatry.nz",
+      "type": "psychiatrist",
+      "region": "National",
+      "city": "Telehealth across New Zealand",
+      "address": "Online telepsychiatry service",
+      "lat": "",
+      "lon": "",
+      "phone": "",
+      "text": "",
+      "email": "refer@psychiatry.nz",
+      "website": "https://psychiatry.nz/",
+      "bookingUrl": "",
+      "source": "https://psychiatry.nz/",
+      "sourceQuality": "provider-owned or NGO public page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+      "availabilitySource": "https://psychiatry.nz/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": false,
+      "referralType": "self",
+      "referralSourceUrl": "https://psychiatry.nz/",
+      "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "telehealth",
+        "adhd",
+        "depression",
+        "anxiety",
+        "trauma",
+        "fit",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "ADHD",
+        "depression",
+        "bipolar disorder",
+        "anxiety",
+        "OCD",
+        "PTSD",
+        "psychosis"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://psychiatry.nz/",
+          "excerpt": "specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+          "capturedAt": "2026-05",
+          "confidence": "medium",
+          "needsManualReview": true
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 1410,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability needs manual review",
+        "address missing coordinates"
+      ],
+      "sourceUrls": [
+        "https://psychiatry.nz/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "email",
+            "value": "refer@psychiatry.nz",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://psychiatry.nz/",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Online telepsychiatry service",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "self",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "We accept direct referrals from clients and healthcare professionals.",
+            "capturedAt": "2026-07-15",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "depression": [
+            {
+              "field": "tags",
+              "value": "depression",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://psychiatry.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: We then will send you information on how to make a booking and/or being on our waitlist. | Referral: We accept direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Han Chung Lim\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+      "publicCardPreviewText": "Dr Han Chung Lim, Psychiatry.nz National / Telehealth across New Zealand Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit. Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply. Availability: not_published",
+      "currentProvider": {
+        "id": "psychiatry-nz-han-chung-lim",
+        "name": "Dr Han Chung Lim",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "address": "Online telepsychiatry service",
+        "phone": "",
+        "text": "",
+        "email": "refer@psychiatry.nz",
+        "website": "https://psychiatry.nz/",
+        "hours": "Online assessments. Ask about current waitlist and appointment times.",
+        "cost": "Initial 60 minute assessment listed from $700 on weekdays 8am-5pm; higher after-hours/weekend/public holiday pricing may apply.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "adhd",
+          "depression",
+          "anxiety",
+          "trauma",
+          "fit",
+          "direct-contact"
+        ],
+        "fit": "Psychiatry.nz telepsychiatry assessment provider for clients aged 16 and above. Dr Lim specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+        "firstStep": "Email refer@psychiatry.nz asking about referral requirements, waitlist, fees, and whether an online assessment is a good fit.",
+        "source": "https://psychiatry.nz/",
+        "verified": "2026-05",
+        "sourceQuality": "provider-owned or NGO public page",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "We accept direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "ADHD",
+          "depression",
+          "bipolar disorder",
+          "anxiety",
+          "OCD",
+          "PTSD",
+          "psychosis"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://psychiatry.nz/",
+            "excerpt": "specialises in ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis.",
+            "capturedAt": "2026-05",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests",
+        "clinicianName": "Dr Han Chung Lim",
+        "practiceName": "Psychiatry.nz"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "psychiatry-nz-han-chung-lim",
+        "providerName": "Dr Han Chung Lim",
+        "providerType": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth across New Zealand",
+        "sourceUrl": "https://psychiatry.nz/",
+        "pagesChecked": [
+          {
+            "url": "https://psychiatry.nz/",
+            "finalUrl": "https://psychiatry.nz/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Dr Han Chung Lim",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "NZ Telepsychiatry Provider - Psychiatry.nz",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Stav",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staver",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. He employs a holistic approach in providing individualised treatment plans for clients. Dr Staverton (Tony) Kautoke Dr Staverton (Tony) Kau",
+            "sourceUrl": "https://psychiatry.nz/",
+            "matched": "PTSD"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "your GP Please note: An assessment for ADHD does not guarantee a diagnosis of ADHD. Subsidised medications are only available to those eligible for publicly funded health care. Click here for more details We do not provide prescriptions for medications unless in special circumstances. Pricing On 1st June 2025 and",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "funded"
+        },
+        "availabilitySignal": {
+          "status": "long_wait_or_waitlist",
+          "value": "found",
+          "evidence": "- Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you information on how to make a booking and/or being on our waitlist. Step 2 - Register Complete our Intake form to register at psychiatry.nz. Remember to tick ADHD (New assessment) when asked for the reason of assessmen",
+          "sourceUrl": "https://psychiatry.nz/",
+          "matched": "waitlist"
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: Make a referral",
+          "sourceUrl": "https://psychiatry.nz/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Han Chung Lim Dr",
+            "evidence": "Dr Han Chung Lim\nDr",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Lim. He",
+            "evidence": "Dr Lim. He",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Christmas Seu Christmas",
+            "evidence": "Dr Christmas Seu\nDr Christmas",
+            "sourceUrl": "https://psychiatry.nz/"
+          },
+          {
+            "name": "Jimi MacMillan Jimi",
+            "evidence": "Dr Jimi MacMillan\nDr Jimi",
+            "sourceUrl": "https://psychiatry.nz/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
       "reviewer": "",
       "reviewedDate": "",
       "reviewNotes": ""

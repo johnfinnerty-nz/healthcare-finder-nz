@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715022541-98dbf9ae",
-  "generatedAt": "2026-07-15T02:25:41.003Z",
+  "batchId": "codex-20260715032623-2d62698e",
+  "generatedAt": "2026-07-15T03:26:23.561Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,84 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "otago-psychiatry-down-south",
+      "providerId": "psychiatry-nz-jimi-macmillan",
       "reviewIds": [
-        "discovery:suggestion:email:admin@psychiatrydownsouth.co.nz",
-        "provider:otago-psychiatry-down-south"
-      ],
-      "reviewPriority": "critical",
-      "auditSeverity": "high",
-      "reviewModes": [
-        "contact_or_location_corroboration",
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review",
-        "Needs quick human check"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research",
-        "conflict-address",
-        "conflict-phone"
-      ],
-      "auditIssues": [
-        "conflicting address, phone values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: address, phone"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "conflicting address, phone values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: address, phone",
-        "availability needs manual review"
-      ],
-      "sourceUrls": [
-        "https://www.psychiatrydownsouth.co.nz/referrals",
-        "https://www.psychiatrydownsouth.co.nz/contact"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 03 477 9053\nReferral: Referrals page says referrals are accepted from GPs and other health-care professionals, and self-referrals usually need clinician support. | Source scan: clinician \"(none)\", practice \"Psychiatry Down South\". | Signal: Link/button text: Referrals",
-      "currentRecord": {
-        "name": "Psychiatry Down South",
-        "clinicianName": "",
-        "practiceName": "Psychiatry Down South",
-        "type": "psychiatrist",
-        "region": "Otago",
-        "city": "Dunedin",
-        "address": "342 High Street, Dunedin",
-        "phone": "03 477 9053",
-        "text": "",
-        "email": "admin@psychiatrydownsouth.co.nz",
-        "website": "https://www.psychiatrydownsouth.co.nz/contact",
-        "bookingUrl": "",
-        "source": "https://www.psychiatrydownsouth.co.nz/referrals",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 520
-    },
-    {
-      "providerId": "psychiatry-nz-christmas-seu",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
-        "provider:psychiatry-nz-christmas-seu"
+        "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
+        "provider:psychiatry-nz-jimi-macmillan"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
@@ -109,16 +35,19 @@
         "conflict-email",
         "conflict-tags",
         "conflict-advertisedSpecialties",
+        "weak-maori-evidence",
         "stale-availability"
       ],
       "auditIssues": [
         "conflicting name, email, tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
         "conflicting fields: name, email, tags, advertisedSpecialties",
+        "maori support tag is present but source fields do not clearly support it.",
         "waitlist availability is 33 days old; target cadence is 30 days."
       ],
       "suggestedFixes": [
         "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Remove the tag or add a stronger public source/structured patientGroups/languages evidence.",
         "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
       ],
       "reviewReasons": [
@@ -126,6 +55,7 @@
         "conflicting name, email, tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
         "conflicting fields: name, email, tags, advertisedSpecialties",
+        "medium: weak-maori-evidence",
         "medium: stale-availability",
         "provider details need manual verification",
         "availability status is waitlist",
@@ -134,10 +64,10 @@
       "sourceUrls": [
         "https://psychiatry.nz/"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Seed value from providers.json: refer@psychiatry.nz\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Christmas Seu\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Seed value from providers.json: refer@psychiatry.nz\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Jimi MacMillan\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | source-fit audit: maori support tag is present but source fields do not clearly support it. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
       "currentRecord": {
-        "name": "Dr Christmas Seu",
-        "clinicianName": "Dr Christmas Seu",
+        "name": "Dr Jimi MacMillan",
+        "clinicianName": "Dr Jimi MacMillan",
         "practiceName": "Psychiatry.nz",
         "type": "psychiatrist",
         "region": "National",
@@ -180,102 +110,140 @@
       "score": 520
     },
     {
-      "providerId": "psychiatry-nz-han-chung-lim",
+      "providerId": "bay-of-plenty-anteris-private-psychiatry",
       "reviewIds": [
-        "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
-        "provider:psychiatry-nz-han-chung-lim",
-        "discovery:suggestion:clinician-domain:dr-han-chung-lim:psychiatry.nz"
+        "discovery:suggestion:email:info@anteris.nz",
+        "provider:bay-of-plenty-anteris-private-psychiatry"
       ],
-      "reviewPriority": "critical",
-      "auditSeverity": "high",
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
       "reviewModes": [
-        "safe_removal_or_evidence_only",
-        "restrictive_availability_or_evidence_only"
+        "evidence_only"
       ],
       "reviewCategories": [
-        "Referral pathway review",
-        "Availability review"
+        "Referral pathway review"
       ],
       "auditRules": [
         "discovery-suggestion",
-        "needs_manual_research",
-        "conflict-email",
-        "conflict-tags",
-        "conflict-advertisedSpecialties",
-        "stale-availability",
-        "update_existing_provider"
+        "needs_manual_research"
       ],
       "auditIssues": [
-        "conflicting email, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: email, tags, advertisedSpecialties",
-        "waitlist availability is 33 days old; target cadence is 30 days.",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
-        "existing provider update requires human approval before patching"
+        "seed source login-or-captcha-required"
       ],
       "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
         "provider discovery suggestion",
-        "conflicting email, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: email, tags, advertisedSpecialties",
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability status is waitlist",
-        "address missing coordinates",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates",
-        "existing provider update requires human approval before patching"
+        "seed source login-or-captcha-required",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "address missing coordinates"
       ],
       "sourceUrls": [
-        "https://psychiatry.nz/"
+        "https://www.anteris.nz/service-private-psychiatry",
+        "https://www.anteris.nz/appointments"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Pathway The ADHD pathway aims to streamline the diagnosis and treatment for those suffering from ADHD. Step 1 - Make a referral/booking Contact us to make a referral at refer@psychiatry.nz . We then will send you informa\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Han Chung Lim\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.\nSources: provider-owned page | Evidence: Seed value from providers.json: refer@psychiatry.nz",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 07 282 7579\nReferral: Public information points people to a GP or doctor referral pathway. | Source scan: clinician \"(none)\", practice \"Private Psychiatry\". | Depression or low mood: chiatry top of page Home About Anteris About Anteris Join the Team How we help Adult ADHD Capacity and Competence Assessments Cambridge Brain Science Depression Immigration Psychia | Anxiety, panic, or overwhelm: ge of patients with a range of conditions. The following is a guide to some of these conditions please always get it touch to discuss our full capabilities. ​ Anxiety Disorders Moo | Trauma or sexual harm: ) Attention Deficit Hyperactivity Disorder Obsessive Compulsive Disorder (OCD) Psychosis (Schizophrenia and related conditions) Post Traumatic Stress Disorder (PTSD) ACC Mental Inj",
       "currentRecord": {
-        "name": "Psychiatry.nz",
-        "clinicianName": "Dr Han Chung",
-        "practiceName": "Psychiatry.nz",
+        "name": "Anteris Private Psychiatry",
+        "clinicianName": "",
+        "practiceName": "",
         "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "",
-        "phone": "",
+        "region": "Bay of Plenty",
+        "city": "Tauranga, Hamilton, and online",
+        "address": "1017 Cameron Road, Tauranga",
+        "phone": "07 282 7579",
         "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "",
+        "email": "info@anteris.nz",
+        "website": "https://www.anteris.nz/service-private-psychiatry",
         "bookingUrl": "",
-        "source": "https://psychiatry.nz/",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "waitlist",
+        "source": "https://www.anteris.nz/service-private-psychiatry",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
         "referralType": "",
         "referralSourceExcerpt": "",
-        "tags": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
+        "tags": [],
         "needScope": [],
-        "advertisedSpecialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "specialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
+        "advertisedSpecialties": [],
+        "specialties": [],
         "services": [],
         "patientGroups": [],
         "ageGroups": [],
         "onlineAvailable": false,
         "phoneSupport": false,
-        "inPerson": false,
+        "inPerson": true,
         "cost": ""
       },
-      "score": 520
+      "score": 410
+    },
+    {
+      "providerId": "dunedin-ashburn-clinic-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:email:ashburn@ashburn.co.nz",
+        "provider:dunedin-ashburn-clinic-psychiatry"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research"
+      ],
+      "auditIssues": [
+        "seed source login-or-captcha-required"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown"
+      ],
+      "sourceUrls": [
+        "https://www.ashburn.co.nz/outpatient-services/psychiatry/"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 034762092\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Psychiatry\". | Depression or low mood: Ashburn? Fees Team History Facilities Make a Donation Resources News Careers Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life Crises Personality | Anxiety, panic, or overwhelm: About Why Choose Ashburn? Fees Team History Facilities Make a Donation Resources News Careers Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life C | Trauma or sexual harm: Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life Crises Personality Disorder Post-Traumatic Stress Sexual Abuse & Trauma Eating Disorders Short ",
+      "currentRecord": {
+        "name": "Ashburn Clinic Psychiatry",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Otago",
+        "city": "Dunedin",
+        "address": "496 Taieri Road, Halfway Bush, Dunedin 9010",
+        "phone": "034762092",
+        "text": "",
+        "email": "ashburn@ashburn.co.nz",
+        "website": "https://www.ashburn.co.nz/outpatient-services/psychiatry/",
+        "bookingUrl": "",
+        "source": "https://www.ashburn.co.nz/outpatient-services/psychiatry/",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "cost": ""
+      },
+      "score": 410
     }
   ]
 }

@@ -137,6 +137,22 @@ test("Codex progress leases work and defers needs-more-info decisions", () => {
   assert.equal(updated.items["provider:harbour-psychology"].nextEligibleAt, "2026-08-14T00:00:00.000Z");
 });
 
+test("Codex progress defers every decision when the evidence batch fails", () => {
+  const now = new Date("2026-07-15T00:00:00Z");
+  const item = queueItem();
+  const batch = buildCodexProviderReviewBatch({ queue: { items: [item] }, progress: {}, limit: 1, now });
+  const claimed = claimBatch({}, batch, now);
+  const updated = updateCodexProgress(claimed, [{ ...codexDecision(), action: "adjust", processingStatus: "verified" }], {
+    now,
+    failedDays: 7,
+    batchFailed: true
+  });
+
+  assert.equal(updated.items["provider:harbour-psychology"].status, "deferred");
+  assert.equal(updated.items["provider:harbour-psychology"].completedAt, "");
+  assert.equal(updated.items["provider:harbour-psychology"].nextEligibleAt, "2026-07-22T00:00:00.000Z");
+});
+
 test("Codex evidence verifier accepts exact identity-bound contact evidence", async () => {
   const html = "<html><h1>Harbour Psychology</h1><p>Psychologist</p><p>Email: care@harbour.test</p></html>";
   const result = await verifyCodexReviewEvidence({
