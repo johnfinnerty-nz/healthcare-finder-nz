@@ -158,6 +158,93 @@ test("Codex evidence verifier accepts exact identity-bound contact evidence", as
   assert.equal(applied.providers[0].email, "care@harbour.test");
 });
 
+test("phone corrections must match digits in the exact source excerpt", async () => {
+  const sourceUrl = "https://harbour.test/contact";
+  const phoneDecision = codexDecision({
+    correctedFields: { phone: "021 548 914" },
+    sourceUrl,
+    sourceExcerpt: 'href="tel:021548914"',
+    sourceEvidence: [{
+      field: "phone",
+      value: "021 548 914",
+      sourceUrl,
+      excerpt: 'href="tel:021548914"'
+    }]
+  });
+  const accepted = await verifyCodexReviewEvidence({
+    decisions: { decisions: [phoneDecision] },
+    providers: [provider()],
+    fetcher: sourceFetcher('<h1>Harbour Psychology</h1><p>Psychologist</p><a href="tel:021548914">Call</a>'),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(accepted.errors, []);
+
+  const rejected = await verifyCodexReviewEvidence({
+    decisions: { decisions: [{
+      ...phoneDecision,
+      correctedFields: { phone: "022 129 6524" },
+      sourceEvidence: [{
+        field: "phone",
+        value: "022 129 6524",
+        sourceUrl,
+        excerpt: 'href="tel:021548914"'
+      }]
+    }] },
+    providers: [provider()],
+    fetcher: sourceFetcher('<h1>Harbour Psychology</h1><p>Psychologist</p><a href="tel:021548914">Call</a>'),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.match(rejected.errors[0].errors.join(" "), /phone value is not present/);
+});
+
+test("plural self-referrals evidence safely supports an existing self-referral record", async () => {
+  const excerpt = "I welcome self-referrals as well as referrals from GPs and other health professionals.";
+  const sourceUrl = "https://healthpoint.test/tom-oflynn";
+  const selfReferralProvider = provider({
+    id: "tom-oflynn",
+    name: "Tom O'Flynn Psychiatrist",
+    practiceName: "",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    requiresReferral: false,
+    referralType: "self",
+    referralSourceExcerpt: "Self-referral was previously reported.",
+    referralNeedsManualReview: true
+  });
+  const decision = codexDecision({
+    providerId: selfReferralProvider.id,
+    correctedFields: {
+      referralSourceUrl: sourceUrl,
+      referralSourceExcerpt: excerpt,
+      referralConfidence: "high",
+      referralLastChecked: "2026-07-15",
+      referralNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "referralSourceUrl", value: sourceUrl, sourceUrl, excerpt },
+      { field: "referralSourceExcerpt", value: excerpt, sourceUrl, excerpt },
+      { field: "referralConfidence", value: "high", sourceUrl, excerpt }
+    ]
+  });
+  const verified = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [selfReferralProvider],
+    fetcher: sourceFetcher(`<h1>Tom O'Flynn Psychiatrist</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(verified.errors, []);
+  const applied = applyReviewDecisions({
+    providers: [selfReferralProvider],
+    decisions: verified,
+    allowAiReviewDecisions: true
+  });
+  assert.deepEqual(applied.errors, []);
+  assert.equal(applied.providers[0].referralNeedsManualReview, false);
+});
+
 test("known provider domains can corroborate a distinctive shortened brand", async () => {
   const brandedProvider = provider({
     id: "ancora-adult-adhd",

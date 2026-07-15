@@ -242,7 +242,7 @@ function hasExplicitAvailabilityEvidence(provider, decision) {
 }
 
 function hasExplicitSelfReferralEvidence(provider, decision) {
-  return /\b(self[- ]referr|self referrals?|refer yourself|direct referrals?|without (?:a )?referral|no referral required|contact (?:us|the practice) directly|book directly)\b/i
+  return /\b(self[-\s]?referrals?|self[-\s]?refer(?:red|ring)?|refer yourself|direct referrals?|without (?:a )?referral|no referral required|contact (?:us|the practice) directly|book directly)\b/i
     .test(`${provider.referralSourceExcerpt || ""} ${decision.sourceExcerpt || ""} ${decision.correctedFields?.referralSourceExcerpt || ""}`);
 }
 

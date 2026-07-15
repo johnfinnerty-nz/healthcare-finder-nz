@@ -1,130 +1,18 @@
 {
   "version": 1,
-  "batchId": "codex-20260715002114-f5aaba80",
-  "generatedAt": "2026-07-15T00:30:00.000Z",
+  "batchId": "codex-20260715003459-3963760d",
+  "generatedAt": "2026-07-15T01:28:00.000Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "reviewId": "provider:national-msq-health-psychiatry",
       "reviewIds": [
-        "discovery:suggestion:email:info@ancora.org.nz",
-        "provider:bay-of-plenty-ancora-adult-adhd-psychiatry"
+        "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
+        "discovery:suggestion:email:enquire@msq.health",
+        "provider:national-msq-health-psychiatry"
       ],
-      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
-      "providerName": "AncorA Adult ADHD Clinic",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
-        "availabilitySource": "https://www.ancora.org.nz/",
-        "availabilityNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.ancora.org.nz/",
-      "sourceExcerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.ancora.org.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
-          "sourceUrl": "https://www.ancora.org.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.ancora.org.nz/",
-          "sourceUrl": "https://www.ancora.org.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
-        }
-      ],
-      "auditRulesResolved": [
-        "stale-availability"
-      ],
-      "reviewNotes": "The same explicit six-week psychiatrist assessment wait statement was reproduced in two independent public-page fetches. This refreshes restrictive availability only and does not infer acceptance.",
-      "codexReview": {
-        "researchPassId": "research-20260715-ancora-1",
-        "verificationPassId": "verify-20260715-ancora-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "provider:manawatu-eye-openers-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:phone:06 353 0300",
-        "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
-        "provider:manawatu-eye-openers-psychiatry"
-      ],
-      "providerId": "manawatu-eye-openers-psychiatry",
-      "providerName": "Eye-Openers Psychiatry",
-      "action": "move_to_watchlist",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "availabilityStatus": "referrals_paused",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "Please note that due to high demand currently no new psychiatry referrals are taken",
-        "availabilitySource": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-        "availabilityNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-      "sourceExcerpt": "Please note that due to high demand currently no new psychiatry referrals are taken",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "referrals_paused",
-          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-          "sourceType": "provider_owned",
-          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "Please note that due to high demand currently no new psychiatry referrals are taken",
-          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-          "sourceType": "provider_owned",
-          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-          "sourceType": "provider_owned",
-          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
-        }
-      ],
-      "auditRulesResolved": [
-        "availability-needs-review"
-      ],
-      "reviewNotes": "The provider-owned booking page reproduced the no-new-referrals statement in two independent fetches. The provider is removed reversibly from live recommendations and retained on the availability watchlist.",
-      "codexReview": {
-        "researchPassId": "research-20260715-eye-openers-1",
-        "verificationPassId": "verify-20260715-eye-openers-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "provider:national-coliber-group-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
-        "discovery:suggestion:email:info@coliber.nz",
-        "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
-        "provider:national-coliber-group-psychiatry"
-      ],
-      "providerId": "national-coliber-group-psychiatry",
-      "providerName": "Coliber Group Psychiatry",
+      "providerId": "national-msq-health-psychiatry",
+      "providerName": "MSQ Health - Psychiatry",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
@@ -132,58 +20,194 @@
       "correctedFields": {
         "requiresReferral": true,
         "referralType": "gp",
-        "referralSourceUrl": "https://www.coliber.nz/appointments/",
-        "referralSourceExcerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
+        "referralSourceUrl": "https://msq.health/services/mental-health-services/",
+        "referralSourceExcerpt": "Yes — a GP referral is required before your first appointment.",
         "referralConfidence": "high",
         "referralLastChecked": "2026-07-15",
         "referralNeedsManualReview": false
       },
-      "sourceUrl": "https://www.coliber.nz/appointments/",
-      "sourceExcerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
+      "sourceUrl": "https://msq.health/services/mental-health-services/",
+      "sourceExcerpt": "Yes — a GP referral is required before your first appointment.",
       "sourceEvidence": [
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceUrl": "https://msq.health/services/mental-health-services/",
           "sourceType": "provider_owned",
-          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+          "excerpt": "Yes — a GP referral is required before your first appointment."
         },
         {
           "field": "requiresReferral",
           "value": true,
-          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceUrl": "https://msq.health/services/mental-health-services/",
           "sourceType": "provider_owned",
-          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+          "excerpt": "Yes — a GP referral is required before your first appointment."
         },
         {
           "field": "referralSourceUrl",
-          "value": "https://www.coliber.nz/appointments/",
-          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "value": "https://msq.health/services/mental-health-services/",
+          "sourceUrl": "https://msq.health/services/mental-health-services/",
           "sourceType": "provider_owned",
-          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+          "excerpt": "Yes — a GP referral is required before your first appointment."
         },
         {
           "field": "referralSourceExcerpt",
-          "value": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
-          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "value": "Yes — a GP referral is required before your first appointment.",
+          "sourceUrl": "https://msq.health/services/mental-health-services/",
           "sourceType": "provider_owned",
-          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+          "excerpt": "Yes — a GP referral is required before your first appointment."
         },
         {
           "field": "referralConfidence",
           "value": "high",
-          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceUrl": "https://msq.health/services/mental-health-services/",
           "sourceType": "provider_owned",
-          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+          "excerpt": "Yes — a GP referral is required before your first appointment."
         }
       ],
       "auditRulesResolved": [
         "unknown-referral-pathway"
       ],
-      "reviewNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "reviewNotes": "The provider-owned mental-health page states that a GP referral is required before the first appointment. A separate skeptical fetch reproduced the statement and found no self-referral contradiction for psychiatry.",
       "codexReview": {
-        "researchPassId": "research-20260715-coliber-1",
-        "verificationPassId": "verify-20260715-coliber-2",
+        "researchPassId": "research-20260715-msq-1",
+        "verificationPassId": "verify-20260715-msq-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:national-positive-mind-works-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:email:info@positivemindworks.co",
+        "provider:national-positive-mind-works-psychiatry"
+      ],
+      "providerId": "national-positive-mind-works-psychiatry",
+      "providerName": "Positive Mind Works Psychiatry",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+        "referralSourceExcerpt": "To access psychiatry services, all new clients will need a referral from their GP",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+      "sourceExcerpt": "To access psychiatry services, all new clients will need a referral from their GP",
+      "sourceEvidence": [
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceType": "provider_owned",
+          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP"
+        },
+        {
+          "field": "requiresReferral",
+          "value": true,
+          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceType": "provider_owned",
+          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP"
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceType": "provider_owned",
+          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP"
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "To access psychiatry services, all new clients will need a referral from their GP",
+          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceType": "provider_owned",
+          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP"
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+          "sourceType": "provider_owned",
+          "excerpt": "To access psychiatry services, all new clients will need a referral from their GP"
+        }
+      ],
+      "auditRulesResolved": [
+        "unknown-referral-pathway"
+      ],
+      "reviewNotes": "The provider-owned psychiatry funding page explicitly requires all new clients to have a GP referral. A separate skeptical fetch reproduced the statement and found no self-referral contradiction.",
+      "codexReview": {
+        "researchPassId": "research-20260715-positive-mind-1",
+        "verificationPassId": "verify-20260715-positive-mind-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:national-tom-oflynn-psychiatrist",
+      "reviewIds": [
+        "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
+        "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
+        "provider:national-tom-oflynn-psychiatrist"
+      ],
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "providerName": "Tom O'Flynn Psychiatrist",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "phone": "021 548 914",
+        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+        "referralSourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "sourceExcerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+      "sourceEvidence": [
+        {
+          "field": "phone",
+          "value": "021 548 914",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "sourceType": "healthpoint",
+          "excerpt": "href=\"tel:021548914\""
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "sourceType": "healthpoint",
+          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals."
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "I welcome self-referrals as well as referrals from GPs and other health professionals.",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "sourceType": "healthpoint",
+          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals."
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+          "sourceType": "healthpoint",
+          "excerpt": "I welcome self-referrals as well as referrals from GPs and other health professionals."
+        }
+      ],
+      "auditRulesResolved": [
+        "conflict-phone",
+        "referral-needs-manual-review"
+      ],
+      "reviewNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
+      "codexReview": {
+        "researchPassId": "research-20260715-tom-oflynn-1",
+        "verificationPassId": "verify-20260715-tom-oflynn-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }

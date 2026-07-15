@@ -130,66 +130,114 @@
     "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics": {
       "reviewId": "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
       "providerId": "national-msq-health-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://msq.health/services/mental-health-services/",
+      "lastNotes": "The provider-owned mental-health page states that a GP referral is required before the first appointment. A separate skeptical fetch reproduced the statement and found no self-referral contradiction for psychiatry.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:email:enquire@msq.health": {
       "reviewId": "discovery:suggestion:email:enquire@msq.health",
       "providerId": "national-msq-health-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://msq.health/services/mental-health-services/",
+      "lastNotes": "The provider-owned mental-health page states that a GP referral is required before the first appointment. A separate skeptical fetch reproduced the statement and found no self-referral contradiction for psychiatry.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:national-msq-health-psychiatry": {
       "reviewId": "provider:national-msq-health-psychiatry",
       "providerId": "national-msq-health-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://msq.health/services/mental-health-services/",
+      "lastNotes": "The provider-owned mental-health page states that a GP referral is required before the first appointment. A separate skeptical fetch reproduced the statement and found no self-referral contradiction for psychiatry.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:email:info@positivemindworks.co": {
       "reviewId": "discovery:suggestion:email:info@positivemindworks.co",
       "providerId": "national-positive-mind-works-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+      "lastNotes": "The provider-owned psychiatry funding page explicitly requires all new clients to have a GP referral. A separate skeptical fetch reproduced the statement and found no self-referral contradiction.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:national-positive-mind-works-psychiatry": {
       "reviewId": "provider:national-positive-mind-works-psychiatry",
       "providerId": "national-positive-mind-works-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.positivemindworks.co/funding/psychiatrics/",
+      "lastNotes": "The provider-owned psychiatry funding page explicitly requires all new clients to have a GP referral. A separate skeptical fetch reproduced the statement and found no self-referral contradiction.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02": {
       "reviewId": "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
       "providerId": "national-tom-oflynn-psychiatrist",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "lastNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz": {
       "reviewId": "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
       "providerId": "national-tom-oflynn-psychiatrist",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "lastNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:national-tom-oflynn-psychiatrist": {
       "reviewId": "provider:national-tom-oflynn-psychiatrist",
       "providerId": "national-tom-oflynn-psychiatrist",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715003459-3963760d",
       "startedAt": "2026-07-15T00:34:59.344Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T01:31:36.966Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
+      "lastNotes": "Healthpoint's provider-edited listing publishes 021 548 914 and explicitly welcomes self-referrals. A separate skeptical fetch reproduced both statements and found no GP-referral-required contradiction. The protected email was not changed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -212,7 +260,7 @@
       ]
     }
   ],
-  "updatedAt": "2026-07-15T00:34:59.344Z",
+  "updatedAt": "2026-07-15T01:31:36.966Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -284,6 +332,70 @@
       "action": "adjust",
       "status": "completed",
       "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
+      "providerId": "national-msq-health-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:enquire@msq.health",
+      "providerId": "national-msq-health-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:national-msq-health-psychiatry",
+      "providerId": "national-msq-health-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:info@positivemindworks.co",
+      "providerId": "national-positive-mind-works-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:national-positive-mind-works-psychiatry",
+      "providerId": "national-positive-mind-works-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:national-tom-oflynn-psychiatrist",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T01:31:36.966Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

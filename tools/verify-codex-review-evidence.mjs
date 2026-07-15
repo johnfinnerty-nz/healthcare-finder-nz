@@ -87,11 +87,19 @@ function providerIdentityMatches(provider, sourceUrl, text) {
   return Boolean(knownDomainMatch && (nameMatch || (!provider.clinicianName && distinctiveBrandMatch)));
 }
 
-function valueAppearsInEvidence(value, evidence) {
+function valueAppearsInEvidence(value, evidence, field = "") {
+  if (["phone", "text"].includes(field)) {
+    const expectedDigits = String(value || "").replace(/\D/g, "");
+    return expectedDigits.length >= 7 && evidence.some((item) => String(item.excerpt || "").replace(/\D/g, "").includes(expectedDigits));
+  }
+  if (field === "email") {
+    const expectedEmail = String(value || "").trim().toLowerCase();
+    return expectedEmail.includes("@") && evidence.some((item) => String(item.excerpt || "").toLowerCase().includes(expectedEmail));
+  }
   const expected = normaliseComparable(value);
   if (!expected) return false;
   return evidence.some((item) => {
-    const text = normaliseComparable(`${item.value || ""} ${item.excerpt || ""}`);
+    const text = normaliseComparable(item.excerpt || "");
     return text.includes(expected) || expected.includes(text);
   });
 }
@@ -142,7 +150,7 @@ function fieldSupportErrors(provider, decision, evidence) {
       continue;
     }
     if ((CONTACT_FIELDS.has(field) || IDENTITY_LOCATION_FIELDS.has(field) || ["cost", "hours", "appointmentWait", "eligibility"].includes(field))
-      && !valueAppearsInEvidence(value, matching)) {
+      && !valueAppearsInEvidence(value, matching, field)) {
       errors.push(`${field} value is not present in its exact source excerpt`);
     }
   }

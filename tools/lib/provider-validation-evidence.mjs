@@ -331,7 +331,7 @@ function clinicalClaims(provider, page, claims) {
   }
 
   const gpReferral = exactExcerpt(text, /\b(gp referral|required referral|referral from (?:your )?gp|must first see (?:your )?gp|referred by (?:a|your) gp)\b/i);
-  const selfReferral = exactExcerpt(text, /\b(self[- ]referral|self refer|refer yourself|book directly|no referral required|without a referral)\b/i);
+  const selfReferral = exactExcerpt(text, /\b(self[-\s]?referrals?|self[-\s]?refer(?:red|ring)?|refer yourself|book directly|no referral required|without a referral)\b/i);
   if (gpReferral) addClaim(claims, provider, page, "referralType", "gp", gpReferral, { confidence: "high" });
   else if (selfReferral) addClaim(claims, provider, page, "referralType", "self", selfReferral, { confidence: "high" });
 

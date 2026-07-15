@@ -166,7 +166,7 @@ function explicitAvailabilityEvidence(claim) {
 }
 
 function explicitSelfReferralEvidence(claim) {
-  return /\bself[- ]?referr?al|self refer|refer yourself|no referral required|without a referral|book directly\b/i.test(String(claim.excerpt || ""));
+  return /\bself[-\s]?referrals?|self[-\s]?refer(?:red|ring)?|refer yourself|no referral required|without a referral|book directly\b/i.test(String(claim.excerpt || ""));
 }
 
 function explicitSensitivePreferenceEvidence(claim) {

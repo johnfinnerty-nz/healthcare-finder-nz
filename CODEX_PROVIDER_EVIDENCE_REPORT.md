@@ -1,20 +1,20 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T00:31:44.305Z
+Generated: 2026-07-15T01:31:05.827Z
 Verified decisions: 3/3
 Errors: 0
 
-## bay-of-plenty-ancora-adult-adhd-psychiatry
+## national-msq-health-psychiatry
 
 - Action: adjust
 - Evidence gate: passed
 
-## manawatu-eye-openers-psychiatry
+## national-positive-mind-works-psychiatry
 
-- Action: move_to_watchlist
+- Action: adjust
 - Evidence gate: passed
 
-## national-coliber-group-psychiatry
+## national-tom-oflynn-psychiatrist
 
 - Action: adjust
 - Evidence gate: passed

@@ -223,9 +223,9 @@ export function extractProviderEvidence({ html = "", text = "", url = "", source
       confidence: "high",
       needsManualReview: false
     }));
-  } else if (/\b(self[- ]referral|self refer|book directly|direct booking|no referral required)\b/i.test(combined)) {
+  } else if (/\b(self[-\s]?referrals?|self[-\s]?refer(?:red|ring)?|book directly|direct booking|no referral required)\b/i.test(combined)) {
     claims.push(claim("referralType", "self", context, {
-      excerpt: excerptAround(combined, /\b(self[- ]referral|self refer|book directly|direct booking|no referral required)\b/i),
+      excerpt: excerptAround(combined, /\b(self[-\s]?referrals?|self[-\s]?refer(?:red|ring)?|book directly|direct booking|no referral required)\b/i),
       confidence: resolvedSourceType === "search_result" ? "low" : "medium"
     }));
   }
