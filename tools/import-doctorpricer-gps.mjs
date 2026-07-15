@@ -27,6 +27,12 @@ const upstreamUrlOverrides = new Map([
     "https://kawhiahc.co.nz/",
     "https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/gp/kawhia-health-centre/"
   ],
+  ["https://ashhursthealthcare.nz/", "https://localhealth.nz/"],
+  ["https://groupmedical.nz/", "https://localhealth.nz/contact-us/"],
+  [
+    "https://alexapi.medtechglobal.com:8443/?id=F1Y021-F",
+    "https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/gp/stewart-street-surgery/"
+  ],
   ["http://waverleyhealth.co.nz", ""],
   [
     "http://www.touch-sub.com/pcst/Rosehill%20Christian%20Medical%20Center.html",

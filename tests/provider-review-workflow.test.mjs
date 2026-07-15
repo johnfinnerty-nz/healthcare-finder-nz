@@ -22,6 +22,10 @@ import { buildRegionalDataQualityReport } from "../tools/export-regional-data-qu
 import { detectProviderConflicts } from "../tools/detect-provider-conflicts.mjs";
 import { buildProviderMonitorQueue } from "../tools/export-provider-monitor-queue.mjs";
 import { buildProviderReviewQueue } from "../tools/export-provider-review-queue.mjs";
+import {
+  buildAiReviewTask,
+  normaliseAiReviewProposal
+} from "../tools/ai-review-provider-queue.mjs";
 
 function tempDir() {
   return fs.mkdtempSync(path.join(os.tmpdir(), "provider-review-"));
@@ -93,10 +97,142 @@ function buildQueueFixture(providers, reports = {}) {
     linkResults: path.join(dir, "missing-link-report.json"),
     identityScan: path.join(dir, "missing-identity-scan.json"),
     discoveryQueue: path.join(dir, "missing-discovery.json"),
+    providerSuggestions: path.join(dir, "missing-provider-suggestions.json"),
     googlePlacesCandidates: path.join(dir, "missing-google-places.json"),
     skipAuditRun: true
   });
 }
+
+test("AI review tasks are evidence-bound and include controlled decision rules", () => {
+  const provider = baseProvider({ id: "ai-task-provider", name: "AI Task Provider" });
+  const queue = buildQueueFixture([provider], {
+    sourceFit: [
+      {
+        providerId: provider.id,
+        providerName: provider.name,
+        rule: "unsupported-broad-tag",
+        severity: "medium",
+        issue: "Depression tag needs source evidence.",
+        suggestedFix: "Remove unsupported broad tag unless source evidence supports it.",
+        source: provider.source
+      }
+    ]
+  });
+
+  const task = buildAiReviewTask(queue.items[0]);
+  assert.equal(task.currentPublicRecord.providerId, provider.id);
+  assert.ok(task.allowedCorrectedFields.includes("phone"));
+  assert.ok(task.decisionRules.some((rule) => /needs_more_info/i.test(rule)));
+  assert.ok(task.decisionRules.some((rule) => /Do not clear needsManualVerification/i.test(rule)));
+  assert.deepEqual(task.fieldsThatAffectRanking.tags, provider.tags);
+});
+
+test("AI review normalisation strips unsafe fields and keeps a guarded audit trail", () => {
+  const provider = baseProvider({ id: "ai-normalise-provider", name: "AI Normalise Provider" });
+  const item = buildQueueFixture([provider], {
+    sourceFit: [
+      {
+        providerId: provider.id,
+        providerName: provider.name,
+        rule: "weak-contact-source",
+        severity: "medium",
+        issue: "Phone needs stronger source support.",
+        suggestedFix: "Confirm public contact source.",
+        source: provider.source
+      }
+    ]
+  }).items[0];
+
+  const decision = normaliseAiReviewProposal(item, {
+    action: "adjust",
+    confidence: "high",
+    correctedFields: {
+      phone: "09 999 0000",
+      needsManualVerification: false,
+      unsafeField: "must not pass"
+    },
+    sourceUrl: provider.source,
+    sourceExcerpt: "The provider-owned contact page lists phone 09 999 0000.",
+    auditRulesResolved: ["weak-contact-source"],
+    reviewNotes: "Phone can be updated from the provider-owned contact page."
+  });
+
+  assert.equal(decision.action, "adjust");
+  assert.deepEqual(decision.correctedFields, { phone: "09 999 0000" });
+  assert.equal(decision.requiresHumanApproval, true);
+  assert.ok(decision.aiReview.guardrailsApplied.some((item) => /unsafeField/.test(item)));
+  assert.ok(decision.aiReview.guardrailsApplied.some((item) => /needsManualVerification/.test(item)));
+});
+
+test("AI review drafts cannot be applied unless explicitly allowed", () => {
+  const provider = baseProvider({ id: "ai-apply-provider", name: "AI Apply Provider", phone: "09 111 1111" });
+  const item = buildQueueFixture([provider], {
+    sourceFit: [
+      {
+        providerId: provider.id,
+        providerName: provider.name,
+        rule: "weak-contact-source",
+        severity: "medium",
+        issue: "Phone needs stronger source support.",
+        suggestedFix: "Confirm public contact source.",
+        source: provider.source
+      }
+    ]
+  }).items[0];
+  const decision = normaliseAiReviewProposal(item, {
+    action: "adjust",
+    confidence: "high",
+    correctedFields: { phone: "09 222 2222" },
+    sourceUrl: provider.source,
+    sourceExcerpt: "The provider-owned contact page lists phone 09 222 2222.",
+    reviewNotes: "Phone can be updated."
+  });
+
+  const blocked = applyReviewDecisions({
+    providers: [provider],
+    decisions: { decisions: [decision] }
+  });
+  assert.equal(blocked.errors.length, 1);
+  assert.match(blocked.errors[0].error, /AI review decisions are draft proposals/);
+  assert.equal(blocked.providers[0].phone, "09 111 1111");
+
+  const allowed = applyReviewDecisions({
+    providers: [provider],
+    decisions: { decisions: [decision] },
+    allowAiReviewDecisions: true
+  });
+  assert.deepEqual(allowed.errors, []);
+  assert.equal(allowed.providers[0].phone, "09 222 2222");
+});
+
+test("AI review normalisation will not infer accepting availability from silence", () => {
+  const provider = baseProvider({ id: "ai-availability-provider", name: "AI Availability Provider" });
+  const item = buildQueueFixture([provider], {
+    availability: [
+      {
+        providerId: provider.id,
+        providerName: provider.name,
+        rule: "availability-needs-review",
+        severity: "medium",
+        issue: "Availability needs manual review.",
+        source: provider.source
+      }
+    ]
+  }).items[0];
+
+  const decision = normaliseAiReviewProposal(item, {
+    action: "adjust",
+    confidence: "medium",
+    correctedFields: { availabilityStatus: "accepting" },
+    sourceUrl: provider.source,
+    sourceExcerpt: "The provider page lists a phone number and email address.",
+    reviewNotes: "Contact details are present."
+  });
+
+  assert.equal(decision.action, "needs_more_info");
+  assert.equal("availabilityStatus" in decision.correctedFields, false);
+  assert.ok(decision.aiReview.guardrailsApplied.some((item) => /accepting availability/.test(item)));
+});
 
 test("export queue includes high source-fit findings and sorts high risk first", () => {
   const critical = baseProvider({ id: "critical-provider", name: "Critical Provider" });
@@ -994,77 +1130,32 @@ test("source-fit capture decision drafts can target auditor batch keys", () => {
   assert.equal(supportDraft.safety.noAddedTagsOrCapabilities, true);
 });
 
-test("admin UI contains no tokens, opens sources externally, and keeps iframe sandboxed", () => {
+test("validation control room is read-only, secret-free, and opens sources externally", () => {
   const html = fs.readFileSync("admin/index.html", "utf8");
-  const js = fs.readFileSync("admin/admin.js", "utf8");
+  const js = fs.readFileSync("admin/validation-control-room.js", "utf8");
   assert.doesNotMatch(`${html}\n${js}`, /api[_-]?key|secret|token|bearer\s+[a-z0-9._-]+/i);
-  assert.match(html, /sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"/);
+  assert.match(html, /form-action 'none'/);
+  assert.match(html, /frame-src 'none'/);
+  assert.doesNotMatch(html, /<iframe\b/i);
+  assert.doesNotMatch(html, /<form\b/i);
+  assert.doesNotMatch(js, /localStorage|sessionStorage/);
+  assert.doesNotMatch(js, /method\s*:\s*["'](?:POST|PUT|PATCH|DELETE)/i);
   assert.match(js, /target = "_blank"/);
   assert.match(js, /rel = "noopener noreferrer"/);
-  assert.match(html, /data\/provider-review-queue\.json/);
-  assert.match(html, /Auditor guide/);
-  assert.match(html, /Common corrections/);
-  assert.match(html, /Generated correctedFields preview/);
-  assert.match(js, /Stored:/);
-  assert.match(js, /Confidence:/);
-  assert.match(js, /availabilityStatus/);
-  assert.match(js, /referralType/);
-  assert.match(js, /choice-grid/);
-  assert.match(html, /Ongoing monitor queue/);
-  assert.match(html, /Claim review queue/);
-  assert.match(html, /GP source corroboration/);
-  assert.match(html, /Location\/distance review pack/);
-  assert.match(html, /Google Places candidates/);
-  assert.match(html, /Discovery suggestions/);
-  assert.match(html, /Source-fit evidence capture/);
-  assert.match(html, /Auto-resolution proposals/);
-  assert.match(html, /Regional priorities/);
-  assert.match(html, /Review category/);
-  assert.match(html, /Any batch/);
-  assert.match(html, /Filtered batch/);
-  assert.match(html, /Save needs_more_info for filtered/);
-  assert.match(js, /provider-claim-review-queue\.json/);
-  assert.match(js, /gp-source-corroboration-queue\.json/);
-  assert.match(js, /location-distance-review-pack\.json/);
-  assert.match(js, /gpTaskToItem/);
-  assert.match(js, /Suggested searches/);
-  assert.match(js, /DoctorPricer and search snippets are discovery-only/);
-  assert.match(js, /provider-auto-resolution-proposals\.json/);
-  assert.match(js, /autoDeprioritizeProposals/);
-  assert.match(js, /queueItemsFromPayload/);
-  assert.match(js, /Claim field/);
-  assert.match(js, /categoryFilter/);
-  assert.match(js, /batchFilter/);
-  assert.match(js, /filteredBatchDecisionFor/);
-  assert.match(js, /Narrow the queue first and keep the filtered set to 100 items or fewer/);
-  assert.match(js, /item\(s\) that already had decisions/);
-  assert.match(js, /provider-monitor-queue\.json/);
-  assert.match(js, /regional-data-quality-report\.json/);
-  assert.match(js, /google-places-provider-candidates\.json/);
-  assert.match(js, /googlePlacesCandidateToItem/);
-  assert.match(js, /coordinate-gap-candidate/);
-  assert.match(js, /linkLiveProvidersToQueueItems/);
-  assert.match(js, /coordinatePrecision/);
-  assert.match(js, /noClinicalClaimsFromPlacesAlone/);
-  assert.match(js, /provider-suggestions\.json/);
-  assert.match(js, /provider-source-fit-evidence-capture\.json/);
-  assert.match(js, /Source-fit evidence capture/);
-  assert.match(js, /providerSuggestionToItem/);
-  assert.match(js, /Array\.isArray\(queue\.suggestions\) && queue\.safety\?\.reviewGateRequired/);
-  assert.match(js, /Discovery suggestions are proposed records or patches only/);
-  assert.match(js, /newProviderCandidate/);
-  assert.match(js, /new-provider-import/);
-  assert.match(js, /regionalPriorityToItem/);
-  assert.match(js, /planningOnly/);
-  assert.match(js, /do not export provider decisions/i);
-  assert.match(html, /Same practice \/ related records/);
-  assert.match(html, /practiceGroupTitle/);
-  assert.match(html, /New clinician from this practice/);
-  assert.match(js, /relatedPracticeRecords/);
-  assert.match(js, /practiceTemplateFor/);
-  assert.match(js, /providers\.json/);
-  assert.match(js, /tags: \[\]/);
-  assert.match(js, /Draft copied from shared practice details only/);
+  assert.match(html, /Provider Validation Control Room/);
+  assert.match(html, /The public provider database is not writable from this console/);
+  assert.match(html, /Run health/);
+  assert.match(html, /Evidence coverage/);
+  assert.match(html, /Blocked and failed sources/);
+  assert.match(html, /Automatic changes/);
+  assert.match(html, /Run and rollback history/);
+  assert.match(html, /Show 100 more/);
+  assert.match(js, /data\/provider-validation\/control-room\.json/);
+  assert.match(js, /PROVIDER_PAGE_SIZE = 100/);
+  assert.match(js, /state\.filtered\.slice\(0, state\.visibleProviders\)/);
+  assert.match(js, /Source timeline/);
+  assert.match(js, /Automated decision/);
+  assert.match(js, /state\.data\.providers/);
 });
 
 test("provider evidence graph splits rows into scored claims and review-gates high-risk fields", () => {
@@ -1110,7 +1201,9 @@ test("provider evidence graph splits rows into scored claims and review-gates hi
   const nameClaim = node.claims.find((claim) => claim.field === "name");
   const tagClaim = node.claims.find((claim) => claim.field === "tags" && claim.value === "depression");
   const acceptingClaim = node.claims.find((claim) => claim.field === "availabilityStatus");
-  assert.equal(nameClaim.decision, "auto_accept");
+  assert.equal(nameClaim.decision, "review");
+  assert.equal(nameClaim.sourceType, "unknown");
+  assert.match(nameClaim.reason, /not strong enough/i);
   assert.equal(tagClaim.decision, "review");
   assert.equal(tagClaim.riskLevel, "high");
   assert.equal(acceptingClaim.decision, "review");
@@ -1971,25 +2064,14 @@ test("location distance decision drafts require review and only apply location f
   assert.deepEqual(needsInfo.decisions[0].correctedFields, {});
 });
 
-test("admin UI can load GP source corroboration tasks as review items", () => {
+test("validation control room does not expose legacy manual decision queues", () => {
   const html = fs.readFileSync("admin/index.html", "utf8");
-  const js = fs.readFileSync("admin/admin.js", "utf8");
-  const css = fs.readFileSync("admin/admin.css", "utf8");
+  const js = fs.readFileSync("admin/validation-control-room.js", "utf8");
 
-  assert.match(html, /<option value="gp">GP source corroboration<\/option>/);
-  assert.match(html, /<option value="gpReviewPack">GP corroboration review pack<\/option>/);
-  assert.match(html, /id="captureFilter"/);
-  assert.match(js, /Array\.isArray\(queue\.tasks\) && queue\.summary\?\.reviewGateRequired/);
-  assert.match(js, /reviewCategory: "GP source corroboration"/);
-  assert.match(js, /gp-corroboration-review-pack\.json/);
-  assert.match(js, /item\.prefillCorrectedFields/);
-  assert.match(js, /item\.sourceExcerpt/);
-  assert.match(js, /sourceCaptureStatus/);
-  assert.match(js, /capture-status/);
-  assert.match(js, /practice-owned, Healthpoint, PHO, HPI\/FHIR, or official source/);
-  assert.match(js, /Do not infer availability, enrolment, mental-health specialties, cultural support/);
-  assert.match(css, /\.capture-status\.captured/);
-  assert.match(css, /\.capture-status\.blocked/);
+  assert.doesNotMatch(html, /GP source corroboration|provider-review-queue|captureFilter/);
+  assert.doesNotMatch(js, /provider-review-decisions|correctedFields|decision export/i);
+  assert.match(html, /The public provider database is not writable from this console/);
+  assert.match(html, /Provider evidence, source history, conflicts, and automated decisions/);
 });
 
 test("broad tag findings only attach to matching fit and specialty text", () => {
@@ -2130,7 +2212,7 @@ test("provider conflict detector flags likely shared practices without auto-merg
   assert.equal(shared.likelyDuplicate, false);
 });
 
-test("auto-resolution proposals de-prioritize low-risk claims but keep risky batches review-gated", () => {
+test("auto-resolution proposals keep unknown-domain and risky claims review-gated", () => {
   const dir = tempDir();
   const providersPath = path.join(dir, "providers.json");
   const sourceFitPath = path.join(dir, "source-fit.json");
@@ -2180,8 +2262,8 @@ test("auto-resolution proposals de-prioritize low-risk claims but keep risky bat
     conflicts: conflictsPath
   });
 
-  assert.ok(output.summary.autoDeprioritizeClaims >= 1);
-  assert.ok(output.autoDeprioritizeProposals.some((proposal) => proposal.field === "name"));
+  assert.equal(output.summary.autoDeprioritizeClaims, 0);
+  assert.equal(output.autoDeprioritizeProposals.some((proposal) => proposal.field === "name"), false);
   assert.ok(output.manualBatchProposals.some((proposal) => proposal.reviewCategory === "sensitive tag or scope evidence"));
   assert.equal(output.autoDeprioritizeProposals.every((proposal) => proposal.liveMutationAllowed === false), true);
   assert.ok(output.blockedAutomationRules.some((rule) => rule.rule === "sensitive-tags-need-evidence"));

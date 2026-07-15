@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "batchId": "codex-20260715002114-f5aaba80",
+  "generatedAt": "2026-07-15T00:21:14.191Z",
+  "policy": "codex-safe-remediation-v1",
+  "constraints": [
+    "Use public professional sources only and never bypass access controls.",
+    "Do not add new providers in this lane.",
+    "Do not set accepting availability or psychiatry self-referral.",
+    "Do not add cultural, telehealth, condition, gender, age-group, or advertised-specialty claims.",
+    "Safe actions are exact contact/location corrections, removal of unsupported positive claims, explicit restrictive availability, or needs_more_info.",
+    "Every applied field needs an exact excerpt and source URL; uncertainty fails closed."
+  ],
+  "items": [
+    {
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:email:info@ancora.org.nz",
+        "provider:bay-of-plenty-ancora-adult-adhd-psychiatry"
+      ],
+      "reviewPriority": "critical",
+      "auditSeverity": "high",
+      "reviewModes": [
+        "safe_removal_or_evidence_only",
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review",
+        "Availability review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research",
+        "conflict-phone",
+        "conflict-tags",
+        "conflict-advertisedSpecialties",
+        "stale-availability"
+      ],
+      "auditIssues": [
+        "conflicting phone, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: phone, tags, advertisedSpecialties",
+        "waitlist availability is 32 days old; target cadence is 30 days."
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "conflicting phone, tags, advertisedSpecialties values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: phone, tags, advertisedSpecialties",
+        "medium: stale-availability",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown",
+        "availability status is waitlist"
+      ],
+      "sourceUrls": [
+        "https://www.ancora.org.nz/"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 021 222 0993\nAvailability: Current psychiatrist assessment wait-time is 6 weeks. | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"AncorA Adult ADHD Clinic\". | Depression or low mood: g ADHD Our Process Pricing Coaching Sessions QBCheck Contact us Helpful Resources ADHD New Zealand Adult ADHD Alcohol & Drug Helpline The Low Down NZ Depression.org.nz Autism NZ Ad | Anxiety, panic, or overwhelm: which can result in significant fatigue by day’s end. Common side effects include difficulty focusing, chronic procrastination, disorganisation and feelings of overwhelm. If your c | Trauma or sexual harm: bout helping people understand their experiences and find pathways forward that truly work for them. She has a particular interest in ADHD and its overlap with trauma, addiction, a | availability audit: waitlist availability is 32 days old; target cadence is 30 days.",
+      "currentRecord": {
+        "name": "AncorA Adult ADHD Clinic",
+        "clinicianName": "",
+        "practiceName": "AncorA Adult ADHD Clinic",
+        "type": "psychiatrist",
+        "region": "Bay of Plenty",
+        "city": "Tauranga and nationwide telehealth",
+        "address": "",
+        "phone": "021 222 0993",
+        "text": "",
+        "email": "info@ancora.org.nz",
+        "website": "https://www.ancora.org.nz/",
+        "bookingUrl": "",
+        "source": "https://www.ancora.org.nz/",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [
+          "depression",
+          "anxiety",
+          "addiction"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "depression",
+          "anxiety",
+          "addiction"
+        ],
+        "specialties": [
+          "depression",
+          "anxiety",
+          "addiction"
+        ],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [
+          [
+            "Children",
+            "Adults"
+          ]
+        ],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": false,
+        "cost": ""
+      },
+      "score": 520
+    },
+    {
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:phone:06 353 0300",
+        "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
+        "provider:manawatu-eye-openers-psychiatry"
+      ],
+      "reviewPriority": "critical",
+      "auditSeverity": "high",
+      "reviewModes": [
+        "contact_or_location_corroboration",
+        "restrictive_availability_or_evidence_only",
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research",
+        "conflict-address",
+        "conflict-phone",
+        "conflict-website",
+        "conflict-source",
+        "conflict-bookingUrl",
+        "google-places-candidate",
+        "corroborate_existing_provider"
+      ],
+      "auditIssues": [
+        "conflicting address, phone, website, source, bookingUrl values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: address, phone, website, source, bookingUrl",
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "missing signals: local psychiatrist or psychiatry pathway; local addiction support | 10 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 0.7 km from the query centre.",
+        "existing provider match keeps type as psychiatrist",
+        "possible existing provider match: manawatu-eye-openers-psychiatry"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Use this as a discovery lead only. Open the provider website or stronger public source, capture excerpts, then approve/adjust/reject through review decisions."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "conflicting address, phone, website, source, bookingUrl values",
+        "extracted from seed source provider_owned",
+        "conflicting fields: address, phone, website, source, bookingUrl",
+        "Google Places discovery candidate",
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "missing signals: local psychiatrist or psychiatry pathway; local addiction support | 10 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 0.7 km from the query centre.",
+        "existing provider match keeps type as psychiatrist",
+        "possible existing provider match: manawatu-eye-openers-psychiatry",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown"
+      ],
+      "sourceUrls": [
+        "https://www.eye-openers-psychiatry.co.nz/",
+        "https://eye-openers-psychiatry.co.nz/",
+        "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+        "https://maps.google.com/?cid=10442359012915877304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "https://eye-openers-psychiatry.co.nz/contact"
+      ],
+      "sourceEvidenceSummary": "Sources: Google Places business listing, provider-owned page | Evidence: Seed value from google places candidate export: 06 353 0300\nSources: Google Places business listing | Evidence: Google Places phone: 06 353 0300 | Business status: OPERATIONAL\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Private Practice Eye\". | Depression or low mood: al well-being of the client and their family/whanau in order to live a fulfilled life. We provide treatment for a wide range of mental health issues including depression, burn-out, | Anxiety, panic, or overwhelm: ive a fulfilled life. We provide treatment for a wide range of mental health issues including depression, burn-out, bipolar disorder, dissociation, psychosis, anxiety and trauma /  | Trauma or sexual harm: led life. We provide treatment for a wide range of mental health issues including depression, burn-out, bipolar disorder, dissociation, psychosis, anxiety and trauma / injury relat",
+      "currentRecord": {
+        "name": "Eye-Openers Psychiatry",
+        "clinicianName": "",
+        "practiceName": "Eye-Openers Psychiatry",
+        "type": "psychiatrist",
+        "region": "Manawatu-Whanganui",
+        "city": "Palmerston North",
+        "address": "Level 9, TSB Bank Tower, 1-19 Fitzherbert Avenue, Palmerston North 4440",
+        "phone": "06 353 0300",
+        "text": "",
+        "email": "dritajzeegers@gmail.com",
+        "website": "https://eye-openers-psychiatry.co.nz/",
+        "bookingUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+        "source": "https://www.eye-openers-psychiatry.co.nz/",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "cost": ""
+      },
+      "score": 520
+    },
+    {
+      "providerId": "national-coliber-group-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
+        "discovery:suggestion:email:info@coliber.nz",
+        "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
+        "provider:national-coliber-group-psychiatry"
+      ],
+      "reviewPriority": "critical",
+      "auditSeverity": "high",
+      "reviewModes": [
+        "safe_removal_or_evidence_only",
+        "restrictive_availability_or_evidence_only",
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research",
+        "conflict-tags",
+        "conflict-advertisedSpecialties",
+        "conflict-name",
+        "conflict-address",
+        "conflict-website",
+        "conflict-source",
+        "conflict-city",
+        "conflict-region",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "conflicting tags, advertisedSpecialties values",
+        "extracted from seed source healthpoint",
+        "conflicting fields: tags, advertisedSpecialties",
+        "conflicting name, address, website, source, city, region values",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates",
+        "conflicting fields: name, address, website, source, city, region",
+        "extracted from seed source provider_owned",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "conflicting tags, advertisedSpecialties values",
+        "extracted from seed source healthpoint",
+        "conflicting fields: tags, advertisedSpecialties",
+        "conflicting name, address, website, source, city, region values",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates",
+        "conflicting fields: name, address, website, source, city, region",
+        "extracted from seed source provider_owned",
+        "existing provider update requires human approval before patching",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown",
+        "address missing coordinates"
+      ],
+      "sourceUrls": [
+        "https://www.healthpoint.co.nz/private/psychiatry/coliber-group-psychiatry/?region=im%3A085f0496-b25b-4d5a-8ac7-81a4ca54226d",
+        "https://www.coliber.nz/contact/",
+        "https://www.coliber.nz/appointments/"
+      ],
+      "sourceEvidenceSummary": "Sources: Healthpoint | Evidence: ion. Additional Details Online / virtual / app, Speak with women / wahine, LGBTQIA+ friendly Website www.coliber.nz/ Contact Details Open today 9:00 AM to 5:00 PM. Phone 022 500 8140 022 500 8140 --> Email [email protect\nSources: Healthpoint, provider-owned page | Evidence: Seed value from providers.json: 022 500 8140\nSources: provider-owned page | Evidence: Booking or appointment link found on source page.\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Coliber Psychiatry\". | Depression or low mood: Zealand Dr Moody has been working as a consultant psychiatrist in the public health care system and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxi | Anxiety, panic, or overwhelm: has been working as a consultant psychiatrist in the public health care system and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxiety disorders par | Trauma or sexual harm: m and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxiety disorders particularly complexity of OCD, generational and relational trauma, PTSD, ADHD a",
+      "currentRecord": {
+        "name": "Coliber Group Psychiatry",
+        "clinicianName": "Dr Agata Golawska",
+        "practiceName": "Coliber Group Psychiatry",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth",
+        "address": "1 Windsor Street",
+        "phone": "022 500 8140 0",
+        "text": "",
+        "email": "",
+        "website": "",
+        "bookingUrl": "",
+        "source": "https://www.healthpoint.co.nz/private/psychiatry/coliber-group-psychiatry/?region=im%3A085f0496-b25b-4d5a-8ac7-81a4ca54226d",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [
+          "depression",
+          "anxiety",
+          "trauma",
+          "rainbow"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "depression",
+          "anxiety",
+          "trauma"
+        ],
+        "specialties": [
+          "depression",
+          "anxiety",
+          "trauma"
+        ],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [
+          [
+            "Adults",
+            "Older adults"
+          ]
+        ],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "cost": ""
+      },
+      "score": 520
+    }
+  ]
+}

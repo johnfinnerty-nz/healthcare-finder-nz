@@ -494,7 +494,10 @@ async function processSearchResult(result, queryItem, graph, providers, config, 
     return;
   }
 
-  const fetchResult = await fetchPublicSource(result.url, { timeoutMs: 10_000 });
+  const fetchResult = await fetchPublicSource(result.url, {
+    timeoutMs: 10_000,
+    resolveDns: config.resolveDns
+  });
   stats.sourcesFetched += fetchResult.ok ? 1 : 0;
   if (!fetchResult.ok) {
     stats.blockedOrUnreachable += 1;
@@ -539,7 +542,10 @@ async function processSeedSources(seed, graph, providers, config, stats, remaini
   let attempted = 0;
   for (const url of urls.slice(0, remainingFetchBudget)) {
     const sourceType = sourceTypeFromUrl(url);
-    const fetchResult = await fetchPublicSource(url, { timeoutMs: 10_000 });
+    const fetchResult = await fetchPublicSource(url, {
+      timeoutMs: 10_000,
+      resolveDns: config.resolveDns
+    });
     attempted += 1;
     stats.seedSourcesChecked += 1;
     if (!fetchResult.ok) {

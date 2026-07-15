@@ -1,0 +1,166 @@
+name: Autonomous provider validation
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: Validation scope
+        required: true
+        default: incremental
+        type: choice
+        options:
+          - incremental
+          - specialists
+          - full
+          - discovery
+      publish:
+        description: Attempt the currently eligible rollout publication
+        required: true
+        default: false
+        type: boolean
+  schedule:
+    - cron: "30 18 * * *"
+    - cron: "0 18 * * 6"
+    - cron: "0 19 1 * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: autonomous-provider-validation
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      PROVIDER_VALIDATION_MODEL: ${{ vars.PROVIDER_VALIDATION_MODEL || 'gpt-5.6' }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+      GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Restore autonomous validation state
+        uses: actions/cache/restore@v4
+        with:
+          path: data/provider-validation
+          key: provider-validation-state-${{ github.run_id }}
+          restore-keys: |
+            provider-validation-state-
+
+      - name: Refuse credential-less unattended validation
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY is required. Shadow artifacts may be generated locally, but this unattended run cannot validate or publish."
+            exit 1
+          fi
+
+      - name: Select validation scope
+        id: scope
+        shell: bash
+        run: |
+          SCOPE="${{ inputs.scope }}"
+          if [ -z "$SCOPE" ]; then
+            case "${{ github.event.schedule }}" in
+              "0 19 1 * *") SCOPE="discovery" ;;
+              "0 18 * * 6") SCOPE="specialists" ;;
+              *) SCOPE="incremental" ;;
+            esac
+          fi
+          case "$SCOPE" in
+            full) ARGS="--full" ;;
+            discovery) ARGS="--full --discover" ;;
+            specialists) ARGS="--type specialist --limit 250" ;;
+            *) ARGS="--limit 25" ;;
+          esac
+          echo "scope=$SCOPE" >> "$GITHUB_OUTPUT"
+          echo "args=$ARGS" >> "$GITHUB_OUTPUT"
+
+      - name: Refresh Google Places discovery candidates
+        if: ${{ steps.scope.outputs.scope == 'discovery' && env.GOOGLE_PLACES_API_KEY != '' }}
+        run: node tools/discover-google-places-providers.mjs --limit-regions 18 --limit-queries 180 --merge-existing
+
+      - name: Run autonomous shadow validation
+        run: node tools/verify-providers.mjs --mode shadow ${{ steps.scope.outputs.args }}
+
+      - name: Run syntax and claim-evaluation gates
+        run: |
+          npm run check:syntax
+          npm run verify:providers:eval
+
+      - name: Run provider validation and recommendation tests
+        run: |
+          npm run validate:data
+          npm run audit
+          npm test
+
+      - name: Check provider links
+        run: npm run check:links
+
+      - name: Run security and static deployment sanity checks
+        shell: bash
+        run: |
+          if git grep -qE 'sk-[A-Za-z0-9_-]{40,}|AIza[0-9A-Za-z_-]{30,}' -- ':!tests/fixtures/**'; then
+            echo "A credential-like token was found in tracked files."
+            exit 1
+          fi
+          if [ -f package-lock.json ]; then
+            npm audit --omit=dev --audit-level=high
+          else
+            node -e "const p=require('./package.json'); const deps={...(p.dependencies||{}),...(p.optionalDependencies||{})}; if(Object.keys(deps).length){throw new Error('Runtime dependencies require a committed package-lock.json for vulnerability auditing')}"
+          fi
+          node -e "const fs=require('node:fs'); for(const file of ['index.html','script.js','styles.css','providers.json']) if(!fs.existsSync(file)||!fs.statSync(file).size) throw new Error(file+' is missing or empty'); const providers=require('./providers.json'); if(!Array.isArray(providers)||providers.length===0) throw new Error('providers.json is not a usable static projection')"
+
+      - name: Save autonomous validation state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/provider-validation
+          key: provider-validation-state-${{ github.run_id }}
+
+      - name: Upload validation control-room artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: provider-validation-${{ github.run_id }}
+          path: |
+            data/provider-validation
+            data/discovery/google-places-provider-candidates.json
+            GOOGLE_PLACES_PROVIDER_CANDIDATES.md
+            PROVIDER_VALIDATION_REPORT.md
+          if-no-files-found: ignore
+
+      - name: Attempt gated publication
+        if: ${{ (inputs.publish == true || vars.PROVIDER_VALIDATION_AUTO_PUBLISH == 'true') && success() }}
+        run: node tools/verify-providers.mjs --mode publish ${{ steps.scope.outputs.args }}
+
+      - name: Create automation pull request
+        if: ${{ (inputs.publish == true || vars.PROVIDER_VALIDATION_AUTO_PUBLISH == 'true') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- providers.json data/provider-validation data/monitors/provider-availability-watchlist.json PROVIDER_VALIDATION_REPORT.md; then
+            echo "No publishable provider changes were produced."
+            exit 0
+          fi
+          BRANCH="automation/provider-validation-${GITHUB_RUN_ID}"
+          git config user.name "provider-validation-bot"
+          git config user.email "provider-validation-bot@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git add providers.json data/provider-validation data/monitors/provider-availability-watchlist.json PROVIDER_VALIDATION_REPORT.md
+          git commit -m "chore(provider-data): autonomous validation ${GITHUB_RUN_ID}"
+          git push origin "$BRANCH"
+          PR_URL=$(gh pr create --base main --head "$BRANCH" --title "chore(provider-data): autonomous validation ${GITHUB_RUN_ID}" --body "Evidence-driven provider validation run. Public changes passed claim evaluation, provider validation, recommendation simulations, link checks, rollout limits, and the 2% change gate.")
+          gh pr merge "$PR_URL" --auto --squash

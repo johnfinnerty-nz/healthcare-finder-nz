@@ -94,6 +94,9 @@ const PROVIDER_REGIONS = new Set([
   "National"
 ]);
 const PROVIDER_CONFIDENCE = new Set(["high", "medium", "low"]);
+const CODEX_SAFE_ACTIONS = new Set(["adjust", "move_to_watchlist", "needs_more_info"]);
+const CODEX_ARRAY_FIELDS = new Set(["tags", "needScope", "specialties", "advertisedSpecialties", "services", "patientGroups", "ageGroups"]);
+const CODEX_CONTACT_FIELDS = new Set(["phone", "text", "email", "website", "bookingUrl"]);
 
 function parseArgs(argv = process.argv.slice(2)) {
   const config = {
@@ -102,6 +105,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     watchlist: "data/monitors/provider-availability-watchlist.json",
     log: "data/provider-review-log.jsonl",
     allowUnsafeFields: false,
+    allowAiReviewDecisions: false,
     dryRun: false
   };
   for (let index = 0; index < argv.length; index += 1) {
@@ -111,6 +115,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     else if (arg === "--watchlist") config.watchlist = argv[++index];
     else if (arg === "--log") config.log = argv[++index];
     else if (arg === "--allow-unsafe-fields") config.allowUnsafeFields = true;
+    else if (arg === "--allow-ai-review-decisions") config.allowAiReviewDecisions = true;
     else if (arg === "--dry-run") config.dryRun = true;
   }
   return config;
@@ -154,6 +159,64 @@ function explicitApprovals(decision) {
   return new Set(Array.isArray(decision.explicitApprovals) ? decision.explicitApprovals : []);
 }
 
+function isCodexAutomationDecision(decision) {
+  return decision.generatedBy === "codex-autonomous-reviewer";
+}
+
+function codexVerifiedEvidence(decision) {
+  return asArray(decision.sourceEvidence).filter((item) => item?.verified === true && item.pageHash && item.sourceUrl && item.excerpt);
+}
+
+function codexAddedValues(before, after) {
+  const beforeSet = new Set(asArray(before));
+  return asArray(after).filter((value) => !beforeSet.has(value));
+}
+
+export function validateCodexAutomationDecision(provider, decision, action = decision.action || decision.reviewDecision) {
+  if (!CODEX_SAFE_ACTIONS.has(action)) throw new Error(`Codex autonomous action "${action}" is outside the safe local lane.`);
+  if (decision.newProviderCandidate || !provider) throw new Error("Codex autonomous review cannot add a new provider.");
+  if (decision.codexEvidenceVerified !== true || decision.codexEvidencePolicy !== "codex-safe-remediation-v1") {
+    throw new Error("Codex autonomous review requires the deterministic evidence gate.");
+  }
+  const researchPassId = decision.codexReview?.researchPassId || "";
+  const verificationPassId = decision.codexReview?.verificationPassId || "";
+  if (!researchPassId || !verificationPassId || researchPassId === verificationPassId) {
+    throw new Error("Codex autonomous review requires distinct research and verification pass IDs.");
+  }
+  if (action !== "needs_more_info" && decision.codexReview?.verificationConclusion !== "accept") {
+    throw new Error("Codex autonomous verification did not accept this decision.");
+  }
+  const evidence = codexVerifiedEvidence(decision);
+  if (action !== "needs_more_info" && !evidence.length) throw new Error("Codex autonomous changes require exact verified source evidence.");
+  if (asArray(decision.sourceEvidence).some((item) => item?.verified !== true)) {
+    throw new Error("Codex autonomous decision contains unverified source evidence.");
+  }
+
+  const corrected = decision.correctedFields || {};
+  if (decision.correctedFields?.availabilityStatus === "accepting") throw new Error("Codex autonomous review cannot publish accepting availability.");
+  if (corrected.referralType === "self" || corrected.requiresReferral === false) throw new Error("Codex autonomous review cannot publish psychiatry self-referral or remove referral guidance.");
+  if (corrected.onlineAvailable === true && provider.onlineAvailable !== true) throw new Error("Codex autonomous review cannot add telehealth capability.");
+  if (corrected.phoneSupport === true && provider.phoneSupport !== true) throw new Error("Codex autonomous review cannot add phone support.");
+  if (corrected.inPerson === true && provider.inPerson !== true) throw new Error("Codex autonomous review cannot add in-person capability.");
+  if (corrected.providerGender) throw new Error("Codex autonomous review cannot add clinician gender.");
+  for (const field of CODEX_ARRAY_FIELDS) {
+    const additions = codexAddedValues(provider[field], corrected[field]);
+    if (additions.length) throw new Error(`Codex autonomous review cannot add ${field}: ${additions.join(", ")}.`);
+  }
+  for (const field of ["type", "lat", "lon", "verified", "lastVerified", "needsManualVerification", "baselineScope", "baselineScopeSource", "baselineScopeNote"]) {
+    if (Object.hasOwn(corrected, field)) throw new Error(`Codex autonomous review cannot change ${field}.`);
+  }
+  for (const field of CODEX_CONTACT_FIELDS) {
+    if (!Object.hasOwn(corrected, field)) continue;
+    if (!evidence.some((item) => item.field === field || item.field === `correctedFields.${field}`)) {
+      throw new Error(`Codex autonomous ${field} correction lacks field-matched verified evidence.`);
+    }
+  }
+  if (action === "move_to_watchlist" && !evidence.some((item) => item.field === "availabilityStatus")) {
+    throw new Error("Codex autonomous watchlist moves require field-matched restrictive availability evidence.");
+  }
+}
+
 function decisionEvidenceText(decision, provider, nextProvider = provider) {
   return [
     decision.sourceExcerpt,
@@ -174,12 +237,12 @@ function hasAnyEvidence(decision, provider, nextProvider = provider) {
 }
 
 function hasExplicitAvailabilityEvidence(provider, decision) {
-  return /\b(accepting new|taking new|currently available|available for new|book (?:a )?(?:session|appointment|consultation)|new client enqu)/i
+  return /\b(accepting new|taking new|currently available|available for new|no waitlists?|book (?:your |a )?(?:session|appointment|consultation)|new client enqu)/i
     .test(`${provider.availabilityEvidence || ""} ${decision.sourceExcerpt || ""} ${decision.correctedFields?.availabilityEvidence || ""}`);
 }
 
 function hasExplicitSelfReferralEvidence(provider, decision) {
-  return /\b(self[- ]referr|self referral|refer yourself|direct referral|without (?:a )?referral|no referral required|contact (?:us|the practice) directly|book directly)\b/i
+  return /\b(self[- ]referr|self referrals?|refer yourself|direct referrals?|without (?:a )?referral|no referral required|contact (?:us|the practice) directly|book directly)\b/i
     .test(`${provider.referralSourceExcerpt || ""} ${decision.sourceExcerpt || ""} ${decision.correctedFields?.referralSourceExcerpt || ""}`);
 }
 
@@ -536,7 +599,8 @@ export function applyReviewDecisions({
   providers,
   decisions,
   watchlist = { version: 1, items: [] },
-  allowUnsafeFields = false
+  allowUnsafeFields = false,
+  allowAiReviewDecisions = false
 }) {
   const nextProviders = clone(providers);
   let nextWatchlist = clone(watchlist);
@@ -550,10 +614,19 @@ export function applyReviewDecisions({
       errors.push({ providerId: decision.providerId || "", action, error: `Unsupported review decision "${action}".` });
       continue;
     }
+    if ((decision.aiReview || decision.generatedBy === "provider-ai-reviewer" || isCodexAutomationDecision(decision)) && !allowAiReviewDecisions) {
+      errors.push({
+        providerId: decision.providerId || "",
+        action,
+        error: "AI review decisions are draft proposals. Re-run with --allow-ai-review-decisions only after intentional review and dry-run validation."
+      });
+      continue;
+    }
     const index = nextProviders.findIndex((provider) => provider.id === decision.providerId);
     const provider = index >= 0 ? nextProviders[index] : null;
 
     try {
+      if (isCodexAutomationDecision(decision)) validateCodexAutomationDecision(provider, decision, action);
       ensureAllowedFields(decision.correctedFields || {}, allowUnsafeFields);
       const correctedFields = clone(decision.correctedFields || {});
       let oldFields = {};
@@ -649,7 +722,8 @@ export function runCli(argv = process.argv.slice(2)) {
     providers,
     decisions,
     watchlist,
-    allowUnsafeFields: config.allowUnsafeFields
+    allowUnsafeFields: config.allowUnsafeFields,
+    allowAiReviewDecisions: config.allowAiReviewDecisions
   });
 
   if (result.errors.length) {

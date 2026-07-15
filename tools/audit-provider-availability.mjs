@@ -63,6 +63,14 @@ function severityForStaleStatus(status) {
   return "low";
 }
 
+function severityForStaleWatchlistStatus(status) {
+  // A stale restrictive watchlist record remains excluded from normal first
+  // recommendations. It is operationally urgent to recheck, but it is not the
+  // same public-safety risk as stale restrictive metadata on a live provider.
+  if (status === "not_accepting" || status === "referrals_paused" || status === "accepting") return "medium";
+  return severityForStaleStatus(status);
+}
+
 function addFinding(findings, item) {
   findings.push({
     providerId: item.providerId || "",
@@ -86,6 +94,11 @@ function allowlistKey(providerId, rule = "") {
 
 function normaliseDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value || "") ? value : "";
+}
+
+function datePart(value) {
+  const match = String(value || "").match(/^(\d{4}-\d{2}-\d{2})/);
+  return match ? match[1] : "";
 }
 
 function isExpired(value, today = new Date()) {
@@ -289,10 +302,38 @@ function auditProvider(provider, findings, today) {
   }
 }
 
-function auditWatchlistItem(item, findings, today) {
+function addWatchlistRecheckFinding(item, result, findings) {
+  const sourceStatus = normaliseAvailabilityStatus(item.availabilityStatus) || statusFromWatchlistItem(item);
+  const detectedStatus = result.detectedStatus || "unknown";
+  const isPossiblyAvailable = ["possibly_available", "accepting"].includes(detectedStatus);
+
+  addFinding(findings, {
+    providerId: item.id,
+    providerName: item.name,
+    region: item.region,
+    city: item.city,
+    type: item.type,
+    source: item.url,
+    availabilityStatus: detectedStatus,
+    availabilityCheckedAt: datePart(result.checkedAt),
+    rule: isPossiblyAvailable ? "watchlist-possibly-available" : "watchlist-availability-not-confirmed",
+    severity: "medium",
+    issue: isPossiblyAvailable
+      ? `Fresh recheck found possible availability for a watchlist provider previously marked ${sourceStatus}.`
+      : `Fresh recheck could not confirm the stored ${sourceStatus} watchlist evidence.`,
+    suggestedAction: isPossiblyAvailable
+      ? "Manually verify before moving this provider back into live recommendations."
+      : "Keep suppressed from first recommendations until a manual browser/call/email review confirms availability."
+  });
+}
+
+function auditWatchlistItem(item, findings, today, recheckById = new Map()) {
   const status = normaliseAvailabilityStatus(item.availabilityStatus) || statusFromWatchlistItem(item);
   const checkedAt = item.availabilityCheckedAt || item.checkedAt || "";
   const age = daysSince(checkedAt, today);
+  const result = item.id ? recheckById.get(item.id) : null;
+  const recheckDate = result ? datePart(result.checkedAt) : "";
+  const hasFreshRecheck = recheckDate && !isAvailabilityStale(status, recheckDate, today);
 
   if (!item.id || !item.url || !item.providerCandidate) {
     addFinding(findings, {
@@ -312,6 +353,13 @@ function auditWatchlistItem(item, findings, today) {
   }
 
   if (!checkedAt || isAvailabilityStale(status, checkedAt, today)) {
+    if (hasFreshRecheck) {
+      if (restrictiveStatuses.has(result.detectedStatus) && result.detectedStatus === status) return;
+      if (["check_failed", "blocked", "unreachable"].includes(result.detectedStatus) || result.blocked) return;
+      addWatchlistRecheckFinding(item, result, findings);
+      return;
+    }
+
     addFinding(findings, {
       providerId: item.id,
       providerName: item.name,
@@ -322,16 +370,34 @@ function auditWatchlistItem(item, findings, today) {
       availabilityStatus: status,
       availabilityCheckedAt: checkedAt,
       rule: "stale-watchlist-availability",
-      severity: severityForStaleStatus(status),
+      severity: severityForStaleWatchlistStatus(status),
       issue: checkedAt
         ? `Watchlist ${status} evidence is ${age} days old; target cadence is ${availabilityCadenceDays[status]} days.`
         : "Watchlist item has no checkedAt or availabilityCheckedAt date.",
-      suggestedAction: "Run the cautious recheck, then manually review changed or blocked results."
+      suggestedAction: "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation."
     });
   }
 }
 
 function auditRecheckResult(result, findings) {
+  if (result.changed) {
+    addFinding(findings, {
+      providerId: result.id,
+      providerName: result.name,
+      region: result.region,
+      city: result.city,
+      type: result.type,
+      source: result.url,
+      availabilityStatus: result.detectedStatus,
+      availabilityCheckedAt: datePart(result.checkedAt),
+      rule: "availability-recheck-status-changed",
+      severity: "medium",
+      issue: `Availability recheck detected "${result.detectedStatus}" where the stored status is "${result.currentStatus || "unknown"}".`,
+      suggestedAction: "Review the source manually before changing live recommendations or watchlist status."
+    });
+    return;
+  }
+
   if (!["check_failed", "blocked", "unreachable"].includes(result.detectedStatus) && !result.blocked) return;
   addFinding(findings, {
     providerId: result.id,
@@ -374,9 +440,10 @@ export function auditAvailability({
 }) {
   const today = new Date(generatedAt);
   const findings = [];
+  const recheckById = new Map(recheckResults.filter((result) => result?.id).map((result) => [result.id, result]));
 
   for (const provider of providers) auditProvider(provider, findings, today);
-  for (const item of watchlistItems) auditWatchlistItem(item, findings, today);
+  for (const item of watchlistItems) auditWatchlistItem(item, findings, today, recheckById);
   for (const result of recheckResults) auditRecheckResult(result, findings);
 
   const findingsWithAllowlist = applyAllowlist(findings, allowlistEntries, today)
@@ -445,11 +512,11 @@ function markdownReport(report) {
     "",
     "## Recheck Cadence",
     "",
-    "- not_accepting: recheck or flag every 14 days",
+    "- not_accepting: recheck or flag daily until the provider reopens or the source changes",
     "- referrals_paused: recheck or flag every 14 days",
     "- waitlist: recheck or flag every 30 days",
     "- unknown / not_published: review every 90 days where practical",
-    "- accepting: review every 90 days and only use when explicit source evidence exists",
+    "- accepting: review daily and only use when explicit current source evidence exists",
     "",
     "Accepting is never inferred from silence. Blocked or unreachable pages create manual review items.",
     "",

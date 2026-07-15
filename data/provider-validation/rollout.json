@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "stage": "shadow",
+  "cleanRunsAtStage": 0,
+  "readyToPublish": false,
+  "lastRunId": "validation-20260714230316-aa3f798f",
+  "lastRunAt": "2026-07-14T23:03:16.385Z",
+  "lastPublishedRunId": "",
+  "history": [
+    {
+      "runId": "validation-20260714092931-9c0628d9",
+      "generatedAt": "2026-07-14T09:29:31.824Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 3,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714212854-9ab6a40e",
+      "generatedAt": "2026-07-14T21:28:54.982Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714213645-e559ae08",
+      "generatedAt": "2026-07-14T21:36:45.015Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714214435-164fbba7",
+      "generatedAt": "2026-07-14T21:44:35.811Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714220304-1fcdc228",
+      "generatedAt": "2026-07-14T22:03:04.582Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714223223-cd53f30e",
+      "generatedAt": "2026-07-14T22:32:23.132Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    },
+    {
+      "runId": "validation-20260714230316-aa3f798f",
+      "generatedAt": "2026-07-14T23:03:16.385Z",
+      "stage": "shadow",
+      "clean": false,
+      "mode": "shadow",
+      "providersChecked": 20,
+      "reason": "One or more shadow safety gates did not pass."
+    }
+  ]
+}

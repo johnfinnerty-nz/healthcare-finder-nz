@@ -56,14 +56,56 @@ export function hashText(value) {
 export function sourceTypeFromUrl(url = "") {
   const host = sourceDomain(url);
   if (!host) return "unknown";
-  if (/healthpoint\.co\.nz$/i.test(host)) return "healthpoint";
-  if (/yourhealthinmind\.org$/i.test(host) || /ranzcp\.org$/i.test(host) || /mcnz\.org\.nz$/i.test(host) || /psychologistsboard\.org\.nz$/i.test(host)) return "official_register";
-  if (/nzccp\.co\.nz$/i.test(host) || /psychologytoday\.com$/i.test(host) || /talkingworks\.co\.nz$/i.test(host)) return "professional_directory";
-  if (/linkedin\.com$/i.test(host)) return "linkedIn_public";
-  if (/google\.com$|bing\.com$/i.test(host)) return "search_result";
-  if (/doctorpricer\.co\.nz$/i.test(host)) return "third_party_directory";
-  if (/mentalhealth\.org\.nz$|health\.nz$|healthnz\.govt\.nz$/i.test(host)) return "ngo_directory";
-  return "provider_owned";
+  const matches = (...domains) => domains.some((domain) => host === domain || host.endsWith(`.${domain}`));
+  if (matches("healthpoint.co.nz")) return "healthpoint";
+  if (matches("yourhealthinmind.org", "ranzcp.org", "mcnz.org.nz", "psychologistsboard.org.nz")) return "official_register";
+  if (matches("nzccp.co.nz", "psychologytoday.com", "talkingworks.co.nz")) return "professional_directory";
+  if (matches("linkedin.com")) return "linkedIn_public";
+  if (matches("google.com", "bing.com")) return "search_result";
+  if (matches("doctorpricer.co.nz")) return "third_party_directory";
+  if (matches("mentalhealth.org.nz", "health.nz", "healthnz.govt.nz")) return "ngo_directory";
+  // Domain shape alone cannot prove that a page belongs to the provider named
+  // in a record. Ownership is promoted only after subject/identity matching.
+  return "unknown";
+}
+
+export function classifyProviderSource({ url = "", provider = {}, pageText = "", allowIdentityMatchedDomain = false } = {}) {
+  const classified = sourceTypeFromUrl(url);
+  if (classified !== "unknown") return classified;
+
+  const host = sourceDomain(url);
+  if (!host) return "unknown";
+  const knownDomains = unique([
+    sourceDomain(provider.website),
+    sourceDomain(provider.source),
+    emailDomain(provider.email)
+  ]);
+  const knownDomain = knownDomains.includes(host);
+  if (!knownDomain && !allowIdentityMatchedDomain) return "unknown";
+
+  const text = normaliseComparable(pageText);
+  const clinician = normaliseComparable(provider.clinicianName || "");
+  const practice = normaliseComparable(provider.practiceName || provider.name || "");
+  const providerName = normaliseComparable(provider.name || "");
+  const clinicianMatched = clinician && text.includes(clinician);
+  const practiceMatched = practice && text.includes(practice);
+  const providerMatched = providerName && text.includes(providerName);
+
+  if (!clinicianMatched && !practiceMatched && !providerMatched) return "unknown";
+  if (!knownDomain) {
+    const hostComparable = normaliseComparable(host.replace(/\.(?:co\.)?nz$|\.(?:com|org|net)$/i, ""));
+    const ownershipNames = unique([provider.practiceName, provider.clinicianName, provider.name]).filter(Boolean);
+    const ignored = new Set(["clinic", "clinical", "health", "psychology", "psychiatry", "psychologist", "psychiatrist", "counselling", "counseling", "therapy", "services", "centre", "center", "doctor", "dr"]);
+    const brandTokens = ownershipNames.flatMap((name) => normaliseComparable(name).split(" "))
+      .filter((token) => token.length >= 4 && !ignored.has(token));
+    const brandDomainMatch = brandTokens.some((token) => hostComparable.includes(token));
+    const escapedHost = host.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const pageEmailDomainMatch = new RegExp(`@[a-z0-9.-]*${escapedHost}\\b`, "i").test(String(pageText || ""));
+    if (!brandDomainMatch && !pageEmailDomainMatch) return "unknown";
+  }
+  return provider.clinicianName && practiceMatched
+    ? "clinic_owned"
+    : "provider_owned";
 }
 
 export function evidenceItem({
@@ -75,7 +117,14 @@ export function evidenceItem({
   capturedAt,
   confidence = "low",
   extractor = "manual",
-  needsManualReview = true
+  needsManualReview = true,
+  subjectType = "provider",
+  subjectId = "",
+  subjectName = "",
+  pageHash = "",
+  expiresAt = "",
+  conflicts = [],
+  extractorVersion = ""
 }) {
   return {
     field,
@@ -86,7 +135,14 @@ export function evidenceItem({
     capturedAt: capturedAt || new Date().toISOString(),
     confidence,
     extractor,
-    needsManualReview: needsManualReview !== false
+    extractorVersion: extractorVersion || extractor,
+    needsManualReview: needsManualReview !== false,
+    subjectType,
+    subjectId,
+    subjectName,
+    pageHash,
+    expiresAt,
+    conflicts: Array.isArray(conflicts) ? conflicts : []
   };
 }
 

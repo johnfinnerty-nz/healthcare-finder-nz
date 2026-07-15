@@ -1,8 +1,9 @@
 # Data Quality
 
-This project uses `providers.json` as a public first-contact database for mental
-health, addiction, youth, GP, psychologist, psychiatrist, and support services in
-Aotearoa New Zealand.
+This project uses `data/provider-validation/provider-canonical.json` as its
+internal provider dataset and generates `providers.json` as the static public
+first-contact projection for mental health, addiction, youth, GP, psychologist,
+psychiatrist, and support services in Aotearoa New Zealand.
 
 The data standard is simple: do not invent services, contacts, eligibility, or
 availability. A stressed user should be able to trust that each live result has a
@@ -94,8 +95,9 @@ Current schema aliases:
   coordinates until a reviewer confirms the professional address and coordinate
   source. Do not use geocoding metadata as proof that the provider is available
   or suitable.
-- `needsManualVerification` is `true` when a listing should be checked by a
-  person before stronger claims are made.
+- `needsManualVerification` remains a legacy/public caution flag. Autonomous
+  production decisions use claim evidence and `verificationStatus`; a record is
+  not made trustworthy merely by changing this boolean.
 - `needScope` is always present. Use `[]` for broad services, or a narrow list
   such as `["trauma"]`, `["addiction"]`, or `["work"]` when the source only
   supports a limited pathway. This prevents sexual-harm-only, addiction-only,
@@ -134,6 +136,66 @@ Current schema aliases:
   advertised interests. Do not copy broad baseline capability into this field.
 - `specialtyTagsSource` explains whether broad tags came from listed
   interests, source-backed service text, or another reviewed source.
+
+## Autonomous Evidence And States
+
+Every autonomous claim retains:
+
+- provider ID and clinician/practice/provider subject
+- field and value
+- exact source excerpt
+- source URL and classified source type
+- capture date and page hash
+- extractor and extractor version
+- confidence and independent verification outcome
+- expiry date, subject-match status, practice-wide status, and conflicts
+
+The canonical model keeps practices and clinicians separate. Practice reception
+contacts can be reused only through an identity-matched clinician/practice
+relationship and evidence that the contact belongs to the practice. Clinician
+specialties, availability, gender, cultural support, age groups, and telehealth
+never inherit from another clinician or the practice by default.
+
+The canonical dataset is the retained internal source, while `providers.json`
+is a generated public projection. Incremental runs must use the current public
+file as their baseline so omitted fields and suppressed providers do not
+reappear when an unrelated provider is checked. A normal canonical refresh
+preserves internal claims and validation history; a destructive rebuild is a
+deliberate migration operation only.
+
+Unknown domains are `unknown`; a `.nz` domain or professional-looking name does
+not make a source provider-owned. Ownership requires a known-domain signal and
+identity match in captured content. Search snippets and LinkedIn are discovery
+or corroboration signals only.
+
+Record validation states are:
+
+- `verified`: identity, professional role, location, a public contact route, and
+  at least one ranking-relevant claim passed field policy
+- `limited`: identity, professional role, location, and a public contact route
+  passed, while unsupported ranking fields fail closed
+- `monitoring`: the record is awaiting another source/freshness observation
+- `suppressed`: explicit restrictive evidence was confirmed and the public
+  record is reversibly omitted
+- `unverifiable`: safe public evidence could not be established under policy
+
+Unsupported ranking-sensitive and descriptive fields do not survive into the
+generated public projection. This includes condition scope, specialties,
+cultural preferences, clinician gender, telehealth, availability, cost,
+eligibility, and service descriptions. Conservative safety restrictions such
+as GP-referral guidance and `crisisOnly` remain until stronger evidence supports
+a safe change. A provider without a safe identity, role, location, and contact
+core is omitted rather than published with guessed details.
+
+Automatic model extraction uses strict structured output, followed by a
+separate skeptical verification call. A third adjudication is allowed only for
+high-risk disagreement. The model never writes files, chooses stored source
+URLs, or sees finder-user health data. Captured evidence text includes visible
+page text and exact `mailto:`, `tel:`, booking-link, and JSON-LD fragments. Any
+model excerpt that is not verbatim in that captured evidence is rejected.
+
+See `AUTONOMOUS_PROVIDER_VALIDATION.md` for the full crawler, policy, rollout,
+publish-gate, and rollback design.
 
 ## Verification Rules
 
@@ -242,10 +304,12 @@ online while the provider is full, paused, or waitlisting.
   providers with similar fit.
 - `not_accepting` and `referrals_paused` are excluded from the first care-path
   cards unless there are no alternatives, and they must be labelled clearly.
-- Restrictive statuses should be rechecked at least every 14 days. Waitlist
-  statuses should be rechecked at least every 30 days. Accepting, unknown, and
-  not-published statuses should be refreshed at least every 90 days.
-- Stale restrictive records need human review before being treated as available.
+- Explicit `accepting`, `not_accepting`, and `referrals_paused` evidence is
+  rechecked daily. Waitlists are rechecked monthly. Contact, referral, and cost
+  claims are quarterly; scope/cultural/telehealth claims are six-monthly; and
+  registration/identity claims are annual.
+- Stale restrictive evidence cannot be treated as proof that a provider has
+  reopened. A new explicit source claim must pass the same independent checks.
 - Use `data/provider-availability-allowlist.json` only for short-lived, reviewed
   exceptions. Every item needs `id`, `rule`, `reason`, `reviewedBy`,
   `reviewedDate`, and `expiryDate`.
@@ -258,9 +322,10 @@ node tools/recheck-provider-availability.mjs
 ```
 
 The audit writes `data/provider-availability-audit.json` and
-`AVAILABILITY_RECHECK_REPORT.md`. The recheck tool writes
+`AVAILABILITY_RECHECK_REPORT.md`. The legacy recheck tool writes
 `data/provider-availability-recheck-results.json` and never changes
-`providers.json` automatically.
+`providers.json` directly. Autonomous suppression requires two independent
+run observations and remains reversible through the validation change log.
 
 ## Psychiatrist Referral Rules
 
@@ -303,13 +368,12 @@ Before committing provider data changes:
 12. Check opt-in filters: Maori, Pasifika, Asian, Rainbow, trauma-informed,
    telehealth, female provider, male provider.
 13. Check one local workflow in a large city and one in a thin-coverage region.
-14. Use `MANUAL_VERIFICATION_PLAN.md` for priority phone/email checks during
-    soft launch.
+14. Run `npm run verify:providers:shadow` and inspect the control-room report.
 
-## Human Review Queue
+## Legacy Human Review Queue
 
-Use the provider review queue when audit output or manual verification flags
-need a human decision:
+The former provider review queue remains available for audit archaeology,
+one-off diagnostics, and migration comparisons:
 
 ```sh
 npm run export:review
@@ -324,8 +388,9 @@ weak telehealth evidence, geocode concerns, directory/direct-contact confusion,
 register-only records, missing contact details, low confidence, and stale
 verification dates.
 
-Use `admin/index.html` for local review. It is a static prototype only: it does
-not write to provider data. Reviewers export decisions, then apply them through:
+The primary `admin/index.html` no longer accepts decisions. It is a read-only
+autonomous validation control room. Legacy decision JSON can still be applied
+explicitly through:
 
 ```sh
 npm run apply:review
@@ -348,6 +413,39 @@ or broad condition tags from silence.
 
 Every applied decision appends to `data/provider-review-log.jsonl`. The log is
 the audit trail and should not be rewritten during normal review work.
+
+## Legacy AI-Assisted Review Drafts
+
+This older queue reviewer remains available for reproducing historical decision
+drafts, but it is not the production autonomous workflow:
+
+```sh
+npm run review:ai -- --limit 25
+```
+
+The AI reviewer is evidence-bound. It receives current provider fields, audit
+issues, source URLs, captured excerpts, and allowed corrected fields. It must
+choose `needs_more_info` when evidence is weak, blocked, stale, conflicting, or
+missing. The script writes `data/provider-ai-review-prompts.json`,
+`data/provider-ai-review-decisions.json`, and `PROVIDER_AI_REVIEW_REPORT.md`.
+When API quota is unavailable, Codex may draft
+`data/provider-codex-review-decisions.json` from source pages opened in the
+active repo session. Treat those decisions as AI-generated proposals and apply
+them only through the explicit AI-review apply flag.
+
+AI-generated decisions must not be applied accidentally. The controlled apply
+script rejects them unless `--allow-ai-review-decisions` is passed. Always run a
+dry run before any apply:
+
+```sh
+npm run apply:review -- --decisions data/provider-ai-review-decisions.json --allow-ai-review-decisions --dry-run
+```
+
+AI review must still follow the same rules as human review: do not invent
+contact details, availability, self-referral, support tags, telehealth,
+advertised specialties, costs, addresses, or clinician gender. Do not clear
+verification metadata from AI output. After any apply, rerun validation, audits,
+and tests before committing.
 
 ## Regional Priority Report
 

@@ -1,0 +1,295 @@
+{
+  "generatedAt": "2026-07-14T23:03:16.385Z",
+  "runId": "validation-20260714230316-aa3f798f",
+  "summary": {
+    "canonicalProviders": 1214,
+    "publicProviders": 1214,
+    "materialChanges": 0,
+    "suppressions": 0,
+    "materiallyAffected": 0,
+    "materiallyAffectedPercent": 0,
+    "verificationStates": {
+      "legacy": 1214
+    }
+  },
+  "coverage": [
+    {
+      "region": "Auckland",
+      "localDirectProviders": 359,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 5,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Bay of Plenty",
+      "localDirectProviders": 62,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 2,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Canterbury",
+      "localDirectProviders": 132,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "mens-centre",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 2,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Hawke's Bay",
+      "localDirectProviders": 36,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Manawatu-Whanganui",
+      "localDirectProviders": 54,
+      "localTypes": [
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "National",
+      "localDirectProviders": 19,
+      "localTypes": [
+        "counsellor",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 5,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Nelson Marlborough Tasman",
+      "localDirectProviders": 38,
+      "localTypes": [
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Northland",
+      "localDirectProviders": 54,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Otago",
+      "localDirectProviders": 45,
+      "localTypes": [
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Rotorua and Taupo",
+      "localDirectProviders": 40,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "South Canterbury",
+      "localDirectProviders": 29,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychologist",
+        "public-service"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Southland",
+      "localDirectProviders": 37,
+      "localTypes": [
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Tairawhiti",
+      "localDirectProviders": 20,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Taranaki",
+      "localDirectProviders": 39,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Waikato",
+      "localDirectProviders": 71,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Wairarapa",
+      "localDirectProviders": 23,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "Wellington",
+      "localDirectProviders": 97,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychiatrist",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    },
+    {
+      "region": "West Coast",
+      "localDirectProviders": 20,
+      "localTypes": [
+        "addiction",
+        "counsellor",
+        "gp",
+        "psychologist",
+        "public-service",
+        "youth"
+      ],
+      "directoryFallbacks": 1,
+      "nationalFallbacks": 35,
+      "deadEnd": false
+    }
+  ],
+  "changes": [],
+  "suppressions": []
+}

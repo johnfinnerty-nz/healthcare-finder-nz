@@ -1302,11 +1302,12 @@ test("seed source fetching inspects provider websites but skips Google Maps sour
       maxSeedSources: 1,
       noNetwork: false,
       dryRun: true,
+      resolveDns: false,
       rateLimitMs: 0,
       maxRounds: 1,
       limit: 1
     });
-    assert.deepEqual(calls, ["https://seedpsych.nz"]);
+    assert.deepEqual(calls, ["https://seedpsych.nz/"]);
     assert.equal(output.stats.seedSourcesChecked, 1);
     assert.equal(output.stats.seedSourcesFetched, 1);
     assert.equal(output.stats.seedSourcesSkipped, 1);

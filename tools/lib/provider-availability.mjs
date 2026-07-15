@@ -21,10 +21,10 @@ export const directAvailabilityTypes = new Set([
 export const restrictiveStatuses = new Set(["not_accepting", "referrals_paused"]);
 
 export const availabilityCadenceDays = {
-  accepting: 90,
+  accepting: 1,
   waitlist: 30,
-  not_accepting: 14,
-  referrals_paused: 14,
+  not_accepting: 1,
+  referrals_paused: 1,
   unknown: 90,
   not_published: 90
 };

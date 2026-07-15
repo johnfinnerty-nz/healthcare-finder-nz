@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "runId": "validation-20260714230316-aa3f798f",
+  "generatedAt": "2026-07-14T23:03:16.385Z",
+  "mode": "shadow",
+  "model": "gpt-5.6",
+  "engineVersion": "1.0.0",
+  "modelCredentialsPresent": false,
+  "modelComplete": false,
+  "providersSelected": 20,
+  "providersChecked": 20,
+  "pagesFetched": 0,
+  "modelCalls": 0,
+  "adjudications": 0,
+  "schemaErrors": 0,
+  "unexplainedConflicts": 0,
+  "pageFanoutViolations": 0,
+  "promptInjectionPages": [],
+  "blockedSources": [],
+  "fetchErrors": [],
+  "modelErrors": [],
+  "discoveryErrors": [],
+  "searchSources": [],
+  "publishGate": {
+    "passed": false,
+    "failures": [
+      "model-credentials-missing",
+      "model-validation-incomplete",
+      "shadow-rollout-not-ready-for-publish",
+      "rollout-stage-needs-three-clean-runs"
+    ]
+  },
+  "clean": false,
+  "now": "2026-07-14T23:03:16.385Z",
+  "claimPrecision": 1,
+  "requiredProvidersForCleanStage": 1214,
+  "completeStageCoverage": false
+}

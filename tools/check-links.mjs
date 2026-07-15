@@ -27,6 +27,9 @@ const transientBlockedHosts = new Set([
   "youthline.co.nz",
   "www.youthline.co.nz"
 ]);
+const authenticatedUrls = new Set([
+  "https://github.com/johnfinnertynz/healthcare-finder-nz"
+]);
 
 function collectFromText(text) {
   for (const match of text.matchAll(/https?:\/\/[^\s"'<>),]+/g)) {
@@ -151,6 +154,10 @@ function isBlockedResponse(status) {
   return transientBlockedStatuses.has(status);
 }
 
+function isAuthenticatedUrl(url) {
+  return authenticatedUrls.has(String(url || "").replace(/\/$/, ""));
+}
+
 async function check(url) {
   let { response, error } = await requestWithRetry(url, "HEAD", headTimeoutMs);
 
@@ -180,7 +187,7 @@ async function check(url) {
     status: response.status,
     final: response.url,
     ok: response.status >= 200 && response.status < 400,
-    blocked: isBlockedResponse(response.status)
+    blocked: isBlockedResponse(response.status) || (response.status === 404 && isAuthenticatedUrl(url))
   };
 }
 

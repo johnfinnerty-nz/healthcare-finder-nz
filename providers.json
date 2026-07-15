@@ -19725,11 +19725,11 @@
     "firstStep": "Call or email AncorA and ask about referral needs, current wait time, fees, and whether ADHD assessment is the right first appointment.",
     "source": "https://www.ancora.org.nz/",
     "needScope": [],
-    "availabilityStatus": "not_published",
-    "availabilityCheckedAt": "2026-05-24",
-    "availabilityEvidence": "",
+    "availabilityStatus": "waitlist",
+    "availabilityCheckedAt": "2026-06-12",
+    "availabilityEvidence": "Current psychiatrist assessment wait-time is 6 weeks.",
     "availabilitySource": "https://www.ancora.org.nz/",
-    "availabilityNeedsManualReview": true,
+    "availabilityNeedsManualReview": false,
     "requiresReferral": false,
     "referralType": "unknown",
     "referralSourceUrl": "https://www.ancora.org.nz/",
@@ -19764,7 +19764,8 @@
         "needsManualReview": false
       }
     ],
-    "specialtyTagsSource": "source-backed advertised specialties/interests"
+    "specialtyTagsSource": "source-backed advertised specialties/interests",
+    "practiceName": "AncorA Adult ADHD Clinic"
   },
   {
     "address": "1017 Cameron Road, Tauranga",
@@ -32043,7 +32044,7 @@
     "phone": "06 888 7483",
     "text": "",
     "email": "",
-    "website": "https://ashhursthealthcare.nz/",
+    "website": "https://localhealth.nz/",
     "lat": -40.2905208,
     "lon": 175.7547181,
     "coordinateSource": "DoctorPricer public API 2026-05",
@@ -32764,7 +32765,7 @@
     "phone": "(06) 357 8061",
     "text": "",
     "email": "",
-    "website": "https://groupmedical.nz/",
+    "website": "https://localhealth.nz/contact-us/",
     "lat": -40.3533633,
     "lon": 175.6197452,
     "coordinateSource": "DoctorPricer public API 2026-05",
@@ -33935,7 +33936,7 @@
     "phone": "(06) 327 8884",
     "text": "",
     "email": "",
-    "website": "https://alexapi.medtechglobal.com:8443/?id=F1Y021-F",
+    "website": "https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/gp/stewart-street-surgery/",
     "lat": -40.0696371,
     "lon": 175.376799,
     "coordinateSource": "DoctorPricer public API 2026-05",
@@ -35190,17 +35191,17 @@
     "needsManualVerification": true,
     "needScope": [],
     "availabilityStatus": "waitlist",
-    "availabilityCheckedAt": "2026-05",
-    "availabilityEvidence": "waitlist",
+    "availabilityCheckedAt": "2026-06-12",
+    "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
     "availabilitySource": "https://psychiatry.nz/",
-    "availabilityNeedsManualReview": true,
+    "availabilityNeedsManualReview": false,
     "requiresReferral": false,
-    "referralType": "unknown",
+    "referralType": "self",
     "referralSourceUrl": "https://psychiatry.nz/",
-    "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-    "referralConfidence": "low",
-    "referralLastChecked": "2026-05",
-    "referralNeedsManualReview": true,
+    "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+    "referralConfidence": "high",
+    "referralLastChecked": "2026-06-12",
+    "referralNeedsManualReview": false,
     "baselineScope": [
       "depression/mood disorders",
       "anxiety disorders",
@@ -35214,7 +35215,9 @@
     "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
     "advertisedSpecialties": [],
     "advertisedSpecialtyEvidence": [],
-    "specialtyTagsSource": "no advertised specialties recorded"
+    "specialtyTagsSource": "no advertised specialties recorded",
+    "clinicianName": "Dr Christmas Seu",
+    "practiceName": "Psychiatry.nz"
   },
   {
     "id": "psychiatry-nz-han-chung-lim",
@@ -35250,17 +35253,17 @@
     "needsManualVerification": true,
     "needScope": [],
     "availabilityStatus": "waitlist",
-    "availabilityCheckedAt": "2026-05",
-    "availabilityEvidence": "waitlist",
+    "availabilityCheckedAt": "2026-06-12",
+    "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
     "availabilitySource": "https://psychiatry.nz/",
-    "availabilityNeedsManualReview": true,
+    "availabilityNeedsManualReview": false,
     "requiresReferral": false,
-    "referralType": "unknown",
+    "referralType": "self",
     "referralSourceUrl": "https://psychiatry.nz/",
-    "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-    "referralConfidence": "low",
-    "referralLastChecked": "2026-05",
-    "referralNeedsManualReview": true,
+    "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+    "referralConfidence": "high",
+    "referralLastChecked": "2026-06-12",
+    "referralNeedsManualReview": false,
     "baselineScope": [
       "depression/mood disorders",
       "anxiety disorders",
@@ -35290,7 +35293,9 @@
         "needsManualReview": true
       }
     ],
-    "specialtyTagsSource": "source-backed advertised specialties/interests"
+    "specialtyTagsSource": "source-backed advertised specialties/interests",
+    "clinicianName": "Dr Han Chung Lim",
+    "practiceName": "Psychiatry.nz"
   },
   {
     "id": "psychiatry-nz-jimi-macmillan",
@@ -35324,17 +35329,17 @@
     "needsManualVerification": true,
     "needScope": [],
     "availabilityStatus": "waitlist",
-    "availabilityCheckedAt": "2026-05",
-    "availabilityEvidence": "waitlist",
+    "availabilityCheckedAt": "2026-06-12",
+    "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
     "availabilitySource": "https://psychiatry.nz/",
-    "availabilityNeedsManualReview": true,
+    "availabilityNeedsManualReview": false,
     "requiresReferral": false,
-    "referralType": "unknown",
+    "referralType": "self",
     "referralSourceUrl": "https://psychiatry.nz/",
-    "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-    "referralConfidence": "low",
-    "referralLastChecked": "2026-05",
-    "referralNeedsManualReview": true,
+    "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+    "referralConfidence": "high",
+    "referralLastChecked": "2026-06-12",
+    "referralNeedsManualReview": false,
     "baselineScope": [
       "depression/mood disorders",
       "anxiety disorders",
@@ -35348,7 +35353,9 @@
     "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
     "advertisedSpecialties": [],
     "advertisedSpecialtyEvidence": [],
-    "specialtyTagsSource": "no advertised specialties recorded"
+    "specialtyTagsSource": "no advertised specialties recorded",
+    "clinicianName": "Dr Jimi MacMillan",
+    "practiceName": "Psychiatry.nz"
   },
   {
     "id": "psychiatry-nz-staverton-kautoke",
@@ -36405,10 +36412,10 @@
     "source": "https://www.positivemindworks.co/",
     "needScope": [],
     "availabilityStatus": "not_published",
-    "availabilityCheckedAt": "2026-05-24",
-    "availabilityEvidence": "",
+    "availabilityCheckedAt": "2026-06-12",
+    "availabilityEvidence": "Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase.",
     "availabilitySource": "https://www.positivemindworks.co/",
-    "availabilityNeedsManualReview": true,
+    "availabilityNeedsManualReview": false,
     "requiresReferral": false,
     "referralType": "unknown",
     "referralSourceUrl": "https://www.positivemindworks.co/",
@@ -36449,7 +36456,8 @@
         "needsManualReview": false
       }
     ],
-    "specialtyTagsSource": "source-backed advertised specialties/interests"
+    "specialtyTagsSource": "source-backed advertised specialties/interests",
+    "practiceName": "Positive Mind Works"
   },
   {
     "id": "national-puawaitanga",

@@ -428,6 +428,73 @@ test("availability audit catches stale or unsafe availability metadata", () => {
   assert.equal(report.summary.highUnallowlisted, 5);
 });
 
+test("availability audit uses fresh watchlist rechecks without inferring availability", () => {
+  const watchlistItem = {
+    id: "watchlist-sample",
+    name: "Watchlist Sample",
+    type: "psychologist",
+    region: "Northland",
+    city: "Whangarei",
+    url: "https://example.org/watchlist",
+    availabilityStatus: "not_accepting",
+    availabilityCheckedAt: "2026-05-01",
+    providerCandidate: {
+      id: "watchlist-sample",
+      name: "Watchlist Sample",
+      type: "psychologist",
+      region: "Northland",
+      city: "Whangarei"
+    }
+  };
+
+  const confirmedReport = auditAvailability({
+    generatedAt: "2026-06-12T00:00:00.000Z",
+    providers: [],
+    watchlistItems: [watchlistItem],
+    recheckResults: [
+      {
+        id: "watchlist-sample",
+        name: "Watchlist Sample",
+        type: "psychologist",
+        region: "Northland",
+        city: "Whangarei",
+        url: "https://example.org/watchlist",
+        checkedAt: "2026-06-12T00:00:00.000Z",
+        currentStatus: "not_accepting",
+        detectedStatus: "not_accepting",
+        changed: false
+      }
+    ]
+  });
+
+  assert.equal(confirmedReport.summary.highUnallowlisted, 0);
+  assert.equal(confirmedReport.findings.some((finding) => finding.rule === "stale-watchlist-availability"), false);
+
+  const ambiguousReport = auditAvailability({
+    generatedAt: "2026-06-12T00:00:00.000Z",
+    providers: [],
+    watchlistItems: [watchlistItem],
+    recheckResults: [
+      {
+        id: "watchlist-sample",
+        name: "Watchlist Sample",
+        type: "psychologist",
+        region: "Northland",
+        city: "Whangarei",
+        url: "https://example.org/watchlist",
+        checkedAt: "2026-06-12T00:00:00.000Z",
+        currentStatus: "not_accepting",
+        detectedStatus: "unknown",
+        changed: false
+      }
+    ]
+  });
+
+  const rules = ambiguousReport.findings.map((finding) => `${finding.providerId}:${finding.rule}:${finding.severity}`);
+  assert.ok(rules.includes("watchlist-sample:watchlist-availability-not-confirmed:medium"));
+  assert.equal(ambiguousReport.summary.highUnallowlisted, 0);
+});
+
 test("source-fit audit catches known unsafe provider patterns", () => {
   const baseProvider = {
     id: "sample",

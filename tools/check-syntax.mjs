@@ -2,15 +2,15 @@ import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
-const files = [
-  "script.js",
-  ...fs.readdirSync("tools")
-    .filter((file) => file.endsWith(".mjs"))
-    .map((file) => path.join("tools", file)),
-  ...fs.readdirSync("tests")
-    .filter((file) => file.endsWith(".mjs"))
-    .map((file) => path.join("tests", file))
-];
+function javascriptFiles(directory) {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const filePath = path.join(directory, entry.name);
+    if (entry.isDirectory()) return javascriptFiles(filePath);
+    return entry.name.endsWith(".mjs") || entry.name.endsWith(".js") ? [filePath] : [];
+  });
+}
+
+const files = ["script.js", ...javascriptFiles("tools"), ...javascriptFiles("tests")];
 
 let failed = false;
 

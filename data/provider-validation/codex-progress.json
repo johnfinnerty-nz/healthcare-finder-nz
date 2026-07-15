@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "items": {
+    "discovery:suggestion:email:info@ancora.org.nz": {
+      "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "provider:bay-of-plenty-ancora-adult-adhd-psychiatry": {
+      "reviewId": "provider:bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:phone:06 353 0300": {
+      "reviewId": "discovery:suggestion:phone:06 353 0300",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "places:google-place-chijp2tsbbszqw0rubxzptk26pa": {
+      "reviewId": "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "provider:manawatu-eye-openers-psychiatry": {
+      "reviewId": "provider:manawatu-eye-openers-psychiatry",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0": {
+      "reviewId": "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
+      "providerId": "national-coliber-group-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:email:info@coliber.nz": {
+      "reviewId": "discovery:suggestion:email:info@coliber.nz",
+      "providerId": "national-coliber-group-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry": {
+      "reviewId": "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
+      "providerId": "national-coliber-group-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    },
+    "provider:national-coliber-group-psychiatry": {
+      "reviewId": "provider:national-coliber-group-psychiatry",
+      "providerId": "national-coliber-group-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715002114-f5aaba80",
+      "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1
+    }
+  },
+  "batches": [
+    {
+      "batchId": "codex-20260715002114-f5aaba80",
+      "generatedAt": "2026-07-15T00:21:14.191Z",
+      "providerIds": [
+        "bay-of-plenty-ancora-adult-adhd-psychiatry",
+        "manawatu-eye-openers-psychiatry",
+        "national-coliber-group-psychiatry"
+      ]
+    }
+  ],
+  "updatedAt": "2026-07-15T00:21:14.191Z"
+}

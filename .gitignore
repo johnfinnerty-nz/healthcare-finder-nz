@@ -5,3 +5,7 @@ data/registers/*
 !data/registers/README.md
 data/reports/*
 outputs/
+.env
+.env.*
+!.env.example
+data/provider-validation/local-cache/

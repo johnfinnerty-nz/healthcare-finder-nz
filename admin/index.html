@@ -4,326 +4,144 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; frame-src https:; form-action 'none'; base-uri 'none'; object-src 'none'">
-    <title>Provider Auditor Console</title>
-    <link rel="stylesheet" href="admin.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'none'; frame-src 'none'; base-uri 'none'; object-src 'none'">
+    <title>Provider Validation Control Room</title>
+    <link rel="stylesheet" href="validation-control-room.css">
   </head>
   <body>
-    <header class="shell-header">
+    <header class="topbar">
       <div>
-        <p class="eyebrow">Local review prototype</p>
-        <h1>Provider Auditor Console</h1>
+        <p class="eyebrow">Care Finder Aotearoa</p>
+        <h1>Provider Validation Control Room</h1>
       </div>
-      <div class="header-actions">
-        <label class="queue-source">
-          Queue
-          <select id="queueSource">
-            <option value="review">Manual review queue</option>
-            <option value="claims">Claim review queue</option>
-            <option value="gp">GP source corroboration</option>
-            <option value="gpReviewPack">GP corroboration review pack</option>
-            <option value="locationReviewPack">Location/distance review pack</option>
-            <option value="places">Google Places candidates</option>
-            <option value="suggestions">Discovery suggestions</option>
-            <option value="sourceFitCapture">Source-fit evidence capture</option>
-            <option value="auto">Auto-resolution proposals</option>
-            <option value="monitor">Ongoing monitor queue</option>
-            <option value="regional">Regional priorities</option>
-          </select>
-        </label>
-        <button id="exportDecisions" type="button">Export decisions JSON</button>
-        <a id="queueJsonLink" class="secondary-link" href="../data/provider-review-queue.json" target="_blank" rel="noopener noreferrer">Open queue JSON</a>
-        <a class="secondary-link" href="../AUDITOR_README.md" target="_blank" rel="noopener noreferrer">Auditor guide</a>
+      <div class="topbar-actions">
+        <span id="generatedAt" class="timestamp">Loading run data...</span>
+        <button id="refreshData" type="button">Refresh data</button>
+        <a href="../PROVIDER_VALIDATION_REPORT.md" target="_blank" rel="noopener noreferrer">Open run report</a>
       </div>
     </header>
 
-    <main class="app-shell">
-      <aside class="queue-panel" aria-label="Provider review queue">
-        <section class="panel-block">
-          <h2>Queue</h2>
-          <p id="queueSummary" class="muted">Loading review queue...</p>
-          <p id="queueModeHelp" class="muted">Manual review queue: first-pass data corrections before public recommendations change.</p>
-          <div class="review-progress" aria-label="Review progress">
-            <div class="progress-row">
-              <span id="progressText">No decisions saved yet.</span>
-              <span id="progressPercent">0%</span>
-            </div>
-            <progress id="reviewProgress" max="1" value="0"></progress>
+    <main>
+      <section id="runBanner" class="run-banner" aria-live="polite">
+        <strong>Loading validation status</strong>
+        <span>The public provider database is not writable from this console.</span>
+      </section>
+
+      <section aria-labelledby="overviewTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Latest run</p>
+            <h2 id="overviewTitle">Run health</h2>
           </div>
-        </section>
+          <span id="rolloutStage" class="status-badge">Loading</span>
+        </div>
+        <div id="metrics" class="metric-grid"></div>
+      </section>
 
-        <section class="panel-block filters" aria-label="Queue filters">
-          <label>
-            Search
-            <input id="search" type="search" autocomplete="off" placeholder="Name, city, source, rule">
-          </label>
-          <label>
-            Priority
-            <select id="priorityFilter">
-              <option value="">Any priority</option>
-            </select>
-          </label>
-          <label>
-            Region
-            <select id="regionFilter">
-              <option value="">Any region</option>
-            </select>
-          </label>
-          <label>
-            Type
-            <select id="typeFilter">
-              <option value="">Any type</option>
-            </select>
-          </label>
-          <label>
-            Audit rule
-            <select id="ruleFilter">
-              <option value="">Any rule</option>
-            </select>
-          </label>
-          <label>
-            Review category
-            <select id="categoryFilter">
-              <option value="">Any category</option>
-            </select>
-          </label>
-          <label>
-            Batch
-            <select id="batchFilter">
-              <option value="">Any batch</option>
-            </select>
-          </label>
-          <label>
-            Severity
-            <select id="severityFilter">
-              <option value="">Any severity</option>
-            </select>
-          </label>
-          <label>
-            Availability
-            <select id="availabilityFilter">
-              <option value="">Any availability</option>
-            </select>
-          </label>
-          <label>
-            Referral
-            <select id="referralFilter">
-              <option value="">Any referral</option>
-            </select>
-          </label>
-          <label>
-            Source capture
-            <select id="captureFilter">
-              <option value="">Any capture status</option>
-            </select>
-          </label>
-          <label>
-            Decision
-            <select id="decisionFilter">
-              <option value="">Any decision</option>
-            </select>
-          </label>
-        </section>
+      <section class="workspace" aria-labelledby="providersTitle">
+        <aside class="provider-browser">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Evidence coverage</p>
+              <h2 id="providersTitle">Providers</h2>
+            </div>
+            <span id="providerCount" class="count"></span>
+          </div>
+          <div class="filters">
+            <label>
+              Search
+              <input id="providerSearch" type="search" autocomplete="off" placeholder="Name, practice, city">
+            </label>
+            <label>
+              Validation state
+              <select id="stateFilter"><option value="">All states</option></select>
+            </label>
+            <label>
+              Provider type
+              <select id="typeFilter"><option value="">All types</option></select>
+            </label>
+            <label>
+              Region
+              <select id="regionFilter"><option value="">All regions</option></select>
+            </label>
+            <label>
+              Fetch outcome
+              <select id="fetchFilter"><option value="">All outcomes</option></select>
+            </label>
+          </div>
+          <ol id="providerList" class="provider-list" aria-label="Provider validation records"></ol>
+          <div class="list-controls">
+            <span id="providerShowing" class="muted" aria-live="polite"></span>
+            <button id="loadMoreProviders" type="button">Show 100 more</button>
+          </div>
+        </aside>
 
-        <section class="panel-block batch-draft" aria-label="Filtered batch decision draft">
-          <h2>Filtered batch</h2>
-          <p id="batchSummary" class="muted">Narrow the queue by batch, rule, category, search, or region before saving a batch decision.</p>
-          <label>
-            Batch reviewer
-            <input id="batchReviewer" autocomplete="name">
-          </label>
-          <label>
-            Batch source excerpt, optional
-            <textarea id="batchSourceExcerpt" rows="3" placeholder="Short excerpt only if the same source note applies to this filtered set."></textarea>
-          </label>
-          <label>
-            Batch review note
-            <textarea id="batchReviewNotes" rows="3" placeholder="Why this filtered set needs more information."></textarea>
-          </label>
-          <button id="saveFilteredNeedsMoreInfo" type="button" class="secondary">Save needs_more_info for filtered</button>
-          <p id="batchDecisionStatus" class="muted" role="status"></p>
-        </section>
+        <article id="providerDetail" class="provider-detail" aria-live="polite">
+          <div class="empty-state">
+            <h2>Select a provider</h2>
+            <p>Provider evidence, source history, conflicts, and automated decisions will appear here.</p>
+          </div>
+        </article>
+      </section>
 
-        <ol id="queueList" class="queue-list"></ol>
-      </aside>
-
-      <section class="detail-panel" aria-live="polite">
-        <div id="emptyState" class="empty-state">
-          <h2>Select a provider to review</h2>
-          <p>Choose a queue item to inspect the public card preview, audit findings, source links, and decision form.</p>
+      <section class="operations" aria-label="Validation operations">
+        <div>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Coverage</p>
+              <h2>Regional gaps</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Region</th><th>Local direct</th><th>Types</th><th>Fallbacks</th><th>Status</th></tr></thead>
+              <tbody id="regionalCoverage"></tbody>
+            </table>
+          </div>
         </div>
 
-        <article id="detailView" class="detail-view hidden">
-          <header class="detail-header">
+        <div>
+          <div class="section-heading compact">
             <div>
-              <p id="detailMeta" class="eyebrow"></p>
-              <h2 id="detailTitle"></h2>
-              <p id="detailSubtitle" class="muted"></p>
+              <p class="eyebrow">Crawler</p>
+              <h2>Blocked and failed sources</h2>
             </div>
-            <div id="detailBadges" class="badges"></div>
-          </header>
+          </div>
+          <div id="sourceFailures" class="event-list"></div>
+        </div>
 
-          <nav class="section-tabs" aria-label="Review sections">
-            <a href="#review-job">What to do now</a>
-            <a href="#users-see">What users would see</a>
-            <a href="#flagged">Why flagged</a>
-            <a href="#ranking">Ranking fields</a>
-            <a href="#practice-group">Same practice</a>
-            <a href="#evidence">Source evidence</a>
-            <a href="#decision">Decision</a>
-          </nav>
-
-          <section id="review-job" class="card-section review-job">
+        <div>
+          <div class="section-heading compact">
             <div>
-              <h3>What to do now</h3>
-              <ol>
-                <li>Open the source in a new tab.</li>
-                <li>Compare the source with the fields below, especially ranking, availability, referral, location, and tags.</li>
-                <li>Use common corrections for small fixes. Fields start with stored data; only changed values are exported.</li>
-                <li>Choose a decision, add a short source excerpt or note, then save locally.</li>
-                <li>Export the batch JSON when the queue is ready to apply through validation.</li>
-              </ol>
+              <p class="eyebrow">Discovery</p>
+              <h2>Search-discovered sources</h2>
             </div>
-            <div id="itemChecklist" class="item-checklist" aria-live="polite"></div>
-          </section>
+          </div>
+          <div id="searchSources" class="event-list"></div>
+        </div>
 
-          <section id="users-see" class="card-section">
-            <h3>What users would see</h3>
-            <div id="publicPreview" class="public-preview"></div>
-          </section>
-
-          <section id="flagged" class="card-section">
-            <h3>Why this record was flagged</h3>
-            <div id="auditFindings"></div>
-          </section>
-
-          <section id="ranking" class="grid-sections">
-            <div class="card-section">
-              <h3>Fields that affect ranking</h3>
-              <dl id="rankingFields" class="data-list"></dl>
+        <div>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Publishing</p>
+              <h2>Automatic changes</h2>
             </div>
-            <div class="card-section">
-              <h3>Availability</h3>
-              <dl id="availabilityFields" class="data-list"></dl>
+          </div>
+          <div id="automaticChanges" class="event-list"></div>
+        </div>
+
+        <div>
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Audit trail</p>
+              <h2>Run and rollback history</h2>
             </div>
-            <div class="card-section">
-              <h3>Referral pathway</h3>
-              <dl id="referralFields" class="data-list"></dl>
-            </div>
-            <div class="card-section">
-              <h3>Location and distance</h3>
-              <dl id="locationFields" class="data-list"></dl>
-            </div>
-            <div class="card-section wide">
-              <h3>Tags and scope</h3>
-              <dl id="tagsFields" class="data-list"></dl>
-            </div>
-          </section>
-
-          <section id="practice-group" class="card-section">
-            <h3 id="practiceGroupTitle">Same practice / related records</h3>
-            <p id="practiceGroupHelp" class="muted">Use this when a clinic has multiple clinicians. Keep each clinician as a separate provider record, but share the practice contact and location fields when the source supports them.</p>
-            <div id="practiceSignals" class="practice-signals"></div>
-            <div id="relatedRecords" class="related-records" aria-live="polite"></div>
-            <details class="practice-template">
-              <summary>New clinician from this practice</summary>
-              <p class="muted">This is a draft template only. Fill clinician-specific fields and source evidence before adding it through the reviewed data workflow.</p>
-              <button id="copyPracticeTemplate" type="button" class="secondary">Copy template JSON</button>
-              <p id="practiceTemplateStatus" class="muted" role="status"></p>
-              <pre id="practiceTemplateJson"></pre>
-            </details>
-          </section>
-
-          <section id="evidence" class="card-section">
-            <h3>Source evidence</h3>
-            <div id="sourceLinks" class="source-links"></div>
-            <p class="muted">Open source pages in a new tab. The optional preview below is sandboxed and may fail because many sites block embedding.</p>
-            <iframe id="sourcePreview" class="source-preview" title="Optional sandboxed source preview" sandbox="allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-            <details>
-              <summary>Structured source evidence</summary>
-              <pre id="sourceEvidenceJson"></pre>
-            </details>
-          </section>
-
-          <section class="card-section">
-            <h3>Current raw provider fields</h3>
-            <pre id="rawProvider"></pre>
-          </section>
-
-          <section id="decision" class="card-section decision-section">
-            <h3>Auditor decision</h3>
-            <form id="decisionForm">
-              <div id="safetyWarnings" class="safety-warnings" aria-live="polite"></div>
-
-              <div class="decision-buttons" role="radiogroup" aria-label="Review decision">
-                <label><input type="radio" name="decision" value="approve"> Approve</label>
-                <label><input type="radio" name="decision" value="adjust"> Adjust</label>
-                <label><input type="radio" name="decision" value="reject"> Reject</label>
-                <label><input type="radio" name="decision" value="move_to_watchlist"> Move to watchlist</label>
-                <label><input type="radio" name="decision" value="duplicate"> Duplicate</label>
-                <label><input type="radio" name="decision" value="needs_more_info"> Needs more info</label>
-              </div>
-              <p id="decisionHelp" class="decision-help">Choose the decision that best describes what should happen to this provider record.</p>
-
-              <div class="form-grid">
-                <label>
-                  Reviewer
-                  <input id="reviewer" name="reviewer" autocomplete="name">
-                </label>
-                <label>
-                  Reviewed date
-                  <input id="reviewedDate" name="reviewedDate" type="date">
-                </label>
-                <label>
-                  Source URL used
-                  <input id="decisionSourceUrl" name="sourceUrl" type="url" inputmode="url">
-                </label>
-                <label>
-                  Kept provider ID, for duplicates
-                  <input id="keptProviderId" name="keptProviderId">
-                </label>
-              </div>
-
-              <fieldset class="correction-builder">
-                <legend>Common corrections</legend>
-                <p class="muted">Fields are prefilled from the current record. Only changed values are exported. List fields accept comma-separated values. Use the advanced JSON box only for less common fields.</p>
-                <div id="commonCorrections" class="correction-grid"></div>
-              </fieldset>
-
-              <label>
-                Source excerpt
-                <textarea id="sourceExcerpt" name="sourceExcerpt" rows="4" placeholder="Short excerpt only. Do not paste whole pages."></textarea>
-              </label>
-
-              <details class="advanced-corrections">
-                <summary>Advanced JSON corrections</summary>
-                <label>
-                  Corrected fields JSON
-                  <textarea id="correctedFields" name="correctedFields" rows="8" spellcheck="false" placeholder='{"availabilityStatus":"unknown"}'></textarea>
-                </label>
-              </details>
-
-              <details class="correction-preview" open>
-                <summary>Generated correctedFields preview</summary>
-                <pre id="correctionPreview">{}</pre>
-              </details>
-
-              <label>
-                Review notes
-                <textarea id="reviewNotes" name="reviewNotes" rows="4"></textarea>
-              </label>
-
-              <div class="decision-actions">
-                <button type="submit">Save decision locally</button>
-                <button id="clearDecision" type="button" class="secondary">Clear decision</button>
-              </div>
-              <p id="decisionStatus" class="muted" role="status"></p>
-            </form>
-          </section>
-        </article>
+          </div>
+          <div id="runHistory" class="event-list"></div>
+        </div>
       </section>
     </main>
 
-    <script src="admin.js" defer></script>
+    <script src="validation-control-room.js" defer></script>
   </body>
 </html>

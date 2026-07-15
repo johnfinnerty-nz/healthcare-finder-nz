@@ -62,10 +62,10 @@ const psychiatristReferralTypes = new Set(["gp", "self", "specialist", "unknown"
 const psychiatristReferralConfidences = new Set(["high", "medium", "low"]);
 const distanceCappedLocalTypes = new Set(["gp", "counsellor", "psychologist", "psychiatrist", "mens-centre"]);
 const availabilityCadenceDays = {
-  accepting: 90,
+  accepting: 1,
   waitlist: 30,
-  not_accepting: 14,
-  referrals_paused: 14,
+  not_accepting: 1,
+  referrals_paused: 1,
   unknown: 90,
   not_published: 90
 };
@@ -438,6 +438,20 @@ function isUnavailableForFirstRecommendations(provider) {
   return restrictiveAvailabilityStatuses.has(providerAvailabilityStatus(provider));
 }
 
+function providerIsPubliclyEligible(provider) {
+  return provider.verificationStatus !== "suppressed";
+}
+
+function providerVerificationScore(provider) {
+  return {
+    verified: 2,
+    limited: 0,
+    monitoring: -1,
+    unverifiable: -12,
+    suppressed: -1000
+  }[provider.verificationStatus] || 0;
+}
+
 function providerAvailabilitySortTier(provider) {
   const status = providerAvailabilityStatus(provider);
   if (providerExplicitlyAccepting(provider)) return 3;
@@ -708,8 +722,20 @@ function providerSpecialties(provider) {
       "clinical-psychologist",
       "primary-care",
       "telehealth",
+      "online",
+      "national",
       "directory",
-      "cost"
+      "cost",
+      "free",
+      "funded",
+      "maori",
+      "pasifika",
+      "asian",
+      "rainbow",
+      "lgbtqia",
+      "trauma-informed",
+      "male",
+      "female"
     ].includes(tag))
     .map((tag) => tag.replace(/-/g, " "));
 
@@ -799,7 +825,7 @@ function providerMatchesProfile(provider) {
   const wantsTelehealth = preferences.includes("telehealth");
   const needScopedMatch = providerMatchesSelectedNeeds(provider, needs);
 
-  let score = providerAvailabilityScore(provider) + providerReferralScore(provider);
+  let score = providerAvailabilityScore(provider) + providerReferralScore(provider) + providerVerificationScore(provider);
   if (!needScopedMatch) score -= 80;
   const preferenceType = selectedContactType();
   if (hasNationalServiceReach(provider)) score += wantsTelehealth ? 4 : (barriers.includes("transport") ? 2 : 0);
@@ -932,7 +958,7 @@ function filteredProviders() {
         || (cost === "free" && /free|public|funded/.test(costText))
         || (cost === "winz" && /winz|cost|funded|directory/.test(costText));
 
-      return typeOk && queryOk && regionOk && preferenceOk && genderOk && ageOk && needOk && crisisOk && contactOk && costOk;
+      return providerIsPubliclyEligible(provider) && typeOk && queryOk && regionOk && preferenceOk && genderOk && ageOk && needOk && crisisOk && contactOk && costOk;
     })
     .sort(compareProviders);
 
@@ -971,7 +997,7 @@ function recommendationCandidates(type = "all", options = {}) {
       const crisisOk = !provider.tags?.includes("crisis");
       const directOk = isDirectContact(provider);
       const availabilityOk = includeUnavailable || !isUnavailableForFirstRecommendations(provider);
-      return typeOk && regionOk && preferenceOk && genderOk && ageOk && needOk && crisisOk && directOk && availabilityOk;
+      return providerIsPubliclyEligible(provider) && typeOk && regionOk && preferenceOk && genderOk && ageOk && needOk && crisisOk && directOk && availabilityOk;
     })
     .sort(compareProviders);
 }

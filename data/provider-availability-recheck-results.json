@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-05-25T02:58:53.843Z",
+  "checkedAt": "2026-06-12T06:44:34.432Z",
   "providersPath": "providers.json",
   "watchlistPath": "data/monitors/provider-availability-watchlist.json",
   "includeLive": false,
-  "rateLimitMs": 1200,
-  "total": 19,
+  "rateLimitMs": 500,
+  "total": 20,
   "changed": 0,
   "blocked": 0,
-  "unknown": 1,
+  "unknown": 2,
   "failed": 3,
   "results": [
     {
@@ -27,7 +27,7 @@
       "evidence": "FULL CAPACITY",
       "matchedPattern": "full\\s+capacity",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "christchurch-psychmed-michelle-mccarthy",
@@ -46,7 +46,7 @@
       "evidence": "MICHELLE MCCARTHY \nB.Sc (hons), D.Clin. Psych. MNZCCP, Clinical Psychologist \nDr Michelle McCarthy is a Clinical Psychologist with almost 20 years experience working in general mental health services as well as a specialist service treating women in the pre and postnatal period with anxiety and depression. She has also",
       "matchedPattern": "Michelle\\s+McCarthy[\\s\\S]{0,1200}?unable\\s+to\\s+accept\\s+new\\s+clients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "ranzcp-4827",
@@ -65,7 +65,7 @@
       "evidence": "Not taking new patients",
       "matchedPattern": "not\\s+taking\\s+new\\s+patients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "ranzcp-1363",
@@ -84,7 +84,7 @@
       "evidence": "Not taking new patients",
       "matchedPattern": "not\\s+taking\\s+new\\s+patients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "ranzcp-2586",
@@ -103,7 +103,7 @@
       "evidence": "Not taking new patients",
       "matchedPattern": "not\\s+taking\\s+new\\s+patients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "northland-creative-counselling-kerikeri",
@@ -122,7 +122,7 @@
       "evidence": "CURRENTLY NOT ACCEPTING NEW CLIENTS",
       "matchedPattern": "currently\\s+not\\s+accepting\\s+new\\s+clients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "northland-mindme-clinical-psychology",
@@ -141,7 +141,7 @@
       "evidence": "NOT ACCEPTING NEW REFERRALS",
       "matchedPattern": "not\\s+accepting\\s+new\\s+referrals",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "northland-wayfinder-psychology",
@@ -160,7 +160,7 @@
       "evidence": "CURRENTLY NOT TAKING ANY NEW CLIENTS",
       "matchedPattern": "currently\\s+not\\s+taking\\s+any\\s+new\\s+clients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "northland-whangarei-care-centre-counselling",
@@ -174,12 +174,12 @@
       "finalUrl": "https://whgcare.org.nz/counselling-whangarei/",
       "blocked": false,
       "currentStatus": "not_accepting",
-      "detectedStatus": "not_accepting",
+      "detectedStatus": "unknown",
       "changed": false,
-      "evidence": "will close on Friday 29 May 2026",
-      "matchedPattern": "will\\s+close\\s+on\\s+Friday\\s+29\\s+May\\s+2026",
-      "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "evidence": "",
+      "matchedPattern": "",
+      "recommendedAction": "Keep current status unless a human review finds clearer evidence.",
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "waikato-waikato-counselling",
@@ -198,7 +198,7 @@
       "evidence": "Currently we are not taking new clients",
       "matchedPattern": "currently\\s+we\\s+are\\s+not\\s+taking\\s+new\\s+clients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "northland-northland-psychiatry-dr-foote",
@@ -217,7 +217,7 @@
       "evidence": "ACC/VA ASSESSMENTS ONLY",
       "matchedPattern": "ACC\\/VA\\s+ASSESSMENTS\\s+ONLY",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "taranaki-calming-minds-dr-candy-fox",
@@ -236,7 +236,7 @@
       "evidence": "not currently accepting new clients",
       "matchedPattern": "not\\s+currently\\s+accepting\\s+new\\s+clients",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "southland-south-coast-psychology-psychiatry",
@@ -255,7 +255,7 @@
       "evidence": "currently don't have any providers available",
       "matchedPattern": "currently\\s+don't\\s+have\\s+any\\s+providers\\s+available",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "marlborough-durkin-zintl-psychology",
@@ -274,7 +274,7 @@
       "evidence": "TypeError",
       "matchedPattern": "",
       "recommendedAction": "Manual browser/call/email review needed; do not infer availability from a blocked or failed request.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "tairawhiti-mauri-psychology",
@@ -293,7 +293,7 @@
       "evidence": "CURRENTLY UNAVAILABLE/FULLY BOOKED",
       "matchedPattern": "currently\\s+unavailable\\/fully\\s+booked",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "taranaki-jade-psychology",
@@ -312,7 +312,7 @@
       "evidence": "",
       "matchedPattern": "",
       "recommendedAction": "Keep current status unless a human review finds clearer evidence.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "taranaki-tosca-counselling",
@@ -331,7 +331,7 @@
       "evidence": "404",
       "matchedPattern": "",
       "recommendedAction": "Manual browser/call/email review needed; do not infer availability from a blocked or failed request.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "hawkes-bay-nova-mentem-broad-streams",
@@ -350,7 +350,7 @@
       "evidence": "Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity",
       "matchedPattern": "Anxiety\\s+disorders[\\s\\S]{0,120}?Currently\\s+at\\s+capacity",
       "recommendedAction": "Keep on watchlist and recheck within 14 days.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     },
     {
       "id": "hawkes-bay-janneke-van-rooijen-psychology",
@@ -369,7 +369,26 @@
       "evidence": "404",
       "matchedPattern": "",
       "recommendedAction": "Manual browser/call/email review needed; do not infer availability from a blocked or failed request.",
-      "checkedAt": "2026-05-25T02:58:53.843Z"
+      "checkedAt": "2026-06-12T06:44:34.432Z"
+    },
+    {
+      "id": "gp-central-family-health-care-35-7201-174-3199",
+      "name": "Central Family Health Care",
+      "type": "gp",
+      "region": "Northland",
+      "city": "Whangarei",
+      "sourceKind": "watchlist",
+      "url": "https://centralfamily.co.nz/",
+      "httpStatus": 200,
+      "finalUrl": "https://centralfamily.co.nz/",
+      "blocked": false,
+      "currentStatus": "not_accepting",
+      "detectedStatus": "not_accepting",
+      "changed": false,
+      "evidence": "books are currently closed",
+      "matchedPattern": "books?\\s+are\\s+currently\\s+closed",
+      "recommendedAction": "Keep on watchlist and recheck within 14 days.",
+      "checkedAt": "2026-06-12T06:44:34.432Z"
     }
   ]
 }

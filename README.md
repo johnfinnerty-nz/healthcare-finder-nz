@@ -77,6 +77,10 @@ index.html             Static app shell and content
 styles.css             Visual design and responsive layout
 script.js              Guided flow, provider matching, and message builder
 providers.json         Local provider and directory data
+data/provider-validation/provider-canonical.json
+                       Internal provider, practice, clinician, and validation state
+data/provider-validation/control-room.json
+                       Read-only operational projection for the validation console
 provider-sources.json  Refresh source manifest
 PROVIDER_SOURCE_FIT_AUDIT.md
                        Latest audit of provider tags against source evidence
@@ -104,9 +108,82 @@ Then open:
 http://127.0.0.1:4173/
 ```
 
+## Autonomous Provider Validation
+
+Provider verification is shadow-first and evidence-driven. The autonomous
+engine crawls relevant public professional pages within robots, rate, redirect,
+content, and private-address limits; extracts field-level claims; independently
+verifies exact source excerpts; and produces a reversible public projection.
+
+Run an incremental shadow pass:
+
+```sh
+npm run verify:providers:shadow
+```
+
+Regenerate the read-only control-room report from current state:
+
+```sh
+npm run verify:providers:report
+```
+
+Serve the repository and open
+`http://127.0.0.1:4173/admin/index.html` to inspect run health, evidence,
+blocked sources, suppressions, regional gaps, and rollback history. The browser
+has no write path.
+
+`npm run verify:providers:publish` is deliberately difficult to satisfy. It
+requires API-backed model verification, three clean runs at the current
+rollout stage, at least 99.5% precision on the versioned claim fixture, no
+unexplained conflicts or regional dead ends, no page-fanout violation, no more
+than 2% material provider changes, and successful post-publish checks. A
+credential-less run can never publish.
+
+Once a provider leaves legacy monitoring, the public projection retains only
+evidence-approved contact, location, scope, specialty, patient-group, age,
+gender, telehealth, availability, cost, and support-preference fields. Old
+descriptive or ranking-sensitive values are replaced with neutral contact
+guidance rather than surviving by default. A direct record without a complete
+identity, professional role, location, and safe contact path is omitted.
+
+Full discovery can also consume
+`data/discovery/google-places-provider-candidates.json`. A Places match supplies
+only a candidate practice website to crawl; Places text never proves clinical
+scope, availability, referrals, or cultural support.
+
+See [AUTONOMOUS_PROVIDER_VALIDATION.md](AUTONOMOUS_PROVIDER_VALIDATION.md) for
+the complete architecture, claim rules, source trust model, rollout, automation,
+and rollback procedure.
+
 ## Provider Data
 
-Provider records live in `providers.json`.
+Canonical provider records live in
+`data/provider-validation/provider-canonical.json`. `providers.json` remains
+the static public projection consumed by the finder. Until a record completes
+autonomous validation, its legacy safeguards remain active; a shadow run never
+changes the public projection.
+
+`npm run canonical:providers` safely refreshes this internal dataset without
+replacing retained claims or reintroducing previously suppressed records. A
+destructive rebuild requires the explicit migration-only `--force-rebuild`
+flag; do not use it in scheduled validation.
+
+### Local Codex validation without API credit
+
+When no unattended API credential is available, Codex can process conservative
+review batches directly in the local repository. Run `npm run codex:batch` to
+lease the next three non-GP providers, record exact source evidence in
+`data/provider-validation/codex-review-decisions.json`, and run
+`npm run codex:verify-evidence` before the controlled dry-run/apply workflow.
+Use `npm run codex:progress` after each outcome.
+
+This no-key lane can correct explicit public contact/location data, remove
+unsupported positive claims, strengthen referral restrictions, move explicitly
+unavailable providers to the watchlist, or defer uncertainty. Code-level guards
+prohibit new providers, accepting status, psychiatry self-referral, new cultural
+or telehealth tags, new condition scope, new advertised specialties, and direct
+publication metadata. Full operating instructions are in
+`CODEX_AUTONOMOUS_VALIDATION.md`.
 
 The database is intended to contain current, public, professional contact
 details only. Direct care records should include at least one usable contact
@@ -130,8 +207,9 @@ See `PROVIDER_DATABASE.md` for field definitions, source guidance, and import
 rules.
 See `DATA_QUALITY.md` for the verification checklist and public-data safety
 rules.
-See `MANUAL_VERIFICATION_PLAN.md` for soft-launch phone/email verification
-priorities, blocked-by-site links requiring human review, and call scripts.
+Legacy manual review packs remain available as diagnostic exports, but they are
+not the primary production path. Blocked or private sources fail closed rather
+than being bypassed.
 
 ## Data Quality Tools
 
@@ -789,17 +867,11 @@ watchlist, optional identity/link reports, and discovery suggestions. By default
 it is a focused queue and does not include every low-risk GP record. Use
 `node tools/export-provider-review-queue.mjs --include-all` for a full dump.
 
-Open the local prototype at `admin/index.html` after serving the repo locally.
-The admin console can load the manual review queue, the claim review queue, the
-GP source corroboration queue, the GP corroboration review pack, the
-location/distance review pack, Google Places candidates, discovery suggestions,
-auto-resolution proposals, or the ongoing monitor queue. It can also load
-**Regional priorities** as a
-planning-only view from
-`data/regional-data-quality-report.json`; that view disables provider-decision
-export and is used to choose the next region or queue to review. The console
-lets a reviewer inspect evidence and exports review decisions. It does not
-write to production data.
+The queue exporters remain useful for diagnostics and migration, but the
+primary `admin/index.html` is now a read-only Provider Validation Control Room.
+It loads `data/provider-validation/control-room.json` and shows automated run
+health, evidence timelines, conflicts, blocked sources, suppressions, rollback
+history, and regional gaps. It contains no decision form or write capability.
 
 For future checks after the initial audit, run:
 
@@ -807,11 +879,19 @@ For future checks after the initial audit, run:
 npm run monitor:providers
 ```
 
-That command cautiously fetches provider/watchlist source pages, reruns the
-availability audit, and exports an auditor-friendly monitor queue. Automated
-fetching is advisory only: a changed page, blocked page, or possible availability
-change must still be confirmed by a person before `providers.json` is changed.
-The weekly GitHub Actions audit also exports the monitor queue as an artifact.
+That legacy command cautiously fetches provider/watchlist source pages, reruns
+the availability audit, and exports a monitor queue. The autonomous validation
+engine supersedes it for production decisions and requires exact evidence,
+independent model verification, deterministic policy, rollout gates, and a
+pull request before public data changes.
+
+### Legacy Review Drafts
+
+`npm run review:ai` and the manual decision-application scripts are retained for
+historical audit packs and debugging. They are not the production validation
+path and cannot satisfy the autonomous publish gates. New validation work should
+use `npm run verify:providers:shadow`; see
+`AUTONOMOUS_PROVIDER_VALIDATION.md`.
 
 Place an exported decision file at `data/provider-review-decisions.json`, then
 apply it through the controlled script:

@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-12T06:45:00.000Z",
+  "generatedBy": "provider-ai-reviewer",
+  "model": "codex-assisted-review",
+  "summary": {
+    "decisionsDrafted": 5,
+    "byAction": {
+      "adjust": 5
+    },
+    "notes": "Drafted inside Codex from public source pages. Apply only through apply:review with --allow-ai-review-decisions."
+  },
+  "decisions": [
+    {
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "providerName": "AncorA Adult ADHD Clinic",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "practiceName": "AncorA Adult ADHD Clinic",
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "Current psychiatrist assessment wait-time is 6 weeks.",
+        "availabilitySource": "https://www.ancora.org.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://www.ancora.org.nz/",
+      "sourceExcerpt": "Current Psychiatrist Assessment wait-time is 6 weeks; contact phone and email are published.",
+      "auditRulesResolved": [
+        "conflict-phone",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "Codex checked the provider-owned AncorA page. The public page supports the practice name, published contact details, and current 6-week psychiatrist assessment wait time. Referral pathway remains unknown because the page did not clearly state self-referral or GP-referral requirements.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:45:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
+        "confidence": "high",
+        "originalAction": "adjust",
+        "riskFlags": [],
+        "followUp": [
+          "Ask AncorA directly whether a GP referral is needed before changing referralType."
+        ],
+        "guardrailsApplied": []
+      },
+      "requiresHumanApproval": true
+    },
+    {
+      "providerId": "psychiatry-nz-christmas-seu",
+      "providerName": "Dr Christmas Seu",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "clinicianName": "Dr Christmas Seu",
+        "practiceName": "Psychiatry.nz",
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-06-12",
+        "referralNeedsManualReview": false,
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "Accepts direct referrals from clients and healthcare professionals; referral or booking is by email.",
+      "auditRulesResolved": [
+        "conflict-name",
+        "conflict-email",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "Codex checked the provider-owned Psychiatry.nz page. The page lists Dr Christmas Seu under Doctors and states that Psychiatry.nz accepts direct referrals from clients and healthcare professionals. Kept waitlist status because the page describes waitlist notifications.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:45:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "discovery:suggestion:clinician-domain:dr-christmas-seu:psychiatry.nz",
+        "confidence": "high",
+        "originalAction": "adjust",
+        "riskFlags": [],
+        "followUp": [],
+        "guardrailsApplied": []
+      },
+      "requiresHumanApproval": true
+    },
+    {
+      "providerId": "psychiatry-nz-jimi-macmillan",
+      "providerName": "Dr Jimi MacMillan",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "clinicianName": "Dr Jimi MacMillan",
+        "practiceName": "Psychiatry.nz",
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-06-12",
+        "referralNeedsManualReview": false,
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "Accepts direct referrals from clients and healthcare professionals; referral or booking is by email.",
+      "auditRulesResolved": [
+        "conflict-name",
+        "conflict-email",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "Codex checked the provider-owned Psychiatry.nz page. The page lists Dr Jimi MacMillan under Doctors and states that Psychiatry.nz accepts direct referrals from clients and healthcare professionals. Kept waitlist status because the page describes waitlist notifications.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:45:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
+        "confidence": "high",
+        "originalAction": "adjust",
+        "riskFlags": [],
+        "followUp": [],
+        "guardrailsApplied": []
+      },
+      "requiresHumanApproval": true
+    },
+    {
+      "providerId": "psychiatry-nz-han-chung-lim",
+      "providerName": "Dr Han Chung Lim",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "clinicianName": "Dr Han Chung Lim",
+        "practiceName": "Psychiatry.nz",
+        "requiresReferral": false,
+        "referralType": "self",
+        "referralSourceUrl": "https://psychiatry.nz/",
+        "referralSourceExcerpt": "Psychiatry.nz accepts direct referrals from clients and healthcare professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-06-12",
+        "referralNeedsManualReview": false,
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "Psychiatry.nz describes referral or booking by email and waitlist notifications.",
+        "availabilitySource": "https://psychiatry.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://psychiatry.nz/",
+      "sourceExcerpt": "Accepts direct referrals from clients and healthcare professionals; referral or booking is by email.",
+      "auditRulesResolved": [
+        "conflict-email",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "Codex checked the provider-owned Psychiatry.nz page. The page lists Dr Han Chung Lim under Doctors, supports the spelling of his name, and states that Psychiatry.nz accepts direct referrals from clients and healthcare professionals. Kept waitlist status because the page describes waitlist notifications.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:45:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "discovery:suggestion:clinician-email-domain:dr-han-chung:psychiatry.nz",
+        "confidence": "high",
+        "originalAction": "adjust",
+        "riskFlags": [],
+        "followUp": [],
+        "guardrailsApplied": []
+      },
+      "requiresHumanApproval": true
+    },
+    {
+      "providerId": "national-positive-mind-works-psychiatry",
+      "providerName": "Positive Mind Works Psychiatry",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "practiceName": "Positive Mind Works",
+        "bookingUrl": "https://www.positivemindworks.co/book-now/",
+        "availabilityStatus": "accepting",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "No waitlists; book your session online.",
+        "availabilitySource": "https://www.positivemindworks.co/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://www.positivemindworks.co/",
+      "sourceExcerpt": "No waitlists; Book your Session; New Zealand phone number is published.",
+      "auditRulesResolved": [
+        "conflict-name",
+        "conflict-phone",
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
+      ],
+      "reviewNotes": "Codex checked the provider-owned Positive Mind Works page. The page supports the practice name, online booking flow, telehealth service, New Zealand phone number, and no-waitlist availability wording. Referral pathway remains unknown because no clear psychiatry self-referral or GP-referral rule was captured.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:45:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "discovery:suggestion:email:info@positivemindworks.co",
+        "confidence": "medium",
+        "originalAction": "adjust",
+        "riskFlags": [
+          "Practice-level psychiatry record includes both psychiatry and psychology services; individual clinician records may be better later."
+        ],
+        "followUp": [
+          "Consider splitting Positive Mind Works into individual clinician records during a later enrichment pass."
+        ],
+        "guardrailsApplied": []
+      },
+      "requiresHumanApproval": true
+    }
+  ]
+}

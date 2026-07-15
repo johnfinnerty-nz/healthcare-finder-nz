@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-12T06:52:00.000Z",
+  "generatedBy": "provider-ai-reviewer",
+  "model": "codex-assisted-review",
+  "summary": {
+    "decisionsDrafted": 1,
+    "byAction": {
+      "adjust": 1
+    },
+    "notes": "Corrective Codex-assisted decision after the availability audit rejected accepting status as too strong."
+  },
+  "decisions": [
+    {
+      "providerId": "national-positive-mind-works-psychiatry",
+      "providerName": "Positive Mind Works Psychiatry",
+      "action": "adjust",
+      "reviewDecision": "adjust",
+      "correctedFields": {
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-06-12",
+        "availabilityEvidence": "Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase.",
+        "availabilitySource": "https://www.positivemindworks.co/",
+        "availabilityNeedsManualReview": false
+      },
+      "reviewer": "Codex-assisted review",
+      "reviewedDate": "2026-06-12",
+      "sourceUrl": "https://www.positivemindworks.co/",
+      "sourceExcerpt": "No waitlists; online booking is available.",
+      "auditRulesResolved": [
+        "accepting-without-explicit-evidence"
+      ],
+      "reviewNotes": "The source supports availability-related wording, but the project audit requires stronger accepting-new-client wording before using availabilityStatus=accepting. Downgraded to not_published while preserving source evidence and checked date.",
+      "aiReview": {
+        "generatedAt": "2026-06-12T06:52:00.000Z",
+        "model": "codex-assisted-review",
+        "reviewId": "availability-correction:national-positive-mind-works-psychiatry",
+        "confidence": "high",
+        "originalAction": "adjust",
+        "riskFlags": [],
+        "followUp": [
+          "If Positive Mind Works later publishes explicit accepting-new-client wording, update availabilityStatus through another reviewed decision."
+        ],
+        "guardrailsApplied": [
+          "Downgraded accepting status to not_published to satisfy availability audit policy."
+        ]
+      },
+      "requiresHumanApproval": true
+    }
+  ]
+}
