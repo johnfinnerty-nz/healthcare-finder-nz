@@ -1,37 +1,20 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T22:37:33.557Z
-Verified decisions: 1/5
-Errors: 4
+Generated: 2026-07-15T23:36:14.934Z
+Verified decisions: 3/3
+Errors: 0
 
-## ranzcp-6009
-
-- Action: adjust
-- Evidence gate: blocked
-- Blocked: https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice
-- Blocked: https://www.beingwith.co.nz/contact-being-with/: excerpt is not an exact captured-page substring
-
-## ranzcp-6009
-
-- Action: needs_more_info
-- Evidence gate: blocked
-- Blocked: https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice
-
-## ranzcp-6743
-
-- Action: adjust
-- Evidence gate: blocked
-- Blocked: https://www.anteris.nz/referrals: source identity does not match the provider or known practice
-- Blocked: https://www.anteris.nz/: source identity does not match the provider or known practice
-
-## ranzcp-6743
-
-- Action: needs_more_info
-- Evidence gate: blocked
-- Blocked: https://www.anteris.nz/: source identity does not match the provider or known practice
-- Blocked: https://www.anteris.nz/referrals: source identity does not match the provider or known practice
-
-## ranzcp-7045
+## ranzcp-7046
 
 - Action: move_to_watchlist
+- Evidence gate: passed
+
+## ranzcp-7544
+
+- Action: adjust
+- Evidence gate: passed
+
+## ranzcp-7734
+
+- Action: needs_more_info
 - Evidence gate: passed

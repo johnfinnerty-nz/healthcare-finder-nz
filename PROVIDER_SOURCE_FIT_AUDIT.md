@@ -1,10 +1,10 @@
 # Provider Source-Fit Audit
 
-Generated: 2026-07-15T22:39:02.675Z
+Generated: 2026-07-15T23:37:34.013Z
 
-Providers scanned: 1213
+Providers scanned: 1212
 
-Findings: 357 total, 0 high (0 unallowlisted), 231 medium, 126 low.
+Findings: 356 total, 0 high (0 unallowlisted), 230 medium, 126 low.
 
 High severity findings block CI unless allowlisted in `data/provider-source-fit-allowlist.json`.
 
@@ -151,7 +151,6 @@ High severity findings block CI unless allowlisted in `data/provider-source-fit-
 | medium | ranzcp-5889 - Dr Struan Robertson | Wellington / CBD | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson | no |
 | medium | ranzcp-6743 - Dr Caleb Armstrong | Bay of Plenty / Gate Pa | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong | no |
 | medium | ranzcp-7045 - Dr Neena Joseph | Auckland / Avondale | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph | no |
-| medium | ranzcp-7046 - Dr John Joseph | Auckland / Mt Albert | psychiatrist | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph | no |
 | medium | rotorua-heads-and-hearts - Heads and Hearts Psychology | Rotorua and Taupo / Rotorua | psychologist | Broad tag "depression" is present but source fields do not clearly support it. | Remove "depression" or add source-backed specialties/services evidence. | https://www.headsandhearts.co.nz/ | no |
 | medium | rotorua-heads-and-hearts - Heads and Hearts Psychology | Rotorua and Taupo / Rotorua | psychologist | Broad tag "anxiety" is present but source fields do not clearly support it. | Remove "anxiety" or add source-backed specialties/services evidence. | https://www.headsandhearts.co.nz/ | no |
 | medium | rotorua-healthnz-te-ngako-adult-mhas - Te Ngako Rotorua Adult Mental Health and Addictions Service | Rotorua and Taupo / Rotorua, Taupo, Turangi, and Mangakino | public-service | Telehealth or online availability is set but source fields do not clearly support remote care. | Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments. | https://www.healthnz.govt.nz/hospitals-services/hospitals/rotorua-taupo-lakes/mental-health-addiction/adult-mhas-rotorua | no |

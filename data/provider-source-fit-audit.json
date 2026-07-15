@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-15T22:39:02.675Z",
-  "providersScanned": 1213,
+  "generatedAt": "2026-07-15T23:37:34.013Z",
+  "providersScanned": 1212,
   "findings": [
     {
       "providerId": "auckland-auckland-mental-wellness-centre",
@@ -3781,34 +3781,6 @@
       ],
       "needScope": [],
       "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph",
-      "rule": "weak-telehealth-evidence",
-      "severity": "medium",
-      "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-      "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "ranzcp-7046",
-      "providerName": "Dr John Joseph",
-      "region": "Auckland",
-      "city": "Mt Albert",
-      "type": "psychiatrist",
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "telehealth",
-        "maori",
-        "asian",
-        "rainbow",
-        "cost",
-        "depression",
-        "anxiety",
-        "trauma",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
       "rule": "weak-telehealth-evidence",
       "severity": "medium",
       "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
@@ -9457,9 +9429,9 @@
     }
   ],
   "summary": {
-    "total": 357,
+    "total": 356,
     "high": 0,
-    "medium": 231,
+    "medium": 230,
     "low": 126,
     "highUnallowlisted": 0,
     "allowlisted": 0

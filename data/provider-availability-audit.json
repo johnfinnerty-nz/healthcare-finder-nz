@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T22:39:03.435Z",
+  "generatedAt": "2026-07-15T23:37:34.885Z",
   "currentBehaviour": {
     "scheduledRecheckPreviouslyExisted": true,
     "notes": [
@@ -9,8 +9,8 @@
       "The link checker checked reachability only; it did not infer provider availability."
     ]
   },
-  "providersScanned": 1213,
-  "watchlistItemsScanned": 21,
+  "providersScanned": 1212,
+  "watchlistItemsScanned": 22,
   "recheckResultsScanned": 20,
   "allowedAvailabilityStatuses": [
     "accepting",
@@ -31,18 +31,18 @@
   "statusCounts": {
     "liveProviders": {
       "not_published": 1177,
-      "waitlist": 30,
+      "waitlist": 29,
       "accepting": 6
     },
     "watchlist": {
-      "not_accepting": 15,
+      "not_accepting": 16,
       "referrals_paused": 6
     }
   },
   "regionsAffectedByUnavailable": {
     "West Coast": 1,
     "Canterbury": 1,
-    "Auckland": 1,
+    "Auckland": 2,
     "Taranaki": 4,
     "Waikato": 2,
     "Northland": 6,
@@ -684,36 +684,6 @@
       "allowlisted": false
     },
     {
-      "providerId": "ranzcp-7046",
-      "providerName": "Dr John Joseph",
-      "region": "Auckland",
-      "city": "Mt Albert",
-      "type": "psychiatrist",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "ranzcp-7544",
-      "providerName": "Dr Kang Tan",
-      "region": "Wellington",
-      "city": "Wellington",
-      "type": "psychiatrist",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
-    {
       "providerId": "ranzcp-7734",
       "providerName": "Dr M Shanmukha Swamy Lokesh",
       "region": "Auckland",
@@ -880,9 +850,9 @@
     }
   ],
   "summary": {
-    "total": 55,
+    "total": 53,
     "high": 0,
-    "medium": 55,
+    "medium": 53,
     "low": 0,
     "highUnallowlisted": 0,
     "allowlisted": 0

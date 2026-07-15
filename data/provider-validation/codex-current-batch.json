@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715222651-003f7cdc",
-  "generatedAt": "2026-07-15T22:26:51.011Z",
+  "batchId": "codex-20260715232830-bdd65411",
+  "generatedAt": "2026-07-15T23:28:30.142Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,140 +13,49 @@
   ],
   "items": [
     {
-      "providerId": "ranzcp-6009",
+      "providerId": "ranzcp-7046",
       "reviewIds": [
-        "provider:ranzcp-6009",
-        "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org"
+        "provider:ranzcp-7046",
+        "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz",
+        "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org",
+        "places:google-place-chijm-1aym9hdw0rcrec43aqq6g"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
       "reviewModes": [
-        "restrictive_availability_or_evidence_only"
+        "restrictive_availability_or_evidence_only",
+        "evidence_only"
       ],
       "reviewCategories": [
-        "Availability review"
-      ],
-      "auditRules": [
-        "stale-availability",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "auditIssues": [
-        "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist",
-        "provider discovery suggestion",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan"
-      ],
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Profile says people must first see their GP for referral and treatment-options discussion. | Source scan: clinician \"Dr Rachel Kan\", practice \"Being With\". | Depression or low mood: referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cognitive behavioural therapy Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cog | Trauma or sexual harm: ions. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cognitive behavioural therapy Depression Obsessive-compulsive disorders Post-traumatic stres | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 04 472 4198",
-      "currentRecord": {
-        "name": "Dr Rachel Kan",
-        "clinicianName": "",
-        "practiceName": "Being With",
-        "type": "psychiatrist",
-        "region": "Wellington",
-        "city": "Wellington Central",
-        "address": "Level 2, Central House, 26 Brandon St, Wellington Central, Wellington, 6011",
-        "phone": "04 472 4198",
-        "text": "",
-        "email": "Reception@beingwith.co.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-        "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "appointment wait: Less than",
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceExcerpt": "Profile says people must first see their GP for referral and treatment-options discussion.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "cost",
-          "depression",
-          "anxiety",
-          "trauma",
-          "direct-contact"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Cognitive behavioural therapy",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Post-traumatic stress disorder",
-          "Supportive psychotherapy"
-        ],
-        "specialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Cognitive behavioural therapy",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Post-traumatic stress disorder",
-          "Supportive psychotherapy"
-        ],
-        "services": [
-          "ACC Assessment"
-        ],
-        "patientGroups": [
-          "Families"
-        ],
-        "ageGroups": [
-          "Mother and baby",
-          "Ages 1-17",
-          "Ages 18-60",
-          "Ages 16-24"
-        ],
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "ranzcp-6743",
-      "reviewIds": [
-        "provider:ranzcp-6743",
-        "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Availability review"
+        "Availability review",
+        "Referral pathway review"
       ],
       "auditRules": [
         "weak-telehealth-evidence",
         "stale-availability",
         "discovery-suggestion",
-        "update_existing_provider"
+        "update_existing_provider",
+        "google-places-candidate",
+        "corroborate_existing_provider"
       ],
       "auditIssues": [
         "Telehealth or online availability is set but source fields do not clearly support remote care.",
         "waitlist availability is 75 days old; target cadence is 30 days.",
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching",
         "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "53 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 7.7 km from the query centre.",
+        "existing provider match keeps type as psychiatrist",
+        "possible existing provider match: ranzcp-7046"
       ],
       "suggestedFixes": [
         "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
         "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
+        "Use this as a discovery lead only. Open the provider website or stronger public source, capture excerpts, then approve/adjust/reject through review decisions."
       ],
       "reviewReasons": [
         "medium: weak-telehealth-evidence",
@@ -155,27 +64,37 @@
         "availability needs manual review",
         "availability status is waitlist",
         "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching",
         "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
+        "Google Places discovery candidate",
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "53 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 7.7 km from the query centre.",
+        "existing provider match keeps type as psychiatrist",
+        "possible existing provider match: ranzcp-7046"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+        "https://www.aucklandpsychiatrist.nz/",
+        "https://maps.google.com/?cid=12153966859688613641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Caleb Armstrong\", practice \"(none)\". | Depression or low mood: referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Brain injury Bipolar disorder Depression Mindfulne | Anxiety, panic, or overwhelm: 12 TAURANGA Anteris 1017 Cameron Road GATE PA 3112 TAURANGA\"> View on map 07 2827579 www.anteris.nz tauranga@anteris.nz Neurotherapies Mood Disorder and Anxiety Clinic Neurotherapi | Trauma or sexual harm: e your GP. Expertise ADHD Anxiety disorders Brain injury Bipolar disorder Depression Mindfulness Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 07 2827579",
+      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr John Joseph\", practice \"(none)\". | Depression or low mood: ur treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Aut | Trauma or sexual harm: P. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: Google Places business listing, provider-owned page | Evidence: Seed value from google places candidate export: 021 241 6007\nSources: official register | Evidence: Seed value from providers.json: 0212416007\nSources: Google Places business listing | Evidence: Google Places phone: 021 241 6007 | Business status: OPERATIONAL",
       "currentRecord": {
-        "name": "Dr Caleb Armstrong",
+        "name": "Dr John Joseph",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
-        "region": "Bay of Plenty",
-        "city": "Gate Pa",
-        "address": "1017 Cameron Road, Gate Pa, Tauranga, 3112",
-        "phone": "07 2827579",
+        "region": "Auckland",
+        "city": "Mt Albert",
+        "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+        "phone": "0212416007",
         "text": "",
-        "email": "tauranga@anteris.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
+        "email": "info@aucklandpsychiatrist.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "appointment wait: 1-3",
         "requiresReferral": true,
@@ -187,6 +106,8 @@
           "fit",
           "telehealth",
           "maori",
+          "asian",
+          "rainbow",
           "cost",
           "depression",
           "anxiety",
@@ -197,65 +118,58 @@
         "advertisedSpecialties": [
           "ADHD",
           "Anxiety disorders",
+          "Autism spectrum disorders",
           "Bipolar disorder",
           "Brain injury",
           "Depression",
-          "Forensic",
-          "Mindfulness",
           "Obsessive-compulsive disorders",
-          "Personality disorders",
+          "Pain management",
           "Post-traumatic stress disorder",
           "Psychosis",
-          "Schizophrenia",
-          "Sexual assault / abuse treatment"
+          "Schizophrenia"
         ],
         "specialties": [
           "ADHD",
           "Anxiety disorders",
+          "Autism spectrum disorders",
           "Bipolar disorder",
           "Brain injury",
           "Depression",
-          "Forensic",
-          "Mindfulness",
           "Obsessive-compulsive disorders",
-          "Personality disorders",
+          "Pain management",
           "Post-traumatic stress disorder",
           "Psychosis",
-          "Schizophrenia",
-          "Sexual assault / abuse treatment"
+          "Schizophrenia"
         ],
         "services": [
+          "ACC Assessment",
           "ACC Treatment provider",
           "Civil medicolegal",
-          "Criminal medicolegal",
           "Family court medicolegal",
           "Insurance opinions / reports",
-          "Professional supervision",
-          "Experience with interpreters",
-          "Available for COVID-19 healthcare workers"
+          "Experience with interpreters"
         ],
         "patientGroups": [
-          "Doctors, psychiatrists or medical students",
-          "Intellectual disability",
+          "Asylum seekers and refugees",
+          "Gender diverse",
           "Maori",
           "Military and veterans",
+          "Non-English speaking",
           "Physical disability",
           "Emergency services personnel"
         ],
         "ageGroups": [
-          "Ages 1-17",
-          "Ages 18-60",
-          "Ages 60+"
+          "Ages 18-60"
         ],
         "cost": ""
       },
       "score": 410
     },
     {
-      "providerId": "ranzcp-7045",
+      "providerId": "ranzcp-7544",
       "reviewIds": [
-        "provider:ranzcp-7045",
-        "discovery:suggestion:clinician-domain:dr-neena-joseph:yourhealthinmind.org"
+        "provider:ranzcp-7544",
+        "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -266,52 +180,48 @@
         "Availability review"
       ],
       "auditRules": [
-        "weak-telehealth-evidence",
         "stale-availability",
         "discovery-suggestion",
         "update_existing_provider"
       ],
       "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
         "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
         "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
         "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
-        "medium: weak-telehealth-evidence",
         "medium: stale-availability",
         "provider details need manual verification",
         "availability needs manual review",
         "availability status is waitlist",
         "provider discovery suggestion",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Neena Joseph\", practice \"(none)\". | Asian: these age groups Ages 18-60 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Advanced Training Certificate in Forensic Psychiatry Languages spoken Hindi Malayalam Engl | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | Signal: hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebat | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 0064212416007",
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Kang Tan\", practice \"(none)\". | Depression or low mood: our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bip | Trauma or sexual harm: ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stres | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +64210522369",
       "currentRecord": {
-        "name": "Dr Neena Joseph",
+        "name": "Dr Kang Tan",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
-        "region": "Auckland",
-        "city": "Avondale",
-        "address": "125 Blockhouse Bay Road, Avondale, Auckland, 1026",
-        "phone": "0064212416007",
+        "region": "Wellington",
+        "city": "Wellington",
+        "address": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
+        "phone": "+64210522369",
         "text": "",
-        "email": "admin@aucklandpsychiatrist.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph",
+        "email": "ktpsychiatry@gmail.com",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
         "availabilityStatus": "waitlist",
-        "availabilityEvidence": "appointment wait: 1-3",
+        "availabilityEvidence": "appointment wait: Less than",
         "requiresReferral": true,
         "referralType": "gp",
         "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
@@ -319,24 +229,166 @@
           "psychiatrist",
           "medical-specialist",
           "fit",
-          "telehealth",
           "asian",
-          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
           "direct-contact"
         ],
         "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
+        "advertisedSpecialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Supportive psychotherapy"
+        ],
+        "specialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Supportive psychotherapy"
+        ],
+        "services": [
+          "Insurance opinions / reports",
+          "Urgent assessments"
+        ],
+        "patientGroups": [
+          "Doctors, psychiatrists or medical students",
+          "Non-English speaking"
+        ],
+        "ageGroups": [
+          "Ages 18-60",
+          "Ages 60+"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-7734",
+      "reviewIds": [
+        "provider:ranzcp-7734",
+        "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr M Shanmukha Swamy Lokesh\", practice \"(none)\". | Depression or low mood: see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bipolar disorder Depression Dementia  | Anxiety, panic, or overwhelm: this psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Anxiety disorders Bip | Trauma or sexual harm: see your GP. Expertise Anxiety disorders Bipolar disorder Depression Dementia related disorders Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 09 579 2210",
+      "currentRecord": {
+        "name": "Dr M Shanmukha Swamy Lokesh",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Ellerslie",
+        "address": "2 Walpole Street, Ellerslie, Ellerslie, Auckland , 1051",
+        "phone": "09 579 2210",
+        "text": "",
+        "email": "reception@kilpan.co.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: Less than",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "maori",
+          "asian",
+          "rainbow",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Dementia related disorders",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
+        "specialties": [
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Dementia related disorders",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia"
+        ],
         "services": [
           "ACC Assessment",
           "Civil medicolegal",
           "Criminal medicolegal",
-          "Family court medicolegal",
-          "Shared care"
+          "Insurance opinions / reports",
+          "Urgent assessments"
         ],
-        "patientGroups": [],
+        "patientGroups": [
+          "Asylum seekers and refugees",
+          "Doctors, psychiatrists or medical students",
+          "Gay and lesbian",
+          "Maori",
+          "Non-English speaking"
+        ],
         "ageGroups": [
-          "Ages 18-60"
+          "Ages 18-60",
+          "Ages 60+"
         ],
         "cost": ""
       },

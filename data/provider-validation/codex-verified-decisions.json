@@ -1,618 +1,53 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T22:37:33.557Z",
+  "generatedAt": "2026-07-15T23:36:14.934Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org",
+      "reviewId": "provider:ranzcp-7046",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org"
+        "provider:ranzcp-7046",
+        "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz",
+        "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org",
+        "places:google-place-chijm-1aym9hdw0rcrec43aqq6g"
       ],
-      "providerId": "ranzcp-6009",
-      "providerName": "Dr Rachel Kan",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Rachel Kan",
-        "email": "reception@beingwith.co.nz",
-        "website": "https://www.beingwith.co.nz/contact-being-with/",
-        "source": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-        "sourceQuality": "provider-owned page",
-        "referralSourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-        "referralSourceExcerpt": "Yes, Being With requires a referral from your GP.",
-        "referralLastChecked": "2026-07-16",
-        "referralNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-      "sourceExcerpt": "Rachel Kan",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Rachel Kan",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr Rachel Kan",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "capturedAt": "2026-07-15T22:37:33.558Z",
-          "pageHash": "d8dc2abe5939c406e732e65f61efc5ac6c187afdf4c0932cdfc61363aee2103c",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "email",
-          "value": "reception@beingwith.co.nz",
-          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "sourceType": "provider_owned",
-          "excerpt": "reception@beingwith.co.nz",
-          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "capturedAt": "2026-07-15T22:37:35.339Z",
-          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "website",
-          "value": "https://www.beingwith.co.nz/contact-being-with/",
-          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "sourceType": "provider_owned",
-          "excerpt": "https://www.beingwith.co.nz/contact-being-with/",
-          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "capturedAt": "2026-07-15T22:37:35.339Z",
-          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
-          "verified": false,
-          "verificationErrors": [
-            "excerpt is not an exact captured-page substring",
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "source",
-          "value": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-          "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-          "sourceType": "provider_owned",
-          "excerpt": "Being With psychiatric team, Rachel Kan - psychiatric assessment & treatment.",
-          "finalUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-          "capturedAt": "2026-07-15T22:37:37.200Z",
-          "pageHash": "d4f60a2f41a5b851f7c60885968f328b277fcaca42549b7ea2f232d2dc4a19e8",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "sourceQuality",
-          "value": "provider-owned page",
-          "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-          "sourceType": "provider_owned",
-          "excerpt": "Being With psychiatric team, Rachel Kan - psychiatric assessment & treatment.",
-          "finalUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
-          "capturedAt": "2026-07-15T22:37:37.200Z",
-          "pageHash": "d4f60a2f41a5b851f7c60885968f328b277fcaca42549b7ea2f232d2dc4a19e8",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes, Being With requires a referral from your GP.",
-          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "capturedAt": "2026-07-15T22:37:38.834Z",
-          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "Yes, Being With requires a referral from your GP.",
-          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes, Being With requires a referral from your GP.",
-          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "capturedAt": "2026-07-15T22:37:38.834Z",
-          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralLastChecked",
-          "value": "2026-07-16",
-          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes, Being With requires a referral from your GP.",
-          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "capturedAt": "2026-07-15T22:37:38.834Z",
-          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralNeedsManualReview",
-          "value": false,
-          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes, Being With requires a referral from your GP.",
-          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "capturedAt": "2026-07-15T22:37:38.834Z",
-          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "reviewNotes": "The live RANZCP profile identifies Dr Rachel Kan, while Being With's reachable clinician, contact, and FAQ pages independently bind her to the practice, publish the referral email, and explicitly require a GP referral. The direct clinic contact page replaces the directory as the public website. No availability, specialty, age-group, or patient-group claim is refreshed.",
-      "codexReview": {
-        "researchPassId": "research-20260716-rachel-kan-contact-referral-1",
-        "verificationPassId": "verify-20260716-rachel-kan-contact-referral-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": false,
-      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "failed",
-      "codexEvidenceErrors": [
-        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice",
-        "https://www.beingwith.co.nz/contact-being-with/: excerpt is not an exact captured-page substring"
-      ]
-    },
-    {
-      "reviewId": "provider:ranzcp-6009",
-      "reviewIds": [
-        "provider:ranzcp-6009"
-      ],
-      "providerId": "ranzcp-6009",
-      "providerName": "Dr Rachel Kan",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Feb 2023",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "capturedAt": "2026-07-15T22:37:40.476Z",
-          "pageHash": "8f22685cda2aaefbd7f8d09d7a85b4d41736eaea758f7ca94e06746f978112d0",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Feb 2023",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Feb 2023",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
-          "capturedAt": "2026-07-15T22:37:40.476Z",
-          "pageHash": "8f22685cda2aaefbd7f8d09d7a85b4d41736eaea758f7ca94e06746f978112d0",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "sourceType": "provider_owned",
-          "excerpt": "Yes, Being With requires a referral from your GP.",
-          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
-          "capturedAt": "2026-07-15T22:37:42.196Z",
-          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "contactPath",
-          "value": "current practice enquiry",
-          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "sourceType": "provider_owned",
-          "excerpt": "We also encourage you to send our details to your local GP if you’d like a referral.",
-          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
-          "capturedAt": "2026-07-15T22:37:43.973Z",
-          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "Being With's current public pages confirm Dr Rachel Kan, the practice contact route, fees, and a GP-referral requirement, but they publish no current wait time or explicit accepting status. The RANZCP profile's less-than-one-month wait was last updated in February 2023. Contact and referral wording are not treated as availability, so the stale wait remains deferred and is not refreshed.",
-      "codexReview": {
-        "researchPassId": "research-20260716-rachel-kan-availability-1",
-        "verificationPassId": "verify-20260716-rachel-kan-availability-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": false,
-      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "failed",
-      "codexEvidenceErrors": [
-        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-6743",
-      "providerName": "Dr Caleb Armstrong",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Caleb Armstrong",
-        "practiceName": "Anteris",
-        "email": "referrals@anteris.nz",
-        "website": "https://www.anteris.nz/",
-        "source": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-        "sourceQuality": "provider-owned page",
-        "referralSourceUrl": "https://www.anteris.nz/referrals",
-        "referralSourceExcerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-        "referralLastChecked": "2026-07-16",
-        "referralNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-      "sourceExcerpt": "Dr Caleb Armstrong",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Caleb Armstrong",
-          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Caleb Armstrong",
-          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:45.604Z",
-          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "practiceName",
-          "value": "Anteris",
-          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "sourceType": "provider_owned",
-          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
-          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:45.604Z",
-          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "email",
-          "value": "referrals@anteris.nz",
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "referrals@anteris.nz",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:47.584Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "website",
-          "value": "https://www.anteris.nz/",
-          "sourceUrl": "https://www.anteris.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "https://www.anteris.nz/",
-          "finalUrl": "https://www.anteris.nz/",
-          "capturedAt": "2026-07-15T22:37:49.129Z",
-          "pageHash": "38a1010c97caea6da7f79118f9cd55edf0c1f7a07936c5a3860054e127a36655",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "source",
-          "value": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "sourceType": "provider_owned",
-          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
-          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:45.604Z",
-          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "sourceQuality",
-          "value": "provider-owned page",
-          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "sourceType": "provider_owned",
-          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
-          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:45.604Z",
-          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://www.anteris.nz/referrals",
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:47.584Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:47.584Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "referralLastChecked",
-          "value": "2026-07-16",
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:47.584Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "referralNeedsManualReview",
-          "value": false,
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:47.584Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        }
-      ],
-      "auditRulesResolved": [
-        "weak-telehealth-evidence",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "reviewNotes": "Anteris's provider-owned clinician page identifies Dr Caleb Armstrong, the referral page publishes the shared referrals email and GP-referral pathway, and the current home page states that the practice provides telehealth. The direct sources replace the stale directory as the public website/source. The conflicting legacy physical-address material is not changed because this lane cannot safely update coordinates, and no availability claim is inferred.",
-      "codexReview": {
-        "researchPassId": "research-20260716-caleb-armstrong-practice-referral-1",
-        "verificationPassId": "verify-20260716-caleb-armstrong-practice-referral-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": false,
-      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "failed",
-      "codexEvidenceErrors": [
-        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice",
-        "https://www.anteris.nz/: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "reviewId": "provider:ranzcp-6743",
-      "reviewIds": [
-        "provider:ranzcp-6743"
-      ],
-      "providerId": "ranzcp-6743",
-      "providerName": "Dr Caleb Armstrong",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Apr 2023",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:50.697Z",
-          "pageHash": "3c8409ff8873f593163e3fafa405b0b03a7ce1a999c795409262ee821c6b5ead",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Apr 2023",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Apr 2023",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
-          "capturedAt": "2026-07-15T22:37:50.697Z",
-          "pageHash": "3c8409ff8873f593163e3fafa405b0b03a7ce1a999c795409262ee821c6b5ead",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "onlineAvailable",
-          "value": true,
-          "sourceUrl": "https://www.anteris.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We have now transitioned to a fully tele-health service for psychiatric assessment and treatment.",
-          "finalUrl": "https://www.anteris.nz/",
-          "capturedAt": "2026-07-15T22:37:52.446Z",
-          "pageHash": "38a1010c97caea6da7f79118f9cd55edf0c1f7a07936c5a3860054e127a36655",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        },
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.anteris.nz/referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
-          "finalUrl": "https://www.anteris.nz/referrals",
-          "capturedAt": "2026-07-15T22:37:54.301Z",
-          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
-          "verified": false,
-          "verificationErrors": [
-            "source identity does not match the provider or known practice"
-          ]
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "Current Anteris pages corroborate Dr Caleb Armstrong's practice, telehealth delivery, and GP-referral pathway, but they do not publish a clinician-specific current wait or an explicit accepting status. The RANZCP profile's 1-3 month wait was last updated in April 2023. Referral and booking infrastructure are not treated as acceptance, so availability remains deferred.",
-      "codexReview": {
-        "researchPassId": "research-20260716-caleb-armstrong-availability-location-1",
-        "verificationPassId": "verify-20260716-caleb-armstrong-availability-location-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": false,
-      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "failed",
-      "codexEvidenceErrors": [
-        "https://www.anteris.nz/: source identity does not match the provider or known practice",
-        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "reviewId": "provider:ranzcp-7045",
-      "reviewIds": [
-        "provider:ranzcp-7045",
-        "discovery:suggestion:clinician-domain:dr-neena-joseph:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-7045",
-      "providerName": "Dr Neena Joseph",
+      "providerId": "ranzcp-7046",
+      "providerName": "Dr John Joseph",
       "action": "move_to_watchlist",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Neena Joseph",
-        "practiceName": "Auckland Psychiatrist",
-        "website": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-        "source": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-        "sourceQuality": "provider-owned page",
         "availabilityStatus": "not_accepting",
         "availabilityCheckedAt": "2026-07-16",
         "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
-        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
         "availabilityNeedsManualReview": false
       },
-      "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+      "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
       "sourceExcerpt": "We are not accepting new clinical referrals or new patients.",
       "sourceEvidence": [
         {
-          "field": "clinicianName",
-          "value": "Dr Neena Joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "field": "identity",
+          "value": "Dr John Joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
-          "excerpt": "Dr Neena Joseph",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "practiceName",
-          "value": "Auckland Psychiatrist",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceType": "provider_owned",
-          "excerpt": "Auckland Psychiatrist",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "website",
-          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceType": "provider_owned",
-          "excerpt": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "source",
-          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Neena Joseph - AucklandPsychiatrist",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "sourceQuality",
-          "value": "provider-owned page",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Neena Joseph - AucklandPsychiatrist",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "excerpt": "Dr John Joseph",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityStatus",
           "value": "not_accepting",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
           "verified": true,
           "verificationErrors": []
         },
@@ -623,7 +58,7 @@
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
           "finalUrl": "https://www.aucklandpsychiatrist.nz/clinical-referrals",
-          "capturedAt": "2026-07-15T22:37:57.822Z",
+          "capturedAt": "2026-07-15T23:36:16.968Z",
           "pageHash": "4c985885b65fa24eb4869df9457717dc1b24713ea862390adb1065f59b9b1aa7",
           "verified": true,
           "verificationErrors": []
@@ -631,48 +66,60 @@
         {
           "field": "availabilityCheckedAt",
           "value": "2026-07-16",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityEvidence",
           "value": "We are not accepting new clinical referrals or new patients.",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilitySource",
-          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "value": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityNeedsManualReview",
           "value": false,
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
           "sourceType": "provider_owned",
           "excerpt": "We are not accepting new clinical referrals or new patients.",
-          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
-          "capturedAt": "2026-07-15T22:37:55.825Z",
-          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:14.935Z",
+          "pageHash": "a451f40a527f46e7ddcf13a8629a899f87be122d8d336f33b9b4371820d1ae40",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Sep 2021",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Sep 2021",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+          "capturedAt": "2026-07-15T23:36:18.362Z",
+          "pageHash": "4f50b4fb992863384e9bec181e6f20514177a28e1c7afdc7dde3734427a62d92",
           "verified": true,
           "verificationErrors": []
         }
@@ -681,51 +128,298 @@
         "weak-telehealth-evidence",
         "stale-availability",
         "discovery-suggestion",
-        "update_existing_provider"
+        "update_existing_provider",
+        "google-places-candidate",
+        "corroborate_existing_provider"
       ],
-      "reviewNotes": "Dr Neena Joseph's provider-owned clinician page and clinical-referrals page both explicitly state that the practice is not accepting new clinical referrals or patients. The older RANZCP profile still advertises a 1-3 month wait and was last updated in November 2023. The explicit current restriction takes precedence: the record is removed from live recommendations and retained on the reversible availability watchlist for future monitoring. No self-referral, telehealth, cultural, scope, or verification claim is added.",
+      "reviewNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
       "codexReview": {
-        "researchPassId": "research-20260716-neena-joseph-availability-1",
-        "verificationPassId": "verify-20260716-neena-joseph-availability-2",
+        "researchPassId": "research-20260716-john-joseph-clinical-closure-1",
+        "verificationPassId": "verify-20260716-john-joseph-clinical-closure-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T23:36:14.934Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:ranzcp-7544",
+      "reviewIds": [
+        "provider:ranzcp-7544",
+        "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-7544",
+      "providerName": "Dr Kang Tan",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-16",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Dr Kang Tan",
+        "phone": "04 462 4088",
+        "email": "office.ktpsychiatry@gmail.com",
+        "source": "https://www.ktpsychiatry.co.nz/",
+        "sourceQuality": "provider-owned page",
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "There may be a 3 to 4 months wait for non-urgent assessment",
+        "availabilitySource": "https://www.ktpsychiatry.co.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+      "sourceExcerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Dr Kang Tan",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Kang Tan",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "phone",
+          "value": "04 462 4088",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "04 462 4088",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "email",
+          "value": "office.ktpsychiatry@gmail.com",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "office.ktpsychiatry@gmail.com",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "source",
+          "value": "https://www.ktpsychiatry.co.nz/",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Kang Tan | Specialist Psychiatry",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "sourceQuality",
+          "value": "provider-owned page",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Kang Tan | Specialist Psychiatry",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+          "capturedAt": "2026-07-15T23:36:21.882Z",
+          "pageHash": "744c62f8a286f2b0d0631b60dc7640cd875e2cc939faa164f9303054292a6499",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityCheckedAt",
+          "value": "2026-07-16",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://www.ktpsychiatry.co.nz/",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityNeedsManualReview",
+          "value": false,
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Referral from a GP is necessary in most cases.",
+          "finalUrl": "https://www.ktpsychiatry.co.nz/",
+          "capturedAt": "2026-07-15T23:36:20.151Z",
+          "pageHash": "f71619cbdf0c54187bb7e2067cfe36459ba99da20feb01139db047c3c1051486",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "reviewNotes": "Dr Kang Tan's provider-owned site identifies the clinician, publishes the current phone and email, states that GP referral is necessary in most cases, and gives a current three-to-four-month non-urgent assessment wait. The explicit wait is treated as waitlist evidence, not as accepting availability; the booking control is not used as acceptance evidence. The direct source replaces the stale directory as the evidence source. The provider-owned page publishes a different Wellington address, but location and coordinates remain unchanged in this restricted lane and retain their existing geocode review flag. No scope, cultural, telehealth, gender, age-group, patient-group, or verification claim is added.",
+      "codexReview": {
+        "researchPassId": "research-20260716-kang-tan-contact-wait-1",
+        "verificationPassId": "verify-20260716-kang-tan-contact-wait-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T23:36:14.934Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:ranzcp-7734",
+      "reviewIds": [
+        "provider:ranzcp-7734",
+        "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-7734",
+      "providerName": "Dr M Shanmukha Swamy Lokesh",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-16",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2018",
+      "sourceEvidence": [
+        {
+          "field": "identity",
+          "value": "Dr M Shanmukha Swamy Lokesh",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "sourceType": "professional_directory",
+          "excerpt": "Dr M Shanmukha Swamy Lokesh",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "capturedAt": "2026-07-15T23:36:23.361Z",
+          "pageHash": "7032fe5b3940ae08629d477989602ec1289f9e845dbe0081347ce3c27db237b6",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "capturedAt": "2026-07-15T23:36:23.361Z",
+          "pageHash": "7032fe5b3940ae08629d477989602ec1289f9e845dbe0081347ce3c27db237b6",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Aug 2018",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Aug 2018",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "capturedAt": "2026-07-15T23:36:23.361Z",
+          "pageHash": "7032fe5b3940ae08629d477989602ec1289f9e845dbe0081347ce3c27db237b6",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "sourceType": "professional_directory",
+          "excerpt": "you must first see your GP for a referral and to discuss your treatment options",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+          "capturedAt": "2026-07-15T23:36:23.361Z",
+          "pageHash": "7032fe5b3940ae08629d477989602ec1289f9e845dbe0081347ce3c27db237b6",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The only identity-bound wait and referral evidence is the RANZCP profile, which was last updated in August 2018. The research pass found no current clinician-specific accepting, wait, or referral statement that could be safely bound to the stored full name. Generic clinic booking language is not availability evidence. The record remains unchanged and is deferred for stronger identity-bound evidence.",
+      "codexReview": {
+        "researchPassId": "research-20260716-lokesh-availability-identity-1",
+        "verificationPassId": "verify-20260716-lokesh-availability-identity-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T23:36:14.934Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     }
   ],
-  "errors": [
-    {
-      "providerId": "ranzcp-6009",
-      "errors": [
-        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice",
-        "https://www.beingwith.co.nz/contact-being-with/: excerpt is not an exact captured-page substring"
-      ]
-    },
-    {
-      "providerId": "ranzcp-6009",
-      "errors": [
-        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "providerId": "ranzcp-6743",
-      "errors": [
-        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice",
-        "https://www.anteris.nz/: source identity does not match the provider or known practice"
-      ]
-    },
-    {
-      "providerId": "ranzcp-6743",
-      "errors": [
-        "https://www.anteris.nz/: source identity does not match the provider or known practice",
-        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice"
-      ]
-    }
-  ]
+  "errors": []
 }

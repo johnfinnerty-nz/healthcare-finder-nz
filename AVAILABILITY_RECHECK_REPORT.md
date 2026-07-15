@@ -1,6 +1,6 @@
 # Availability Recheck Report
 
-Generated: 2026-07-15T22:39:03.435Z
+Generated: 2026-07-15T23:37:34.885Z
 
 ## Current Behaviour Before This Change
 
@@ -27,16 +27,16 @@ Live providers:
 
 - accepting: 6
 - not_published: 1177
-- waitlist: 30
+- waitlist: 29
 
 Unavailable watchlist:
 
-- not_accepting: 15
+- not_accepting: 16
 - referrals_paused: 6
 
 Regions most affected by unavailable/watchlist records:
 
-- Auckland: 1
+- Auckland: 2
 - Canterbury: 1
 - Hawke's Bay: 2
 - Manawatu-Whanganui: 1
@@ -48,7 +48,7 @@ Regions most affected by unavailable/watchlist records:
 - Waikato: 2
 - West Coast: 1
 
-Findings: 55 total, 0 high (0 unallowlisted), 55 medium, 0 low.
+Findings: 53 total, 0 high (0 unallowlisted), 53 medium, 0 low.
 
 | Severity | Provider | Region / city | Status | Checked | Issue | Suggested action | Source | Allowlisted |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -94,8 +94,6 @@ Findings: 55 total, 0 high (0 unallowlisted), 55 medium, 0 low.
 | medium | ranzcp-6009 - Dr Rachel Kan | Wellington / Wellington Central | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan | no |
 | medium | ranzcp-6743 - Dr Caleb Armstrong | Bay of Plenty / Gate Pa | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong | no |
 | medium | ranzcp-7045 - Dr Neena Joseph | Auckland / Avondale | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph | no |
-| medium | ranzcp-7046 - Dr John Joseph | Auckland / Mt Albert | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph | no |
-| medium | ranzcp-7544 - Dr Kang Tan | Wellington / Wellington | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan | no |
 | medium | ranzcp-7734 - Dr M Shanmukha Swamy Lokesh | Auckland / Ellerslie | waitlist | 2026-05 | waitlist availability is 75 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh | no |
 | medium | southland-south-coast-psychology-psychiatry - South Coast Psychology Psychiatry | Southland / Invercargill and Gore | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://southcoastpsychology.co.nz/service/psychiatry/ | no |
 | medium | tairawhiti-mauri-psychology - Mauri Psychology | Tairawhiti / Gisborne | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://www.mauripsychology.com/ | no |

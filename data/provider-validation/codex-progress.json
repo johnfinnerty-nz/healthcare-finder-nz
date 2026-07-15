@@ -1204,6 +1204,118 @@
       "lastSourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
       "lastNotes": "Dr Neena Joseph's provider-owned clinician page and clinical-referrals page both explicitly state that the practice is not accepting new clinical referrals or patients. The older RANZCP profile still advertises a 1-3 month wait and was last updated in November 2023. The explicit current restriction takes precedence: the record is removed from live recommendations and retained on the reversible availability watchlist for future monitoring. No self-referral, telehealth, cultural, scope, or verification claim is added.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-7046": {
+      "reviewId": "provider:ranzcp-7046",
+      "providerId": "ranzcp-7046",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "lastNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz",
+      "providerId": "ranzcp-7046",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "lastNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org",
+      "providerId": "ranzcp-7046",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "lastNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "places:google-place-chijm-1aym9hdw0rcrec43aqq6g": {
+      "reviewId": "places:google-place-chijm-1aym9hdw0rcrec43aqq6g",
+      "providerId": "ranzcp-7046",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "lastNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-7544": {
+      "reviewId": "provider:ranzcp-7544",
+      "providerId": "ranzcp-7544",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.ktpsychiatry.co.nz/",
+      "lastNotes": "Dr Kang Tan's provider-owned site identifies the clinician, publishes the current phone and email, states that GP referral is necessary in most cases, and gives a current three-to-four-month non-urgent assessment wait. The explicit wait is treated as waitlist evidence, not as accepting availability; the booking control is not used as acceptance evidence. The direct source replaces the stale directory as the evidence source. The provider-owned page publishes a different Wellington address, but location and coordinates remain unchanged in this restricted lane and retain their existing geocode review flag. No scope, cultural, telehealth, gender, age-group, patient-group, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org",
+      "providerId": "ranzcp-7544",
+      "status": "completed",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T23:36:49.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.ktpsychiatry.co.nz/",
+      "lastNotes": "Dr Kang Tan's provider-owned site identifies the clinician, publishes the current phone and email, states that GP referral is necessary in most cases, and gives a current three-to-four-month non-urgent assessment wait. The explicit wait is treated as waitlist evidence, not as accepting availability; the booking control is not used as acceptance evidence. The direct source replaces the stale directory as the evidence source. The provider-owned page publishes a different Wellington address, but location and coordinates remain unchanged in this restricted lane and retain their existing geocode review flag. No scope, cultural, telehealth, gender, age-group, patient-group, or verification claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-7734": {
+      "reviewId": "provider:ranzcp-7734",
+      "providerId": "ranzcp-7734",
+      "status": "deferred",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T23:36:49.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+      "lastNotes": "The only identity-bound wait and referral evidence is the RANZCP profile, which was last updated in August 2018. The research pass found no current clinician-specific accepting, wait, or referral statement that could be safely bound to the stored full name. Generic clinic booking language is not availability evidence. The record remains unchanged and is deferred for stronger identity-bound evidence.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org",
+      "providerId": "ranzcp-7734",
+      "status": "deferred",
+      "batchId": "codex-20260715232830-bdd65411",
+      "startedAt": "2026-07-15T23:28:30.142Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T23:36:49.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
+      "lastNotes": "The only identity-bound wait and referral evidence is the RANZCP profile, which was last updated in August 2018. The research pass found no current clinician-specific accepting, wait, or referral statement that could be safely bound to the stored full name. Generic clinic booking language is not availability evidence. The record remains unchanged and is deferred for stronger identity-bound evidence.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -1323,9 +1435,18 @@
         "ranzcp-6743",
         "ranzcp-7045"
       ]
+    },
+    {
+      "batchId": "codex-20260715232830-bdd65411",
+      "generatedAt": "2026-07-15T23:28:30.142Z",
+      "providerIds": [
+        "ranzcp-7046",
+        "ranzcp-7544",
+        "ranzcp-7734"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T22:38:36.128Z",
+  "updatedAt": "2026-07-15T23:36:49.461Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -2013,6 +2134,70 @@
       "action": "move_to_watchlist",
       "status": "deferred",
       "at": "2026-07-15T22:38:36.128Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-7046",
+      "providerId": "ranzcp-7046",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz",
+      "providerId": "ranzcp-7046",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org",
+      "providerId": "ranzcp-7046",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "places:google-place-chijm-1aym9hdw0rcrec43aqq6g",
+      "providerId": "ranzcp-7046",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-7544",
+      "providerId": "ranzcp-7544",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org",
+      "providerId": "ranzcp-7544",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-7734",
+      "providerId": "ranzcp-7734",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T23:36:49.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org",
+      "providerId": "ranzcp-7734",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T23:36:49.461Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

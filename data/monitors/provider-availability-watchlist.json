@@ -1027,6 +1027,75 @@
         "availabilitySource": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
         "availabilityNeedsManualReview": false
       }
+    },
+    {
+      "id": "ranzcp-7046",
+      "name": "Dr John Joseph",
+      "type": "psychiatrist",
+      "region": "Auckland",
+      "city": "Mt Albert",
+      "url": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "lastKnownStatus": "unavailable",
+      "reason": "We are not accepting new clinical referrals or new patients.",
+      "unavailablePatterns": [
+        "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
+        "no\\s+longer\\s+(?:seeing|taking|accepting)\\s+new\\s+(?:clients|patients|referrals)",
+        "books?\\s+(?:are\\s+)?closed",
+        "no\\s+(?:current\\s+)?availability",
+        "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",
+        "referrals?\\s+(?:are\\s+)?paused"
+      ],
+      "availabilityStatus": "not_accepting",
+      "availabilityCheckedAt": "2026-07-16",
+      "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+      "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "availabilityNeedsManualReview": false,
+      "availablePatterns": [
+        "taking\\s+new\\s+(?:clients|patients|referrals)",
+        "accepting\\s+new\\s+(?:clients|patients|referrals)",
+        "new\\s+client\\s+enquir(?:y|ies)",
+        "book\\s+(?:an\\s+)?appointment"
+      ],
+      "checkedAt": "2026-07-16",
+      "providerCandidate": {
+        "name": "Dr John Joseph",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Mt Albert",
+        "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+        "phone": "0212416007",
+        "text": "",
+        "email": "info@aucklandpsychiatrist.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "maori",
+          "asian",
+          "rainbow",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
+        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+        "confidence": "medium",
+        "sourceQuality": "professional register or directory",
+        "availabilityStatus": "not_accepting",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "availabilityNeedsManualReview": false
+      }
     }
   ]
 }
