@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715113229-49e3a3ae",
-  "generatedAt": "2026-07-15T11:32:29.708Z",
+  "batchId": "codex-20260715222651-003f7cdc",
+  "generatedAt": "2026-07-15T22:26:51.011Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,10 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "ranzcp-5617",
+      "providerId": "ranzcp-6009",
       "reviewIds": [
-        "provider:ranzcp-5617",
-        "discovery:suggestion:clinician-domain:dr-helen-austin:yourhealthinmind.org"
+        "provider:ranzcp-6009",
+        "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -27,164 +27,101 @@
         "Availability review"
       ],
       "auditRules": [
-        "weak-telehealth-evidence",
         "stale-availability",
         "discovery-suggestion",
         "update_existing_provider"
       ],
       "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
         "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
         "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
         "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
-        "medium: weak-telehealth-evidence",
         "medium: stale-availability",
         "provider details need manual verification",
         "availability needs manual review",
         "availability status is waitlist",
         "provider discovery suggestion",
-        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
         "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Helen Austin\", practice \"(none)\". | Trauma or sexual harm: Experience with Doctors, psychiatrists or medical students Summary Areas of interest include reflective supervision, physician wellness, burnout and vicarious trauma Seeing a psych | Work, study, money, or housing stress: nguages spoken English Experience with Doctors, psychiatrists or medical students Summary Areas of interest include reflective supervision, physician wellness, burnout and vicariou | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +64211048776",
+      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Profile says people must first see their GP for referral and treatment-options discussion. | Source scan: clinician \"Dr Rachel Kan\", practice \"Being With\". | Depression or low mood: referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cognitive behavioural therapy Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cog | Trauma or sexual harm: ions. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Cognitive behavioural therapy Depression Obsessive-compulsive disorders Post-traumatic stres | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 04 472 4198",
       "currentRecord": {
-        "name": "Dr Helen Austin",
+        "name": "Dr Rachel Kan",
         "clinicianName": "",
-        "practiceName": "",
+        "practiceName": "Being With",
         "type": "psychiatrist",
-        "region": "Nelson Marlborough Tasman",
-        "city": "Blenheim",
-        "address": "Blenheim, Blenheim, 7243",
-        "phone": "+64211048776",
+        "region": "Wellington",
+        "city": "Wellington Central",
+        "address": "Level 2, Central House, 26 Brandon St, Wellington Central, Wellington, 6011",
+        "phone": "04 472 4198",
         "text": "",
-        "email": "",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+        "email": "Reception@beingwith.co.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "appointment wait: Less than",
         "requiresReferral": true,
         "referralType": "gp",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "referralSourceExcerpt": "Profile says people must first see their GP for referral and treatment-options discussion.",
         "tags": [
           "psychiatrist",
           "medical-specialist",
           "fit",
-          "telehealth",
           "cost",
+          "depression",
+          "anxiety",
+          "trauma",
           "direct-contact"
         ],
         "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
+        "advertisedSpecialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Cognitive behavioural therapy",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Supportive psychotherapy"
+        ],
+        "specialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Cognitive behavioural therapy",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Post-traumatic stress disorder",
+          "Supportive psychotherapy"
+        ],
         "services": [
-          "Professional supervision"
+          "ACC Assessment"
         ],
         "patientGroups": [
-          "Doctors, psychiatrists or medical students"
+          "Families"
         ],
         "ageGroups": [
+          "Mother and baby",
+          "Ages 1-17",
           "Ages 18-60",
-          "Ages 60+"
+          "Ages 16-24"
         ],
         "cost": ""
       },
       "score": 410
     },
     {
-      "providerId": "ranzcp-576",
+      "providerId": "ranzcp-6743",
       "reviewIds": [
-        "provider:ranzcp-576",
-        "discovery:suggestion:clinician-domain:dr-murray-patton:yourhealthinmind.org"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Availability review"
-      ],
-      "auditRules": [
-        "stale-availability",
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "auditIssues": [
-        "waitlist availability is 75 days old; target cadence is 30 days.",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist",
-        "provider discovery suggestion",
-        "existing provider enrichment; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
-        "existing provider update requires human approval before patching"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton"
-      ],
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Murray Patton\", practice \"(none)\". | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | Signal: hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebat | Signal: Link/button text: How to get an appointment | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: +64 212 834562",
-      "currentRecord": {
-        "name": "Dr Murray Patton",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Auckland",
-        "city": "Milford",
-        "address": "Milford, Auckland, 0620",
-        "phone": "+64 212 834562",
-        "text": "",
-        "email": "",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-        "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "appointment wait: 1-3",
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "direct-contact"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [
-          "Civil medicolegal",
-          "Professional supervision"
-        ],
-        "patientGroups": [],
-        "ageGroups": [],
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "ranzcp-5889",
-      "reviewIds": [
-        "provider:ranzcp-5889",
-        "discovery:suggestion:clinician-domain:dr-struan-robertson:yourhealthinmind.org"
+        "provider:ranzcp-6743",
+        "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -222,23 +159,23 @@
         "existing provider update requires human approval before patching"
       ],
       "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson"
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong"
       ],
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Struan Robertson\", practice \"(none)\". | Depression or low mood: st see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Bipolar disorder Depression Psychosis | Trauma or sexual harm: options. Take these contact details when you see your GP. Expertise Addiction ADHD Bipolar disorder Depression Psychosis Post-traumatic stress disorder Complex trauma Treats these  | Alcohol, drug, or gambling harm: ntal health support services Find a psychiatrist Back to Results Home Find a psychiatrist Results Profile Dr Struan Robertson FRANZCP Certificate in Addiction Psychiatry New search | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 0272442601",
+      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Caleb Armstrong\", practice \"(none)\". | Depression or low mood: referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Brain injury Bipolar disorder Depression Mindfulne | Anxiety, panic, or overwhelm: 12 TAURANGA Anteris 1017 Cameron Road GATE PA 3112 TAURANGA\"> View on map 07 2827579 www.anteris.nz tauranga@anteris.nz Neurotherapies Mood Disorder and Anxiety Clinic Neurotherapi | Trauma or sexual harm: e your GP. Expertise ADHD Anxiety disorders Brain injury Bipolar disorder Depression Mindfulness Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 07 2827579",
       "currentRecord": {
-        "name": "Dr Struan Robertson",
+        "name": "Dr Caleb Armstrong",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
-        "region": "Wellington",
-        "city": "CBD",
-        "address": "CBD, Wellington, 6011",
-        "phone": "0272442601",
+        "region": "Bay of Plenty",
+        "city": "Gate Pa",
+        "address": "1017 Cameron Road, Gate Pa, Tauranga, 3112",
+        "phone": "07 2827579",
         "text": "",
-        "email": "struan.robertson@live.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+        "email": "tauranga@anteris.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
         "bookingUrl": "",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
         "availabilityStatus": "waitlist",
         "availabilityEvidence": "appointment wait: 1-3",
         "requiresReferral": true,
@@ -250,45 +187,156 @@
           "fit",
           "telehealth",
           "maori",
-          "rainbow",
+          "cost",
           "depression",
+          "anxiety",
           "trauma",
-          "addiction",
           "direct-contact"
         ],
         "needScope": [],
         "advertisedSpecialties": [
-          "Addiction",
           "ADHD",
+          "Anxiety disorders",
           "Bipolar disorder",
-          "Complex trauma",
+          "Brain injury",
           "Depression",
+          "Forensic",
+          "Mindfulness",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
           "Post-traumatic stress disorder",
-          "Psychosis"
+          "Psychosis",
+          "Schizophrenia",
+          "Sexual assault / abuse treatment"
         ],
         "specialties": [
-          "Addiction",
           "ADHD",
+          "Anxiety disorders",
           "Bipolar disorder",
-          "Complex trauma",
+          "Brain injury",
           "Depression",
+          "Forensic",
+          "Mindfulness",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
           "Post-traumatic stress disorder",
-          "Psychosis"
+          "Psychosis",
+          "Schizophrenia",
+          "Sexual assault / abuse treatment"
         ],
-        "services": [],
+        "services": [
+          "ACC Treatment provider",
+          "Civil medicolegal",
+          "Criminal medicolegal",
+          "Family court medicolegal",
+          "Insurance opinions / reports",
+          "Professional supervision",
+          "Experience with interpreters",
+          "Available for COVID-19 healthcare workers"
+        ],
         "patientGroups": [
           "Doctors, psychiatrists or medical students",
-          "Gender diverse",
-          "Gay and lesbian",
+          "Intellectual disability",
           "Maori",
-          "Non-English speaking",
-          "Families",
-          "Doctors psychiatrists or medical students"
+          "Military and veterans",
+          "Physical disability",
+          "Emergency services personnel"
         ],
         "ageGroups": [
           "Ages 1-17",
           "Ages 18-60",
-          "Ages 16-24"
+          "Ages 60+"
+        ],
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "ranzcp-7045",
+      "reviewIds": [
+        "provider:ranzcp-7045",
+        "discovery:suggestion:clinician-domain:dr-neena-joseph:yourhealthinmind.org"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Availability review"
+      ],
+      "auditRules": [
+        "weak-telehealth-evidence",
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "Telehealth or online availability is set but source fields do not clearly support remote care.",
+        "waitlist availability is 75 days old; target cadence is 30 days.",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
+        "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "medium: weak-telehealth-evidence",
+        "medium: stale-availability",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "availability status is waitlist",
+        "provider discovery suggestion",
+        "existing provider enrichment; source-fit: medium weak-telehealth-evidence - Telehealth or online availability is set but source fields do not clearly support remote care.; availability: medium stale-availability - waitlist availability is 31 days old; target cadence is 30 days.; review queue high: medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist",
+        "existing provider update requires human approval before patching"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph"
+      ],
+      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Neena Joseph\", practice \"(none)\". | Asian: these age groups Ages 18-60 Offers telepsychiatry Yes Qualifications Fellow of the RANZCP Advanced Training Certificate in Forensic Psychiatry Languages spoken Hindi Malayalam Engl | Telehealth / phone or video appointments: a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointm | Signal: hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebat | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.\nSources: official register | Evidence: Seed value from providers.json: 0064212416007",
+      "currentRecord": {
+        "name": "Dr Neena Joseph",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Avondale",
+        "address": "125 Blockhouse Bay Road, Avondale, Auckland, 1026",
+        "phone": "0064212416007",
+        "text": "",
+        "email": "admin@aucklandpsychiatrist.nz",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph",
+        "bookingUrl": "",
+        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7045/dr-neena-joseph",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "appointment wait: 1-3",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "asian",
+          "cost",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [
+          "ACC Assessment",
+          "Civil medicolegal",
+          "Criminal medicolegal",
+          "Family court medicolegal",
+          "Shared care"
+        ],
+        "patientGroups": [],
+        "ageGroups": [
+          "Ages 18-60"
         ],
         "cost": ""
       },

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T11:32:21.682Z",
+  "generatedAt": "2026-07-15T22:26:45.481Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -17038,7 +17038,7 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-5617",
       "name": "Dr Helen Austin",
-      "clinicianName": "",
+      "clinicianName": "Dr Helen Austin",
       "practiceName": "",
       "type": "psychiatrist",
       "region": "Nelson Marlborough Tasman",
@@ -17433,7 +17433,8 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Helen Austin"
       },
       "auditFindings": [
         {
@@ -19873,8 +19874,8 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-5889",
       "name": "Dr Struan Robertson",
-      "clinicianName": "",
-      "practiceName": "",
+      "clinicianName": "Dr Struan Robertson",
+      "practiceName": "Psych Services",
       "type": "psychiatrist",
       "region": "Wellington",
       "city": "CBD",
@@ -20326,7 +20327,7 @@
         ]
       },
       "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Struan Robertson\", practice \"(none)\". | Depression or low mood: st see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise Addiction ADHD Bipolar disorder Depression Psychosis | Trauma or sexual harm: options. Take these contact details when you see your GP. Expertise Addiction ADHD Bipolar disorder Depression Psychosis Post-traumatic stress disorder Complex trauma Treats these  | Alcohol, drug, or gambling harm: ntal health support services Find a psychiatrist Back to Results Home Find a psychiatrist Results Profile Dr Struan Robertson FRANZCP Certificate in Addiction Psychiatry New search | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Struan Robertson Wellington / CBD RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Bipolar disorder, Complex trauma, Depression, Post-traumatic stress disorder, Psychosis. Patient groups listed include Doctors, psychiatrists or medical students, Gender diverse, Gay and lesbian, Maori, Non-English speaking, Families, Doctors psychiatrists or medical students. Works with Ages 1-17, Ages 18-60, Ages 16-24. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "publicCardPreviewText": "Dr Struan Robertson, Psych Services Wellington / CBD RANZCP Your Health in Mind psychiatrist listing. Special interests include Addiction, ADHD, Bipolar disorder, Complex trauma, Depression, Post-traumatic stress disorder, Psychosis. Patient groups listed include Doctors, psychiatrists or medical students, Gender diverse, Gay and lesbian, Maori, Non-English speaking, Families, Doctors psychiatrists or medical students. Works with Ages 1-17, Ages 18-60, Ages 16-24. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
       "currentProvider": {
         "id": "ranzcp-5889",
         "name": "Dr Struan Robertson",
@@ -20437,7 +20438,9 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Struan Robertson",
+        "practiceName": "Psych Services"
       },
       "auditFindings": [
         {
@@ -37882,7 +37885,7 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-576",
       "name": "Dr Murray Patton",
-      "clinicianName": "",
+      "clinicianName": "Dr Murray Patton",
       "practiceName": "",
       "type": "psychiatrist",
       "region": "Auckland",
@@ -38192,7 +38195,8 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Murray Patton"
       },
       "auditFindings": [
         {

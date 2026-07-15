@@ -1,34 +1,143 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T11:41:51.395Z",
+  "generatedAt": "2026-07-15T22:37:33.557Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-helen-austin:yourhealthinmind.org",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-helen-austin:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:dr-rachel-kan:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-5617",
-      "providerName": "Dr Helen Austin",
+      "providerId": "ranzcp-6009",
+      "providerName": "Dr Rachel Kan",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
+      "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Helen Austin"
+        "clinicianName": "Dr Rachel Kan",
+        "email": "reception@beingwith.co.nz",
+        "website": "https://www.beingwith.co.nz/contact-being-with/",
+        "source": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+        "sourceQuality": "provider-owned page",
+        "referralSourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+        "referralSourceExcerpt": "Yes, Being With requires a referral from your GP.",
+        "referralLastChecked": "2026-07-16",
+        "referralNeedsManualReview": false
       },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-      "sourceExcerpt": "Dr Helen Austin",
+      "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+      "sourceExcerpt": "Rachel Kan",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Helen Austin",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+          "value": "Dr Rachel Kan",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
           "sourceType": "professional_directory",
-          "excerpt": "Dr Helen Austin",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "capturedAt": "2026-07-15T11:41:51.397Z",
-          "pageHash": "c18f97916102bd51cfa6b534a3c5b730720bca72fa2ab069971f1fb609d0bbdd",
+          "excerpt": "Dr Rachel Kan",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
+          "capturedAt": "2026-07-15T22:37:33.558Z",
+          "pageHash": "d8dc2abe5939c406e732e65f61efc5ac6c187afdf4c0932cdfc61363aee2103c",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "email",
+          "value": "reception@beingwith.co.nz",
+          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "sourceType": "provider_owned",
+          "excerpt": "reception@beingwith.co.nz",
+          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "capturedAt": "2026-07-15T22:37:35.339Z",
+          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "website",
+          "value": "https://www.beingwith.co.nz/contact-being-with/",
+          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "sourceType": "provider_owned",
+          "excerpt": "https://www.beingwith.co.nz/contact-being-with/",
+          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "capturedAt": "2026-07-15T22:37:35.339Z",
+          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
+          "verified": false,
+          "verificationErrors": [
+            "excerpt is not an exact captured-page substring",
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "source",
+          "value": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+          "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+          "sourceType": "provider_owned",
+          "excerpt": "Being With psychiatric team, Rachel Kan - psychiatric assessment & treatment.",
+          "finalUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+          "capturedAt": "2026-07-15T22:37:37.200Z",
+          "pageHash": "d4f60a2f41a5b851f7c60885968f328b277fcaca42549b7ea2f232d2dc4a19e8",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "sourceQuality",
+          "value": "provider-owned page",
+          "sourceUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+          "sourceType": "provider_owned",
+          "excerpt": "Being With psychiatric team, Rachel Kan - psychiatric assessment & treatment.",
+          "finalUrl": "https://www.beingwith.co.nz/psychiatric-team-rachel-kan/",
+          "capturedAt": "2026-07-15T22:37:37.200Z",
+          "pageHash": "d4f60a2f41a5b851f7c60885968f328b277fcaca42549b7ea2f232d2dc4a19e8",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceType": "provider_owned",
+          "excerpt": "Yes, Being With requires a referral from your GP.",
+          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "capturedAt": "2026-07-15T22:37:38.834Z",
+          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "Yes, Being With requires a referral from your GP.",
+          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceType": "provider_owned",
+          "excerpt": "Yes, Being With requires a referral from your GP.",
+          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "capturedAt": "2026-07-15T22:37:38.834Z",
+          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralLastChecked",
+          "value": "2026-07-16",
+          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceType": "provider_owned",
+          "excerpt": "Yes, Being With requires a referral from your GP.",
+          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "capturedAt": "2026-07-15T22:37:38.834Z",
+          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralNeedsManualReview",
+          "value": false,
+          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceType": "provider_owned",
+          "excerpt": "Yes, Being With requires a referral from your GP.",
+          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "capturedAt": "2026-07-15T22:37:38.834Z",
+          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
           "verified": true,
           "verificationErrors": []
         }
@@ -37,408 +146,586 @@
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The live RANZCP profile identifies Dr Helen Austin, so the clinician field can be populated safely. No practice, contact, location, availability, or telehealth field is changed: the directory profile was last updated in April 2020 and conflicts with the current provider-owned MindFix site's Christchurch location and professional-supervision scope.",
+      "reviewNotes": "The live RANZCP profile identifies Dr Rachel Kan, while Being With's reachable clinician, contact, and FAQ pages independently bind her to the practice, publish the referral email, and explicitly require a GP referral. The direct clinic contact page replaces the directory as the public website. No availability, specialty, age-group, or patient-group claim is refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-helen-austin-identity-scope-1",
-        "verificationPassId": "verify-20260715-helen-austin-identity-scope-2",
+        "researchPassId": "research-20260716-rachel-kan-contact-referral-1",
+        "verificationPassId": "verify-20260716-rachel-kan-contact-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice",
+        "https://www.beingwith.co.nz/contact-being-with/: excerpt is not an exact captured-page substring"
+      ]
     },
     {
-      "reviewId": "provider:ranzcp-5617",
+      "reviewId": "provider:ranzcp-6009",
       "reviewIds": [
-        "provider:ranzcp-5617"
+        "provider:ranzcp-6009"
       ],
-      "providerId": "ranzcp-5617",
-      "providerName": "Dr Helen Austin",
+      "providerId": "ranzcp-6009",
+      "providerName": "Dr Rachel Kan",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
+      "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://mindfix.nz/",
-      "sourceExcerpt": "Whilst I am based in Christchurch, I also offer professional supervision via Zoom.",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Feb 2023",
       "sourceEvidence": [
-        {
-          "field": "locationConflict",
-          "value": "Christchurch",
-          "sourceUrl": "https://mindfix.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Whilst I am based in Christchurch, I also offer professional supervision via Zoom.",
-          "finalUrl": "https://mindfix.nz/",
-          "capturedAt": "2026-07-15T11:41:53.093Z",
-          "pageHash": "2b97246e3aa1fafa4d1d8e5d34906cbf6cf195205dc53bc86f07fa93068859ae",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "serviceScope",
-          "value": "professional supervision for helping professionals",
-          "sourceUrl": "https://mindfix.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "MindFix offers support to doctors, lawyers and other helping professionals through one to one confidential reflective supervision with Dr Helen Austin",
-          "finalUrl": "https://mindfix.nz/",
-          "capturedAt": "2026-07-15T11:41:53.093Z",
-          "pageHash": "2b97246e3aa1fafa4d1d8e5d34906cbf6cf195205dc53bc86f07fa93068859ae",
-          "verified": true,
-          "verificationErrors": []
-        },
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
           "sourceType": "professional_directory",
           "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "capturedAt": "2026-07-15T11:41:54.618Z",
-          "pageHash": "88fb2b4a08425928e66b713a914ac3f852ae35693f5b5cab0d0571a41eef96e0",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
+          "capturedAt": "2026-07-15T22:37:40.476Z",
+          "pageHash": "8f22685cda2aaefbd7f8d09d7a85b4d41736eaea758f7ca94e06746f978112d0",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Apr 2020",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
+          "value": "profile last updated Feb 2023",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Apr 2020",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "capturedAt": "2026-07-15T11:41:54.618Z",
-          "pageHash": "88fb2b4a08425928e66b713a914ac3f852ae35693f5b5cab0d0571a41eef96e0",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "onlineAvailable",
-          "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "capturedAt": "2026-07-15T11:41:54.618Z",
-          "pageHash": "88fb2b4a08425928e66b713a914ac3f852ae35693f5b5cab0d0571a41eef96e0",
+          "excerpt": "This listing was last updated by this psychiatrist in Feb 2023",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6009/dr-rachel-kan",
+          "capturedAt": "2026-07-15T22:37:40.476Z",
+          "pageHash": "8f22685cda2aaefbd7f8d09d7a85b4d41736eaea758f7ca94e06746f978112d0",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "sourceType": "professional_directory",
-          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5617/dr-helen-austin",
-          "capturedAt": "2026-07-15T11:41:54.618Z",
-          "pageHash": "88fb2b4a08425928e66b713a914ac3f852ae35693f5b5cab0d0571a41eef96e0",
+          "sourceUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "sourceType": "provider_owned",
+          "excerpt": "Yes, Being With requires a referral from your GP.",
+          "finalUrl": "https://www.beingwith.co.nz/being-with-faqs/",
+          "capturedAt": "2026-07-15T22:37:42.196Z",
+          "pageHash": "d872f113b8266f2f1c05864dbe2770c98edaa8b33a79d03a6f45193d513168f9",
           "verified": true,
           "verificationErrors": []
+        },
+        {
+          "field": "contactPath",
+          "value": "current practice enquiry",
+          "sourceUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "sourceType": "provider_owned",
+          "excerpt": "We also encourage you to send our details to your local GP if you’d like a referral.",
+          "finalUrl": "https://www.beingwith.co.nz/contact-being-with/",
+          "capturedAt": "2026-07-15T22:37:43.973Z",
+          "pageHash": "b593bc52d1e93aec582e94bd181851aaf061f24313f0e0e14aa0f1875f024ad0",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still presents a Blenheim psychiatry contact, a less-than-one-month wait, and telepsychiatry, but it says it was last updated in April 2020. MindFix is reachable and identifies Dr Helen Austin, yet its current public wording places her in Christchurch and describes reflective supervision and Psychological First Aid for helping professionals rather than a general private psychiatry intake pathway. The location also conflicts with the stored Blenheim coordinates, which this lane cannot alter. No public recommendation field is refreshed or guessed.",
+      "reviewNotes": "Being With's current public pages confirm Dr Rachel Kan, the practice contact route, fees, and a GP-referral requirement, but they publish no current wait time or explicit accepting status. The RANZCP profile's less-than-one-month wait was last updated in February 2023. Contact and referral wording are not treated as availability, so the stale wait remains deferred and is not refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-helen-austin-location-availability-1",
-        "verificationPassId": "verify-20260715-helen-austin-location-availability-2",
+        "researchPassId": "research-20260716-rachel-kan-availability-1",
+        "verificationPassId": "verify-20260716-rachel-kan-availability-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice"
+      ]
     },
     {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-murray-patton:yourhealthinmind.org",
+      "reviewId": "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-murray-patton:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:dr-caleb-armstrong:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-576",
-      "providerName": "Dr Murray Patton",
+      "providerId": "ranzcp-6743",
+      "providerName": "Dr Caleb Armstrong",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
+      "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Murray Patton"
+        "clinicianName": "Dr Caleb Armstrong",
+        "practiceName": "Anteris",
+        "email": "referrals@anteris.nz",
+        "website": "https://www.anteris.nz/",
+        "source": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+        "sourceQuality": "provider-owned page",
+        "referralSourceUrl": "https://www.anteris.nz/referrals",
+        "referralSourceExcerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+        "referralLastChecked": "2026-07-16",
+        "referralNeedsManualReview": false
       },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-      "sourceExcerpt": "Dr Murray Patton",
+      "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+      "sourceExcerpt": "Dr Caleb Armstrong",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Murray Patton",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr Murray Patton",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "capturedAt": "2026-07-15T11:41:56.045Z",
-          "pageHash": "2fb60e9cbbac7f5759b2e3218695ed36d3a084f07788ae3bca3b8cb2b732751f",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "professionalStatus",
-          "value": "RANZCP Fellow member",
-          "sourceUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr Murray Patton – Fellow member",
-          "finalUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
-          "capturedAt": "2026-07-15T11:41:57.473Z",
-          "pageHash": "dce48981499fa1eed5e9e34ef301d58a45d09db2c8af95a26b0da6ef081794ee",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "discovery-suggestion",
-        "update_existing_provider"
-      ],
-      "reviewNotes": "The live RANZCP profile identifies Dr Murray Patton, and a current RANZCP committee page independently lists him as a Fellow member. Only the structural clinician field is populated; no private-practice, contact, availability, or scope claim is refreshed.",
-      "codexReview": {
-        "researchPassId": "research-20260715-murray-patton-identity-1",
-        "verificationPassId": "verify-20260715-murray-patton-identity-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:ranzcp-576",
-      "reviewIds": [
-        "provider:ranzcp-576"
-      ],
-      "providerId": "ranzcp-576",
-      "providerName": "Dr Murray Patton",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Oct 2024",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "capturedAt": "2026-07-15T11:41:59.436Z",
-          "pageHash": "a6e12a3da9b01496c8ad3491ed05133d762f49b8b7d41207fe88ab26b0a78be6",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Oct 2024",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Oct 2024",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "capturedAt": "2026-07-15T11:41:59.436Z",
-          "pageHash": "a6e12a3da9b01496c8ad3491ed05133d762f49b8b7d41207fe88ab26b0a78be6",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "sourceType": "professional_directory",
-          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/576/dr-murray-patton",
-          "capturedAt": "2026-07-15T11:41:59.436Z",
-          "pageHash": "a6e12a3da9b01496c8ad3491ed05133d762f49b8b7d41207fe88ab26b0a78be6",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "professionalStatus",
-          "value": "RANZCP Fellow member",
-          "sourceUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr Murray Patton – Fellow member",
-          "finalUrl": "https://www.ranzcp.org/college-committees/committees%2C-faculties%2C-sections-networks/committees/membership-engagement-committee",
-          "capturedAt": "2026-07-15T11:42:00.842Z",
-          "pageHash": "f1dcff625ecf74c50aa089f1206238bef45073ad623d2b054a27d9db2271f17e",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The current RANZCP committee page corroborates Dr Murray Patton's professional identity, but it does not establish a current private patient pathway. His finder profile still displays a 1-3 month wait and GP-referral guidance but says it was last updated in October 2024. No reachable provider-owned practice source was found to corroborate current private contact or availability, so those fields are not refreshed.",
-      "codexReview": {
-        "researchPassId": "research-20260715-murray-patton-availability-practice-1",
-        "verificationPassId": "verify-20260715-murray-patton-availability-practice-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-struan-robertson:yourhealthinmind.org",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-struan-robertson:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-5889",
-      "providerName": "Dr Struan Robertson",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Struan Robertson",
-        "practiceName": "Psych Services"
-      },
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-      "sourceExcerpt": "Dr Struan Robertson",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Struan Robertson",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr Struan Robertson",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:02.594Z",
-          "pageHash": "6252e1ed05083e866a623be05d95fd4d74ac8be51f859b5af0f85985aedb92d5",
+          "value": "Dr Caleb Armstrong",
+          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Caleb Armstrong",
+          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:45.604Z",
+          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "practiceName",
-          "value": "Psych Services",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "sourceType": "professional_directory",
-          "excerpt": "Psych Services",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:02.594Z",
-          "pageHash": "6252e1ed05083e866a623be05d95fd4d74ac8be51f859b5af0f85985aedb92d5",
+          "value": "Anteris",
+          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "sourceType": "provider_owned",
+          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
+          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:45.604Z",
+          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
           "verified": true,
           "verificationErrors": []
+        },
+        {
+          "field": "email",
+          "value": "referrals@anteris.nz",
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "referrals@anteris.nz",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:47.584Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "website",
+          "value": "https://www.anteris.nz/",
+          "sourceUrl": "https://www.anteris.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "https://www.anteris.nz/",
+          "finalUrl": "https://www.anteris.nz/",
+          "capturedAt": "2026-07-15T22:37:49.129Z",
+          "pageHash": "38a1010c97caea6da7f79118f9cd55edf0c1f7a07936c5a3860054e127a36655",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "source",
+          "value": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "sourceType": "provider_owned",
+          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
+          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:45.604Z",
+          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "sourceQuality",
+          "value": "provider-owned page",
+          "sourceUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "sourceType": "provider_owned",
+          "excerpt": "Telepsychiatry Team | Dr Caleb Armstrong | Anteris Private Psychiatry",
+          "finalUrl": "https://www.anteris.nz/telepsychiatry-team-profile/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:45.604Z",
+          "pageHash": "f0b4a0567a8936bd5fe25224ef2bccde69df8b88b4448942d8b69e80056dcc23",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.anteris.nz/referrals",
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:47.584Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:47.584Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralLastChecked",
+          "value": "2026-07-16",
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:47.584Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
+        },
+        {
+          "field": "referralNeedsManualReview",
+          "value": false,
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:47.584Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
         }
       ],
       "auditRulesResolved": [
+        "weak-telehealth-evidence",
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The live RANZCP profile identifies Dr Struan Robertson and names his practice as Psych Services. These structural identity fields are populated without changing contact details, availability, telehealth, referral, patient-group, or specialty claims.",
+      "reviewNotes": "Anteris's provider-owned clinician page identifies Dr Caleb Armstrong, the referral page publishes the shared referrals email and GP-referral pathway, and the current home page states that the practice provides telehealth. The direct sources replace the stale directory as the public website/source. The conflicting legacy physical-address material is not changed because this lane cannot safely update coordinates, and no availability claim is inferred.",
       "codexReview": {
-        "researchPassId": "research-20260715-struan-robertson-identity-practice-1",
-        "verificationPassId": "verify-20260715-struan-robertson-identity-practice-2",
+        "researchPassId": "research-20260716-caleb-armstrong-practice-referral-1",
+        "verificationPassId": "verify-20260716-caleb-armstrong-practice-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice",
+        "https://www.anteris.nz/: source identity does not match the provider or known practice"
+      ]
     },
     {
-      "reviewId": "provider:ranzcp-5889",
+      "reviewId": "provider:ranzcp-6743",
       "reviewIds": [
-        "provider:ranzcp-5889"
+        "provider:ranzcp-6743"
       ],
-      "providerId": "ranzcp-5889",
-      "providerName": "Dr Struan Robertson",
+      "providerId": "ranzcp-6743",
+      "providerName": "Dr Caleb Armstrong",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
+      "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Mar 2026",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Apr 2023",
       "sourceEvidence": [
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
           "sourceType": "professional_directory",
           "excerpt": "Approximate wait time for a first appointment: 1-3 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:04.073Z",
-          "pageHash": "d60d4e48b66fb30a1c1571d02966f7c3a427acac26ce4f0d4761dadbb06c753f",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:50.697Z",
+          "pageHash": "3c8409ff8873f593163e3fafa405b0b03a7ce1a999c795409262ee821c6b5ead",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Mar 2026",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
+          "value": "profile last updated Apr 2023",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Mar 2026",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:04.073Z",
-          "pageHash": "d60d4e48b66fb30a1c1571d02966f7c3a427acac26ce4f0d4761dadbb06c753f",
+          "excerpt": "This listing was last updated by this psychiatrist in Apr 2023",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/6743/dr-caleb-armstrong",
+          "capturedAt": "2026-07-15T22:37:50.697Z",
+          "pageHash": "3c8409ff8873f593163e3fafa405b0b03a7ce1a999c795409262ee821c6b5ead",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "onlineAvailable",
           "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:04.073Z",
-          "pageHash": "d60d4e48b66fb30a1c1571d02966f7c3a427acac26ce4f0d4761dadbb06c753f",
-          "verified": true,
-          "verificationErrors": []
+          "sourceUrl": "https://www.anteris.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "We have now transitioned to a fully tele-health service for psychiatric assessment and treatment.",
+          "finalUrl": "https://www.anteris.nz/",
+          "capturedAt": "2026-07-15T22:37:52.446Z",
+          "pageHash": "38a1010c97caea6da7f79118f9cd55edf0c1f7a07936c5a3860054e127a36655",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "sourceType": "professional_directory",
-          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5889/dr-struan-robertson",
-          "capturedAt": "2026-07-15T11:42:04.073Z",
-          "pageHash": "d60d4e48b66fb30a1c1571d02966f7c3a427acac26ce4f0d4761dadbb06c753f",
-          "verified": true,
-          "verificationErrors": []
+          "sourceUrl": "https://www.anteris.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "If there is anything that you are concerned about please visit your GP so they can organise a referral to see us at Anteris.",
+          "finalUrl": "https://www.anteris.nz/referrals",
+          "capturedAt": "2026-07-15T22:37:54.301Z",
+          "pageHash": "2176e07921c86764784bb2667e9e6ab5c16ad9a2e5620de298c58d1ffb62d4f8",
+          "verified": false,
+          "verificationErrors": [
+            "source identity does not match the provider or known practice"
+          ]
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile was updated in March 2026 and supports the stored GP-referral, telepsychiatry, specialty, patient-group, and age-group wording. Its 1-3 month wait claim is nevertheless older than this project's 30-day availability cadence, and no provider-owned Psych Services page was found to corroborate current intake or wait time. The existing waitlist remains lowered and is not refreshed or treated as acceptance.",
+      "reviewNotes": "Current Anteris pages corroborate Dr Caleb Armstrong's practice, telehealth delivery, and GP-referral pathway, but they do not publish a clinician-specific current wait or an explicit accepting status. The RANZCP profile's 1-3 month wait was last updated in April 2023. Referral and booking infrastructure are not treated as acceptance, so availability remains deferred.",
       "codexReview": {
-        "researchPassId": "research-20260715-struan-robertson-availability-telehealth-1",
-        "verificationPassId": "verify-20260715-struan-robertson-availability-telehealth-2",
+        "researchPassId": "research-20260716-caleb-armstrong-availability-location-1",
+        "verificationPassId": "verify-20260716-caleb-armstrong-availability-location-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
+      "codexEvidenceVerified": false,
+      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "failed",
+      "codexEvidenceErrors": [
+        "https://www.anteris.nz/: source identity does not match the provider or known practice",
+        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice"
+      ]
+    },
+    {
+      "reviewId": "provider:ranzcp-7045",
+      "reviewIds": [
+        "provider:ranzcp-7045",
+        "discovery:suggestion:clinician-domain:dr-neena-joseph:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-7045",
+      "providerName": "Dr Neena Joseph",
+      "action": "move_to_watchlist",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-16",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Dr Neena Joseph",
+        "practiceName": "Auckland Psychiatrist",
+        "website": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+        "source": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+        "sourceQuality": "provider-owned page",
+        "availabilityStatus": "not_accepting",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+        "availabilityNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+      "sourceExcerpt": "We are not accepting new clinical referrals or new patients.",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Dr Neena Joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Neena Joseph",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "practiceName",
+          "value": "Auckland Psychiatrist",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "Auckland Psychiatrist",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "website",
+          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "source",
+          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Neena Joseph - AucklandPsychiatrist",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "sourceQuality",
+          "value": "provider-owned page",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Neena Joseph - AucklandPsychiatrist",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "not_accepting",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "not_accepting",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/clinical-referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/clinical-referrals",
+          "capturedAt": "2026-07-15T22:37:57.822Z",
+          "pageHash": "4c985885b65fa24eb4869df9457717dc1b24713ea862390adb1065f59b9b1aa7",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityCheckedAt",
+          "value": "2026-07-16",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "We are not accepting new clinical referrals or new patients.",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityNeedsManualReview",
+          "value": false,
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "sourceType": "provider_owned",
+          "excerpt": "We are not accepting new clinical referrals or new patients.",
+          "finalUrl": "https://www.aucklandpsychiatrist.nz/dr-neena-joseph",
+          "capturedAt": "2026-07-15T22:37:55.825Z",
+          "pageHash": "9cfc72dad56187a3b81cccdd3e7f0aaa330946979726f8b831559ce340b27d61",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "weak-telehealth-evidence",
+        "stale-availability",
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "reviewNotes": "Dr Neena Joseph's provider-owned clinician page and clinical-referrals page both explicitly state that the practice is not accepting new clinical referrals or patients. The older RANZCP profile still advertises a 1-3 month wait and was last updated in November 2023. The explicit current restriction takes precedence: the record is removed from live recommendations and retained on the reversible availability watchlist for future monitoring. No self-referral, telehealth, cultural, scope, or verification claim is added.",
+      "codexReview": {
+        "researchPassId": "research-20260716-neena-joseph-availability-1",
+        "verificationPassId": "verify-20260716-neena-joseph-availability-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T11:41:51.395Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T22:37:33.557Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "providerId": "ranzcp-6009",
+      "errors": [
+        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice",
+        "https://www.beingwith.co.nz/contact-being-with/: excerpt is not an exact captured-page substring"
+      ]
+    },
+    {
+      "providerId": "ranzcp-6009",
+      "errors": [
+        "https://www.beingwith.co.nz/contact-being-with/: source identity does not match the provider or known practice"
+      ]
+    },
+    {
+      "providerId": "ranzcp-6743",
+      "errors": [
+        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice",
+        "https://www.anteris.nz/: source identity does not match the provider or known practice"
+      ]
+    },
+    {
+      "providerId": "ranzcp-6743",
+      "errors": [
+        "https://www.anteris.nz/: source identity does not match the provider or known practice",
+        "https://www.anteris.nz/referrals: source identity does not match the provider or known practice"
+      ]
+    }
+  ]
 }
