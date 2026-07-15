@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715032623-2d62698e",
-  "generatedAt": "2026-07-15T03:26:23.561Z",
+  "batchId": "codex-20260715042705-2552f1dc",
+  "generatedAt": "2026-07-15T04:27:05.926Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,175 +13,10 @@
   ],
   "items": [
     {
-      "providerId": "psychiatry-nz-jimi-macmillan",
+      "providerId": "dunedin-blue-harbour-mental-health",
       "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
-        "provider:psychiatry-nz-jimi-macmillan"
-      ],
-      "reviewPriority": "critical",
-      "auditSeverity": "high",
-      "reviewModes": [
-        "safe_removal_or_evidence_only",
-        "restrictive_availability_or_evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review",
-        "Availability review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research",
-        "conflict-name",
-        "conflict-email",
-        "conflict-tags",
-        "conflict-advertisedSpecialties",
-        "weak-maori-evidence",
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "conflicting name, email, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: name, email, tags, advertisedSpecialties",
-        "maori support tag is present but source fields do not clearly support it.",
-        "waitlist availability is 33 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
-        "Remove the tag or add a stronger public source/structured patientGroups/languages evidence.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "conflicting name, email, tags, advertisedSpecialties values",
-        "extracted from seed source provider_owned",
-        "conflicting fields: name, email, tags, advertisedSpecialties",
-        "medium: weak-maori-evidence",
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability status is waitlist",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://psychiatry.nz/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Seed value from providers.json: refer@psychiatry.nz\nAvailability: Psychiatry.nz describes referral or booking by email and waitlist notifications. | Referral: Psychiatry.nz accepts direct referrals from clients and healthcare professionals. | Source scan: clinician \"Dr Jimi MacMillan\", practice \"(none)\". | Depression or low mood: across different mental health services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar  | Anxiety, panic, or overwhelm: services across New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, a | Trauma or sexual harm: ss New Zealand. Dr Lim specialises in the the treatment of a wide range of mental health conditions including ADHD, depression, bipolar disorder, anxiety, OCD, PTSD, and psychosis. | source-fit audit: maori support tag is present but source fields do not clearly support it. | availability audit: waitlist availability is 33 days old; target cadence is 30 days.",
-      "currentRecord": {
-        "name": "Dr Jimi MacMillan",
-        "clinicianName": "Dr Jimi MacMillan",
-        "practiceName": "Psychiatry.nz",
-        "type": "psychiatrist",
-        "region": "National",
-        "city": "Telehealth across New Zealand",
-        "address": "Online telepsychiatry service",
-        "phone": "",
-        "text": "",
-        "email": "refer@psychiatry.nz",
-        "website": "https://psychiatry.nz/",
-        "bookingUrl": "",
-        "source": "https://psychiatry.nz/",
-        "availabilityStatus": "waitlist",
-        "availabilityEvidence": "waitlist",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "needScope": [],
-        "advertisedSpecialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "specialties": [
-          "depression",
-          "anxiety",
-          "trauma"
-        ],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 520
-    },
-    {
-      "providerId": "bay-of-plenty-anteris-private-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:email:info@anteris.nz",
-        "provider:bay-of-plenty-anteris-private-psychiatry"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "seed source login-or-captcha-required"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "seed source login-or-captcha-required",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://www.anteris.nz/service-private-psychiatry",
-        "https://www.anteris.nz/appointments"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 07 282 7579\nReferral: Public information points people to a GP or doctor referral pathway. | Source scan: clinician \"(none)\", practice \"Private Psychiatry\". | Depression or low mood: chiatry top of page Home About Anteris About Anteris Join the Team How we help Adult ADHD Capacity and Competence Assessments Cambridge Brain Science Depression Immigration Psychia | Anxiety, panic, or overwhelm: ge of patients with a range of conditions. The following is a guide to some of these conditions please always get it touch to discuss our full capabilities. ​ Anxiety Disorders Moo | Trauma or sexual harm: ) Attention Deficit Hyperactivity Disorder Obsessive Compulsive Disorder (OCD) Psychosis (Schizophrenia and related conditions) Post Traumatic Stress Disorder (PTSD) ACC Mental Inj",
-      "currentRecord": {
-        "name": "Anteris Private Psychiatry",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Bay of Plenty",
-        "city": "Tauranga, Hamilton, and online",
-        "address": "1017 Cameron Road, Tauranga",
-        "phone": "07 282 7579",
-        "text": "",
-        "email": "info@anteris.nz",
-        "website": "https://www.anteris.nz/service-private-psychiatry",
-        "bookingUrl": "",
-        "source": "https://www.anteris.nz/service-private-psychiatry",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "dunedin-ashburn-clinic-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:email:ashburn@ashburn.co.nz",
-        "provider:dunedin-ashburn-clinic-psychiatry"
+        "discovery:suggestion:email:office@blueharbour.co.nz",
+        "provider:dunedin-blue-harbour-mental-health"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -210,23 +45,23 @@
         "psychiatrist referral pathway unknown"
       ],
       "sourceUrls": [
-        "https://www.ashburn.co.nz/outpatient-services/psychiatry/"
+        "https://www.blueharbour.co.nz/"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 034762092\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Psychiatry\". | Depression or low mood: Ashburn? Fees Team History Facilities Make a Donation Resources News Careers Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life Crises Personality | Anxiety, panic, or overwhelm: About Why Choose Ashburn? Fees Team History Facilities Make a Donation Resources News Careers Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life C | Trauma or sexual harm: Inpatient Treatment Inpatient Treatment Addictions Anxiety Disorders Depression Life Crises Personality Disorder Post-Traumatic Stress Sexual Abuse & Trauma Eating Disorders Short ",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: office@blueharbour.co.nz\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Tiago Gandra\", practice \"Blue Harbour Mental Health\". | Trauma or sexual harm: sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Ser | Signal: l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide asses | Signal: Link/button text: Referrals",
       "currentRecord": {
-        "name": "Ashburn Clinic Psychiatry",
+        "name": "Blue Harbour Mental Health",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychiatrist",
         "region": "Otago",
         "city": "Dunedin",
-        "address": "496 Taieri Road, Halfway Bush, Dunedin 9010",
-        "phone": "034762092",
+        "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
+        "phone": "",
         "text": "",
-        "email": "ashburn@ashburn.co.nz",
-        "website": "https://www.ashburn.co.nz/outpatient-services/psychiatry/",
+        "email": "office@blueharbour.co.nz",
+        "website": "https://www.blueharbour.co.nz/",
         "bookingUrl": "",
-        "source": "https://www.ashburn.co.nz/outpatient-services/psychiatry/",
+        "source": "https://www.blueharbour.co.nz/",
         "availabilityStatus": "not_published",
         "availabilityEvidence": "",
         "referralType": "",
@@ -241,6 +76,142 @@
         "onlineAvailable": false,
         "phoneSupport": false,
         "inPerson": true,
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "reviewIds": [
+        "discovery:suggestion:email:info@novamentem.com",
+        "provider:hawkes-bay-nova-mentem-mind-health-specialists"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research"
+      ],
+      "auditIssues": [
+        "seed source login-or-captcha-required"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown"
+      ],
+      "sourceUrls": [
+        "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 021 108 7539\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Nova Mentem Mind Health Specialists\". | Depression or low mood: Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Current | Anxiety, panic, or overwhelm: clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, in | Trauma or sexual harm: xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditi",
+      "currentRecord": {
+        "name": "Nova Mentem Mind Health Specialists",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Hawke's Bay",
+        "city": "Napier",
+        "address": "353 Gloucester Street, Taradale, Napier 4112",
+        "phone": "021 108 7539",
+        "text": "",
+        "email": "info@novamentem.com",
+        "website": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+        "bookingUrl": "",
+        "source": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "cost": ""
+      },
+      "score": 410
+    },
+    {
+      "providerId": "national-mindcraft-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz",
+        "provider:national-mindcraft-psychiatry"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "needs_manual_research"
+      ],
+      "auditIssues": [
+        "seed source login-or-captcha-required"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "availability needs manual review",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown"
+      ],
+      "sourceUrls": [
+        "https://mindcraftpsychiatry.nz/",
+        "https://mindcraftpsychiatry.nz/referral.php"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: https://mindcraftpsychiatry.nz/\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Our Consultant\", practice \"MindCraft Psychiatry\". | Depression or low mood: a telehealth for those aged 5 years and up. These include: Anxiety and Phobias Attention Deficit Hyperactivity Disorder (ADHD) Autistic Spectrum Disorder (ASD) Depression Gender Dy | Anxiety, panic, or overwhelm: red We provide assessments, treatment and advice for psychiatric and neurodevelopmental conditions via telehealth for those aged 5 years and up. These include: Anxiety and Phobias  | Telehealth / phone or video appointments: nagers, children, and families. About Us MindCraft Psychiatry provide psychiatric assessments and support to adults, teenagers, children and their families via telehealth. We take ",
+      "currentRecord": {
+        "name": "MindCraft Psychiatry",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "National",
+        "city": "Telehealth",
+        "address": "",
+        "phone": "",
+        "text": "",
+        "email": "",
+        "website": "https://mindcraftpsychiatry.nz/",
+        "bookingUrl": "",
+        "source": "https://mindcraftpsychiatry.nz/",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": false,
         "cost": ""
       },
       "score": 410

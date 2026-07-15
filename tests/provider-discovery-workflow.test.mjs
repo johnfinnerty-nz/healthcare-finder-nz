@@ -509,10 +509,12 @@ test("fetcher records blocked or skipped pages without guessing", async () => {
 
 test("login detector does not discard provider pages with ordinary login navigation", () => {
   const providerPage = "<html><head><title>Archers Medical Centre | Healthpoint</title></head><body><h1>Archers Medical Centre</h1><a href='/account/login'>Log in</a><p>General practice phone 09 444 9324.</p></body></html>";
+  const contactFormPage = "<html><head><title>Harbour Clinic</title></head><body><h1>Harbour Clinic</h1><p>Public provider details.</p><form><div class='g-recaptcha'></div></form><footer>This site is protected by reCAPTCHA.</footer><script>const captchaFailure = 'Captcha validation failed';</script></body></html>";
   const loginPage = "<html><head><title>Login</title></head><body><h1>Login</h1><form action='/login'><input type='password' name='password'></form></body></html>";
   const challengePage = "<html><body>Please verify you are human before continuing. recaptcha</body></html>";
 
   assert.equal(isLikelyLoginPage(providerPage, "https://www.healthpoint.co.nz/gps-accident-urgent-medical-care/gp/archers-medical-centre/"), false);
+  assert.equal(isLikelyLoginPage(contactFormPage, "https://example.org/provider"), false);
   assert.equal(isLikelyLoginPage(loginPage, "https://example.org/login"), true);
   assert.equal(isLikelyLoginPage(challengePage, "https://example.org/provider"), true);
 });

@@ -1,6 +1,6 @@
 # Availability Recheck Report
 
-Generated: 2026-07-15T02:34:33.422Z
+Generated: 2026-07-15T04:42:25.167Z
 
 ## Current Behaviour Before This Change
 
@@ -26,8 +26,8 @@ Accepting is never inferred from silence. Blocked or unreachable pages create ma
 Live providers:
 
 - accepting: 6
-- not_published: 1178
-- waitlist: 29
+- not_published: 1177
+- waitlist: 30
 
 Unavailable watchlist:
 

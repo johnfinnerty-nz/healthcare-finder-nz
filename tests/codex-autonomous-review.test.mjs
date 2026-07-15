@@ -261,6 +261,49 @@ test("plural self-referrals evidence safely supports an existing self-referral r
   assert.equal(applied.providers[0].referralNeedsManualReview, false);
 });
 
+test("plural referrals-from evidence supports a required clinician referral", async () => {
+  const excerpt = "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.";
+  const sourceUrl = "https://blueharbour.test/referrals";
+  const psychiatryProvider = provider({
+    id: "blue-harbour",
+    name: "Blue Harbour Mental Health",
+    practiceName: "Blue Harbour Mental Health",
+    type: "psychiatrist",
+    website: "https://blueharbour.test/",
+    source: "https://blueharbour.test/",
+    requiresReferral: false,
+    referralType: "unknown"
+  });
+  const decision = codexDecision({
+    providerId: psychiatryProvider.id,
+    correctedFields: {
+      requiresReferral: true,
+      referralType: "specialist",
+      referralSourceUrl: sourceUrl,
+      referralSourceExcerpt: excerpt,
+      referralConfidence: "high",
+      referralLastChecked: "2026-07-15",
+      referralNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "requiresReferral", value: true, sourceUrl, excerpt },
+      { field: "referralType", value: "specialist", sourceUrl, excerpt },
+      { field: "referralSourceUrl", value: sourceUrl, sourceUrl, excerpt },
+      { field: "referralSourceExcerpt", value: excerpt, sourceUrl, excerpt },
+      { field: "referralConfidence", value: "high", sourceUrl, excerpt }
+    ]
+  });
+  const verified = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [psychiatryProvider],
+    fetcher: sourceFetcher(`<h1>Blue Harbour Mental Health</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(verified.errors, []);
+});
+
 test("known provider domains can corroborate a distinctive shortened brand", async () => {
   const brandedProvider = provider({
     id: "ancora-adult-adhd",
@@ -355,6 +398,12 @@ test("an explicit psychiatrist assessment wait-time is treated as a waitlist", (
   const result = detectAvailabilityFromText("Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.");
   assert.equal(result.status, "waitlist");
   assert.match(result.evidence, /assessment wait-time is 6 weeks/i);
+});
+
+test("an explicit non-numeric appointment wait is treated as a waitlist", () => {
+  const result = detectAvailabilityFromText("We have a wait time of a few weeks before your first appointment.");
+  assert.equal(result.status, "waitlist");
+  assert.match(result.evidence, /wait time of a few weeks/i);
 });
 
 test("Codex can move an explicitly referral-paused provider to the watchlist", async () => {

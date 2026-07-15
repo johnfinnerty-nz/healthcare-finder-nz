@@ -158,13 +158,13 @@ function fieldSupportErrors(provider, decision, evidence) {
   if (decision.action === "move_to_watchlist" || RESTRICTIVE_AVAILABILITY.has(corrected.availabilityStatus)) {
     const availabilityEvidence = fieldEvidence(evidence, "availabilityStatus");
     const text = availabilityEvidence.map((item) => item.excerpt).join(" ");
-    if (!/\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?closed|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+new\s+(?:psychiatry\s+)?referrals?\s+(?:are\s+)?(?:being\s+)?(?:taken|accepted)|no\s+(?:current\s+)?availability|fully\s+booked|wait\s*list|waiting\s+list|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+\d+\s*(?:days?|weeks?|months?)\b/i.test(text)) {
+    if (!/\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?closed|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+new\s+(?:psychiatry\s+)?referrals?\s+(?:are\s+)?(?:being\s+)?(?:taken|accepted)|no\s+(?:current\s+)?availability|fully\s+booked|wait\s*list|waiting\s+list|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+(?:\d+|a\s+few|few|several|a\s+couple\s+of)\s*(?:days?|weeks?|months?)\b/i.test(text)) {
       errors.push("restrictive availability needs an explicit field-matched excerpt");
     }
   }
   if (["gp", "specialist"].includes(corrected.referralType)) {
     const referralEvidence = fieldEvidence(evidence, "referralType");
-    if (!/\b(?:gp|general practitioner|doctor|specialist|clinician)\s+referr|referral\s+(?:from|required|by)\b/i.test(referralEvidence.map((item) => item.excerpt).join(" "))) {
+    if (!/\b(?:gp|general practitioner|doctor|specialist|clinician)\s+referr|referrals?\s+(?:from|required|by)\b/i.test(referralEvidence.map((item) => item.excerpt).join(" "))) {
       errors.push("referral guidance needs an explicit field-matched excerpt");
     }
   }

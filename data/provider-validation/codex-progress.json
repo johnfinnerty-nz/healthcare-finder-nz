@@ -420,6 +420,90 @@
       "lastSourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
       "lastNotes": "Healthpoint says outpatient self-referrals may be considered, while Ashburn's current provider-owned outpatient page says referrals should be made by a health professional. No explicit current availability statement was found. The referral pathway and availability therefore remain unresolved rather than inferring self-referral or acceptance.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:office@blueharbour.co.nz": {
+      "reviewId": "discovery:suggestion:email:office@blueharbour.co.nz",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "status": "completed",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T04:41:43.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.blueharbour.co.nz/referrals",
+      "lastNotes": "Two independent fetches of the provider-owned referral page agree that psychiatry referrals are accepted from GPs and other registered health professionals and that psychiatry self-referrals are not accepted. The practice separately accepts psychotherapy self-referrals, so the corrected first step is explicitly limited to psychiatry.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:dunedin-blue-harbour-mental-health": {
+      "reviewId": "provider:dunedin-blue-harbour-mental-health",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "status": "deferred",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T04:41:43.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.blueharbour.co.nz/",
+      "lastNotes": "The provider-owned home and referral pages publish contact and referral details but no explicit current accepting, waitlist, paused, or closed statement. Availability remains not_published and needs manual review rather than being inferred from silence.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:email:info@novamentem.com": {
+      "reviewId": "discovery:suggestion:email:info@novamentem.com",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "status": "completed",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T04:41:43.461Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.novamentem.com/",
+      "lastNotes": "Two independent fetches of Nova Mentem's provider-owned page reproduced the direct contact route and a wait of a few weeks. The current provider page marks only trauma-related and psychotic-condition streams at capacity; the older directory wording also marked anxiety and mood streams at capacity, so that stale statement is removed. The safe lane does not convert the direct-contact wording into psychiatry self-referral.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:hawkes-bay-nova-mentem-mind-health-specialists": {
+      "reviewId": "provider:hawkes-bay-nova-mentem-mind-health-specialists",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "status": "deferred",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T04:41:43.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.novamentem.com/",
+      "lastNotes": "The provider-owned page says people can contact the clinic directly or arrive via a GP or psychologist, but this no-key lane may not set psychiatry self-referral. Referral type therefore remains unknown and queued for later evidence handling.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz": {
+      "reviewId": "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz",
+      "providerId": "national-mindcraft-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T04:41:43.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://mindcraftpsychiatry.nz/",
+      "lastNotes": "Independent normal public fetches of the provider home and referral pages each returned HTTP 403. Search snippets are discovery-only and cannot verify availability, referral, telehealth, in-person, age, or specialty claims. No source restriction was bypassed and the record is unchanged.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:national-mindcraft-psychiatry": {
+      "reviewId": "provider:national-mindcraft-psychiatry",
+      "providerId": "national-mindcraft-psychiatry",
+      "status": "deferred",
+      "batchId": "codex-20260715042705-2552f1dc",
+      "startedAt": "2026-07-15T04:27:05.926Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T04:41:43.461Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://mindcraftpsychiatry.nz/",
+      "lastNotes": "Independent normal public fetches of the provider home and referral pages each returned HTTP 403. Search snippets are discovery-only and cannot verify availability, referral, telehealth, in-person, age, or specialty claims. No source restriction was bypassed and the record is unchanged.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -458,9 +542,18 @@
         "bay-of-plenty-anteris-private-psychiatry",
         "dunedin-ashburn-clinic-psychiatry"
       ]
+    },
+    {
+      "batchId": "codex-20260715042705-2552f1dc",
+      "generatedAt": "2026-07-15T04:27:05.926Z",
+      "providerIds": [
+        "dunedin-blue-harbour-mental-health",
+        "hawkes-bay-nova-mentem-mind-health-specialists",
+        "national-mindcraft-psychiatry"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T03:35:28.755Z",
+  "updatedAt": "2026-07-15T04:41:43.461Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -700,6 +793,54 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T03:35:28.755Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:office@blueharbour.co.nz",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:dunedin-blue-harbour-mental-health",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:info@novamentem.com",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:hawkes-bay-nova-mentem-mind-health-specialists",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz",
+      "providerId": "national-mindcraft-psychiatry",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T04:41:43.461Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:national-mindcraft-psychiatry",
+      "providerId": "national-mindcraft-psychiatry",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T04:41:43.461Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

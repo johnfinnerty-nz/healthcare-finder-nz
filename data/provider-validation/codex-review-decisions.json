@@ -1,328 +1,278 @@
 {
   "version": 1,
-  "batchId": "codex-20260715032623-2d62698e",
-  "generatedAt": "2026-07-15T03:34:00.000Z",
+  "batchId": "codex-20260715042705-2552f1dc",
+  "generatedAt": "2026-07-15T04:42:00.000Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:psychiatry-nz-jimi-macmillan",
+      "reviewId": "discovery:suggestion:email:office@blueharbour.co.nz",
       "reviewIds": [
-        "provider:psychiatry-nz-jimi-macmillan"
+        "discovery:suggestion:email:office@blueharbour.co.nz"
       ],
-      "providerId": "psychiatry-nz-jimi-macmillan",
-      "providerName": "Dr Jimi MacMillan",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "telehealth",
-          "fit",
-          "direct-contact"
-        ],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-07-15",
-        "availabilityEvidence": "We then will send you information on how to make a booking and/or being on our waitlist.",
-        "availabilitySource": "https://psychiatry.nz/",
-        "availabilityNeedsManualReview": true
-      },
-      "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
-      "sourceEvidence": [
-        {
-          "field": "tags",
-          "value": [
-            "psychiatrist",
-            "medical-specialist",
-            "telehealth",
-            "fit",
-            "direct-contact"
-          ],
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim."
-        },
-        {
-          "field": "tags",
-          "value": [
-            "psychiatrist",
-            "medical-specialist",
-            "telehealth",
-            "fit",
-            "direct-contact"
-          ],
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "He has experience across a range of mental health services in New Zealand and Australia, with a particular interest in regional and rural mental health care."
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "not_published",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist."
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "We then will send you information on how to make a booking and/or being on our waitlist.",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist."
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://psychiatry.nz/",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "We then will send you information on how to make a booking and/or being on our waitlist."
-        }
-      ],
-      "auditRulesResolved": [
-        "weak-maori-evidence",
-        "stale-availability"
-      ],
-      "reviewNotes": "The clinician profile identifies Ngāpuhi whakapapa but does not advertise a Māori-specific or kaupapa Māori service, so the Māori routing tag is removed. ADHD is described by the practice rather than in Dr MacMillan's profile, so the clinician-level ADHD tag is also removed. Booking and waitlist are presented as alternatives, so current availability remains not_published.",
-      "codexReview": {
-        "researchPassId": "research-20260715-jimi-scope-1",
-        "verificationPassId": "verify-20260715-jimi-scope-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-jimi-macmillan:psychiatry.nz"
-      ],
-      "providerId": "psychiatry-nz-jimi-macmillan",
-      "providerName": "Dr Jimi MacMillan",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://psychiatry.nz/",
-      "sourceExcerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim.",
-      "sourceEvidence": [
-        {
-          "field": "type",
-          "value": "psychiatry registrar",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Jimi MacMillan (Ngāpuhi) is a psychiatry registrar working under the supervision of Dr Lim."
-        },
-        {
-          "field": "professionalStatus",
-          "value": "specialist training in progress",
-          "sourceUrl": "https://psychiatry.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "He is currently completing his specialist training with the Royal Australian and New Zealand College of Psychiatrists."
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The provider-owned source identifies Dr MacMillan as a supervised psychiatry registrar completing specialist training, while the live record uses the psychiatrist type and psychiatrist baseline scope. This lane cannot safely change provider type or baseline scope, so the classification remains deferred.",
-      "codexReview": {
-        "researchPassId": "research-20260715-jimi-role-1",
-        "verificationPassId": "verify-20260715-jimi-role-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      }
-    },
-    {
-      "reviewId": "discovery:suggestion:email:info@anteris.nz",
-      "reviewIds": [
-        "discovery:suggestion:email:info@anteris.nz"
-      ],
-      "providerId": "bay-of-plenty-anteris-private-psychiatry",
-      "providerName": "Anteris Private Psychiatry",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "providerName": "Blue Harbour Mental Health",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
         "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-        "referralSourceExcerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+        "referralType": "specialist",
+        "referralSourceUrl": "https://www.blueharbour.co.nz/referrals",
+        "referralSourceExcerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
         "referralConfidence": "high",
         "referralLastChecked": "2026-07-15",
-        "referralNeedsManualReview": false
+        "referralNeedsManualReview": false,
+        "firstStep": "Ask your GP or another registered health professional to refer you for a psychiatry consultation. Blue Harbour does not accept self-referrals for psychiatry."
       },
-      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-      "sourceExcerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
+      "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+      "sourceExcerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
       "sourceEvidence": [
         {
           "field": "requiresReferral",
           "value": true,
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you."
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals."
         },
         {
           "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you."
+          "value": "specialist",
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals."
         },
         {
           "field": "referralSourceUrl",
-          "value": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you."
+          "value": "https://www.blueharbour.co.nz/referrals",
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals."
         },
         {
           "field": "referralSourceExcerpt",
-          "value": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you.",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you."
+          "value": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals."
         },
         {
           "field": "referralConfidence",
           "value": "high",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "The first step will be to get a referral from your GP which will give us all of the medical history and information we need to help our consultant with their assessment of you."
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "We do not accept self-referrals for psychiatry consultations."
+        },
+        {
+          "field": "firstStep",
+          "value": "Ask your GP or another registered health professional to refer you for a psychiatry consultation. Blue Harbour does not accept self-referrals for psychiatry.",
+          "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+          "sourceType": "provider_owned",
+          "excerpt": "We do not accept self-referrals for psychiatry consultations."
         }
       ],
       "auditRulesResolved": [
-        "needs_manual_research"
+        "needs_manual_research",
+        "psychiatrist-referral-pathway-unknown"
       ],
-      "reviewNotes": "Two independent Healthpoint fetches reproduced Anteris's general referral expectation that the first step is a GP referral. This strengthens the existing GP-first pathway without adding self-referral or availability claims.",
+      "reviewNotes": "Two independent fetches of the provider-owned referral page agree that psychiatry referrals are accepted from GPs and other registered health professionals and that psychiatry self-referrals are not accepted. The practice separately accepts psychotherapy self-referrals, so the corrected first step is explicitly limited to psychiatry.",
       "codexReview": {
-        "researchPassId": "research-20260715-anteris-referral-1",
-        "verificationPassId": "verify-20260715-anteris-referral-2",
+        "researchPassId": "research-20260715-blue-harbour-referral-1",
+        "verificationPassId": "verify-20260715-blue-harbour-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:bay-of-plenty-anteris-private-psychiatry",
+      "reviewId": "provider:dunedin-blue-harbour-mental-health",
       "reviewIds": [
-        "provider:bay-of-plenty-anteris-private-psychiatry"
+        "provider:dunedin-blue-harbour-mental-health"
       ],
-      "providerId": "bay-of-plenty-anteris-private-psychiatry",
-      "providerName": "Anteris Private Psychiatry",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "providerName": "Blue Harbour Mental Health",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-      "sourceExcerpt": "Suite 7, 89 Grey Street",
-      "sourceEvidence": [
-        {
-          "field": "address",
-          "value": "Suite 7, 89 Grey Street, Tauranga Central, Tauranga 3110",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/psychiatry/anteris/at/89-grey-street-tauranga-central-tauranga/",
-          "sourceType": "healthpoint",
-          "excerpt": "Suite 7, 89 Grey Street"
-        }
-      ],
+      "sourceUrl": "https://www.blueharbour.co.nz/",
+      "sourceExcerpt": "",
+      "sourceEvidence": [],
       "auditRulesResolved": [],
-      "reviewNotes": "A March 2026 provider-edited Healthpoint listing gives Suite 7, 89 Grey Street, while Anteris appointment pages still display the database's 1017 Cameron Road address. The sources conflict and no current availability statement is published, so neither address nor availability is changed automatically.",
+      "reviewNotes": "The provider-owned home and referral pages publish contact and referral details but no explicit current accepting, waitlist, paused, or closed statement. Availability remains not_published and needs manual review rather than being inferred from silence.",
       "codexReview": {
-        "researchPassId": "research-20260715-anteris-location-1",
-        "verificationPassId": "verify-20260715-anteris-location-2",
+        "researchPassId": "research-20260715-blue-harbour-availability-1",
+        "verificationPassId": "verify-20260715-blue-harbour-availability-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "discovery:suggestion:email:ashburn@ashburn.co.nz",
+      "reviewId": "discovery:suggestion:email:info@novamentem.com",
       "reviewIds": [
-        "discovery:suggestion:email:ashburn@ashburn.co.nz"
+        "discovery:suggestion:email:info@novamentem.com"
       ],
-      "providerId": "dunedin-ashburn-clinic-psychiatry",
-      "providerName": "Ashburn Clinic Psychiatry",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "providerName": "Nova Mentem Mind Health Specialists",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "phone": "03 476 2092",
-        "referralSourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-        "referralSourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+        "website": "https://www.novamentem.com/",
+        "source": "https://www.novamentem.com/",
+        "sourceQuality": "provider-owned page",
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We have a wait time of a few weeks before your first appointment.",
+        "availabilitySource": "https://www.novamentem.com/",
+        "availabilityNeedsManualReview": false,
+        "fit": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+        "referralSourceUrl": "https://www.novamentem.com/",
+        "referralSourceExcerpt": "You can contact us directly or get a referral from your GP or psychologist.",
         "referralConfidence": "medium",
         "referralLastChecked": "2026-07-15",
         "referralNeedsManualReview": true
       },
-      "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-      "sourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+      "sourceUrl": "https://www.novamentem.com/",
+      "sourceExcerpt": "We have a wait time of a few weeks before your first appointment.",
       "sourceEvidence": [
         {
-          "field": "phone",
-          "value": "03 476 2092",
-          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceType": "healthpoint",
-          "excerpt": "href=\"tel:(03) 476 2092\""
+          "field": "website",
+          "value": "https://www.novamentem.com/",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "\"url\":\"https:\\/\\/www.novamentem.com\\/\""
+        },
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "We have a wait time of a few weeks before your first appointment."
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "We have a wait time of a few weeks before your first appointment.",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "We have a wait time of a few weeks before your first appointment."
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://www.novamentem.com/",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "We have a wait time of a few weeks before your first appointment."
+        },
+        {
+          "field": "fit",
+          "value": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "We are a team of mental health clinicians (including psychiatrists and psychologists) in Hawke’s Bay, New Zealand."
+        },
+        {
+          "field": "fit",
+          "value": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Trauma related conditions. Currently at capacity for new clients."
+        },
+        {
+          "field": "fit",
+          "value": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Psychotic conditions. Currently at capacity for new clients."
         },
         {
           "field": "referralSourceUrl",
-          "value": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceType": "healthpoint",
-          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals."
+          "value": "https://www.novamentem.com/",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "You can contact us directly or get a referral from your GP or psychologist."
         },
         {
           "field": "referralSourceExcerpt",
-          "value": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
-          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceType": "healthpoint",
-          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals."
+          "value": "You can contact us directly or get a referral from your GP or psychologist.",
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "You can contact us directly or get a referral from your GP or psychologist."
         },
         {
           "field": "referralConfidence",
           "value": "medium",
-          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceType": "healthpoint",
-          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals."
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "You can contact us directly or get a referral from your GP or psychologist."
         }
       ],
       "auditRulesResolved": [
-        "needs_manual_research"
+        "needs_manual_research",
+        "stale-availability"
       ],
-      "reviewNotes": "Healthpoint's provider-edited Ashburn listing reproduces the public phone and an outpatient referral statement. The phone is normalized for display, while referralType remains unknown because provider-owned guidance and Healthpoint do not align cleanly enough for an autonomous self-referral or mandatory-referral claim.",
+      "reviewNotes": "Two independent fetches of Nova Mentem's provider-owned page reproduced the direct contact route and a wait of a few weeks. The current provider page marks only trauma-related and psychotic-condition streams at capacity; the older directory wording also marked anxiety and mood streams at capacity, so that stale statement is removed. The safe lane does not convert the direct-contact wording into psychiatry self-referral.",
       "codexReview": {
-        "researchPassId": "research-20260715-ashburn-contact-1",
-        "verificationPassId": "verify-20260715-ashburn-contact-2",
+        "researchPassId": "research-20260715-nova-mentem-current-site-1",
+        "verificationPassId": "verify-20260715-nova-mentem-current-site-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:dunedin-ashburn-clinic-psychiatry",
+      "reviewId": "provider:hawkes-bay-nova-mentem-mind-health-specialists",
       "reviewIds": [
-        "provider:dunedin-ashburn-clinic-psychiatry"
+        "provider:hawkes-bay-nova-mentem-mind-health-specialists"
       ],
-      "providerId": "dunedin-ashburn-clinic-psychiatry",
-      "providerName": "Ashburn Clinic Psychiatry",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "providerName": "Nova Mentem Mind Health Specialists",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-      "sourceExcerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals.",
+      "sourceUrl": "https://www.novamentem.com/",
+      "sourceExcerpt": "You can contact us directly or get a referral from your GP or psychologist.",
       "sourceEvidence": [
         {
           "field": "referralType",
           "value": "unknown",
-          "sourceUrl": "https://www.healthpoint.co.nz/mental-health-addictions/mental-health/ashburn-clinic/at/496-taieri-road-dunedin/",
-          "sourceType": "healthpoint",
-          "excerpt": "Referral is generally arranged through a health professional, often a general practitioner, counsellor/psychotherapist/psychologist or psychiatrist, although we do consider self-referrals."
+          "sourceUrl": "https://www.novamentem.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "You can contact us directly or get a referral from your GP or psychologist."
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "Healthpoint says outpatient self-referrals may be considered, while Ashburn's current provider-owned outpatient page says referrals should be made by a health professional. No explicit current availability statement was found. The referral pathway and availability therefore remain unresolved rather than inferring self-referral or acceptance.",
+      "reviewNotes": "The provider-owned page says people can contact the clinic directly or arrive via a GP or psychologist, but this no-key lane may not set psychiatry self-referral. Referral type therefore remains unknown and queued for later evidence handling.",
       "codexReview": {
-        "researchPassId": "research-20260715-ashburn-pathway-1",
-        "verificationPassId": "verify-20260715-ashburn-pathway-2",
+        "researchPassId": "research-20260715-nova-mentem-referral-1",
+        "verificationPassId": "verify-20260715-nova-mentem-referral-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:national-mindcraft-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:practice-domain:mindcraft-psychiatry:mindcraftpsychiatry.nz",
+        "provider:national-mindcraft-psychiatry"
+      ],
+      "providerId": "national-mindcraft-psychiatry",
+      "providerName": "MindCraft Psychiatry",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://mindcraftpsychiatry.nz/",
+      "sourceExcerpt": "",
+      "sourceEvidence": [],
+      "auditRulesResolved": [],
+      "reviewNotes": "Independent normal public fetches of the provider home and referral pages each returned HTTP 403. Search snippets are discovery-only and cannot verify availability, referral, telehealth, in-person, age, or specialty claims. No source restriction was bypassed and the record is unchanged.",
+      "codexReview": {
+        "researchPassId": "research-20260715-mindcraft-public-fetch-1",
+        "verificationPassId": "verify-20260715-mindcraft-public-fetch-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }

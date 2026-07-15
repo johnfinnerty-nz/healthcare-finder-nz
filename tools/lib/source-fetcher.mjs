@@ -105,7 +105,13 @@ export function shouldNotFetch(url = "") {
 export function isLikelyLoginPage(text = "", finalUrl = "") {
   const source = String(text || "");
   const url = String(finalUrl || "");
-  if (/\b(captcha|recaptcha|verify you are human|access denied|checking your browser|enable javascript and cookies)\b/i.test(source)) return true;
+  const visibleText = source
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ");
+  if (/\b(?:verify you are human|access denied|checking your browser|enable javascript and cookies(?: to continue)?|complete (?:the )?(?:security check|captcha)|unusual traffic)\b/i.test(visibleText)) return true;
+  if (/<(?:title|h1)[^>]*>\s*(?:captcha|human verification|security check|access denied|attention required|just a moment)\b/i.test(source)) return true;
   if (/\b(login|signin|sign-in|logon|auth|account)\b/i.test(url)) return true;
   if (/<input[^>]+type=["']?password["']?/i.test(source)) return true;
   if (/<form[^>]+(?:login|signin|sign-in|logon|auth)/i.test(source)) return true;

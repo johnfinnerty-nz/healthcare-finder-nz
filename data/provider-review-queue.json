@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T03:26:17.670Z",
+  "generatedAt": "2026-07-15T04:43:05.489Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -41,8 +41,8 @@
     "total": 800,
     "byPriority": {
       "critical": 12,
-      "high": 481,
-      "medium": 159,
+      "high": 482,
+      "medium": 158,
       "low": 148
     },
     "bySeverity": {
@@ -52,9 +52,9 @@
       "none": 128
     },
     "byCategory": {
-      "Referral pathway review": 75,
-      "Sensitive tag or scope evidence": 124,
-      "Availability review": 80,
+      "Referral pathway review": 73,
+      "Sensitive tag or scope evidence": 125,
+      "Availability review": 81,
       "Directory/direct-contact confusion": 33,
       "Location and distance evidence": 129,
       "Google Places discovery": 47,
@@ -155474,6 +155474,704 @@
           }
         }
       },
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:hawkes-bay-nova-mentem-mind-health-specialists",
+      "reviewCategory": "Availability review",
+      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+      "name": "Nova Mentem Mind Health Specialists",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "Hawke's Bay",
+      "city": "Napier",
+      "address": "353 Gloucester Street, Taradale, Napier 4112",
+      "lat": -39.537977,
+      "lon": 176.847684,
+      "phone": "021 108 7539",
+      "text": "",
+      "email": "info@novamentem.com",
+      "website": "https://www.novamentem.com/",
+      "bookingUrl": "",
+      "source": "https://www.novamentem.com/",
+      "sourceQuality": "provider-owned page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "waitlist",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "We have a wait time of a few weeks before your first appointment.",
+      "availabilitySource": "https://www.novamentem.com/",
+      "availabilityNeedsManualReview": false,
+      "requiresReferral": false,
+      "referralType": "unknown",
+      "referralSourceUrl": "https://www.novamentem.com/",
+      "referralSourceExcerpt": "You can contact us directly or get a referral from your GP or psychologist.",
+      "referralConfidence": "medium",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": true,
+      "tags": [
+        "psychiatrist",
+        "psychologist",
+        "medical-specialist",
+        "assessment",
+        "adhd",
+        "autism",
+        "neurodiversity",
+        "child",
+        "adolescent",
+        "direct-contact",
+        "fit"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "Psychiatry",
+        "Psychology",
+        "ADHD assessment",
+        "Autism assessment",
+        "Neurodevelopmental assessment",
+        "Support for children, adolescents, young adults, and adults"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+          "excerpt": "Advertised specialties/interests recorded as: Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults.",
+          "capturedAt": "2026-05",
+          "confidence": "medium",
+          "needsManualReview": true
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [
+        "Psychiatry",
+        "Psychology",
+        "ADHD assessment",
+        "Autism assessment",
+        "Neurodevelopmental assessment",
+        "Support for children, adolescents, young adults, and adults"
+      ],
+      "services": [],
+      "patientGroups": [
+        "Children",
+        "Adolescents",
+        "Young adults",
+        "Adults",
+        "Parents and caregivers"
+      ],
+      "ageGroups": [
+        "Children",
+        "Adolescents",
+        "Adults"
+      ],
+      "onlineAvailable": false,
+      "phoneSupport": false,
+      "inPerson": true,
+      "crisisOnly": false,
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "high",
+      "priorityScore": 3130,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "referral pathway needs manual review",
+        "psychiatrist referral pathway unknown",
+        "availability status is waitlist"
+      ],
+      "sourceUrls": [
+        "https://www.novamentem.com/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "021 108 7539",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "email",
+            "value": "info@novamentem.com",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://www.novamentem.com/",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "353 Gloucester Street, Taradale, Napier 4112",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "waitlist",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "We have a wait time of a few weeks before your first appointment.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": false
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "unknown",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "You can contact us directly or get a referral from your GP or psychologist.",
+            "capturedAt": "2026-07-15",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help.",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "specialties",
+            "value": "Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "patientGroups",
+            "value": "Children, Adolescents, Young adults, Adults, Parents and caregivers",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "ageGroups",
+            "value": "Children, Adolescents, Adults",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at ca",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients.",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at capacity for new clients. Who we help We help young child",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "workStudyMoneyHousing",
+            "value": "Work, study, money, or housing stress",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "Plan What is a transition plan? What should a Transition Plan include? Having a successful transition plan Resources Success Stories Tertiary Transition Employment Transition Case Study Tertiary Studies Support Support for further education after school Support for Employment Support and Mentoring The Guid",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "psychologist": [
+            {
+              "field": "tags",
+              "value": "psychologist",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "assessment": [
+            {
+              "field": "tags",
+              "value": "assessment",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adhd": [
+            {
+              "field": "tags",
+              "value": "adhd",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "autism": [
+            {
+              "field": "tags",
+              "value": "autism",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "neurodiversity": [
+            {
+              "field": "tags",
+              "value": "neurodiversity",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "child": [
+            {
+              "field": "tags",
+              "value": "child",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "adolescent": [
+            {
+              "field": "tags",
+              "value": "adolescent",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.novamentem.com/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [],
+        "cultural": [
+          {
+            "field": "maori",
+            "value": "Maori",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "excerpt": "cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native langua",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "pasifika",
+            "value": "Pasifika",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "excerpt": "ve disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native language. Q.",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "asian",
+            "value": "Asian",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "excerpt": "inclusive, such as cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking.",
+            "sourceUrl": "https://www.novamentem.com/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "indication of mental conditions we specialise in, an overview of costs, and other relevant information. If you have a question that is not answered here, feel free to send us an email. Please note that we are NOT an urgent care facility. We have a wait time of a few weeks before your first appointment. We can help y",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: We have a wait time of a few weeks before your first appointment. | Referral: You can contact us directly or get a referral from your GP or psychologist. | Source scan: clinician \"(none)\", practice \"Nova Mentem Mind Health Specialists\". | Depression or low mood: Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Current | Anxiety, panic, or overwhelm: clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, in | Trauma or sexual harm: xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditi",
+      "publicCardPreviewText": "Nova Mentem Mind Health Specialists Hawke's Bay / Napier Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability. Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help. Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking. Availability: waitlist",
+      "currentProvider": {
+        "address": "353 Gloucester Street, Taradale, Napier 4112",
+        "phone": "021 108 7539",
+        "text": "",
+        "email": "info@novamentem.com",
+        "hours": "Contact the clinic to confirm current administration hours and appointment availability.",
+        "cost": "Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking.",
+        "verified": "2026-05",
+        "lastVerified": "2026-05",
+        "confidence": "medium",
+        "sourceQuality": "provider-owned page",
+        "needsManualVerification": true,
+        "crisisOnly": false,
+        "onlineAvailable": false,
+        "phoneSupport": false,
+        "inPerson": true,
+        "id": "hawkes-bay-nova-mentem-mind-health-specialists",
+        "name": "Nova Mentem Mind Health Specialists",
+        "type": "psychiatrist",
+        "region": "Hawke's Bay",
+        "city": "Napier",
+        "website": "https://www.novamentem.com/",
+        "tags": [
+          "psychiatrist",
+          "psychologist",
+          "medical-specialist",
+          "assessment",
+          "adhd",
+          "autism",
+          "neurodiversity",
+          "child",
+          "adolescent",
+          "direct-contact",
+          "fit"
+        ],
+        "specialties": [
+          "Psychiatry",
+          "Psychology",
+          "ADHD assessment",
+          "Autism assessment",
+          "Neurodevelopmental assessment",
+          "Support for children, adolescents, young adults, and adults"
+        ],
+        "patientGroups": [
+          "Children",
+          "Adolescents",
+          "Young adults",
+          "Adults",
+          "Parents and caregivers"
+        ],
+        "ageGroups": [
+          "Children",
+          "Adolescents",
+          "Adults"
+        ],
+        "fit": "Hawke's Bay specialist team including psychiatrists and psychologists. Its current provider-owned page says trauma-related and psychotic-condition streams are at capacity; contact the clinic about other appointment types and suitability.",
+        "firstStep": "Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help.",
+        "source": "https://www.novamentem.com/",
+        "lat": -39.537977,
+        "lon": 176.847684,
+        "coordinateSource": "OpenStreetMap Nominatim 2026-05-24",
+        "needScope": [],
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "We have a wait time of a few weeks before your first appointment.",
+        "availabilitySource": "https://www.novamentem.com/",
+        "availabilityNeedsManualReview": false,
+        "requiresReferral": false,
+        "referralType": "unknown",
+        "referralSourceUrl": "https://www.novamentem.com/",
+        "referralSourceExcerpt": "You can contact us directly or get a referral from your GP or psychologist.",
+        "referralConfidence": "medium",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": true,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "Psychiatry",
+          "Psychology",
+          "ADHD assessment",
+          "Autism assessment",
+          "Neurodevelopmental assessment",
+          "Support for children, adolescents, young adults, and adults"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "excerpt": "Advertised specialties/interests recorded as: Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults.",
+            "capturedAt": "2026-05",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests",
+        "coordinatePrecision": "address geocode",
+        "coordinateConfidence": "medium",
+        "geocodeNeedsManualReview": true
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
+        "providerName": "Nova Mentem Mind Health Specialists",
+        "providerType": "psychiatrist",
+        "region": "Hawke's Bay",
+        "city": "Napier",
+        "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+        "pagesChecked": [
+          {
+            "url": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "finalUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.futureready.org.nz/about-us/",
+            "finalUrl": "https://www.futureready.org.nz/about-us/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.futureready.org.nz/contact-us/",
+            "finalUrl": "https://www.futureready.org.nz/contact-us/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "",
+        "autoPracticeName": "Nova Mentem Mind Health Specialists",
+        "autoConfidence": "medium",
+        "autoEvidence": "Nova Mentem Mind Health Specialists - Future Ready",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at ca",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "matched": "Mood disorder"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients.",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "matched": "Anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at capacity for new clients. Who we help We help young child",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "matched": "Trauma"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "found",
+            "evidence": "Plan What is a transition plan? What should a Transition Plan include? Having a successful transition plan Resources Success Stories Tertiary Transition Employment Transition Case Study Tertiary Studies Support Support for further education after school Support for Employment Support and Mentoring The Guid",
+            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+            "matched": "Employment"
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "found",
+            "evidence": "cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native langua",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "matched": "Maori"
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "found",
+            "evidence": "ve disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native language. Q.",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "matched": "Samoan"
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "found",
+            "evidence": "inclusive, such as cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in",
+            "sourceUrl": "https://www.futureready.org.nz/about-us/",
+            "matched": "Chinese"
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "indication of mental conditions we specialise in, an overview of costs, and other relevant information. If you have a question that is not answered here, feel free to send us an email. Please note that we are NOT an urgent care facility. We have a wait time of a few weeks before your first appointment. We can help y",
+          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+          "matched": "free"
+        },
+        "availabilitySignal": {
+          "status": "not_accepting_or_limited",
+          "value": "found",
+          "evidence": "ention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychot",
+          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
+          "matched": "at capacity"
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: Contact Us",
+          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/"
+        },
+        "candidateClinicians": [],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
       "reviewer": "",
       "reviewedDate": "",
       "reviewNotes": ""
@@ -312990,704 +313688,6 @@
       "reviewNotes": ""
     },
     {
-      "reviewId": "provider:hawkes-bay-nova-mentem-mind-health-specialists",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
-      "name": "Nova Mentem Mind Health Specialists",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Hawke's Bay",
-      "city": "Napier",
-      "address": "353 Gloucester Street, Taradale, Napier 4112",
-      "lat": -39.537977,
-      "lon": 176.847684,
-      "phone": "021 108 7539",
-      "text": "",
-      "email": "info@novamentem.com",
-      "website": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-      "bookingUrl": "",
-      "source": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-      "sourceQuality": "trusted community directory plus provider-linked clinician page",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-05-24",
-      "availabilityEvidence": "",
-      "availabilitySource": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "psychologist",
-        "medical-specialist",
-        "assessment",
-        "adhd",
-        "autism",
-        "neurodiversity",
-        "child",
-        "adolescent",
-        "direct-contact",
-        "fit"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "Psychiatry",
-        "Psychology",
-        "ADHD assessment",
-        "Autism assessment",
-        "Neurodevelopmental assessment",
-        "Support for children, adolescents, young adults, and adults"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-          "excerpt": "Advertised specialties/interests recorded as: Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults.",
-          "capturedAt": "2026-05",
-          "confidence": "medium",
-          "needsManualReview": true
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "Psychiatry",
-        "Psychology",
-        "ADHD assessment",
-        "Autism assessment",
-        "Neurodevelopmental assessment",
-        "Support for children, adolescents, young adults, and adults"
-      ],
-      "services": [],
-      "patientGroups": [
-        "Children",
-        "Adolescents",
-        "Young adults",
-        "Adults",
-        "Parents and caregivers"
-      ],
-      "ageGroups": [
-        "Children",
-        "Adolescents",
-        "Adults"
-      ],
-      "onlineAvailable": false,
-      "phoneSupport": false,
-      "inPerson": true,
-      "crisisOnly": false,
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2330,
-      "reviewReasons": [
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "021 108 7539",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "email",
-            "value": "info@novamentem.com",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "353 Gloucester Street, Taradale, Napier 4112",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "2026-05-24",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Hawke's Bay specialist team including psychiatrists and psychologists. The public source currently points strongest to ADHD, autism, and neurodevelopmental assessment because anxiety, mood, trauma, and psychosis streams are marked at capacity.",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help.",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "specialties",
-            "value": "Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "patientGroups",
-            "value": "Children, Adolescents, Young adults, Adults, Parents and caregivers",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "ageGroups",
-            "value": "Children, Adolescents, Adults",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at ca",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients.",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at capacity for new clients. Who we help We help young child",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "workStudyMoneyHousing",
-            "value": "Work, study, money, or housing stress",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "Plan What is a transition plan? What should a Transition Plan include? Having a successful transition plan Resources Success Stories Tertiary Transition Employment Transition Case Study Tertiary Studies Support Support for further education after school Support for Employment Support and Mentoring The Guid",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "psychologist": [
-            {
-              "field": "tags",
-              "value": "psychologist",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "assessment": [
-            {
-              "field": "tags",
-              "value": "assessment",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adhd": [
-            {
-              "field": "tags",
-              "value": "adhd",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "autism": [
-            {
-              "field": "tags",
-              "value": "autism",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "neurodiversity": [
-            {
-              "field": "tags",
-              "value": "neurodiversity",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "child": [
-            {
-              "field": "tags",
-              "value": "child",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "adolescent": [
-            {
-              "field": "tags",
-              "value": "adolescent",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [],
-        "cultural": [
-          {
-            "field": "maori",
-            "value": "Maori",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "excerpt": "cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native langua",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "pasifika",
-            "value": "Pasifika",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "excerpt": "ve disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native language. Q.",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "asian",
-            "value": "Asian",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "excerpt": "inclusive, such as cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking.",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "indication of mental conditions we specialise in, an overview of costs, and other relevant information. If you have a question that is not answered here, feel free to send us an email. Please note that we are NOT an urgent care facility. We have a wait time of a few weeks before your first appointment. We can help y",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Nova Mentem Mind Health Specialists\". | Depression or low mood: Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Current | Anxiety, panic, or overwhelm: clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, in | Trauma or sexual harm: xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditi",
-      "publicCardPreviewText": "Nova Mentem Mind Health Specialists Hawke's Bay / Napier Hawke's Bay specialist team including psychiatrists and psychologists. The public source currently points strongest to ADHD, autism, and neurodevelopmental assessment because anxiety, mood, trauma, and psychosis streams are marked at capacity. Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help. Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking. Availability: not_published",
-      "currentProvider": {
-        "address": "353 Gloucester Street, Taradale, Napier 4112",
-        "phone": "021 108 7539",
-        "text": "",
-        "email": "info@novamentem.com",
-        "hours": "Contact the clinic to confirm current administration hours and appointment availability.",
-        "cost": "Private specialist fees apply. Ask about current costs, referral needs, ADHD/autism assessment fees, insurance, WINZ, or other funding before booking.",
-        "verified": "2026-05",
-        "lastVerified": "2026-05",
-        "confidence": "medium",
-        "sourceQuality": "trusted community directory plus provider-linked clinician page",
-        "needsManualVerification": true,
-        "crisisOnly": false,
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "id": "hawkes-bay-nova-mentem-mind-health-specialists",
-        "name": "Nova Mentem Mind Health Specialists",
-        "type": "psychiatrist",
-        "region": "Hawke's Bay",
-        "city": "Napier",
-        "website": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "tags": [
-          "psychiatrist",
-          "psychologist",
-          "medical-specialist",
-          "assessment",
-          "adhd",
-          "autism",
-          "neurodiversity",
-          "child",
-          "adolescent",
-          "direct-contact",
-          "fit"
-        ],
-        "specialties": [
-          "Psychiatry",
-          "Psychology",
-          "ADHD assessment",
-          "Autism assessment",
-          "Neurodevelopmental assessment",
-          "Support for children, adolescents, young adults, and adults"
-        ],
-        "patientGroups": [
-          "Children",
-          "Adolescents",
-          "Young adults",
-          "Adults",
-          "Parents and caregivers"
-        ],
-        "ageGroups": [
-          "Children",
-          "Adolescents",
-          "Adults"
-        ],
-        "fit": "Hawke's Bay specialist team including psychiatrists and psychologists. The public source currently points strongest to ADHD, autism, and neurodevelopmental assessment because anxiety, mood, trauma, and psychosis streams are marked at capacity.",
-        "firstStep": "Email or call and ask whether your concern is within their currently open streams, what the wait time is, and whether a GP or psychologist referral would help.",
-        "source": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "lat": -39.537977,
-        "lon": 176.847684,
-        "coordinateSource": "OpenStreetMap Nominatim 2026-05-24",
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-05-24",
-        "availabilityEvidence": "",
-        "availabilitySource": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "Psychiatry",
-          "Psychology",
-          "ADHD assessment",
-          "Autism assessment",
-          "Neurodevelopmental assessment",
-          "Support for children, adolescents, young adults, and adults"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "excerpt": "Advertised specialties/interests recorded as: Psychiatry, Psychology, ADHD assessment, Autism assessment, Neurodevelopmental assessment, Support for children, adolescents, young adults, and adults.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "coordinatePrecision": "address geocode",
-        "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "hawkes-bay-nova-mentem-mind-health-specialists",
-        "providerName": "Nova Mentem Mind Health Specialists",
-        "providerType": "psychiatrist",
-        "region": "Hawke's Bay",
-        "city": "Napier",
-        "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-        "pagesChecked": [
-          {
-            "url": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "finalUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.futureready.org.nz/about-us/",
-            "finalUrl": "https://www.futureready.org.nz/about-us/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.futureready.org.nz/contact-us/",
-            "finalUrl": "https://www.futureready.org.nz/contact-us/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "",
-        "autoPracticeName": "Nova Mentem Mind Health Specialists",
-        "autoConfidence": "medium",
-        "autoEvidence": "Nova Mentem Mind Health Specialists - Future Ready",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at ca",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "matched": "Mood disorder"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "clude (but are not limited to): Neurodevelopmental conditions, including Attention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients.",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "xiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychotic conditions. Currently at capacity for new clients. Who we help We help young child",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "matched": "Trauma"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "found",
-            "evidence": "Plan What is a transition plan? What should a Transition Plan include? Having a successful transition plan Resources Success Stories Tertiary Transition Employment Transition Case Study Tertiary Studies Support Support for further education after school Support for Employment Support and Mentoring The Guid",
-            "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-            "matched": "Employment"
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "found",
-            "evidence": "cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native langua",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "matched": "Maori"
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "found",
-            "evidence": "ve disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in your native language. Q.",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "matched": "Samoan"
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "found",
-            "evidence": "inclusive, such as cognitive disability and vision impaired profiles. Q. Is the website available in different languages? A. Yes the website is translated to Chinese, English, Maori & Samoan language. We use google translate so although the translation is not always perfect, it should be good enough to understand in",
-            "sourceUrl": "https://www.futureready.org.nz/about-us/",
-            "matched": "Chinese"
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "indication of mental conditions we specialise in, an overview of costs, and other relevant information. If you have a question that is not answered here, feel free to send us an email. Please note that we are NOT an urgent care facility. We have a wait time of a few weeks before your first appointment. We can help y",
-          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-          "matched": "free"
-        },
-        "availabilitySignal": {
-          "status": "not_accepting_or_limited",
-          "value": "found",
-          "evidence": "ention-Deficit / Hyperactivity Disorder (ADHD) and Autism Spectrum Disorder (ASD). Anxiety disorders, including Obsessive-Compulsive Disorder (OCD). Currently at capacity for new clients. Mood disorders. Currently at capacity for new clients. Trauma related conditions. Currently at capacity for new clients. Psychot",
-          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/",
-          "matched": "at capacity"
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: Contact Us",
-          "sourceUrl": "https://www.futureready.org.nz/listing/nova-mentem-mind-health-specialists/"
-        },
-        "candidateClinicians": [],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
       "reviewId": "provider:dunedin-ashburn-clinic-psychiatry",
       "reviewCategory": "Referral pathway review",
       "providerId": "dunedin-ashburn-clinic-psychiatry",
@@ -314338,522 +314338,6 @@
           "sourceUrl": "https://www.ashburn.co.nz/outpatient-services/psychiatry/"
         },
         "candidateClinicians": [],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:dunedin-blue-harbour-mental-health",
-      "reviewCategory": "Referral pathway review",
-      "providerId": "dunedin-blue-harbour-mental-health",
-      "name": "Blue Harbour Mental Health",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Otago",
-      "city": "Dunedin",
-      "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
-      "lat": -45.8759881,
-      "lon": 170.5027507,
-      "phone": "",
-      "text": "",
-      "email": "office@blueharbour.co.nz",
-      "website": "https://www.blueharbour.co.nz/",
-      "bookingUrl": "",
-      "source": "https://www.blueharbour.co.nz/",
-      "sourceQuality": "provider-owned or NGO public page",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "not_published",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "",
-      "availabilitySource": "https://www.blueharbour.co.nz/",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": false,
-      "referralType": "unknown",
-      "referralSourceUrl": "https://www.blueharbour.co.nz/",
-      "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-      "referralConfidence": "low",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": true,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "trauma",
-        "psychotherapy",
-        "assessment",
-        "medication",
-        "acc",
-        "sensitive-claims",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [],
-      "advertisedSpecialtyEvidence": [],
-      "specialtyTagsSource": "no advertised specialties recorded",
-      "specialties": [],
-      "services": [],
-      "patientGroups": [],
-      "ageGroups": [],
-      "auditSeverity": "none",
-      "auditRules": [],
-      "auditIssues": [],
-      "suggestedFixes": [],
-      "reviewPriority": "medium",
-      "priorityScore": 2330,
-      "reviewReasons": [
-        "provider details need manual verification",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.blueharbour.co.nz/"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "email",
-            "value": "office@blueharbour.co.nz",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://www.blueharbour.co.nz/",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "not_published",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "unknown",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "Referral requirements are not clearly published in the stored source fields.",
-            "capturedAt": "2026-05",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment.",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Email with a short summary and ask about referral requirements, fees, availability, ACC Sensitive Claims, and whether psychiatry or psychotherapy is the better first appointment.",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in central Dunedin: Queens Building (level 2). 109 Princes",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "psychotherapy": [
-            {
-              "field": "tags",
-              "value": "psychotherapy",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "assessment": [
-            {
-              "field": "tags",
-              "value": "assessment",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medication": [
-            {
-              "field": "tags",
-              "value": "medication",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "acc": [
-            {
-              "field": "tags",
-              "value": "acc",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "sensitive-claims": [
-            {
-              "field": "tags",
-              "value": "sensitive-claims",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.blueharbour.co.nz/",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [],
-        "cultural": [],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options.",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "excerpt": "l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in centr",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"Tiago Gandra\", practice \"Blue Harbour Mental Health\". | Trauma or sexual harm: sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Ser | Signal: l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide asses | Signal: Link/button text: Referrals",
-      "publicCardPreviewText": "Blue Harbour Mental Health Otago / Dunedin Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment. Email with a short summary and ask about referral requirements, fees, availability, ACC Sensitive Claims, and whether psychiatry or psychotherapy is the better first appointment. Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options. Availability: not_published",
-      "currentProvider": {
-        "id": "dunedin-blue-harbour-mental-health",
-        "name": "Blue Harbour Mental Health",
-        "type": "psychiatrist",
-        "region": "Otago",
-        "city": "Dunedin",
-        "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
-        "phone": "",
-        "text": "",
-        "email": "office@blueharbour.co.nz",
-        "website": "https://www.blueharbour.co.nz/",
-        "lat": -45.8759881,
-        "lon": 170.5027507,
-        "coordinateSource": "Nominatim 2026-05",
-        "hours": "The practice aims to respond to enquiries within two working days.",
-        "cost": "Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "trauma",
-          "psychotherapy",
-          "assessment",
-          "medication",
-          "acc",
-          "sensitive-claims",
-          "direct-contact"
-        ],
-        "fit": "Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment.",
-        "firstStep": "Email with a short summary and ask about referral requirements, fees, availability, ACC Sensitive Claims, and whether psychiatry or psychotherapy is the better first appointment.",
-        "source": "https://www.blueharbour.co.nz/",
-        "verified": "2026-05",
-        "sourceQuality": "provider-owned or NGO public page",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "needScope": [],
-        "availabilityStatus": "not_published",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "",
-        "availabilitySource": "https://www.blueharbour.co.nz/",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": false,
-        "referralType": "unknown",
-        "referralSourceUrl": "https://www.blueharbour.co.nz/",
-        "referralSourceExcerpt": "Referral requirements are not clearly published in the stored source fields.",
-        "referralConfidence": "low",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": true,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [],
-        "advertisedSpecialtyEvidence": [],
-        "specialtyTagsSource": "no advertised specialties recorded",
-        "coordinatePrecision": "address geocode",
-        "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
-      },
-      "auditFindings": [],
-      "identityScan": {
-        "providerId": "dunedin-blue-harbour-mental-health",
-        "providerName": "Blue Harbour Mental Health",
-        "providerType": "psychiatrist",
-        "region": "Otago",
-        "city": "Dunedin",
-        "sourceUrl": "https://www.blueharbour.co.nz/",
-        "pagesChecked": [
-          {
-            "url": "https://www.blueharbour.co.nz/",
-            "finalUrl": "https://www.blueharbour.co.nz/",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.blueharbour.co.nz/home",
-            "finalUrl": "https://www.blueharbour.co.nz/home",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Tiago Gandra",
-        "autoPracticeName": "Blue Harbour Mental Health",
-        "autoConfidence": "medium",
-        "autoEvidence": "Dr Tiago Gandra is a consultant psychiatrist with a psychodynamic orientation and specialist expertise in psychotherapy. He completed his training in General Adult Psychiatry at University Colleg",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in central Dunedin: Queens Building (level 2). 109 Princes",
-            "sourceUrl": "https://www.blueharbour.co.nz/",
-            "matched": "Sensitive Claims"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in centr",
-          "sourceUrl": "https://www.blueharbour.co.nz/",
-          "matched": "ACC"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: Referrals",
-          "sourceUrl": "https://www.blueharbour.co.nz/"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Tiago Gandra",
-            "evidence": "Dr Tiago Gandra is a consultant psychiatrist with a psychodynamic orientation and specialist expertise in psychotherapy. He completed his training in General Adult Psychiatry at University Colleg",
-            "sourceUrl": "https://www.blueharbour.co.nz/"
-          }
-        ],
         "notes": "",
         "generatedAt": "2026-05-25T09:23:13.473Z"
       },
@@ -327689,6 +327173,521 @@
             "name": "CAPTCHA Agata Moody",
             "evidence": "CAPTCHA \nDr Agata Moody \nPsychiatrist",
             "sourceUrl": "https://www.coliber.nz/contact/"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:dunedin-blue-harbour-mental-health",
+      "reviewCategory": "Sensitive tag or scope evidence",
+      "providerId": "dunedin-blue-harbour-mental-health",
+      "name": "Blue Harbour Mental Health",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "Otago",
+      "city": "Dunedin",
+      "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
+      "lat": -45.8759881,
+      "lon": 170.5027507,
+      "phone": "",
+      "text": "",
+      "email": "office@blueharbour.co.nz",
+      "website": "https://www.blueharbour.co.nz/",
+      "bookingUrl": "",
+      "source": "https://www.blueharbour.co.nz/",
+      "sourceQuality": "provider-owned or NGO public page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "not_published",
+      "availabilityCheckedAt": "2026-05",
+      "availabilityEvidence": "",
+      "availabilitySource": "https://www.blueharbour.co.nz/",
+      "availabilityNeedsManualReview": true,
+      "requiresReferral": true,
+      "referralType": "specialist",
+      "referralSourceUrl": "https://www.blueharbour.co.nz/referrals",
+      "referralSourceExcerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-07-15",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "fit",
+        "trauma",
+        "psychotherapy",
+        "assessment",
+        "medication",
+        "acc",
+        "sensitive-claims",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [],
+      "advertisedSpecialtyEvidence": [],
+      "specialtyTagsSource": "no advertised specialties recorded",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 1390,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability needs manual review"
+      ],
+      "sourceUrls": [
+        "https://www.blueharbour.co.nz/",
+        "https://www.blueharbour.co.nz/referrals"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "email",
+            "value": "office@blueharbour.co.nz",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://www.blueharbour.co.nz/",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "not_published",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "2026-05",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "specialist",
+            "sourceUrl": "https://www.blueharbour.co.nz/referrals",
+            "excerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
+            "capturedAt": "2026-07-15",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment.",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Ask your GP or another registered health professional to refer you for a psychiatry consultation. Blue Harbour does not accept self-referrals for psychiatry.",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in central Dunedin: Queens Building (level 2). 109 Princes",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "psychotherapy": [
+            {
+              "field": "tags",
+              "value": "psychotherapy",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "assessment": [
+            {
+              "field": "tags",
+              "value": "assessment",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medication": [
+            {
+              "field": "tags",
+              "value": "medication",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "acc": [
+            {
+              "field": "tags",
+              "value": "acc",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "sensitive-claims": [
+            {
+              "field": "tags",
+              "value": "sensitive-claims",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.blueharbour.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [],
+        "cultural": [],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options.",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "excerpt": "l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in centr",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Referral: Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals. | Source scan: clinician \"Tiago Gandra\", practice \"Blue Harbour Mental Health\". | Trauma or sexual harm: sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Ser | Signal: l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide asses | Signal: Link/button text: Referrals",
+      "publicCardPreviewText": "Blue Harbour Mental Health Otago / Dunedin Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment. Ask your GP or another registered health professional to refer you for a psychiatry consultation. Blue Harbour does not accept self-referrals for psychiatry. Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options. Availability: not_published",
+      "currentProvider": {
+        "id": "dunedin-blue-harbour-mental-health",
+        "name": "Blue Harbour Mental Health",
+        "type": "psychiatrist",
+        "region": "Otago",
+        "city": "Dunedin",
+        "address": "Princes Street Practice, Queens Building, Level 2, 109 Princes Street, Dunedin 9016",
+        "phone": "",
+        "text": "",
+        "email": "office@blueharbour.co.nz",
+        "website": "https://www.blueharbour.co.nz/",
+        "lat": -45.8759881,
+        "lon": 170.5027507,
+        "coordinateSource": "Nominatim 2026-05",
+        "hours": "The practice aims to respond to enquiries within two working days.",
+        "cost": "Private specialist fees usually apply; ask about referral requirements, ACC Sensitive Claims, insurance, or funded options.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "trauma",
+          "psychotherapy",
+          "assessment",
+          "medication",
+          "acc",
+          "sensitive-claims",
+          "direct-contact"
+        ],
+        "fit": "Specialist psychiatry and psychotherapy practice in central Dunedin. Listed services include psychiatric consultations, treatment and follow-up, psychodynamic and psychoanalytic psychotherapy, and ACC Sensitive Claims assessment and treatment.",
+        "firstStep": "Ask your GP or another registered health professional to refer you for a psychiatry consultation. Blue Harbour does not accept self-referrals for psychiatry.",
+        "source": "https://www.blueharbour.co.nz/",
+        "verified": "2026-05",
+        "sourceQuality": "provider-owned or NGO public page",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "needScope": [],
+        "availabilityStatus": "not_published",
+        "availabilityCheckedAt": "2026-05",
+        "availabilityEvidence": "",
+        "availabilitySource": "https://www.blueharbour.co.nz/",
+        "availabilityNeedsManualReview": true,
+        "requiresReferral": true,
+        "referralType": "specialist",
+        "referralSourceUrl": "https://www.blueharbour.co.nz/referrals",
+        "referralSourceExcerpt": "Blue Harbour Mental Health accepts psychiatry referrals from general practitioners and other registered health professionals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [],
+        "advertisedSpecialtyEvidence": [],
+        "specialtyTagsSource": "no advertised specialties recorded",
+        "coordinatePrecision": "address geocode",
+        "coordinateConfidence": "medium",
+        "geocodeNeedsManualReview": true
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "dunedin-blue-harbour-mental-health",
+        "providerName": "Blue Harbour Mental Health",
+        "providerType": "psychiatrist",
+        "region": "Otago",
+        "city": "Dunedin",
+        "sourceUrl": "https://www.blueharbour.co.nz/",
+        "pagesChecked": [
+          {
+            "url": "https://www.blueharbour.co.nz/",
+            "finalUrl": "https://www.blueharbour.co.nz/",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.blueharbour.co.nz/home",
+            "finalUrl": "https://www.blueharbour.co.nz/home",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Tiago Gandra",
+        "autoPracticeName": "Blue Harbour Mental Health",
+        "autoConfidence": "medium",
+        "autoEvidence": "Dr Tiago Gandra is a consultant psychiatrist with a psychodynamic orientation and specialist expertise in psychotherapy. He completed his training in General Adult Psychiatry at University Colleg",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "sts and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in central Dunedin: Queens Building (level 2). 109 Princes",
+            "sourceUrl": "https://www.blueharbour.co.nz/",
+            "matched": "Sensitive Claims"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "l Australian and New Zealand College of Psychiatrists and currently serves as the Aotearoa New Zealand representative within the faculty. He is registered with ACC to provide assessment and treatment under the Sensitive Claims Service. Find us Blue Harbour Mental Health is based at the Princes Street Practice, in centr",
+          "sourceUrl": "https://www.blueharbour.co.nz/",
+          "matched": "ACC"
+        },
+        "availabilitySignal": {
+          "status": "unclear",
+          "value": "unclear",
+          "evidence": "",
+          "sourceUrl": "",
+          "matched": ""
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: Referrals",
+          "sourceUrl": "https://www.blueharbour.co.nz/"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Tiago Gandra",
+            "evidence": "Dr Tiago Gandra is a consultant psychiatrist with a psychodynamic orientation and specialist expertise in psychotherapy. He completed his training in General Adult Psychiatry at University Colleg",
+            "sourceUrl": "https://www.blueharbour.co.nz/"
           }
         ],
         "notes": "",
