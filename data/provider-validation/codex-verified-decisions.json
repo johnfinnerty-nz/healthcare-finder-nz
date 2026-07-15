@@ -1,141 +1,60 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T09:44:22.899Z",
+  "generatedAt": "2026-07-15T10:44:27.404Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:ranzcp-4807",
+      "reviewId": "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org",
       "reviewIds": [
-        "provider:ranzcp-4807",
-        "discovery:suggestion:clinician-domain:dr-scott-chambers:yourhealthinmind.org"
+        "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org"
       ],
-      "providerId": "ranzcp-4807",
-      "providerName": "Dr Scott Chambers",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jul 2018",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "capturedAt": "2026-07-15T09:44:22.900Z",
-          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Jul 2018",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Jul 2018",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "capturedAt": "2026-07-15T09:44:22.900Z",
-          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "onlineAvailable",
-          "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nYes",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "capturedAt": "2026-07-15T09:44:22.900Z",
-          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "sourceType": "professional_directory",
-          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4807/dr-scott-chambers",
-          "capturedAt": "2026-07-15T09:44:22.900Z",
-          "pageHash": "38ecf831265f16781e79ae1148d49a78001b74144c434b3c7f21ab1af4817835",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The live RANZCP profile still displays a less-than-one-month wait, telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in July 2018. Two research passes did not locate a current provider-owned New Zealand treating-practice page that could refresh these claims. No availability, telehealth, referral, contact, or identity field is changed.",
-      "codexReview": {
-        "researchPassId": "research-20260715-scott-chambers-current-practice-1",
-        "verificationPassId": "verify-20260715-scott-chambers-current-practice-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org",
-      "reviewIds": [
-        "discovery:suggestion:clinician-domain:dr-katie-ritchie:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-4859",
-      "providerName": "Dr Katie Ritchie",
+      "providerId": "ranzcp-5226",
+      "providerName": "Prof Cameron Lacey",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Katie Ritchie",
-        "practiceName": "Bexley Clinic",
-        "website": "https://www.bexleyclinic.co.nz/"
+        "clinicianName": "Prof Cameron Lacey",
+        "practiceName": "Elimbias Health",
+        "website": "https://www.elimbiashealth.com/"
       },
-      "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-      "sourceExcerpt": "Dr Katie Ritchie",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+      "sourceExcerpt": "Prof Cameron Lacey",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Katie Ritchie",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "sourceType": "healthpoint",
-          "excerpt": "Dr Katie Ritchie",
-          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "capturedAt": "2026-07-15T09:44:24.874Z",
-          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
+          "value": "Prof Cameron Lacey",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceType": "professional_directory",
+          "excerpt": "Prof Cameron Lacey",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:27.406Z",
+          "pageHash": "f095a922688fb65f8b6dcb76a90374b5c68d0964cb2144f2beb6d08bb134d99e",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "practiceName",
-          "value": "Bexley Clinic",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "sourceType": "healthpoint",
-          "excerpt": "Bexley Clinic",
-          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "capturedAt": "2026-07-15T09:44:24.874Z",
-          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
+          "value": "Elimbias Health",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceType": "professional_directory",
+          "excerpt": "Elimbias Health",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:27.406Z",
+          "pageHash": "f095a922688fb65f8b6dcb76a90374b5c68d0964cb2144f2beb6d08bb134d99e",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "website",
-          "value": "https://www.bexleyclinic.co.nz/",
-          "sourceUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "sourceType": "healthpoint",
-          "excerpt": "www.bexleyclinic.co.nz/",
-          "finalUrl": "https://www.healthpoint.co.nz/private/specialist/dr-katie-ritchie/",
-          "capturedAt": "2026-07-15T09:44:24.874Z",
-          "pageHash": "936883dfdfd9e81f4ddee24c405e6f4b62e833676de4b7d984ed542e4f3bbb01",
+          "value": "https://www.elimbiashealth.com/",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "sourceType": "professional_directory",
+          "excerpt": "www.elimbiashealth.com",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:27.406Z",
+          "pageHash": "f095a922688fb65f8b6dcb76a90374b5c68d0964cb2144f2beb6d08bb134d99e",
           "verified": true,
           "verificationErrors": []
         }
@@ -144,166 +63,433 @@
         "discovery-suggestion",
         "update_existing_provider"
       ],
-      "reviewNotes": "The current Healthpoint specialist page identifies Dr Katie Ritchie at Bexley Clinic and links to the clinic website. The clinic's current contact page independently confirms the practice, while its team page misspells the surname as Richie, so the exact clinician identity is taken from Healthpoint and RANZCP rather than that team-page heading. No availability or telehealth claim is refreshed.",
+      "reviewNotes": "The live RANZCP profile identifies Prof Cameron Lacey at Elimbias Health and links to the reachable clinic-owned website. The clinic team page independently identifies Professor Cameron Lacey, and its location page repeats the stored phone, email, address, and GP-referral requirement. No availability or telehealth claim is refreshed.",
       "codexReview": {
-        "researchPassId": "research-20260715-katie-ritchie-healthpoint-identity-1",
-        "verificationPassId": "verify-20260715-katie-ritchie-healthpoint-identity-2",
+        "researchPassId": "research-20260715-cameron-lacey-identity-practice-1",
+        "verificationPassId": "verify-20260715-cameron-lacey-identity-practice-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []
     },
     {
-      "reviewId": "provider:ranzcp-4859",
+      "reviewId": "provider:ranzcp-5226",
       "reviewIds": [
-        "provider:ranzcp-4859"
+        "provider:ranzcp-5226"
       ],
-      "providerId": "ranzcp-4859",
-      "providerName": "Dr Katie Ritchie",
+      "providerId": "ranzcp-5226",
+      "providerName": "Prof Cameron Lacey",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-15",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Sep 2021",
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2025",
       "sourceEvidence": [
         {
           "field": "availabilityStatus",
           "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
           "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: 3-6 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
-          "capturedAt": "2026-07-15T09:44:26.273Z",
-          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
+          "excerpt": "Approximate wait time for a first appointment: Less than 1 month",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:29.209Z",
+          "pageHash": "bd52c0ed979e0acba1fd5e24376ff5c024ea955eee39e7fd42fd8a1aaae25083",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "availabilityFreshness",
-          "value": "profile last updated Sep 2021",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "value": "profile last updated Aug 2025",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
           "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Sep 2021",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
-          "capturedAt": "2026-07-15T09:44:26.273Z",
-          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
+          "excerpt": "This listing was last updated by this psychiatrist in Aug 2025",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:29.209Z",
+          "pageHash": "bd52c0ed979e0acba1fd5e24376ff5c024ea955eee39e7fd42fd8a1aaae25083",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "onlineAvailable",
           "value": true,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
           "sourceType": "professional_directory",
           "excerpt": "Offers telepsychiatry\nYes",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
-          "capturedAt": "2026-07-15T09:44:26.273Z",
-          "pageHash": "956c3800769c711bb8c81433727282f08b7d2b652fada4f338d4ff126d9a117b",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [],
-      "reviewNotes": "The RANZCP profile still displays a 3-6 month wait and telepsychiatry, but says it was last updated in September 2021. Current Bexley Clinic and Healthpoint pages confirm the clinician and practice but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
-      "codexReview": {
-        "researchPassId": "research-20260715-katie-ritchie-availability-1",
-        "verificationPassId": "verify-20260715-katie-ritchie-availability-2",
-        "verificationConclusion": "needs_more_info",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:ranzcp-4946",
-      "reviewIds": [
-        "provider:ranzcp-4946",
-        "discovery:suggestion:clinician-domain:dr-paul-edgar:yourhealthinmind.org"
-      ],
-      "providerId": "ranzcp-4946",
-      "providerName": "Dr Paul Edgar",
-      "action": "needs_more_info",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-15",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Jun 2018",
-      "sourceEvidence": [
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "capturedAt": "2026-07-15T09:44:27.788Z",
-          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Jun 2018",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Jun 2018",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "capturedAt": "2026-07-15T09:44:27.788Z",
-          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "onlineAvailable",
-          "value": false,
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "sourceType": "professional_directory",
-          "excerpt": "Offers telepsychiatry\nNo",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "capturedAt": "2026-07-15T09:44:27.788Z",
-          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:29.209Z",
+          "pageHash": "bd52c0ed979e0acba1fd5e24376ff5c024ea955eee39e7fd42fd8a1aaae25083",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
           "sourceType": "professional_directory",
           "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
-          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
-          "capturedAt": "2026-07-15T09:44:27.788Z",
-          "pageHash": "014e6e5a3425b6b2917c19477e37e2e6b4a2e079076911d49b3d642ffd0ec530",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+          "capturedAt": "2026-07-15T10:44:29.209Z",
+          "pageHash": "bd52c0ed979e0acba1fd5e24376ff5c024ea955eee39e7fd42fd8a1aaae25083",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The live RANZCP profile still displays a 1-3 month wait, no telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in June 2018. The listed direct Google Sites page now redirects to a login page and mymind.cc was unreachable in both passes. Access controls were not bypassed. No stored claim is changed from this stale directory evidence.",
+      "reviewNotes": "The RANZCP profile still displays a less-than-one-month wait and telepsychiatry, but says it was last updated in August 2025. Elimbias Health's current public pages confirm the clinician, practice, contact details, and GP-referral requirement but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
       "codexReview": {
-        "researchPassId": "research-20260715-paul-edgar-current-practice-1",
-        "verificationPassId": "verify-20260715-paul-edgar-current-practice-2",
+        "researchPassId": "research-20260715-cameron-lacey-availability-1",
+        "verificationPassId": "verify-20260715-cameron-lacey-availability-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-15T09:44:22.899Z",
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-5481",
+      "providerName": "Dr Sally Rimkeit",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Dr Sally Rimkeit",
+        "practiceName": "The Dunes Practice",
+        "website": "https://www.thedunespractice.co.nz/"
+      },
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+      "sourceExcerpt": "Dr Sally Rimkeit",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Dr Sally Rimkeit",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "Dr Sally Rimkeit",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:30.662Z",
+          "pageHash": "fa6c4eacff7188deb5ecb597bbdf1d69df3089d9ce8ca43c9f2ac6b4fbcaa0e0",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "practiceName",
+          "value": "The Dunes Practice",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "The Dunes Practice",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:30.662Z",
+          "pageHash": "fa6c4eacff7188deb5ecb597bbdf1d69df3089d9ce8ca43c9f2ac6b4fbcaa0e0",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "website",
+          "value": "https://www.thedunespractice.co.nz/",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "www.thedunespractice.co.nz",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:30.662Z",
+          "pageHash": "fa6c4eacff7188deb5ecb597bbdf1d69df3089d9ce8ca43c9f2ac6b4fbcaa0e0",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "reviewNotes": "The live RANZCP profile identifies Dr Sally Rimkeit at The Dunes Practice and links to the reachable clinic-owned website. The clinic's practitioner page independently identifies Dr B. Sally Rimkeit. No availability or telehealth field is changed in this decision.",
+      "codexReview": {
+        "researchPassId": "research-20260715-sally-rimkeit-identity-practice-1",
+        "verificationPassId": "verify-20260715-sally-rimkeit-identity-practice-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:ranzcp-5481",
+      "reviewIds": [
+        "provider:ranzcp-5481"
+      ],
+      "providerId": "ranzcp-5481",
+      "providerName": "Dr Sally Rimkeit",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2025",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:32.124Z",
+          "pageHash": "5cc63ec8f3e2d6c36ad4723eea07d01fc022c588f5aeb2577c6598700c7da6e1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Aug 2025",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Aug 2025",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:32.124Z",
+          "pageHash": "5cc63ec8f3e2d6c36ad4723eea07d01fc022c588f5aeb2577c6598700c7da6e1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "onlineAvailable",
+          "value": true,
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nYes",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:32.124Z",
+          "pageHash": "5cc63ec8f3e2d6c36ad4723eea07d01fc022c588f5aeb2577c6598700c7da6e1",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+          "capturedAt": "2026-07-15T10:44:32.124Z",
+          "pageHash": "5cc63ec8f3e2d6c36ad4723eea07d01fc022c588f5aeb2577c6598700c7da6e1",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The RANZCP profile still displays a 1-3 month wait and telepsychiatry, but says it was last updated in August 2025. Search-visible and rendered clinic content currently reports that the practice is not accepting referrals and that its waiting lists are closed until August 2026, but the controlled non-rendered evidence fetch could not reproduce that dynamic notice. The system therefore does not apply a suppression or refresh from it automatically; the record remains a lowered waitlist result and is deferred for another evidence pass.",
+      "codexReview": {
+        "researchPassId": "research-20260715-sally-rimkeit-availability-1",
+        "verificationPassId": "verify-20260715-sally-rimkeit-availability-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org"
+      ],
+      "providerId": "ranzcp-5542",
+      "providerName": "Dr Vernon Reynolds",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Dr Vernon Reynolds",
+        "practiceName": "Chuckle Factory",
+        "address": "58 Kamo Road, Whangarei",
+        "phone": "021 741 329",
+        "website": "https://www.chucklefactory.com/"
+      },
+      "sourceUrl": "https://www.chucklefactory.com/aboutus",
+      "sourceExcerpt": "Dr Vernon Reynolds",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Dr Vernon Reynolds",
+          "sourceUrl": "https://www.chucklefactory.com/aboutus",
+          "sourceType": "provider_owned",
+          "excerpt": "Dr Vernon Reynolds",
+          "finalUrl": "https://www.chucklefactory.com/aboutus",
+          "capturedAt": "2026-07-15T10:44:33.544Z",
+          "pageHash": "53c4344b31b19f7e3efe4f682d2c98ba7c88b2b43f333aec25152772634069d2",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "practiceName",
+          "value": "Chuckle Factory",
+          "sourceUrl": "https://www.chucklefactory.com/aboutus",
+          "sourceType": "provider_owned",
+          "excerpt": "Chuckle Factory",
+          "finalUrl": "https://www.chucklefactory.com/aboutus",
+          "capturedAt": "2026-07-15T10:44:33.544Z",
+          "pageHash": "53c4344b31b19f7e3efe4f682d2c98ba7c88b2b43f333aec25152772634069d2",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "address",
+          "value": "58 Kamo Road, Whangarei",
+          "sourceUrl": "https://www.chucklefactory.com/aboutus",
+          "sourceType": "provider_owned",
+          "excerpt": "58 Kamo Road\nWhangarei",
+          "finalUrl": "https://www.chucklefactory.com/aboutus",
+          "capturedAt": "2026-07-15T10:44:33.544Z",
+          "pageHash": "53c4344b31b19f7e3efe4f682d2c98ba7c88b2b43f333aec25152772634069d2",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "phone",
+          "value": "021 741 329",
+          "sourceUrl": "https://www.chucklefactory.com/aboutus",
+          "sourceType": "provider_owned",
+          "excerpt": "021 741 329",
+          "finalUrl": "https://www.chucklefactory.com/aboutus",
+          "capturedAt": "2026-07-15T10:44:33.544Z",
+          "pageHash": "53c4344b31b19f7e3efe4f682d2c98ba7c88b2b43f333aec25152772634069d2",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "website",
+          "value": "https://www.chucklefactory.com/",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceType": "professional_directory",
+          "excerpt": "www.chucklefactory.com",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "capturedAt": "2026-07-15T10:44:36.562Z",
+          "pageHash": "912e12bd46d864aa36a741dfb70c90f6a39db68d208886752d6397343e5af30f",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "reviewNotes": "The provider-owned Chuckle Factory site identifies Dr Vernon Reynolds and publishes the physical 58 Kamo Road address and local-format phone. The live RANZCP page links to the same practice website and repeats the phone and email. The previous PO Box 93 value is replaced with the clinic's published physical address; coordinates are not changed through this lane. No intake or availability status is inferred from the contact flow.",
+      "codexReview": {
+        "researchPassId": "research-20260715-vernon-reynolds-contact-location-1",
+        "verificationPassId": "verify-20260715-vernon-reynolds-contact-location-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:ranzcp-5542",
+      "reviewIds": [
+        "provider:ranzcp-5542"
+      ],
+      "providerId": "ranzcp-5542",
+      "providerName": "Dr Vernon Reynolds",
+      "action": "needs_more_info",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {},
+      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+      "sourceExcerpt": "This listing was last updated by this psychiatrist in Oct 2022",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceType": "professional_directory",
+          "excerpt": "Approximate wait time for a first appointment: 1-3 months",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "capturedAt": "2026-07-15T10:44:38.209Z",
+          "pageHash": "a71a182ded02a374c863103865e3a150d2cec85844d5f8e0f0f7fea18bed5ebc",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "availabilityFreshness",
+          "value": "profile last updated Oct 2022",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceType": "professional_directory",
+          "excerpt": "This listing was last updated by this psychiatrist in Oct 2022",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "capturedAt": "2026-07-15T10:44:38.209Z",
+          "pageHash": "a71a182ded02a374c863103865e3a150d2cec85844d5f8e0f0f7fea18bed5ebc",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "onlineAvailable",
+          "value": true,
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceType": "professional_directory",
+          "excerpt": "Offers telepsychiatry\nYes",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "capturedAt": "2026-07-15T10:44:38.209Z",
+          "pageHash": "a71a182ded02a374c863103865e3a150d2cec85844d5f8e0f0f7fea18bed5ebc",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "sourceType": "professional_directory",
+          "excerpt": "If you wish to see this psychiatrist, you must first see your GP for a referral and to discuss your treatment options.",
+          "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+          "capturedAt": "2026-07-15T10:44:38.209Z",
+          "pageHash": "a71a182ded02a374c863103865e3a150d2cec85844d5f8e0f0f7fea18bed5ebc",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [],
+      "reviewNotes": "The RANZCP profile still displays a 1-3 month wait, telepsychiatry, and a GP-referral pathway, but says it was last updated in October 2022. Chuckle Factory's reachable public site confirms the clinician, contact details, physical address, and telehealth option. Its generic statement that appointment options will be provided is not explicit evidence of current acceptance or wait time, and its contact flow is not treated as self-referral evidence. Availability is not refreshed.",
+      "codexReview": {
+        "researchPassId": "research-20260715-vernon-reynolds-availability-referral-1",
+        "verificationPassId": "verify-20260715-vernon-reynolds-availability-referral-2",
+        "verificationConclusion": "needs_more_info",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-15T10:44:27.404Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []

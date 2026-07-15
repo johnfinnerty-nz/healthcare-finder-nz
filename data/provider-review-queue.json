@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T09:31:16.129Z",
+  "generatedAt": "2026-07-15T10:31:29.432Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -13233,8 +13233,8 @@
       "reviewCategory": "Availability review",
       "providerId": "ranzcp-4859",
       "name": "Dr Katie Ritchie",
-      "clinicianName": "",
-      "practiceName": "",
+      "clinicianName": "Dr Katie Ritchie",
+      "practiceName": "Bexley Clinic",
       "type": "psychiatrist",
       "region": "Auckland",
       "city": "Remuera",
@@ -13244,7 +13244,7 @@
       "phone": "09 5205280",
       "text": "",
       "email": "bexleyclinicnz@gmail.com",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+      "website": "https://www.bexleyclinic.co.nz/",
       "bookingUrl": "",
       "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
       "sourceQuality": "professional register or directory",
@@ -13360,6 +13360,7 @@
         "availability status is waitlist"
       ],
       "sourceUrls": [
+        "https://www.bexleyclinic.co.nz/",
         "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie"
       ],
       "sourceEvidence": {
@@ -13384,7 +13385,7 @@
           },
           {
             "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+            "value": "https://www.bexleyclinic.co.nz/",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
             "excerpt": "",
             "capturedAt": "",
@@ -13682,7 +13683,7 @@
         ]
       },
       "sourceEvidenceSummary": "Availability: appointment wait: 3-6 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Katie Ritchie\", practice \"(none)\". | Depression or low mood: to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Aut | Trauma or sexual harm: t details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Bipolar disorder Depression Obsessive-compulsive disorders Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Katie Ritchie Auckland / Remuera RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Post-traumatic stress disorder, Psychosis. Services include ACC Treatment provider, Insurance opinions / reports, Shared care. Patient groups listed include Asylum seekers and refugees, Doctors, psychiatrists or medical students, Gender diverse, Gay and lesbian, Military and veterans, Non-English speaking, Physical disability. Works with Ages 18-60. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "publicCardPreviewText": "Dr Katie Ritchie, Bexley Clinic Auckland / Remuera RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Post-traumatic stress disorder, Psychosis. Services include ACC Treatment provider, Insurance opinions / reports, Shared care. Patient groups listed include Asylum seekers and refugees, Doctors, psychiatrists or medical students, Gender diverse, Gay and lesbian, Military and veterans, Non-English speaking, Physical disability. Works with Ages 18-60. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
       "currentProvider": {
         "id": "ranzcp-4859",
         "name": "Dr Katie Ritchie",
@@ -13693,7 +13694,7 @@
         "phone": "09 5205280",
         "text": "",
         "email": "bexleyclinicnz@gmail.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4859/dr-katie-ritchie",
+        "website": "https://www.bexleyclinic.co.nz/",
         "hours": "Appointment wait: 3-6 months.",
         "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
         "tags": [
@@ -13799,7 +13800,9 @@
         "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
         "coordinatePrecision": "professional directory listing",
         "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Katie Ritchie",
+        "practiceName": "Bexley Clinic"
       },
       "auditFindings": [
         {

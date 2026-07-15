@@ -952,6 +952,90 @@
       "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4946/dr-paul-edgar",
       "lastNotes": "The live RANZCP profile still displays a 1-3 month wait, no telepsychiatry, and GP-referral guidance, but says the psychiatrist last updated it in June 2018. The listed direct Google Sites page now redirects to a login page and mymind.cc was unreachable in both passes. Access controls were not bypassed. No stored claim is changed from this stale directory evidence.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-5226": {
+      "reviewId": "provider:ranzcp-5226",
+      "providerId": "ranzcp-5226",
+      "status": "deferred",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T10:45:16.273Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+      "lastNotes": "The RANZCP profile still displays a less-than-one-month wait and telepsychiatry, but says it was last updated in August 2025. Elimbias Health's current public pages confirm the clinician, practice, contact details, and GP-referral requirement but publish no current clinician-specific wait or remote-appointment statement. The stale claims are not refreshed and acceptance is not inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org",
+      "providerId": "ranzcp-5226",
+      "status": "completed",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T10:45:16.273Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+      "lastNotes": "The live RANZCP profile identifies Prof Cameron Lacey at Elimbias Health and links to the reachable clinic-owned website. The clinic team page independently identifies Professor Cameron Lacey, and its location page repeats the stored phone, email, address, and GP-referral requirement. No availability or telehealth claim is refreshed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-5481": {
+      "reviewId": "provider:ranzcp-5481",
+      "providerId": "ranzcp-5481",
+      "status": "deferred",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T10:45:16.273Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+      "lastNotes": "The RANZCP profile still displays a 1-3 month wait and telepsychiatry, but says it was last updated in August 2025. Search-visible and rendered clinic content currently reports that the practice is not accepting referrals and that its waiting lists are closed until August 2026, but the controlled non-rendered evidence fetch could not reproduce that dynamic notice. The system therefore does not apply a suppression or refresh from it automatically; the record remains a lowered waitlist result and is deferred for another evidence pass.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org",
+      "providerId": "ranzcp-5481",
+      "status": "completed",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T10:45:16.273Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+      "lastNotes": "The live RANZCP profile identifies Dr Sally Rimkeit at The Dunes Practice and links to the reachable clinic-owned website. The clinic's practitioner page independently identifies Dr B. Sally Rimkeit. No availability or telehealth field is changed in this decision.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:ranzcp-5542": {
+      "reviewId": "provider:ranzcp-5542",
+      "providerId": "ranzcp-5542",
+      "status": "deferred",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-14T10:45:16.273Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+      "lastNotes": "The RANZCP profile still displays a 1-3 month wait, telepsychiatry, and a GP-referral pathway, but says it was last updated in October 2022. Chuckle Factory's reachable public site confirms the clinician, contact details, physical address, and telehealth option. Its generic statement that appointment options will be provided is not explicit evidence of current acceptance or wait time, and its contact flow is not treated as self-referral evidence. Availability is not refreshed.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org",
+      "providerId": "ranzcp-5542",
+      "status": "completed",
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "startedAt": "2026-07-15T10:31:38.887Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T10:45:16.273Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.chucklefactory.com/aboutus",
+      "lastNotes": "The provider-owned Chuckle Factory site identifies Dr Vernon Reynolds and publishes the physical 58 Kamo Road address and local-format phone. The live RANZCP page links to the same practice website and repeats the phone and email. The previous PO Box 93 value is replaced with the clinic's published physical address; coordinates are not changed through this lane. No intake or availability status is inferred from the contact flow.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -1044,9 +1128,18 @@
         "ranzcp-4859",
         "ranzcp-4946"
       ]
+    },
+    {
+      "batchId": "codex-20260715103138-eaac8ae2",
+      "generatedAt": "2026-07-15T10:31:38.887Z",
+      "providerIds": [
+        "ranzcp-5226",
+        "ranzcp-5481",
+        "ranzcp-5542"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T09:44:47.802Z",
+  "updatedAt": "2026-07-15T10:45:16.273Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -1590,6 +1683,54 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-15T09:44:47.802Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:prof-cameron-lacey:yourhealthinmind.org",
+      "providerId": "ranzcp-5226",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T10:45:16.273Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-5226",
+      "providerId": "ranzcp-5226",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T10:45:16.273Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-sally-rimkeit:yourhealthinmind.org",
+      "providerId": "ranzcp-5481",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T10:45:16.273Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-5481",
+      "providerId": "ranzcp-5481",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T10:45:16.273Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-vernon-reynolds:yourhealthinmind.org",
+      "providerId": "ranzcp-5542",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T10:45:16.273Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:ranzcp-5542",
+      "providerId": "ranzcp-5542",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-15T10:45:16.273Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

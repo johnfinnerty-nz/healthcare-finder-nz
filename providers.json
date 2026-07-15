@@ -27744,7 +27744,7 @@
     "phone": "03 662 9200",
     "text": "",
     "email": "info@elimbiashealth.com",
-    "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5226/prof-cameron-lacey",
+    "website": "https://www.elimbiashealth.com/",
     "hours": "Appointment wait: Less than 1 month.",
     "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
     "tags": [
@@ -27835,7 +27835,9 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Prof Cameron Lacey",
+    "practiceName": "Elimbias Health"
   },
   {
     "id": "gp-promed-doctors-43-5153-172-6377",
@@ -39334,11 +39336,11 @@
     "type": "psychiatrist",
     "region": "Northland",
     "city": "Whangarei",
-    "address": "PO Box 93, Whangarei 0140",
-    "phone": "+64 21 741 329",
+    "address": "58 Kamo Road, Whangarei",
+    "phone": "021 741 329",
     "text": "",
     "email": "admin@chucklefactory.com",
-    "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds",
+    "website": "https://www.chucklefactory.com/",
     "hours": "RANZCP Your Health in Mind profile lists telehealth and after-hours appointment options, with waitlist status.",
     "cost": "Private psychiatry fees may apply. Ask your GP about referral, costs, WINZ, insurance, or other support before booking.",
     "tags": [
@@ -39460,7 +39462,9 @@
     "specialtyTagsSource": "source-backed advertised specialties/interests",
     "coordinatePrecision": "address geocode",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Vernon Reynolds",
+    "practiceName": "Chuckle Factory"
   },
   {
     "address": "Central Whangarei city",
@@ -59088,7 +59092,7 @@
     "phone": "021518783",
     "text": "",
     "email": "admin@thedunespractice.co.nz",
-    "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5481/dr-sally-rimkeit",
+    "website": "https://www.thedunespractice.co.nz/",
     "hours": "Appointment wait: 1-3 months.",
     "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
     "tags": [
@@ -59203,7 +59207,9 @@
     "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
     "coordinatePrecision": "professional directory listing",
     "coordinateConfidence": "medium",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Dr Sally Rimkeit",
+    "practiceName": "The Dunes Practice"
   },
   {
     "id": "ranzcp-5889",
