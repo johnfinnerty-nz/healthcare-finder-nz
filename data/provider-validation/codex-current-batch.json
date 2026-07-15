@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260715002114-f5aaba80",
-  "generatedAt": "2026-07-15T00:21:14.191Z",
+  "batchId": "codex-20260715003459-3963760d",
+  "generatedAt": "2026-07-15T00:34:59.344Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,96 +13,98 @@
   ],
   "items": [
     {
-      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "providerId": "national-msq-health-psychiatry",
       "reviewIds": [
-        "discovery:suggestion:email:info@ancora.org.nz",
-        "provider:bay-of-plenty-ancora-adult-adhd-psychiatry"
+        "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
+        "discovery:suggestion:email:enquire@msq.health",
+        "provider:national-msq-health-psychiatry"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
       "reviewModes": [
         "safe_removal_or_evidence_only",
-        "restrictive_availability_or_evidence_only"
+        "restrictive_availability_or_evidence_only",
+        "evidence_only"
       ],
       "reviewCategories": [
-        "Referral pathway review",
-        "Availability review"
+        "Referral pathway review"
       ],
       "auditRules": [
         "discovery-suggestion",
         "needs_manual_research",
-        "conflict-phone",
         "conflict-tags",
-        "conflict-advertisedSpecialties",
-        "stale-availability"
+        "conflict-advertisedSpecialties"
       ],
       "auditIssues": [
-        "conflicting phone, tags, advertisedSpecialties values",
+        "conflicting tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
-        "conflicting fields: phone, tags, advertisedSpecialties",
-        "waitlist availability is 32 days old; target cadence is 30 days."
+        "conflicting fields: tags, advertisedSpecialties",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown"
       ],
       "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
         "provider discovery suggestion",
-        "conflicting phone, tags, advertisedSpecialties values",
+        "conflicting tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
-        "conflicting fields: phone, tags, advertisedSpecialties",
-        "medium: stale-availability",
+        "conflicting fields: tags, advertisedSpecialties",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown",
+        "availability needs manual review",
         "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown",
-        "availability status is waitlist"
+        "psychiatrist referral pathway unknown"
       ],
       "sourceUrls": [
-        "https://www.ancora.org.nz/"
+        "https://msq.health/",
+        "https://msq.health/book/",
+        "https://msq.health/contact"
       ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 021 222 0993\nAvailability: Current psychiatrist assessment wait-time is 6 weeks. | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"AncorA Adult ADHD Clinic\". | Depression or low mood: g ADHD Our Process Pricing Coaching Sessions QBCheck Contact us Helpful Resources ADHD New Zealand Adult ADHD Alcohol & Drug Helpline The Low Down NZ Depression.org.nz Autism NZ Ad | Anxiety, panic, or overwhelm: which can result in significant fatigue by day’s end. Common side effects include difficulty focusing, chronic procrastination, disorganisation and feelings of overwhelm. If your c | Trauma or sexual harm: bout helping people understand their experiences and find pathways forward that truly work for them. She has a particular interest in ADHD and its overlap with trauma, addiction, a | availability audit: waitlist availability is 32 days old; target cadence is 30 days.",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Availability: waitlist | Evidence: Booking or appointment link found on source page.\nSources: provider-owned page | Evidence: Seed value from providers.json: 04 499 2624\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Affordable Healthcare New Zealand\". | Depression or low mood: → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based treatment matched to your specific disorder. Learn more → 🌫️ Depression Including p | Anxiety, panic, or overwhelm: 🎯 ADHD Comprehensive ADHD assessments and ongoing medication management — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic dis | Trauma or sexual harm: ent — adults and children. Telehealth available. Typically within weeks. Learn more → 🌀 Anxiety GAD, panic disorder, social anxiety, OCD, health anxiety, and PTSD. Evidence-based ",
       "currentRecord": {
-        "name": "AncorA Adult ADHD Clinic",
+        "name": "Expert Health Services - When You Need It Most",
         "clinicianName": "",
-        "practiceName": "AncorA Adult ADHD Clinic",
+        "practiceName": "Expert Health Services - When You Need It Most",
         "type": "psychiatrist",
-        "region": "Bay of Plenty",
-        "city": "Tauranga and nationwide telehealth",
+        "region": "National",
+        "city": "Telehealth and NZ clinics",
         "address": "",
-        "phone": "021 222 0993",
+        "phone": "",
         "text": "",
-        "email": "info@ancora.org.nz",
-        "website": "https://www.ancora.org.nz/",
-        "bookingUrl": "",
-        "source": "https://www.ancora.org.nz/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
+        "email": "",
+        "website": "",
+        "bookingUrl": "https://msq.health/book/",
+        "source": "https://msq.health/",
+        "availabilityStatus": "waitlist",
+        "availabilityEvidence": "waitlist",
         "referralType": "",
         "referralSourceExcerpt": "",
         "tags": [
           "depression",
           "anxiety",
-          "addiction"
+          "trauma",
+          "telehealth"
         ],
         "needScope": [],
         "advertisedSpecialties": [
           "depression",
           "anxiety",
-          "addiction"
+          "trauma"
         ],
         "specialties": [
           "depression",
           "anxiety",
-          "addiction"
+          "trauma"
         ],
         "services": [],
         "patientGroups": [],
         "ageGroups": [
           [
             "Children",
+            "Adolescents",
             "Adults"
           ]
         ],
-        "onlineAvailable": false,
+        "onlineAvailable": true,
         "phoneSupport": false,
         "inPerson": false,
         "cost": ""
@@ -110,17 +112,15 @@
       "score": 520
     },
     {
-      "providerId": "manawatu-eye-openers-psychiatry",
+      "providerId": "national-positive-mind-works-psychiatry",
       "reviewIds": [
-        "discovery:suggestion:phone:06 353 0300",
-        "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
-        "provider:manawatu-eye-openers-psychiatry"
+        "discovery:suggestion:email:info@positivemindworks.co",
+        "provider:national-positive-mind-works-psychiatry"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
       "reviewModes": [
-        "contact_or_location_corroboration",
-        "restrictive_availability_or_evidence_only",
+        "safe_removal_or_evidence_only",
         "evidence_only"
       ],
       "reviewCategories": [
@@ -129,92 +129,90 @@
       "auditRules": [
         "discovery-suggestion",
         "needs_manual_research",
-        "conflict-address",
+        "conflict-name",
         "conflict-phone",
-        "conflict-website",
-        "conflict-source",
-        "conflict-bookingUrl",
-        "google-places-candidate",
-        "corroborate_existing_provider"
+        "conflict-tags",
+        "conflict-advertisedSpecialties"
       ],
       "auditIssues": [
-        "conflicting address, phone, website, source, bookingUrl values",
+        "conflicting name, phone, tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
-        "conflicting fields: address, phone, website, source, bookingUrl",
-        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
-        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
-        "missing signals: local psychiatrist or psychiatry pathway; local addiction support | 10 GP corroboration tasks | Google Places discovery/corroboration only",
-        "Google Places result is 0.7 km from the query centre.",
-        "existing provider match keeps type as psychiatrist",
-        "possible existing provider match: manawatu-eye-openers-psychiatry"
+        "conflicting fields: name, phone, tags, advertisedSpecialties"
       ],
       "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow.",
-        "Use this as a discovery lead only. Open the provider website or stronger public source, capture excerpts, then approve/adjust/reject through review decisions."
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
       ],
       "reviewReasons": [
         "provider discovery suggestion",
-        "conflicting address, phone, website, source, bookingUrl values",
+        "conflicting name, phone, tags, advertisedSpecialties values",
         "extracted from seed source provider_owned",
-        "conflicting fields: address, phone, website, source, bookingUrl",
-        "Google Places discovery candidate",
-        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
-        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
-        "missing signals: local psychiatrist or psychiatry pathway; local addiction support | 10 GP corroboration tasks | Google Places discovery/corroboration only",
-        "Google Places result is 0.7 km from the query centre.",
-        "existing provider match keeps type as psychiatrist",
-        "possible existing provider match: manawatu-eye-openers-psychiatry",
-        "availability needs manual review",
+        "conflicting fields: name, phone, tags, advertisedSpecialties",
         "referral pathway needs manual review",
         "psychiatrist referral pathway unknown"
       ],
       "sourceUrls": [
-        "https://www.eye-openers-psychiatry.co.nz/",
-        "https://eye-openers-psychiatry.co.nz/",
-        "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-        "https://maps.google.com/?cid=10442359012915877304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-        "https://eye-openers-psychiatry.co.nz/contact"
+        "https://www.positivemindworks.co/",
+        "https://www.facebook.com/PositiveMindWorks.Online/",
+        "https://www.positivemindworks.co/book-now/"
       ],
-      "sourceEvidenceSummary": "Sources: Google Places business listing, provider-owned page | Evidence: Seed value from google places candidate export: 06 353 0300\nSources: Google Places business listing | Evidence: Google Places phone: 06 353 0300 | Business status: OPERATIONAL\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Private Practice Eye\". | Depression or low mood: al well-being of the client and their family/whanau in order to live a fulfilled life. We provide treatment for a wide range of mental health issues including depression, burn-out, | Anxiety, panic, or overwhelm: ive a fulfilled life. We provide treatment for a wide range of mental health issues including depression, burn-out, bipolar disorder, dissociation, psychosis, anxiety and trauma /  | Trauma or sexual harm: led life. We provide treatment for a wide range of mental health issues including depression, burn-out, bipolar disorder, dissociation, psychosis, anxiety and trauma / injury relat",
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 0800 327 477\nAvailability: Source describes no waitlists and online booking, but does not use an explicit accepting-new-clients phrase. | Referral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Online Psychologist Psychiatrists: Therapy at Home\". | Depression or low mood: e DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social Anxiety Depression OCD Phobia Pre/Post N | Anxiety, panic, or overwhelm: dicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD Anxiety Panic Attacks Social A | Trauma or sexual harm: fees Psychology fees NDIS Medicare / MHCP Private & Health insurance DVA Workcover The Team What is Online Counselling We Help with Life Transitions Trauma & Complex Trauma ADHD An",
       "currentRecord": {
-        "name": "Eye-Openers Psychiatry",
-        "clinicianName": "",
-        "practiceName": "Eye-Openers Psychiatry",
+        "name": "Positive Mind Works Psychiatry",
+        "clinicianName": "Dr Paula Porter",
+        "practiceName": "Professional Care. Flexible Access.",
         "type": "psychiatrist",
-        "region": "Manawatu-Whanganui",
-        "city": "Palmerston North",
-        "address": "Level 9, TSB Bank Tower, 1-19 Fitzherbert Avenue, Palmerston North 4440",
-        "phone": "06 353 0300",
+        "region": "National",
+        "city": "Nationwide virtual service",
+        "address": "",
+        "phone": "0800 327 477",
         "text": "",
-        "email": "dritajzeegers@gmail.com",
-        "website": "https://eye-openers-psychiatry.co.nz/",
-        "bookingUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
-        "source": "https://www.eye-openers-psychiatry.co.nz/",
+        "email": "info@positivemindworks.co",
+        "website": "https://www.positivemindworks.co/",
+        "bookingUrl": "https://www.facebook.com/PositiveMindWorks.Online/",
+        "source": "https://www.positivemindworks.co/",
         "availabilityStatus": "not_published",
         "availabilityEvidence": "",
         "referralType": "",
         "referralSourceExcerpt": "",
-        "tags": [],
+        "tags": [
+          "depression",
+          "anxiety",
+          "trauma",
+          "telehealth"
+        ],
         "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
+        "advertisedSpecialties": [
+          "depression",
+          "anxiety",
+          "trauma"
+        ],
+        "specialties": [
+          "depression",
+          "anxiety",
+          "trauma"
+        ],
         "services": [],
         "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
+        "ageGroups": [
+          [
+            "Children",
+            "Adults",
+            "Older adults"
+          ]
+        ],
+        "onlineAvailable": true,
         "phoneSupport": false,
-        "inPerson": true,
+        "inPerson": false,
         "cost": ""
       },
       "score": 520
     },
     {
-      "providerId": "national-coliber-group-psychiatry",
+      "providerId": "national-tom-oflynn-psychiatrist",
       "reviewIds": [
-        "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
-        "discovery:suggestion:email:info@coliber.nz",
-        "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
-        "provider:national-coliber-group-psychiatry"
+        "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
+        "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
+        "provider:national-tom-oflynn-psychiatrist"
       ],
       "reviewPriority": "critical",
       "auditSeverity": "high",
@@ -231,22 +229,13 @@
         "needs_manual_research",
         "conflict-tags",
         "conflict-advertisedSpecialties",
-        "conflict-name",
-        "conflict-address",
-        "conflict-website",
-        "conflict-source",
-        "conflict-city",
-        "conflict-region",
         "update_existing_provider"
       ],
       "auditIssues": [
         "conflicting tags, advertisedSpecialties values",
         "extracted from seed source healthpoint",
         "conflicting fields: tags, advertisedSpecialties",
-        "conflicting name, address, website, source, city, region values",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates",
-        "conflicting fields: name, address, website, source, city, region",
-        "extracted from seed source provider_owned",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review",
         "existing provider update requires human approval before patching"
       ],
       "suggestedFixes": [
@@ -257,36 +246,29 @@
         "conflicting tags, advertisedSpecialties values",
         "extracted from seed source healthpoint",
         "conflicting fields: tags, advertisedSpecialties",
-        "conflicting name, address, website, source, city, region values",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates",
-        "conflicting fields: name, address, website, source, city, region",
-        "extracted from seed source provider_owned",
+        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review",
         "existing provider update requires human approval before patching",
         "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown",
-        "address missing coordinates"
+        "referral pathway needs manual review"
       ],
       "sourceUrls": [
-        "https://www.healthpoint.co.nz/private/psychiatry/coliber-group-psychiatry/?region=im%3A085f0496-b25b-4d5a-8ac7-81a4ca54226d",
-        "https://www.coliber.nz/contact/",
-        "https://www.coliber.nz/appointments/"
+        "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/"
       ],
-      "sourceEvidenceSummary": "Sources: Healthpoint | Evidence: ion. Additional Details Online / virtual / app, Speak with women / wahine, LGBTQIA+ friendly Website www.coliber.nz/ Contact Details Open today 9:00 AM to 5:00 PM. Phone 022 500 8140 022 500 8140 --> Email [email protect\nSources: Healthpoint, provider-owned page | Evidence: Seed value from providers.json: 022 500 8140\nSources: provider-owned page | Evidence: Booking or appointment link found on source page.\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Coliber Psychiatry\". | Depression or low mood: Zealand Dr Moody has been working as a consultant psychiatrist in the public health care system and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxi | Anxiety, panic, or overwhelm: has been working as a consultant psychiatrist in the public health care system and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxiety disorders par | Trauma or sexual harm: m and privately . Dr Moody’s clinical interests and expertise are mood disorders, anxiety disorders particularly complexity of OCD, generational and relational trauma, PTSD, ADHD a",
+      "sourceEvidenceSummary": "Sources: Healthpoint | Evidence: nitoring of treatment, support groups. Additional Details Online / virtual / app, LGBTQIA+ friendly, Phone Pharmacy Find your nearest pharmacy here Contact Details Phone 021548914 021548914 --> Email [email protected] Ph\nSources: Healthpoint | Evidence: Seed value from providers.json: 022 129 6524\nReferral: Public information suggests self-referral, online booking, or direct patient enquiry is available. | Source scan: clinician \"Tom O'Flynn Psychiatrist\", practice \"(none)\". | Depression or low mood: ty. Treatment Self help: learning techniques like relaxation, distraction and education Cognitive Behavioural Therapy (CBT) Medication. Bipolar Disorder/Manic Depression This is a  | Anxiety, panic, or overwhelm: O'Flynn is a specialist psychiatrist providing an online consultation service for adult patients, assessing and treating conditions including: mood disorders anxiety ADHD early psy | Trauma or sexual harm: omiting. There are varieties of anxiety disorders like panic attacks, phobias (unhealthy fear of something), agoraphobia (fear of open spaces), social anxiety, post-traumatic disor",
       "currentRecord": {
-        "name": "Coliber Group Psychiatry",
-        "clinicianName": "Dr Agata Golawska",
-        "practiceName": "Coliber Group Psychiatry",
+        "name": "Tom O'Flynn Psychiatrist",
+        "clinicianName": "Dr Tom O'Flynn",
+        "practiceName": "Tom O'Flynn Psychiatrist",
         "type": "psychiatrist",
         "region": "National",
         "city": "Telehealth",
-        "address": "1 Windsor Street",
-        "phone": "022 500 8140 0",
+        "address": "",
+        "phone": "021548914 02",
         "text": "",
         "email": "",
         "website": "",
         "bookingUrl": "",
-        "source": "https://www.healthpoint.co.nz/private/psychiatry/coliber-group-psychiatry/?region=im%3A085f0496-b25b-4d5a-8ac7-81a4ca54226d",
+        "source": "https://www.healthpoint.co.nz/private/psychiatry/tom-oflynn-psychiatrist/",
         "availabilityStatus": "not_published",
         "availabilityEvidence": "",
         "referralType": "",
@@ -295,7 +277,8 @@
           "depression",
           "anxiety",
           "trauma",
-          "rainbow"
+          "rainbow",
+          "telehealth"
         ],
         "needScope": [],
         "advertisedSpecialties": [
@@ -316,9 +299,9 @@
             "Older adults"
           ]
         ],
-        "onlineAvailable": false,
+        "onlineAvailable": true,
         "phoneSupport": false,
-        "inPerson": true,
+        "inPerson": false,
         "cost": ""
       },
       "score": 520

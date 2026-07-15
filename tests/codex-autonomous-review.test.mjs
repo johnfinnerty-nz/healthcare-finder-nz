@@ -7,6 +7,7 @@ import {
 } from "../tools/prepare-codex-provider-review-batch.mjs";
 import { updateCodexProgress } from "../tools/update-codex-provider-review-progress.mjs";
 import { verifyCodexReviewEvidence } from "../tools/verify-codex-review-evidence.mjs";
+import { detectAvailabilityFromText } from "../tools/lib/provider-availability.mjs";
 
 function provider(overrides = {}) {
   return {
@@ -157,6 +158,44 @@ test("Codex evidence verifier accepts exact identity-bound contact evidence", as
   assert.equal(applied.providers[0].email, "care@harbour.test");
 });
 
+test("known provider domains can corroborate a distinctive shortened brand", async () => {
+  const brandedProvider = provider({
+    id: "ancora-adult-adhd",
+    name: "AncorA Adult ADHD Clinic",
+    practiceName: "AncorA Adult ADHD Clinic",
+    type: "psychiatrist",
+    website: "https://www.ancora.test/",
+    source: "https://www.ancora.test/",
+    availabilityStatus: "waitlist"
+  });
+  const excerpt = "Current Psychiatrist Assessment wait-time is 6 weeks.";
+  const sourceUrl = "https://www.ancora.test/";
+  const decision = codexDecision({
+    providerId: brandedProvider.id,
+    correctedFields: {
+      availabilityStatus: "waitlist",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "waitlist", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const result = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [brandedProvider],
+    fetcher: sourceFetcher(`<h1>AncorA</h1><p>Adult ADHD care from a psychiatrist.</p><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(result.errors, []);
+});
+
 test("Codex evidence verifier blocks non-exact excerpts and prompt injection", async () => {
   const missing = await verifyCodexReviewEvidence({
     decisions: { decisions: [codexDecision({ sourceExcerpt: "Different text", sourceEvidence: [{ field: "email", value: "care@harbour.test", sourceUrl: "https://harbour.test/contact", excerpt: "Different text" }] })] },
@@ -201,6 +240,73 @@ test("Codex lane rejects positive high-risk claims even when evidence is supplie
   assert.match(result.errors[0].errors.join(" "), /accepting availability/);
   assert.match(result.errors[0].errors.join(" "), /telehealth/);
   assert.match(result.errors[0].errors.join(" "), /tags adds positive values/);
+});
+
+test("explicit wording that no new psychiatry referrals are taken is restrictive", () => {
+  const result = detectAvailabilityFromText("Please note that due to high demand currently no new psychiatry referrals are taken");
+  assert.equal(result.status, "referrals_paused");
+  assert.match(result.evidence, /no new psychiatry referrals are taken/i);
+});
+
+test("an explicit psychiatrist assessment wait-time is treated as a waitlist", () => {
+  const result = detectAvailabilityFromText("Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.");
+  assert.equal(result.status, "waitlist");
+  assert.match(result.evidence, /assessment wait-time is 6 weeks/i);
+});
+
+test("Codex can move an explicitly referral-paused provider to the watchlist", async () => {
+  const excerpt = "Please note that due to high demand currently no new psychiatry referrals are taken";
+  const pausedProvider = provider({
+    id: "eye-openers",
+    name: "Eye-Openers Psychiatry",
+    practiceName: "Eye-Openers Psychiatry",
+    type: "psychiatrist",
+    availabilityStatus: "not_published",
+    availabilityNeedsManualReview: true,
+    website: "https://eye-openers.test/",
+    source: "https://eye-openers.test/"
+  });
+  const sourceUrl = "https://eye-openers.test/online-booking/";
+  const evidence = [
+    { field: "availabilityStatus", value: "referrals_paused", sourceUrl, excerpt },
+    { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+    { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+  ];
+  const decision = codexDecision({
+    providerId: pausedProvider.id,
+    action: "move_to_watchlist",
+    correctedFields: {
+      availabilityStatus: "referrals_paused",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: evidence
+  });
+  const verified = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [pausedProvider],
+    fetcher: sourceFetcher(`<h1>Eye-Openers Psychiatry</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(verified.errors, []);
+
+  const applied = applyReviewDecisions({
+    providers: [pausedProvider],
+    decisions: verified,
+    watchlist: { version: 1, items: [] },
+    allowAiReviewDecisions: true
+  });
+  assert.deepEqual(applied.errors, []);
+  assert.equal(applied.providers.length, 0);
+  assert.equal(applied.watchlist.items[0].lastKnownStatus, "unavailable");
+  assert.equal(applied.watchlist.items[0].availabilityStatus, "referrals_paused");
+  assert.equal(applied.watchlist.items[0].providerCandidate.availabilityStatus, "referrals_paused");
+  assert.equal(applied.watchlist.items[0].availabilityNeedsManualReview, false);
+  assert.equal(applied.watchlist.items[0].reason, excerpt);
 });
 
 test("controlled apply rejects forged Codex evidence metadata", () => {

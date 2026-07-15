@@ -32,7 +32,7 @@ export const availabilityCadenceDays = {
 const restrictivePatterns = [
   {
     status: "referrals_paused",
-    pattern: /\b(?:referrals?\s+(?:are\s+)?(?:paused|closed)|not\s+(?:currently\s+)?accepting\s+new\s+referrals?|closed\s+to\s+new\s+referrals?)\b/i
+    pattern: /\b(?:referrals?\s+(?:are\s+)?(?:paused|closed)|not\s+(?:currently\s+)?accepting\s+new\s+referrals?|closed\s+to\s+new\s+referrals?|no\s+new\s+(?:psychiatry\s+)?referrals?\s+(?:are\s+)?(?:being\s+)?(?:taken|accepted))\b/i
   },
   {
     status: "not_accepting",
@@ -41,7 +41,7 @@ const restrictivePatterns = [
 ];
 
 const waitlistPatterns = [
-  /\b(?:wait\s*list|waitlist|waiting\s+list|limited\s+availability|very\s+limited|appointment\s+wait\s*:?\s*(?:less\s+than|1\s*-\s*3|3\s*-\s*6|6\+|within\s+\d+)|next\s+available\s+appointment)\b/i
+  /\b(?:wait\s*list|waitlist|waiting\s+list|limited\s+availability|very\s+limited|appointment\s+wait\s*:?\s*(?:less\s+than|1\s*-\s*3|3\s*-\s*6|6\+|within\s+\d+)|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+\d+\s*(?:days?|weeks?|months?)|next\s+available\s+appointment)\b/i
 ];
 
 const acceptingPatterns = [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T00:21:45.494Z",
+  "generatedAt": "2026-07-15T00:33:22.535Z",
   "currentBehaviour": {
     "scheduledRecheckPreviouslyExisted": true,
     "notes": [
@@ -9,8 +9,8 @@
       "The link checker checked reachability only; it did not infer provider availability."
     ]
   },
-  "providersScanned": 1214,
-  "watchlistItemsScanned": 20,
+  "providersScanned": 1213,
+  "watchlistItemsScanned": 21,
   "recheckResultsScanned": 20,
   "allowedAvailabilityStatuses": [
     "accepting",
@@ -30,13 +30,13 @@
   },
   "statusCounts": {
     "liveProviders": {
-      "not_published": 1177,
+      "not_published": 1176,
       "waitlist": 31,
       "accepting": 6
     },
     "watchlist": {
       "not_accepting": 15,
-      "referrals_paused": 5
+      "referrals_paused": 6
     }
   },
   "regionsAffectedByUnavailable": {
@@ -49,24 +49,10 @@
     "Southland": 1,
     "Nelson Marlborough Tasman": 1,
     "Tairawhiti": 1,
-    "Hawke's Bay": 2
+    "Hawke's Bay": 2,
+    "Manawatu-Whanganui": 1
   },
   "findings": [
-    {
-      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
-      "providerName": "AncorA Adult ADHD Clinic",
-      "region": "Bay of Plenty",
-      "city": "Tauranga and nationwide telehealth",
-      "type": "psychiatrist",
-      "source": "https://www.ancora.org.nz/",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-06-12",
-      "rule": "stale-availability",
-      "severity": "medium",
-      "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
-      "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-      "allowlisted": false
-    },
     {
       "providerId": "christchurch-psychmed-michelle-mccarthy",
       "providerName": "Dr Michelle McCarthy",
@@ -954,9 +940,9 @@
     }
   ],
   "summary": {
-    "total": 60,
+    "total": 59,
     "high": 0,
-    "medium": 60,
+    "medium": 59,
     "low": 0,
     "highUnallowlisted": 0,
     "allowlisted": 0

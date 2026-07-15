@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "batchId": "codex-20260715002114-f5aaba80",
+  "generatedAt": "2026-07-15T00:30:00.000Z",
+  "policy": "codex-safe-remediation-v1",
+  "decisions": [
+    {
+      "reviewId": "provider:bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:email:info@ancora.org.nz",
+        "provider:bay-of-plenty-ancora-adult-adhd-psychiatry"
+      ],
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "providerName": "AncorA Adult ADHD Clinic",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
+        "availabilitySource": "https://www.ancora.org.nz/",
+        "availabilityNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.ancora.org.nz/",
+      "sourceExcerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "waitlist",
+          "sourceUrl": "https://www.ancora.org.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information.",
+          "sourceUrl": "https://www.ancora.org.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://www.ancora.org.nz/",
+          "sourceUrl": "https://www.ancora.org.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "Current Psychiatrist Assessment wait-time is 6 weeks. Please contact us for more information."
+        }
+      ],
+      "auditRulesResolved": [
+        "stale-availability"
+      ],
+      "reviewNotes": "The same explicit six-week psychiatrist assessment wait statement was reproduced in two independent public-page fetches. This refreshes restrictive availability only and does not infer acceptance.",
+      "codexReview": {
+        "researchPassId": "research-20260715-ancora-1",
+        "verificationPassId": "verify-20260715-ancora-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:manawatu-eye-openers-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:phone:06 353 0300",
+        "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
+        "provider:manawatu-eye-openers-psychiatry"
+      ],
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "providerName": "Eye-Openers Psychiatry",
+      "action": "move_to_watchlist",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "availabilityStatus": "referrals_paused",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "Please note that due to high demand currently no new psychiatry referrals are taken",
+        "availabilitySource": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+        "availabilityNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "sourceExcerpt": "Please note that due to high demand currently no new psychiatry referrals are taken",
+      "sourceEvidence": [
+        {
+          "field": "availabilityStatus",
+          "value": "referrals_paused",
+          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+          "sourceType": "provider_owned",
+          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
+        },
+        {
+          "field": "availabilityEvidence",
+          "value": "Please note that due to high demand currently no new psychiatry referrals are taken",
+          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+          "sourceType": "provider_owned",
+          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
+        },
+        {
+          "field": "availabilitySource",
+          "value": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+          "sourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+          "sourceType": "provider_owned",
+          "excerpt": "Please note that due to high demand currently no new psychiatry referrals are taken"
+        }
+      ],
+      "auditRulesResolved": [
+        "availability-needs-review"
+      ],
+      "reviewNotes": "The provider-owned booking page reproduced the no-new-referrals statement in two independent fetches. The provider is removed reversibly from live recommendations and retained on the availability watchlist.",
+      "codexReview": {
+        "researchPassId": "research-20260715-eye-openers-1",
+        "verificationPassId": "verify-20260715-eye-openers-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    },
+    {
+      "reviewId": "provider:national-coliber-group-psychiatry",
+      "reviewIds": [
+        "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
+        "discovery:suggestion:email:info@coliber.nz",
+        "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
+        "provider:national-coliber-group-psychiatry"
+      ],
+      "providerId": "national-coliber-group-psychiatry",
+      "providerName": "Coliber Group Psychiatry",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-15",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.coliber.nz/appointments/",
+        "referralSourceExcerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-15",
+        "referralNeedsManualReview": false
+      },
+      "sourceUrl": "https://www.coliber.nz/appointments/",
+      "sourceExcerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
+      "sourceEvidence": [
+        {
+          "field": "referralType",
+          "value": "gp",
+          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceType": "provider_owned",
+          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+        },
+        {
+          "field": "requiresReferral",
+          "value": true,
+          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceType": "provider_owned",
+          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.coliber.nz/appointments/",
+          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceType": "provider_owned",
+          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional",
+          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceType": "provider_owned",
+          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://www.coliber.nz/appointments/",
+          "sourceType": "provider_owned",
+          "excerpt": "Before an appointment can be made with Coliber, we require a referral from your GP, Nurse Practitioner, Psychologist or other Medical Professional"
+        }
+      ],
+      "auditRulesResolved": [
+        "unknown-referral-pathway"
+      ],
+      "reviewNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "codexReview": {
+        "researchPassId": "research-20260715-coliber-1",
+        "verificationPassId": "verify-20260715-coliber-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      }
+    }
+  ]
+}

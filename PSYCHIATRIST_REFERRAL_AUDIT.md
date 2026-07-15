@@ -1,8 +1,8 @@
 # Psychiatrist Referral Audit
 
-Generated: 2026-07-15T00:21:46.252Z
+Generated: 2026-07-15T00:33:23.406Z
 
-Scanned 68 psychiatry records from 1214 providers.
+Scanned 67 psychiatry records from 1213 providers.
 
 Findings: 0 high, 0 medium, 0 low.
 

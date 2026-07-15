@@ -79,7 +79,12 @@ function providerIdentityMatches(provider, sourceUrl, text) {
   const nameMatch = names.some((name) => comparableText.includes(name));
   const sourceHost = sourceDomain(sourceUrl);
   const knownHosts = unique([provider.website, provider.source, provider.bookingUrl].map(sourceDomain));
-  return Boolean(nameMatch && sourceHost && knownHosts.includes(sourceHost));
+  const knownDomainMatch = Boolean(sourceHost && knownHosts.includes(sourceHost));
+  const distinctiveBrandMatch = names
+    .flatMap((name) => name.split(" "))
+    .filter((part) => part.length >= 5)
+    .some((part) => sourceHost.includes(part) && comparableText.includes(part));
+  return Boolean(knownDomainMatch && (nameMatch || (!provider.clinicianName && distinctiveBrandMatch)));
 }
 
 function valueAppearsInEvidence(value, evidence) {
@@ -145,7 +150,7 @@ function fieldSupportErrors(provider, decision, evidence) {
   if (decision.action === "move_to_watchlist" || RESTRICTIVE_AVAILABILITY.has(corrected.availabilityStatus)) {
     const availabilityEvidence = fieldEvidence(evidence, "availabilityStatus");
     const text = availabilityEvidence.map((item) => item.excerpt).join(" ");
-    if (!/\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?closed|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+(?:current\s+)?availability|fully\s+booked|wait\s*list|waiting\s+list\b/i.test(text)) {
+    if (!/\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?closed|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+new\s+(?:psychiatry\s+)?referrals?\s+(?:are\s+)?(?:being\s+)?(?:taken|accepted)|no\s+(?:current\s+)?availability|fully\s+booked|wait\s*list|waiting\s+list|(?:assessment|appointment|psychiatrist)?\s*wait[- ]time\s+(?:is|of)\s+\d+\s*(?:days?|weeks?|months?)\b/i.test(text)) {
       errors.push("restrictive availability needs an explicit field-matched excerpt");
     }
   }

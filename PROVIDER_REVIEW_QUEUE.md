@@ -1,6 +1,6 @@
 # Provider Review Queue
 
-Generated: 2026-07-15T00:20:05.592Z
+Generated: 2026-07-15T00:34:50.673Z
 
 Focused queue: yes.
 
@@ -8,8 +8,8 @@ Focused queue: yes.
 
 - Review items: 801
 - Critical: 12
-- High: 482
-- Medium: 159
+- High: 483
+- Medium: 158
 - Low: 148
 
 ## By Review Category
@@ -17,10 +17,10 @@ Focused queue: yes.
 | Category | Items |
 | --- | --- |
 | GP source corroboration | 251 |
-| Location and distance evidence | 126 |
+| Location and distance evidence | 127 |
 | Sensitive tag or scope evidence | 124 |
-| Availability review | 81 |
-| Referral pathway review | 80 |
+| Availability review | 82 |
+| Referral pathway review | 78 |
 | Needs quick human check | 59 |
 | Google Places discovery | 47 |
 | Directory/direct-contact confusion | 33 |
@@ -44,7 +44,6 @@ Focused queue: yes.
 | high | medium | Sensitive tag or scope evidence | wellington-womens-health-collective - Wellington Women's Health Collective | counsellor | Wellington / Wellington | broad-tag-without-source-support, weak-rainbow-evidence, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-rainbow-evidence; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Availability review | psychiatry-nz-staverton-kautoke - Dr Staverton (Tony) Kautoke | psychiatrist | National / Telehealth across New Zealand | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist; address missing coordinates |
 | high | medium | Directory/direct-contact confusion | nzccp-alana-malloy - Alana Malloy | psychologist | Wellington / Wellington | register-only-public-contact, weak-rainbow-evidence, missing-address | medium: register-only-public-contact; medium: weak-rainbow-evidence; medium: missing-address; provider details need manual verification; availability needs manual review |
-| high | medium | Availability review | bay-of-plenty-ancora-adult-adhd-psychiatry - AncorA Adult ADHD Clinic | psychiatrist | Bay of Plenty / Tauranga and nationwide telehealth | stale-availability | medium: stale-availability; referral pathway needs manual review; psychiatrist referral pathway unknown; availability status is waitlist |
 | high | medium | Availability review | ranzcp-4827 - Dr Tanya Wright | psychiatrist | Auckland / Mt Eden | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; psychiatrist referral pathway unknown; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | hawkes-bay-nova-mentem-broad-streams - Nova Mentem broad psychiatry streams | psychiatrist | Hawke's Bay / Napier | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; psychiatrist referral pathway unknown; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | northland-northland-psychiatry-dr-foote - Northland Psychiatry - Dr Joseph Foote | psychiatrist | Northland / Whangarei and telepsychiatry | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; psychiatrist referral pathway unknown; verification date is stale or missing; availability watchlist candidate |
@@ -75,6 +74,7 @@ Focused queue: yes.
 | high | medium | Location and distance evidence | south-canterbury-reihana-psychology - Reihana Psychology | psychologist | South Canterbury / Timaru | broad-tag-without-source-support, missing-coordinates | medium: broad-tag-without-source-support; medium: missing-coordinates; availability needs manual review; address missing coordinates |
 | high | medium | Location and distance evidence | wellington-cbt-clinic - CBT Clinic | psychologist | Wellington / Wellington CBD | broad-tag-without-source-support, missing-coordinates | medium: broad-tag-without-source-support; medium: missing-coordinates; availability needs manual review; address missing coordinates |
 | high | medium | Directory/direct-contact confusion | nzccp-allanah-casey - Allanah Casey | psychologist | Bay of Plenty / Tauranga | broad-tag-without-source-support, register-only-public-contact | medium: broad-tag-without-source-support; medium: register-only-public-contact; provider details need manual verification; availability needs manual review |
+| high | medium | Availability review | manawatu-eye-openers-psychiatry - Eye-Openers Psychiatry | psychiatrist | Manawatu-Whanganui / Palmerston North | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Sensitive tag or scope evidence | auckland-visionwest-wellbeing-centre - Visionwest Counselling & Wellbeing Centre | counsellor | Auckland / Glen Eden | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Sensitive tag or scope evidence | manawatu-pnmss-counselling - Palmerston North Methodist Social Services Counselling | counsellor | Manawatu-Whanganui / Palmerston North | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Sensitive tag or scope evidence | manawatu-reach-out-counselling - Reachout Counselling | counsellor | Manawatu-Whanganui / Palmerston North | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |

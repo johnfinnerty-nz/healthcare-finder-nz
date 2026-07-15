@@ -526,14 +526,20 @@ function makeWatchlistItem(provider, decision) {
     region: provider.region,
     city: provider.city,
     url: decision.sourceUrl || provider.availabilitySource || provider.source || provider.website || "",
-    lastKnownStatus: provider.availabilityStatus === "referrals_paused" ? "referrals_paused" : "unavailable",
+    lastKnownStatus: "unavailable",
     reason: decision.sourceExcerpt || provider.availabilityEvidence || decision.reviewNotes || "Moved from live providers by manual review decision.",
     unavailablePatterns: [
       "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
       "books?\\s+(?:are\\s+)?closed",
       "no\\s+(?:current\\s+)?availability",
+      "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",
       "referrals?\\s+(?:are\\s+)?paused"
     ],
+    availabilityStatus: provider.availabilityStatus || "not_accepting",
+    availabilityCheckedAt: provider.availabilityCheckedAt || checkedDate,
+    availabilityEvidence: provider.availabilityEvidence || decision.sourceExcerpt || "",
+    availabilitySource: provider.availabilitySource || decision.sourceUrl || provider.source || provider.website || "",
+    availabilityNeedsManualReview: Boolean(provider.availabilityNeedsManualReview),
     availablePatterns: [
       "taking\\s+new\\s+(?:clients|patients|referrals)",
       "accepting\\s+new\\s+(?:clients|patients|referrals)",
@@ -560,7 +566,12 @@ function makeWatchlistItem(provider, decision) {
       firstStep: provider.firstStep || "",
       cost: provider.cost || "",
       confidence: provider.confidence || "low",
-      sourceQuality: provider.sourceQuality || ""
+      sourceQuality: provider.sourceQuality || "",
+      availabilityStatus: provider.availabilityStatus || "not_accepting",
+      availabilityCheckedAt: provider.availabilityCheckedAt || checkedDate,
+      availabilityEvidence: provider.availabilityEvidence || decision.sourceExcerpt || "",
+      availabilitySource: provider.availabilitySource || decision.sourceUrl || provider.source || provider.website || "",
+      availabilityNeedsManualReview: Boolean(provider.availabilityNeedsManualReview)
     }
   };
 }
@@ -690,10 +701,12 @@ export function applyReviewDecisions({
         newFields = { excludedFromLiveProviders: true };
         nextProviders.splice(index, 1);
       } else if (action === "move_to_watchlist") {
-        const watchlistItem = makeWatchlistItem(provider, decision);
+        const nextProvider = applyCorrectedFields(provider, correctedFields);
+        validateSafety(provider, nextProvider, decision);
+        const watchlistItem = makeWatchlistItem(nextProvider, decision);
         nextWatchlist = updateWatchlist(nextWatchlist, watchlistItem);
         oldFields = clone(provider);
-        newFields = { movedToWatchlist: watchlistItem.id };
+        newFields = { movedToWatchlist: watchlistItem.id, ...correctedFields };
         nextProviders.splice(index, 1);
       } else if (action === "duplicate") {
         if (!decision.keptProviderId) throw new Error("duplicate decision requires keptProviderId.");

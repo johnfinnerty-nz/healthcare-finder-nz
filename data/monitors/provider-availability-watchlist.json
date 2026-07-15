@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-05-24",
+  "updated": "2026-07-15",
   "items": [
     {
       "id": "west-coast-internal-growth-holistic-psychology",
@@ -964,6 +964,69 @@
       "availabilityEvidence": "Provider-owned homepage says their books are currently closed.",
       "availabilitySource": "https://centralfamily.co.nz/",
       "availabilityNeedsManualReview": true
+    },
+    {
+      "id": "manawatu-eye-openers-psychiatry",
+      "name": "Eye-Openers Psychiatry",
+      "type": "psychiatrist",
+      "region": "Manawatu-Whanganui",
+      "city": "Palmerston North",
+      "url": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "lastKnownStatus": "unavailable",
+      "reason": "Please note that due to high demand currently no new psychiatry referrals are taken",
+      "unavailablePatterns": [
+        "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
+        "books?\\s+(?:are\\s+)?closed",
+        "no\\s+(?:current\\s+)?availability",
+        "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",
+        "referrals?\\s+(?:are\\s+)?paused"
+      ],
+      "availabilityStatus": "referrals_paused",
+      "availabilityCheckedAt": "2026-07-15",
+      "availabilityEvidence": "Please note that due to high demand currently no new psychiatry referrals are taken",
+      "availabilitySource": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "availabilityNeedsManualReview": false,
+      "availablePatterns": [
+        "taking\\s+new\\s+(?:clients|patients|referrals)",
+        "accepting\\s+new\\s+(?:clients|patients|referrals)",
+        "new\\s+client\\s+enquir(?:y|ies)",
+        "book\\s+(?:an\\s+)?appointment"
+      ],
+      "checkedAt": "2026-07-15",
+      "providerCandidate": {
+        "name": "Eye-Openers Psychiatry",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Manawatu-Whanganui",
+        "city": "Palmerston North",
+        "address": "Level 9, TSB Bank Tower, 1-19 Fitzherbert Avenue, Palmerston North 4440",
+        "phone": "06 353 0300",
+        "text": "",
+        "email": "dritajzeegers@gmail.com",
+        "website": "https://eye-openers-psychiatry.co.nz/",
+        "source": "https://eye-openers-psychiatry.co.nz/",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "telehealth",
+          "assessment",
+          "medication",
+          "fit",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "fit": "Palmerston North private psychiatry practice with direct email, phone, and online contact. Useful when a medical specialist opinion, diagnosis question, or medication review is wanted.",
+        "firstStep": "Email or call and ask about referral requirements, wait time, fees, and whether in-person or telepsychiatry is available.",
+        "cost": "Private specialist fees usually apply. Ask about referral requirements, fees, and whether telepsychiatry is available.",
+        "confidence": "high",
+        "sourceQuality": "provider-owned page",
+        "availabilityStatus": "referrals_paused",
+        "availabilityCheckedAt": "2026-07-15",
+        "availabilityEvidence": "Please note that due to high demand currently no new psychiatry referrals are taken",
+        "availabilitySource": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+        "availabilityNeedsManualReview": false
+      }
     }
   ]
 }

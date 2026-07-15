@@ -1,6 +1,6 @@
 # Availability Recheck Report
 
-Generated: 2026-07-15T00:21:45.494Z
+Generated: 2026-07-15T00:33:22.535Z
 
 ## Current Behaviour Before This Change
 
@@ -26,19 +26,20 @@ Accepting is never inferred from silence. Blocked or unreachable pages create ma
 Live providers:
 
 - accepting: 6
-- not_published: 1177
+- not_published: 1176
 - waitlist: 31
 
 Unavailable watchlist:
 
 - not_accepting: 15
-- referrals_paused: 5
+- referrals_paused: 6
 
 Regions most affected by unavailable/watchlist records:
 
 - Auckland: 1
 - Canterbury: 1
 - Hawke's Bay: 2
+- Manawatu-Whanganui: 1
 - Nelson Marlborough Tasman: 1
 - Northland: 6
 - Southland: 1
@@ -47,11 +48,10 @@ Regions most affected by unavailable/watchlist records:
 - Waikato: 2
 - West Coast: 1
 
-Findings: 60 total, 0 high (0 unallowlisted), 60 medium, 0 low.
+Findings: 59 total, 0 high (0 unallowlisted), 59 medium, 0 low.
 
 | Severity | Provider | Region / city | Status | Checked | Issue | Suggested action | Source | Allowlisted |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| medium | bay-of-plenty-ancora-adult-adhd-psychiatry - AncorA Adult ADHD Clinic | Bay of Plenty / Tauranga and nationwide telehealth | waitlist | 2026-06-12 | waitlist availability is 33 days old; target cadence is 30 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.ancora.org.nz/ | no |
 | medium | christchurch-psychmed-michelle-mccarthy - Dr Michelle McCarthy | Canterbury / Christchurch | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://www.christchurchpsychmed.co.nz/about | no |
 | medium | gp-central-family-health-care-35-7201-174-3199 - Central Family Health Care | Northland / Whangarei | not_accepting | 2026-05-24 | Watchlist not_accepting evidence is 52 days old; target cadence is 1 days. | Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation. | https://centralfamily.co.nz/ | no |
 | medium | gp-health-hub-coastal-medical-39-0434-174-1243 - Health Hub Coastal Medical | Taranaki / New Plymouth | accepting | 2026-05-25 | accepting availability is 51 days old; target cadence is 1 days. | Recheck the provider source or add a manual review item. Do not infer accepting from silence. | https://www.pinnacle.co.nz/practices/health-hub-coastal-medical | no |

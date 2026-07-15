@@ -4,73 +4,191 @@
     "discovery:suggestion:email:info@ancora.org.nz": {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
       "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.ancora.org.nz/",
+      "lastNotes": "The same explicit six-week psychiatrist assessment wait statement was reproduced in two independent public-page fetches. This refreshes restrictive availability only and does not infer acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:bay-of-plenty-ancora-adult-adhd-psychiatry": {
       "reviewId": "provider:bay-of-plenty-ancora-adult-adhd-psychiatry",
       "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.ancora.org.nz/",
+      "lastNotes": "The same explicit six-week psychiatrist assessment wait statement was reproduced in two independent public-page fetches. This refreshes restrictive availability only and does not infer acceptance.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:phone:06 353 0300": {
       "reviewId": "discovery:suggestion:phone:06 353 0300",
       "providerId": "manawatu-eye-openers-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "lastNotes": "The provider-owned booking page reproduced the no-new-referrals statement in two independent fetches. The provider is removed reversibly from live recommendations and retained on the availability watchlist.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "places:google-place-chijp2tsbbszqw0rubxzptk26pa": {
       "reviewId": "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
       "providerId": "manawatu-eye-openers-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "lastNotes": "The provider-owned booking page reproduced the no-new-referrals statement in two independent fetches. The provider is removed reversibly from live recommendations and retained on the availability watchlist.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:manawatu-eye-openers-psychiatry": {
       "reviewId": "provider:manawatu-eye-openers-psychiatry",
       "providerId": "manawatu-eye-openers-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "move_to_watchlist",
+      "lastSourceUrl": "https://www.eye-openers-psychiatry.co.nz/online-booking/",
+      "lastNotes": "The provider-owned booking page reproduced the no-new-referrals statement in two independent fetches. The provider is removed reversibly from live recommendations and retained on the availability watchlist.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0": {
       "reviewId": "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
       "providerId": "national-coliber-group-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.coliber.nz/appointments/",
+      "lastNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:email:info@coliber.nz": {
       "reviewId": "discovery:suggestion:email:info@coliber.nz",
       "providerId": "national-coliber-group-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.coliber.nz/appointments/",
+      "lastNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry": {
       "reviewId": "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
       "providerId": "national-coliber-group-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
-      "attempts": 1
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.coliber.nz/appointments/",
+      "lastNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     },
     "provider:national-coliber-group-psychiatry": {
       "reviewId": "provider:national-coliber-group-psychiatry",
       "providerId": "national-coliber-group-psychiatry",
-      "status": "in_progress",
+      "status": "completed",
       "batchId": "codex-20260715002114-f5aaba80",
       "startedAt": "2026-07-15T00:21:14.191Z",
+      "attempts": 1,
+      "completedAt": "2026-07-15T00:32:23.728Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.coliber.nz/appointments/",
+      "lastNotes": "The provider-owned appointments page reproduced the referral requirement in two independent fetches. The public path remains GP-first; no self-referral is inferred.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics": {
+      "reviewId": "discovery:suggestion:practice-city:expert-health-services-when-you-need-it-most:telehealth-and-nz-clinics",
+      "providerId": "national-msq-health-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:email:enquire@msq.health": {
+      "reviewId": "discovery:suggestion:email:enquire@msq.health",
+      "providerId": "national-msq-health-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "provider:national-msq-health-psychiatry": {
+      "reviewId": "provider:national-msq-health-psychiatry",
+      "providerId": "national-msq-health-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:email:info@positivemindworks.co": {
+      "reviewId": "discovery:suggestion:email:info@positivemindworks.co",
+      "providerId": "national-positive-mind-works-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "provider:national-positive-mind-works-psychiatry": {
+      "reviewId": "provider:national-positive-mind-works-psychiatry",
+      "providerId": "national-positive-mind-works-psychiatry",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02": {
+      "reviewId": "discovery:suggestion:clinician-phone:dr-tom-o-flynn:021548914 02",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:tom-o-flynn-psychiatrist:healthpoint.co.nz",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
+      "attempts": 1
+    },
+    "provider:national-tom-oflynn-psychiatrist": {
+      "reviewId": "provider:national-tom-oflynn-psychiatrist",
+      "providerId": "national-tom-oflynn-psychiatrist",
+      "status": "in_progress",
+      "batchId": "codex-20260715003459-3963760d",
+      "startedAt": "2026-07-15T00:34:59.344Z",
       "attempts": 1
     }
   },
@@ -83,7 +201,90 @@
         "manawatu-eye-openers-psychiatry",
         "national-coliber-group-psychiatry"
       ]
+    },
+    {
+      "batchId": "codex-20260715003459-3963760d",
+      "generatedAt": "2026-07-15T00:34:59.344Z",
+      "providerIds": [
+        "national-msq-health-psychiatry",
+        "national-positive-mind-works-psychiatry",
+        "national-tom-oflynn-psychiatrist"
+      ]
     }
   ],
-  "updatedAt": "2026-07-15T00:21:14.191Z"
+  "updatedAt": "2026-07-15T00:34:59.344Z",
+  "events": [
+    {
+      "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "providerId": "bay-of-plenty-ancora-adult-adhd-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:phone:06 353 0300",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "places:google-place-chijp2tsbbszqw0rubxzptk26pa",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:manawatu-eye-openers-psychiatry",
+      "providerId": "manawatu-eye-openers-psychiatry",
+      "action": "move_to_watchlist",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-phone:dr-agata-golawska:022 500 8140 0",
+      "providerId": "national-coliber-group-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:email:info@coliber.nz",
+      "providerId": "national-coliber-group-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-practice:dr-moody-how:coliber-group-psychiatry",
+      "providerId": "national-coliber-group-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:national-coliber-group-psychiatry",
+      "providerId": "national-coliber-group-psychiatry",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-15T00:32:23.728Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    }
+  ]
 }
