@@ -1,30 +1,31 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T07:40:44.823Z
-Verified decisions: 1/4
-Errors: 3
+Generated: 2026-07-15T08:44:26.052Z
+Verified decisions: 4/5
+Errors: 1
 
-## ranzcp-3358
+## ranzcp-4472
 
 - Action: adjust
 - Evidence gate: passed
 
-## ranzcp-4171
-
-- Action: adjust
-- Evidence gate: blocked
-- Blocked: restrictive availability needs an explicit field-matched excerpt
-
-## ranzcp-4371
-
-- Action: adjust
-- Evidence gate: blocked
-- Blocked: https://nelsonclinic.nz/our-team: source identity does not match the provider or known practice
-- Blocked: https://nelsonclinic.nz/node/4244: source identity does not match the provider or known practice
-- Blocked: website value is not present in its exact source excerpt
-
-## ranzcp-4371
+## ranzcp-4472
 
 - Action: needs_more_info
+- Evidence gate: passed
+
+## ranzcp-448
+
+- Action: move_to_watchlist
+- Evidence gate: passed
+
+## ranzcp-4499
+
+- Action: adjust
 - Evidence gate: blocked
-- Blocked: https://nelsonclinic.nz/node/4244: source identity does not match the provider or known practice
+- Blocked: https://psychpartners.nz/meet-us/dr-campbell-emmerton: source identity does not match the provider or known practice
+
+## ranzcp-4499
+
+- Action: needs_more_info
+- Evidence gate: passed

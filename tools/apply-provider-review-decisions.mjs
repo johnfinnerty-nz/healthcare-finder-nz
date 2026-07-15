@@ -530,6 +530,7 @@ function makeWatchlistItem(provider, decision) {
     reason: decision.sourceExcerpt || provider.availabilityEvidence || decision.reviewNotes || "Moved from live providers by manual review decision.",
     unavailablePatterns: [
       "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
+      "no\\s+longer\\s+(?:seeing|taking|accepting)\\s+new\\s+(?:clients|patients|referrals)",
       "books?\\s+(?:are\\s+)?closed",
       "no\\s+(?:current\\s+)?availability",
       "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",

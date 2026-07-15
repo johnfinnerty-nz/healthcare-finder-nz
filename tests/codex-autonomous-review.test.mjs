@@ -418,6 +418,60 @@ test("clinician-specific books-closed wording is treated as not accepting", () =
   assert.match(result.evidence, /closed his books/i);
 });
 
+test("no-longer-seeing wording is treated as not accepting", () => {
+  const result = detectAvailabilityFromText("As noted, Dr Romans is no longer seeing new patients.");
+  assert.equal(result.status, "not_accepting");
+  assert.match(result.evidence, /no longer seeing new patients/i);
+});
+
+test("Codex can move a provider who is no longer seeing new patients to the watchlist", async () => {
+  const excerpt = "As noted, Dr Romans is no longer seeing new patients.";
+  const sourceUrl = "https://directory.test/prof-romans";
+  const unavailableProvider = provider({
+    id: "prof-romans",
+    name: "Prof Sarah Romans",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    availabilityStatus: "not_published"
+  });
+  const decision = codexDecision({
+    providerId: unavailableProvider.id,
+    action: "move_to_watchlist",
+    correctedFields: {
+      availabilityStatus: "not_accepting",
+      availabilityCheckedAt: "2026-07-15",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "not_accepting", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const verified = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [unavailableProvider],
+    fetcher: sourceFetcher(`<h1>Prof Sarah Romans</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(verified.errors, []);
+
+  const applied = applyReviewDecisions({
+    providers: [unavailableProvider],
+    decisions: verified,
+    watchlist: { version: 1, items: [] },
+    allowAiReviewDecisions: true
+  });
+  assert.deepEqual(applied.errors, []);
+  assert.equal(applied.providers.length, 0);
+  assert(applied.watchlist.items[0].unavailablePatterns.some((pattern) => pattern.includes("no\\s+longer")));
+});
+
 test("Codex evidence verification accepts explicit clinician books-closed wording", async () => {
   const excerpt = "Dr Ian Goodwin has closed his books to new patients.";
   const sourceUrl = "https://vermont.test/psychiatry";

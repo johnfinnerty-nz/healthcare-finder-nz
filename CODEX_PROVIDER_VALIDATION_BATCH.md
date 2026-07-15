@@ -1,34 +1,34 @@
 # Codex Provider Validation Batch
 
-Generated: 2026-07-15T07:29:41.560Z
-Batch: codex-20260715072941-fb6b5712
+Generated: 2026-07-15T08:30:09.722Z
+Batch: codex-20260715083009-5abe45e0
 Providers: 3
 
 This is a local, no-API-key safe-remediation batch. Positive high-risk claims are prohibited.
 
-## 1. Dr Sara Weeks
+## 1. Dr Patrick Daniels
 
-- Provider ID: `ranzcp-3358`
-- Type/location: psychiatrist | Mt Eden | Auckland
+- Provider ID: `ranzcp-4472`
+- Type/location: psychiatrist | Remuera | Auckland
 - Priority: high / medium
 - Modes: restrictive_availability_or_evidence_only
-- Rules: stale-availability, discovery-suggestion, update_existing_provider, google-places-candidate, corroborate_existing_provider, needs_manual_research
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/3358/dr-sara-weeks | https://maps.google.com/?cid=5345779182635840015&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+- Rules: stale-availability, discovery-suggestion, update_existing_provider
+- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4472/dr-patrick-daniels
 
-## 2. Prof Sunny Collings
+## 2. Prof Sarah Romans
 
-- Provider ID: `ranzcp-4171`
-- Type/location: psychiatrist | Kumutoto | Wellington
+- Provider ID: `ranzcp-448`
+- Type/location: psychiatrist | Te Aro | Wellington
+- Priority: high / medium
+- Modes: restrictive_availability_or_evidence_only
+- Rules: weak-telehealth-evidence, discovery-suggestion, update_existing_provider
+- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/448/prof-sarah-romans
+
+## 3. Dr Campbell Emmerton
+
+- Provider ID: `ranzcp-4499`
+- Type/location: psychiatrist | Herne Bay | Auckland
 - Priority: high / medium
 - Modes: restrictive_availability_or_evidence_only
 - Rules: weak-telehealth-evidence, stale-availability, discovery-suggestion, update_existing_provider
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4171/prof-sunny-collings
-
-## 3. Dr Thomas Levien
-
-- Provider ID: `ranzcp-4371`
-- Type/location: psychiatrist | Nelson | Nelson Marlborough Tasman
-- Priority: high / medium
-- Modes: restrictive_availability_or_evidence_only
-- Rules: weak-telehealth-evidence, stale-availability, discovery-suggestion, update_existing_provider
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4371/dr-thomas-levien
+- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/4499/dr-campbell-emmerton
