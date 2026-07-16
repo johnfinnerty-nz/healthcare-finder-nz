@@ -418,6 +418,12 @@ test("clinician-specific books-closed wording is treated as not accepting", () =
   assert.match(result.evidence, /closed his books/i);
 });
 
+test("books-filled wording is treated as not accepting", () => {
+  const result = detectAvailabilityFromText("Our books are currently filled for this quarter of 2026.");
+  assert.equal(result.status, "not_accepting");
+  assert.match(result.evidence, /books are currently filled/i);
+});
+
 test("no-longer-seeing wording is treated as not accepting", () => {
   const result = detectAvailabilityFromText("As noted, Dr Romans is no longer seeing new patients.");
   assert.equal(result.status, "not_accepting");
@@ -506,6 +512,44 @@ test("Codex evidence verification accepts explicit clinician books-closed wordin
     providers: [closedProvider],
     fetcher: sourceFetcher(`<h1>Dr Ian Goodwin</h1><p>${excerpt}</p>`),
     now: new Date("2026-07-15T00:00:00Z")
+  });
+  assert.deepEqual(result.errors, []);
+});
+
+test("Codex evidence verification accepts explicit books-filled wording", async () => {
+  const excerpt = "Our books are currently filled for this quarter of 2026.";
+  const sourceUrl = "https://space-of-mind.test/request-an-appointment";
+  const filledProvider = provider({
+    id: "space-of-mind",
+    name: "Space of Mind - Dr Yariv Doron",
+    type: "psychiatrist",
+    website: sourceUrl,
+    source: sourceUrl,
+    availabilityStatus: "not_published"
+  });
+  const decision = codexDecision({
+    providerId: filledProvider.id,
+    action: "move_to_watchlist",
+    correctedFields: {
+      availabilityStatus: "not_accepting",
+      availabilityCheckedAt: "2026-07-16",
+      availabilityEvidence: excerpt,
+      availabilitySource: sourceUrl,
+      availabilityNeedsManualReview: false
+    },
+    sourceUrl,
+    sourceExcerpt: excerpt,
+    sourceEvidence: [
+      { field: "availabilityStatus", value: "not_accepting", sourceUrl, excerpt },
+      { field: "availabilityEvidence", value: excerpt, sourceUrl, excerpt },
+      { field: "availabilitySource", value: sourceUrl, sourceUrl, excerpt }
+    ]
+  });
+  const result = await verifyCodexReviewEvidence({
+    decisions: { decisions: [decision] },
+    providers: [filledProvider],
+    fetcher: sourceFetcher(`<h1>Space of Mind - Dr Yariv Doron</h1><p>${excerpt}</p>`),
+    now: new Date("2026-07-16T00:00:00Z")
   });
   assert.deepEqual(result.errors, []);
 });

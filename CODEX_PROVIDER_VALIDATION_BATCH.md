@@ -1,34 +1,34 @@
 # Codex Provider Validation Batch
 
-Generated: 2026-07-15T23:28:30.142Z
-Batch: codex-20260715232830-bdd65411
+Generated: 2026-07-16T00:29:58.072Z
+Batch: codex-20260716002958-4e375f57
 Providers: 3
 
 This is a local, no-API-key safe-remediation batch. Positive high-risk claims are prohibited.
 
-## 1. Dr John Joseph
+## 1. Space of Mind - Dr Yariv Doron
 
-- Provider ID: `ranzcp-7046`
-- Type/location: psychiatrist | Mt Albert | Auckland
+- Provider ID: `taranaki-space-of-mind-dr-doron`
+- Type/location: psychiatrist | New Plymouth and telehealth | Taranaki
 - Priority: high / medium
 - Modes: restrictive_availability_or_evidence_only, evidence_only
-- Rules: weak-telehealth-evidence, stale-availability, discovery-suggestion, update_existing_provider, google-places-candidate, corroborate_existing_provider
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph | https://www.aucklandpsychiatrist.nz/ | https://maps.google.com/?cid=12153966859688613641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+- Rules: discovery-suggestion, needs_manual_research
+- Sources: https://www.spaceofmind.solutions/
 
-## 2. Dr Kang Tan
+## 2. Be Well Psychiatry
 
-- Provider ID: `ranzcp-7544`
-- Type/location: psychiatrist | Wellington | Wellington
+- Provider ID: `waikato-be-well-psychiatry`
+- Type/location: psychiatrist | Maungatautari | Waikato
 - Priority: high / medium
-- Modes: restrictive_availability_or_evidence_only
-- Rules: stale-availability, discovery-suggestion, update_existing_provider
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan
+- Modes: restrictive_availability_or_evidence_only, evidence_only
+- Rules: discovery-suggestion, needs_manual_research
+- Sources: https://www.bewellpsychiatry0.co.nz/
 
-## 3. Dr M Shanmukha Swamy Lokesh
+## 3. Auckland Mental Wellness Centre
 
-- Provider ID: `ranzcp-7734`
-- Type/location: psychiatrist | Ellerslie | Auckland
+- Provider ID: `auckland-auckland-mental-wellness-centre`
+- Type/location: psychologist | Remuera | Auckland
 - Priority: high / medium
-- Modes: restrictive_availability_or_evidence_only
-- Rules: stale-availability, discovery-suggestion, update_existing_provider
-- Sources: https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh
+- Modes: safe_removal_or_evidence_only
+- Rules: broad-tag-without-source-support
+- Sources: https://aucklandmentalwellness.com/

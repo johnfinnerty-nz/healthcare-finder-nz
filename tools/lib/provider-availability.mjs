@@ -36,7 +36,7 @@ const restrictivePatterns = [
   },
   {
     status: "not_accepting",
-    pattern: /\b(?:full\s+capacity|currently\s+full|books?\s+(?:are\s+)?closed|closed\s+(?:his|her|their|the)\s+books?|wait\s*list\s+(?:is\s+)?closed|not\s+(?:currently\s+)?(?:taking|accepting)\s+(?:on\s+)?new\s+(?:clients|patients)|no\s+longer\s+(?:seeing|taking|accepting)\s+new\s+(?:clients|patients|referrals)|unable\s+to\s+(?:take\s+on|accept|see)\s+new\s+(?:clients|patients)|no\s+(?:current\s+)?availability|not\s+available\s+for\s+new\s+(?:clients|patients)|currently\s+unavailable|fully\s+booked|closing\s+(?:its|our|their)\s+doors?\s+shortly)\b/i
+    pattern: /\b(?:full\s+capacity|currently\s+full|books?\s+(?:are\s+)?(?:currently\s+)?(?:closed|filled)|closed\s+(?:his|her|their|the)\s+books?|wait\s*list\s+(?:is\s+)?closed|not\s+(?:currently\s+)?(?:taking|accepting)\s+(?:on\s+)?new\s+(?:clients|patients)|no\s+longer\s+(?:seeing|taking|accepting)\s+new\s+(?:clients|patients|referrals)|unable\s+to\s+(?:take\s+on|accept|see)\s+new\s+(?:clients|patients)|no\s+(?:current\s+)?availability|not\s+available\s+for\s+new\s+(?:clients|patients)|currently\s+unavailable|fully\s+booked|closing\s+(?:its|our|their)\s+doors?\s+shortly)\b/i
   }
 ];
 

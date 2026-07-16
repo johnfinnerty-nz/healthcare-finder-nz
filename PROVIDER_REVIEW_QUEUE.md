@@ -1,6 +1,6 @@
 # Provider Review Queue
 
-Generated: 2026-07-15T23:28:23.923Z
+Generated: 2026-07-16T00:29:51.399Z
 
 Focused queue: yes.
 
@@ -8,8 +8,8 @@ Focused queue: yes.
 
 - Review items: 800
 - Critical: 12
-- High: 482
-- Medium: 158
+- High: 481
+- Medium: 159
 - Low: 148
 
 ## By Review Category
@@ -53,7 +53,6 @@ Focused queue: yes.
 | high | medium | Referral pathway review | northland-heartwood-psychiatry - Heartwood Psychiatry | psychiatrist | Northland / Whangārei | missing-address | medium: missing-address; availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown |
 | high | medium | Availability review | ranzcp-4499 - Dr Campbell Emmerton | psychiatrist | Auckland / Herne Bay | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-2665 - Dr Ian Goodwin | psychiatrist | Auckland / Auckland | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
-| high | medium | Availability review | ranzcp-7046 - Dr John Joseph | psychiatrist | Auckland / Mt Albert | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-4859 - Dr Katie Ritchie | psychiatrist | Auckland / Remuera | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-7045 - Dr Neena Joseph | psychiatrist | Auckland / Avondale | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-4807 - Dr Scott Chambers | psychiatrist | Auckland / Remuera | weak-telehealth-evidence, stale-availability | medium: weak-telehealth-evidence; medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
@@ -73,6 +72,7 @@ Focused queue: yes.
 | high | medium | Location and distance evidence | south-canterbury-reihana-psychology - Reihana Psychology | psychologist | South Canterbury / Timaru | broad-tag-without-source-support, missing-coordinates | medium: broad-tag-without-source-support; medium: missing-coordinates; availability needs manual review; address missing coordinates |
 | high | medium | Location and distance evidence | wellington-cbt-clinic - CBT Clinic | psychologist | Wellington / Wellington CBD | broad-tag-without-source-support, missing-coordinates | medium: broad-tag-without-source-support; medium: missing-coordinates; availability needs manual review; address missing coordinates |
 | high | medium | Directory/direct-contact confusion | nzccp-allanah-casey - Allanah Casey | psychologist | Bay of Plenty / Tauranga | broad-tag-without-source-support, register-only-public-contact | medium: broad-tag-without-source-support; medium: register-only-public-contact; provider details need manual verification; availability needs manual review |
+| high | medium | Availability review | ranzcp-7046 - Dr John Joseph | psychiatrist | Auckland / Mt Albert | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | manawatu-eye-openers-psychiatry - Eye-Openers Psychiatry | psychiatrist | Manawatu-Whanganui / Palmerston North | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Sensitive tag or scope evidence | auckland-visionwest-wellbeing-centre - Visionwest Counselling & Wellbeing Centre | counsellor | Auckland / Glen Eden | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Sensitive tag or scope evidence | manawatu-pnmss-counselling - Palmerston North Methodist Social Services Counselling | counsellor | Manawatu-Whanganui / Palmerston North | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
@@ -95,7 +95,6 @@ Focused queue: yes.
 | high | medium | Availability review | ranzcp-3358 - Dr Sara Weeks | psychiatrist | Auckland / Mt Eden | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-4946 - Dr Paul Edgar | psychiatrist | Canterbury / Ilam | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-5542 - Dr Vernon Reynolds | psychiatrist | Northland / Whangarei | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
-| high | medium | Availability review | ranzcp-7544 - Dr Kang Tan | psychiatrist | Wellington / Wellington | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Availability review | ranzcp-6009 - Dr Rachel Kan | psychiatrist | Wellington / Wellington Central | stale-availability | medium: stale-availability; provider details need manual verification; availability needs manual review; availability status is waitlist |
 | high | medium | Location and distance evidence | canterbury-te-tahi-youth - Te Tahi Youth | youth | Canterbury / Christchurch | weak-rainbow-evidence, missing-address | medium: weak-rainbow-evidence; medium: missing-address; provider details need manual verification; availability needs manual review |
 | high | medium | Location and distance evidence | wellington-evolve-youth-service - Evolve Wellington Youth Service | youth | Wellington / Wellington | weak-rainbow-evidence, missing-coordinates | medium: weak-rainbow-evidence; medium: missing-coordinates; availability needs manual review; address missing coordinates |
@@ -109,5 +108,6 @@ Focused queue: yes.
 | high | medium | Availability review | northland-wayfinder-psychology - Wayfinder Psychology | psychologist | Northland / Whangarei | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | tairawhiti-mauri-psychology - Mauri Psychology | psychologist | Tairawhiti / Gisborne | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | taranaki-jade-psychology - Jade Psychology | psychologist | Taranaki / New Plymouth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
+| high | medium | Availability review | west-coast-internal-growth-holistic-psychology - Internal Growth Holistic Psychology | psychologist | West Coast / Greymouth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 
 Review decisions must be applied with `npm run apply:review`; the public app does not write provider data from the browser.

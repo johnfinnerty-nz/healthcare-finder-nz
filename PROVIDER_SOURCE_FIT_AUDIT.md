@@ -1,8 +1,8 @@
 # Provider Source-Fit Audit
 
-Generated: 2026-07-15T23:37:34.013Z
+Generated: 2026-07-16T00:41:42.990Z
 
-Providers scanned: 1212
+Providers scanned: 1211
 
 Findings: 356 total, 0 high (0 unallowlisted), 230 medium, 126 low.
 

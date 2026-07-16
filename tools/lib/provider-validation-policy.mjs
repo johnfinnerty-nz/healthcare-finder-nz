@@ -161,7 +161,7 @@ function explicitAvailabilityEvidence(claim) {
       || claim.evidenceKind === "visible_selectable_appointment";
   }
   if (claim.value === "waitlist") return /\bwait\s*list|waiting\s+list|limited\s+availability|appointment\s+wait\b/i.test(excerpt);
-  if (restrictiveAvailability.has(claim.value)) return /\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?closed|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+(?:current\s+)?availability|fully\s+booked|closing\s+(?:our|its|their)\s+doors?\b/i.test(excerpt);
+  if (restrictiveAvailability.has(claim.value)) return /\bnot\s+(?:currently\s+)?(?:taking|accepting)|books?\s+(?:are\s+)?(?:currently\s+)?(?:closed|filled)|referrals?\s+(?:are\s+)?(?:paused|closed)|no\s+(?:current\s+)?availability|fully\s+booked|closing\s+(?:our|its|their)\s+doors?\b/i.test(excerpt);
   return false;
 }
 

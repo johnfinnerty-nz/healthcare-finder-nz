@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T23:37:34.885Z",
+  "generatedAt": "2026-07-16T00:41:43.623Z",
   "currentBehaviour": {
     "scheduledRecheckPreviouslyExisted": true,
     "notes": [
@@ -9,8 +9,8 @@
       "The link checker checked reachability only; it did not infer provider availability."
     ]
   },
-  "providersScanned": 1212,
-  "watchlistItemsScanned": 22,
+  "providersScanned": 1211,
+  "watchlistItemsScanned": 23,
   "recheckResultsScanned": 20,
   "allowedAvailabilityStatuses": [
     "accepting",
@@ -30,12 +30,12 @@
   },
   "statusCounts": {
     "liveProviders": {
-      "not_published": 1177,
+      "not_published": 1176,
       "waitlist": 29,
       "accepting": 6
     },
     "watchlist": {
-      "not_accepting": 16,
+      "not_accepting": 17,
       "referrals_paused": 6
     }
   },
@@ -43,7 +43,7 @@
     "West Coast": 1,
     "Canterbury": 1,
     "Auckland": 2,
-    "Taranaki": 4,
+    "Taranaki": 5,
     "Waikato": 2,
     "Northland": 6,
     "Southland": 1,
@@ -64,7 +64,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -79,7 +79,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -94,7 +94,7 @@
       "availabilityCheckedAt": "2026-05-25",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 51 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 52 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -109,7 +109,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 52 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -124,7 +124,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 52 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -154,7 +154,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -169,7 +169,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -199,7 +199,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist referrals_paused evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -214,7 +214,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 52 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -229,7 +229,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -244,7 +244,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 52 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 53 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -259,7 +259,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist referrals_paused evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -274,7 +274,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -289,7 +289,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 52 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -304,7 +304,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -319,7 +319,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -334,7 +334,7 @@
       "availabilityCheckedAt": "2026-06-12",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 33 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 34 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -349,7 +349,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist referrals_paused evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -364,7 +364,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist referrals_paused evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -379,7 +379,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -394,7 +394,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -409,7 +409,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -424,7 +424,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -439,7 +439,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -454,7 +454,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -469,7 +469,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -484,7 +484,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -499,7 +499,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -514,7 +514,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist referrals_paused evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist referrals_paused evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -529,7 +529,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -544,7 +544,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -559,7 +559,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -574,7 +574,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -589,7 +589,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 52 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 53 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -604,7 +604,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -619,7 +619,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -634,7 +634,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -649,7 +649,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -664,7 +664,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -679,7 +679,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -694,7 +694,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 76 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -709,7 +709,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -724,7 +724,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -739,7 +739,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -754,7 +754,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -784,7 +784,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -799,7 +799,7 @@
       "availabilityCheckedAt": "2026-05",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "accepting availability is 75 days old; target cadence is 1 days.",
+      "issue": "accepting availability is 76 days old; target cadence is 1 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -814,7 +814,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     },
@@ -829,7 +829,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-availability",
       "severity": "medium",
-      "issue": "waitlist availability is 52 days old; target cadence is 30 days.",
+      "issue": "waitlist availability is 53 days old; target cadence is 30 days.",
       "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
       "allowlisted": false
     },
@@ -844,7 +844,7 @@
       "availabilityCheckedAt": "2026-05-24",
       "rule": "stale-watchlist-availability",
       "severity": "medium",
-      "issue": "Watchlist not_accepting evidence is 52 days old; target cadence is 1 days.",
+      "issue": "Watchlist not_accepting evidence is 53 days old; target cadence is 1 days.",
       "suggestedAction": "Run the autonomous source recheck. Keep the provider suppressed unless explicit reopening evidence passes validation.",
       "allowlisted": false
     }

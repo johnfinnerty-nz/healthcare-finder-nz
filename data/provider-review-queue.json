@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-15T23:28:23.923Z",
+  "generatedAt": "2026-07-16T00:29:51.399Z",
   "providersPath": "providers.json",
   "filters": {
     "includeAll": false,
@@ -27,11 +27,11 @@
     }
   ],
   "inputs": {
-    "providers": 1213,
-    "sourceFitFindings": 357,
-    "availabilityFindings": 55,
+    "providers": 1212,
+    "sourceFitFindings": 356,
+    "availabilityFindings": 53,
     "referralFindings": 0,
-    "watchlistItems": 21,
+    "watchlistItems": 22,
     "identityScanRecords": 1156,
     "discoveryCandidates": 7536,
     "providerSuggestions": 84,
@@ -41,15 +41,15 @@
     "total": 800,
     "byPriority": {
       "critical": 12,
-      "high": 482,
-      "medium": 158,
+      "high": 481,
+      "medium": 159,
       "low": 148
     },
     "bySeverity": {
       "high": 12,
-      "medium": 361,
+      "medium": 360,
       "low": 298,
-      "none": 129
+      "none": 130
     },
     "byCategory": {
       "Referral pathway review": 73,
@@ -12332,891 +12332,6 @@
             "name": "Ian Goodwin",
             "evidence": "Dr Ian Goodwin\nFRANZCP MBChB",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/2665/dr-ian-goodwin"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:ranzcp-7046",
-      "reviewCategory": "Availability review",
-      "providerId": "ranzcp-7046",
-      "name": "Dr John Joseph",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Auckland",
-      "city": "Mt Albert",
-      "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
-      "lat": -36.8803293,
-      "lon": 174.7119223,
-      "phone": "0212416007",
-      "text": "",
-      "email": "info@aucklandpsychiatrist.nz",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-      "bookingUrl": "",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-      "sourceQuality": "professional register or directory",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "appointment wait: 1-3",
-      "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": true,
-      "referralType": "gp",
-      "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-      "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-      "referralConfidence": "high",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": false,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "telehealth",
-        "maori",
-        "asian",
-        "rainbow",
-        "cost",
-        "depression",
-        "anxiety",
-        "trauma",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "ADHD",
-        "Anxiety disorders",
-        "Autism spectrum disorders",
-        "Bipolar disorder",
-        "Brain injury",
-        "Depression",
-        "Obsessive-compulsive disorders",
-        "Pain management",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-          "excerpt": "Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management.",
-          "capturedAt": "2026-05",
-          "confidence": "medium",
-          "needsManualReview": true
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "ADHD",
-        "Anxiety disorders",
-        "Autism spectrum disorders",
-        "Bipolar disorder",
-        "Brain injury",
-        "Depression",
-        "Obsessive-compulsive disorders",
-        "Pain management",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia"
-      ],
-      "services": [
-        "ACC Assessment",
-        "ACC Treatment provider",
-        "Civil medicolegal",
-        "Family court medicolegal",
-        "Insurance opinions / reports",
-        "Experience with interpreters"
-      ],
-      "patientGroups": [
-        "Asylum seekers and refugees",
-        "Gender diverse",
-        "Maori",
-        "Military and veterans",
-        "Non-English speaking",
-        "Physical disability",
-        "Emergency services personnel"
-      ],
-      "ageGroups": [
-        "Ages 18-60"
-      ],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "weak-telehealth-evidence",
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "Telehealth or online availability is set but source fields do not clearly support remote care.",
-        "waitlist availability is 75 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 4900,
-      "reviewReasons": [
-        "medium: weak-telehealth-evidence",
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "0212416007",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "email",
-            "value": "info@aucklandpsychiatrist.nz",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "appointment wait: 1-3",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "gp",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "services",
-            "value": "ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "specialties",
-            "value": "ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management, Post-traumatic stress disorder, Psychosis, Schizophrenia",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "patientGroups",
-            "value": "Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "ageGroups",
-            "value": "Ages 18-60",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "ur treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stress disorder Schizophrenia Services offered ACC Assessment ACC Treatment p",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic str",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "P. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stress disorder Schizophrenia Services offered ACC Assessment ACC Treatment provider Civil medicolegal Family court medicolegal Insurance opinion",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "telehealth": [
-            {
-              "field": "tags",
-              "value": "telehealth",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "maori": [
-            {
-              "field": "tags",
-              "value": "maori",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "asian": [
-            {
-              "field": "tags",
-              "value": "asian",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "rainbow": [
-            {
-              "field": "tags",
-              "value": "rainbow",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "cost": [
-            {
-              "field": "tags",
-              "value": "cost",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "tags",
-            "value": "telehealth",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [
-          {
-            "field": "tags",
-            "value": "maori",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "tags",
-            "value": "asian",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "tags",
-            "value": "rainbow",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "maori",
-            "value": "Maori",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergency services personnel Summary I am an Adult Psychiatrist who has worked in community",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "asian",
-            "value": "Asian",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "s Qualifications Fellow of the RANZCP MRCPsych Accredited Member - Faculty of Adult Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergenc",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "rainbow",
-            "value": "Rainbow / LGBTQIA+",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "aculty of Adult Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergency services personnel Summary I am an Adult Psychiatrist who has work",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: appointment wait: 1-3 | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr John Joseph\", practice \"(none)\". | Depression or low mood: ur treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Aut | Trauma or sexual harm: P. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stres | source-fit audit: Telehealth or online availability is set but source fields do not clearly support remote care. | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr John Joseph Auckland / Mt Albert RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
-      "currentProvider": {
-        "id": "ranzcp-7046",
-        "name": "Dr John Joseph",
-        "type": "psychiatrist",
-        "region": "Auckland",
-        "city": "Mt Albert",
-        "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
-        "phone": "0212416007",
-        "text": "",
-        "email": "info@aucklandpsychiatrist.nz",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-        "hours": "Appointment wait: 1-3 months.",
-        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "telehealth",
-          "maori",
-          "asian",
-          "rainbow",
-          "cost",
-          "depression",
-          "anxiety",
-          "trauma",
-          "direct-contact"
-        ],
-        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
-        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-        "verified": "2026-05",
-        "sourceUpdated": "2021-09-07",
-        "lat": -36.8803293,
-        "lon": 174.7119223,
-        "sourceQuality": "professional register or directory",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "specialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
-          "Bipolar disorder",
-          "Brain injury",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Pain management",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
-        ],
-        "services": [
-          "ACC Assessment",
-          "ACC Treatment provider",
-          "Civil medicolegal",
-          "Family court medicolegal",
-          "Insurance opinions / reports",
-          "Experience with interpreters"
-        ],
-        "ageGroups": [
-          "Ages 18-60"
-        ],
-        "patientGroups": [
-          "Asylum seekers and refugees",
-          "Gender diverse",
-          "Maori",
-          "Military and veterans",
-          "Non-English speaking",
-          "Physical disability",
-          "Emergency services personnel"
-        ],
-        "languages": [
-          "Hindi",
-          "Malayalam"
-        ],
-        "appointmentWait": "1-3 months",
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "appointment wait: 1-3",
-        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": false,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Autism spectrum disorders",
-          "Bipolar disorder",
-          "Brain injury",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Pain management",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "excerpt": "Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
-        "coordinatePrecision": "professional directory listing",
-        "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
-      },
-      "auditFindings": [
-        {
-          "source": "source-fit",
-          "severity": "medium",
-          "rule": "weak-telehealth-evidence",
-          "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-          "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "ranzcp-7046",
-            "providerName": "Dr John Joseph",
-            "region": "Auckland",
-            "city": "Mt Albert",
-            "type": "psychiatrist",
-            "tags": [
-              "psychiatrist",
-              "medical-specialist",
-              "fit",
-              "telehealth",
-              "maori",
-              "asian",
-              "rainbow",
-              "cost",
-              "depression",
-              "anxiety",
-              "trauma",
-              "direct-contact"
-            ],
-            "needScope": [],
-            "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "rule": "weak-telehealth-evidence",
-            "severity": "medium",
-            "issue": "Telehealth or online availability is set but source fields do not clearly support remote care.",
-            "suggestedFix": "Remove telehealth/online flags or add a provider-owned source that confirms phone/video/online appointments.",
-            "allowlisted": false
-          }
-        },
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "ranzcp-7046",
-            "providerName": "Dr John Joseph",
-            "region": "Auckland",
-            "city": "Mt Albert",
-            "type": "psychiatrist",
-            "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-05",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "ranzcp-7046",
-        "providerName": "Dr John Joseph",
-        "providerType": "psychiatrist",
-        "region": "Auckland",
-        "city": "Mt Albert",
-        "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-        "pagesChecked": [
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr John Joseph",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "Dr John Joseph FRANZCP MBBS",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "ur treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stress disorder Schizophrenia Services offered ACC Assessment ACC Treatment p",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic str",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "P. Expertise ADHD Anxiety disorders Autism spectrum disorders Brain injury Bipolar disorder Depression Obsessive-compulsive disorders Pain management Psychosis Post-traumatic stress disorder Schizophrenia Services offered ACC Assessment ACC Treatment provider Civil medicolegal Family court medicolegal Insurance opinion",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Post-traumatic"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "found",
-            "evidence": "Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergency services personnel Summary I am an Adult Psychiatrist who has worked in community",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Maori"
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "found",
-            "evidence": "s Qualifications Fellow of the RANZCP MRCPsych Accredited Member - Faculty of Adult Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergenc",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Hindi"
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "found",
-            "evidence": "aculty of Adult Psychiatry Accredited Member - Faculty of Adult Psychiatry Languages spoken Hindi Malayalam English Experience with Asylum seekers and refugees Gender diverse Maori Military and veterans Non-English speaking Physical disability Emergency services personnel Summary I am an Adult Psychiatrist who has work",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "Gender diverse"
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-            "matched": "telehealth"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-          "matched": "fees"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: How to get an appointment",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph"
-        },
-        "candidateClinicians": [
-          {
-            "name": "John Joseph",
-            "evidence": "Dr John Joseph\nFRANZCP MBBS",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph"
-          },
-          {
-            "name": "AUCKLAND Auckland",
-            "evidence": "AUCKLAND\nAuckland Psychiatrist",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph"
-          },
-          {
-            "name": "Seaview House",
-            "evidence": "Auckland Psychiatrist Auckland Psychiatrist Seaview House 2A Seaview Terrace MT ALBERT 1025 AUCKLAND Auckland Psychiatrist",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph"
           }
         ],
         "notes": "",
@@ -26696,6 +25811,482 @@
       "reviewer": "",
       "reviewedDate": "",
       "reviewNotes": ""
+    },
+    {
+      "reviewId": "watchlist:ranzcp-7046",
+      "reviewCategory": "Availability review",
+      "providerId": "ranzcp-7046",
+      "name": "Dr John Joseph",
+      "clinicianName": "",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "Auckland",
+      "city": "Mt Albert",
+      "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+      "lat": "",
+      "lon": "",
+      "phone": "0212416007",
+      "text": "",
+      "email": "info@aucklandpsychiatrist.nz",
+      "website": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "bookingUrl": "",
+      "source": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "sourceQuality": "professional register or directory",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "",
+      "lastVerified": "",
+      "availabilityStatus": "unavailable",
+      "availabilityCheckedAt": "2026-07-16",
+      "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+      "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+      "availabilityNeedsManualReview": true,
+      "referralType": "",
+      "referralSourceUrl": "",
+      "referralSourceExcerpt": "",
+      "referralConfidence": "",
+      "referralLastChecked": "",
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "fit",
+        "telehealth",
+        "maori",
+        "asian",
+        "rainbow",
+        "cost",
+        "depression",
+        "anxiety",
+        "trauma",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [],
+      "baselineScopeSource": "",
+      "baselineScopeNote": "",
+      "advertisedSpecialties": [],
+      "advertisedSpecialtyEvidence": [],
+      "specialtyTagsSource": "",
+      "specialties": [],
+      "services": [],
+      "patientGroups": [],
+      "ageGroups": [],
+      "auditSeverity": "medium",
+      "auditRules": [
+        "availability-watchlist"
+      ],
+      "auditIssues": [
+        "We are not accepting new clinical referrals or new patients."
+      ],
+      "suggestedFixes": [
+        "Recheck availability before adding or restoring this provider."
+      ],
+      "reviewPriority": "high",
+      "priorityScore": 4620,
+      "reviewReasons": [
+        "medium: availability-watchlist",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "psychiatrist referral pathway unknown",
+        "address missing coordinates",
+        "verification date is stale or missing",
+        "availability watchlist candidate"
+      ],
+      "sourceUrls": [
+        "https://www.aucklandpsychiatrist.nz/dr-john-joseph"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "0212416007",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "email",
+            "value": "info@aucklandpsychiatrist.nz",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "unavailable",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "We are not accepting new clinical referrals or new patients.",
+            "capturedAt": "2026-07-16",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "telehealth": [
+            {
+              "field": "tags",
+              "value": "telehealth",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "maori": [
+            {
+              "field": "tags",
+              "value": "maori",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "asian": [
+            {
+              "field": "tags",
+              "value": "asian",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "rainbow": [
+            {
+              "field": "tags",
+              "value": "rainbow",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "cost": [
+            {
+              "field": "tags",
+              "value": "cost",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "depression": [
+            {
+              "field": "tags",
+              "value": "depression",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "tags",
+            "value": "telehealth",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [
+          {
+            "field": "tags",
+            "value": "maori",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "tags",
+            "value": "asian",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "tags",
+            "value": "rainbow",
+            "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          }
+        ],
+        "cost": []
+      },
+      "sourceEvidenceSummary": "Availability: We are not accepting new clinical referrals or new patients. | watchlist audit: We are not accepting new clinical referrals or new patients.",
+      "publicCardPreviewText": "Dr John Joseph Auckland / Mt Albert RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Availability: unavailable",
+      "currentProvider": {
+        "id": "ranzcp-7046",
+        "name": "Dr John Joseph",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Mt Albert",
+        "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+        "lat": "",
+        "lon": "",
+        "phone": "0212416007",
+        "text": "",
+        "email": "info@aucklandpsychiatrist.nz",
+        "website": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "bookingUrl": "",
+        "source": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "sourceQuality": "professional register or directory",
+        "confidence": "medium",
+        "needsManualVerification": true,
+        "verified": "",
+        "lastVerified": "",
+        "availabilityStatus": "unavailable",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "availabilityNeedsManualReview": true,
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "telehealth",
+          "maori",
+          "asian",
+          "rainbow",
+          "cost",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
+        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns."
+      },
+      "auditFindings": [
+        {
+          "source": "watchlist",
+          "severity": "medium",
+          "rule": "availability-watchlist",
+          "issue": "We are not accepting new clinical referrals or new patients.",
+          "suggestedFix": "Recheck availability before adding or restoring this provider.",
+          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "allowlisted": false
+        }
+      ],
+      "identityScan": null,
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": "",
+      "watchlistItem": {
+        "id": "ranzcp-7046",
+        "name": "Dr John Joseph",
+        "type": "psychiatrist",
+        "region": "Auckland",
+        "city": "Mt Albert",
+        "url": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "lastKnownStatus": "unavailable",
+        "reason": "We are not accepting new clinical referrals or new patients.",
+        "unavailablePatterns": [
+          "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
+          "no\\s+longer\\s+(?:seeing|taking|accepting)\\s+new\\s+(?:clients|patients|referrals)",
+          "books?\\s+(?:are\\s+)?closed",
+          "no\\s+(?:current\\s+)?availability",
+          "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",
+          "referrals?\\s+(?:are\\s+)?paused"
+        ],
+        "availabilityStatus": "not_accepting",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "availabilityNeedsManualReview": false,
+        "availablePatterns": [
+          "taking\\s+new\\s+(?:clients|patients|referrals)",
+          "accepting\\s+new\\s+(?:clients|patients|referrals)",
+          "new\\s+client\\s+enquir(?:y|ies)",
+          "book\\s+(?:an\\s+)?appointment"
+        ],
+        "checkedAt": "2026-07-16",
+        "providerCandidate": {
+          "name": "Dr John Joseph",
+          "clinicianName": "",
+          "practiceName": "",
+          "type": "psychiatrist",
+          "region": "Auckland",
+          "city": "Mt Albert",
+          "address": "Seaview House, 2A Seaview Terrace, Mt Albert, Auckland, 1025",
+          "phone": "0212416007",
+          "text": "",
+          "email": "info@aucklandpsychiatrist.nz",
+          "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+          "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
+          "tags": [
+            "psychiatrist",
+            "medical-specialist",
+            "fit",
+            "telehealth",
+            "maori",
+            "asian",
+            "rainbow",
+            "cost",
+            "depression",
+            "anxiety",
+            "trauma",
+            "direct-contact"
+          ],
+          "needScope": [],
+          "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Autism spectrum disorders, Bipolar disorder, Brain injury, Depression, Obsessive-compulsive disorders, Pain management. Services include ACC Assessment, ACC Treatment provider, Civil medicolegal, Family court medicolegal, Insurance opinions / reports, Experience with interpreters. Patient groups listed include Asylum seekers and refugees, Gender diverse, Maori, Military and veterans, Non-English speaking, Physical disability, Emergency services personnel. Works with Ages 18-60.",
+          "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+          "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+          "confidence": "medium",
+          "sourceQuality": "professional register or directory",
+          "availabilityStatus": "not_accepting",
+          "availabilityCheckedAt": "2026-07-16",
+          "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
+          "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "availabilityNeedsManualReview": false
+        }
+      }
     },
     {
       "reviewId": "watchlist:manawatu-eye-openers-psychiatry",
@@ -41291,736 +40882,6 @@
             "name": "Vernon Reynolds",
             "evidence": "Dr Vernon Reynolds\nFRANZCP BPhEd",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/5542/dr-vernon-reynolds"
-          }
-        ],
-        "notes": "",
-        "generatedAt": "2026-05-25T09:23:13.473Z"
-      },
-      "reviewDecision": "",
-      "correctedFields": {},
-      "reviewer": "",
-      "reviewedDate": "",
-      "reviewNotes": ""
-    },
-    {
-      "reviewId": "provider:ranzcp-7544",
-      "reviewCategory": "Availability review",
-      "providerId": "ranzcp-7544",
-      "name": "Dr Kang Tan",
-      "clinicianName": "",
-      "practiceName": "",
-      "type": "psychiatrist",
-      "region": "Wellington",
-      "city": "Wellington",
-      "address": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
-      "lat": -41.287084,
-      "lon": 174.777929,
-      "phone": "+64210522369",
-      "text": "",
-      "email": "ktpsychiatry@gmail.com",
-      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-      "bookingUrl": "",
-      "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-      "sourceQuality": "professional register or directory",
-      "confidence": "medium",
-      "needsManualVerification": true,
-      "verified": "2026-05",
-      "lastVerified": "2026-05",
-      "availabilityStatus": "waitlist",
-      "availabilityCheckedAt": "2026-05",
-      "availabilityEvidence": "appointment wait: Less than",
-      "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-      "availabilityNeedsManualReview": true,
-      "requiresReferral": true,
-      "referralType": "gp",
-      "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-      "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-      "referralConfidence": "high",
-      "referralLastChecked": "2026-05",
-      "referralNeedsManualReview": false,
-      "tags": [
-        "psychiatrist",
-        "medical-specialist",
-        "fit",
-        "asian",
-        "depression",
-        "anxiety",
-        "trauma",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "baselineScope": [
-        "depression/mood disorders",
-        "anxiety disorders",
-        "bipolar disorder",
-        "psychosis/schizophrenia",
-        "trauma/PTSD",
-        "medication review/diagnosis/risk assessment",
-        "ADHD/neurodevelopmental assessment"
-      ],
-      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-      "advertisedSpecialties": [
-        "ADHD",
-        "Anxiety disorders",
-        "Bipolar disorder",
-        "Depression",
-        "Obsessive-compulsive disorders",
-        "Personality disorders",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia",
-        "Supportive psychotherapy"
-      ],
-      "advertisedSpecialtyEvidence": [
-        {
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-          "excerpt": "Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis.",
-          "capturedAt": "2026-05",
-          "confidence": "medium",
-          "needsManualReview": true
-        }
-      ],
-      "specialtyTagsSource": "source-backed advertised specialties/interests",
-      "specialties": [
-        "ADHD",
-        "Anxiety disorders",
-        "Bipolar disorder",
-        "Depression",
-        "Obsessive-compulsive disorders",
-        "Personality disorders",
-        "Post-traumatic stress disorder",
-        "Psychosis",
-        "Schizophrenia",
-        "Supportive psychotherapy"
-      ],
-      "services": [
-        "Insurance opinions / reports",
-        "Urgent assessments"
-      ],
-      "patientGroups": [
-        "Doctors, psychiatrists or medical students",
-        "Non-English speaking"
-      ],
-      "ageGroups": [
-        "Ages 18-60",
-        "Ages 60+"
-      ],
-      "auditSeverity": "medium",
-      "auditRules": [
-        "stale-availability"
-      ],
-      "auditIssues": [
-        "waitlist availability is 75 days old; target cadence is 30 days."
-      ],
-      "suggestedFixes": [
-        "Recheck the provider source or add a manual review item. Do not infer accepting from silence."
-      ],
-      "reviewPriority": "high",
-      "priorityScore": 4230,
-      "reviewReasons": [
-        "medium: stale-availability",
-        "provider details need manual verification",
-        "availability needs manual review",
-        "availability status is waitlist"
-      ],
-      "sourceUrls": [
-        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
-      ],
-      "sourceEvidence": {
-        "contact": [
-          {
-            "field": "phone",
-            "value": "+64210522369",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "email",
-            "value": "ktpsychiatry@gmail.com",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "website",
-            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          }
-        ],
-        "address": [
-          {
-            "field": "address",
-            "value": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "availability": [
-          {
-            "field": "availabilityStatus",
-            "value": "waitlist",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "appointment wait: Less than",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "referral": [
-          {
-            "field": "referralType",
-            "value": "gp",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-            "capturedAt": "2026-05",
-            "confidence": "high",
-            "needsManualReview": false
-          }
-        ],
-        "scope": [
-          {
-            "field": "fit",
-            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "firstStep",
-            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "services",
-            "value": "Insurance opinions / reports, Urgent assessments",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "specialties",
-            "value": "ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis, Schizophrenia, Supportive psychotherapy",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "patientGroups",
-            "value": "Doctors, psychiatrists or medical students, Non-English speaking",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "ageGroups",
-            "value": "Ages 18-60, Ages 60+",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "depressionLowMood",
-            "value": "Depression or low mood",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "anxietyPanicOverwhelm",
-            "value": "Anxiety, panic, or overwhelm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Suppor",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          },
-          {
-            "field": "traumaSexualHarm",
-            "value": "Trauma or sexual harm",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered Insurance opinions / reports Urgent assessments Treats these age groups A",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "tags": {
-          "psychiatrist": [
-            {
-              "field": "tags",
-              "value": "psychiatrist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "medical-specialist": [
-            {
-              "field": "tags",
-              "value": "medical-specialist",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "fit": [
-            {
-              "field": "tags",
-              "value": "fit",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "asian": [
-            {
-              "field": "tags",
-              "value": "asian",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "depression": [
-            {
-              "field": "tags",
-              "value": "depression",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "anxiety": [
-            {
-              "field": "tags",
-              "value": "anxiety",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "trauma": [
-            {
-              "field": "tags",
-              "value": "trauma",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ],
-          "direct-contact": [
-            {
-              "field": "tags",
-              "value": "direct-contact",
-              "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-              "excerpt": "",
-              "capturedAt": "",
-              "confidence": "low",
-              "needsManualReview": true
-            }
-          ]
-        },
-        "telehealth": [
-          {
-            "field": "telehealth",
-            "value": "Telehealth / phone or video appointments",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cultural": [
-          {
-            "field": "tags",
-            "value": "asian",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "asian",
-            "value": "Asian",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "t assessments Treats these age groups Ages 18-60 Ages 60+ Offers telepsychiatry No Qualifications Fellow of the RANZCP Languages spoken Cantonese Hokkien Malay Mandarin English Experience with Doctors, psychiatrists or medical students Non-English speaking Seeing a psychiatrist for the first time Find out what to expe",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "cost": [
-          {
-            "field": "cost",
-            "value": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "",
-            "capturedAt": "",
-            "confidence": "low",
-            "needsManualReview": true
-          },
-          {
-            "field": "cost",
-            "value": "source scan signal",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-            "capturedAt": "2026-05-25T09:23:13.473Z",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ]
-      },
-      "sourceEvidenceSummary": "Availability: appointment wait: Less than | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Kang Tan\", practice \"(none)\". | Depression or low mood: our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bip | Trauma or sexual harm: ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stres | availability audit: waitlist availability is 75 days old; target cadence is 30 days.",
-      "publicCardPreviewText": "Dr Kang Tan Wellington / Wellington RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
-      "currentProvider": {
-        "id": "ranzcp-7544",
-        "name": "Dr Kang Tan",
-        "type": "psychiatrist",
-        "region": "Wellington",
-        "city": "Wellington",
-        "address": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
-        "phone": "+64210522369",
-        "text": "",
-        "email": "ktpsychiatry@gmail.com",
-        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-        "hours": "Appointment wait: Less than 1 month.",
-        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
-        "tags": [
-          "psychiatrist",
-          "medical-specialist",
-          "fit",
-          "asian",
-          "depression",
-          "anxiety",
-          "trauma",
-          "direct-contact"
-        ],
-        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+.",
-        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
-        "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-        "verified": "2026-05",
-        "sourceUpdated": "2018-06-27",
-        "lat": -41.287084,
-        "lon": 174.777929,
-        "sourceQuality": "professional register or directory",
-        "confidence": "medium",
-        "lastVerified": "2026-05",
-        "needsManualVerification": true,
-        "specialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Bipolar disorder",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Personality disorders",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia",
-          "Supportive psychotherapy"
-        ],
-        "services": [
-          "Insurance opinions / reports",
-          "Urgent assessments"
-        ],
-        "ageGroups": [
-          "Ages 18-60",
-          "Ages 60+"
-        ],
-        "patientGroups": [
-          "Doctors, psychiatrists or medical students",
-          "Non-English speaking"
-        ],
-        "languages": [
-          "Cantonese",
-          "English",
-          "Hokkien",
-          "Malay",
-          "Mandarin"
-        ],
-        "appointmentWait": "Less than 1 month",
-        "needScope": [],
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-05",
-        "availabilityEvidence": "appointment wait: Less than",
-        "availabilitySource": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-        "availabilityNeedsManualReview": true,
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-05",
-        "referralNeedsManualReview": false,
-        "baselineScope": [
-          "depression/mood disorders",
-          "anxiety disorders",
-          "bipolar disorder",
-          "psychosis/schizophrenia",
-          "trauma/PTSD",
-          "medication review/diagnosis/risk assessment",
-          "ADHD/neurodevelopmental assessment"
-        ],
-        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
-        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
-        "advertisedSpecialties": [
-          "ADHD",
-          "Anxiety disorders",
-          "Bipolar disorder",
-          "Depression",
-          "Obsessive-compulsive disorders",
-          "Personality disorders",
-          "Post-traumatic stress disorder",
-          "Psychosis",
-          "Schizophrenia",
-          "Supportive psychotherapy"
-        ],
-        "advertisedSpecialtyEvidence": [
-          {
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "excerpt": "Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis.",
-            "capturedAt": "2026-05",
-            "confidence": "medium",
-            "needsManualReview": true
-          }
-        ],
-        "specialtyTagsSource": "source-backed advertised specialties/interests",
-        "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
-        "coordinatePrecision": "professional directory listing",
-        "coordinateConfidence": "medium",
-        "geocodeNeedsManualReview": true
-      },
-      "auditFindings": [
-        {
-          "source": "availability",
-          "severity": "medium",
-          "rule": "stale-availability",
-          "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-          "suggestedFix": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-          "allowlisted": false,
-          "raw": {
-            "providerId": "ranzcp-7544",
-            "providerName": "Dr Kang Tan",
-            "region": "Wellington",
-            "city": "Wellington",
-            "type": "psychiatrist",
-            "source": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "availabilityStatus": "waitlist",
-            "availabilityCheckedAt": "2026-05",
-            "rule": "stale-availability",
-            "severity": "medium",
-            "issue": "waitlist availability is 75 days old; target cadence is 30 days.",
-            "suggestedAction": "Recheck the provider source or add a manual review item. Do not infer accepting from silence.",
-            "allowlisted": false
-          }
-        }
-      ],
-      "identityScan": {
-        "providerId": "ranzcp-7544",
-        "providerName": "Dr Kang Tan",
-        "providerType": "psychiatrist",
-        "region": "Wellington",
-        "city": "Wellington",
-        "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-        "pagesChecked": [
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          },
-          {
-            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
-            "status": 200,
-            "ok": true,
-            "error": ""
-          }
-        ],
-        "existingClinicianName": "",
-        "existingPracticeName": "",
-        "autoClinicianName": "Dr Kang Tan",
-        "autoPracticeName": "",
-        "autoConfidence": "high",
-        "autoEvidence": "Dr Kang Tan FRANZCP MBChB",
-        "serviceSignals": {
-          "depressionLowMood": {
-            "label": "Depression or low mood",
-            "value": "found",
-            "evidence": "our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "matched": "Depression"
-          },
-          "anxietyPanicOverwhelm": {
-            "label": "Anxiety, panic, or overwhelm",
-            "value": "found",
-            "evidence": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Suppor",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "matched": "Anxiety"
-          },
-          "traumaSexualHarm": {
-            "label": "Trauma or sexual harm",
-            "value": "found",
-            "evidence": "ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered Insurance opinions / reports Urgent assessments Treats these age groups A",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "matched": "Post-traumatic"
-          },
-          "addictionGambling": {
-            "label": "Alcohol, drug, or gambling harm",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "workStudyMoneyHousing": {
-            "label": "Work, study, money, or housing stress",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          }
-        },
-        "supportSignals": {
-          "maori": {
-            "label": "Maori",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "pasifika": {
-            "label": "Pasifika",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "asian": {
-            "label": "Asian",
-            "value": "found",
-            "evidence": "t assessments Treats these age groups Ages 18-60 Ages 60+ Offers telepsychiatry No Qualifications Fellow of the RANZCP Languages spoken Cantonese Hokkien Malay Mandarin English Experience with Doctors, psychiatrists or medical students Non-English speaking Seeing a psychiatrist for the first time Find out what to expe",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "matched": "Mandarin"
-          },
-          "rainbow": {
-            "label": "Rainbow / LGBTQIA+",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "traumaInformed": {
-            "label": "Trauma-informed",
-            "value": "unclear",
-            "evidence": "",
-            "sourceUrl": "",
-            "matched": ""
-          },
-          "telehealth": {
-            "label": "Telehealth / phone or video appointments",
-            "value": "found",
-            "evidence": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-            "matched": "telehealth"
-          }
-        },
-        "clinicianGenderSignal": {
-          "value": "unclear",
-          "evidence": ""
-        },
-        "costFundingSignal": {
-          "value": "found",
-          "evidence": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-          "matched": "fees"
-        },
-        "availabilitySignal": {
-          "status": "unclear",
-          "value": "unclear",
-          "evidence": "",
-          "sourceUrl": "",
-          "matched": ""
-        },
-        "bookingSignal": {
-          "value": "found",
-          "evidence": "Link/button text: How to get an appointment",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
-        },
-        "candidateClinicians": [
-          {
-            "name": "Kang Tan",
-            "evidence": "Dr Kang Tan\nFRANZCP MBChB",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
-          },
-          {
-            "name": "Kang Tan Kang",
-            "evidence": "Dr Kang Tan\nDr Kang",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
-          },
-          {
-            "name": "Kang Tan Level",
-            "evidence": "Dr Kang Tan \nLevel",
-            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
           }
         ],
         "notes": "",
@@ -322160,6 +321021,705 @@
             "name": "Evan Wilson",
             "evidence": "Dr Evan Wilson\nFRANZCP MHSM",
             "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/13276/dr-evan-wilson"
+          }
+        ],
+        "notes": "",
+        "generatedAt": "2026-05-25T09:23:13.473Z"
+      },
+      "reviewDecision": "",
+      "correctedFields": {},
+      "reviewer": "",
+      "reviewedDate": "",
+      "reviewNotes": ""
+    },
+    {
+      "reviewId": "provider:ranzcp-7544",
+      "reviewCategory": "Availability review",
+      "providerId": "ranzcp-7544",
+      "name": "Dr Kang Tan",
+      "clinicianName": "Dr Kang Tan",
+      "practiceName": "",
+      "type": "psychiatrist",
+      "region": "Wellington",
+      "city": "Wellington",
+      "address": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
+      "lat": -41.287084,
+      "lon": 174.777929,
+      "phone": "04 462 4088",
+      "text": "",
+      "email": "office.ktpsychiatry@gmail.com",
+      "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+      "bookingUrl": "",
+      "source": "https://www.ktpsychiatry.co.nz/",
+      "sourceQuality": "provider-owned page",
+      "confidence": "medium",
+      "needsManualVerification": true,
+      "verified": "2026-05",
+      "lastVerified": "2026-05",
+      "availabilityStatus": "waitlist",
+      "availabilityCheckedAt": "2026-07-16",
+      "availabilityEvidence": "There may be a 3 to 4 months wait for non-urgent assessment",
+      "availabilitySource": "https://www.ktpsychiatry.co.nz/",
+      "availabilityNeedsManualReview": false,
+      "requiresReferral": true,
+      "referralType": "gp",
+      "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+      "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+      "referralConfidence": "high",
+      "referralLastChecked": "2026-05",
+      "referralNeedsManualReview": false,
+      "tags": [
+        "psychiatrist",
+        "medical-specialist",
+        "fit",
+        "asian",
+        "depression",
+        "anxiety",
+        "trauma",
+        "direct-contact"
+      ],
+      "needScope": [],
+      "baselineScope": [
+        "depression/mood disorders",
+        "anxiety disorders",
+        "bipolar disorder",
+        "psychosis/schizophrenia",
+        "trauma/PTSD",
+        "medication review/diagnosis/risk assessment",
+        "ADHD/neurodevelopmental assessment"
+      ],
+      "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+      "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+      "advertisedSpecialties": [
+        "ADHD",
+        "Anxiety disorders",
+        "Bipolar disorder",
+        "Depression",
+        "Obsessive-compulsive disorders",
+        "Personality disorders",
+        "Post-traumatic stress disorder",
+        "Psychosis",
+        "Schizophrenia",
+        "Supportive psychotherapy"
+      ],
+      "advertisedSpecialtyEvidence": [
+        {
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+          "excerpt": "Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis.",
+          "capturedAt": "2026-05",
+          "confidence": "medium",
+          "needsManualReview": true
+        }
+      ],
+      "specialtyTagsSource": "source-backed advertised specialties/interests",
+      "specialties": [
+        "ADHD",
+        "Anxiety disorders",
+        "Bipolar disorder",
+        "Depression",
+        "Obsessive-compulsive disorders",
+        "Personality disorders",
+        "Post-traumatic stress disorder",
+        "Psychosis",
+        "Schizophrenia",
+        "Supportive psychotherapy"
+      ],
+      "services": [
+        "Insurance opinions / reports",
+        "Urgent assessments"
+      ],
+      "patientGroups": [
+        "Doctors, psychiatrists or medical students",
+        "Non-English speaking"
+      ],
+      "ageGroups": [
+        "Ages 18-60",
+        "Ages 60+"
+      ],
+      "auditSeverity": "none",
+      "auditRules": [],
+      "auditIssues": [],
+      "suggestedFixes": [],
+      "reviewPriority": "medium",
+      "priorityScore": 2190,
+      "reviewReasons": [
+        "provider details need manual verification",
+        "availability status is waitlist"
+      ],
+      "sourceUrls": [
+        "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+        "https://www.ktpsychiatry.co.nz/"
+      ],
+      "sourceEvidence": {
+        "contact": [
+          {
+            "field": "phone",
+            "value": "04 462 4088",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "email",
+            "value": "office.ktpsychiatry@gmail.com",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "website",
+            "value": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "address": [
+          {
+            "field": "address",
+            "value": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "availability": [
+          {
+            "field": "availabilityStatus",
+            "value": "waitlist",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+            "capturedAt": "2026-07-16",
+            "confidence": "medium",
+            "needsManualReview": false
+          }
+        ],
+        "referral": [
+          {
+            "field": "referralType",
+            "value": "gp",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+            "capturedAt": "2026-05",
+            "confidence": "high",
+            "needsManualReview": false
+          }
+        ],
+        "scope": [
+          {
+            "field": "fit",
+            "value": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+.",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "firstStep",
+            "value": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "services",
+            "value": "Insurance opinions / reports, Urgent assessments",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "specialties",
+            "value": "ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis, Schizophrenia, Supportive psychotherapy",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "patientGroups",
+            "value": "Doctors, psychiatrists or medical students, Non-English speaking",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "ageGroups",
+            "value": "Ages 18-60, Ages 60+",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "depressionLowMood",
+            "value": "Depression or low mood",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "anxietyPanicOverwhelm",
+            "value": "Anxiety, panic, or overwhelm",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Suppor",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          },
+          {
+            "field": "traumaSexualHarm",
+            "value": "Trauma or sexual harm",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered Insurance opinions / reports Urgent assessments Treats these age groups A",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "tags": {
+          "psychiatrist": [
+            {
+              "field": "tags",
+              "value": "psychiatrist",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "medical-specialist": [
+            {
+              "field": "tags",
+              "value": "medical-specialist",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "fit": [
+            {
+              "field": "tags",
+              "value": "fit",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "asian": [
+            {
+              "field": "tags",
+              "value": "asian",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "depression": [
+            {
+              "field": "tags",
+              "value": "depression",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "anxiety": [
+            {
+              "field": "tags",
+              "value": "anxiety",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "trauma": [
+            {
+              "field": "tags",
+              "value": "trauma",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ],
+          "direct-contact": [
+            {
+              "field": "tags",
+              "value": "direct-contact",
+              "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+              "excerpt": "",
+              "capturedAt": "",
+              "confidence": "low",
+              "needsManualReview": true
+            }
+          ]
+        },
+        "telehealth": [
+          {
+            "field": "telehealth",
+            "value": "Telehealth / phone or video appointments",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cultural": [
+          {
+            "field": "tags",
+            "value": "asian",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "asian",
+            "value": "Asian",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "t assessments Treats these age groups Ages 18-60 Ages 60+ Offers telepsychiatry No Qualifications Fellow of the RANZCP Languages spoken Cantonese Hokkien Malay Mandarin English Experience with Doctors, psychiatrists or medical students Non-English speaking Seeing a psychiatrist for the first time Find out what to expe",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "cost": [
+          {
+            "field": "cost",
+            "value": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+            "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+            "excerpt": "",
+            "capturedAt": "",
+            "confidence": "low",
+            "needsManualReview": true
+          },
+          {
+            "field": "cost",
+            "value": "source scan signal",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
+            "capturedAt": "2026-05-25T09:23:13.473Z",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ]
+      },
+      "sourceEvidenceSummary": "Availability: There may be a 3 to 4 months wait for non-urgent assessment | Referral: Your Health in Mind profile says people must first see their GP for a referral. | Source scan: clinician \"Dr Kang Tan\", practice \"(none)\". | Depression or low mood: our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive | Anxiety, panic, or overwhelm: psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bip | Trauma or sexual harm: ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stres",
+      "publicCardPreviewText": "Dr Kang Tan Wellington / Wellington RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+. Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns. Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options. Availability: waitlist",
+      "currentProvider": {
+        "id": "ranzcp-7544",
+        "name": "Dr Kang Tan",
+        "type": "psychiatrist",
+        "region": "Wellington",
+        "city": "Wellington",
+        "address": "Level 5, Pencarrow House,, 1, Willeston Street, Wellington Central, Wellington, Wellington, 6011",
+        "phone": "04 462 4088",
+        "text": "",
+        "email": "office.ktpsychiatry@gmail.com",
+        "website": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+        "hours": "Appointment wait: Less than 1 month.",
+        "cost": "Private specialist fees usually apply. Ask about referral needs, insurance, ACC, or any funded options.",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "fit",
+          "asian",
+          "depression",
+          "anxiety",
+          "trauma",
+          "direct-contact"
+        ],
+        "fit": "RANZCP Your Health in Mind psychiatrist listing. Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis. Services include Insurance opinions / reports, Urgent assessments. Patient groups listed include Doctors, psychiatrists or medical students, Non-English speaking. Works with Ages 18-60, Ages 60+.",
+        "firstStep": "Book with your GP and ask for a psychiatry referral. Bring this psychiatrist's details, symptoms, medication history, previous diagnoses, and any safety concerns.",
+        "source": "https://www.ktpsychiatry.co.nz/",
+        "verified": "2026-05",
+        "sourceUpdated": "2018-06-27",
+        "lat": -41.287084,
+        "lon": 174.777929,
+        "sourceQuality": "provider-owned page",
+        "confidence": "medium",
+        "lastVerified": "2026-05",
+        "needsManualVerification": true,
+        "specialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Supportive psychotherapy"
+        ],
+        "services": [
+          "Insurance opinions / reports",
+          "Urgent assessments"
+        ],
+        "ageGroups": [
+          "Ages 18-60",
+          "Ages 60+"
+        ],
+        "patientGroups": [
+          "Doctors, psychiatrists or medical students",
+          "Non-English speaking"
+        ],
+        "languages": [
+          "Cantonese",
+          "English",
+          "Hokkien",
+          "Malay",
+          "Mandarin"
+        ],
+        "appointmentWait": "Less than 1 month",
+        "needScope": [],
+        "availabilityStatus": "waitlist",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "There may be a 3 to 4 months wait for non-urgent assessment",
+        "availabilitySource": "https://www.ktpsychiatry.co.nz/",
+        "availabilityNeedsManualReview": false,
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+        "referralSourceExcerpt": "Your Health in Mind profile says people must first see their GP for a referral.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-05",
+        "referralNeedsManualReview": false,
+        "baselineScope": [
+          "depression/mood disorders",
+          "anxiety disorders",
+          "bipolar disorder",
+          "psychosis/schizophrenia",
+          "trauma/PTSD",
+          "medication review/diagnosis/risk assessment",
+          "ADHD/neurodevelopmental assessment"
+        ],
+        "baselineScopeSource": "https://www.mcnz.org.nz/registration/scopes-of-practice/vocational-and-provisional-vocational/types-of-vocational-scope/psychiatry/",
+        "baselineScopeNote": "Baseline routing aid only: psychiatrists are medical specialists trained in psychiatry who may assess diagnosis, medication, risk, and common psychiatric presentations. Public listed interests remain in advertisedSpecialties.",
+        "advertisedSpecialties": [
+          "ADHD",
+          "Anxiety disorders",
+          "Bipolar disorder",
+          "Depression",
+          "Obsessive-compulsive disorders",
+          "Personality disorders",
+          "Post-traumatic stress disorder",
+          "Psychosis",
+          "Schizophrenia",
+          "Supportive psychotherapy"
+        ],
+        "advertisedSpecialtyEvidence": [
+          {
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "excerpt": "Special interests include ADHD, Anxiety disorders, Bipolar disorder, Depression, Obsessive-compulsive disorders, Personality disorders, Post-traumatic stress disorder, Psychosis.",
+            "capturedAt": "2026-05",
+            "confidence": "medium",
+            "needsManualReview": true
+          }
+        ],
+        "specialtyTagsSource": "source-backed advertised specialties/interests",
+        "coordinateSource": "RANZCP Your Health in Mind profile 2026-05",
+        "coordinatePrecision": "professional directory listing",
+        "coordinateConfidence": "medium",
+        "geocodeNeedsManualReview": true,
+        "clinicianName": "Dr Kang Tan"
+      },
+      "auditFindings": [],
+      "identityScan": {
+        "providerId": "ranzcp-7544",
+        "providerName": "Dr Kang Tan",
+        "providerType": "psychiatrist",
+        "region": "Wellington",
+        "city": "Wellington",
+        "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+        "pagesChecked": [
+          {
+            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/find-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          },
+          {
+            "url": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
+            "finalUrl": "https://www.yourhealthinmind.org/seeing-a-psychiatrist/cost-to-see-a-psychiatrist",
+            "status": 200,
+            "ok": true,
+            "error": ""
+          }
+        ],
+        "existingClinicianName": "",
+        "existingPracticeName": "",
+        "autoClinicianName": "Dr Kang Tan",
+        "autoPracticeName": "",
+        "autoConfidence": "high",
+        "autoEvidence": "Dr Kang Tan FRANZCP MBChB",
+        "serviceSignals": {
+          "depressionLowMood": {
+            "label": "Depression or low mood",
+            "value": "found",
+            "evidence": "our GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "matched": "Depression"
+          },
+          "anxietyPanicOverwhelm": {
+            "label": "Anxiety, panic, or overwhelm",
+            "value": "found",
+            "evidence": "psychiatrist, you must first see your GP for a referral and to discuss your treatment options. Take these contact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Suppor",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "matched": "Anxiety"
+          },
+          "traumaSexualHarm": {
+            "label": "Trauma or sexual harm",
+            "value": "found",
+            "evidence": "ntact details when you see your GP. Expertise ADHD Anxiety disorders Bipolar disorder Depression Obsessive-compulsive disorders Personality disorders Psychosis Post-traumatic stress disorder Schizophrenia Supportive psychotherapy Services offered Insurance opinions / reports Urgent assessments Treats these age groups A",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "matched": "Post-traumatic"
+          },
+          "addictionGambling": {
+            "label": "Alcohol, drug, or gambling harm",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "workStudyMoneyHousing": {
+            "label": "Work, study, money, or housing stress",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          }
+        },
+        "supportSignals": {
+          "maori": {
+            "label": "Maori",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "pasifika": {
+            "label": "Pasifika",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "asian": {
+            "label": "Asian",
+            "value": "found",
+            "evidence": "t assessments Treats these age groups Ages 18-60 Ages 60+ Offers telepsychiatry No Qualifications Fellow of the RANZCP Languages spoken Cantonese Hokkien Malay Mandarin English Experience with Doctors, psychiatrists or medical students Non-English speaking Seeing a psychiatrist for the first time Find out what to expe",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "matched": "Mandarin"
+          },
+          "rainbow": {
+            "label": "Rainbow / LGBTQIA+",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "traumaInformed": {
+            "label": "Trauma-informed",
+            "value": "unclear",
+            "evidence": "",
+            "sourceUrl": "",
+            "matched": ""
+          },
+          "telehealth": {
+            "label": "Telehealth / phone or video appointments",
+            "value": "found",
+            "evidence": "a psychiatrist How a psychiatrist can help your child How to get an appointment Making a complaint Private health insurance Seeing a psychiatrist via telehealth Your first appointment About psychiatrists Back What's a psychiatrist? Psychiatrists and psychologists: what's the difference? Psychiatric",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+            "matched": "telehealth"
+          }
+        },
+        "clinicianGenderSignal": {
+          "value": "unclear",
+          "evidence": ""
+        },
+        "costFundingSignal": {
+          "value": "found",
+          "evidence": "hiatrist for the first time Find out what to expect in your first appointment. Cost to see a psychiatrist in Australia Information about typical appointment fees and Medicare rebates. What's a psychiatrist? As medical doctors, psychiatrists can help with all aspects of mental illness. Read more Psychiatrist and",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
+          "matched": "fees"
+        },
+        "availabilitySignal": {
+          "status": "unclear",
+          "value": "unclear",
+          "evidence": "",
+          "sourceUrl": "",
+          "matched": ""
+        },
+        "bookingSignal": {
+          "value": "found",
+          "evidence": "Link/button text: How to get an appointment",
+          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
+        },
+        "candidateClinicians": [
+          {
+            "name": "Kang Tan",
+            "evidence": "Dr Kang Tan\nFRANZCP MBChB",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
+          },
+          {
+            "name": "Kang Tan Kang",
+            "evidence": "Dr Kang Tan\nDr Kang",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
+          },
+          {
+            "name": "Kang Tan Level",
+            "evidence": "Dr Kang Tan \nLevel",
+            "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan"
           }
         ],
         "notes": "",

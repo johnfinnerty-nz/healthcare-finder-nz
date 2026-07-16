@@ -1,20 +1,20 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-15T23:36:14.934Z
+Generated: 2026-07-16T00:38:02.776Z
 Verified decisions: 3/3
 Errors: 0
 
-## ranzcp-7046
+## taranaki-space-of-mind-dr-doron
 
 - Action: move_to_watchlist
 - Evidence gate: passed
 
-## ranzcp-7544
+## waikato-be-well-psychiatry
 
 - Action: adjust
 - Evidence gate: passed
 
-## ranzcp-7734
+## auckland-auckland-mental-wellness-centre
 
 - Action: needs_more_info
 - Evidence gate: passed

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-15",
+  "updated": "2026-07-16",
   "items": [
     {
       "id": "west-coast-internal-growth-holistic-psychology",
@@ -1094,6 +1094,77 @@
         "availabilityCheckedAt": "2026-07-16",
         "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
         "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "availabilityNeedsManualReview": false
+      }
+    },
+    {
+      "id": "taranaki-space-of-mind-dr-doron",
+      "name": "Space of Mind - Dr Yariv Doron",
+      "type": "psychiatrist",
+      "region": "Taranaki",
+      "city": "New Plymouth and telehealth",
+      "url": "https://www.spaceofmind.solutions/request-an-appointment",
+      "lastKnownStatus": "unavailable",
+      "reason": "Our books are currently filled for this quarter of 2026.",
+      "unavailablePatterns": [
+        "not\\s+(?:currently\\s+)?(?:taking|accepting)\\s+(?:on\\s+)?new\\s+(?:clients|patients|referrals)",
+        "no\\s+longer\\s+(?:seeing|taking|accepting)\\s+new\\s+(?:clients|patients|referrals)",
+        "books?\\s+(?:are\\s+)?(?:currently\\s+)?(?:closed|filled)",
+        "no\\s+(?:current\\s+)?availability",
+        "no\\s+new\\s+(?:psychiatry\\s+)?referrals?\\s+(?:are\\s+)?(?:being\\s+)?(?:taken|accepted)",
+        "referrals?\\s+(?:are\\s+)?paused"
+      ],
+      "availabilityStatus": "not_accepting",
+      "availabilityCheckedAt": "2026-07-16",
+      "availabilityEvidence": "Our books are currently filled for this quarter of 2026.",
+      "availabilitySource": "https://www.spaceofmind.solutions/request-an-appointment",
+      "availabilityNeedsManualReview": false,
+      "availablePatterns": [
+        "taking\\s+new\\s+(?:clients|patients|referrals)",
+        "accepting\\s+new\\s+(?:clients|patients|referrals)",
+        "new\\s+client\\s+enquir(?:y|ies)",
+        "book\\s+(?:an\\s+)?appointment"
+      ],
+      "checkedAt": "2026-07-16",
+      "providerCandidate": {
+        "name": "Space of Mind - Dr Yariv Doron",
+        "clinicianName": "Dr Yariv Doron",
+        "practiceName": "Space of Mind Solutions",
+        "type": "psychiatrist",
+        "region": "Taranaki",
+        "city": "New Plymouth and telehealth",
+        "address": "15 Dawson Street, New Plymouth",
+        "phone": "",
+        "text": "",
+        "email": "admin@spaceofmind.solutions",
+        "website": "https://www.spaceofmind.solutions/",
+        "source": "https://www.spaceofmind.solutions/",
+        "tags": [
+          "psychiatrist",
+          "medical-specialist",
+          "child",
+          "adolescent",
+          "telehealth",
+          "adhd",
+          "autism",
+          "ocd",
+          "depression",
+          "anxiety",
+          "assessment",
+          "medication",
+          "fit",
+          "direct-contact"
+        ],
+        "needScope": [],
+        "fit": "New Plymouth child and adolescent psychiatry service offering in-person and telehealth assessment and support for children, teenagers, and families.",
+        "firstStep": "Use the referral form or email admin and ask about eligibility, current availability, fees, and whether the first appointment can be online.",
+        "cost": "Private fees apply. Ask about referral requirements, fees, appointment availability, and whether telehealth is suitable.",
+        "confidence": "high",
+        "sourceQuality": "provider-owned page",
+        "availabilityStatus": "not_accepting",
+        "availabilityCheckedAt": "2026-07-16",
+        "availabilityEvidence": "Our books are currently filled for this quarter of 2026.",
+        "availabilitySource": "https://www.spaceofmind.solutions/request-an-appointment",
         "availabilityNeedsManualReview": false
       }
     }

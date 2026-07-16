@@ -1,281 +1,254 @@
 {
   "version": 1,
-  "batchId": "codex-20260715232830-bdd65411",
-  "generatedAt": "2026-07-15T23:32:35.953Z",
+  "batchId": "codex-20260716002958-4e375f57",
+  "generatedAt": "2026-07-16T00:46:00.000Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:ranzcp-7046",
+      "reviewId": "provider:taranaki-space-of-mind-dr-doron",
       "reviewIds": [
-        "provider:ranzcp-7046",
-        "discovery:suggestion:clinician-domain:auckland-psychiatrist:aucklandpsychiatrist.nz",
-        "discovery:suggestion:clinician-domain:dr-john-joseph:yourhealthinmind.org",
-        "places:google-place-chijm-1aym9hdw0rcrec43aqq6g"
+        "discovery:suggestion:email:admin@spaceofmind.solutions",
+        "provider:taranaki-space-of-mind-dr-doron"
       ],
-      "providerId": "ranzcp-7046",
-      "providerName": "Dr John Joseph",
+      "providerId": "taranaki-space-of-mind-dr-doron",
+      "providerName": "Space of Mind - Dr Yariv Doron",
       "action": "move_to_watchlist",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
+        "clinicianName": "Dr Yariv Doron",
+        "practiceName": "Space of Mind Solutions",
         "availabilityStatus": "not_accepting",
         "availabilityCheckedAt": "2026-07-16",
-        "availabilityEvidence": "We are not accepting new clinical referrals or new patients.",
-        "availabilitySource": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+        "availabilityEvidence": "Our books are currently filled for this quarter of 2026.",
+        "availabilitySource": "https://www.spaceofmind.solutions/request-an-appointment",
         "availabilityNeedsManualReview": false
       },
-      "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
-      "sourceExcerpt": "We are not accepting new clinical referrals or new patients.",
+      "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
+      "sourceExcerpt": "Our books are currently filled for this quarter of 2026.",
       "sourceEvidence": [
         {
-          "field": "identity",
-          "value": "Dr John Joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "field": "clinicianName",
+          "value": "Dr Yariv Doron",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "Dr John Joseph"
+          "excerpt": "Dr Yariv Doron"
+        },
+        {
+          "field": "practiceName",
+          "value": "Space of Mind Solutions",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
+          "sourceType": "provider_owned",
+          "excerpt": "Space of Mind Solutions Staff"
         },
         {
           "field": "availabilityStatus",
           "value": "not_accepting",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "not_accepting",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/clinical-referrals",
-          "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
+          "excerpt": "Our books are currently filled for this quarter of 2026."
         },
         {
           "field": "availabilityCheckedAt",
           "value": "2026-07-16",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
+          "excerpt": "Our books are currently filled for this quarter of 2026."
         },
         {
           "field": "availabilityEvidence",
-          "value": "We are not accepting new clinical referrals or new patients.",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "value": "Our books are currently filled for this quarter of 2026.",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
+          "excerpt": "Our books are currently filled for this quarter of 2026."
         },
         {
           "field": "availabilitySource",
-          "value": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "value": "https://www.spaceofmind.solutions/request-an-appointment",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
+          "excerpt": "Our books are currently filled for this quarter of 2026."
         },
         {
           "field": "availabilityNeedsManualReview",
           "value": false,
-          "sourceUrl": "https://www.aucklandpsychiatrist.nz/dr-john-joseph",
+          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
           "sourceType": "provider_owned",
-          "excerpt": "We are not accepting new clinical referrals or new patients."
-        },
-        {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Sep 2021",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7046/dr-john-joseph",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Sep 2021"
+          "excerpt": "Our books are currently filled for this quarter of 2026."
         }
       ],
       "auditRulesResolved": [
-        "weak-telehealth-evidence",
-        "stale-availability",
         "discovery-suggestion",
-        "update_existing_provider",
-        "google-places-candidate",
-        "corroborate_existing_provider"
+        "needs_manual_research"
       ],
-      "reviewNotes": "Dr John Joseph's provider-owned clinician page and the clinic's current clinical-referrals page both explicitly state that new clinical referrals and new patients are not being accepted. The RANZCP wait estimate was last updated in September 2021. The current restrictive notice takes precedence, so this record is removed from live recommendations and retained on the reversible availability watchlist. No telehealth, cultural, scope, referral, location, or verification claim is added.",
+      "reviewNotes": "The provider-owned intake page identifies Dr Yariv Doron and Space of Mind Solutions and explicitly says its books are currently filled, with a future enrolment date of 24 July 2026. A second fetch reproduced the restriction. The nearby statement that the date allows bookings for the second quarter conflicts with the July date, so only the unambiguous current closure is used. The record is moved to the reversible watchlist for rechecking. The page also states an age limit and a direct-enrolment pathway, but this restricted lane does not add age-group or psychiatry self-referral claims.",
       "codexReview": {
-        "researchPassId": "research-20260716-john-joseph-clinical-closure-1",
-        "verificationPassId": "verify-20260716-john-joseph-clinical-closure-2",
+        "researchPassId": "research-20260716-space-of-mind-intake-1",
+        "verificationPassId": "verify-20260716-space-of-mind-intake-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:ranzcp-7544",
+      "reviewId": "provider:waikato-be-well-psychiatry",
       "reviewIds": [
-        "provider:ranzcp-7544",
-        "discovery:suggestion:clinician-domain:dr-kang-tan:yourhealthinmind.org"
+        "discovery:suggestion:email:bewellpsychiatry0@gmail.com",
+        "provider:waikato-be-well-psychiatry"
       ],
-      "providerId": "ranzcp-7544",
-      "providerName": "Dr Kang Tan",
+      "providerId": "waikato-be-well-psychiatry",
+      "providerName": "Be Well Psychiatry",
       "action": "adjust",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {
-        "clinicianName": "Dr Kang Tan",
-        "phone": "04 462 4088",
-        "email": "office.ktpsychiatry@gmail.com",
-        "source": "https://www.ktpsychiatry.co.nz/",
-        "sourceQuality": "provider-owned page",
-        "availabilityStatus": "waitlist",
-        "availabilityCheckedAt": "2026-07-16",
-        "availabilityEvidence": "There may be a 3 to 4 months wait for non-urgent assessment",
-        "availabilitySource": "https://www.ktpsychiatry.co.nz/",
-        "availabilityNeedsManualReview": false
+        "clinicianName": "Dr Tanya Saul",
+        "practiceName": "Be Well Psychiatry",
+        "requiresReferral": true,
+        "referralType": "gp",
+        "referralSourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+        "referralSourceExcerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
+        "referralConfidence": "high",
+        "referralLastChecked": "2026-07-16",
+        "referralNeedsManualReview": false,
+        "firstStep": "Ask your GP to send a referral through Specialist Referrals, then contact the practice if you need to confirm fees, wait time, or appointment format."
       },
-      "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-      "sourceExcerpt": "There may be a 3 to 4 months wait for non-urgent assessment",
+      "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+      "sourceExcerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
       "sourceEvidence": [
         {
           "field": "clinicianName",
-          "value": "Dr Kang Tan",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "value": "Dr Tanya Saul",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "Dr Kang Tan"
+          "excerpt": "Dr. Tanya Saul"
         },
         {
-          "field": "phone",
-          "value": "04 462 4088",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "field": "practiceName",
+          "value": "Be Well Psychiatry",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "04 462 4088"
+          "excerpt": "Be Well Psychiatry"
         },
         {
-          "field": "email",
-          "value": "office.ktpsychiatry@gmail.com",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "field": "requiresReferral",
+          "value": true,
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "office.ktpsychiatry@gmail.com"
-        },
-        {
-          "field": "source",
-          "value": "https://www.ktpsychiatry.co.nz/",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Kang Tan | Specialist Psychiatry"
-        },
-        {
-          "field": "sourceQuality",
-          "value": "provider-owned page",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Kang Tan | Specialist Psychiatry"
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment"
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7544/dr-kang-tan",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
-        },
-        {
-          "field": "availabilityCheckedAt",
-          "value": "2026-07-16",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment"
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "There may be a 3 to 4 months wait for non-urgent assessment",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment"
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.ktpsychiatry.co.nz/",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment"
-        },
-        {
-          "field": "availabilityNeedsManualReview",
-          "value": false,
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "There may be a 3 to 4 months wait for non-urgent assessment"
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
         },
         {
           "field": "referralType",
           "value": "gp",
-          "sourceUrl": "https://www.ktpsychiatry.co.nz/",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
           "sourceType": "provider_owned",
-          "excerpt": "Referral from a GP is necessary in most cases."
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "referralSourceUrl",
+          "value": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "referralSourceExcerpt",
+          "value": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "referralConfidence",
+          "value": "high",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "referralLastChecked",
+          "value": "2026-07-16",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "referralNeedsManualReview",
+          "value": false,
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
+        },
+        {
+          "field": "firstStep",
+          "value": "Ask your GP to send a referral through Specialist Referrals, then contact the practice if you need to confirm fees, wait time, or appointment format.",
+          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
+          "sourceType": "provider_owned",
+          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals."
         }
       ],
       "auditRulesResolved": [
-        "stale-availability",
         "discovery-suggestion",
-        "update_existing_provider"
+        "needs_manual_research"
       ],
-      "reviewNotes": "Dr Kang Tan's provider-owned site identifies the clinician, publishes the current phone and email, states that GP referral is necessary in most cases, and gives a current three-to-four-month non-urgent assessment wait. The explicit wait is treated as waitlist evidence, not as accepting availability; the booking control is not used as acceptance evidence. The direct source replaces the stale directory as the evidence source. The provider-owned page publishes a different Wellington address, but location and coordinates remain unchanged in this restricted lane and retain their existing geocode review flag. No scope, cultural, telehealth, gender, age-group, patient-group, or verification claim is added.",
+      "reviewNotes": "The provider-owned page identifies Dr Tanya Saul, publishes the existing practice contact details, and explicitly requires the user's GP to submit a referral through Specialist Referrals. A second independent fetch reproduced the wording, and a community-maintained directory corroborates the referral requirement. The directory reports a two-to-three-month wait but asks users to verify details with the clinic, while the provider-owned page does not publish a current wait, so availability remains not_published and review-required. No specialty, telehealth, age-group, cultural, or verification claim is added.",
       "codexReview": {
-        "researchPassId": "research-20260716-kang-tan-contact-wait-1",
-        "verificationPassId": "verify-20260716-kang-tan-contact-wait-2",
+        "researchPassId": "research-20260716-be-well-referral-1",
+        "verificationPassId": "verify-20260716-be-well-referral-2",
         "verificationConclusion": "accept",
         "independentFetchCount": 2
       }
     },
     {
-      "reviewId": "provider:ranzcp-7734",
+      "reviewId": "provider:auckland-auckland-mental-wellness-centre",
       "reviewIds": [
-        "provider:ranzcp-7734",
-        "discovery:suggestion:clinician-domain:dr-m-shanmukha-swamy-lokesh:yourhealthinmind.org"
+        "provider:auckland-auckland-mental-wellness-centre"
       ],
-      "providerId": "ranzcp-7734",
-      "providerName": "Dr M Shanmukha Swamy Lokesh",
+      "providerId": "auckland-auckland-mental-wellness-centre",
+      "providerName": "Auckland Mental Wellness Centre",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
-      "sourceExcerpt": "This listing was last updated by this psychiatrist in Aug 2018",
+      "sourceUrl": "https://aucklandmentalwellness.com/",
+      "sourceExcerpt": "Auckland Mental Wellness Centre offers diagnostic assessment, clinical neuropsychology, and specialist psychotherapy services",
       "sourceEvidence": [
         {
           "field": "identity",
-          "value": "Dr M Shanmukha Swamy Lokesh",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
-          "sourceType": "professional_directory",
-          "excerpt": "Dr M Shanmukha Swamy Lokesh"
+          "value": "Auckland Mental Wellness Centre",
+          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Auckland Mental Wellness Centre"
         },
         {
-          "field": "availabilityStatus",
-          "value": "waitlist",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
-          "sourceType": "professional_directory",
-          "excerpt": "Approximate wait time for a first appointment: Less than 1 month"
+          "field": "tags",
+          "value": "anxiety",
+          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Anxiety"
         },
         {
-          "field": "availabilityFreshness",
-          "value": "profile last updated Aug 2018",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
-          "sourceType": "professional_directory",
-          "excerpt": "This listing was last updated by this psychiatrist in Aug 2018"
+          "field": "tags",
+          "value": "depression",
+          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Depression"
         },
         {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.yourhealthinmind.org/find-a-psychiatrist/profile/7734/dr-m-shanmukha-swamy-lokesh",
-          "sourceType": "professional_directory",
-          "excerpt": "you must first see your GP for a referral and to discuss your treatment options"
+          "field": "practiceScope",
+          "value": "diagnostic assessment, clinical neuropsychology, and specialist psychotherapy",
+          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "sourceType": "provider_owned",
+          "excerpt": "Auckland Mental Wellness Centre offers diagnostic assessment, clinical neuropsychology, and specialist psychotherapy services"
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The only identity-bound wait and referral evidence is the RANZCP profile, which was last updated in August 2018. The research pass found no current clinician-specific accepting, wait, or referral statement that could be safely bound to the stored full name. Generic clinic booking language is not availability evidence. The record remains unchanged and is deferred for stronger identity-bound evidence.",
+      "reviewNotes": "The provider-owned page explicitly lists anxiety and depression among Auckland Mental Wellness Centre's practice-wide services. It separately names Jessica Gu and Tyla Jamieson, but does not bind every practice-wide condition to each clinician. The current record is practice-level and the restricted lane cannot add condition-scope evidence fields, so no unsupported removal or positive scope addition is made. The page also publishes inconsistent secondary phone numbers in different sections; the existing primary number 021 960 303 is consistent and remains unchanged. This item is deferred for a future evidence-model pass.",
       "codexReview": {
-        "researchPassId": "research-20260716-lokesh-availability-identity-1",
-        "verificationPassId": "verify-20260716-lokesh-availability-identity-2",
+        "researchPassId": "research-20260716-auckland-wellness-scope-1",
+        "verificationPassId": "verify-20260716-auckland-wellness-scope-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       }
