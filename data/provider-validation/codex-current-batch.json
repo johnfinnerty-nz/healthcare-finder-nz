@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "batchId": "codex-20260716002958-4e375f57",
-  "generatedAt": "2026-07-16T00:29:58.072Z",
+  "batchId": "codex-20260716013223-add5f28c",
+  "generatedAt": "2026-07-16T01:32:23.280Z",
   "policy": "codex-safe-remediation-v1",
   "constraints": [
     "Use public professional sources only and never bypass access controls.",
@@ -13,146 +13,9 @@
   ],
   "items": [
     {
-      "providerId": "taranaki-space-of-mind-dr-doron",
+      "providerId": "bay-of-plenty-psychology-group-tauranga",
       "reviewIds": [
-        "discovery:suggestion:email:admin@spaceofmind.solutions",
-        "provider:taranaki-space-of-mind-dr-doron"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only",
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown; address missing coordinates",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown",
-        "address missing coordinates"
-      ],
-      "sourceUrls": [
-        "https://www.spaceofmind.solutions/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: admin@spaceofmind.solutions\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Child and Adolescent Psychiatry Clinic\". | Depression or low mood: requirement to be assessed by a psychologist prior to our ADHD assessment. 02 Mood Disorders Assessment, diagnosis and treatment of mood disorders (including depression, bipolar, e | Anxiety, panic, or overwhelm: d Disorders Assessment, diagnosis and treatment of mood disorders (including depression, bipolar, etc.) alongside the option of pharmacology, if required. 03 Anxiety and OCD Assess | Trauma or sexual harm: he field of Neuropsychiatry for clients who present with complex emotions and/or behaviours relating to underlying neurological issues (such as Epilepsy, brain trauma, etc.). ​ The",
-      "currentRecord": {
-        "name": "Space of Mind - Dr Yariv Doron",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Taranaki",
-        "city": "New Plymouth and telehealth",
-        "address": "15 Dawson Street, New Plymouth",
-        "phone": "",
-        "text": "",
-        "email": "admin@spaceofmind.solutions",
-        "website": "https://www.spaceofmind.solutions/",
-        "bookingUrl": "",
-        "source": "https://www.spaceofmind.solutions/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "waikato-be-well-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:email:bewellpsychiatry0@gmail.com",
-        "provider:waikato-be-well-psychiatry"
-      ],
-      "reviewPriority": "high",
-      "auditSeverity": "medium",
-      "reviewModes": [
-        "restrictive_availability_or_evidence_only",
-        "evidence_only"
-      ],
-      "reviewCategories": [
-        "Referral pathway review"
-      ],
-      "auditRules": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "auditIssues": [
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown"
-      ],
-      "suggestedFixes": [
-        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
-      ],
-      "reviewReasons": [
-        "provider discovery suggestion",
-        "existing provider enrichment; review queue medium: availability needs manual review; referral pathway needs manual review; psychiatrist referral pathway unknown",
-        "availability needs manual review",
-        "referral pathway needs manual review",
-        "psychiatrist referral pathway unknown"
-      ],
-      "sourceUrls": [
-        "https://www.bewellpsychiatry0.co.nz/"
-      ],
-      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: +64 27 358 5434\nReferral: Referral requirements are not clearly published in the stored source fields. | Source scan: clinician \"(none)\", practice \"Be Well Psychiatry\". | Depression or low mood: s: MBChB (Stell), FCPsych(SA), MMed (Stell) Affiliations and Memberships Description of Specialisation General Adolescent and Adult psychiatry Mood Disorders: Depression and Bipola | Anxiety, panic, or overwhelm: l) Affiliations and Memberships Description of Specialisation General Adolescent and Adult psychiatry Mood Disorders: Depression and Bipolar Affective Disorder Anxiety Disorders: i | Trauma or sexual harm: ps Description of Specialisation General Adolescent and Adult psychiatry Mood Disorders: Depression and Bipolar Affective Disorder Anxiety Disorders: including PTSD & OCD Adult ADH",
-      "currentRecord": {
-        "name": "Be Well Psychiatry",
-        "clinicianName": "",
-        "practiceName": "",
-        "type": "psychiatrist",
-        "region": "Waikato",
-        "city": "Maungatautari",
-        "address": "423 Luck At Last Road, Maungatautari 3494",
-        "phone": "+64 27 358 5434",
-        "text": "",
-        "email": "bewellpsychiatry0@gmail.com",
-        "website": "https://www.bewellpsychiatry0.co.nz/",
-        "bookingUrl": "",
-        "source": "https://www.bewellpsychiatry0.co.nz/",
-        "availabilityStatus": "not_published",
-        "availabilityEvidence": "",
-        "referralType": "",
-        "referralSourceExcerpt": "",
-        "tags": [],
-        "needScope": [],
-        "advertisedSpecialties": [],
-        "specialties": [],
-        "services": [],
-        "patientGroups": [],
-        "ageGroups": [],
-        "onlineAvailable": false,
-        "phoneSupport": false,
-        "inPerson": true,
-        "cost": ""
-      },
-      "score": 410
-    },
-    {
-      "providerId": "auckland-auckland-mental-wellness-centre",
-      "reviewIds": [
-        "provider:auckland-auckland-mental-wellness-centre"
+        "provider:bay-of-plenty-psychology-group-tauranga"
       ],
       "reviewPriority": "high",
       "auditSeverity": "medium",
@@ -178,66 +41,200 @@
         "availability needs manual review"
       ],
       "sourceUrls": [
-        "https://aucklandmentalwellness.com/"
+        "https://www.tpgroup.co.nz/contact-us"
       ],
-      "sourceEvidenceSummary": "Source scan: clinician \"Tyla Jamieson\", practice \"Auckland Mental Wellness Centre\". | Depression or low mood: Anxiety Child & Adolescent Mental Health Issues (ADHD, Autism, Cognitive Disorder, Anger Management, learning difficulty) Chronic/ medically unexplained Pain Depression Drug & Alco | Anxiety, panic, or overwhelm: specialist psychotherapy services of a wide range of relational, psychological, emotional and behavioural issues for children, adolescents, and adults below: Anxiety Child & Adoles | Trauma or sexual harm: Compulsive Disorders Eating Disorder Panic Disorder Personality Disorder Relationship Problems Sleep/Insomnia Supervision and Training Traumatic Brain injury Trauma Related Disorde | source-fit audit: Broad tag \"depression\" is present but source fields do not clearly support it. | source-fit audit: Broad tag \"anxiety\" is present but source fields do not clearly support it.",
+      "sourceEvidenceSummary": "Source scan: clinician \"(none)\", practice \"The Psychology Group\". | Depression or low mood: xperience working with children, adolescents, adults, elderly, families and couples. We work with a variety of mental health challenges and offer support for: Depression Anxiety Dr | Anxiety, panic, or overwhelm: rking with children, adolescents, adults, elderly, families and couples. We work with a variety of mental health challenges and offer support for: Depression Anxiety Drug & Alcohol | Trauma or sexual harm: ur Team Our Services Therapy Services ADHD Assessments ADHD Coaching for Children Neurodiversity Assessments Sensory Processing Assessment and Intervention ACC Sensitive Claims Gen | source-fit audit: Broad tag \"depression\" is present but source fields do not clearly support it. | source-fit audit: Broad tag \"anxiety\" is present but source fields do not clearly support it.",
       "currentRecord": {
-        "name": "Auckland Mental Wellness Centre",
+        "name": "The Psychology Group - Tauranga",
         "clinicianName": "",
         "practiceName": "",
         "type": "psychologist",
-        "region": "Auckland",
-        "city": "Remuera",
-        "address": "139 Remuera Road, Remuera, Auckland",
-        "phone": "021 960 303",
+        "region": "Bay of Plenty",
+        "city": "Tauranga",
+        "address": "60 Eighth Avenue, Tauranga 3110",
+        "phone": "07 262 2624",
         "text": "",
-        "email": "Aucklandmentalwellness@gmail.com",
-        "website": "https://aucklandmentalwellness.com/",
-        "bookingUrl": "https://aucklandmentalwellness.com/",
-        "source": "https://aucklandmentalwellness.com/",
+        "email": "hello@tpgroup.co.nz",
+        "website": "https://www.tpgroup.co.nz/contact-us",
+        "bookingUrl": "",
+        "source": "https://www.tpgroup.co.nz/contact-us",
         "availabilityStatus": "not_published",
         "availabilityEvidence": "",
         "referralType": "",
         "referralSourceExcerpt": "",
         "tags": [
           "psychologist",
-          "counselling-psychologist",
+          "clinical-psychologist",
+          "therapy",
           "assessment",
           "depression",
           "anxiety",
-          "trauma",
-          "adhd",
-          "autism",
-          "emdr",
-          "cbt",
-          "act",
-          "child",
-          "adolescent",
+          "stress",
           "fit",
           "direct-contact"
         ],
         "needScope": [],
         "advertisedSpecialties": [],
-        "specialties": [
-          "Diagnostic assessment",
-          "Clinical neuropsychology",
-          "Specialist psychotherapy",
-          "ADHD and autism assessments",
-          "EMDR",
-          "CBT",
-          "ACT"
-        ],
+        "specialties": [],
         "services": [],
-        "patientGroups": [
-          "Children",
-          "Adolescents",
-          "Adults"
+        "patientGroups": [],
+        "ageGroups": [],
+        "cost": ""
+      },
+      "score": 400
+    },
+    {
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "reviewIds": [
+        "provider:christchurch-psychmed-amanda-baird",
+        "places:google-place-chijh213yfklmw0r9e085y3se-o"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "medium",
+      "reviewModes": [
+        "safe_removal_or_evidence_only",
+        "restrictive_availability_or_evidence_only"
+      ],
+      "reviewCategories": [
+        "Sensitive tag or scope evidence",
+        "Google Places discovery"
+      ],
+      "auditRules": [
+        "broad-tag-without-source-support",
+        "google-places-candidate",
+        "corroborate_existing_provider"
+      ],
+      "auditIssues": [
+        "Broad tag \"work\" is present but source fields do not clearly support it.",
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "3 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 3.2 km from the query centre.",
+        "Google Places query type was psychiatrist, but the result name/types look like gp; confirm provider type from a stronger source",
+        "possible existing provider match: christchurch-psychmed-amanda-baird, christchurch-psychmed-deborah-wood, christchurch-psychmed-laura-hammersley, christchurch-psychmed-nicholas-pascoe, christchurch-psychmed-samantha-chow"
+      ],
+      "suggestedFixes": [
+        "Remove \"work\" or add source-backed specialties/services evidence.",
+        "Use this as a discovery lead only. Open the provider website or stronger public source, capture excerpts, then approve/adjust/reject through review decisions."
+      ],
+      "reviewReasons": [
+        "medium: broad-tag-without-source-support",
+        "provider details need manual verification",
+        "availability needs manual review",
+        "Google Places discovery candidate",
+        "Google Places is a discovery/corroboration source, not enough by itself for live recommendations.",
+        "Confirm provider type, services, availability, cost, referral pathway, and support-preference tags from stronger public sources.",
+        "3 GP corroboration tasks | Google Places discovery/corroboration only",
+        "Google Places result is 3.2 km from the query centre.",
+        "Google Places query type was psychiatrist, but the result name/types look like gp; confirm provider type from a stronger source",
+        "possible existing provider match: christchurch-psychmed-amanda-baird, christchurch-psychmed-deborah-wood, christchurch-psychmed-laura-hammersley, christchurch-psychmed-nicholas-pascoe, christchurch-psychmed-samantha-chow"
+      ],
+      "sourceUrls": [
+        "https://www.christchurchpsychmed.co.nz/about",
+        "https://maps.google.com/?cid=16896329521605438965&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "http://www.christchurchpsychmed.co.nz/"
+      ],
+      "sourceEvidenceSummary": "Source scan: clinician \"Amanda Baird\", practice \"(none)\". | Depression or low mood: tor. Samantha specialises in general adult psychiatry (adults aged 18 and over) and has a special interest in transgender health, ADHD, neurodiversity, anxiety/depression, and exis | Anxiety, panic, or overwhelm: vate sector. Samantha specialises in general adult psychiatry (adults aged 18 and over) and has a special interest in transgender health, ADHD, neurodiversity, anxiety/depression,  | Trauma or sexual harm: both in public and private settings, in person and via telehealth. He sees a wide variety of patients, including those with mood and anxiety disorders, complex trauma, psychosis, a | source-fit audit: Broad tag \"work\" is present but source fields do not clearly support it.\nSources: Google Places business listing | Evidence: Google Places phone: 03 356 1150 | Business status: OPERATIONAL",
+      "currentRecord": {
+        "name": "Amanda Baird",
+        "clinicianName": "",
+        "practiceName": "",
+        "type": "psychologist",
+        "region": "Canterbury",
+        "city": "Christchurch",
+        "address": "169 Innes Road, St Albans, Christchurch",
+        "phone": "033561150",
+        "text": "",
+        "email": "info@christchurchpsychmed.co.nz",
+        "website": "https://www.christchurchpsychmed.co.nz/about",
+        "bookingUrl": "",
+        "source": "https://www.christchurchpsychmed.co.nz/about",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [
+          "psychologist",
+          "clinical-psychologist",
+          "depression",
+          "anxiety",
+          "work",
+          "fit",
+          "direct-contact"
         ],
-        "ageGroups": [
-          "Children",
-          "Adolescents",
-          "Adults"
-        ],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
+        "cost": ""
+      },
+      "score": 400
+    },
+    {
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-deborah-wood:christchurchpsychmed.co.nz",
+        "provider:christchurch-psychmed-deborah-wood"
+      ],
+      "reviewPriority": "high",
+      "auditSeverity": "low",
+      "reviewModes": [
+        "evidence_only"
+      ],
+      "reviewCategories": [
+        "Referral pathway review",
+        "Sensitive tag or scope evidence"
+      ],
+      "auditRules": [
+        "discovery-suggestion",
+        "update_existing_provider"
+      ],
+      "auditIssues": [
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching"
+      ],
+      "suggestedFixes": [
+        "Review source evidence, then approve/adjust/reject through the controlled review decision workflow."
+      ],
+      "reviewReasons": [
+        "provider discovery suggestion",
+        "seed source login-or-captcha-required",
+        "existing provider update requires human approval before patching",
+        "provider details need manual verification",
+        "availability needs manual review"
+      ],
+      "sourceUrls": [
+        "https://www.christchurchpsychmed.co.nz/about",
+        "https://www.christchurchpsychmed.co.nz/helpful-info"
+      ],
+      "sourceEvidenceSummary": "Sources: provider-owned page | Evidence: Seed value from providers.json: 033561150\nReferral: Christchurch PsychMed says a GP referral is required to see a psychiatrist; clinical psychologist referrals are helpful but not essential. | Source scan: clinician \"Dr Deborah Wood\", practice \"(none)\". | Depression or low mood: tor. Samantha specialises in general adult psychiatry (adults aged 18 and over) and has a special interest in transgender health, ADHD, neurodiversity, anxiety/depression, and exis | Anxiety, panic, or overwhelm: vate sector. Samantha specialises in general adult psychiatry (adults aged 18 and over) and has a special interest in transgender health, ADHD, neurodiversity, anxiety/depression,  | Trauma or sexual harm: both in public and private settings, in person and via telehealth. He sees a wide variety of patients, including those with mood and anxiety disorders, complex trauma, psychosis, a",
+      "currentRecord": {
+        "name": "Dr Deborah Wood",
+        "clinicianName": "Dr Deborah Wood",
+        "practiceName": "",
+        "type": "psychiatrist",
+        "region": "Canterbury",
+        "city": "Christchurch",
+        "address": "169 Innes Road, St Albans, Christchurch",
+        "phone": "033561150",
+        "text": "",
+        "email": "info@christchurchpsychmed.co.nz",
+        "website": "https://www.christchurchpsychmed.co.nz/about",
+        "bookingUrl": "",
+        "source": "https://www.christchurchpsychmed.co.nz/about",
+        "availabilityStatus": "not_published",
+        "availabilityEvidence": "",
+        "referralType": "",
+        "referralSourceExcerpt": "",
+        "tags": [],
+        "needScope": [],
+        "advertisedSpecialties": [],
+        "specialties": [],
+        "services": [],
+        "patientGroups": [],
+        "ageGroups": [],
         "onlineAvailable": false,
         "phoneSupport": false,
         "inPerson": true,

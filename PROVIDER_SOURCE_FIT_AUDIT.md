@@ -1,10 +1,10 @@
 # Provider Source-Fit Audit
 
-Generated: 2026-07-16T00:41:42.990Z
+Generated: 2026-07-16T01:42:39.527Z
 
 Providers scanned: 1211
 
-Findings: 356 total, 0 high (0 unallowlisted), 230 medium, 126 low.
+Findings: 355 total, 0 high (0 unallowlisted), 229 medium, 126 low.
 
 High severity findings block CI unless allowlisted in `data/provider-source-fit-allowlist.json`.
 
@@ -35,7 +35,6 @@ High severity findings block CI unless allowlisted in `data/provider-source-fit-
 | medium | canterbury-talking-therapy - Talking Therapy Psychotherapy and Counselling Centre | Canterbury / Christchurch | counsellor | Broad tag "depression" is present but source fields do not clearly support it. | Remove "depression" or add source-backed specialties/services evidence. | https://talkingtherapy.co.nz/ | no |
 | medium | canterbury-talking-therapy - Talking Therapy Psychotherapy and Counselling Centre | Canterbury / Christchurch | counsellor | Broad tag "anxiety" is present but source fields do not clearly support it. | Remove "anxiety" or add source-backed specialties/services evidence. | https://talkingtherapy.co.nz/ | no |
 | medium | canterbury-te-tahi-youth - Te Tahi Youth | Canterbury / Christchurch | youth | rainbow support tag is present but source fields do not clearly support it. | Remove the tag or add a stronger public source/structured patientGroups/languages evidence. | https://www.tetahiyouth.org.nz/ | no |
-| medium | christchurch-psychmed-amanda-baird - Amanda Baird | Canterbury / Christchurch | psychologist | Broad tag "work" is present but source fields do not clearly support it. | Remove "work" or add source-backed specialties/services evidence. | https://www.christchurchpsychmed.co.nz/about | no |
 | medium | christchurch-psychmed-natasha-pomeroy - Natasha Pomeroy | Canterbury / Christchurch | psychologist | Broad tag "work" is present but source fields do not clearly support it. | Remove "work" or add source-backed specialties/services evidence. | https://www.christchurchpsychmed.co.nz/about | no |
 | medium | christchurch-psychmed-steve-humm - Steve Humm | Canterbury / Christchurch | psychologist | Broad tag "depression" is present but source fields do not clearly support it. | Remove "depression" or add source-backed specialties/services evidence. | https://www.christchurchpsychmed.co.nz/about | no |
 | medium | dunedin-bernadette-berry-delta-psychology - Bernadette Berry, Delta Psychology | Otago / Dunedin | psychologist | Broad tag "anxiety" is present but source fields do not clearly support it. | Remove "anxiety" or add source-backed specialties/services evidence. | https://www.nzccp.co.nz/team/bernadette-berry | no |

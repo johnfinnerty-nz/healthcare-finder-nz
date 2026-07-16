@@ -1,379 +1,215 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-16T00:38:02.776Z",
+  "generatedAt": "2026-07-16T01:41:33.749Z",
   "policy": "codex-safe-remediation-v1",
   "decisions": [
     {
-      "reviewId": "provider:taranaki-space-of-mind-dr-doron",
+      "reviewId": "provider:bay-of-plenty-psychology-group-tauranga",
       "reviewIds": [
-        "discovery:suggestion:email:admin@spaceofmind.solutions",
-        "provider:taranaki-space-of-mind-dr-doron"
+        "provider:bay-of-plenty-psychology-group-tauranga"
       ],
-      "providerId": "taranaki-space-of-mind-dr-doron",
-      "providerName": "Space of Mind - Dr Yariv Doron",
-      "action": "move_to_watchlist",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Yariv Doron",
-        "practiceName": "Space of Mind Solutions",
-        "availabilityStatus": "not_accepting",
-        "availabilityCheckedAt": "2026-07-16",
-        "availabilityEvidence": "Our books are currently filled for this quarter of 2026.",
-        "availabilitySource": "https://www.spaceofmind.solutions/request-an-appointment",
-        "availabilityNeedsManualReview": false
-      },
-      "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-      "sourceExcerpt": "Our books are currently filled for this quarter of 2026.",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Yariv Doron",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr Yariv Doron",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "practiceName",
-          "value": "Space of Mind Solutions",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Space of Mind Solutions Staff",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityStatus",
-          "value": "not_accepting",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Our books are currently filled for this quarter of 2026.",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityCheckedAt",
-          "value": "2026-07-16",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Our books are currently filled for this quarter of 2026.",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityEvidence",
-          "value": "Our books are currently filled for this quarter of 2026.",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Our books are currently filled for this quarter of 2026.",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilitySource",
-          "value": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Our books are currently filled for this quarter of 2026.",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "availabilityNeedsManualReview",
-          "value": false,
-          "sourceUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "sourceType": "provider_owned",
-          "excerpt": "Our books are currently filled for this quarter of 2026.",
-          "finalUrl": "https://www.spaceofmind.solutions/request-an-appointment",
-          "capturedAt": "2026-07-16T00:38:02.777Z",
-          "pageHash": "b7502039863b896ea8327b7a2e9db6b6872a6ab1f28222fcb1eeeeeab821d367",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "reviewNotes": "The provider-owned intake page identifies Dr Yariv Doron and Space of Mind Solutions and explicitly says its books are currently filled, with a future enrolment date of 24 July 2026. A second fetch reproduced the restriction. The nearby statement that the date allows bookings for the second quarter conflicts with the July date, so only the unambiguous current closure is used. The record is moved to the reversible watchlist for rechecking. The page also states an age limit and a direct-enrolment pathway, but this restricted lane does not add age-group or psychiatry self-referral claims.",
-      "codexReview": {
-        "researchPassId": "research-20260716-space-of-mind-intake-1",
-        "verificationPassId": "verify-20260716-space-of-mind-intake-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-16T00:38:02.776Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:waikato-be-well-psychiatry",
-      "reviewIds": [
-        "discovery:suggestion:email:bewellpsychiatry0@gmail.com",
-        "provider:waikato-be-well-psychiatry"
-      ],
-      "providerId": "waikato-be-well-psychiatry",
-      "providerName": "Be Well Psychiatry",
-      "action": "adjust",
-      "reviewer": "Codex autonomous validator",
-      "reviewedDate": "2026-07-16",
-      "generatedBy": "codex-autonomous-reviewer",
-      "correctedFields": {
-        "clinicianName": "Dr Tanya Saul",
-        "practiceName": "Be Well Psychiatry",
-        "requiresReferral": true,
-        "referralType": "gp",
-        "referralSourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-        "referralSourceExcerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-        "referralConfidence": "high",
-        "referralLastChecked": "2026-07-16",
-        "referralNeedsManualReview": false,
-        "firstStep": "Ask your GP to send a referral through Specialist Referrals, then contact the practice if you need to confirm fees, wait time, or appointment format."
-      },
-      "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-      "sourceExcerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-      "sourceEvidence": [
-        {
-          "field": "clinicianName",
-          "value": "Dr Tanya Saul",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Dr. Tanya Saul",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "practiceName",
-          "value": "Be Well Psychiatry",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "Be Well Psychiatry",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "requiresReferral",
-          "value": true,
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralType",
-          "value": "gp",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceUrl",
-          "value": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralSourceExcerpt",
-          "value": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralConfidence",
-          "value": "high",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralLastChecked",
-          "value": "2026-07-16",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "referralNeedsManualReview",
-          "value": false,
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "firstStep",
-          "value": "Ask your GP to send a referral through Specialist Referrals, then contact the practice if you need to confirm fees, wait time, or appointment format.",
-          "sourceUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "sourceType": "provider_owned",
-          "excerpt": "To make an enquiry or schedule a booking with Dr. Tanya Saul, your GP can submit a referral through Specialist Referrals.",
-          "finalUrl": "https://www.bewellpsychiatry0.co.nz/",
-          "capturedAt": "2026-07-16T00:38:04.848Z",
-          "pageHash": "a3229c1784e0c4c71c8c87b45190b90e8830ecd086e47672f3ee59dec8a84062",
-          "verified": true,
-          "verificationErrors": []
-        }
-      ],
-      "auditRulesResolved": [
-        "discovery-suggestion",
-        "needs_manual_research"
-      ],
-      "reviewNotes": "The provider-owned page identifies Dr Tanya Saul, publishes the existing practice contact details, and explicitly requires the user's GP to submit a referral through Specialist Referrals. A second independent fetch reproduced the wording, and a community-maintained directory corroborates the referral requirement. The directory reports a two-to-three-month wait but asks users to verify details with the clinic, while the provider-owned page does not publish a current wait, so availability remains not_published and review-required. No specialty, telehealth, age-group, cultural, or verification claim is added.",
-      "codexReview": {
-        "researchPassId": "research-20260716-be-well-referral-1",
-        "verificationPassId": "verify-20260716-be-well-referral-2",
-        "verificationConclusion": "accept",
-        "independentFetchCount": 2
-      },
-      "aiReview": true,
-      "requiresHumanApproval": false,
-      "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-16T00:38:02.776Z",
-      "codexEvidencePolicy": "codex-safe-remediation-v1",
-      "processingStatus": "verified",
-      "codexEvidenceErrors": []
-    },
-    {
-      "reviewId": "provider:auckland-auckland-mental-wellness-centre",
-      "reviewIds": [
-        "provider:auckland-auckland-mental-wellness-centre"
-      ],
-      "providerId": "auckland-auckland-mental-wellness-centre",
-      "providerName": "Auckland Mental Wellness Centre",
+      "providerId": "bay-of-plenty-psychology-group-tauranga",
+      "providerName": "The Psychology Group - Tauranga",
       "action": "needs_more_info",
       "reviewer": "Codex autonomous validator",
       "reviewedDate": "2026-07-16",
       "generatedBy": "codex-autonomous-reviewer",
       "correctedFields": {},
-      "sourceUrl": "https://aucklandmentalwellness.com/",
-      "sourceExcerpt": "Auckland Mental Wellness Centre offers diagnostic assessment, clinical neuropsychology, and specialist psychotherapy services",
+      "sourceUrl": "https://www.tpgroup.co.nz/therapy-services",
+      "sourceExcerpt": "Our licensed therapists work collaboratively with you to develop effective strategies for managing stress, anxiety, depression, and other challenges.",
       "sourceEvidence": [
         {
           "field": "identity",
-          "value": "Auckland Mental Wellness Centre",
-          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "value": "The Psychology Group",
+          "sourceUrl": "https://www.tpgroup.co.nz/therapy-services",
           "sourceType": "provider_owned",
-          "excerpt": "Auckland Mental Wellness Centre",
-          "finalUrl": "https://aucklandmentalwellness.com/",
-          "capturedAt": "2026-07-16T00:38:06.342Z",
-          "pageHash": "d92e295bd9c20aff940c8b5c00b878e2a62d6e64dca583d542469f90676e27ae",
-          "verified": true,
-          "verificationErrors": []
-        },
-        {
-          "field": "tags",
-          "value": "anxiety",
-          "sourceUrl": "https://aucklandmentalwellness.com/",
-          "sourceType": "provider_owned",
-          "excerpt": "Anxiety",
-          "finalUrl": "https://aucklandmentalwellness.com/",
-          "capturedAt": "2026-07-16T00:38:06.342Z",
-          "pageHash": "d92e295bd9c20aff940c8b5c00b878e2a62d6e64dca583d542469f90676e27ae",
+          "excerpt": "At The Psychology Group, we are dedicated to helping you achieve optimal wellbeing and a balanced, fulfilling life through our comprehensive range of therapeutic services.",
+          "finalUrl": "https://www.tpgroup.co.nz/therapy-services",
+          "capturedAt": "2026-07-16T01:41:33.750Z",
+          "pageHash": "cd11068045af402644cd0fe0262dd71e453d81e32ae0c9c422d01a216f7db182",
           "verified": true,
           "verificationErrors": []
         },
         {
           "field": "tags",
           "value": "depression",
-          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "sourceUrl": "https://www.tpgroup.co.nz/therapy-services",
           "sourceType": "provider_owned",
-          "excerpt": "Depression",
-          "finalUrl": "https://aucklandmentalwellness.com/",
-          "capturedAt": "2026-07-16T00:38:06.342Z",
-          "pageHash": "d92e295bd9c20aff940c8b5c00b878e2a62d6e64dca583d542469f90676e27ae",
+          "excerpt": "Our licensed therapists work collaboratively with you to develop effective strategies for managing stress, anxiety, depression, and other challenges.",
+          "finalUrl": "https://www.tpgroup.co.nz/therapy-services",
+          "capturedAt": "2026-07-16T01:41:33.750Z",
+          "pageHash": "cd11068045af402644cd0fe0262dd71e453d81e32ae0c9c422d01a216f7db182",
           "verified": true,
           "verificationErrors": []
         },
         {
-          "field": "practiceScope",
-          "value": "diagnostic assessment, clinical neuropsychology, and specialist psychotherapy",
-          "sourceUrl": "https://aucklandmentalwellness.com/",
+          "field": "tags",
+          "value": "anxiety",
+          "sourceUrl": "https://www.tpgroup.co.nz/therapy-services",
           "sourceType": "provider_owned",
-          "excerpt": "Auckland Mental Wellness Centre offers diagnostic assessment, clinical neuropsychology, and specialist psychotherapy services",
-          "finalUrl": "https://aucklandmentalwellness.com/",
-          "capturedAt": "2026-07-16T00:38:06.342Z",
-          "pageHash": "d92e295bd9c20aff940c8b5c00b878e2a62d6e64dca583d542469f90676e27ae",
+          "excerpt": "Our licensed therapists work collaboratively with you to develop effective strategies for managing stress, anxiety, depression, and other challenges.",
+          "finalUrl": "https://www.tpgroup.co.nz/therapy-services",
+          "capturedAt": "2026-07-16T01:41:33.750Z",
+          "pageHash": "cd11068045af402644cd0fe0262dd71e453d81e32ae0c9c422d01a216f7db182",
           "verified": true,
           "verificationErrors": []
         }
       ],
       "auditRulesResolved": [],
-      "reviewNotes": "The provider-owned page explicitly lists anxiety and depression among Auckland Mental Wellness Centre's practice-wide services. It separately names Jessica Gu and Tyla Jamieson, but does not bind every practice-wide condition to each clinician. The current record is practice-level and the restricted lane cannot add condition-scope evidence fields, so no unsupported removal or positive scope addition is made. The page also publishes inconsistent secondary phone numbers in different sections; the existing primary number 021 960 303 is consistent and remains unchanged. This item is deferred for a future evidence-model pass.",
+      "reviewNotes": "The provider-owned therapy page explicitly supports depression and anxiety at The Psychology Group practice level, and a separate contact-page fetch confirms the Tauranga location and existing contact details. The current source-fit audit cannot persist that practice-level evidence through this restricted lane, and the booking flow is not evidence that a clinician is currently accepting clients. No supported tags are removed and no availability claim is added; this record is deferred for an evidence-model update.",
       "codexReview": {
-        "researchPassId": "research-20260716-auckland-wellness-scope-1",
-        "verificationPassId": "verify-20260716-auckland-wellness-scope-2",
+        "researchPassId": "research-20260716-tpgroup-tauranga-scope-1",
+        "verificationPassId": "verify-20260716-tpgroup-tauranga-scope-2",
         "verificationConclusion": "needs_more_info",
         "independentFetchCount": 2
       },
       "aiReview": true,
       "requiresHumanApproval": false,
       "codexEvidenceVerified": true,
-      "codexEvidenceVerifiedAt": "2026-07-16T00:38:02.776Z",
+      "codexEvidenceVerifiedAt": "2026-07-16T01:41:33.749Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:christchurch-psychmed-amanda-baird",
+      "reviewIds": [
+        "provider:christchurch-psychmed-amanda-baird",
+        "places:google-place-chijh213yfklmw0r9e085y3se-o"
+      ],
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "providerName": "Amanda Baird",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-16",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "clinicianName": "Amanda Baird",
+        "practiceName": "Christchurch PsychMed",
+        "tags": [
+          "psychologist",
+          "clinical-psychologist",
+          "depression",
+          "anxiety",
+          "fit",
+          "direct-contact"
+        ]
+      },
+      "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "sourceExcerpt": "Amanda Baird is a Registered Clinical Psychologist with 20 years experience.",
+      "sourceEvidence": [
+        {
+          "field": "clinicianName",
+          "value": "Amanda Baird",
+          "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "sourceType": "provider_owned",
+          "excerpt": "Amanda Baird is a Registered Clinical Psychologist with 20 years experience.",
+          "finalUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "capturedAt": "2026-07-16T01:41:35.946Z",
+          "pageHash": "5c38f8fa056ac5268a15e61c8ae8b4c82ad740a6c59063a8b7531f5e2244c871",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "practiceName",
+          "value": "Christchurch PsychMed",
+          "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "sourceType": "provider_owned",
+          "excerpt": "In addition to her practice at Christchurch PsychMed, Amanda is a Clinical Educator in the School of Psychology, Speech and Hearing at the University of Canterbury.",
+          "finalUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "capturedAt": "2026-07-16T01:41:35.946Z",
+          "pageHash": "5c38f8fa056ac5268a15e61c8ae8b4c82ad740a6c59063a8b7531f5e2244c871",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "tags",
+          "value": "remove unsupported work tag",
+          "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "sourceType": "provider_owned",
+          "excerpt": "Currently, Amanda assists people to overcome a range of difficulties, predominately depression and anxiety, but also relationship difficulties, stress management, eating disorders, psychosis and personality traits which cause difficulties.",
+          "finalUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "capturedAt": "2026-07-16T01:41:35.946Z",
+          "pageHash": "5c38f8fa056ac5268a15e61c8ae8b4c82ad740a6c59063a8b7531f5e2244c871",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "broad-tag-without-source-support"
+      ],
+      "reviewNotes": "Amanda's clinician-owned site and the Christchurch PsychMed profile were inspected separately. Both identify her as a Christchurch PsychMed clinical psychologist and support the existing depression and anxiety scope. Her clinician-owned site discusses workplace courses in a separate professional-development section, not treatment for work, study, money, or housing stress, so the unsupported work ranking tag is removed. Her current statement of limited availability is not converted to accepting or waitlist status, and the stale NZCCP availability wording is not used.",
+      "codexReview": {
+        "researchPassId": "research-20260716-amanda-baird-scope-1",
+        "verificationPassId": "verify-20260716-amanda-baird-scope-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-16T01:41:33.749Z",
+      "codexEvidencePolicy": "codex-safe-remediation-v1",
+      "processingStatus": "verified",
+      "codexEvidenceErrors": []
+    },
+    {
+      "reviewId": "provider:christchurch-psychmed-deborah-wood",
+      "reviewIds": [
+        "discovery:suggestion:clinician-domain:dr-deborah-wood:christchurchpsychmed.co.nz",
+        "provider:christchurch-psychmed-deborah-wood"
+      ],
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "providerName": "Dr Deborah Wood",
+      "action": "adjust",
+      "reviewer": "Codex autonomous validator",
+      "reviewedDate": "2026-07-16",
+      "generatedBy": "codex-autonomous-reviewer",
+      "correctedFields": {
+        "practiceName": "Christchurch PsychMed"
+      },
+      "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "sourceExcerpt": "DR DEBORAH WOOD",
+      "sourceEvidence": [
+        {
+          "field": "practiceName",
+          "value": "Christchurch PsychMed",
+          "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "sourceType": "provider_owned",
+          "excerpt": "Clinical Psychologists & Psychiatrists | Christchurch PsychMed",
+          "finalUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "capturedAt": "2026-07-16T01:41:37.998Z",
+          "pageHash": "5c38f8fa056ac5268a15e61c8ae8b4c82ad740a6c59063a8b7531f5e2244c871",
+          "verified": true,
+          "verificationErrors": []
+        },
+        {
+          "field": "identity",
+          "value": "Dr Deborah Wood",
+          "sourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "sourceType": "provider_owned",
+          "excerpt": "DR DEBORAH WOOD",
+          "finalUrl": "https://www.christchurchpsychmed.co.nz/about",
+          "capturedAt": "2026-07-16T01:41:37.998Z",
+          "pageHash": "5c38f8fa056ac5268a15e61c8ae8b4c82ad740a6c59063a8b7531f5e2244c871",
+          "verified": true,
+          "verificationErrors": []
+        }
+      ],
+      "auditRulesResolved": [
+        "discovery-suggestion"
+      ],
+      "reviewNotes": "The provider-owned team page identifies Dr Deborah Wood as a consultant psychiatrist at PsychMed and supports the existing clinician scope. A separate current practice page explicitly requires a GP referral for psychiatrists, so the existing GP-first guidance is retained; its paraphrased legacy excerpt is not rewritten in this pass because the generic referral page is practice-level and the deterministic identity gate must first learn the clinician-practice relationship. Published wait estimates are explicitly described as varying by clinician, so no clinician-specific availability or wait claim is added.",
+      "codexReview": {
+        "researchPassId": "research-20260716-deborah-wood-identity-1",
+        "verificationPassId": "verify-20260716-deborah-wood-identity-2",
+        "verificationConclusion": "accept",
+        "independentFetchCount": 2
+      },
+      "aiReview": true,
+      "requiresHumanApproval": false,
+      "codexEvidenceVerified": true,
+      "codexEvidenceVerifiedAt": "2026-07-16T01:41:33.749Z",
       "codexEvidencePolicy": "codex-safe-remediation-v1",
       "processingStatus": "verified",
       "codexEvidenceErrors": []

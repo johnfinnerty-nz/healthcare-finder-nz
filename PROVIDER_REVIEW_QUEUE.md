@@ -1,6 +1,6 @@
 # Provider Review Queue
 
-Generated: 2026-07-16T00:29:51.399Z
+Generated: 2026-07-16T01:32:10.513Z
 
 Focused queue: yes.
 
@@ -8,8 +8,8 @@ Focused queue: yes.
 
 - Review items: 800
 - Critical: 12
-- High: 481
-- Medium: 159
+- High: 482
+- Medium: 158
 - Low: 148
 
 ## By Review Category
@@ -19,9 +19,9 @@ Focused queue: yes.
 | GP source corroboration | 251 |
 | Location and distance evidence | 129 |
 | Sensitive tag or scope evidence | 125 |
-| Availability review | 81 |
-| Referral pathway review | 73 |
-| Needs quick human check | 61 |
+| Availability review | 82 |
+| Referral pathway review | 71 |
+| Needs quick human check | 62 |
 | Google Places discovery | 47 |
 | Directory/direct-contact confusion | 33 |
 
@@ -74,6 +74,7 @@ Focused queue: yes.
 | high | medium | Directory/direct-contact confusion | nzccp-allanah-casey - Allanah Casey | psychologist | Bay of Plenty / Tauranga | broad-tag-without-source-support, register-only-public-contact | medium: broad-tag-without-source-support; medium: register-only-public-contact; provider details need manual verification; availability needs manual review |
 | high | medium | Availability review | ranzcp-7046 - Dr John Joseph | psychiatrist | Auckland / Mt Albert | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | manawatu-eye-openers-psychiatry - Eye-Openers Psychiatry | psychiatrist | Manawatu-Whanganui / Palmerston North | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
+| high | medium | Availability review | taranaki-space-of-mind-dr-doron - Space of Mind - Dr Yariv Doron | psychiatrist | Taranaki / New Plymouth and telehealth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; psychiatrist referral pathway unknown; address missing coordinates; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Sensitive tag or scope evidence | auckland-visionwest-wellbeing-centre - Visionwest Counselling & Wellbeing Centre | counsellor | Auckland / Glen Eden | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Sensitive tag or scope evidence | manawatu-pnmss-counselling - Palmerston North Methodist Social Services Counselling | counsellor | Manawatu-Whanganui / Palmerston North | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
 | high | medium | Sensitive tag or scope evidence | manawatu-reach-out-counselling - Reachout Counselling | counsellor | Manawatu-Whanganui / Palmerston North | broad-tag-without-source-support, weak-telehealth-evidence | medium: broad-tag-without-source-support; medium: weak-telehealth-evidence; availability needs manual review |
@@ -108,6 +109,5 @@ Focused queue: yes.
 | high | medium | Availability review | northland-wayfinder-psychology - Wayfinder Psychology | psychologist | Northland / Whangarei | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | tairawhiti-mauri-psychology - Mauri Psychology | psychologist | Tairawhiti / Gisborne | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 | high | medium | Availability review | taranaki-jade-psychology - Jade Psychology | psychologist | Taranaki / New Plymouth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
-| high | medium | Availability review | west-coast-internal-growth-holistic-psychology - Internal Growth Holistic Psychology | psychologist | West Coast / Greymouth | availability-watchlist | medium: availability-watchlist; provider details need manual verification; availability needs manual review; low confidence source; verification date is stale or missing; availability watchlist candidate |
 
 Review decisions must be applied with `npm run apply:review`; the public app does not write provider data from the browser.

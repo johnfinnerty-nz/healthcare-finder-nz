@@ -1386,6 +1386,76 @@
       "lastSourceUrl": "https://aucklandmentalwellness.com/",
       "lastNotes": "The provider-owned page explicitly lists anxiety and depression among Auckland Mental Wellness Centre's practice-wide services. It separately names Jessica Gu and Tyla Jamieson, but does not bind every practice-wide condition to each clinician. The current record is practice-level and the restricted lane cannot add condition-scope evidence fields, so no unsupported removal or positive scope addition is made. The page also publishes inconsistent secondary phone numbers in different sections; the existing primary number 021 960 303 is consistent and remains unchanged. This item is deferred for a future evidence-model pass.",
       "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:bay-of-plenty-psychology-group-tauranga": {
+      "reviewId": "provider:bay-of-plenty-psychology-group-tauranga",
+      "providerId": "bay-of-plenty-psychology-group-tauranga",
+      "status": "deferred",
+      "batchId": "codex-20260716013223-add5f28c",
+      "startedAt": "2026-07-16T01:32:23.280Z",
+      "attempts": 1,
+      "completedAt": "",
+      "nextEligibleAt": "2026-08-15T01:42:16.742Z",
+      "lastAction": "needs_more_info",
+      "lastSourceUrl": "https://www.tpgroup.co.nz/therapy-services",
+      "lastNotes": "The provider-owned therapy page explicitly supports depression and anxiety at The Psychology Group practice level, and a separate contact-page fetch confirms the Tauranga location and existing contact details. The current source-fit audit cannot persist that practice-level evidence through this restricted lane, and the booking flow is not evidence that a clinician is currently accepting clients. No supported tags are removed and no availability claim is added; this record is deferred for an evidence-model update.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:christchurch-psychmed-amanda-baird": {
+      "reviewId": "provider:christchurch-psychmed-amanda-baird",
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "status": "completed",
+      "batchId": "codex-20260716013223-add5f28c",
+      "startedAt": "2026-07-16T01:32:23.280Z",
+      "attempts": 1,
+      "completedAt": "2026-07-16T01:42:16.742Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "lastNotes": "Amanda's clinician-owned site and the Christchurch PsychMed profile were inspected separately. Both identify her as a Christchurch PsychMed clinical psychologist and support the existing depression and anxiety scope. Her clinician-owned site discusses workplace courses in a separate professional-development section, not treatment for work, study, money, or housing stress, so the unsupported work ranking tag is removed. Her current statement of limited availability is not converted to accepting or waitlist status, and the stale NZCCP availability wording is not used.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "places:google-place-chijh213yfklmw0r9e085y3se-o": {
+      "reviewId": "places:google-place-chijh213yfklmw0r9e085y3se-o",
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "status": "completed",
+      "batchId": "codex-20260716013223-add5f28c",
+      "startedAt": "2026-07-16T01:32:23.280Z",
+      "attempts": 1,
+      "completedAt": "2026-07-16T01:42:16.742Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "lastNotes": "Amanda's clinician-owned site and the Christchurch PsychMed profile were inspected separately. Both identify her as a Christchurch PsychMed clinical psychologist and support the existing depression and anxiety scope. Her clinician-owned site discusses workplace courses in a separate professional-development section, not treatment for work, study, money, or housing stress, so the unsupported work ranking tag is removed. Her current statement of limited availability is not converted to accepting or waitlist status, and the stale NZCCP availability wording is not used.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "discovery:suggestion:clinician-domain:dr-deborah-wood:christchurchpsychmed.co.nz": {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-deborah-wood:christchurchpsychmed.co.nz",
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "status": "completed",
+      "batchId": "codex-20260716013223-add5f28c",
+      "startedAt": "2026-07-16T01:32:23.280Z",
+      "attempts": 1,
+      "completedAt": "2026-07-16T01:42:16.742Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "lastNotes": "The provider-owned team page identifies Dr Deborah Wood as a consultant psychiatrist at PsychMed and supports the existing clinician scope. A separate current practice page explicitly requires a GP referral for psychiatrists, so the existing GP-first guidance is retained; its paraphrased legacy excerpt is not rewritten in this pass because the generic referral page is practice-level and the deterministic identity gate must first learn the clinician-practice relationship. Published wait estimates are explicitly described as varying by clinician, so no clinician-specific availability or wait claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    "provider:christchurch-psychmed-deborah-wood": {
+      "reviewId": "provider:christchurch-psychmed-deborah-wood",
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "status": "completed",
+      "batchId": "codex-20260716013223-add5f28c",
+      "startedAt": "2026-07-16T01:32:23.280Z",
+      "attempts": 1,
+      "completedAt": "2026-07-16T01:42:16.742Z",
+      "nextEligibleAt": "",
+      "lastAction": "adjust",
+      "lastSourceUrl": "https://www.christchurchpsychmed.co.nz/about",
+      "lastNotes": "The provider-owned team page identifies Dr Deborah Wood as a consultant psychiatrist at PsychMed and supports the existing clinician scope. A separate current practice page explicitly requires a GP referral for psychiatrists, so the existing GP-first guidance is retained; its paraphrased legacy excerpt is not rewritten in this pass because the generic referral page is practice-level and the deterministic identity gate must first learn the clinician-practice relationship. Published wait estimates are explicitly described as varying by clinician, so no clinician-specific availability or wait claim is added.",
+      "lastDecisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   },
   "batches": [
@@ -1523,9 +1593,18 @@
         "waikato-be-well-psychiatry",
         "auckland-auckland-mental-wellness-centre"
       ]
+    },
+    {
+      "batchId": "codex-20260716013223-add5f28c",
+      "generatedAt": "2026-07-16T01:32:23.280Z",
+      "providerIds": [
+        "bay-of-plenty-psychology-group-tauranga",
+        "christchurch-psychmed-amanda-baird",
+        "christchurch-psychmed-deborah-wood"
+      ]
     }
   ],
-  "updatedAt": "2026-07-16T00:38:35.231Z",
+  "updatedAt": "2026-07-16T01:42:16.742Z",
   "events": [
     {
       "reviewId": "discovery:suggestion:email:info@ancora.org.nz",
@@ -2317,6 +2396,46 @@
       "action": "needs_more_info",
       "status": "deferred",
       "at": "2026-07-16T00:38:35.231Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:bay-of-plenty-psychology-group-tauranga",
+      "providerId": "bay-of-plenty-psychology-group-tauranga",
+      "action": "needs_more_info",
+      "status": "deferred",
+      "at": "2026-07-16T01:42:16.742Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:christchurch-psychmed-amanda-baird",
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-16T01:42:16.742Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "places:google-place-chijh213yfklmw0r9e085y3se-o",
+      "providerId": "christchurch-psychmed-amanda-baird",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-16T01:42:16.742Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "discovery:suggestion:clinician-domain:dr-deborah-wood:christchurchpsychmed.co.nz",
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-16T01:42:16.742Z",
+      "decisionFile": "data/provider-validation/codex-verified-decisions.json"
+    },
+    {
+      "reviewId": "provider:christchurch-psychmed-deborah-wood",
+      "providerId": "christchurch-psychmed-deborah-wood",
+      "action": "adjust",
+      "status": "completed",
+      "at": "2026-07-16T01:42:16.742Z",
       "decisionFile": "data/provider-validation/codex-verified-decisions.json"
     }
   ]

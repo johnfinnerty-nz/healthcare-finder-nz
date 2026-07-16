@@ -23108,7 +23108,6 @@
       "clinical-psychologist",
       "depression",
       "anxiety",
-      "work",
       "fit",
       "direct-contact"
     ],
@@ -23131,7 +23130,9 @@
     "coordinateSource": "not recorded - needs manual review",
     "coordinatePrecision": "coordinate source unspecified",
     "coordinateConfidence": "low",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "clinicianName": "Amanda Baird",
+    "practiceName": "Christchurch PsychMed"
   },
   {
     "id": "gp-amberley-medical-centre-43-1544-172-7329",
@@ -24413,7 +24414,8 @@
     "coordinateSource": "not recorded - needs manual review",
     "coordinatePrecision": "coordinate source unspecified",
     "coordinateConfidence": "low",
-    "geocodeNeedsManualReview": true
+    "geocodeNeedsManualReview": true,
+    "practiceName": "Christchurch PsychMed"
   },
   {
     "id": "ranzcp-13276",

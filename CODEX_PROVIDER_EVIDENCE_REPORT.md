@@ -1,20 +1,20 @@
 # Codex Evidence Verification
 
-Generated: 2026-07-16T00:38:02.776Z
+Generated: 2026-07-16T01:41:33.749Z
 Verified decisions: 3/3
 Errors: 0
 
-## taranaki-space-of-mind-dr-doron
+## bay-of-plenty-psychology-group-tauranga
 
-- Action: move_to_watchlist
+- Action: needs_more_info
 - Evidence gate: passed
 
-## waikato-be-well-psychiatry
+## christchurch-psychmed-amanda-baird
 
 - Action: adjust
 - Evidence gate: passed
 
-## auckland-auckland-mental-wellness-centre
+## christchurch-psychmed-deborah-wood
 
-- Action: needs_more_info
+- Action: adjust
 - Evidence gate: passed

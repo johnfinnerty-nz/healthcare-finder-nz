@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T00:41:42.990Z",
+  "generatedAt": "2026-07-16T01:42:39.527Z",
   "providersScanned": 1211,
   "findings": [
     {
@@ -687,29 +687,6 @@
       "severity": "medium",
       "issue": "rainbow support tag is present but source fields do not clearly support it.",
       "suggestedFix": "Remove the tag or add a stronger public source/structured patientGroups/languages evidence.",
-      "allowlisted": false
-    },
-    {
-      "providerId": "christchurch-psychmed-amanda-baird",
-      "providerName": "Amanda Baird",
-      "region": "Canterbury",
-      "city": "Christchurch",
-      "type": "psychologist",
-      "tags": [
-        "psychologist",
-        "clinical-psychologist",
-        "depression",
-        "anxiety",
-        "work",
-        "fit",
-        "direct-contact"
-      ],
-      "needScope": [],
-      "source": "https://www.christchurchpsychmed.co.nz/about",
-      "rule": "broad-tag-without-source-support",
-      "severity": "medium",
-      "issue": "Broad tag \"work\" is present but source fields do not clearly support it.",
-      "suggestedFix": "Remove \"work\" or add source-backed specialties/services evidence.",
       "allowlisted": false
     },
     {
@@ -9429,9 +9406,9 @@
     }
   ],
   "summary": {
-    "total": 356,
+    "total": 355,
     "high": 0,
-    "medium": 230,
+    "medium": 229,
     "low": 126,
     "highUnallowlisted": 0,
     "allowlisted": 0
