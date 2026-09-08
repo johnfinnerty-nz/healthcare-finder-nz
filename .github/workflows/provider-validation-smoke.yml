@@ -43,8 +43,8 @@ jobs:
         shell: bash
         run: |
           for attempt in $(seq 1 20); do
-            HOME_STATUS=$(curl --silent --show-error --output /tmp/home.html --write-out "%{http_code}" "https://johnfinnertynz.github.io/healthcare-finder-nz/")
-            DATA_STATUS=$(curl --silent --show-error --output /tmp/providers.json --write-out "%{http_code}" "https://johnfinnertynz.github.io/healthcare-finder-nz/providers.json")
+            HOME_STATUS=$(curl --silent --show-error --output /tmp/home.html --write-out "%{http_code}" "https://johnfinnerty-nz.github.io/healthcare-finder-nz/")
+            DATA_STATUS=$(curl --silent --show-error --output /tmp/providers.json --write-out "%{http_code}" "https://johnfinnerty-nz.github.io/healthcare-finder-nz/providers.json")
             if [ "$HOME_STATUS" = "200" ] && [ "$DATA_STATUS" = "200" ] && grep -q "Care Finder Aotearoa" /tmp/home.html && node -e "const p=require('/tmp/providers.json'); if(!Array.isArray(p)||!p.length) process.exit(1)"; then
               exit 0
             fi
@@ -65,4 +65,3 @@ jobs:
           git push origin "$BRANCH"
           PR_URL=$(gh pr create --base main --head "$BRANCH" --title "Revert failed provider validation ${FAILED_SHA:0:8}" --body "Automated rollback: post-deployment recommendation, data, or public-site smoke checks failed. This restores the previous provider projection while the failed run is investigated.")
           gh pr merge "$PR_URL" --auto --squash
-

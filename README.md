@@ -2,7 +2,11 @@
 
 A low-barrier mental health care finder for people in Aotearoa New Zealand.
 
-Live site: [johnfinnertynz.github.io/healthcare-finder-nz](https://johnfinnertynz.github.io/healthcare-finder-nz/)
+Development site: [johnfinnerty-nz.github.io/healthcare-finder-nz](https://johnfinnerty-nz.github.io/healthcare-finder-nz/)
+
+Source repository: [johnfinnerty-nz/healthcare-finder-nz](https://github.com/johnfinnerty-nz/healthcare-finder-nz)
+
+Historical source archive: [finnerty.me source archive](https://finnerty.me/git/healthcare-finder-nz.html)
 
 Project case study: [Care Finder Aotearoa Case Study](https://www.johnfinnerty.co.nz/projects/care-finder-aotearoa.html)
 
@@ -107,6 +111,21 @@ Then open:
 ```text
 http://127.0.0.1:4173/
 ```
+
+## Website Deployment
+
+The `Deploy Care Finder website` workflow validates and publishes pushes to
+`main` using GitHub Pages. Repository Settings > Pages must use GitHub Actions
+as the publishing source. No custom domain or paid hosting is required.
+
+`npm run build` prepares the public HTML, CSS, JavaScript, provider listing,
+and assets in `outputs/github-pages/`. The admin console, internal evidence,
+review queues, reports, and local tools are not part of the website artifact;
+they remain available in the source repository and local checkout.
+
+The source archive and case study on `finnerty.me` are separate from this
+GitHub Pages deployment. Website deployment does not refresh provider data
+or enable autonomous provider publication.
 
 ## Autonomous Provider Validation
 
