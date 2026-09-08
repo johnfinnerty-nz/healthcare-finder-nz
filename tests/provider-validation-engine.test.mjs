@@ -750,5 +750,7 @@ test("package and workflows expose shadow, publish, report, rollback, and schedu
   assert.match(workflow, /gh pr merge .*--auto/);
   const smoke = fs.readFileSync(path.join(root, ".github/workflows/provider-validation-smoke.yml"), "utf8");
   assert.match(smoke, /revert-provider-validation/);
-  assert.match(smoke, /github\.io\/healthcare-finder-nz/);
+  assert.match(smoke, /https:\/\/finnerty\.me\/care-finder\//);
+  assert.match(smoke, /github\.event_name == 'workflow_dispatch'/);
+  assert.match(smoke, /github\.event_name == 'push' && steps\.local\.outcome == 'failure'/);
 });

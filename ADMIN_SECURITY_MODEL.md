@@ -1,7 +1,7 @@
 # Admin Security Model
 
 The provider validation control room is separate from the public Healthcare
-Finder NZ app. The public GitHub Pages finder remains static and must not gain
+Finder NZ app. The public finnerty.me finder remains static and must not gain
 write-enabled provider administration features.
 
 ## Current Prototype

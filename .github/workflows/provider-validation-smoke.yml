@@ -1,6 +1,7 @@
 name: Provider validation deployment smoke test
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -14,7 +15,7 @@ permissions:
 jobs:
   smoke:
     if: >-
-      ${{ startsWith(github.event.head_commit.message, 'chore(provider-data): autonomous validation') }}
+      ${{ github.event_name == 'workflow_dispatch' || startsWith(github.event.head_commit.message, 'chore(provider-data): autonomous validation') }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
@@ -38,14 +39,14 @@ jobs:
           npm run validate:data
           npm test
 
-      - name: Wait for GitHub Pages and run public smoke checks
-        id: pages
-        continue-on-error: true
+      - name: Check finnerty.me after an explicit website deployment
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        id: live
         shell: bash
         run: |
           for attempt in $(seq 1 20); do
-            HOME_STATUS=$(curl --silent --show-error --output /tmp/home.html --write-out "%{http_code}" "https://johnfinnerty-nz.github.io/healthcare-finder-nz/")
-            DATA_STATUS=$(curl --silent --show-error --output /tmp/providers.json --write-out "%{http_code}" "https://johnfinnerty-nz.github.io/healthcare-finder-nz/providers.json")
+            HOME_STATUS=$(curl --silent --show-error --output /tmp/home.html --write-out "%{http_code}" "https://finnerty.me/care-finder/")
+            DATA_STATUS=$(curl --silent --show-error --output /tmp/providers.json --write-out "%{http_code}" "https://finnerty.me/care-finder/providers.json")
             if [ "$HOME_STATUS" = "200" ] && [ "$DATA_STATUS" = "200" ] && grep -q "Care Finder Aotearoa" /tmp/home.html && node -e "const p=require('/tmp/providers.json'); if(!Array.isArray(p)||!p.length) process.exit(1)"; then
               exit 0
             fi
@@ -54,7 +55,7 @@ jobs:
           exit 1
 
       - name: Create automatic rollback pull request
-        if: ${{ steps.local.outcome == 'failure' || steps.pages.outcome == 'failure' }}
+        if: ${{ github.event_name == 'push' && steps.local.outcome == 'failure' }}
         shell: bash
         run: |
           FAILED_SHA="${{ github.sha }}"
@@ -66,3 +67,7 @@ jobs:
           git push origin "$BRANCH"
           PR_URL=$(gh pr create --base main --head "$BRANCH" --title "Revert failed provider validation ${FAILED_SHA:0:8}" --body "Automated rollback: post-deployment recommendation, data, or public-site smoke checks failed. This restores the previous provider projection while the failed run is investigated.")
           gh pr merge "$PR_URL" --auto --squash
+
+      - name: Report failed local validation
+        if: ${{ always() && steps.local.outcome == 'failure' }}
+        run: exit 1

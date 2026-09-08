@@ -257,8 +257,10 @@ scan, runtime-dependency lock check, and static deployment sanity check. If repo
 automation branch and pull request; it never writes directly to `main`.
 
 `.github/workflows/provider-validation-smoke.yml` checks a merged machine
-projection locally and on GitHub Pages. Failure creates an automatic revert
-pull request and enables auto-merge subject to repository protections.
+projection locally. Local failure creates an automatic revert pull request
+and enables auto-merge subject to repository protections. Its manual dispatch
+checks the public finnerty.me deployment; a public-host failure does not
+automatically revert source because a merge does not deploy the website.
 
 ## Control Room
 

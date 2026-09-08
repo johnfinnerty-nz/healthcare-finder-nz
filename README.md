@@ -2,7 +2,7 @@
 
 A low-barrier mental health care finder for people in Aotearoa New Zealand.
 
-Development site: [johnfinnerty-nz.github.io/healthcare-finder-nz](https://johnfinnerty-nz.github.io/healthcare-finder-nz/)
+Development site: [finnerty.me/care-finder](https://finnerty.me/care-finder/)
 
 Source repository: [johnfinnerty-nz/healthcare-finder-nz](https://github.com/johnfinnerty-nz/healthcare-finder-nz)
 
@@ -114,18 +114,26 @@ http://127.0.0.1:4173/
 
 ## Website Deployment
 
-The `Deploy Care Finder website` workflow validates and publishes pushes to
-`main` using GitHub Pages. Repository Settings > Pages must use GitHub Actions
-as the publishing source. No custom domain or paid hosting is required.
+The website is hosted on the existing **finnerty.me** service at
+`https://finnerty.me/care-finder/`. GitHub is used for source control and
+validation only. GitHub Pages must remain disabled, including custom-domain
+Pages hosting. This persistent rule is recorded in [AGENTS.md](AGENTS.md).
 
 `npm run build` prepares the public HTML, CSS, JavaScript, provider listing,
-and assets in `outputs/github-pages/`. The admin console, internal evidence,
+and assets in `outputs/site/`. The admin console, internal evidence,
 review queues, reports, and local tools are not part of the website artifact;
 they remain available in the source repository and local checkout.
 
-The source archive and case study on `finnerty.me` are separate from this
-GitHub Pages deployment. Website deployment does not refresh provider data
-or enable autonomous provider publication.
+After validation, deploy only that output to the dedicated `care-finder/`
+directory through the existing finnerty.me hosting process. Back up exact
+remote files before overwriting them and verify the deployed bytes and URLs.
+Never upload this repository to the domain root. The portfolio, project notes
+and historical source archive remain separate and must be preserved.
+
+The `Validate Care Finder website` workflow checks pushes to `main` but does
+not deploy. Website deployment does not refresh provider data or enable
+autonomous provider publication. Run the public smoke check manually after
+deploying to finnerty.me.
 
 ## Autonomous Provider Validation
 

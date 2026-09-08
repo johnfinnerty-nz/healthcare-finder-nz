@@ -1,0 +1,27 @@
+name: Validate Care Finder website
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate site and provider data
+        run: |
+          npm run validate
+          npm test
+          npm run build
+      # GitHub is source control and CI only. Deploy to finnerty.me separately.

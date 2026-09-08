@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
-const output = path.join(root, "outputs", "github-pages");
+const output = path.join(root, "outputs", "site");
 const publicFiles = [
   "index.html",
   "styles.css",
@@ -20,13 +20,12 @@ const publicFiles = [
 
 fs.mkdirSync(output, { recursive: true });
 for (const entry of fs.readdirSync(output)) {
-  if (![...publicFiles, "assets", ".nojekyll"].includes(entry)) {
-    throw new Error(`Unexpected file in Pages output: ${entry}`);
+  if (![...publicFiles, "assets"].includes(entry)) {
+    throw new Error(`Unexpected file in public site output: ${entry}`);
   }
 }
 for (const file of publicFiles) {
   fs.copyFileSync(path.join(root, file), path.join(output, file));
 }
 fs.cpSync(path.join(root, "assets"), path.join(output, "assets"), { recursive: true });
-fs.writeFileSync(path.join(output, ".nojekyll"), "");
 console.log(`Public site prepared in ${output}`);
