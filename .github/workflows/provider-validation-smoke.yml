@@ -13,7 +13,8 @@ permissions:
 
 jobs:
   smoke:
-    if: ${{ startsWith(github.event.head_commit.message, 'chore(provider-data): autonomous validation') }}
+    if: >-
+      ${{ startsWith(github.event.head_commit.message, 'chore(provider-data): autonomous validation') }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
