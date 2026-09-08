@@ -8,11 +8,11 @@ Project case study: [Care Finder Aotearoa Case Study](https://www.johnfinnerty.c
 
 John Finnerty profile hub: [finnerty.me](https://finnerty.me/)
 
-## Soft Launch Status
+## Development Status
 
-Care Finder Aotearoa is in limited public soft launch / pilot status. Provider
-details can change, and users should confirm cost, eligibility, availability,
-and contact details directly with the service before relying on them.
+Care Finder Aotearoa is currently in development. Provider details can change,
+and users should confirm cost, eligibility, availability, and contact details
+directly with the service before relying on them.
 
 Report incorrect phone, website, address, eligibility, cost, or availability
 information by emailing

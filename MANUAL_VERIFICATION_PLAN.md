@@ -1,7 +1,7 @@
 # Manual Verification Plan
 
-Care Finder Aotearoa is entering a limited public soft launch. This plan lists
-the manual checks needed before broader public promotion.
+Care Finder Aotearoa is currently in development. This plan lists the manual
+checks needed before public release.
 
 ## Verification Goals
 
@@ -138,7 +138,7 @@ Subject: Checking public provider details for Care Finder Aotearoa
 Kia ora,
 
 I am checking public contact details for Care Finder Aotearoa, a small New
-Zealand mental health support finder preparing for a limited soft launch.
+Zealand mental health support finder currently in development.
 
 Could you please confirm whether the following details are current:
 

@@ -1903,7 +1903,7 @@ const watchItems = [
     unavailablePatterns: ["will\\s+close\\s+on\\s+Friday\\s+29\\s+May\\s+2026"],
     availablePatterns: ["counselling\\s+service\\s+open", "taking\\s+new\\s+clients", "accepting\\s+new\\s+clients"],
     checkedAt,
-    notes: "Do not add as a live soft-launch result because closure is imminent.",
+    notes: "Do not add as a live result because closure is imminent.",
     providerCandidate: {
       name: "Whangarei Care Centre Counselling",
       type: "counsellor",

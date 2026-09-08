@@ -79,7 +79,7 @@ summary:focus-visible,
   color: var(--white);
 }
 
-.pilot-strip {
+.development-strip {
   display: flex;
   gap: 0.7rem;
   align-items: center;
@@ -92,7 +92,7 @@ summary:focus-visible,
   font-size: 0.92rem;
 }
 
-.pilot-strip a {
+.development-strip a {
   color: var(--green-dark);
 }
 
@@ -1305,7 +1305,7 @@ footer nav {
 
 @media (max-width: 560px) {
   .urgent-strip,
-  .pilot-strip {
+  .development-strip {
     justify-content: flex-start;
     font-size: 0.9rem;
   }

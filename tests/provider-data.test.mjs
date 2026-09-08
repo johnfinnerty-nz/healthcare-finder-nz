@@ -1023,7 +1023,8 @@ test("privacy, disclaimer, correction, and crisis links are visible from the hom
   }
 
   assert.match(indexHtml, /Report a correction/i);
-  assert.match(indexHtml, /Soft launch pilot/i);
+  assert.match(indexHtml, /In development/i);
+  assert.doesNotMatch(indexHtml, /Soft launch pilot/i);
   assert.match(indexHtml, /Provider database last updated/i);
 });
 
