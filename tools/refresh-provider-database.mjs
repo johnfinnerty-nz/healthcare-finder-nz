@@ -54,7 +54,32 @@ const imports = config.imports || {};
 const outputs = config.outputs || {};
 const live = config.liveSources || {};
 const reportPath = config.reportsPath || "data/reports/provider-refresh-report.json";
+const watchlistPath = config.monitors?.availabilityWatchlist || "data/monitors/provider-availability-watchlist.json";
 const steps = [];
+
+function writeReport() {
+  const report = {
+    refreshedAt: new Date().toISOString(),
+    configPath,
+    providersPath,
+    steps
+  };
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
+  console.log(`\nWrote refresh report to ${path.resolve(reportPath)}.`);
+}
+
+function runWatchlistGuard(validateOnly = false) {
+  const args = ["tools/reconcile-availability-watchlist.mjs", providersPath, watchlistPath];
+  if (validateOnly) args.push("--validate-only");
+  const step = runStep(validateOnly
+    ? "Validate unavailable provider watchlist inputs"
+    : "Preserve unavailable provider watchlist exclusions", args);
+  steps.push(step);
+  if (!step.ok) {
+    writeReport();
+    process.exit(1);
+  }
+}
 
 ensureParent(reportPath);
 if (outputs.doctorRegister) ensureParent(outputs.doctorRegister);
@@ -62,6 +87,9 @@ if (outputs.practitionerRoles) ensureParent(outputs.practitionerRoles);
 if (outputs.psychologistRegister) ensureParent(outputs.psychologistRegister);
 if (outputs.psychologistResearchQueue) ensureParent(outputs.psychologistResearchQueue);
 if (outputs.healthpointFhirBundle) ensureParent(outputs.healthpointFhirBundle);
+
+// Fail before any importer can write if the exclusion inputs are missing or malformed.
+runWatchlistGuard(true);
 
 const healthpointConfig = live.healthpointApi || {};
 const healthpointUrl = process.env[healthpointConfig.urlEnv || "HEALTHPOINT_API_URL"];
@@ -158,7 +186,7 @@ if (live.gapVerifiedProviders) {
   steps.push(runStep("Refresh Chrome/search verified gap-fill providers", [
     "tools/import-gap-verified-providers.mjs",
     providersPath,
-    config.monitors?.availabilityWatchlist || "data/monitors/provider-availability-watchlist.json"
+    watchlistPath
   ], { optional: true }));
 }
 
@@ -186,6 +214,10 @@ if (exists(imports.psychologistsBoardCsv)) {
 } else {
   steps.push(skipStep("Import backend-only Psychologists Board register", "no Psychologists Board register CSV found"));
 }
+
+// A directory refresh is not evidence that an unavailable provider can be reinstated.
+// Apply existing exclusions after ALL imports, before geocoding and the unchanged audits.
+runWatchlistGuard();
 
 steps.push(runStep("Geocode provider addresses", [
   "tools/geocode-provider-addresses.mjs",
@@ -218,12 +250,4 @@ steps.push(runStep("Audit address and coordinate coverage", [
   providersPath
 ], { optional: true }));
 
-const report = {
-  refreshedAt: new Date().toISOString(),
-  configPath,
-  providersPath,
-  steps
-};
-
-fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`);
-console.log(`\nWrote refresh report to ${path.resolve(reportPath)}.`);
+writeReport();

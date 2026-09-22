@@ -33,7 +33,7 @@ const authenticatedUrls = new Set([
 
 function collectFromText(text) {
   for (const match of text.matchAll(/https?:\/\/[^\s"'<>),]+/g)) {
-    const url = match[0].replace(/[.;]+$/, "");
+    const url = match[0].replace(/[.;`]+$/, "");
     const localPublishedFile = projectFileForPublishedUrl(url);
     if (localPublishedFile && fs.existsSync(localPublishedFile)) continue;
     if (!isLocalDevUrl(url)) urls.add(url);
@@ -117,6 +117,15 @@ function isTransientError(error) {
     || /timeout|network|fetch failed|connection/i.test(message);
 }
 
+function errorCode(error) {
+  return error?.cause?.code || error?.code || "";
+}
+
+function isDefinitelyBrokenNetworkError(error) {
+  const code = errorCode(error);
+  return code === "ENOTFOUND" || code.startsWith("ERR_TLS") || code.startsWith("ERR_SSL");
+}
+
 function isTransientStatus(status) {
   return status === 408 || status === 425 || status === 429 || status >= 500;
 }
@@ -169,7 +178,8 @@ async function check(url) {
     let blockedBySite = false;
     try {
       const host = new URL(url).hostname;
-      blockedBySite = isKnownBlockedHost(host) && isTransientError(error);
+      blockedBySite = isTransientError(error)
+        && (isKnownBlockedHost(host) || !isDefinitelyBrokenNetworkError(error));
     } catch {
       blockedBySite = false;
     }
@@ -177,6 +187,7 @@ async function check(url) {
       url,
       status: "ERR",
       error: error.name,
+      errorCode: errorCode(error),
       ok: false,
       blocked: blockedBySite
     };
@@ -219,11 +230,13 @@ const blocked = results.filter((result) => result.blocked);
 const redirected = results.filter((result) => result.ok && result.final && result.final !== result.url);
 
 for (const result of broken) {
-  console.log(`BROKEN ${result.status} ${result.url}${result.error ? ` (${result.error})` : ""}`);
+  const detail = [result.error, result.errorCode].filter(Boolean).join(":");
+  console.log(`BROKEN ${result.status} ${result.url}${detail ? ` (${detail})` : ""}`);
 }
 
 for (const result of blocked) {
-  console.log(`BLOCKED ${result.status} ${result.url}`);
+  const detail = [result.error, result.errorCode].filter(Boolean).join(":");
+  console.log(`BLOCKED ${result.status} ${result.url}${detail ? ` (${detail})` : ""}`);
 }
 
 for (const result of redirected) {
