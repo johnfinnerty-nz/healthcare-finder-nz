@@ -160,7 +160,7 @@ function isKnownBlockedHost(hostname) {
 }
 
 function isBlockedResponse(status) {
-  return transientBlockedStatuses.has(status);
+  return transientBlockedStatuses.has(status) || (status >= 500 && status < 600);
 }
 
 function isAuthenticatedUrl(url) {
