@@ -294,6 +294,7 @@ function pageMetadata(page, domainResult) {
     etag: page.etag,
     lastModified: page.lastModified,
     cacheControl: page.cacheControl,
+    xRobotsTag: page.xRobotsTag || "",
     renderedWithHeadlessBrowser: Boolean(page.renderedWithHeadlessBrowser),
     javascriptFallbackNeeded: Boolean(page.javascriptFallbackNeeded),
     providerIds: domainResult.providerIds

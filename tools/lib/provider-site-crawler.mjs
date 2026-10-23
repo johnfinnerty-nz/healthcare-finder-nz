@@ -1,9 +1,54 @@
 import { setTimeout as delay } from "node:timers/promises";
 import { sourceDomain, unique } from "./provider-evidence-scorer.mjs";
-import { fetchPublicSource } from "./source-fetcher.mjs";
+import { defaultUserAgent, fetchPublicSource } from "./source-fetcher.mjs";
 
-const relevantPathPattern = /\b(about|team|people|clinician|staff|service|treatment|therapy|psychology|psychiatry|counsell|contact|location|fee|cost|fund|acc|referral|telehealth|online|appointment|booking|availability|faq|new-client|patient|enrol|special|expertise|areas-of-practice)\b/i;
-const ignoredPathPattern = /\b(blog|news|event|privacy|terms|cookie|career|vacanc|shop|cart|checkout|wp-admin|wp-login|feed|tag|category)\b/i;
+const relevantPathPattern = /\b(about|teams?|people|clinicians?|staff|services?|treatments?|therapy|psychology|psychiatry|counsell(?:ing|ors?)?|contacts?|locations?|fees?|costs?|fund(?:ing)?|acc|referrals?|telehealth|online|appointments?|bookings?|availability|faqs?|new-clients?|patients?|enrol(?:ment|ments)?|special(?:ties|ists)?|expertise|areas-of-practice)\b/i;
+const ignoredPathPattern = /\b(blog|news|events?|privacy|terms|cookies?|careers?|vacanc(?:y|ies)?|shop|cart|checkout|wp-admin|wp-login|feed|tags?|categor(?:y|ies)|admin|log-?in|sign-?in|account|portal|system|diagnostics?|debug|honeypot|trap)\b/i;
+const nonPageExtensionPattern = /\.(?:xml|json|pdf|docx?|xlsx?|pptx?|zip|rar|7z|jpe?g|png|gif|webp|svg|css|js)$/i;
+const voidElements = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
+
+function decodeHtmlAttribute(value = "") {
+  const named = { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">", nbsp: " ", colon: ":", Tab: "\t", NewLine: "\n" };
+  return String(value).replace(/&(#x[\da-f]+|#\d+|amp|quot|apos|lt|gt|nbsp|colon|Tab|NewLine);/gi, (entity, code) => {
+    if (!code.startsWith("#")) return named[code] ?? entity;
+    const point = code[1].toLowerCase() === "x" ? parseInt(code.slice(2), 16) : Number(code.slice(1));
+    return point > 0 && point <= 0x10ffff ? String.fromCodePoint(point) : "\ufffd";
+  });
+}
+
+function htmlAttributes(tag, name) {
+  const attributes = new Map();
+  const body = tag.slice(name.length + 1, -1);
+  for (const match of body.matchAll(/([^\s"'<>\/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g)) {
+    const key = match[1].toLowerCase();
+    if (!attributes.has(key)) attributes.set(key, decodeHtmlAttribute(match[2] ?? match[3] ?? match[4] ?? ""));
+  }
+  return attributes;
+}
+
+function hasNofollow(value = "") {
+  return String(value).toLowerCase().split(/[\s,]+/).some((token) => token === "nofollow" || token === "none");
+}
+
+function agentToken(userAgent = defaultUserAgent) {
+  return userAgent.split(/[\s/]/)[0].toLowerCase();
+}
+
+function headerPreventsFollowing(value = "", userAgent) {
+  let scope = "";
+  for (let directive of String(value).split(",")) {
+    const scoped = directive.match(/^\s*([\w-]+)\s*:\s*(.*)$/);
+    if (scoped) [, scope, directive] = scoped;
+    if ((!scope || scope.toLowerCase() === agentToken(userAgent)) && hasNofollow(directive)) return true;
+  }
+  return false;
+}
+
+function explicitlyHidden(attributes) {
+  return attributes.has("hidden") || attributes.has("inert")
+    || attributes.get("aria-hidden")?.trim().toLowerCase() === "true"
+    || /(?:^|;)\s*(?:display\s*:\s*none|visibility\s*:\s*(?:hidden|collapse))\s*(?:!important\s*)?(?:;|$)/i.test(attributes.get("style") || "");
+}
 
 export function canonicaliseCrawlUrl(value, base = "") {
   try {
@@ -84,13 +129,39 @@ export function parseSitemapUrls(xml = "", baseUrl = "") {
     .filter(Boolean));
 }
 
-export function extractPageLinks(html = "", pageUrl = "") {
+function discoverPageLinks(html = "", pageUrl = "", options = {}) {
+  if (headerPreventsFollowing(options.xRobotsTag, options.userAgent)) return { links: [], nofollow: true };
+  // Inspect static HTML only. Never discover links in comments or raw text.
+  const source = String(html)
+    .replace(/<!--[\s\S]*?(?:-->|$)/g, "")
+    .replace(/<(script|style|textarea|title|xmp|iframe|noembed|noframes)\b[^>]*>[\s\S]*?(?:<\/\1\s*>|$)/gi, "");
   const links = [];
-  for (const match of String(html).matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)) {
-    const url = canonicaliseCrawlUrl(match[1], pageUrl);
-    if (url) links.push(url);
+  const stack = [];
+  for (const match of source.matchAll(/<\/?([a-z][\w:-]*)\b(?:[^"'<>]|"[^"]*"|'[^']*')*>/gi)) {
+    const tag = match[0];
+    const name = match[1].toLowerCase();
+    if (tag.startsWith("</")) {
+      const index = stack.findLastIndex((element) => element.name === name);
+      if (index >= 0) stack.length = index;
+      continue;
+    }
+    const attributes = htmlAttributes(tag, match[1]);
+    if (name === "meta" && !stack.some((element) => element.name === "template" || element.name === "noscript")
+      && ["robots", agentToken(options.userAgent)].includes(attributes.get("name")?.trim().toLowerCase())
+      && hasNofollow(attributes.get("content"))) return { links: [], nofollow: true };
+    const hidden = Boolean(stack.at(-1)?.hidden) || explicitlyHidden(attributes) || name === "template" || name === "noscript";
+    if (name === "a" && !hidden && !hasNofollow(attributes.get("rel"))) {
+      const href = attributes.get("href");
+      const url = href ? canonicaliseCrawlUrl(href, pageUrl) : "";
+      if (url) links.push(url);
+    }
+    if (!voidElements.has(name)) stack.push({ name, hidden });
   }
-  return unique(links);
+  return { links: unique(links), nofollow: false };
+}
+
+export function extractPageLinks(html = "", pageUrl = "", options = {}) {
+  return discoverPageLinks(html, pageUrl, options).links;
 }
 
 export function extractCanonicalLink(html = "", pageUrl = "") {
@@ -110,10 +181,16 @@ export function pageNeedsJavascriptFallback(html = "") {
 
 function relevanceScore(url, seedUrls = []) {
   const parsed = new URL(url);
+  let pathname;
+  try { pathname = decodeURIComponent(parsed.pathname); } catch { return -100; }
+  pathname = pathname.replace(/_/g, "-");
+  if (ignoredPathPattern.test(pathname) || nonPageExtensionPattern.test(pathname)) return -100;
+  const homepage = parsed.pathname === "/" && !parsed.search;
+  const relevant = relevantPathPattern.test(pathname);
+  if (!seedUrls.includes(url) && !homepage && !relevant) return -100;
   let score = seedUrls.includes(url) ? 100 : 0;
-  if (parsed.pathname === "/") score += 60;
-  if (relevantPathPattern.test(`${parsed.pathname} ${parsed.search}`)) score += 40;
-  if (ignoredPathPattern.test(`${parsed.pathname} ${parsed.search}`)) score -= 100;
+  if (homepage) score += 60;
+  if (relevant) score += 40;
   score -= Math.max(0, parsed.pathname.split("/").filter(Boolean).length - 3) * 5;
   return score;
 }
@@ -181,11 +258,15 @@ export async function crawlProviderSite(options = {}) {
       etag: cached.etag || "",
       lastModified: cached.lastModified || ""
     });
+    if (result.notModified && !result.xRobotsTag) result = { ...result, xRobotsTag: cached.xRobotsTag || "" };
+    const sourceDiscovery = discoverPageLinks(result.text, result.finalUrl || nextUrl, {
+      userAgent: options.userAgent, xRobotsTag: result.xRobotsTag
+    });
     let rendered = false;
     if (result.ok && pageNeedsJavascriptFallback(result.text) && typeof options.renderPage === "function") {
       const renderedResult = await options.renderPage(result.finalUrl || nextUrl, options);
       if (renderedResult?.ok && renderedResult.text) {
-        result = { ...result, ...renderedResult, renderedWithHeadlessBrowser: true };
+        result = { ...result, ...renderedResult, xRobotsTag: result.xRobotsTag || renderedResult.xRobotsTag || "", renderedWithHeadlessBrowser: true };
         rendered = true;
       }
     }
@@ -206,7 +287,9 @@ export async function crawlProviderSite(options = {}) {
     }
 
     const canonicalUrl = extractCanonicalLink(result.text, result.finalUrl || nextUrl);
-    const links = extractPageLinks(result.text, result.finalUrl || nextUrl)
+    const links = (sourceDiscovery.nofollow ? [] : extractPageLinks(result.text, result.finalUrl || nextUrl, {
+      userAgent: options.userAgent, xRobotsTag: result.xRobotsTag
+    }))
       .filter((url) => sameHost(url, domain));
     pages.push({
       ...result,
