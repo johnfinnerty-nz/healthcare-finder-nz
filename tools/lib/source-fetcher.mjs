@@ -162,6 +162,7 @@ function resultBase(url, capturedAt, extras = {}) {
     etag: "",
     lastModified: "",
     cacheControl: "",
+    xRobotsTag: "",
     notModified: false,
     redirectChain: [],
     resolvedAddresses: [],
@@ -216,7 +217,8 @@ export async function fetchPublicSource(url, options = {}) {
       const metadata = {
         etag: response.headers.get("etag") || "",
         lastModified: response.headers.get("last-modified") || "",
-        cacheControl: response.headers.get("cache-control") || ""
+        cacheControl: response.headers.get("cache-control") || "",
+        xRobotsTag: response.headers.get("x-robots-tag") || ""
       };
 
       if (response.status === 304) {
